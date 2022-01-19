@@ -1,8 +1,11 @@
 <template>
-  <div>Landing Page</div>
+    <div>
+      <h1>Landing Page</h1>
+    </div>
 </template>
 
 <style module lang='stylus'>
+  @import "../styles/main.styl"
 
 </style>
 
