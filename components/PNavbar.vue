@@ -24,7 +24,7 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <b-nav-item href="#" class="active mr-4 pr-2">Login</b-nav-item>
-        <p-button :class="$style.navButton" text="Get Started" class="mr-4"/>
+        <p-button :class="$style.navButton" :backgroundColor="'gradient-1'" text="Get Started" class="mr-4"/>
         <div class="d-lg-flex justify-content-center align-items-center ml-2 pl-1">
           <b-avatar variant="info" :size="24" src="~/assets/icons/eng.png"></b-avatar>
         </div>
@@ -54,7 +54,6 @@
   .navButton
     height 38px
     width 118px
-    background $gradient-3
 </style>
 
 <script lang="ts">
