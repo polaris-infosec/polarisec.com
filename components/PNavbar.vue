@@ -1,7 +1,7 @@
 <template>
   <b-navbar :class="$style.navigationBar" toggleable="lg" type="dark" variant="dark">
-    <b-navbar-brand href="#" class="mr-4 pr-4">
-      <img src="~/assets/images/polaris-logo.png" class="d-inline-block align-baseline mt-2" alt="Kitten" height="24" width="140">
+    <b-navbar-brand href="/" class="mr-4 pr-4">
+      <img src="@/assets/images/polaris-logo.png" class="d-inline-block align-baseline mt-2" alt="Kitten" height="24" width="140">
     </b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -24,9 +24,9 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <b-nav-item href="#" class="active mr-4 pr-2">Login</b-nav-item>
-        <p-button :class="$style.navButton" :backgroundColor="'gradient-1'" text="Get Started" class="mr-4"/>
+        <p-button :gradient="3" text="Get Started" class="mr-4"/>
         <div class="d-lg-flex justify-content-center align-items-center ml-2 pl-1">
-          <b-avatar variant="info" :size="24" src="~/assets/icons/eng.png"></b-avatar>
+          <b-avatar variant="info" :size="24" src="@/assets/icons/eng.png"></b-avatar>
         </div>
         <b-nav-item-dropdown id="dropdown-right" right class="active">
           <b-dropdown-item>English</b-dropdown-item>
@@ -51,9 +51,6 @@
     font-size 16px
     line-height 26px
 
-  .navButton
-    height 38px
-    width 118px
 </style>
 
 <script lang="ts">

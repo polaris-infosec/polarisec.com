@@ -1,35 +1,46 @@
 <template>
-  <b-button v-if="backgroundColor === 'gradient-1'" :variant="variant" :class="[$style.button, $style.gradient1]">{{ text }}</b-button>
-  <b-button v-else-if="backgroundColor === 'gradient-2'" :variant="variant" :class="[$style.button, $style.gradient2]">{{ text }}</b-button>
-  <b-button v-else :variant="variant" :class="[$style.button, $style.gradient3]">{{ text }}</b-button>
+  <b-button :variant="variant" :class="[$style.button, classes]">{{text}}</b-button>
 </template>
+
 <style module lang="stylus">
-@import "../styles/main.styl"
+  @import "../styles/main.styl"
 
-.button
-  font-weight 500
-  font-size 14px !important
-  line-height 18px
-  text-align center
+  .button
+    font-weight 500
+    font-size 14px !important
+    line-height 18px
+    text-align center
 
-.gradient1
-  background $gradient-1
+  .gradient1
+    background $gradient-1
+    padding 16px 32px
 
-.gradient2
-  background $gradient-2
+  .gradient2
+    background $gradient-2
 
-.gradient3
-  background $gradient-3
+  .gradient3
+    background $gradient-3
+    padding 10px 20px
 
 </style>
+
 <script lang="ts">
 import {Vue, Component, Prop} from "nuxt-property-decorator";
 
 @Component({})
 export default class PButton extends Vue {
-  @Prop({type: String}) variant: string | undefined;
-  @Prop({type: String}) text: string | undefined;
-  @Prop({type: String}) backgroundColor: string | undefined;
+  @Prop({type:String}) variant: string | undefined;
+  @Prop({type:String}) text: string | undefined;
+  @Prop({type:Number, default: 1}) gradient: number;
+
+
+  get classes() {
+    switch (this.gradient){
+      case 1: return this.$style.gradient1;
+      case 2: return this.$style.gradient2;
+      case 3: return this.$style.gradient3;
+    }
+  }
 }
 </script>
 
