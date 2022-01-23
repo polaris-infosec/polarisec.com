@@ -25,76 +25,75 @@
         <b-row class="d-flex justify-content-between">
           <div class="body-6">
             SOLUTION
-            <div class="mt-4 body-5">
-                <p>
+            <div class="d-flex flex-column mt-4 body-5">
+                <span>
                   Platform Access
-                </p>
-              <p>
+                </span>
+              <span>
                 Support Center
-              </p>
+              </span>
             </div>
           </div>
 
           <div class="body-6">
             COMPANY
-            <div class="mt-4 body-5">
-              <p>
+            <div class="d-flex flex-column mt-4 body-5">
+              <span>
                 About
-              </p>
-              <p>
+              </span>
+              <span>
                 Why us
-              </p>
-              <p>
+              </span>
+              <span>
                 Partners
-              </p>
-              <p>
+              </span>
+              <span>
                 Blog
-              </p>
+              </span>
             </div>
           </div>
 
           <div class="body-6">
             RESOURCES
-            <div class="mt-4 body-5">
-              <p>
+            <div class="d-flex flex-column mt-4 body-5">
+              <span>
                 Pricing
-              </p>
-              <p>
+              </span>
+              <span>
                 FAQ
-              </p>
-              <p>
+              </span>
+              <span>
                 Contact
-              </p>
+              </span>
             </div>
           </div>
-
 
           <div class="body-6">
             CONNECT WITH US
             <div class="d-flex flex-column justify-content-between mt-4 body-5 pl-3">
               <b-row class="mb-2 d-flex">
                 <a href="#" class="mr-3">
-                <img src="~/assets/icons/facebook.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
-                     width="24">
+                  <img src="~/assets/icons/facebook.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
+                       width="24">
                 </a>
                 <a href="#" class="mr-3">
-                <img src="~/assets/icons/twitter.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
-                     width="24">
+                  <img src="~/assets/icons/twitter.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
+                       width="24">
                 </a>
                 <a href="#">
-                <img src="~/assets/icons/youtube.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
-                     width="24">
+                  <img src="~/assets/icons/youtube.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
+                       width="24">
                 </a>
               </b-row>
 
               <b-row class="d-flex">
                 <a href="#" class="mr-3">
-                <img src="~/assets/icons/medium.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
-                     width="24">
+                  <img src="~/assets/icons/medium.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
+                       width="24">
                 </a>
                 <a href="#">
-                <img src="~/assets/icons/linked-in.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
-                     width="24">
+                  <img src="~/assets/icons/linked-in.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
+                       width="24">
                 </a>
               </b-row>
             </div>
@@ -103,9 +102,9 @@
       </b-col>
     </b-row>
 
-    <div :class="$style.divide" class="mb-3 mt-2"></div>
+    <div :class="$style.divide" class="mb-3 mt-5"></div>
 
-    <b-row class="d-flex justify-content-md-between">
+    <b-row class="d-flex justify-content-between align-content-center">
       <b-col col lg="3">
         <span class="body-4">
           @ Polaris Infosec Pte. Ltd.
@@ -130,6 +129,7 @@
 <style module lang="stylus">
 .socialGroup
   width 120px
+
 .divide
   width 100%
   border-bottom 0.03em solid #A9B7C6
