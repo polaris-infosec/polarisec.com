@@ -5,7 +5,7 @@
         <h1>Why us</h1>
       </div>
       <div class=" d-flex justify-content-between mt-5">
-        <div class="col-sm-4 p-0 pr-5 pl-1" >
+        <div class="col-sm-4 p-0 pr-5 pl-1">
           Polaris is your <span class="highlight-text">premier local solution</span> with local support, dedicated to
           providing users with a first rate security service.
         </div>
@@ -24,7 +24,7 @@
       <div :class="$style.divide" class="mb-3 mt-5"></div>
 
       <div class="d-flex justify-content-center p-0 body-1 flex-wrap">
-        <div v-for="item in serviceContent" :key="item" class="p-0 col-sm-4 pr-5 pl-1 mt-5">
+        <div v-for="item in serviceContent" :key="item.icon" class="p-0 col-sm-4 pr-5 pl-1 mt-5">
           <div class="d-inline">
             <img :src="item.icon" class="d-inline-block align-baseline p-0" alt="Kitten" height="48" width="48">
           </div>
@@ -36,14 +36,14 @@
     </div>
 
     <div :class="$style.analyticPanel" class="d-flex">
-      <div v-for="item in analyticContent" :key="item" class="p-0 col-sm-4 pr-5 pl-1 black-text">
+      <div v-for="item in analyticContent" :key="item.title" class="p-0 col-sm-4 pr-5 pl-1 black-text">
         <h1 class="p-0 mb-2">
           {{ item.title }}
         </h1>
         <p v-html="item.text" class="m-0">
         </p>
         <i>
-          {{item.source}}
+          {{ item.source }}
         </i>
       </div>
     </div>
@@ -59,7 +59,7 @@ import {Vue, Component} from "nuxt-property-decorator";
 import Testimonials from "~/layouts/whyus/Testimonials.vue";
 
 @Component({
-  components:{
+  components: {
     Testimonials
   }
 })

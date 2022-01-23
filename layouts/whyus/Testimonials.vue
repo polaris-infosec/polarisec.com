@@ -9,11 +9,10 @@
       style="text-shadow: 1px 1px 2px #333;"
     >
       <h1>Testimonials</h1>
-      <!-- Text slides with image -->
       <b-carousel-slide
       >
         <div class="d-flex justify-content-between mb-5">
-          <div :class="$style.testimonialsBox" v-for="item in testimonialsContent" :key="item">
+          <div :class="$style.testimonialsBox" v-for="item in testimonialsContent" :key="item.item">
             <b-avatar variant="info" :size="50" :src="item.icon" :class="$style.logo"></b-avatar>
             <p class="body-2 m-0">
               {{ item.text }}
