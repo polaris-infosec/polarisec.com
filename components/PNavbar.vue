@@ -10,17 +10,14 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item-dropdown id="dropdown-1" text="Solutions" class="mr-4 pr-3 active">
-          <b-dropdown-item>First Action</b-dropdown-item>
-          <b-dropdown-item>Second Action</b-dropdown-item>
-          <b-dropdown-item>Third Action</b-dropdown-item>
-          <b-dropdown-divider></b-dropdown-divider>
-          <b-dropdown-item active>Active action</b-dropdown-item>
+          <b-dropdown-item>Platform Access</b-dropdown-item>
+          <b-dropdown-item>Support Center</b-dropdown-item>
         </b-nav-item-dropdown>
-        <b-nav-item href="#" class="active mr-4 pr-3">Why us</b-nav-item>
-        <b-nav-item href="#" class="active mr-4 pr-3">Partners</b-nav-item>
+        <b-nav-item to="/whyus" class="active mr-4 pr-3">Why us</b-nav-item>
+        <b-nav-item to="/partner" class="active mr-4 pr-3">Partners</b-nav-item>
         <b-nav-item to="/company" class="active mr-4 pr-3">Company</b-nav-item>
         <b-nav-item href="#" class="active mr-4 pr-3">Pricing</b-nav-item>
-        <b-nav-item href="#" class="active mr-4 pr-3">Contact Us</b-nav-item>
+        <b-nav-item to="/contact" class="active mr-4 pr-3">Contact Us</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
@@ -52,6 +49,9 @@
     font-style normal
     font-size 16px
     line-height 26px
+
+  :global(.bg-dark)
+    background-color black !important
 
 </style>
 
