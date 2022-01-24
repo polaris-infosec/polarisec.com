@@ -1,6 +1,5 @@
 <template>
   <div>
-    Hello
   </div>
 </template>
 
@@ -11,8 +10,13 @@
 
 <script lang="ts">
 import {Component, Vue} from 'nuxt-property-decorator';
+import Navbar from "~/components/PNavbar.vue";
+import PFooter from "~/components/PFooter.vue";
+import Partner from "~/pages/partner.vue";
 
-@Component({})
+@Component({
+  components: {PFooter, Navbar, Partner}
+})
 export default class IndexPage extends Vue {
 
 }
