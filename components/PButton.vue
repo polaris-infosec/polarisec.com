@@ -1,5 +1,7 @@
 <template>
-  <b-button :variant="variant" :class="[$style.button, classes]">{{text}}</b-button>
+  <b-button :variant="variant" :class="[$style.button, classes]">
+    {{text}} <span v-if="showIcon" class="ml-2 d-inline-flex"><img src="@/assets/icons/union.png" alt="" width="14" height="12"></span>
+  </b-button>
 </template>
 
 <style module lang="stylus">
@@ -32,6 +34,7 @@ export default class PButton extends Vue {
   @Prop({type:String}) variant: string | undefined;
   @Prop({type:String}) text: string | undefined;
   @Prop({type:Number, default: 1}) gradient: number;
+  @Prop({type:Boolean, default: true}) showIcon: boolean;
 
 
   get classes() {
