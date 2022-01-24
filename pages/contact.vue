@@ -38,7 +38,15 @@
           <b-form-input v-model="topic" placeholder="Your Topic" class="input-normal"></b-form-input>
         </b-col>
         <b-col cols="8" class="p-0">
-          <b-form-input required v-model="message" placeholder="Your Message" class="input-normal" :class="$style.messageInput"></b-form-input>
+          <b-form-textarea
+            id="textarea"
+            v-model="message"
+            placeholder="Your Message"
+            rows="3"
+            max-rows="6"
+            class="input-normal"
+            :class="$style.messageInput"
+          ></b-form-textarea>
         </b-col>
       </b-row>
       <b-row>
