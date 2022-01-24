@@ -4,6 +4,9 @@ export default {
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  router: {
+    base: '/polaris-landing-page/',
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -47,6 +50,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
 
 }
