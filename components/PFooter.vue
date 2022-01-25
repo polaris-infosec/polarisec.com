@@ -72,26 +72,26 @@
             CONNECT WITH US
             <div class="d-flex flex-column justify-content-between mt-4 body-5 pl-3">
               <b-row class="mb-2 d-flex">
-                <a href="#" class="mr-3">
+                <a href="https://www.facebook.com/polarisinfosec" target="_blank" class="mr-3">
                   <img src="~/assets/icons/facebook.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
                        width="24">
                 </a>
-                <a href="#" class="mr-3">
+                <a href="https://twitter.com/polarisinfosec" target="_blank" class="mr-3">
                   <img src="~/assets/icons/twitter.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
                        width="24">
                 </a>
-                <a href="#">
+                <a href="https://www.youtube.com/channel/UChjg05_AKIRTg8ZXgwhroYw" target="_blank">
                   <img src="~/assets/icons/youtube.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
                        width="24">
                 </a>
               </b-row>
 
               <b-row class="d-flex">
-                <a href="#" class="mr-3">
+                <a href="https://polarisec.medium.com/" target="_blank" class="mr-3">
                   <img src="~/assets/icons/medium.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
                        width="24">
                 </a>
-                <a href="#">
+                <a href="https://linkedin.com/company/polarisec" target="_blank">
                   <img src="~/assets/icons/linked-in.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
                        width="24">
                 </a>
