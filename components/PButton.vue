@@ -50,6 +50,8 @@ export default class PButton extends Vue {
       window.open('https://polarisec.io/', '_blank');
     } else if (this.text === 'Request a Demo') {
       this.$router.push({path: '/contact'});
+    } else if (this.text === 'Watch on Youtube') {
+      window.open('https://www.youtube.com/watch?v=J_jbDrFq4AM', '_blank');
     }
   }
 

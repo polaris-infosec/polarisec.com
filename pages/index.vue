@@ -18,6 +18,8 @@ import Partner from "~/pages/partner.vue";
   components: {PFooter, Navbar, Partner}
 })
 export default class IndexPage extends Vue {
-
+  created() {
+   this.$router.replace('/home')
+  }
 }
 </script>

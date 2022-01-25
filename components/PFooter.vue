@@ -118,11 +118,13 @@
           </span>
           </div>
         </nuxt-link>
-        <div class="pl-2">
+        <a href="https://polarisec.com/polaris_privacy_notice.pdf" download target="_blank">
+          <div class="pl-2" style="color: white">
            <span class="body-4">
           Privacy and Support
         </span>
-        </div>
+          </div>
+        </a>
       </b-col>
     </b-row>
   </b-container>

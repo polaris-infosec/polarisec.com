@@ -79,7 +79,5 @@ import PButton from "~/components/PButton.vue";
 })
 export default class HomeVideoIntroduce extends Vue {
 
-
-
 }
 </script>
