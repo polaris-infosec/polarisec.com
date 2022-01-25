@@ -80,7 +80,7 @@
             <h5>Need help with choosing a package?</h5>
             <h5>Get a personalized recommendation</h5>
           </div>
-          <p-button text="Answer 3 Easy Questions"/>
+          <a href="/questions"><p-button text="Answer 3 Easy Questions"/></a>
         </div>
       </div>
     </div>

@@ -27,7 +27,7 @@
         <div class="d-lg-flex justify-content-center align-items-center ml-2 pl-1">
           <b-avatar variant="info" :size="24" src="@/assets/icons/eng.png"></b-avatar>
         </div>
-        <b-nav-item-dropdown id="dropdown-right" right class="active">
+        <b-nav-item-dropdown id="dropdown-right" right class="active" :class="$style.languageSelect">
           <b-dropdown-item>English</b-dropdown-item>
           <b-dropdown-item>Vietnamese</b-dropdown-item>
         </b-nav-item-dropdown>
@@ -42,6 +42,10 @@
     .navigationBar
       height 72px !important
       padding 24px 60px !important
+
+  .languageSelect
+    a
+      padding-left 2px !important
 
   .navbarFont
     font-weight 400

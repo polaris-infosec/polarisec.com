@@ -1,10 +1,10 @@
 <template>
   <div :class="$style.contactMain">
-    <div>
+    <div class="pb-4">
       <h1>Contact us</h1>
     </div>
-    <div>
-      <p class="body-1">
+    <div class="pt-1">
+      <p class="text-6">
         Get in touch with us about our products and services.
       </p>
     </div>

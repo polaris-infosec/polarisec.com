@@ -12,10 +12,9 @@
 import {Component, Vue} from 'nuxt-property-decorator';
 import Navbar from "~/components/PNavbar.vue";
 import PFooter from "~/components/PFooter.vue";
-import Partner from "~/pages/partner.vue";
 
 @Component({
-  components: {PFooter, Navbar, Partner}
+  components: { PFooter, Navbar}
 })
 export default class IndexPage extends Vue {
   created() {
