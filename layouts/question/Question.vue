@@ -9,13 +9,8 @@
         <span>{{ item }}</span>
       </div>
     </div>
-
-    <a v-if="step === 3 && !answer" href="/recommendation">
-        <p-button :gradient="1" :text="'Submit'" class="mt-5" style="width: 758px"/>
-    </a>
-
-    <div v-if="step < 3 " @click="nextStep(step)">
-      <p-button :gradient="1" :text="'Next'" class="mt-5" style="width: 758px"/>
+    <div @click="nextStep(step)">
+      <p-button :gradient="1" :text="(step === 3) ? 'Submit': 'Next'" class="mt-5" style="width: 758px"/>
     </div>
 
     <div @click="previousStep" v-if="step > 1" style="width: 758px">
@@ -65,9 +60,15 @@ export default class Questions extends Vue {
   }
 
   nextStep() {
-    if (this.step === 3 || !this.answer) {
+    if (!this.answer) {
       return;
     }
+
+    if (Number(this.step) === 3){
+      window.location.href = "/recommendation";
+      return;
+    }
+
     this.$emit('nextStep', (Number(this.step) + 1));
     this.answer = '';
   }
