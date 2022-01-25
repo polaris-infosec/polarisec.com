@@ -69,7 +69,7 @@
                     Pricing
                 </span>
               </nuxt-link>
-              <nuxt-link to="/pricing#faq">
+              <nuxt-link :to="{path: '/pricing', hash: '#faq'}">
                 <span class="color-text-7">
                     FAQ
                 </span>

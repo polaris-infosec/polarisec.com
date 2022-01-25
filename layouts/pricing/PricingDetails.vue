@@ -3,9 +3,9 @@
     <div :class="$style.container" class="row mx-0">
       <div class="col-sm-2 px-0">
         <ol style="list-style-type: none" class="pl-0">
-          <li class="active"><a href="#overview">Overview</a></li>
-          <li><a href="#add-on">Add-ons</a></li>
-          <li><a href="#faq">FAQs</a></li>
+          <li class="active"><nuxt-link :to="{path: '/pricing', hash: '#overview'}">Overview</nuxt-link></li>
+          <li><nuxt-link :to="{path: '/pricing', hash: '#add-on'}">Add-ons</nuxt-link></li>
+          <li><nuxt-link :to="{path: '/pricing', hash: '#faq'}">FAQs</nuxt-link></li>
         </ol>
       </div>
       <div class="col-sm-10">
