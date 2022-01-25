@@ -111,11 +111,13 @@
         </span>
       </b-col>
       <b-col col lg="3" class="d-flex justify-content-end">
-        <div class="pr-2" style="border-right: 0.03em solid #A9B7C6">
+        <nuxt-link to="/terms">
+          <div class="pr-2" style="border-right: 0.03em solid #A9B7C6; color: white">
            <span class="body-4">
-          Terms of Service
-        </span>
-        </div>
+            Terms of Service
+          </span>
+          </div>
+        </nuxt-link>
         <div class="pl-2">
            <span class="body-4">
           Privacy and Support
