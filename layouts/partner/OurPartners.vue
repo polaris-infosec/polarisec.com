@@ -22,8 +22,6 @@
         <template v-for="item in partners">
           <div :class="$style.box" :key="item.text">
             <div :class="$style.subBox" class="d-flex flex-wrap justify-content-center align-content-center p-0 col-12">
-<!--              <img :src="item.icon" class="d-inline-block align-baseline p-0" alt="Kitten"-->
-<!--                   height="115">-->
               <b-avatar variant="info" :size="115" :src="item.icon"></b-avatar>
             </div>
             <span
@@ -61,7 +59,7 @@
   background-size cover
   background-color #060606
   background-image url("assets/background/partner-bg.png")
-  padding 92px 0 0 152px
+  padding 92px 25px 0 152px
 </style>
 
 <script lang="ts">
