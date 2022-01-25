@@ -45,7 +45,7 @@ export default class PButton extends Vue {
   }
 
   onClick() {
-    if (this.text === 'Get Started'){
+    if (this.text === 'Get Started' && this.text === 'Sign up'){
       window.open('https://polarisec.io/', '_blank');
     } else if (this.text === 'Request a Demo') {
       this.$router.push({path: '/contact'});
