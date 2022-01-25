@@ -42,7 +42,7 @@
         </b-col>
       </b-row>
       <b-row>
-        <p-button :class="$style.sendMessageBtn" :gradient="1" text="Send Message ->" class="mr-4"/>
+        <p-button :class="$style.sendMessageBtn" :gradient="1" text="Send Message" class="mr-4"/>
       </b-row>
     </div>
   </div>

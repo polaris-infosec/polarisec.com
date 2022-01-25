@@ -52,7 +52,7 @@
     padding 93px 152px 121px 145px
 
     h2
-      color #F7F8FB
+      color $text-8
 
   .leaderContainer
     margin-bottom 30px
@@ -70,7 +70,7 @@
     line-height 25px
 
   .name
-    color #F7F8FB
+    color $text-8
 
 </style>
 

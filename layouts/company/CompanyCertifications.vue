@@ -27,7 +27,7 @@
     padding 73px 169px 105px 145px
 
     h2
-      color #F7F8FB
+      color $text-8
 
   .leaderContainer
     margin-bottom 14px

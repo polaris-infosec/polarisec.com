@@ -17,7 +17,7 @@
     text-align center
 
     h2
-      color #F7F8FB
+      color $text-8
 
     h5
       font-weight normal

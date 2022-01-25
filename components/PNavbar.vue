@@ -16,7 +16,7 @@
         <b-nav-item to="/whyus" class="active mr-4 pr-3">Why us</b-nav-item>
         <b-nav-item to="/partner" class="active mr-4 pr-3">Partners</b-nav-item>
         <b-nav-item to="/company" class="active mr-4 pr-3">Company</b-nav-item>
-        <b-nav-item href="#" class="active mr-4 pr-3">Pricing</b-nav-item>
+        <b-nav-item href="/pricing" class="active mr-4 pr-3">Pricing</b-nav-item>
         <b-nav-item to="/contact" class="active mr-4 pr-3">Contact Us</b-nav-item>
       </b-navbar-nav>
 

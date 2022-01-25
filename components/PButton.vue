@@ -1,5 +1,5 @@
 <template>
-  <b-button :variant="variant" :class="[$style.button, classes]">
+  <b-button @click="onClick" :variant="variant" :class="[$style.button, classes]">
     {{text}} <span v-if="showIcon" class="ml-2 d-inline-flex"><img src="@/assets/icons/union.png" alt="" width="14" height="12"></span>
   </b-button>
 </template>
@@ -36,7 +36,6 @@ export default class PButton extends Vue {
   @Prop({type:Number, default: 1}) gradient: number;
   @Prop({type:Boolean, default: true}) showIcon: boolean;
 
-
   get classes() {
     switch (this.gradient){
       case 1: return this.$style.gradient1;
@@ -44,6 +43,16 @@ export default class PButton extends Vue {
       case 3: return this.$style.gradient3;
     }
   }
+
+  onClick() {
+    console.log('to', this.path);
+    if (this.text === 'Get Started'){
+      window.open('https://polarisec.io/', '_blank');
+    } else if (this.text === 'Request a Demo') {
+      this.$router.push({path: '/contact'});
+    }
+  }
+
 }
 </script>
 

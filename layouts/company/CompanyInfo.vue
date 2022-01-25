@@ -22,12 +22,12 @@
     padding 85px 130px 99px 145px
 
     h4
-      color #F7F8FB
+      color $text-8
 
     hr
       width 250px
-      background-color: #F7F8FB
-      border: 0.5px solid #F7F8FB;
+      background-color: $text-8
+      border: 0.5px solid $text-8;
       margin-left 0
       margin-top 24px
 
