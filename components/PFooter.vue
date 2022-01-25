@@ -29,24 +29,32 @@
                 <span>
                   Platform Access
                 </span>
-              <span>
+              <a href="https://support.polarisec.com" target="_blank">
+                <span class="color-text-7">
                 Support Center
               </span>
+              </a>
             </div>
           </div>
 
           <div class="body-6">
             COMPANY
             <div class="d-flex flex-column mt-4 body-5">
-              <span>
-                About
-              </span>
-              <span>
-                Why us
-              </span>
-              <span>
-                Partners
-              </span>
+              <nuxt-link to="/company">
+                <span class="color-text-7">
+                    Pricing
+                </span>
+              </nuxt-link>
+              <nuxt-link to="/whyus">
+                <span class="color-text-7">
+                    Why us
+                </span>
+              </nuxt-link>
+              <nuxt-link to="/partner">
+                <span class="color-text-7">
+                    Partners
+                </span>
+              </nuxt-link>
               <span>
                 Blog
               </span>
@@ -56,15 +64,21 @@
           <div class="body-6">
             RESOURCES
             <div class="d-flex flex-column mt-4 body-5">
-              <span>
-                Pricing
-              </span>
-              <span>
-                FAQ
-              </span>
-              <span>
-                Contact
-              </span>
+              <nuxt-link to="/pricing">
+                <span class="color-text-7">
+                    Pricing
+                </span>
+              </nuxt-link>
+              <nuxt-link to="/pricing#faq">
+                <span class="color-text-7">
+                    FAQ
+                </span>
+              </nuxt-link>
+              <nuxt-link to="/contact">
+                <span class="color-text-7">
+                    Contact
+                </span>
+              </nuxt-link>
             </div>
           </div>
 
