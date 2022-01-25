@@ -13,8 +13,6 @@
 
 <style module lang='stylus'>
 
-
-
 </style>
 
 <script lang="ts">
