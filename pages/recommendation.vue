@@ -25,7 +25,7 @@
         <h5 class="fw-800">
           Contact sales
         </h5>
-        <p-button class="col-12 mt-5" :gradient="1" text="Next"></p-button>
+        <a href="/contact"><p-button class="col-12 mt-5" :gradient="1" text="Next"></p-button></a>
       </div>
       <div class="col-5 ml-5">
           <p class="text-6">
