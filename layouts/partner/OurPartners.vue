@@ -5,7 +5,7 @@
         <h1>
           Our Partners
         </h1>
-        <p class="text-6">
+        <p class="text-6 col-10 p-0">
           We need your help in providing security solutions
           to our communities
         </p>
