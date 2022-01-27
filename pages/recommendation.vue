@@ -16,7 +16,7 @@
         </p>
         <div class="mb-4 mt-4 divide"></div>
         <p class="text-8">
-          Enterprise + Add-Ons
+          {{ planLeftAttribute }} <span v-if="planRightAttribute">+</span> {{ planRightAttribute }}
         </p>
         <p class="text-6">
           Advanced features and dedicated support.
@@ -25,19 +25,21 @@
         <h5 class="fw-800">
           Contact sales
         </h5>
-        <a href="/contact"><p-button class="col-12 mt-5" :gradient="1" text="Next"></p-button></a>
+        <a href="/contact">
+          <p-button class="col-12 mt-5" :gradient="1" text="Next"></p-button>
+        </a>
       </div>
-      <div class="col-5 ml-5">
-          <p class="text-6">
-            ADD-ONS AND PRODUCT RECOMMENDATIONS
-          </p>
+      <div v-if="planRightAttribute === 'Add-On'" class="col-5 ml-5">
+        <p class="text-6">
+          ADD-ONS AND PRODUCT RECOMMENDATIONS
+        </p>
         <div :class="$style.box">
-            <p class="body-1 font-weight-bold">
-              Enterprise - Managed Security Services
-            </p>
-            <p class="brand-2" :class="$style.action">
-              Learn more ->
-            </p>
+          <p class="body-1 font-weight-bold">
+            {{ addOn }}
+          </p>
+          <p class="brand-2" :class="$style.action">
+            Learn more ->
+          </p>
         </div>
       </div>
     </div>
@@ -77,7 +79,7 @@
 </style>
 
 <script lang="ts">
-import {Vue,Component} from "nuxt-property-decorator";
+import {Vue, Component} from "nuxt-property-decorator";
 import Introduction from "~/layouts/question/Introduction.vue";
 import Question from "~/layouts/question/Question.vue";
 import PButton from "~/components/PButton.vue";
@@ -85,8 +87,60 @@ import PButton from "~/components/PButton.vue";
 @Component({
   components: {PButton, Question, Introduction}
 })
-export default class Recommendation extends Vue{
+export default class Recommendation extends Vue {
+  planLeftAttribute: string = '';
+  planRightAttribute: string = '';
+  addOn: string = '';
 
+  created() {
+    this.recommendation;
+  }
+
+  get recommendation() {
+    const question1 = localStorage.getItem('question1');
+    const question2 = localStorage.getItem('question2');
+    const question3 = localStorage.getItem('question3');
+
+    if (question1 === 'I have a lot!') {
+      this.planLeftAttribute = 'Enterprise';
+      this.planRightAttribute = 'Add-On';
+      this.addOn = 'Enterprise - Managed Security Services - Zero Trust'
+    }
+
+    switch (question3) {
+      case 'It’s mostly personal':
+        this.planLeftAttribute = 'Basic';
+        break;
+      case 'It’s mostly for information and promotions':
+        this.planLeftAttribute = 'Standard';
+        break;
+      case 'It’s important for business operations':
+        this.planLeftAttribute = 'Professional';
+        break;
+      case 'It’s absolutely vital to my business operations':
+        this.planLeftAttribute = 'Enterprise';
+        break;
+    }
+
+    if (question2 === 'No, but maybe one day...' || question2 === 'What’s an IT team?') {
+      this.planRightAttribute = 'Add-On';
+      if (!this.addOn) {
+        let left = '';
+        let right = '';
+
+        if (this.planLeftAttribute === 'Professional' || this.planLeftAttribute === 'Professional') {
+          left = 'Managed Security Services';
+        } else if (this.planLeftAttribute === 'Standard' || this.planLeftAttribute === 'Professional') {
+          right = 'Zero Trust';
+        } else {
+          this.addOn = 'Enterprise'
+        }
+        this.addOn = left + ' - ' + right;
+      }
+    }
+
+    return;
+  }
 }
 </script>
 

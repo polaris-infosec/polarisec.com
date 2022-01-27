@@ -29,7 +29,6 @@
         </div>
         <b-nav-item-dropdown id="dropdown-right" right class="active" :class="$style.languageSelect">
           <b-dropdown-item>English</b-dropdown-item>
-          <b-dropdown-item>Vietnamese</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>
