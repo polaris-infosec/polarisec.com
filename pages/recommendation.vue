@@ -131,11 +131,12 @@ export default class Recommendation extends Vue {
         if (this.planLeftAttribute === 'Professional' || this.planLeftAttribute === 'Professional') {
           left = 'Managed Security Services';
         } else if (this.planLeftAttribute === 'Standard' || this.planLeftAttribute === 'Professional') {
-          right = 'Zero Trust';
+          right = ' + Zero Trust';
         } else {
           this.addOn = 'Enterprise'
+          return;
         }
-        this.addOn = left + ' - ' + right;
+        this.addOn = left + right;
       }
     }
 
