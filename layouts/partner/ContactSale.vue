@@ -1,10 +1,10 @@
 <template>
   <div :class="$style.contactSalePanel">
     <b-row class="d-flex justify-content-between">
-      <h4 class="col-8 black-text p-0">
+      <h5 class="col-8 black-text p-0">
         Contact us at hello@polarisec.com for more information on how
         we can combine efforts in bringing cybersecurity solutions to APAC
-      </h4>
+      </h5>
       <div class="black-text d-flex flex-wrap justify-content-center align-content-center col-3">
         <div>
           <span>Contact sales</span>
@@ -17,7 +17,7 @@
 
 <style module lang='stylus'>
 .contactSalePanel
-  height 115px
+  min-height 115px
   background-repeat: no-repeat
   background-attachment: fixed
   background-position: center

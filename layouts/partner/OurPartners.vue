@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.ourPartnersPanel">
-    <b-row>
+    <b-row class="d-flex justify-content-between">
       <div class="col-5 d-flex flex-wrap align-content-center">
         <h1>
           Our Partners
@@ -10,8 +10,8 @@
           to our communities
         </p>
       </div>
-      <carousel class="col-7"
-                autoplay
+      <carousel class="col-6"
+                :autoplay="partners.length > 3"
                 loop
                 autoWidth
                 :nav="false"
@@ -60,7 +60,7 @@
   background-size cover
   background-color #060606
   background-image url("assets/background/partner-bg.png")
-  padding 92px 25px 0 152px
+  padding 92px 22px 0 152px
 
 </style>
 

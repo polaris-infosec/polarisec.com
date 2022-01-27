@@ -64,7 +64,19 @@ export default class Questions extends Vue {
       return;
     }
 
-    if (Number(this.step) === 3){
+    switch (Number(this.step)) {
+      case 1:
+        localStorage.setItem('question1', this.answer);
+        break;
+      case 2:
+        localStorage.setItem('question2', this.answer);
+        break;
+      case 3:
+        localStorage.setItem('question3', this.answer);
+        break;
+    }
+
+    if (Number(this.step) === 3) {
       window.location.href = "/recommendation";
       return;
     }
