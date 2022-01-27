@@ -124,7 +124,7 @@ export default class Recommendation extends Vue {
 
     if (question2 === 'No, but maybe one day...' || question2 === 'What’s an IT team?') {
       this.planRightAttribute = 'Add-On';
-      if (!this.addOn && this.planRightAttribute === 'Add-On') {
+      if (!this.addOn) {
         let left = '';
         let right = '';
 
