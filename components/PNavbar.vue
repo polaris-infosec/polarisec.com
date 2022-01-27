@@ -43,6 +43,8 @@
       padding 24px 60px !important
 
   .languageSelect
+    ul
+      padding-left 10px !important
     a
       padding-left 2px !important
 
