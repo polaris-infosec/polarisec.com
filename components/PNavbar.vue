@@ -23,7 +23,7 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <b-nav-item href="#" class="active mr-4 pr-2">Login</b-nav-item>
-        <p-button :gradient="3" text="Get Started" :show-icon="false" class="mr-4"/>
+        <p-button :gradient="3" text="Get Started" :show-icon="false" class="mr-4" @click="onClick"/>
         <div class="d-lg-flex justify-content-center align-items-center ml-2 pl-1">
           <b-avatar variant="info" :size="24" src="@/assets/icons/eng.png"></b-avatar>
         </div>
@@ -68,6 +68,10 @@ import PButton from "~/components/PButton.vue";
   components: {PButton}
 })
 export default class PNavbar extends Vue {
+
+  onClick() {
+    window.open('https://polarisec.io/', '_blank');
+  }
 
 }
 </script>

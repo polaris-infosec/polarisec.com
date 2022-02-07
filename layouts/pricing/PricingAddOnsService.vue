@@ -17,7 +17,11 @@
             </div>
           </div>
           <div v-else :class="$style.customPricing">Custom Pricing</div>
-          <p-button :gradient="3" :class="$style.btn" text="Get Started" :show-icon="false"/>
+          <p-button :gradient="3"
+                    :class="$style.btn"
+                    text="Get Started"
+                    :show-icon="false"
+                    @click="onClick"/>
         </div>
       </template>
     </div>
@@ -423,5 +427,9 @@ export default class PricingAddOnsService extends Vue {
       ],
     },
   ];
+
+  onClick() {
+    window.open('https://polarisec.io/', '_blank');
+  }
 }
 </script>

@@ -3,7 +3,7 @@
     <div :class="$style.container">
       <h2>Sign up for our newsletter</h2>
       <h5>Be the first to receive new feature and product updates.</h5>
-      <p-button text="Sign up"/>
+      <p-button text="Sign up" @click="onClick"/>
     </div>
   </div>
 </template>
@@ -39,7 +39,9 @@ import PButton from "~/components/PButton.vue";
 })
 export default class HomeNewsletter extends Vue {
 
-
+  onClick() {
+    window.open('https://polarisec.io/', '_blank');
+  }
 
 }
 </script>

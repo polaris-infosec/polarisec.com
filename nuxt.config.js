@@ -5,7 +5,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   router: {
-    base: '/polaris-landing-page/',
+    // base: '/polaris-landing-page/',
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -46,7 +46,10 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    '@nuxtjs/axios',
   ],
+
+  axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

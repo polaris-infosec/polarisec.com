@@ -9,9 +9,11 @@
         <span>{{ item }}</span>
       </div>
     </div>
-    <div @click="nextStep(step)">
-      <p-button :gradient="1" :text="(step === 3) ? 'Submit': 'Next'" class="mt-5" style="width: 758px"/>
-    </div>
+    <p-button :gradient="1"
+              :text="(step === 3) ? 'Submit': 'Next'"
+              class="mt-5"
+              style="width: 758px"
+              @click="nextStep(step)"/>
 
     <div @click="previousStep" v-if="step > 1" style="width: 758px">
       <p class="mt-4 text-center text-7"><- Previous</p>

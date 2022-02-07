@@ -50,7 +50,7 @@
         </b-col>
       </b-row>
       <b-row>
-        <p-button :class="$style.sendMessageBtn" :gradient="1" text="Send Message" class="mr-4"/>
+        <p-button :class="$style.sendMessageBtn" :gradient="1" text="Send Message" class="mr-4" @click="onClick"/>
       </b-row>
     </div>
   </div>
@@ -96,5 +96,25 @@ export default class Contact extends Vue {
   role: string = '';
   topic: string = '';
   message: string = '';
+
+  showButton() {
+    return !!this.name && !!this.website && !!this.email && !!this.phone && !!this.company && !!this.role && !!this.topic && !!this.message;
+  }
+
+  async onClick() {
+    if (this.showButton){
+      await this.$axios.$post('https://polarisec.io/api/contact-us', {
+        'name': this.name,
+        'email': this.email,
+        'phone': this.phone,
+        'company': this.company,
+        'position': this.role,
+        'topic': this.topic,
+        'website': this.website,
+        'message': this.message,
+      });
+      await this.$router.push({path: '/'});
+    }
+  }
 }
 </script>

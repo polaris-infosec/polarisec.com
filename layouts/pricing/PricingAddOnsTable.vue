@@ -27,7 +27,11 @@
               </div>
             </div>
             <div v-else :class="$style.customPricing">Custom Pricing</div>
-            <p-button :class="$style.btn" :gradient="3" :show-icon="false" :text="support.button_text"/>
+            <p-button :class="$style.btn"
+                      :gradient="3"
+                      :show-icon="false"
+                      :text="support.button_text"
+                      @click="support.action"/>
           </div>
           <div v-else class="col"></div>
         </template>
@@ -121,6 +125,14 @@ export default class PricingAddOnsTable extends Vue {
     }
   }
 
+  goContact() {
+    this.$router.push({path: '/contact'});
+  }
+
+  goPolaris() {
+    window.open('https://polarisec.io/', '_blank');
+  }
+
   get addOns() {
     return [
       {
@@ -131,24 +143,28 @@ export default class PricingAddOnsTable extends Vue {
             isInclude: false,
             price: '',
             button_text: '',
+            action: () => {},
           },
           {
             isSupport: false,
             isInclude: false,
             price: '',
             button_text: '',
+            action: () => {},
           },
           {
             isSupport: true,
             isInclude: false,
             price: this.isMonthlyType ? 17 : 209,
             button_text: 'Get Started',
+            action: () => this.goPolaris(),
           },
           {
             isSupport: false,
             isInclude: false,
             price: '',
             button_text: '',
+            action: () => {},
           },
         ],
       },
@@ -160,24 +176,28 @@ export default class PricingAddOnsTable extends Vue {
             isInclude: false,
             price: '',
             button_text: '',
+            action: () => {},
           },
           {
             isSupport: false,
             isInclude: false,
             price: '',
             button_text: '',
+            action: () => {},
           },
           {
             isSupport: false,
             isInclude: false,
             price: '',
             button_text: '',
+            action: () => {},
           },
           {
             isSupport: true,
             isInclude: false,
             price: '',
             button_text: 'Request a Demo',
+            action: () => this.goContact(),
           },
         ],
       },
@@ -189,24 +209,28 @@ export default class PricingAddOnsTable extends Vue {
             isInclude: false,
             price: '',
             button_text: '',
+            action: () => {},
           },
           {
             isSupport: true,
             isInclude: false,
             price: this.isMonthlyType ? 87 : 1043,
             button_text: 'Get Started',
+            action: () => this.goPolaris(),
           },
           {
             isSupport: true,
             isInclude: false,
             price: this.isMonthlyType ? 87 : 1043,
             button_text: 'Get Started',
+            action: () => this.goPolaris(),
           },
           {
             isSupport: true,
             isInclude: true,
             price: '',
             button_text: '',
+            action: () => {},
           },
         ],
       },
@@ -218,24 +242,28 @@ export default class PricingAddOnsTable extends Vue {
             isInclude: false,
             price: '',
             button_text: '',
+            action: () => {},
           },
           {
             isSupport: true,
             isInclude: false,
             price: this.isMonthlyType ? 4 : 52,
             button_text: 'Get Started',
+            action: () => this.goPolaris(),
           },
           {
             isSupport: true,
             isInclude: false,
             price: this.isMonthlyType ? 4 : 52,
             button_text: 'Get Started',
+            action: () => this.goPolaris(),
           },
           {
             isSupport: true,
             isInclude: true,
             price: '',
             button_text: '',
+            action: () => {},
           },
         ],
       }

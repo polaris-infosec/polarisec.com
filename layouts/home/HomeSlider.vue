@@ -18,7 +18,7 @@
       <div :class="$style.seeItContainer">
         <h2>See it in action</h2>
         <h5 :class="$style.actionText">Request a free demo today and stay ahead of <br> the cyberthreat evolution.</h5>
-        <p-button text="Request a Demo"/>
+        <p-button text="Request a Demo" @click="onClick"/>
       </div>
     </div>
   </div>
@@ -85,6 +85,10 @@ export default class HomeSlider extends Vue {
       {img: require('@/assets/images/home/NCSC.png'),},
       {img: require('@/assets/images/home/channelnewsasia.png'),},
     ];
+  }
+
+  onClick() {
+    this.$router.push({path: '/contact'});
   }
 
 }

@@ -9,7 +9,11 @@
           <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
         </div>
       </div>
-      <p-button :class="$style.btn" :show-icon="false" :gradient="3" text="Get Started"/>
+      <p-button :class="$style.btn"
+                :show-icon="false"
+                :gradient="3"
+                text="Get Started"
+                @click="onClick"/>
     </div>
     <div class="col" :class="$style.detailContainer">
       <template v-for="item in zeroTrustAccessAddOns">
@@ -184,5 +188,9 @@ export default class PricingAddOnsZeroTrustAccess extends Vue {
       ],
     },
   ];
+
+  onClick() {
+    window.open('https://polarisec.io/', '_blank');
+  }
 }
 </script>

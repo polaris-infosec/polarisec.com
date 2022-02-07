@@ -4,7 +4,7 @@
       <div class="col-sm-6">
         <h1>Pricing</h1>
         <div :class="$style.pricingSubTitle" class="body-1">Try Polaris free - forever</div>
-        <p-button text="Request a Demo" />
+        <p-button text="Request a Demo" @click="onClick"/>
       </div>
       <div :class="$style.pricingContainer" class="col-sm-6"/>
     </div>
@@ -71,6 +71,10 @@ import PButton from "~/components/PButton.vue";
   components: {PButton}
 })
 export default class CompanyBanner extends Vue {
+
+  onClick() {
+    this.$router.push({path: '/contact'});
+  }
 
 }
 </script>

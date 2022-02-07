@@ -14,7 +14,8 @@
           </div>
           <div class="row">
             <div class="col-sm-2 d-inline-flex align-items-center">
-              <div @click="onChangeType(true)" :class="[$style.selectType, isMonthlyType && $style.active]" class="mr-1">
+              <div @click="onChangeType(true)" :class="[$style.selectType, isMonthlyType && $style.active]"
+                   class="mr-1">
                 Monthly
               </div>
               <div @click="onChangeType(false)" :class="[$style.selectType, !isMonthlyType && $style.active]">
@@ -30,14 +31,19 @@
                     <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
                   </div>
                 </div>
-                <p-button :gradient="3" :class="$style.btn" :text="type.button_text" :show-icon="false"/>
+                <p-button :gradient="3"
+                          :class="$style.btn"
+                          :text="type.button_text"
+                          :show-icon="false"
+                          @click="type.action"/>
               </div>
             </template>
           </div>
           <template v-for="type in functionTypes">
             <div :class="$style.typeContainer" :key="type.title">
               <div class="row">
-                <div @click="type.isExpand = !type.isExpand" :class="$style.typeTitle" class="body-2 col-sm-2 d-inline-flex align-items-center justify-content-between">
+                <div @click="type.isExpand = !type.isExpand" :class="$style.typeTitle"
+                     class="body-2 col-sm-2 d-inline-flex align-items-center justify-content-between">
                   <div>{{ type.title }}</div>
                   <img v-if="!type.isExpand" src="@/assets/icons/expand.png" alt="" width="24" height="24">
                 </div>
@@ -51,7 +57,8 @@
                   <div class="col caption d-inline-flex align-items-center justify-content-between"
                        :class="$style.childTitle">
                     <div>{{ child.title }}</div>
-                    <img :class="$style.img" :src="child.isExpand ? icons.close : icons.info" @click="child.isExpand = !child.isExpand"
+                    <img :class="$style.img" :src="child.isExpand ? icons.close : icons.info"
+                         @click="child.isExpand = !child.isExpand"
                          alt="" width="24" height="24">
                   </div>
                   <template v-for="support in child.supports">
@@ -65,7 +72,7 @@
                   </div>
                 </div>
                 <div v-if="child.isExpand" class="row">
-                  <div class="col" :class="$style.childInfo">{{child.info}}</div>
+                  <div class="col" :class="$style.childInfo">{{ child.info }}</div>
                   <div class="col"/>
                   <div class="col"/>
                   <div class="col"/>
@@ -80,7 +87,7 @@
             <h5>Need help with choosing a package?</h5>
             <h5>Get a personalized recommendation</h5>
           </div>
-          <a href="/questions"><p-button text="Answer 3 Easy Questions"/></a>
+          <p-button text="Answer 3 Easy Questions" @click="onClick"/>
         </div>
       </div>
     </div>
@@ -220,23 +227,35 @@ export default class PricingOverview extends Vue {
         type: 'Basic',
         price: 0,
         button_text: 'Get Started',
+        action: () => this.goPolaris(),
       },
       {
         type: 'Standard',
         price: this.isMonthlyType ? 17 : 209,
         button_text: 'Get Started',
+        action: () => this.goPolaris(),
       },
       {
         type: 'Professional',
         price: this.isMonthlyType ? 185 : 2217,
         button_text: 'Get Started',
+        action: () => this.goPolaris(),
       },
       {
         type: 'Enterprise',
         price: 'Contact us',
         button_text: 'Request a Demo',
+        action: () => this.goContact(),
       },
     ];
+  }
+
+  goContact() {
+    this.$router.push({path: '/contact'});
+  }
+
+  goPolaris() {
+    window.open('https://polarisec.io/', '_blank');
   }
 
   functionTypes: any = [
@@ -1331,8 +1350,12 @@ export default class PricingOverview extends Vue {
     },
   ];
 
-  onChangeType(isMonthly: boolean){
+  onChangeType(isMonthly: boolean) {
     this.$nuxt.$emit('update', isMonthly);
+  }
+
+  onClick() {
+    this.$router.push({path: '/questions'});
   }
 
 }

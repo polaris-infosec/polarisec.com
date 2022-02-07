@@ -9,7 +9,7 @@
             <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
           </div>
         </div>
-        <p-button :class="$style.btn" :show-icon="false" :gradient="3" text="Get Started"/>
+        <p-button :class="$style.btn" :show-icon="false" :gradient="3" text="Get Started" @click="onClick"/>
       </div>
       <div class="col" :class="$style.detailContainer">
         <template v-for="(item, idx) in threatIntelligenceAddOns">
@@ -100,5 +100,10 @@ export default class PricingAddOnsThreatIntelligence extends Vue {
       'Domain Risk Scoring*',
     ];
   }
+
+  onClick() {
+    window.open('https://polarisec.io/', '_blank');
+  }
+
 }
 </script>

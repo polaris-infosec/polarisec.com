@@ -9,7 +9,7 @@
           to actively detect and deter cyber attacks against your business. <b>Robust</b>, <b>adaptable</b>, and <b>accurate</b>,
           it greatly reduces the level of risk to your most critical asset - your data.
         </div>
-        <p-button text="Request a Demo"/>
+        <p-button text="Request a Demo" @click="onClick"/>
       </div>
     </div>
   </div>
@@ -50,6 +50,10 @@ import PButton from "~/components/PButton.vue";
   components: {PButton}
 })
 export default class HomeBanner extends Vue {
+
+  onClick() {
+    this.$router.push({path: '/contact'});
+  }
 
 }
 </script>

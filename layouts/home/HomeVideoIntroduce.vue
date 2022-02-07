@@ -14,7 +14,7 @@
         <div class="col-sm-5" :class="$style.textContainer">
           <h3 :class="$style.h3">How Polaris Helps <br/> Your Business.</h3>
           <div :class="$style.text">Polaris is the roadblock in the cyber attack killchain’s first stage - conducting reconnaissance on potential targets of opportunity. We monitor trends across web apps to predict and prevent attacks before they happen.</div>
-          <p-button text="Watch on Youtube"/>
+          <p-button text="Watch on Youtube" @click="onClick"/>
         </div>
       </div>
     </div>
@@ -78,6 +78,10 @@ import PButton from "~/components/PButton.vue";
   components: {PButton}
 })
 export default class HomeVideoIntroduce extends Vue {
+
+  onClick() {
+    window.open('https://www.youtube.com/watch?v=J_jbDrFq4AM', '_blank');
+  }
 
 }
 </script>
