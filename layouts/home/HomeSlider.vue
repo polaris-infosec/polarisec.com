@@ -8,6 +8,7 @@
                 autoWidth
                 :nav="false"
                 :dots="false"
+                :autoplayTimeout="3000"
                 :margin="60">
         <template v-for="feature in listFeature">
           <div :key="feature.img" :class="$style.sliderItem">
