@@ -83,7 +83,7 @@ import {Component, Vue} from 'nuxt-property-decorator';
 import PButton from "~/components/PButton.vue";
 
 @Component({
-  components:{
+  components: {
     PButton
   }
 })
@@ -102,19 +102,18 @@ export default class Contact extends Vue {
   }
 
   async onClick() {
-    if (this.showButton){
-      await this.$axios.$post('https://polarisec.io/api/contact-us', {
-        'name': this.name,
-        'email': this.email,
-        'phone': this.phone,
-        'company': this.company,
-        'position': this.role,
-        'topic': this.topic,
-        'website': this.website,
-        'message': this.message,
-      });
-      await this.$router.push({path: '/'});
-    }
+    if (!this.showButton) return;
+    await this.$axios.$post('https://polarisec.io/api/contact-us', {
+      'name': this.name,
+      'email': this.email,
+      'phone': this.phone,
+      'company': this.company,
+      'position': this.role,
+      'topic': this.topic,
+      'website': this.website,
+      'message': this.message,
+    });
+    await this.$router.push({path: '/'});
   }
 }
 </script>
