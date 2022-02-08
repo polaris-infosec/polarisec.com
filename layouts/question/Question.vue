@@ -3,7 +3,7 @@
     <p class="body-2">Question {{ step }} of 3</p>
     <h5 class="fw-800 pt-4">{{ step }}. {{ question }}</h5>
     <p class="body-2">Please select one</p>
-    <div class="d-flex flex-wrap">
+    <div class="d-flex flex-wrap" style="width: 802px">
       <div :class="[$style.answerBox, answer === item && $style.isSelect]" v-for="item in answers" :key="item"
            @click="selectAnswer(item)">
         <span>{{ item }}</span>
@@ -27,18 +27,18 @@
   padding 77px 0 200px 48px
 
 .answerBox
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 15px 20px;
-  margin-right 25px;
-  margin-bottom 30px;
-  width: 363px;
-  min-height: 56px;
-  background: #1B1C1D;
-  border: 0.25px solid #8BDFAF;
-  border-radius: 8px;
+  display flex
+  flex-direction row
+  justify-content center
+  align-items flex-start
+  padding 15px 20px
+  margin-right 25px
+  margin-bottom 30px
+  width 363px
+  min-height 56px
+  background #1B1C1D
+  border 0.25px solid #8BDFAF
+  border-radius 8px
 </style>
 
 <script lang="ts">
