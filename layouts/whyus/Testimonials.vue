@@ -1,55 +1,75 @@
 <template>
-  <div>
-    <b-carousel
-      id="carousel-1"
-      v-model="slide"
-      :interval="4000"
-      indicators
-      background="#0F0F0F"
-      style="text-shadow: 1px 1px 2px #333;"
+  <div class="container-fluid p-0">
+    <h1 class="mb-4">Testimonials</h1>
+    <carousel class="col-12"
+              :nav="false"
+              :items="3"
+              :margin="67"
     >
-      <h1>Testimonials</h1>
-      <b-carousel-slide
-      >
-        <div class="d-flex justify-content-between mb-5">
-          <div :class="$style.testimonialsBox" v-for="item in testimonialsContent" :key="item.item">
-            <b-avatar variant="info" :size="50" :src="item.icon" :class="$style.logo"></b-avatar>
-            <p class="body-2 m-0">
-              {{ item.text }}
-            </p>
-            <p class="body-1 m-0" :class="$style.name">
-              {{ item.name }}
-            </p>
-            <p :class="$style.role">
-              {{ item.role }}
-            </p>
-          </div>
+      <template v-for="item in testimonialsContents">
+        <div :class="$style.testimonialsBox" :key="item.text">
+          <b-avatar variant="info" :size="50" :src="item.icon" :class="$style.logo"></b-avatar>
+          <p class="body-2 m-0">
+            {{ item.text }}
+          </p>
+          <p class="body-1 m-0" :class="$style.name">
+            {{ item.name }}
+          </p>
+          <p :class="$style.role">
+            {{ item.role }}
+          </p>
         </div>
-      </b-carousel-slide>
-    </b-carousel>
+      </template>
+    </carousel>
   </div>
 </template>
 
+<style module lang="stylus">
+:global(.owl-dots)
+  margin-top 45px !important
+  padding-right 168px !important
+
+.sliderItem
+  padding 10px 22px
+  background-color: $brand-2
+  border-radius 8px
+
+
+.logo
+  margin-bottom 25px
+
+.name
+  font-weight 800 !important
+  margin-top 20px !important
+
+.role
+  font-size 14px
+  line-height 21px
+  font-weight 400
+
+.testimonialsBox
+  width 348px
+  height 412px
+  border-radius 12px
+  background-color #1B1C1D
+  padding 30px 25px 49px 25px
+  text-align left
+
+.sliderContainer
+  padding-bottom 120px
+</style>
+
 
 <script lang="ts">
-import {Vue, Component} from "nuxt-property-decorator";
+import {Vue, Component} from 'nuxt-property-decorator';
 
 const carousel = require('vue-owl-carousel');
 
-@Component({})
+@Component({
+  components: {carousel}
+})
 export default class Testimonials extends Vue {
-  slide: number = 0;
-  sliding: boolean = false;
-
-  onSlideStart() {
-    this.sliding = true
-  }
-
-  onSlideEnd() {
-    this.sliding = false
-  }
-
-  testimonialsContent: any[] = [
+  testimonialsContents: any[] = [
     {
       text: `“Polaris is being used to protect work-from-home services for more than 3,500 employees and collaborators of
               VNG. The system is developed by leading experts in Vietnam and provides features that are rarely found in
@@ -71,35 +91,6 @@ export default class Testimonials extends Vue {
       icon: require('@/assets/icons/nus.png'),
     },
   ]
-
 }
 </script>
 
-<style module lang="stylus">
-:global(.carousel-item)
-  margin-right 0 !important
-
-:global(.carousel-caption)
-  width 100% !important
-  position unset !important
-
-.logo
-  margin-bottom 25px
-
-.name
-  font-weight 800 !important
-  margin-top 20px !important
-
-.role
-  font-size 14px
-  line-height 21px
-  font-weight 400
-
-.testimonialsBox
-  width 348px
-  height 412px
-  border-radius 12px
-  background-color #1B1C1D
-  padding 30px 25px 49px 25px
-  text-align left
-</style>
