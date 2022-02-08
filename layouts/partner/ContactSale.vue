@@ -1,21 +1,37 @@
 <template>
   <div :class="$style.contactSalePanel">
     <b-row class="d-flex justify-content-between">
-      <h5 class="fw-500 col-8 black-text p-0">
-        Contact us at hello@polarisec.com for more information on how
-        we can combine efforts in bringing cybersecurity solutions to APAC
-      </h5>
-      <div class="black-text d-flex flex-wrap justify-content-center align-content-center col-3 fw-500">
-        <div>
-          <span>Contact sales</span>
-          <img src="@/assets/icons/black-arrow.png" class="p-0 mb-1 ml-2" alt="Kitten" height="15">
-        </div>
+      <div class="black-text d-inline-flex justify-content-between align-items-center"
+           :class="$style.contactSaleContainer">
+        <h5 class="fw-500 col-7 p-0">
+          Contact us at hello@polarisec.com for more information on how
+          we can combine efforts in bringing cybersecurity solutions to APAC
+        </h5>
+        <nuxt-link to="/contact" class="mr-5 p-0">
+          <div :class="$style.contact" class="fw-500">
+            Contact sales <span class="ml-2"><img src="@/assets/icons/call_made.png" alt="" width="24"
+                                                  height="24"></span>
+          </div>
+        </nuxt-link>
       </div>
     </b-row>
   </div>
 </template>
 
 <style module lang='stylus'>
+@import "@/styles/config.styl"
+
+.contactSaleContainer
+  background-color: $brand-2
+  padding 27px 64px 20px 59px
+  width 100%
+
+.contact
+  font-size 16px
+  line-height 21px
+  font-weight 600
+  color $text-1
+
 .contactSalePanel
   min-height 115px
   background-repeat: no-repeat
@@ -23,7 +39,6 @@
   background-position: center
   background-size cover
   background-color #8BDFAF
-  padding 20px 60px 0
 </style>
 
 <script lang="ts">

@@ -12,13 +12,11 @@
       </div>
       <carousel class="col-6"
                 :autoplay="partners.length > 3"
-                loop
                 autoWidth
                 :nav="false"
                 :dots="false"
                 :margin="22"
-                :autoWidth="true"
-                :class="$style.partners"
+                :items="3"
       >
         <template v-for="item in partners">
           <div :class="$style.box" :key="item.text">
