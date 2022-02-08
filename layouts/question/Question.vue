@@ -79,7 +79,7 @@ export default class Questions extends Vue {
     }
 
     if (Number(this.step) === 3) {
-      window.location.href = "/recommendation";
+      this.$router.replace('/recommendation')
       return;
     }
 
