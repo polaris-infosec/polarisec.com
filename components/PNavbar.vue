@@ -10,8 +10,8 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item-dropdown id="dropdown-1" text="Solutions" class="mr-4 pr-3 active">
-          <b-dropdown-item>Platform Access</b-dropdown-item>
-          <b-dropdown-item>Support Center</b-dropdown-item>
+          <b-dropdown-item href="https://polarisec.io/">Platform Access</b-dropdown-item>
+          <b-dropdown-item href="https://support.polarisec.com/portal/en/home">Support Center</b-dropdown-item>
         </b-nav-item-dropdown>
         <b-nav-item to="/whyus" class="active mr-4 pr-3">Why us</b-nav-item>
         <b-nav-item to="/partner" class="active mr-4 pr-3">Partners</b-nav-item>

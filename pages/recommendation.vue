@@ -5,9 +5,11 @@
       <p class="text-6">
         Based on the type of website you have and your needs, we recommend the following plan and add-ons.
       </p>
-      <p :class="$style.action" class="brand-2">
-        Start over ->
-      </p>
+      <a href="https://polarisec.io/">
+        <p :class="$style.action" class="brand-2">
+          Start over ->
+        </p>
+      </a>
     </div>
     <div class="d-flex" :class="$style.recommendedPlanPanel">
       <div class="col-3 mr-5">
@@ -15,10 +17,10 @@
           Recommended Plan
         </p>
         <div class="mb-4 mt-4 divide"></div>
-        <p class="text-8">
+        <p class="text-8 pt-2">
           {{ planLeftAttribute }} <span v-if="planRightAttribute">+</span> {{ planRightAttribute }}
         </p>
-        <p class="text-6">
+        <p class="text-6 pb-3">
           Advanced features and dedicated support.
         </p>
         <div class="mb-4 mt-4 divide"></div>
@@ -28,16 +30,18 @@
         <p-button class="col-12 mt-5" :gradient="1" text="Next" @click="onClick"/>
       </div>
       <div v-if="planRightAttribute === 'Add-On'" class="col-5 ml-5">
-        <p class="text-6">
+        <p class="text-6 pb-3">
           ADD-ONS AND PRODUCT RECOMMENDATIONS
         </p>
         <div :class="$style.box">
           <p class="body-1 font-weight-bold">
             {{ addOn }}
           </p>
-          <p class="brand-2" :class="$style.action">
-            Learn more ->
-          </p>
+          <nuxt-link to="/pricing">
+            <p class="brand-2" :class="$style.action">
+              Learn more ->
+            </p>
+          </nuxt-link>
         </div>
       </div>
     </div>

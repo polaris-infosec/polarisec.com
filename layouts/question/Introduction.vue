@@ -4,9 +4,11 @@
       Some quick  questions for
       personalized recommendations
     </p>
+    <nuxt-link to="/pricing">
     <p class="brand-2 mt-5 pt-3" :class="$style.action">
       Skip questions and see all plans ->
     </p>
+    </nuxt-link>
   </div>
 </template>
 <style module lang="stylus">
