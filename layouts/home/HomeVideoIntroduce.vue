@@ -2,13 +2,15 @@
   <div class="container-fluid p-0">
     <div :class="$style.container">
       <div :class="$style.rowContainer" class="row">
-        <div class="col-sm-7 px-0" :class="$style.videoContainer">
-          <div :class="$style.videoSubContainer">
-            <iframe src="https://www.youtube.com/embed/J_jbDrFq4AM"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen/>
+        <div class="col-sm-7 row">
+          <div class="col-sm-12 col-lg-10 col-xl-9 px-0" :class="$style.videoContainer">
+            <div :class="$style.videoSubContainer">
+              <iframe src="https://www.youtube.com/embed/J_jbDrFq4AM"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen/>
+            </div>
           </div>
         </div>
         <div class="col-sm-5" :class="$style.textContainer">
@@ -29,7 +31,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height 681px
     padding 100px 139px 226px 194px
 
   .rowContainer
@@ -40,7 +41,7 @@
     //opacity 0.75
     //filter: blur(75px)
     border-radius: 12px
-    height 100%
+    height 351px
 
     iframe
       border-radius 8px
