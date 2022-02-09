@@ -5,7 +5,7 @@
         <img src="~/assets/images/polaris-logo.png" class="d-inline-block align-baseline mt-2" alt="Kitten" height="30"
              width="175">
         <div class="mt-4 body-3">
-          <p class="brand-2 mb-3">hello@polarisec.com</p>
+          <a href="mailto:hello@polarisec.com"><p class="brand-2 mb-3">hello@polarisec.com</p></a>
           <p class="mb-1">
           <span class="brand-2">
             Singapore:
