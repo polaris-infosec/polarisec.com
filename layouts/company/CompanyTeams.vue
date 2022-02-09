@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid px-0">
-    <div :class="$style.container">
+  <div class="container-fluid px-0" :class="$style.container">
+    <div class="app-width" :class="$style.bodyContainer">
       <div class="row">
         <div class="col-sm-3">
           <h2>Leadership</h2>
@@ -8,11 +8,12 @@
         <div class="col-sm-9">
           <div class="row justify-content-center">
             <template v-for="leader in leaderships">
-              <div :key="leader.name" class="col-sm-6 col-lg-5  d-inline-flex align-items-center mr-4" :class="$style.leaderContainer">
+              <div :key="leader.name" class="col-sm-6 col-lg-5  d-inline-flex align-items-center mr-4"
+                   :class="$style.leaderContainer">
                 <img :src="leader.img" alt="" width="87" height="87">
                 <div class="ml-3">
-                  <div :class="$style.name" class="body-1 mb-1">{{leader.name}}</div>
-                  <div :class="$style.position">{{leader.position}}</div>
+                  <div :class="$style.name" class="body-1 mb-1">{{ leader.name }}</div>
+                  <div :class="$style.position">{{ leader.position }}</div>
                 </div>
               </div>
             </template>
@@ -26,11 +27,12 @@
         <div class="col-sm-9">
           <div class="row justify-content-center">
             <template v-for="advisor in advisors">
-              <div :key="advisor.name" class="col-sm-5  d-inline-flex align-items-center mr-4" :class="$style.leaderContainer">
+              <div :key="advisor.name" class="col-sm-5  d-inline-flex align-items-center mr-4"
+                   :class="$style.leaderContainer">
                 <img :src="advisor.img" alt="" width="87" height="87">
                 <div class="ml-3">
-                  <div :class="$style.name" class="body-1 mb-1">{{advisor.name}}</div>
-                  <div :class="$style.position">{{advisor.position}}</div>
+                  <div :class="$style.name" class="body-1 mb-1">{{ advisor.name }}</div>
+                  <div :class="$style.position">{{ advisor.position }}</div>
                 </div>
               </div>
             </template>
@@ -42,35 +44,37 @@
 </template>
 
 <style module lang='stylus'>
-  @import "@/styles/config.styl"
+@import "@/styles/config.styl"
 
-  .container
-    background-image url("@/assets/images/company/team-background.png")
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding 93px 152px 121px 145px
+.container
+  background-image url("@/assets/images/company/team-background.png")
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    h2
-      color $text-8
+.bodyContainer
+  padding 93px 152px 121px 145px
 
-  .leaderContainer
-    margin-bottom 30px
-    border-radius 18px
-    background: #141414;
-    box-shadow: 0 0 19.5012px rgba(0, 0, 0, 0.25);
-    padding 18px 16px
-
-  .advisorContainer
-    margin-top 69px
-
-  .position
-    color $text-3
-    font-size 14px
-    line-height 25px
-
-  .name
+  h2
     color $text-8
+
+.leaderContainer
+  margin-bottom 30px
+  border-radius 18px
+  background: #141414;
+  box-shadow: 0 0 19.5012px rgba(0, 0, 0, 0.25);
+  padding 18px 16px
+
+.advisorContainer
+  margin-top 69px
+
+.position
+  color $text-3
+  font-size 14px
+  line-height 25px
+
+.name
+  color $text-8
 
 </style>
 

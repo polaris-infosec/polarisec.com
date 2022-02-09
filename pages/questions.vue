@@ -1,20 +1,25 @@
 <template>
-  <div :class="$style.questionsPanel" class="d-flex" id="questions">
-    <introduction class="col-3"/>
-    <question v-if="step === 1" class="col-8" :step="step" :answers="question1.answers" :question="question1.question"
-              @nextStep="nextStep" @previousStep="previousStep"/>
-    <question v-if="step === 2" class="col-8" :step="step" :answers="question2.answers" :question="question2.question"
-              @nextStep="nextStep" @previousStep="previousStep"/>
-    <question v-if="step === 3" class="col-8" :step="step" :answers="question3.answers" :question="question3.question"
-              @nextStep="nextStep" @previousStep="previousStep"/>
+  <div :class="$style.questionsPanel" id="questions">
+    <div :class="$style.questionsSection" class="d-flex app-width">
+      <introduction class="col-3"/>
+      <question v-if="step === 1" class="col-8" :step="step" :answers="question1.answers" :question="question1.question"
+                @nextStep="nextStep" @previousStep="previousStep"/>
+      <question v-if="step === 2" class="col-8" :step="step" :answers="question2.answers" :question="question2.question"
+                @nextStep="nextStep" @previousStep="previousStep"/>
+      <question v-if="step === 3" class="col-8" :step="step" :answers="question3.answers" :question="question3.question"
+                @nextStep="nextStep" @previousStep="previousStep"/>
+    </div>
   </div>
 </template>
 <style module lang="stylus">
-.questionsPanel
-  background-color #0F0F0F
+.questionsSection
   padding-left 152px
   box-sizing border-box
   height 761px
+
+.questionsPanel
+  background-color #0F0F0F
+
 </style>
 
 <script lang="ts">

@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid">
-    <div :class="$style.bannerContainer" class="row align-items-center">
+  <div class="container-fluid" :class="$style.bannerContainer">
+    <div class="row align-items-center app-width h-100">
       <div :class="$style.banner">
         <h1>Web Protection that Never Sleeps</h1>
         <h3>Always On Guard</h3>
@@ -16,29 +16,29 @@
 </template>
 
 <style module lang='stylus'>
-  @import "@/styles/config.styl"
+@import "@/styles/config.styl"
 
-  .bannerContainer
-    height 820px
-    background-image url("@/assets/images/home/banner-home.png")
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.bannerContainer
+  height 820px
+  background-image url("@/assets/images/home/banner-home.png")
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  .banner
-    margin-left 152px
+.banner
+  margin-left 152px
 
-    h1
-      margin-bottom 16px
-      max-width 997px
+  h1
+    margin-bottom 16px
+    max-width 997px
 
-    h3
-      margin-bottom 45px
-
-  .bannerText
-    max-width 878px
-    color $text-7
+  h3
     margin-bottom 45px
+
+.bannerText
+  max-width 878px
+  color $text-7
+  margin-bottom 45px
 
 </style>
 

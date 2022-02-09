@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid p-0">
-    <div :class="$style.container">
+  <div class="container-fluid p-0" :class="$style.container">
+    <div class="app-width" :class="$style.bodyContainer">
       <h2>Sign up for our newsletter</h2>
       <h5>Be the first to receive new feature and product updates.</h5>
       <p-button text="Sign up" @click="onClick"/>
@@ -9,24 +9,26 @@
 </template>
 
 <style module lang='stylus'>
-  @import "@/styles/config.styl"
+@import "@/styles/config.styl"
 
-  .container
-    background-color: #0F0F0F;
-    padding 58px 0 101px
-    text-align center
+.container
+  background-color: #0F0F0F;
 
-    h2
-      color $text-8
+.bodyContainer
+  padding 58px 0 101px
+  text-align center
 
-    h5
-      font-weight normal
-      color $text-6
-      margin-top 19px
-      margin-bottom 49px
+  h2
+    color $text-8
 
-  .textContainer
-    padding-right 60px
+  h5
+    font-weight normal
+    color $text-6
+    margin-top 19px
+    margin-bottom 49px
+
+.textContainer
+  padding-right 60px
 
 </style>
 

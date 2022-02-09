@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid p-0">
-    <div :class="$style.container">
+  <div class="container-fluid p-0" :class="$style.container">
+    <div class="app-width" :class="$style.bodyContainer">
       <h2 :class="$style.sliderTitle" class="text-sm-center">Featured by:</h2>
       <carousel :class="$style.sliderContainer"
                 autoplay
@@ -33,6 +33,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+.bodyContainer
   padding 90px 60px 0
 
   .sliderTitle

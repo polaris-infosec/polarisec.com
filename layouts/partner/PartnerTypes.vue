@@ -1,34 +1,38 @@
 <template>
   <div :class="$style.partnerTypesPanel">
-    <b-row class="d-flex justify-content-between">
-      <h3 class="col-2">
-        Why choose
-        Polaris
-      </h3>
-      <div class="col-9 d-flex justify-content-between flex-wrap">
-        <div class="col-5 p-0 mb-5" v-for="item in partnerType">
-          <div class="d-inline">
-            <h5 class="brand-2">
-              {{item.title}}
+    <div :class="$style.partnerTypesSection" class="app-width">
+      <b-row class="d-flex justify-content-between">
+        <h3 class="col-2">
+          Why choose
+          Polaris
+        </h3>
+        <div class="col-9 d-flex justify-content-between flex-wrap">
+          <div class="col-5 p-0 mb-5" v-for="item in partnerType">
+            <div class="d-inline">
+              <h5 class="brand-2">
+                {{ item.title }}
+              </h5>
+            </div>
+            <h5 class="mt-1 body-1">
+              {{ item.content }}
             </h5>
           </div>
-          <h5 class="mt-1 body-1">
-            {{ item.content }}
-          </h5>
         </div>
-      </div>
-    </b-row>
+      </b-row>
+    </div>
   </div>
 </template>
 
 <style module lang='stylus'>
+.partnerTypesSection
+  padding 70px 60px 28px 60px
+
 .partnerTypesPanel
   background-repeat: no-repeat
   background-attachment: fixed
   background-position: center
   background-size cover
   background-color #0F0F0F
-  padding 70px 60px 28px 60px
 </style>
 
 <script lang="ts">
