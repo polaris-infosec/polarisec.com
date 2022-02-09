@@ -8,7 +8,7 @@
         “Collaborating to protect our community through <span class="brand-2">raising cybersecurity awareness and capabilities.</span>”
       </h2>
     </b-row>
-    <div :class="$style.divide" class="mb-4 mt-5"></div>
+    <div :class="$style.divide" class="mb-4 mt-5 col-12"></div>
 
     <b-row class="d-flex justify-content-between">
       <h3 class="col-2">
@@ -28,7 +28,6 @@
 
 <style module lang='stylus'>
 .divide
-  width 100%
   border-bottom 0.03em solid #55677E
   margin-bottom 16px
 
