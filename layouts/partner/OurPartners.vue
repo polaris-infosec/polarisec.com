@@ -21,10 +21,10 @@
         <template v-for="item in partners">
           <div :class="$style.box" :key="item.text">
             <div :class="$style.subBox" class="d-flex flex-wrap justify-content-center align-content-center p-0 col-12">
-              <b-avatar variant="info" :size="115" :src="item.icon"></b-avatar>
+              <b-avatar :class="$style.logo" variant="info" :size="115" :src="item.icon"></b-avatar>
             </div>
             <span
-              class="body-1 col-12 font-weight-bold d-flex flex-wrap justify-content-center align-content-center mt-3">
+              class="body-1 col-12 font-weight-bold d-flex flex-wrap justify-content-center mt-3">
                    {{ item.text }}
           </span>
           </div>
@@ -35,10 +35,18 @@
 </template>
 
 <style module lang='stylus'>
+.logo
+  margin 0
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
+
 .subBox
   width 221px
   height 251px
   background-color #000001
+  position relative
 
   img
     width auto !important
