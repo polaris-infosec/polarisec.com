@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid">
-    <div :class="$style.bannerContainer" class="row">
+  <div class="container-fluid" :class="$style.bannerContainer">
+    <div class="row app-width">
       <div :class="$style.banner">
         <h1>Simplifying the <b>protection of your critical assets</b> from the world’s greatest cyber threats.</h1>
       </div>

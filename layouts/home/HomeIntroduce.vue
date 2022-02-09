@@ -1,13 +1,13 @@
 <template>
-  <div class="container-fluid p-0">
-    <div :class="$style.container">
+  <div class="container-fluid p-0" :class="$style.container">
+    <div class="app-width" :class="$style.bodyContainer">
       <h2>An experience you'd expect from a professional tool.</h2>
       <div class="row">
         <template v-for="introduce in introduces">
           <div :class="$style.introduceContainer" :key="introduce.img" class="col">
             <img :class="$style.img" :src="introduce.img" alt="">
-            <h5 :class="$style.introduceTitle">{{introduce.title}}</h5>
-            <div :class="$style.introduceText" class="body-2">{{introduce.text}}</div>
+            <h5 :class="$style.introduceTitle">{{ introduce.title }}</h5>
+            <div :class="$style.introduceText" class="body-2">{{ introduce.text }}</div>
           </div>
         </template>
       </div>
@@ -16,41 +16,43 @@
 </template>
 
 <style module lang='stylus'>
-  @import "@/styles/config.styl"
+@import "@/styles/config.styl"
 
-  .container
-    background-color $background-1
-    padding 100px 140px
+.container
+  background-color $background-1
 
-    h2
-      max-width 877px
-      text-align center
-      margin 0 auto 99px
+.bodyContainer
+  padding 100px 140px
 
-  .img
-    width 150px
-    height 150px
-    position absolute
-    top -50px
-    left 50%
-    transform: translate(-50%);
+  h2
+    max-width 877px
+    text-align center
+    margin 0 auto 99px
 
-  .introduceContainer
-    background-color: #1B1C1D
-    border-radius 12px
-    margin 0 18px
-    padding 0 29px 46px
-    position relative
-    width fit-content
+.img
+  width 150px
+  height 150px
+  position absolute
+  top -50px
+  left 50%
+  transform: translate(-50%);
 
-  .introduceTitle
-    font-weight bold
-    color $brand-2
-    margin-top 112px
-    margin-bottom 15px
+.introduceContainer
+  background-color: #1B1C1D
+  border-radius 12px
+  margin 0 18px
+  padding 0 29px 46px
+  position relative
+  width fit-content
 
-  .introduceText
-    color $text-7
+.introduceTitle
+  font-weight bold
+  color $brand-2
+  margin-top 112px
+  margin-bottom 15px
+
+.introduceText
+  color $text-7
 
 </style>
 
