@@ -28,9 +28,11 @@
             <div class="body-6">
               SOLUTION
               <div class="d-flex flex-column mt-4 body-5">
-                <span>
+                <a href="https://polarisec.io" target="_blank">
+                <span class="color-text-7">
                   Platform Access
                 </span>
+                </a>
                 <a href="https://support.polarisec.com" target="_blank">
                 <span class="color-text-7">
                 Support Center
