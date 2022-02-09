@@ -1,15 +1,23 @@
 <template>
   <div class="container-fluid px-0">
-    <div :class="$style.container" class="row mx-0">
-      <div class="col-sm-2 px-0">
-        <ol style="list-style-type: none" class="pl-0">
-          <li class="active"><nuxt-link :to="{path: '/pricing', hash: '#overview'}">Overview</nuxt-link></li>
-          <li><nuxt-link :to="{path: '/pricing', hash: '#add-on'}">Add-ons</nuxt-link></li>
-          <li><nuxt-link :to="{path: '/pricing', hash: '#faq'}">FAQs</nuxt-link></li>
-        </ol>
-      </div>
-      <div class="col-sm-10">
-        <pricing-overview id="overview" :is-monthly-type="isMonthlyType"/>
+    <div :class="$style.container">
+      <div :class="$style.section" class="row app-width">
+        <div class="col-sm-2 px-0">
+          <ol style="list-style-type: none" class="pl-0">
+            <li class="active">
+              <nuxt-link :to="{path: '/pricing', hash: '#overview'}">Overview</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link :to="{path: '/pricing', hash: '#add-on'}">Add-ons</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link :to="{path: '/pricing', hash: '#faq'}">FAQs</nuxt-link>
+            </li>
+          </ol>
+        </div>
+        <div class="col-sm-10">
+          <pricing-overview id="overview" :is-monthly-type="isMonthlyType"/>
+        </div>
       </div>
     </div>
     <pricing-add-ons id="add-on" :is-monthly-type="isMonthlyType"/>
@@ -19,9 +27,7 @@
 
 <style module lang='stylus'>
 @import "@/styles/config.styl"
-
-.container
-  background-color: $background-1
+.section
   padding 70px 61px 0 60px
 
   li
@@ -32,6 +38,9 @@
 
   li a
     color #D3DCE6 !important
+
+.container
+  background-color: $background-1
 
 .addOnContainer
   background: $background-2

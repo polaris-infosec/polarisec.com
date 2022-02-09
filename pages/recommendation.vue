@@ -1,47 +1,52 @@
 <template>
   <div>
     <div :class="$style.introPanel">
-      <h2>Here’s your personalized recommendation</h2>
-      <p class="text-6">
-        Based on the type of website you have and your needs, we recommend the following plan and add-ons.
-      </p>
-      <a href="https://polarisec.io/">
-        <p :class="$style.action" class="brand-2">
-          Start over ->
-        </p>
-      </a>
-    </div>
-    <div class="d-flex" :class="$style.recommendedPlanPanel">
-      <div class="col-3 mr-5">
+      <div class="app-width" :class="$style.introSection">
+        <h2>Here’s your personalized recommendation</h2>
         <p class="text-6">
-          Recommended Plan
+          Based on the type of website you have and your needs, we recommend the following plan and add-ons.
         </p>
-        <div class="mb-4 mt-4 divide"></div>
-        <p class="text-8 pt-2">
-          {{ planLeftAttribute }} <span v-if="planRightAttribute">+</span> {{ planRightAttribute }}
-        </p>
-        <p class="text-6 pb-3">
-          Advanced features and dedicated support.
-        </p>
-        <div class="mb-4 mt-4 divide"></div>
-        <h5 class="fw-800">
-          Contact sales
-        </h5>
-        <p-button class="col-12 mt-5" :gradient="1" text="Next" @click="onClick"/>
-      </div>
-      <div v-if="planRightAttribute === 'Add-On'" class="col-5 ml-5">
-        <p class="text-6 pb-3">
-          ADD-ONS AND PRODUCT RECOMMENDATIONS
-        </p>
-        <div :class="$style.box">
-          <p class="body-1 font-weight-bold">
-            {{ addOn }}
+        <a href="https://polarisec.io/">
+          <p :class="$style.action" class="brand-2">
+            Start over ->
           </p>
-          <nuxt-link to="/pricing">
-            <p class="brand-2" :class="$style.action">
-              Learn more ->
+        </a>
+      </div>
+    </div>
+
+    <div :class="$style.recommendedPlanPanel">
+      <div class="app-width d-flex" :class="$style.recommendedPlanSection">
+        <div class="col-3 mr-5">
+          <p class="text-6">
+            Recommended Plan
+          </p>
+          <div class="mb-4 mt-4 divide"></div>
+          <p class="text-8 pt-2">
+            {{ planLeftAttribute }} <span v-if="planRightAttribute">+</span> {{ planRightAttribute }}
+          </p>
+          <p class="text-6 pb-3">
+            Advanced features and dedicated support.
+          </p>
+          <div class="mb-4 mt-4 divide"></div>
+          <h5 class="fw-800">
+            Contact sales
+          </h5>
+          <p-button class="col-12 mt-5" :gradient="1" text="Next" @click="onClick"/>
+        </div>
+        <div v-if="planRightAttribute === 'Add-On'" class="col-5 ml-5">
+          <p class="text-6 pb-3">
+            ADD-ONS AND PRODUCT RECOMMENDATIONS
+          </p>
+          <div :class="$style.box">
+            <p class="body-1 font-weight-bold">
+              {{ addOn }}
             </p>
-          </nuxt-link>
+            <nuxt-link to="/pricing">
+              <p class="brand-2" :class="$style.action">
+                Learn more ->
+              </p>
+            </nuxt-link>
+          </div>
         </div>
       </div>
     </div>
@@ -66,17 +71,21 @@
   font-size 16px
   line-height 21px
 
+.introSection
+  padding 76px 0 82px 166px
+
 .introPanel
   background-repeat: no-repeat
   background-attachment: fixed
   background-position: center
   background-size cover
   background-image url("assets/background/recommendation-bg.png")
-  padding 76px 0 82px 166px
+
+.recommendedPlanSection
+  padding 59px 0 185px 152px
 
 .recommendedPlanPanel
   background-color #0F0F0F
-  padding 59px 0 185px 152px
 
 </style>
 
