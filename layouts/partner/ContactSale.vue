@@ -4,7 +4,7 @@
       <div class="black-text d-inline-flex justify-content-between align-items-center"
            :class="$style.contactSaleContainer">
         <h5 class="fw-500 col-7 p-0">
-          Contact us at hello@polarisec.com for more information on how
+          Contact us at <span><a href="mailto:hello@polarisec.com" class="black-text">hello@polarisec.com</a></span> for more information on how
           we can combine efforts in bringing cybersecurity solutions to APAC
         </h5>
         <nuxt-link to="/contact" class="mr-5 p-0">
