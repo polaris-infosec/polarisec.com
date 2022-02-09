@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.contactSalePanel">
+  <div :class="$style.contactSalePanel" class="col-12">
     <b-row class="d-flex justify-content-between">
       <div class="black-text d-inline-flex justify-content-between align-items-center"
            :class="$style.contactSaleContainer">
@@ -24,7 +24,6 @@
 .contactSaleContainer
   background-color: $brand-2
   padding 27px 64px 20px 59px
-  width 100%
 
 .contact
   font-size 16px
