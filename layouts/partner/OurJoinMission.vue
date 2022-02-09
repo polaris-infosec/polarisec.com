@@ -1,0 +1,51 @@
+<template>
+  <div :class="$style.missionPanel">
+    <b-row>
+      <p class="body-2 brand-2 col-12">
+        Our Joint Mission
+      </p>
+      <h2 class="col-11 mb-2">
+        “Collaborating to protect our community through <span class="brand-2">raising cybersecurity awareness and capabilities.</span>”
+      </h2>
+    </b-row>
+    <div :class="$style.divide" class="mb-4 mt-5"></div>
+
+    <b-row class="d-flex justify-content-between">
+      <h3 class="col-2">
+        Program Goals
+      </h3>
+      <h3 class="col-4">
+        Provide <span class="brand-2">reliable</span> and <span class="brand-2">knowledgeable</span> support to partners
+        and customers
+      </h3>
+      <h3 class="col-4">
+        Expand <span class="brand-2">networks</span> and <span class="brand-2">capabilities</span> to grow service and
+        value
+      </h3>
+    </b-row>
+  </div>
+</template>
+
+<style module lang='stylus'>
+.divide
+  width 100%
+  border-bottom 0.03em solid #55677E
+  margin-bottom 16px
+
+.missionPanel
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-position: center
+  background-size cover
+  background-color #0F0F0F
+  padding 70px 60px 121px 60px
+</style>
+
+<script lang="ts">
+import {Component, Vue} from 'nuxt-property-decorator';
+
+@Component({})
+export default class OurJoinMission extends Vue {
+
+}
+</script>
