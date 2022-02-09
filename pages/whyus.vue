@@ -119,7 +119,7 @@ export default class WhyUs extends Vue {
 <style module lang="stylus">
 @import "@/styles/config.styl"
 .testimonialsPanel
-  padding 71px 0px 104px 152px
+  padding 71px 85px 104px 152px
   background-repeat: no-repeat
   background-attachment: fixed
   background-position: center
