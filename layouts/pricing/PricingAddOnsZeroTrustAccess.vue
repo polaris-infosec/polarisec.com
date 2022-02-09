@@ -5,8 +5,8 @@
       <div class="d-inline-flex justify-content-center align-items-center">
         <h4 :class="$style.price">{{ isMonthlyType ? '$4' : "$52" }}</h4>
         <div :class="$style.priceDetail">
+          <div>per user</div>
           <div>per domain</div>
-          <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
         </div>
       </div>
       <p-button :class="$style.btn"
@@ -32,6 +32,8 @@
       </template>
     </div>
     <div :class="$style.comingsoon" class="col-sm-12 px-0">*Coming Soon</div>
+    <div :class="$style.comingsoon" class="col-sm-12 px-0">*First 15 active users free</div>
+    <div :class="$style.comingsoon" class="col-sm-12 px-0">*The price is count on active users in 1 month.</div>
   </div>
 </template>
 
