@@ -94,7 +94,7 @@ export default class HomeNewsletter extends Vue {
       this.isLoading = true;
       let result = await this.$axios.$post(`https://polarisec.us4.list-manage.com/subscribe/post-json?u=696c092114cae4f72b6167d14&id=2b21421c4e&c=jQuery19002007047022959092_1644404259280&EMAIL=${this.email}&b_696c092114cae4f72b6167d14_2b21421c4e=&_=1644404259282`);
       this.hintText = result.data.msg;
-      this.hintText = true;
+      this.showHint = true;
       this.isLoading = false;
     } catch (e) {
       await this.$router.replace('/404')
