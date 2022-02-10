@@ -16,10 +16,15 @@
           </div>
         </template>
       </carousel>
-      <div :class="$style.seeItContainer">
-        <h2>See it in action</h2>
-        <h5 :class="$style.actionText">Request a free demo today and stay ahead of <br> the cyberthreat evolution.</h5>
-        <p-button text="Request a Demo" @click="onClick"/>
+      <div :class="$style.seeItContainer" class="row">
+        <div class="col-sm-6">
+          <h2>See it in action</h2>
+          <h5 :class="$style.actionText">Request a free demo today and stay ahead of <br> the cyberthreat evolution.</h5>
+          <p-button text="Request a Demo" @click="onClick"/>
+        </div>
+        <div class="col-sm-6 px-0" :class="$style.dashboardImg">
+          <img src="@/assets/images/home/dashboard-lg.png" height="333" alt="">
+        </div>
       </div>
     </div>
   </div>
@@ -42,14 +47,14 @@
 
 .sliderItem
   padding 10px 22px
-  background-color: $brand-2
+  background-color: white
   border-radius 8px
 
 .sliderContainer
   padding-bottom: 115px
 
 .seeItContainer
-  padding 84px 0 67px 60px
+  padding 84px 0 0 60px
   border-top-left-radius 10px
   border-top-right-radius 10px
   background-image url("@/assets/images/home/see-it-in-action.png")
@@ -61,6 +66,20 @@
   margin-top 19px
   margin-bottom: 39px;
   font-weight 500
+
+.dashboardImg
+  border-top-left-radius 12px
+  border-top 15px solid #ffffff33
+  border-left 15px solid #ffffff33
+
+  img
+    border-top-left-radius 12px
+    margin-right 10px
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
 
 </style>
 

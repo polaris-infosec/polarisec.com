@@ -68,7 +68,7 @@ export default class WhyUs extends Vue {
   analyticContent: any[] = [
     {
       title: '800%',
-      text: 'In 2021, Web Application attacks are up <b>800%</b>',
+      text: 'In 2021, Web Application attacks are up <b>800%</b>.',
       source: '(source: CDNetworks)',
     },
     {

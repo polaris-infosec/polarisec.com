@@ -386,7 +386,7 @@ export default class PricingAddOnsService extends Vue {
           ],
         },
         {
-          title: 'Support for Executive Management meeting',
+          title: 'Support for Executive Management meetings',
           supports: [
             {
               isSupport: false,

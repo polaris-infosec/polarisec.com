@@ -8,17 +8,17 @@
           Value added services allow you to further customize and enhance your web application protection capabilities.
         </div>
         <pricing-add-ons-table :is-monthly-type="isMonthlyType"/>
-        <h5 class="color-text-6 ml-4">Managed Security Services Add-on</h5>
+        <h5 class="color-text-6 ml-4 font-weight-bold">Managed Security Services Add-on</h5>
         <div class="body-2 ml-4 color-text-6">Take your proactive posture one step further by having Polaris stand watch over your web security. Our Security Operations Center (SOC) analysts will monitor your web activity for you, automatically mitigating threats in real-time. Allow us to monitor your web presence and serve as your guard so you can focus on what really matters - your people and your business.</div>
         <pricing-add-ons-service :is-monthly-type="isMonthlyType"/>
         <div class="row">
           <div class="col mr-4">
-            <h5 class="color-text-6 mx-4">Threat Intelligence Add-On</h5>
+            <h5 class="color-text-6 mx-4 font-weight-bold">Threat Intelligence Add-On</h5>
             <div class="body-2 color-text-6 mx-4">Increase your oversight into what is going on with your domain and the risks it faces. Real time intelligence let’s you know who is doing what, when they’re doing it, and where they’re doing it so that you can take action immediately.</div>
             <pricing-add-ons-threat-intelligence :is-monthly-type="isMonthlyType"/>
           </div>
           <div class="col ml-4">
-            <h5 class="color-text-6 mx-4">Zero Trust Access Add-On</h5>
+            <h5 class="color-text-6 mx-4 font-weight-bold">Zero Trust Access Add-On</h5>
             <div class="body-2 color-text-6 mx-4">Maintain greater control over your security posture by detailing who has access to your platform and what they can do with it.</div>
             <pricing-add-ons-zero-trust-access :is-monthly-type="isMonthlyType"/>
           </div>

@@ -316,7 +316,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'PI Blacklist/Whitelist',
+          title: 'IP Blacklist/Whitelist',
           info: 'List specific IP addresses that are blocked or allowed',
           isExpand: false,
           supports: [

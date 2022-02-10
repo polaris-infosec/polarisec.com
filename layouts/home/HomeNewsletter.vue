@@ -3,7 +3,15 @@
     <div class="app-width" :class="$style.bodyContainer">
       <h2>Sign up for our newsletter</h2>
       <h5>Be the first to receive new feature and product updates.</h5>
-      <p-button text="Sign up" @click="onClick"/>
+      <div class="row justify-content-center">
+        <p-input class="text-left"
+                 v-model.trim="email"
+                 type="email"
+                 required
+                 :hint="hintText"
+                 placeholder="Your Email"/>
+        <p-button :text="buttonText" @click="onClick"/>
+      </div>
     </div>
   </div>
 </template>
@@ -27,6 +35,18 @@
     margin-top 19px
     margin-bottom 49px
 
+  button
+    height fit-content
+    margin-left 24px
+
+  input
+    background: #374b61 !important
+    font-size: 1.125rem
+    border-radius: 4px;
+    width: 280px
+    height 52px
+    color white !important
+
 .textContainer
   padding-right 60px
 
@@ -35,14 +55,51 @@
 <script lang="ts">
 import {Component, Vue} from 'nuxt-property-decorator'
 import PButton from "~/components/PButton.vue";
+import PInput from "~/components/PInput.vue";
 
 @Component({
-  components: {PButton}
+  components: {PInput, PButton}
 })
 export default class HomeNewsletter extends Vue {
+  email: string = '';
+  hintText: string = '';
+  showHint: boolean = false;
+  isLoading: boolean = false;
 
-  onClick() {
-    window.open('https://polarisec.io/', '_blank');
+  get buttonText() {
+    return this.isLoading ? 'Sending...' : 'Subscribe';
+  }
+
+  validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+
+  async onClick() {
+    if (this.isLoading) return;
+    if (!this.email) {
+      this.hintText = 'This field is required.';
+      this.showHint = true;
+      return;
+    }
+    if (!this.validateEmail(this.email)) {
+      this.hintText = 'Please enter a valid email address.';
+      this.showHint = true;
+      return;
+    }
+    try {
+      this.isLoading = true;
+      let result = await this.$axios.$post(`https://polarisec.us4.list-manage.com/subscribe/post-json?u=696c092114cae4f72b6167d14&id=2b21421c4e&c=jQuery19002007047022959092_1644404259280&EMAIL=${this.email}&b_696c092114cae4f72b6167d14_2b21421c4e=&_=1644404259282`);
+      this.hintText = result.data.msg;
+      this.hintText = true;
+      this.isLoading = false;
+    } catch (e) {
+      await this.$router.replace('/404')
+    }
+    this.showHint = false;
   }
 
 }
