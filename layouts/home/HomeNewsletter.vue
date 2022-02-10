@@ -70,7 +70,7 @@ export default class HomeNewsletter extends Vue {
     return this.isLoading ? 'Sending...' : 'Subscribe';
   }
 
-  validateEmail = (email) => {
+  validateEmail: any = (email) => {
     return String(email)
       .toLowerCase()
       .match(
