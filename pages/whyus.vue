@@ -1,55 +1,61 @@
 <template>
   <div class="container-fluid body-1 p-0">
     <div :class="$style.container">
-      <div>
-        <h1>Why us</h1>
-      </div>
-      <div class=" d-flex justify-content-between mt-5">
-        <div class="col-sm-4 p-0 pr-5 pl-1">
-          Polaris is your <span class="highlight-text">premier local solution</span> with local support, dedicated to
-          providing users with a first rate security service.
+      <div :class="$style.section" class="app-width">
+        <div>
+          <h1>Why us</h1>
         </div>
-
-        <div class="col-sm-4 p-0 pr-5 pl-1">
-          We understand that cyber security can sometimes be overly complex and seek to simplify the process, <span
-          class="highlight-text">making it accessible to anyone, anywhere.</span>
-        </div>
-
-        <div class="col-sm-4 p-0 pr-5 pl-1">
-          We’re <span class="highlight-text">scalable at every level</span> from the first time cyber user to the
-          seasoned veteran, addressing the concerns of small businesses and enterprises alike.
-        </div>
-      </div>
-
-      <div :class="$style.divide" class="mb-3 mt-5"></div>
-
-      <div class="d-flex justify-content-center p-0 body-1 flex-wrap">
-        <div v-for="item in serviceContent" :key="item.icon" class="p-0 col-sm-4 pr-5 pl-1 mt-5">
-          <div class="d-inline">
-            <img :src="item.icon" class="d-inline-block align-baseline p-0" alt="Kitten" height="48" width="48">
+        <div class=" d-flex justify-content-between mt-5">
+          <div class="col-sm-4 p-0 pr-5 pl-1">
+            Polaris is your <span class="highlight-text">premier local solution</span> with local support, dedicated to
+            providing users with a first rate security service.
           </div>
-          <p class="mt-1">
-            {{ item.text }}
-          </p>
+
+          <div class="col-sm-4 p-0 pr-5 pl-1">
+            We understand that cyber security can sometimes be overly complex and seek to simplify the process, <span
+            class="highlight-text">making it accessible to anyone, anywhere.</span>
+          </div>
+
+          <div class="col-sm-4 p-0 pr-5 pl-1">
+            We’re <span class="highlight-text">scalable at every level</span> from the first time cyber user to the
+            seasoned veteran, addressing the concerns of small businesses and enterprises alike.
+          </div>
+        </div>
+
+        <div :class="$style.divide" class="mb-3 mt-5"></div>
+
+        <div class="d-flex justify-content-center p-0 body-1 flex-wrap">
+          <div v-for="item in serviceContent" :key="item.icon" class="p-0 col-sm-4 pr-5 pl-1 mt-5">
+            <div class="d-inline">
+              <img :src="item.icon" class="d-inline-block align-baseline p-0" alt="Kitten" height="48" width="48">
+            </div>
+            <p class="mt-1">
+              {{ item.text }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div :class="$style.analyticPanel" class="d-flex">
-      <div v-for="item in analyticContent" :key="item.title" class="p-0 col-sm-4 pr-5 pl-1 black-text">
-        <h1 class="p-0 mb-2">
-          {{ item.title }}
-        </h1>
-        <p v-html="item.text" class="m-0">
-        </p>
-        <i>
-          {{ item.source }}
-        </i>
+    <div :class="$style.analyticPanel">
+      <div :class="$style.analyticSection" class="d-flex app-width">
+        <div v-for="item in analyticContent" :key="item.title" class="p-0 col-sm-4 pr-5 pl-1 black-text">
+          <h1 class="p-0 mb-2">
+            {{ item.title }}
+          </h1>
+          <p v-html="item.text" class="m-0">
+          </p>
+          <i>
+            {{ item.source }}
+          </i>
+        </div>
       </div>
     </div>
 
     <div :class="$style.testimonialsPanel">
-      <testimonials></testimonials>
+      <div :class="$style.testimonialsSection" class="app-width">
+        <testimonials></testimonials>
+      </div>
     </div>
   </div>
 </template>
@@ -118,35 +124,41 @@ export default class WhyUs extends Vue {
 
 <style module lang="stylus">
 @import "@/styles/config.styl"
+.testimonialsSection
+  padding 71px 65px 104px 102px
+
 .testimonialsPanel
-  padding 71px 85px 104px 152px
   background-repeat: no-repeat
   background-attachment: fixed
   background-position: center
   background-size cover
   background-color #0F0F0F
 
-.analyticPanel
+.analyticSection
   height 271px
+  padding 35px 98px 63px 153px
+
+.analyticPanel
   background-repeat: no-repeat
   background-attachment: fixed
   background-position: center
   background-size cover
   background-color $brand-2
-  padding 35px 98px 63px 153px
 
 .divide
   width 100%
   border-bottom 0.03em solid #55677E
   margin-bottom 16px
 
-.container
+.section
+  padding 119px 98px 104px 153px
   height 1081px
+
+.container
   background-repeat: no-repeat
   background-attachment: fixed
   background-position: center
   background-size cover
   background-image url("assets/background/why-us-bg.png")
-  padding 119px 98px 104px 153px
 
 </style>

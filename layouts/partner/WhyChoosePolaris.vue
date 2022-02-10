@@ -1,32 +1,36 @@
 <template>
   <div :class="$style.whyChoosePolarisPanel">
-    <b-row class="d-flex justify-content-between">
-      <h3 class="col-2">
-        Why choose
-        Polaris
-      </h3>
-      <div class="col-9 d-flex justify-content-between flex-wrap">
-        <div class="col-5 p-0 mb-5" v-for="item in whyChoosePolarisContent">
-          <div class="d-inline">
-            <img :src="item.icon" class="d-inline-block align-baseline p-0" alt="Kitten" height="48" width="48">
+    <div :class="$style.whyChoosePolarisSection" class="app-width">
+      <b-row class="d-flex justify-content-between">
+        <h3 class="col-2">
+          Why choose
+          Polaris
+        </h3>
+        <div class="col-9 d-flex justify-content-between flex-wrap">
+          <div class="col-5 p-0 mb-5" v-for="item in whyChoosePolarisContent">
+            <div class="d-inline">
+              <img :src="item.icon" class="d-inline-block align-baseline p-0" alt="Kitten" height="48" width="48">
+            </div>
+            <h5 class="mt-1 col-8 p-0">
+              {{ item.text }}
+            </h5>
           </div>
-          <h5 class="mt-1">
-            {{ item.text }}
-          </h5>
         </div>
-      </div>
-    </b-row>
+      </b-row>
+    </div>
   </div>
 </template>
 
 <style module lang='stylus'>
+.whyChoosePolarisSection
+  padding 70px 60px 28px 60px
+
 .whyChoosePolarisPanel
   background-repeat: no-repeat
   background-attachment: fixed
   background-position: center
   background-size cover
   background-color #060606
-  padding 70px 60px 28px 60px
 </style>
 
 <script lang="ts">

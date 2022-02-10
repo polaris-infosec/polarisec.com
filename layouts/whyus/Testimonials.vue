@@ -4,7 +4,7 @@
     <carousel class="col-12"
               :nav="false"
               :items="3"
-              :margin="67"
+              :margin="48"
     >
       <template v-for="item in testimonialsContents">
         <div :class="$style.testimonialsBox" :key="item.text">
