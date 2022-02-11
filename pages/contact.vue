@@ -1,8 +1,6 @@
 <template>
   <div :class="$style.contactMain">
     <div :class="$style.contactSection" class="app-width">
-
-
       <div class="pb-4">
         <h1>Contact us</h1>
       </div>
@@ -12,49 +10,54 @@
         </p>
       </div>
       <div class="pl-3" :class="$style.form">
-        <b-row>
-          <b-col cols="4" class="p-0 pr-20px">
-            <b-form-input v-model="name" placeholder="Your Name" class="input-normal"></b-form-input>
-          </b-col>
-          <b-col cols="4" class="p-0">
-            <b-form-input v-model="website" placeholder="Your Website" class="input-normal"></b-form-input>
-          </b-col>
-        </b-row>
-        <b-row>
-          <b-col cols="4" class="p-0 pr-20px">
-            <b-form-input v-model="email" placeholder="Your Email" class="input-normal"></b-form-input>
-          </b-col>
-          <b-col cols="4" class="p-0">
-            <b-form-input v-model="phone" placeholder="Your Phone" class="input-normal"></b-form-input>
-          </b-col>
-        </b-row>
-        <b-row>
-          <b-col cols="4" class="p-0 pr-20px">
-            <b-form-input v-model="company" placeholder="Your Company" class="input-normal"></b-form-input>
-          </b-col>
-          <b-col cols="4" class="p-0">
-            <b-form-input v-model="role" placeholder="Your Role" class="input-normal"></b-form-input>
-          </b-col>
-        </b-row>
-        <b-row>
-          <b-col cols="8" class="p-0">
-            <b-form-input v-model="topic" placeholder="Your Topic" class="input-normal"></b-form-input>
-          </b-col>
-          <b-col cols="8" class="p-0">
-            <b-form-textarea
-              id="textarea"
-              v-model="message"
-              placeholder="Your Message"
-              rows="3"
-              max-rows="6"
-              class="input-normal"
-              :class="$style.messageInput"
-            ></b-form-textarea>
-          </b-col>
-        </b-row>
-        <b-row>
-          <p-button :class="$style.sendMessageBtn" :gradient="1" text="Send Message" class="mr-4" @click="onClick"/>
-        </b-row>
+        <b-form @submit="onSubmit">
+          <b-row>
+            <b-col cols="4" class="p-0 pr-20px">
+              <b-form-input v-model="name" placeholder="Your Name" required class="input-normal"></b-form-input>
+            </b-col>
+            <b-col cols="4" class="p-0">
+              <b-form-input v-model="website" placeholder="Your Website" required class="input-normal"></b-form-input>
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col cols="4" class="p-0 pr-20px">
+              <b-form-input v-model="email" placeholder="Your Email" type="email" required
+                            class="input-normal"></b-form-input>
+            </b-col>
+            <b-col cols="4" class="p-0">
+              <b-form-input v-model="phone" placeholder="Your Phone" required class="input-normal"></b-form-input>
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col cols="4" class="p-0 pr-20px">
+              <b-form-input v-model="company" placeholder="Your Company" required class="input-normal"></b-form-input>
+            </b-col>
+            <b-col cols="4" class="p-0">
+              <b-form-input v-model="role" placeholder="Your Role" required class="input-normal"></b-form-input>
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col cols="8" class="p-0">
+              <b-form-input v-model="topic" placeholder="Your Topic" required class="input-normal"></b-form-input>
+            </b-col>
+            <b-col cols="8" class="p-0">
+              <b-form-textarea
+                required
+                id="textarea"
+                v-model="message"
+                placeholder="Your Message"
+                rows="3"
+                max-rows="6"
+                class="input-normal"
+                :class="$style.messageInput"
+              ></b-form-textarea>
+            </b-col>
+          </b-row>
+          <b-row>
+            <p-button :class="$style.sendMessageBtn" :gradient="1" type="submit" text="Send Message"
+                      variant="primary"></p-button>
+          </b-row>
+        </b-form>
       </div>
     </div>
   </div>
@@ -107,7 +110,8 @@ export default class Contact extends Vue {
     return !!this.name && !!this.website && !!this.email && !!this.phone && !!this.company && !!this.role && !!this.topic && !!this.message;
   }
 
-  async onClick() {
+  async onSubmit(event: any) {
+    event.preventDefault();
     if (!this.showButton) return;
     await this.$axios.$post('https://polarisec.io/api/contact-us', {
       'name': this.name,
