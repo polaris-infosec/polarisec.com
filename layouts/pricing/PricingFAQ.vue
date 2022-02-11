@@ -24,9 +24,9 @@
           <div :class="$style.faqContainer" class="row">
             <div class="col mr-4">
               <div class="body-2 color-text-8 font-weight-bold">I’m not sure which package I should get?</div>
-              <div :class="$style.faqAnswer">You can always just send us a message <span><nuxt-link
-                to="/contact">here</nuxt-link></span> or <span>you can answer a few simple <nuxt-link
-                to="/">questions</nuxt-link></span> for a recommendation.
+              <div :class="$style.faqAnswer">You can always just send us a message <nuxt-link
+                to="/contact">here</nuxt-link> or you can answer a few simple <nuxt-link
+                to="/questions">questions</nuxt-link> for a recommendation.
               </div>
             </div>
             <div class="col ml-4">
@@ -53,9 +53,6 @@
   hr
     border: 0.5px solid $text-8
     margin 19px 24px 28px
-
-  span
-    font-style italic
 
   a
     color $brand-2

@@ -10,8 +10,8 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item-dropdown id="dropdown-1" text="Solutions" class="mr-4 pr-3 active">
-          <b-dropdown-item href="https://polarisec.io/">Platform Access</b-dropdown-item>
-          <b-dropdown-item href="https://support.polarisec.com/portal/en/home">Support Center</b-dropdown-item>
+          <b-dropdown-item href="https://polarisec.io/" target="_blank">Platform Access</b-dropdown-item>
+          <b-dropdown-item href="https://support.polarisec.com/portal/en/home" target="_blank">Support Center</b-dropdown-item>
         </b-nav-item-dropdown>
         <b-nav-item to="/whyus" class="active mr-4 pr-3">Why us</b-nav-item>
         <b-nav-item to="/partner" class="active mr-4 pr-3">Partners</b-nav-item>
@@ -22,7 +22,7 @@
 
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
-        <b-nav-item href="#" class="active mr-4 pr-2">Login</b-nav-item>
+        <b-nav-item href="https://polarisec.io/" target="_blank" class="active mr-4 pr-2">Login</b-nav-item>
         <p-button :gradient="3" text="Get Started" :show-icon="false" class="mr-4" @click="onClick"/>
         <div class="d-lg-flex justify-content-center align-items-center ml-2 pl-1">
           <b-avatar variant="info" :size="24" src="@/assets/icons/eng.png"></b-avatar>
