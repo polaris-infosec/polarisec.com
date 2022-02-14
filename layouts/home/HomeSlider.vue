@@ -58,9 +58,10 @@
   border-top-left-radius 10px
   border-top-right-radius 10px
   background-image url("@/assets/images/home/see-it-in-action.png")
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  overflow hidden !important
 
 .actionText
   margin-top 19px
