@@ -15,12 +15,18 @@
               style="width: 758px"
               @click="nextStep(step)"/>
 
-    <div @click="previousStep" v-if="step > 1" style="width: 758px">
+    <div @click="previousStep" v-if="step > 1" :class="$style.previous">
       <p class="mt-4 text-center text-7"><- Previous</p>
     </div>
   </div>
 </template>
 <style module lang="stylus">
+.previous
+  width 758px
+
+.previous:hover
+  cursor pointer
+
 .isSelect
   background-color #8BDFAF !important
   color black !important
@@ -79,7 +85,7 @@ export default class Questions extends Vue {
     }
 
     if (Number(this.step) === 3) {
-      this.$router.replace('/recommendation')
+      this.$router.replace('/recommendation');
       return;
     }
 

@@ -139,7 +139,7 @@ export default class Recommendation extends Vue {
         let left = '';
         let right = '';
 
-        if (this.planLeftAttribute === 'Professional' || this.planLeftAttribute === 'Professional') {
+        if (this.planLeftAttribute === 'Professional' || this.planLeftAttribute === 'Enterprise') {
           left = 'Managed Security Services';
         } else if (this.planLeftAttribute === 'Standard' || this.planLeftAttribute === 'Professional') {
           right = ' + Zero Trust';
