@@ -3,7 +3,7 @@
     <p class="body-2">Question {{ step }} of 3</p>
     <h5 class="fw-800 pt-4">{{ step }}. {{ question }}</h5>
     <p class="body-2">Please select one</p>
-    <div class="d-flex flex-wrap" style="max-width: 802px">
+    <div class="d-flex flex-wrap mb-5" style="max-width: 802px">
       <div :class="[$style.answerBox, answer === item && $style.isSelect]" v-for="item in answers" :key="item"
            @click="selectAnswer(item)">
         <span>{{ item }}</span>
@@ -11,8 +11,7 @@
     </div>
     <p-button :gradient="1"
               :text="(step === 3) ? 'Submit': 'Next'"
-              class="mt-5"
-              style="width: 758px"
+              :class="$style.button"
               @click="nextStep(step)"/>
 
     <div @click="previousStep" v-if="step > 1" :class="$style.previous">
@@ -21,6 +20,13 @@
   </div>
 </template>
 <style module lang="stylus">
+@media (max-width: 1200px)
+  .button
+    width 363px !important
+  .previous
+    width 363px !important
+.button
+  width 758px
 .previous
   width 758px
 
