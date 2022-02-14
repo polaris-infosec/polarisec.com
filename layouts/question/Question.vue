@@ -11,7 +11,7 @@
     </div>
     <p-button :gradient="1"
               :text="(step === 3) ? 'Submit': 'Next'"
-              class="mt-5"
+              :class="$style.button"
               style="width: 758px"
               @click="nextStep(step)"/>
 
@@ -21,6 +21,12 @@
   </div>
 </template>
 <style module lang="stylus">
+@media (max-width: 1200px)
+  .button
+    width 363px !important
+  .previous
+    width 363px !important
+
 .previous
   width 758px
 
