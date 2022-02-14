@@ -116,38 +116,39 @@ export default class Recommendation extends Vue {
       this.planLeftAttribute = 'Enterprise';
       this.planRightAttribute = 'Add-On';
       this.addOn = 'Enterprise - Managed Security Services - Zero Trust'
-    }
-
-    switch (question3) {
-      case 'It’s mostly personal':
-        this.planLeftAttribute = 'Basic';
-        break;
-      case 'It’s mostly for information and promotions':
-        this.planLeftAttribute = 'Standard';
-        break;
-      case 'It’s important for business operations':
-        this.planLeftAttribute = 'Professional';
-        break;
-      case 'It’s absolutely vital to my business operations':
-        this.planLeftAttribute = 'Enterprise';
-        break;
+    } else {
+      switch (question3) {
+        case 'It’s mostly personal':
+          this.planLeftAttribute = 'Basic';
+          break;
+        case 'It’s mostly for information and promotions':
+          this.planLeftAttribute = 'Standard';
+          break;
+        case 'It’s important for business operations':
+          this.planLeftAttribute = 'Professional';
+          break;
+        case 'It’s absolutely vital to my business operations':
+          this.planLeftAttribute = 'Enterprise';
+          break;
+      }
     }
 
     if (question2 === 'No, but maybe one day...' || question2 === 'What’s an IT team?') {
       this.planRightAttribute = 'Add-On';
       if (!this.addOn) {
-        let left = '';
-        let right = '';
-
-        if (this.planLeftAttribute === 'Professional' || this.planLeftAttribute === 'Enterprise') {
-          left = 'Managed Security Services';
-        } else if (this.planLeftAttribute === 'Standard' || this.planLeftAttribute === 'Professional') {
-          right = ' + Zero Trust';
-        } else {
-          this.addOn = 'Enterprise'
-          return;
+        switch (this.planLeftAttribute) {
+          case 'Enterprise':
+            this.addOn = 'Managed Security Services';
+            break;
+          case 'Standard':
+            this.addOn = 'Zero Trust';
+            break;
+          case 'Professional':
+            this.addOn = 'Managed Security Services - Zero Trust';
+            break;
+          default:
+            this.addOn = 'Enterprise'
         }
-        this.addOn = left + right;
       }
     }
 
