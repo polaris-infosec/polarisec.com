@@ -1,5 +1,5 @@
 <template>
-  <b-navbar :class="$style.navigationBar" toggleable="lg" type="dark" variant="dark">
+  <b-navbar :class="$style.navigationBar" toggleable="xl" type="dark" variant="dark">
     <b-navbar-brand class="mr-4 pr-4">
       <nuxt-link to="/home">
         <img src="@/assets/images/polaris-logo.png" class="d-inline-block align-baseline mt-2" alt="Kitten" height="24" width="140">
