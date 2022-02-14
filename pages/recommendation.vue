@@ -131,11 +131,9 @@ export default class Recommendation extends Vue {
           this.planLeftAttribute = 'Enterprise';
           break;
       }
-    }
 
-    if (question2 === 'No, but maybe one day...' || question2 === 'What’s an IT team?') {
-      this.planRightAttribute = 'Add-On';
-      if (!this.addOn) {
+      if (question2 === 'No, but maybe one day...' || question2 === 'What’s an IT team?') {
+        this.planRightAttribute = 'Add-On';
         switch (this.planLeftAttribute) {
           case 'Enterprise':
             this.addOn = 'Managed Security Services';
