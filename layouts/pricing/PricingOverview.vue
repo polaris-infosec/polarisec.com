@@ -57,7 +57,7 @@
                   <div class="col caption d-inline-flex align-items-center justify-content-between"
                        :class="$style.childTitle">
                     <div>{{ child.title }}</div>
-                    <img :class="$style.img" :src="child.isExpand ? icons.close : icons.info"
+                    <img v-if="child.info" :class="$style.img" :src="child.isExpand ? icons.close : icons.info"
                          @click="child.isExpand = !child.isExpand"
                          alt="" width="24" height="24">
                   </div>
