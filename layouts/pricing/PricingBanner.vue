@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid px-0">
     <div :class="$style.bannerContainer">
-      <div :class="$style.bannerSection" class="row mx-0 app-width">
+      <div :class="$style.bannerSection" class="row app-width">
         <div class="col-sm-6">
           <h1>Pricing</h1>
           <div :class="$style.pricingSubTitle" class="body-1">Try Polaris free - forever</div>
