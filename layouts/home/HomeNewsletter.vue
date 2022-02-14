@@ -3,7 +3,7 @@
     <div class="app-width" :class="$style.bodyContainer">
       <h2>Sign up for our newsletter</h2>
       <h5>Be the first to receive new feature and product updates.</h5>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center mx-0">
         <p-input class="text-left"
                  v-model.trim="email"
                  type="email"
