@@ -12,7 +12,6 @@
     <p-button :gradient="1"
               :text="(step === 3) ? 'Submit': 'Next'"
               :class="$style.button"
-              style="width: 758px"
               @click="nextStep(step)"/>
 
     <div @click="previousStep" v-if="step > 1" :class="$style.previous">
@@ -26,7 +25,8 @@
     width 363px !important
   .previous
     width 363px !important
-
+.button
+  width 758px
 .previous
   width 758px
 
