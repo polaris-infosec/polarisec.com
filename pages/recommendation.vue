@@ -116,21 +116,21 @@ export default class Recommendation extends Vue {
       this.planLeftAttribute = 'Enterprise';
       this.planRightAttribute = 'Add-On';
       this.addOn = 'Enterprise - Managed Security Services - Zero Trust'
-    }
-
-    switch (question3) {
-      case 'It’s mostly personal':
-        this.planLeftAttribute = 'Basic';
-        break;
-      case 'It’s mostly for information and promotions':
-        this.planLeftAttribute = 'Standard';
-        break;
-      case 'It’s important for business operations':
-        this.planLeftAttribute = 'Professional';
-        break;
-      case 'It’s absolutely vital to my business operations':
-        this.planLeftAttribute = 'Enterprise';
-        break;
+    } else {
+      switch (question3) {
+        case 'It’s mostly personal':
+          this.planLeftAttribute = 'Basic';
+          break;
+        case 'It’s mostly for information and promotions':
+          this.planLeftAttribute = 'Standard';
+          break;
+        case 'It’s important for business operations':
+          this.planLeftAttribute = 'Professional';
+          break;
+        case 'It’s absolutely vital to my business operations':
+          this.planLeftAttribute = 'Enterprise';
+          break;
+      }
     }
 
     if (question2 === 'No, but maybe one day...' || question2 === 'What’s an IT team?') {
