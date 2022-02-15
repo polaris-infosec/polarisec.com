@@ -2,7 +2,7 @@
   <b-container fluid :class="$style.footer">
     <div :class="$style.footerSection" class="app-width">
       <b-row class="d-flex justify-content-between flex-row">
-        <b-col col lg="3" class="p-0">
+        <b-col lg="3" md="3" sm="12" class="p-0">
           <img src="~/assets/images/polaris-logo.png" class="d-inline-block align-baseline mt-2" alt="Kitten"
                height="30"
                width="175">
@@ -132,17 +132,17 @@
         </b-col>
         <b-col col lg="3" class="d-flex justify-content-end p-0">
           <nuxt-link to="/terms">
-            <div class="pr-2" style="border-right: 0.03em solid #A9B7C6; color: white">
+            <div class="pr-2 text-center" style="border-right: 0.03em solid #A9B7C6; color: white">
            <span class="body-4">
             Terms of Service
           </span>
             </div>
           </nuxt-link>
           <a href="https://polarisec.com/polaris_privacy_notice.pdf" download target="_blank">
-            <div class="pl-2" style="color: white">
-           <span class="body-4">
-          Privacy and Support
-        </span>
+            <div class="pl-2 white-text text-center">
+              <span class="body-4">
+                 Privacy and Support
+               </span>
             </div>
           </a>
         </b-col>
@@ -152,15 +152,11 @@
 </template>
 
 <style module lang="stylus">
-.socialGroup
-  width 120px
-
 .divide
   border-bottom 0.03em solid #A9B7C6
 
 .footerSection
-  height 364px
-  padding 40px 60px 0 60px
+  padding 40px 60px 24px 60px
 
 .footer
   background-color black
