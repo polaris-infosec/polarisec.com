@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.questionsPanel" id="questions">
     <div :class="$style.questionsSection" class="d-flex app-width">
-      <introduction class="col-3"/>
+      <introduction :class="$style.introduction"/>
       <question v-if="step === 1" class="col-8" :step="step" :answers="question1.answers" :question="question1.question"
                 @nextStep="nextStep" @previousStep="previousStep"/>
       <question v-if="step === 2" class="col-8" :step="step" :answers="question2.answers" :question="question2.question"
@@ -12,6 +12,9 @@
   </div>
 </template>
 <style module lang="stylus">
+.introduction
+  max-width 354px
+
 .questionsSection
   padding-left 152px
   box-sizing border-box
