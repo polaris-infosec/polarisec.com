@@ -79,6 +79,7 @@
                   <div class="col"/>
                 </div>
               </template>
+              <div v-if="type.isComingSoon" :class="$style.comingsoon">*Coming Soon</div>
             </div>
           </template>
         </div>
@@ -201,6 +202,14 @@
   h5
     color $text-8
     margin-bottom 0
+
+.comingsoon
+  font-size 12px
+  line-height 16px
+  font-weight 300
+  font-style italic
+  color $text-4
+  margin-top 15px
 
 </style>
 
@@ -527,6 +536,7 @@ export default class PricingOverview extends Vue {
     {
       title: 'BOT Management',
       isExpand: true,
+      isComingSoon: true,
       child: [
         {
           title: 'Anti-bot protection',
@@ -552,7 +562,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Advanced Bot Management',
+          title: 'Advanced Bot Management*',
           info: '',
           isExpand: false,
           supports: [
