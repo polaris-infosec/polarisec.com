@@ -25,7 +25,7 @@
   font-weight 800
   font-size 32px
   line-height 48px
-
+  word-break break-word
 </style>
 
 <script lang="ts">
