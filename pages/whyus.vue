@@ -5,18 +5,18 @@
         <div>
           <h1>Why us</h1>
         </div>
-        <div class=" d-flex justify-content-between mt-5">
-          <div class="col-sm-4 p-0 pr-5 pl-1">
+        <div class="d-flex justify-content-between mt-5 col-12">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-5 pl-1">
             Polaris is your <span class="highlight-text">premier local solution</span> with local support, dedicated to
             providing users with a first rate security service.
           </div>
 
-          <div class="col-sm-4 p-0 pr-5 pl-1">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-5 pl-1">
             We understand that cyber security can sometimes be overly complex and seek to simplify the process, <span
             class="highlight-text">making it accessible to anyone, anywhere.</span>
           </div>
 
-          <div class="col-sm-4 p-0 pr-5 pl-1">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-5 pl-1">
             We’re <span class="highlight-text">scalable at every level</span> from the first time cyber user to the
             seasoned veteran, addressing the concerns of small businesses and enterprises alike.
           </div>
@@ -135,7 +135,7 @@ export default class WhyUs extends Vue {
   background-color #0F0F0F
 
 .analyticSection
-  height 271px
+  min-height 271px
   padding 35px 98px 63px 153px
 
 .analyticPanel
@@ -152,7 +152,7 @@ export default class WhyUs extends Vue {
 
 .section
   padding 119px 98px 104px 153px
-  height 1081px
+  min-height 1081px
 
 .container
   background-repeat: no-repeat
