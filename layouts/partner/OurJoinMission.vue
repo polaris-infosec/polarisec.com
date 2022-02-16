@@ -12,15 +12,15 @@
       <div :class="$style.divide" class="mb-4 mt-5 col-12"></div>
 
       <b-row class="d-flex justify-content-between">
-        <h3 class="col-2">
+        <h3 class="col-12 col-sm-10 col-lg-2 col-md-2 mb-3">
           Program Goals
         </h3>
-        <h3 class="col-4">
+        <h3 class="col-12 col-lg-4 col-md-4 col-sm-12 mb-3">
           Provide <span class="brand-2">reliable</span> and <span class="brand-2">knowledgeable</span> support to
           partners
           and customers
         </h3>
-        <h3 class="col-4">
+        <h3 class="col-12 col-lg-4 col-md-4 col-sm-12 mb-3">
           Expand <span class="brand-2">networks</span> and <span class="brand-2">capabilities</span> to grow service and
           value
         </h3>
@@ -35,7 +35,7 @@
   margin-bottom 16px
 
 .missionSection
-  padding 70px 60px 121px 60px
+  padding 70px 60px 76px 60px
 
 .missionPanel
   background-repeat: no-repeat

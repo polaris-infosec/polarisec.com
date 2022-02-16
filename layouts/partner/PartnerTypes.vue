@@ -2,12 +2,13 @@
   <div :class="$style.partnerTypesPanel">
     <div :class="$style.partnerTypesSection" class="app-width">
       <b-row class="d-flex justify-content-between">
-        <h3 class="col-2">
-          Why choose
-          Polaris
-        </h3>
+        <div class="col-12 col-lg-2 col-md-2 col-sm-12">
+          <h3>
+            Partner Types
+          </h3>
+        </div>
         <div class="col-9 d-flex justify-content-between flex-wrap">
-          <div class="col-5 p-0 mb-5" v-for="item in partnerType">
+          <div class="col-12 col-lg-5 col-md-5 col-sm-12 p-0 mb-5" v-for="item in partnerType">
             <div class="d-inline">
               <h5 class="brand-2">
                 {{ item.title }}
