@@ -2,12 +2,14 @@
   <div :class="$style.whyChoosePolarisPanel">
     <div :class="$style.whyChoosePolarisSection" class="app-width">
       <b-row class="d-flex justify-content-between">
-        <h3 class="col-2">
-          Why choose
-          Polaris
-        </h3>
+        <div class="col-12 col-lg-2 col-md-2 col-sm-12">
+          <h3>
+            Why choose
+            Polaris
+          </h3>
+        </div>
         <div class="col-9 d-flex justify-content-between flex-wrap">
-          <div class="col-5 p-0 mb-5" v-for="item in whyChoosePolarisContent">
+          <div class="col-12 col-lg-5 col-md-5 col-sm-12 p-0 mb-5" v-for="item in whyChoosePolarisContent">
             <div class="d-inline">
               <img :src="item.icon" class="d-inline-block align-baseline p-0" alt="Kitten" height="48" width="48">
             </div>

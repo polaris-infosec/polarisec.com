@@ -3,9 +3,11 @@
     <div :class="$style.footerSection" class="app-width">
       <b-row class="d-flex justify-content-between flex-row">
         <b-col lg="3" md="3" sm="12" class="p-0">
-          <img src="~/assets/images/polaris-logo.png" class="d-inline-block align-baseline mt-2" alt="Kitten"
-               height="30"
-               width="175">
+          <nuxt-link to="/home">
+            <img src="~/assets/images/polaris-logo.png" class="d-inline-block align-baseline mt-2" alt="Kitten"
+                 height="30"
+                 width="175">
+          </nuxt-link>
           <div class="mt-4 body-3">
             <a href="mailto:hello@polarisec.com"><p class="brand-2 mb-3">hello@polarisec.com</p></a>
             <p class="mb-1">
@@ -23,10 +25,10 @@
           </div>
         </b-col>
 
-        <b-col col lg="7" class="mr-4 p-0">
+        <b-col col lg="7" class="mr-3 p-0">
           <b-row class="d-flex justify-content-between">
-            <div class="body-6">
-              SOLUTION
+            <div class="body-6 col-lg-3 col-5 mt-mb-36px">
+              <div>SOLUTION</div>
               <div class="d-flex flex-column mt-4 body-5">
                 <a href="https://polarisec.io" target="_blank">
                 <span class="color-text-7">
@@ -41,7 +43,7 @@
               </div>
             </div>
 
-            <div class="body-6">
+            <div class="body-6 col-lg-3 col-5 mt-mb-36px">
               COMPANY
               <div class="d-flex flex-column mt-4 body-5">
                 <nuxt-link to="/company">
@@ -65,7 +67,7 @@
               </div>
             </div>
 
-            <div class="body-6">
+            <div class="body-6 col-lg-3 col-5 mt-mb-36px">
               RESOURCES
               <div class="d-flex flex-column mt-4 body-5">
                 <nuxt-link to="/pricing">
@@ -86,7 +88,7 @@
               </div>
             </div>
 
-            <div class="body-6">
+            <div class="body-6 col-lg-2 p-0 col-5 mt-mb-36px" :class="$style.socialContact">
               CONNECT WITH US
               <div class="d-flex flex-column justify-content-between mt-4 body-5 pl-3">
                 <b-row class="mb-2 d-flex">
@@ -125,17 +127,17 @@
       <b-row :class="$style.divide" class="mb-3 mt-5"></b-row>
 
       <b-row class="d-flex justify-content-between align-content-center p-0">
-        <b-col col lg="3" class="p-0">
+        <b-col class="col-12 col-lg-3 p-0 text-mobile-center">
         <span class="body-4">
           @ Polaris Infosec Pte. Ltd.
         </span>
         </b-col>
-        <b-col col lg="3" class="d-flex justify-content-end p-0">
+        <b-col class="col-12 col-lg-3 d-flex justify-content-end justify-content-mobile-center p-0">
           <nuxt-link to="/terms">
             <div class="pr-2 text-center" style="border-right: 0.03em solid #A9B7C6; color: white">
-           <span class="body-4">
-            Terms of Service
-          </span>
+              <span class="body-4">
+                Terms of Service
+              </span>
             </div>
           </nuxt-link>
           <a href="https://polarisec.com/polaris_privacy_notice.pdf" download target="_blank">
@@ -152,6 +154,17 @@
 </template>
 
 <style module lang="stylus">
+@media only screen and (max-width: 1020px)
+  .socialContact
+    padding-left 16px !important
+
+@media only screen and (max-width: 600px)
+  .socialContact
+    padding-left 16px !important
+
+  .footerSection
+    padding 24px !important
+
 .divide
   border-bottom 0.03em solid #A9B7C6
 
