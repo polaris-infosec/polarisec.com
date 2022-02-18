@@ -48,7 +48,7 @@
               <div class="d-flex flex-column mt-4 body-5">
                 <nuxt-link to="/company">
                 <span class="color-text-7">
-                    About
+                    Company
                 </span>
                 </nuxt-link>
                 <nuxt-link to="/whyus">
