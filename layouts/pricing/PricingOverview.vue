@@ -6,7 +6,10 @@
         <div class="body-2 pl-4">Save 20% with our Yearly payment plan</div>
         <div :class="$style.pricingContainer" class="p-4">
           <div class="row" :class="$style.tableHeader">
-            <div :class="$style.headerItem" class="col-sm-3 body-2">Billing cycle</div>
+            <div @click="onChangeExpand(!isExpandAll)" :class="$style.headerItem" class="col-sm-3 body-2 d-inline-flex align-items-center justify-content-between">
+              <div>Billing cycle</div>
+              <img v-if="!isExpandAll" src="@/assets/icons/expand.png" alt="" width="24" height="24">
+            </div>
             <div :class="$style.headerItem" class="col">Basic</div>
             <div :class="$style.headerItem" class="col">Standard</div>
             <div :class="$style.headerItem" class="col">Professional</div>
@@ -21,15 +24,6 @@
                 </div>
                 <div @click="onChangeType(false)" :class="[$style.selectType, !isMonthlyType && $style.active]">
                   Yearly
-                </div>
-              </div>
-              <div class=" mt-4 d-inline-flex align-items-center">
-                <div @click="onChangeExpand(true)" :class="[$style.selectType, isExpandAll && $style.active]"
-                     class="mr-1">
-                  Expand All
-                </div>
-                <div @click="onChangeExpand(false)" :class="[$style.selectType, !isExpandAll && $style.active]">
-                  Collapse All
                 </div>
               </div>
             </div>
@@ -169,6 +163,7 @@
   &:first-child
     font-size 16px
     line-height 26px
+    cursor pointer
 
   &:not(:first-child)
     font-size 20px
