@@ -31,7 +31,7 @@
       </template>
     </div>
     <div :class="$style.comingsoon" class="col-sm-12 px-0">*Coming Soon</div>
-    <div :class="$style.comingsoon" class="col-sm-12 px-0">*First 15 active are free</div>
+    <div :class="$style.comingsoon" class="col-sm-12 px-0">*First 15 active users are free</div>
   </div>
 </template>
 
