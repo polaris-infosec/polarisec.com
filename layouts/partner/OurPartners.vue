@@ -99,6 +99,10 @@ export default class ContactSale extends Vue {
       icon: require("@/assets/partners/ice71.png"),
       text: 'ICE71'
     },
+    {
+      icon: require("@/assets/icons/sbd.png"),
+      text: 'Sao Bac Dau'
+    },
   ]
 }
 </script>

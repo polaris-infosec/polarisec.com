@@ -16,11 +16,11 @@
           </ol>
         </div>
         <div class="col-sm-10">
-          <pricing-overview id="overview" :is-monthly-type="isMonthlyType"/>
+          <pricing-overview id="overview" :is-monthly-type="isMonthlyType" :is-expand-all="isExpandAll"/>
         </div>
       </div>
     </div>
-    <pricing-add-ons id="add-on" :is-monthly-type="isMonthlyType"/>
+    <pricing-add-ons id="add-on" :is-monthly-type="isMonthlyType" :is-expand-all="isExpandAll"/>
     <pricing-f-a-q id="faq"/>
   </div>
 </template>
@@ -60,10 +60,14 @@ import PricingFAQ from "~/layouts/pricing/PricingFAQ.vue";
 export default class PricingDetails extends Vue {
 
   isMonthlyType: boolean = true;
+  isExpandAll: boolean = true;
 
   created() {
-    this.$nuxt.$on('update', (isMonthly: boolean) => {
+    this.$nuxt.$on('update-type', (isMonthly: boolean) => {
       this.isMonthlyType = isMonthly;
+    });
+    this.$nuxt.$on('update-expand', (isExpandAll: boolean) => {
+      this.isExpandAll = isExpandAll;
     });
   }
 

@@ -16,7 +16,7 @@
             for you, automatically mitigating threats in real-time. Allow us to monitor your web presence and serve as
             your guard so you can focus on what really matters - your people and your business.
           </div>
-          <pricing-add-ons-service :is-monthly-type="isMonthlyType"/>
+          <pricing-add-ons-service :is-monthly-type="isMonthlyType" :is-expand-all="isExpandAll"/>
           <div class="row">
             <div class="col mr-4">
               <h5 class="color-text-6 mx-4 font-weight-bold">Threat Intelligence Add-On</h5>
@@ -66,6 +66,7 @@ import PricingAddOnsZeroTrustAccess from "~/layouts/pricing/PricingAddOnsZeroTru
 })
 export default class PricingAddOns extends Vue {
   @Prop({default: true, type: Boolean, required: true}) isMonthlyType: boolean;
+  @Prop({default: true, type: Boolean, required: true}) isExpandAll: boolean;
 
 }
 </script>

@@ -1,12 +1,12 @@
 <template>
   <div :class="$style.addonContainer">
     <div class="row" :class="$style.tableHeader">
-      <div :class="$style.headerItem" class="col-sm-2"></div>
+      <div :class="$style.headerItem" class="col-sm-3"></div>
       <div :class="$style.headerItem" class="col">Professional</div>
       <div :class="$style.headerItem" class="col">Enterprise</div>
     </div>
     <div class="row">
-      <div class="col-sm-2"/>
+      <div class="col-sm-3"/>
       <template v-for="type in billingCycle">
         <div :key="type.type" class="col">
           <div v-if="!isNaN(type.price)" class="d-inline-flex align-items-center">
@@ -28,16 +28,16 @@
     <template v-for="type in serviceTypes">
       <div :class="$style.typeContainer" :key="type.title">
         <div class="row">
-          <div @click="type.isExpand = !type.isExpand" :class="$style.typeTitle" class="body-2 col-sm-2 d-inline-flex align-items-end justify-content-between">
+          <div @click="type.isExpand = !type.isExpand" :class="$style.typeTitle" class="body-2 col-sm-3 d-inline-flex align-items-end justify-content-between">
             <div>{{ type.title }}</div>
-            <img v-if="!type.isExpand" src="@/assets/icons/expand.png" alt="" width="24" height="24">
+            <img :src="type.isExpand ? iconExpand.collapse : iconExpand.expand" alt="" width="24" height="24">
           </div>
           <div class="col"/>
           <div class="col"/>
         </div>
         <template v-if="type.isExpand" v-for="child in type.child">
           <div :key="child.title" class="row" :class="$style.childContainer">
-            <div class="col-sm-2 caption d-inline-flex align-items-end justify-content-between"
+            <div class="col-sm-3 caption d-inline-flex align-items-end justify-content-between"
                  :class="$style.childTitle">
               <div>{{ child.title }}</div>
             </div>
@@ -146,7 +146,7 @@
 </style>
 
 <script lang="ts">
-import {Component, Prop, Vue} from 'nuxt-property-decorator'
+import {Component, Prop, Vue, Watch} from 'nuxt-property-decorator'
 import PButton from "~/components/PButton.vue";
 
 @Component({
@@ -154,11 +154,19 @@ import PButton from "~/components/PButton.vue";
 })
 export default class PricingAddOnsService extends Vue {
   @Prop({default: true, type: Boolean, required: true}) isMonthlyType: boolean;
+  @Prop({default: true, type: Boolean, required: true}) isExpandAll: boolean;
 
   get icons() {
     return {
       'close': require('@/assets/icons/close.png'),
       'info': require('@/assets/icons/info.png')
+    }
+  }
+
+  get iconExpand() {
+    return {
+      'expand': require('@/assets/icons/expand.png'),
+      'collapse': require('@/assets/icons/collapse.png')
     }
   }
 
@@ -173,6 +181,11 @@ export default class PricingAddOnsService extends Vue {
         price: 'Custom Pricing',
       },
     ];
+  }
+
+  @Watch('isExpandAll', {deep: true, immediate: true})
+  onExpandChange() {
+    this.serviceTypes.forEach((type: any) => type.isExpand = this.isExpandAll);
   }
 
   serviceTypes: any = [

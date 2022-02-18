@@ -36,9 +36,9 @@
                 </span>
                 </a>
                 <a href="https://support.polarisec.com" target="_blank">
-                <span class="color-text-7">
-                Support Center
-              </span>
+                  <span class="color-text-7">
+                    Support Center
+                  </span>
                 </a>
               </div>
             </div>
@@ -48,7 +48,7 @@
               <div class="d-flex flex-column mt-4 body-5">
                 <nuxt-link to="/company">
                 <span class="color-text-7">
-                    Pricing
+                    Company
                 </span>
                 </nuxt-link>
                 <nuxt-link to="/whyus">
@@ -61,9 +61,11 @@
                     Partners
                 </span>
                 </nuxt-link>
-                <span>
-                Blog
-              </span>
+                <a href="https://polarisec.medium.com/" target="_blank">
+                  <span class="color-text-7">
+                    Blog
+                  </span>
+                </a>
               </div>
             </div>
 

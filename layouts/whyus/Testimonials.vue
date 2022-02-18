@@ -3,6 +3,8 @@
     <h1 class="mb-4">Testimonials</h1>
     <carousel class="col-12"
               :nav="false"
+              autoplay
+              loop
               :items="3"
               :margin="48"
     >
@@ -12,7 +14,7 @@
           <p class="body-2 m-0">
             {{ item.text }}
           </p>
-          <p class="body-1 m-0" :class="$style.name">
+          <p class="body-1 m-0 text-capitalize" :class="$style.name">
             {{ item.name }}
           </p>
           <p :class="$style.role">
@@ -27,7 +29,6 @@
 <style module lang="stylus">
 :global(.owl-dots)
   margin-top 45px !important
-  padding-right 168px !important
 
 .sliderItem
   padding 10px 22px
@@ -74,13 +75,13 @@ export default class Testimonials extends Vue {
       text: `“Polaris is being used to protect work-from-home services for more than 3,500 employees and collaborators of
               VNG. The system is developed by leading experts in Vietnam and provides features that are rarely found in
               other products.”`,
-      name: 'Mr. V.D.C',
+      name: 'Mr. V.D.C.',
       role: 'HEAD OF SYSTEM OPERATIONS, VNG',
       icon: require('@/assets/icons/vng.png'),
     },
     {
       text: `“Currently, Polaris is being used on Sao Bac Dau’s cloud system to meet load capacity needs and provide security, and in features for important public system applications. ”`,
-      name: 'Mr. N.S.T',
+      name: 'Mr. N.S.T.',
       role: 'CHIEF EXCECUTIVE OFFICER, SAO BAC DAU (SOUTHERN BRANCH)',
       icon: require('@/assets/icons/sbd.png'),
     },
@@ -89,6 +90,12 @@ export default class Testimonials extends Vue {
       name: '',
       role: 'Business Department, National University of Singapore, ICE71 Competition review',
       icon: require('@/assets/icons/nus.png'),
+    },
+    {
+      text: `"Over time, I have conducted testing of Polaris and found this service to be very good as an alternative to CloudFlare in Vietnam, and can go even further in competing directly with CloudFlare in the international market."`,
+      name: 'Mr. P.N.T.',
+      role: 'AZDigi CORPORATION',
+      icon: require('@/assets/icons/azdigi.png'),
     },
   ]
 }
