@@ -61,6 +61,7 @@
   border-radius 16px
   background-color #141414
   padding 13px
+
 .ourPartnersSection
   height 513px
   padding 92px 22px 0 152px
@@ -88,6 +89,10 @@ export default class ContactSale extends Vue {
 
   partners: any [] = [
     {
+      icon: require("@/assets/icons/sbd.png"),
+      text: 'Sao Bac Dau'
+    },
+    {
       icon: require("@/assets/partners/vnsec.png"),
       text: 'VNSEC'
     },
@@ -99,10 +104,7 @@ export default class ContactSale extends Vue {
       icon: require("@/assets/partners/ice71.png"),
       text: 'ICE71'
     },
-    {
-      icon: require("@/assets/icons/sbd.png"),
-      text: 'Sao Bac Dau'
-    },
+
   ]
 }
 </script>
