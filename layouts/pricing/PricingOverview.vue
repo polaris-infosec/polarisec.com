@@ -50,7 +50,7 @@
                 <div @click="type.isExpand = !type.isExpand" :class="$style.typeTitle"
                      class="body-2 d-inline-flex align-items-center justify-content-between col-sm-3">
                   <div>{{ type.title }}</div>
-                  <img v-if="!type.isExpand" src="@/assets/icons/expand.png" alt="" width="24" height="24">
+                  <img :src="type.isExpand ? iconExpand.collapse : iconExpand.expand" alt="" width="24" height="24">
                 </div>
                 <div class="col"/>
                 <div class="col"/>

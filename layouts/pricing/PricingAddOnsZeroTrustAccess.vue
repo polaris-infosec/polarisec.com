@@ -32,7 +32,6 @@
     </div>
     <div :class="$style.comingsoon" class="col-sm-12 px-0">*Coming Soon</div>
     <div :class="$style.comingsoon" class="col-sm-12 px-0">*First 15 active are free</div>
-    <div :class="$style.comingsoon" class="col-sm-12 px-0">*The price is count on active users in 1 month.</div>
   </div>
 </template>
 

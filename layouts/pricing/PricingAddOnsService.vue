@@ -30,7 +30,7 @@
         <div class="row">
           <div @click="type.isExpand = !type.isExpand" :class="$style.typeTitle" class="body-2 col-sm-3 d-inline-flex align-items-end justify-content-between">
             <div>{{ type.title }}</div>
-            <img v-if="!type.isExpand" src="@/assets/icons/expand.png" alt="" width="24" height="24">
+            <img :src="type.isExpand ? iconExpand.collapse : iconExpand.expand" alt="" width="24" height="24">
           </div>
           <div class="col"/>
           <div class="col"/>
@@ -160,6 +160,13 @@ export default class PricingAddOnsService extends Vue {
     return {
       'close': require('@/assets/icons/close.png'),
       'info': require('@/assets/icons/info.png')
+    }
+  }
+
+  get iconExpand() {
+    return {
+      'expand': require('@/assets/icons/expand.png'),
+      'collapse': require('@/assets/icons/collapse.png')
     }
   }
 

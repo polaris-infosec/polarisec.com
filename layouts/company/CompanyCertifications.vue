@@ -5,7 +5,7 @@
         <div class="col-sm-3">
           <h2>Company Certifications</h2>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-8" :class="$style.certContainer">
           <div class="row justify-content-center">
             <template v-for="certification in certifications">
               <div :key="certification.img"
@@ -36,6 +36,9 @@
 .leaderContainer
   margin-bottom 14px
   padding 18px 16px
+
+.certContainer
+  margin 0 auto
 
 </style>
 

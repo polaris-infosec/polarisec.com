@@ -57,6 +57,9 @@
             <p-button :class="$style.sendMessageBtn" :gradient="1" type="submit" text="Send Message"
                       variant="primary"></p-button>
           </b-row>
+          <b-row>
+            <div :class="$style.comingsoon" class="col-sm-12 px-0 mt-3">*All personal data is safeguarded under privacy and support policies.</div>
+          </b-row>
         </b-form>
       </div>
     </div>
@@ -65,6 +68,14 @@
 
 <style module lang='stylus'>
 @import "../styles/main.styl"
+.comingsoon
+  font-size 12px
+  line-height 16px
+  font-weight 300
+  font-style italic
+  color $text-4
+  margin-top 10px
+
 .sendMessageBtn
   height 54px
   width 199px
