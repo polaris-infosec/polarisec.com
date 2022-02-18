@@ -8,7 +8,7 @@
           <div class="row" :class="$style.tableHeader">
             <div @click="onChangeExpand(!isExpandAll)" :class="$style.headerItem" class="col-sm-3 body-2 d-inline-flex align-items-center justify-content-between">
               <div>Billing cycle</div>
-              <img v-if="!isExpandAll" src="@/assets/icons/expand.png" alt="" width="24" height="24">
+              <img :src="isExpandAll ? iconExpand.collapse : iconExpand.expand" alt="" width="24" height="24">
             </div>
             <div :class="$style.headerItem" class="col">Basic</div>
             <div :class="$style.headerItem" class="col">Standard</div>
@@ -235,6 +235,13 @@ export default class PricingOverview extends Vue {
     return {
       'close': require('@/assets/icons/close.png'),
       'info': require('@/assets/icons/info.png')
+    }
+  }
+
+  get iconExpand() {
+    return {
+      'expand': require('@/assets/icons/expand.png'),
+      'collapse': require('@/assets/icons/collapse.png')
     }
   }
 
