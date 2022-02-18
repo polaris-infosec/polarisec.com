@@ -54,7 +54,7 @@
 
     <div :class="$style.testimonialsPanel">
       <div :class="$style.testimonialsSection" class="app-width">
-        <testimonials></testimonials>
+        <testimonials/>
       </div>
     </div>
   </div>

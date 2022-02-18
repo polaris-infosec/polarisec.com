@@ -6,20 +6,31 @@
         <div class="body-2 pl-4">Save 20% with our Yearly payment plan</div>
         <div :class="$style.pricingContainer" class="p-4">
           <div class="row" :class="$style.tableHeader">
-            <div :class="$style.headerItem" class="col-sm-2 body-2">Billing cycle</div>
+            <div :class="$style.headerItem" class="col-sm-3 body-2">Billing cycle</div>
             <div :class="$style.headerItem" class="col">Basic</div>
             <div :class="$style.headerItem" class="col">Standard</div>
             <div :class="$style.headerItem" class="col">Professional</div>
             <div :class="$style.headerItem" class="col">Enterprise</div>
           </div>
           <div class="row">
-            <div class="col-sm-2 d-inline-flex align-items-center">
-              <div @click="onChangeType(true)" :class="[$style.selectType, isMonthlyType && $style.active]"
-                   class="mr-1">
-                Monthly
+            <div class="col-sm-3">
+              <div class="d-inline-flex align-items-center">
+                <div @click="onChangeType(true)" :class="[$style.selectType, isMonthlyType && $style.active]"
+                     class="mr-1">
+                  Monthly
+                </div>
+                <div @click="onChangeType(false)" :class="[$style.selectType, !isMonthlyType && $style.active]">
+                  Yearly
+                </div>
               </div>
-              <div @click="onChangeType(false)" :class="[$style.selectType, !isMonthlyType && $style.active]">
-                Yearly
+              <div class=" mt-4 d-inline-flex align-items-center">
+                <div @click="onChangeExpand(true)" :class="[$style.selectType, isExpandAll && $style.active]"
+                     class="mr-1">
+                  Expand All
+                </div>
+                <div @click="onChangeExpand(false)" :class="[$style.selectType, !isExpandAll && $style.active]">
+                  Collapse All
+                </div>
               </div>
             </div>
             <template v-for="type in billingCycle">
@@ -43,7 +54,7 @@
             <div :class="$style.typeContainer" :key="type.title">
               <div class="row">
                 <div @click="type.isExpand = !type.isExpand" :class="$style.typeTitle"
-                     class="body-2 col-sm-2 d-inline-flex align-items-center justify-content-between">
+                     class="body-2 d-inline-flex align-items-center justify-content-between col-sm-3">
                   <div>{{ type.title }}</div>
                   <img v-if="!type.isExpand" src="@/assets/icons/expand.png" alt="" width="24" height="24">
                 </div>
@@ -54,7 +65,7 @@
               </div>
               <template v-if="type.isExpand" v-for="child in type.child">
                 <div :key="child.title" class="row" :class="$style.childContainer">
-                  <div class="col caption d-inline-flex align-items-center justify-content-between"
+                  <div class="col col-sm-3 caption d-inline-flex align-items-center justify-content-between"
                        :class="$style.childTitle">
                     <div>{{ child.title }}</div>
                     <img v-if="child.info" :class="$style.img" :src="child.isExpand ? icons.close : icons.info"
@@ -72,14 +83,14 @@
                   </div>
                 </div>
                 <div v-if="child.isExpand" class="row">
-                  <div class="col" :class="$style.childInfo">{{ child.info }}</div>
+                  <div class="col col-sm-3" :class="$style.childInfo">{{ child.info }}</div>
                   <div class="col"/>
                   <div class="col"/>
                   <div class="col"/>
                   <div class="col"/>
                 </div>
               </template>
-              <div v-if="type.isComingSoon" :class="$style.comingsoon">*Coming Soon</div>
+              <div v-if="type.isComingSoon && type.isExpand" :class="$style.comingsoon">*Coming Soon</div>
             </div>
           </template>
         </div>
@@ -214,7 +225,7 @@
 </style>
 
 <script lang="ts">
-import {Component, Prop, Vue} from 'nuxt-property-decorator'
+import {Component, Prop, Vue, Watch} from 'nuxt-property-decorator'
 import PButton from "~/components/PButton.vue";
 
 @Component({
@@ -222,6 +233,8 @@ import PButton from "~/components/PButton.vue";
 })
 export default class PricingOverview extends Vue {
   @Prop({default: true, type: Boolean, required: true}) isMonthlyType: boolean;
+  @Prop({default: true, type: Boolean, required: true}) isExpandAll: boolean;
+
 
   get icons() {
     return {
@@ -265,6 +278,11 @@ export default class PricingOverview extends Vue {
 
   goPolaris() {
     window.open('https://polarisec.io/', '_blank');
+  }
+
+  @Watch('isExpandAll', {deep: true, immediate: true})
+  onExpandChange() {
+    this.functionTypes.forEach((type: any) => type.isExpand = this.isExpandAll);
   }
 
   functionTypes: any = [
@@ -1361,7 +1379,11 @@ export default class PricingOverview extends Vue {
   ];
 
   onChangeType(isMonthly: boolean) {
-    this.$nuxt.$emit('update', isMonthly);
+    this.$nuxt.$emit('update-type', isMonthly);
+  }
+
+  onChangeExpand(isExpandAll: boolean) {
+    this.$nuxt.$emit('update-expand', isExpandAll);
   }
 
   onClick() {

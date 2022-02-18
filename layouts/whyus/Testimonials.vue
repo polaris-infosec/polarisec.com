@@ -3,6 +3,8 @@
     <h1 class="mb-4">Testimonials</h1>
     <carousel class="col-12"
               :nav="false"
+              autoplay
+              loop
               :items="3"
               :margin="48"
     >
@@ -89,6 +91,12 @@ export default class Testimonials extends Vue {
       name: '',
       role: 'Business Department, National University of Singapore, ICE71 Competition review',
       icon: require('@/assets/icons/nus.png'),
+    },
+    {
+      text: `Over time, I have conducted testing of Polaris and found this service to be very good as an alternative to CloudFlare in Vietnam, and can go even further in competing directly with CloudFlare in the international market.`,
+      name: '',
+      role: '',
+      icon: require('@/assets/icons/azdigi.jpg'),
     },
   ]
 }

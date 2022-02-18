@@ -1,7 +1,7 @@
 <template>
   <div :class="$style.addonContainer">
     <div class="row" :class="$style.tableHeader">
-      <div :class="$style.headerItem" class="col-sm-2"></div>
+      <div :class="$style.headerItem" class="col-sm-3"></div>
       <div :class="$style.headerItem" class="col">Basic</div>
       <div :class="$style.headerItem" class="col">Standard</div>
       <div :class="$style.headerItem" class="col">Professional</div>
@@ -9,7 +9,7 @@
     </div>
     <template v-for="addon in addOns">
       <div class="row mt-4">
-        <div class="col-sm-2 body-2 d-inline-flex align-items-start"
+        <div class="col-sm-3 body-2 d-inline-flex align-items-start"
              :class="$style.childTitle">
           {{ addon.title }}
         </div>
@@ -22,7 +22,7 @@
             <div v-if="support.price" class="d-inline-flex align-items-start">
               <h4 :class="$style.price">${{ support.price }}</h4>
               <div :class="$style.priceDetail">
-                <div>per domain</div>
+                <div>per {{addon.isPerUser ? 'user' : 'domain' }}</div>
                 <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
               </div>
             </div>
@@ -236,6 +236,7 @@ export default class PricingAddOnsTable extends Vue {
       },
       {
         title: 'Zero Trust Access',
+        isPerUser: true,
         supports: [
           {
             isSupport: false,
