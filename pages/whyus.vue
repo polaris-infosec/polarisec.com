@@ -5,18 +5,18 @@
         <div>
           <h1>Why us</h1>
         </div>
-        <div class="d-flex justify-content-between mt-5 col-12">
-          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-5 pl-1">
+        <div class="d-flex justify-content-between mt-5 col-12 row">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-5 pl-1 mt-mb-36px">
             Polaris is your <span class="highlight-text">premier local solution</span> with local support, dedicated to
             providing users with a first rate security service.
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-5 pl-1">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-5 pl-1 mt-mb-36px">
             We understand that cyber security can sometimes be overly complex and seek to simplify the process, <span
             class="highlight-text">making it accessible to anyone, anywhere.</span>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-5 pl-1">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-5 pl-1 mt-mb-36px">
             We’re <span class="highlight-text">scalable at every level</span> from the first time cyber user to the
             seasoned veteran, addressing the concerns of small businesses and enterprises alike.
           </div>
@@ -38,8 +38,8 @@
     </div>
 
     <div :class="$style.analyticPanel">
-      <div :class="$style.analyticSection" class="d-flex app-width">
-        <div v-for="item in analyticContent" :key="item.title" class="p-0 col-sm-4 pr-5 pl-1 black-text">
+      <div :class="$style.analyticSection" class="d-flex row app-width">
+        <div v-for="item in analyticContent" :key="item.title" class="p-0 col-sm-12 col-12 col-lg-4 col-md-4 pr-5 pl-1 black-text mt-mb-36px">
           <h1 class="p-0 mb-2">
             {{ item.title }}
           </h1>
