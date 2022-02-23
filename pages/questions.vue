@@ -18,7 +18,7 @@
 .questionsSection
   padding-left 152px
   box-sizing border-box
-  height 761px
+  min-height 761px
 
 .questionsPanel
   background-color #0F0F0F

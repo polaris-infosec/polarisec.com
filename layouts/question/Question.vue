@@ -20,13 +20,22 @@
   </div>
 </template>
 <style module lang="stylus">
-@media (max-width: 1200px)
+@media (max-width: 767px)
+  .previous
+    width 159px !important
+  .button
+    width 159px !important
+
+@media screen and (min-width: 768px) and (max-width: 1384px)
   .button
     width 363px !important
+
   .previous
     width 363px !important
+
 .button
   width 758px
+
 .previous
   width 758px
 
