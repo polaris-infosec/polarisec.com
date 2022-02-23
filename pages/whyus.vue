@@ -5,8 +5,8 @@
         <div>
           <h1>Why us</h1>
         </div>
-        <div class="d-flex justify-content-between mt-5 col-12 row">
-          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-5 pl-1 mt-mb-36px">
+        <div class="d-flex justify-content-between mt-5 col-12 p-0 row mx-0">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-5 mt-mb-36px">
             Polaris is your <span class="highlight-text">premier local solution</span> with local support, dedicated to
             providing users with a first rate security service.
           </div>
