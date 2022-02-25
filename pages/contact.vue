@@ -16,7 +16,7 @@
               <b-form-input v-model="name" placeholder="Your Name" required class="input-normal"></b-form-input>
             </b-col>
             <b-col cols="4" class="p-0">
-              <b-form-input v-model="website" placeholder="Your Website" required class="input-normal"></b-form-input>
+              <b-form-input v-model="website" placeholder="Your Website" class="input-normal"></b-form-input>
             </b-col>
           </b-row>
           <b-row>
@@ -25,24 +25,23 @@
                             class="input-normal"></b-form-input>
             </b-col>
             <b-col cols="4" class="p-0">
-              <b-form-input v-model="phone" placeholder="Your Phone" required class="input-normal"></b-form-input>
+              <b-form-input v-model="phone" placeholder="Your Phone" class="input-normal"></b-form-input>
             </b-col>
           </b-row>
           <b-row>
             <b-col cols="4" class="p-0 pr-20px">
-              <b-form-input v-model="company" placeholder="Your Company" required class="input-normal"></b-form-input>
+              <b-form-input v-model="company" placeholder="Your Company" class="input-normal"></b-form-input>
             </b-col>
             <b-col cols="4" class="p-0">
-              <b-form-input v-model="role" placeholder="Your Role" required class="input-normal"></b-form-input>
+              <b-form-input v-model="role" placeholder="Your Role" class="input-normal"></b-form-input>
             </b-col>
           </b-row>
           <b-row>
             <b-col cols="8" class="p-0">
-              <b-form-input v-model="topic" placeholder="Your Topic" required class="input-normal"></b-form-input>
+              <b-form-input v-model="topic" placeholder="Your Topic" class="input-normal"></b-form-input>
             </b-col>
             <b-col cols="8" class="p-0">
               <b-form-textarea
-                required
                 id="textarea"
                 v-model="message"
                 placeholder="Your Message"
