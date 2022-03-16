@@ -128,7 +128,7 @@ export default class Contact extends Vue {
       'email': this.email,
       'phone': this.phone,
       'company': this.company,
-      'position': this.role,
+      'job_title': this.role,
       'topic': this.topic,
       'website': this.website,
       'message': this.message,
