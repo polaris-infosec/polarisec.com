@@ -114,6 +114,10 @@
                     <img src="~/assets/icons/medium.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
                          width="24">
                   </a>
+                  <a href="https://polarisec.substack.com/" target="_blank" class="mr-3">
+                    <img src="~/assets/icons/substack.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
+                         width="24">
+                  </a>
                   <a href="https://linkedin.com/company/polarisec" target="_blank">
                     <img src="~/assets/icons/linked-in.png" class="d-inline-block align-baseline" alt="Kitten"
                          height="24"

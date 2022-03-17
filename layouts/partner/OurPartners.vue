@@ -46,6 +46,7 @@
   left 50%
   transform translate(-50%, -50%)
 
+
 .subBox
   width 221px
   height 251px
@@ -89,6 +90,12 @@ export default class ContactSale extends Vue {
 
   partners: any [] = [
     {
+      icon: require("@/assets/partners/vng.png"),
+      text: 'VNG'
+    }, {
+      icon: require("~/assets/partners/group8.png"),
+      text: 'Group 8'
+    }, {
       icon: require("@/assets/icons/sbd.png"),
       text: 'Sao Bac Dau'
     },
