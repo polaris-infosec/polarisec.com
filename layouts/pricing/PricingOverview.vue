@@ -373,7 +373,7 @@ export default class PricingOverview extends Vue {
           isExpand: false,
           supports: [
             {
-              isSupport: true,
+              isSupport: false,
               info: '',
             },
             {
