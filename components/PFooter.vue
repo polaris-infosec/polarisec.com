@@ -16,15 +16,20 @@
           </span>
               12 Marina View #11-01
             </p>
-            <p>
+            <p class="m-0 mb-1">
            <span class="brand-2">
             Vietnam:
-          </span>
+           </span>
               H3 Building - CirCo, 384 Hoang Dieu St, District 4, HCMC
+            </p>
+            <p>
+           <span class="brand-2">
+            Contact number:
+           </span>
+              +84.287.101.7755
             </p>
           </div>
         </b-col>
-
         <b-col col lg="7" class="mr-3 p-0">
           <b-row class="d-flex justify-content-between">
             <div class="body-6 col-lg-3 col-5 mt-mb-36px">
@@ -115,7 +120,8 @@
                          width="24">
                   </a>
                   <a href="https://polarisec.substack.com/" target="_blank" class="mr-3">
-                    <img src="~/assets/icons/substack.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
+                    <img src="~/assets/icons/substack.png" class="d-inline-block align-baseline" alt="Kitten"
+                         height="24"
                          width="24">
                   </a>
                   <a href="https://linkedin.com/company/polarisec" target="_blank">
@@ -130,7 +136,7 @@
         </b-col>
       </b-row>
 
-      <b-row :class="$style.divide" class="mb-3 mt-5"></b-row>
+      <b-row :class="$style.divide" class="mb-3 mt-4"></b-row>
 
       <b-row class="d-flex justify-content-between align-content-center p-0">
         <b-col class="col-12 col-lg-3 p-0 text-mobile-center">
