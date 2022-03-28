@@ -9,7 +9,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   router: {
-    base: '/polarisec.com',
+    base: '/polarisec.com/',
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
