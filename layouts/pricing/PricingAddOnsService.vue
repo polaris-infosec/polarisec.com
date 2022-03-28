@@ -174,7 +174,7 @@ export default class PricingAddOnsService extends Vue {
     return [
       {
         type: 'Professional',
-        price: this.isMonthlyType ? 17 : 209,
+        price: this.isMonthlyType ? 17 : 167,
       },
       {
         type: 'Enterprise',
