@@ -97,7 +97,7 @@ export default class HomeNewsletter extends Vue {
       this.showHint = true;
       this.isLoading = false;
     } catch (e) {
-      await this.$router.replace('/404')
+      await this.$router.replace('/error-page')
     }
     this.showHint = false;
   }

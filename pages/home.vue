@@ -39,6 +39,35 @@ import HomeNewsletter from "~/layouts/home/HomeNewsletter.vue";
   }
 })
 export default class HomePage extends Vue {
+  get head() {
+    return {
+      title: 'Polaris Web Application & API Protection (WAAP) | Cyber Security',
+      meta: [
+        {
+          name: 'cybersecurity'
+        },
+        {
+          name: 'cyber security'
+        }, {
+          name: 'web protection'
+        }, {
+          name: 'api protection'
+        }, {
+          name: 'waap'
+        }, {
+          name: 'polaris'
+        }, {
+          name: 'web security'
+        }, {
+          name: 'web firewall'
+        }, {
+          name: 'application firewall'
+        }, {
+          name: 'ddos protection'
+        },
+      ]
+    }
+  }
 
 }
 </script>

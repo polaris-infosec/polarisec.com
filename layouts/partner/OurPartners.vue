@@ -14,10 +14,11 @@
         <carousel class="col-6"
                   :autoplay="partners.length > 3"
                   autoWidth
-                  :nav="false"
                   :dots="false"
                   :margin="22"
                   :items="3"
+                  :nav="false"
+                  :class="$style.ourPartners"
         >
           <template v-for="item in partners">
             <div :class="$style.box" :key="item.text">
@@ -31,6 +32,12 @@
           </span>
             </div>
           </template>
+          <template #prev>
+            <span class="carousel-control-prev-icon" :class="$style.prevButton" aria-hidden="true"></span>
+          </template>
+          <template #next>
+            <span class="carousel-control-next-icon" aria-hidden="true" :class="$style.nextButton"></span>
+          </template>
         </carousel>
       </b-row>
     </div>
@@ -39,6 +46,19 @@
 </template>
 
 <style module lang='stylus'>
+.nextButton
+  position absolute
+  right -33px
+  top 150px
+
+.prevButton
+  position absolute
+  right 660px
+  top 150px
+
+.ourPartners
+  position relative
+
 .logo
   margin 0
   position absolute

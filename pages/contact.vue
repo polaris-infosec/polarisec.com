@@ -13,7 +13,7 @@
         <b-form @submit="onSubmit">
           <b-row>
             <b-col cols="4" class="p-0 pr-20px">
-              <b-form-input v-model="name" placeholder="Your Name" required class="input-normal"></b-form-input>
+              <b-form-input v-model="name" placeholder="Your Name *" required class="input-normal"></b-form-input>
             </b-col>
             <b-col cols="4" class="p-0">
               <b-form-input v-model="website" placeholder="Your Website" class="input-normal"></b-form-input>
@@ -21,7 +21,7 @@
           </b-row>
           <b-row>
             <b-col cols="4" class="p-0 pr-20px">
-              <b-form-input v-model="email" placeholder="Your Email" type="email" required
+              <b-form-input v-model="email" placeholder="Your Email *" type="email" required
                             class="input-normal"></b-form-input>
             </b-col>
             <b-col cols="4" class="p-0">

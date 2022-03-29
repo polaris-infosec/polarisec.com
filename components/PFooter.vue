@@ -77,12 +77,12 @@
             <div class="body-6 col-lg-3 col-5 mt-mb-36px">
               RESOURCES
               <div class="d-flex flex-column mt-4 body-5">
-                <nuxt-link to="/pricing">
+                <nuxt-link to="/polaris-cyber-security-web-protection-waap-pricing">
                 <span class="color-text-7">
                     Pricing
                 </span>
                 </nuxt-link>
-                <nuxt-link :to="{path: '/pricing', hash: '#faq'}">
+                <nuxt-link :to="{path: '/polaris-cyber-security-web-protection-waap-pricing', hash: '#faq'}">
                 <span class="color-text-7">
                     FAQ
                 </span>
@@ -115,10 +115,6 @@
                 </b-row>
 
                 <b-row class="d-flex">
-                  <a href="https://polarisec.medium.com/" target="_blank" class="mr-3">
-                    <img src="~/assets/icons/medium.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
-                         width="24">
-                  </a>
                   <a href="https://polarisec.substack.com/" target="_blank" class="mr-3">
                     <img src="~/assets/icons/substack.png" class="d-inline-block align-baseline" alt="Kitten"
                          height="24"
@@ -152,7 +148,7 @@
               </span>
             </div>
           </nuxt-link>
-          <a href="https://polarisec.com/polaris_privacy_notice.pdf" download target="_blank">
+          <a href="docs/polaris_privacy_notice.pdf" download>
             <div class="pl-2 white-text text-center">
               <span class="body-4">
                  Privacy and Support
