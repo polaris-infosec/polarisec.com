@@ -41,7 +41,7 @@
             <p class="body-1 font-weight-bold">
               {{ addOn }}
             </p>
-            <nuxt-link to="/pricing">
+            <nuxt-link to="/polaris-cyber-security-web-protection-waap-pricing">
               <p class="brand-2" :class="$style.action">
                 Learn more ->
               </p>

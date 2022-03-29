@@ -4,7 +4,7 @@
       <div>
         <div :class="$style.title">Oops, something went wrong</div>
         <img src="@/assets/images/404/404.png" width="544" height="194" alt="">
-        <div :class="$style.link"><nuxt-link to="/home">Go Back</nuxt-link></div>
+        <div :class="$style.link"><nuxt-link to="/home">Go Home</nuxt-link></div>
       </div>
     </div>
   </div>

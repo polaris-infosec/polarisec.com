@@ -40,6 +40,19 @@
             </div>
           </div>
         </div>
+
+        <div class="d-flex justify-content-end col-12 pr-4 pt-2">
+          <b-dropdown
+            text="Find more..."
+            class="m-2 mr-3"
+            :no-flip="true"
+            no-caret
+            :class="$style.findMoreDropdown"
+          >
+            <b-dropdown-item href="https://polarisec.medium.com/" target="_blank"><span class="black-text">Blog</span></b-dropdown-item>
+            <b-dropdown-item href="https://support.polarisec.com/portal/en/home" target="_blank"><span class="black-text">Support Center</span></b-dropdown-item>
+          </b-dropdown>
+        </div>
       </div>
     </div>
   </div>
@@ -47,6 +60,10 @@
 
 <style module lang='stylus'>
 @import "@/styles/config.styl"
+.findMoreDropdown
+  button
+    background $gradient-3 !important
+
 .section
   padding 70px 60px
 

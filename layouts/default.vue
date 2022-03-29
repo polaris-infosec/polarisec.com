@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p-navbar/>
+    <p-navbar :class="$style.nav" class="col-12"/>
     <main>
       <Nuxt/>
     </main>
@@ -9,7 +9,10 @@
 </template>
 
 <style module lang='stylus'>
-
+.nav
+  position sticky
+  top 0
+  z-index 2
 </style>
 
 <script lang="ts">

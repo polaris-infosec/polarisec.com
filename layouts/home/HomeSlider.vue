@@ -4,7 +4,6 @@
       <h2 :class="$style.sliderTitle" class="text-sm-center">Featured by:</h2>
       <carousel :class="$style.sliderContainer"
                 autoplay
-                loop
                 autoWidth
                 :nav="false"
                 :dots="false"
@@ -15,11 +14,20 @@
             <img height="48" :src="feature.img" alt="">
           </div>
         </template>
+
+        <template #prev>
+          <span class="carousel-control-prev-icon" :class="$style.prevButton" aria-hidden="true"></span>
+        </template>
+        <template #next>
+          <span class="carousel-control-next-icon" aria-hidden="true" :class="$style.nextButton"></span>
+        </template>
+
       </carousel>
       <div :class="$style.seeItContainer" class="row">
         <div class="col-sm-6">
           <h2>See it in action</h2>
-          <h5 :class="$style.actionText">Request a free demo today and stay ahead of <br> the cyberthreat evolution.</h5>
+          <h5 :class="$style.actionText">Request a free demo today and stay ahead of <br> the cyberthreat evolution.
+          </h5>
           <p-button text="Request a Demo" @click="onClick"/>
         </div>
         <div class="col-sm-6 px-0" :class="$style.dashboardImg">
@@ -32,6 +40,17 @@
 
 <style module lang='stylus'>
 @import "@/styles/config.styl"
+.nextButton
+  position absolute
+  top 50%
+  right -30px
+  transform translateY(-50%)
+
+.prevButton
+  position absolute
+  left -30px
+  top 50%
+  transform translateY(-50%)
 
 .container
   background-image url("@/assets/images/home/feature-home.png")
@@ -51,7 +70,8 @@
   border-radius 8px
 
 .sliderContainer
-  padding-bottom: 115px
+  margin-bottom 115px
+  position relative
 
 .seeItContainer
   padding 84px 0 0 60px
@@ -76,9 +96,9 @@
   img
     border-top-left-radius 12px
     margin-right 10px
-    image-rendering: -moz-crisp-edges;         /* Firefox */
-    image-rendering:   -o-crisp-edges;         /* Opera */
-    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
     image-rendering: crisp-edges;
     -ms-interpolation-mode: nearest-neighbor;
 
