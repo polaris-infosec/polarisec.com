@@ -4,9 +4,9 @@
     <carousel class="col-12"
               :nav="false"
               autoplay
-              loop
               :items="3"
               :margin="48"
+              :class="$style.testimonials"
     >
       <template v-for="item in testimonialsContents">
         <div :class="$style.testimonialsBox" :key="item.text">
@@ -22,11 +22,30 @@
           </p>
         </div>
       </template>
+      <template #prev>
+        <span class="carousel-control-prev-icon" :class="$style.prevButton" aria-hidden="true"></span>
+      </template>
+      <template #next>
+        <span class="carousel-control-next-icon" aria-hidden="true" :class="$style.nextButton"></span>
+      </template>
     </carousel>
   </div>
 </template>
 
 <style module lang="stylus">
+.nextButton
+  position absolute
+  right -20px
+  top 190px
+
+.prevButton
+  position absolute
+  left -50px
+  top 190px
+
+.testimonials
+  position relative
+
 :global(.owl-dots)
   margin-top 45px !important
 

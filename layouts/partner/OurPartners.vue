@@ -41,7 +41,6 @@
         </carousel>
       </b-row>
     </div>
-
   </div>
 </template>
 
