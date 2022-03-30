@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import {Component, Vue} from 'nuxt-property-decorator'
-import ErrorPage from "~/pages/error-page.vue";
+import ErrorPage from "~/pages/404.vue";
 
 @Component({
   components: {ErrorPage}
