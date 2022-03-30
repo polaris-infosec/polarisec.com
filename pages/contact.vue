@@ -33,7 +33,7 @@
               <b-form-input v-model="company" placeholder="Your Company" class="input-normal"></b-form-input>
             </b-col>
             <b-col cols="4" class="p-0">
-              <b-form-input v-model="role" placeholder="Your Role" class="input-normal"></b-form-input>
+              <b-form-input v-model="role" placeholder="Your Role *" required class="input-normal"></b-form-input>
             </b-col>
           </b-row>
           <b-row>
@@ -44,7 +44,8 @@
               <b-form-textarea
                 id="textarea"
                 v-model="message"
-                placeholder="Your Message"
+                required
+                placeholder="Your Message *"
                 rows="3"
                 max-rows="6"
                 class="input-normal"
