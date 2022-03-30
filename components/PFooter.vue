@@ -77,12 +77,12 @@
             <div class="body-6 col-lg-3 col-5 mt-mb-36px">
               RESOURCES
               <div class="d-flex flex-column mt-4 body-5">
-                <nuxt-link to="/polaris-cyber-security-web-protection-waap-pricing">
+                <nuxt-link to="/cyber-security-web-protection-pricing">
                 <span class="color-text-7">
                     Pricing
                 </span>
                 </nuxt-link>
-                <nuxt-link :to="{path: '/polaris-cyber-security-web-protection-waap-pricing', hash: '#faq'}">
+                <nuxt-link :to="{path: '/cyber-security-web-protection-pricing', hash: '#faq'}">
                 <span class="color-text-7">
                     FAQ
                 </span>

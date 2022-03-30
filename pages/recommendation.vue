@@ -6,7 +6,7 @@
         <p class="text-6">
           Based on the type of website you have and your needs, we recommend the following plan and add-ons.
         </p>
-        <a href="https://polarisec.io/">
+        <a href="/questions">
           <p :class="$style.action" class="brand-2">
             Start over ->
           </p>
@@ -41,7 +41,7 @@
             <p class="body-1 font-weight-bold">
               {{ addOn }}
             </p>
-            <nuxt-link to="/polaris-cyber-security-web-protection-waap-pricing">
+            <nuxt-link to="/cyber-security-web-protection-pricing">
               <p class="brand-2" :class="$style.action">
                 Learn more ->
               </p>

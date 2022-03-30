@@ -4,7 +4,7 @@
       Some quick  questions for
       personalized recommendations
     </p>
-    <nuxt-link to="/polaris-cyber-security-web-protection-waap-pricing">
+    <nuxt-link to="/cyber-security-web-protection-pricing">
     <p class="brand-2 mt-5 pt-3" :class="$style.action">
       Skip questions and see all plans ->
     </p>

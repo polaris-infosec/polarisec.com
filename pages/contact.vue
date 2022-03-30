@@ -44,7 +44,8 @@
               <b-form-textarea
                 id="textarea"
                 v-model="message"
-                placeholder="Your Message"
+                required
+                placeholder="Your Message *"
                 rows="3"
                 max-rows="6"
                 class="input-normal"
@@ -56,9 +57,10 @@
             <p-button :class="$style.sendMessageBtn" :gradient="1" type="submit" text="Send Message"
                       variant="primary"></p-button>
           </b-row>
-          <b-row>
-            <div :class="$style.comingsoon" class="col-sm-12 px-0 mt-3">*All personal data is safeguarded under privacy and support policies.</div>
-          </b-row>
+            <b-row>
+              <div :class="$style.comingsoon" class="col-sm-12 px-0 mt-3">* Required</div>
+              <div :class="$style.comingsoon" class="col-sm-12 px-0 mt-1">** All personal data is safeguarded under privacy and support policies.</div>
+            </b-row>
         </b-form>
       </div>
     </div>

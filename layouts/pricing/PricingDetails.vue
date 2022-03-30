@@ -5,13 +5,13 @@
         <div class="col-sm-2 px-0">
           <ol style="list-style-type: none" class="pl-0">
             <li class="active">
-              <nuxt-link :to="{path: '/polaris-cyber-security-web-protection-waap-pricing', hash: '#overview'}">Overview</nuxt-link>
+              <nuxt-link :to="{path: '/cyber-security-web-protection-pricing', hash: '#overview'}">Overview</nuxt-link>
             </li>
             <li>
-              <nuxt-link :to="{path: '/polaris-cyber-security-web-protection-waap-pricing', hash: '#add-on'}">Add-ons</nuxt-link>
+              <nuxt-link :to="{path: '/cyber-security-web-protection-pricing', hash: '#add-on'}">Add-ons</nuxt-link>
             </li>
             <li>
-              <nuxt-link :to="{path: '/polaris-cyber-security-web-protection-waap-pricing', hash: '#faq'}">FAQs</nuxt-link>
+              <nuxt-link :to="{path: '/cyber-security-web-protection-pricing', hash: '#faq'}">FAQs</nuxt-link>
             </li>
           </ol>
         </div>
