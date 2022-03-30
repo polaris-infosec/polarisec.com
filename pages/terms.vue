@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid px-0">
     <div :class="$style.bannerContainer">
-      <div :class="$style.lastUpdate">Last Updated December 30, 2021</div>
+      <div :class="$style.lastUpdate">Last Updated March 30, 2022</div>
       <h1 class="color-text-8">Terms of Service</h1>
     </div>
     <div :class="$style.termContainer">
@@ -12,27 +12,27 @@
       <div>1.1 Any customer under a subscription service with a Service Level Agreements (“SLA”) shall commence on the
         date of signing/registration and shall continue until terminated in accordance with clause 10.
       </div>
-      <div>1.2 During the term of the SLA, the Customer may update their Works to procure any of Polaris’ additional
-        Services at any time.
+      <div>1.2 During the term of the SLA, the Customer may update their services and works to procure any of Polaris’
+        additional services at any time.
       </div>
       <div>1.3 The acceptance of the SLA indicates the Customer has read and has agreed to these Terms of Service.</div>
 
       <div><b>2. SUPPLIER'S OBLIGATIONS</b></div>
-      <div>2.1 Polaris shall use reasonable efforts to provide the Works with a platform uptime of 99.99%.</div>
+      <div>2.1 Polaris shall use reasonable efforts to provide the services with a platform uptime of 99.99%.</div>
       <div>2.2 Polaris shall secure all the necessary licenses, permits and government approvals and corporate
-        authorizations to perform the Works.
+        authorizations to perform the services.
       </div>
 
       <div><b>3. CUSTOMER'S OBLIGATIONS</b></div>
       <div>3.1 The Customer shall:</div>
       <div class="ml-4">(a) ensure that all information provided to Polaris is accurate in all material respects;</div>
       <div class="ml-4">(b) provide to Polaris access to its data, networks, premises and other facilities as reasonably
-        required and necessary by Polaris for the performance of the Works; and
+        required and necessary by Polaris for the performance of the provisioned services; and
       </div>
-      <div class="ml-4">(c) comply with all laws and regulations applying to the provision of the Works from time to
+      <div class="ml-4">(c) comply with all laws and regulations applying to the provision of the services from time to
         time in force.
       </div>
-      <div>3.2 If Polaris's performance of its obligations under the SLA is prevented or delayed by any act or omission
+      <div>3.2 If Polaris' performance of its obligations under the SLA is prevented or delayed by any act or omission
         of the Customer, its agents, subcontractors, consultants, or employees then, without prejudice to any other
         right or remedy it may have, Polaris shall be allowed an extension of time to perform its obligations equal to
         the delay caused by the Customer.
@@ -52,7 +52,7 @@
       </div>
       <div class="ml-4">(d) shall only use the Software solely for the purpose for which it is supplied;</div>
       <div class="ml-4">(e) shall not modify, reverse engineer, or alter the Software; and</div>
-      <div class="ml-4">(f) shall (notwithstanding the indemnity provisions) indemnify Polarisand/or its third party
+      <div class="ml-4">(f) shall (notwithstanding the indemnity provisions) indemnify Polaris and/or its third party
         supplier and hold them harmless against any claims, actions, law suits, losses or damages as a result of its
         breach of this Clause 5.
       </div>
@@ -69,7 +69,7 @@
         (including negligence) arising under or in connection with the SLA.
       </div>
       <div>5.2 Nothing in the SLA excludes the liability of Polaris (a) for the death or personal injury caused by
-        Polaris’s negligence; or (b) for fraud or fraudulent misrepresentation.
+        Polaris’ negligence; or (b) for fraud or fraudulent misrepresentation.
       </div>
       <div>5.3 Subject to clause 7.2, Polaris shall not be liable to the Customer for any loss of profits, loss of sales
         or business, loss of agreements or contracts, loss of anticipated savings, loss of or damage to goodwill, loss
@@ -77,11 +77,11 @@
         loss, costs, damages, charges or expenses.
       </div>
       <div>
-        5.4 Subject to clause 7.2, Polaris's total liability in contract, tort (including negligence or breach of
-        statutory
-        duty howsoever arising), misrepresentation (whether innocent or negligent), restitution or otherwise arising in
-        connection with the performance or contemplated performance of the SLA shall not exceed 100% of the total
-        Service Charges and any additional charges (whether invoiced or not) in the year in which the liability arose.
+        5.4 Subject to clause 7.2, Polaris' total liability in contract, tort (including negligence or breach of
+        statutory duty howsoever arising), misrepresentation (whether innocent or negligent), restitution or otherwise
+        arising in connection with the performance or contemplated performance of the SLA shall not exceed 100% of the
+        total Service Charges and any additional charges (whether invoiced or not) in the year in which the liability
+        arose.
       </div>
 
       <div><b>6 CONFIDENTIALITY</b></div>
@@ -124,7 +124,7 @@
         Polaris;
       </div>
       <div class="ml-4">(c) the Customer does or allows anything to be done which in Polaris's reasonable opinion may
-        jeopardise the operation of the Service or the Polaris’s network; or
+        jeopardise the operation of the Service or the Polaris’ network; or
       </div>
       <div class="ml-4">(d) the Customer has not paid a Charge or any part thereof for more than 30 days after the
         Payment Date.
@@ -140,22 +140,23 @@
       <div>9.4 Nothing herein shall prejudice the right of Polaris to terminate the Service pursuant to clause 12.</div>
 
       <div><b>10 TERMINATION</b></div>
-      <div>10.1 Subscriptions will automatically be renewed at the end of the term unless the Customer provides written
-        notice to Polaris (30) calendar days prior to the end date.
+      <div>10.1 Subscriptions will automatically be renewed at the end of the term dependent on customer payment
+        schedules (monthly/annual) unless the Customer provides written notice to Polaris prior to the next billing
+        cycle.
       </div>
-      <div>10.2 The Customer may opt to terminate the SLA at any time prior to subscription’s end by giving at least
-        thirty (30) calendar days written notice to Polaris but will be subject to paying the remainder of the
-        subscription fees through the agreed upon one year term.
+      <div>10.2 Customers paying annually who cancel prior to the end of their subscription will retain service through
+        the end of their subscription and will not be renewed, but are subject to the no refund policy. Customers paying
+        monthly who cancel or downgrade prior to the next monthly billing cycle will have their current service plan for
+        the remainder of that month before the change.
       </div>
-      <div>10.3 Without affecting any other right or remedy available to it, Polaris may terminate the SLA with
-        immediate effect by giving written notice to the Customer if (a) the Customer fails to pay any amount due under
-        the SLA on the Due Date and remains in default not less than fourteen (14) days after being notified to make
-        such payment
+      <div>10.3 Without affecting any other right or remedy available to it, Polaris may terminate the service with
+        immediate effect by giving written notice to the Customer if (a) the Customer fails to pay any amount due and
+        remains in default not less than fourteen (14) days after being notified to make such payment.
       </div>
-      <div>10.4 Upon termination of the SLA:</div>
-      <div class="ml-4">(a) the Customer shall immediately pay to Polaris, all of Polaris's outstanding unpaid invoices
-        and interest and, in respect of the Works supplied but for which no invoice has been submitted, Polaris may
-        submit an invoice, which shall be payable immediately on receipt; and
+      <div>10.4 Upon termination of the service:</div>
+      <div class="ml-4">(a) if applicable, the Customer shall immediately pay to Polaris, all of Polaris's outstanding
+        unpaid invoices and interest and, in respect of the Works supplied but for which no invoice has been submitted,
+        Polaris may submit an invoice, which shall be payable immediately on receipt; and
       </div>
       <div class="ml-4">(b) all existing Work shall terminate automatically.</div>
       <div>10.5 Any provision of the SLA that expressly or by implication is intended to come into or continue in force
@@ -191,11 +192,13 @@
       </div>
 
       <div><b>12 MISCELLANEOUS</b></div>
-      <div>12.1 <u>Governing law.</u> The SLA and any dispute or claim (including non-contractual disputes or claims) arising
+      <div>12.1 <u>Governing law.</u> The SLA and any dispute or claim (including non-contractual disputes or claims)
+        arising
         out of or in connection with it or its subject matter or formation shall be governed by and construed in
         accordance with the laws of Vietnam, without giving effect to its conflict of laws principles.
       </div>
-      <div>12.2 <u>Jurisdiction.</u> Each Party irrevocably agrees that the courts of Vietnam shall have exclusive jurisdiction
+      <div>12.2 <u>Jurisdiction.</u> Each Party irrevocably agrees that the courts of Vietnam shall have exclusive
+        jurisdiction
         to settle any dispute or claim (including non-contractual disputes or claims) arising out of or in connection
         with the SLA or its subject matter or formation.
       </div>
