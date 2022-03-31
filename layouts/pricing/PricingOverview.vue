@@ -1210,7 +1210,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: '24 x 7 x 365 x 2',
+          title: '24 x 7 x 365 x 4',
           info: 'Full 24/7, 365 days coverage within 4 hours',
           isExpand: false,
           supports: [
