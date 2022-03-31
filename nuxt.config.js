@@ -33,7 +33,7 @@ export default {
       },
       {
         property: 'og:image',
-        content: '@/favicon.ico'
+        content: '/favicon.ico'
       },
       {
         property: 'og:description',
