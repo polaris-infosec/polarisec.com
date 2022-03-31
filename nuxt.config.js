@@ -1,7 +1,7 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
-  html:'og: http://ogp.me/ns#',
+  html: 'og: http://ogp.me/ns#',
 
   googleAnalytics: {
     id: 'UA-223051454-1'
@@ -18,7 +18,7 @@ export default {
     title: 'Web Application & API Protection | Cyber Security',
     htmlAttrs: {
       lang: 'en',
-      prefix:'og: http://ogp.me/ns#'
+      prefix: 'og: http://ogp.me/ns#'
     },
     meta: [
       {charset: 'utf-8'},
@@ -44,7 +44,19 @@ export default {
       {
         property: 'og:url',
         content: 'https://polarisec.com/home'
-      }
+      },
+      {
+        property: 'og:image:type',
+        content: 'image/x-icon'
+      },
+      {
+        property: 'og:image:width',
+        content: '300'
+      },
+      {
+        property: 'og:image:height',
+        content: '300'
+      },
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
