@@ -23,27 +23,13 @@ export default class PolarisCyberSecurityWebProtectionWaapPricing extends Vue {
       title: 'Web Application & API Protection Products Pricing',
       meta: [
         {
-          name: 'cybersecurity'
+          name: 'keywords',
+          content: 'cyber security, cybersecurity, web protection, api protection, waap, polaris, web security, web firewall, application firewall'
         },
         {
-          name: 'cyber security'
-        }, {
-          name: 'web protection'
-        }, {
-          name: 'api protection'
-        }, {
-          name: 'waap'
-        }, {
-          name: 'polaris'
-        }, {
-          name: 'web security'
-        }, {
-          name: 'web firewall'
-        }, {
-          name: 'application firewall'
-        }, {
-          name: 'ddos protection'
-        },
+          name: 'description',
+          content: 'Polaris is your trusted cyber security partner providing web protection for businesses of all sizes and industries. Try our FREE Basic plan before deciding on an upgrade.'
+        }
       ]
     }
   }
