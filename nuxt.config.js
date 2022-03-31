@@ -35,7 +35,7 @@ export default {
       },
       {
         property: 'og:image',
-        content: 'https://nhatthien0812.github.io/polarisec.com/logo.png'
+        content: 'https://polarisec.com/logo.png'
       },
       {
         property: 'og:description',
