@@ -5,22 +5,24 @@
               :nav="false"
               autoplay
               :items="3"
-              :margin="48"
               :class="$style.testimonials"
     >
       <template v-for="item in testimonialsContents">
-        <div :class="$style.testimonialsBox" :key="item.text">
-          <b-avatar variant="info" :size="50" :src="item.icon" :class="$style.logo"></b-avatar>
-          <p class="body-2 m-0">
-            {{ item.text }}
-          </p>
-          <p class="body-1 m-0 text-capitalize" :class="$style.name">
-            {{ item.name }}
-          </p>
-          <p :class="$style.role">
-            {{ item.role }}
-          </p>
+        <div class="d-flex justify-content-center">
+          <div :class="$style.testimonialsBox" :key="item.text">
+            <b-avatar variant="info" :size="50" :src="item.icon" :class="$style.logo"></b-avatar>
+            <p class="body-2 m-0">
+              {{ item.text }}
+            </p>
+            <p class="body-1 m-0 text-capitalize" :class="$style.name">
+              {{ item.name }}
+            </p>
+            <p :class="$style.role">
+              {{ item.role }}
+            </p>
+          </div>
         </div>
+
       </template>
       <template #prev>
         <span class="carousel-control-prev-icon" :class="$style.prevButton" aria-hidden="true"></span>
@@ -40,7 +42,7 @@
 
 .prevButton
   position absolute
-  left -50px
+  left -20px
   top 190px
 
 .testimonials
