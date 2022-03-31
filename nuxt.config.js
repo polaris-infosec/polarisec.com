@@ -35,7 +35,7 @@ export default {
       },
       {
         property: 'og:image',
-        content: 'https://ogp.me/logo.png'
+        content: 'https://nhatthien0812.github.io/logo.png'
       },
       {
         property: 'og:description',
@@ -59,7 +59,7 @@ export default {
       },
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+      {rel: 'icon', type: 'image/png', href: '/logo.png'}
     ]
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
