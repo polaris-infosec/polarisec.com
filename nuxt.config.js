@@ -14,7 +14,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Polaris Landing Page',
+    title: 'Web Application & API Protection | Cyber Security',
     htmlAttrs: {
       lang: 'en'
     },
@@ -22,7 +22,27 @@ export default {
       {charset: 'utf-8'},
       // { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {hid: 'description', name: 'description', content: ''},
-      {name: 'format-detection', content: 'telephone=no'}
+      {name: 'format-detection', content: 'telephone=no'},
+      {
+        property: 'og:title',
+        content: 'Web Application & API Protection | Cyber Security'
+      },
+      {
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        property: 'og:image',
+        content: '@/favicon.ico'
+      },
+      {
+        property: 'og:description',
+        content: 'Polaris is your trusted cyber security partner providing web protection through proprietary artificial intelligence and machine learning. Deter attacks before damage is done.'
+      },
+      {
+        property: 'og:url',
+        content: 'https://polarisec.com/home'
+      }
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
