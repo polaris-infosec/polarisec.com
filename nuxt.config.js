@@ -35,7 +35,7 @@ export default {
       },
       {
         property: 'og:image',
-        content: 'https://polarisec.com/favicon.ico'
+        content: 'https://ogp.me/logo.png'
       },
       {
         property: 'og:description',
@@ -47,7 +47,7 @@ export default {
       },
       {
         property: 'og:image:type',
-        content: 'image/x-icon'
+        content: 'image/png'
       },
       {
         property: 'og:image:width',
