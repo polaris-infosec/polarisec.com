@@ -6,11 +6,11 @@
         <p class="text-6">
           Based on the type of website you have and your needs, we recommend the following plan and add-ons.
         </p>
-        <a href="/questions">
+        <nuxt-link to="/questions">
           <p :class="$style.action" class="brand-2">
             Start over ->
           </p>
-        </a>
+        </nuxt-link>
       </div>
     </div>
 
