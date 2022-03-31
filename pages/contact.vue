@@ -118,6 +118,12 @@ export default class Contact extends Vue {
   topic: string = '';
   message: string = '';
 
+  get head() {
+    return {
+      title: 'Polaris Web Protection | Contact Us'
+    }
+  }
+
   showButton() {
     return !!this.name && !!this.website && !!this.email && !!this.phone && !!this.company && !!this.role && !!this.topic && !!this.message;
   }

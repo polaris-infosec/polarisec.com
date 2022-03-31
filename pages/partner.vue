@@ -26,6 +26,10 @@ import OurPartners from "~/layouts/partner/OurPartners.vue";
   components: {OurPartners, ContactSale, PartnerTypes, WhyChoosePolaris, OurJoinMission}
 })
 export default class Partner extends Vue {
-
+  get head() {
+    return {
+      title: 'Polaris Web Protection | Partners'
+    }
+  }
 }
 </script>
