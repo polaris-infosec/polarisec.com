@@ -50,6 +50,26 @@ export default class HomePage extends Vue {
         {
           name: 'description',
           content: 'Polaris is your trusted cyber security partner providing web protection through proprietary artificial intelligence and machine learning. Deter attacks before damage is done.'
+        },
+        {
+          property: 'og:title',
+          content: 'Web Application & API Protection | Cyber Security'
+        },
+        {
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          property: 'og:image',
+          content: '@/favicon.ico'
+        },
+        {
+          property: 'og:description',
+          content: 'Polaris is your trusted cyber security partner providing web protection through proprietary artificial intelligence and machine learning. Deter attacks before damage is done.'
+        },
+        {
+          property: 'og:url',
+          content: 'https://polarisec.com/home'
         }
       ]
     }
