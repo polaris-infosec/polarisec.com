@@ -104,14 +104,18 @@ export default class Recommendation extends Vue {
   addOn: string = '';
 
   created() {
-    this.recommendation;
-  }
-
-  get recommendation() {
     const question1 = localStorage.getItem('question1');
     const question2 = localStorage.getItem('question2');
     const question3 = localStorage.getItem('question3');
 
+    if (!question1 || !question2 || !question3) {
+      return this.$router.push({path: '/questions'})
+    }
+
+    this.recommendation(question1, question2, question3);
+  }
+
+  recommendation(question1: string, question2: string, question3: string) {
     if (question1 === 'I have a lot!') {
       this.planLeftAttribute = 'Enterprise';
       this.planRightAttribute = 'Add-On';
@@ -145,12 +149,11 @@ export default class Recommendation extends Vue {
             this.addOn = 'Managed Security Services - Zero Trust';
             break;
           default:
-            this.addOn = 'Enterprise'
+            this.planRightAttribute = '';
+            this.addOn = 'None'
         }
       }
     }
-
-    return;
   }
 
   onClick() {
