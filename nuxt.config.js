@@ -27,7 +27,7 @@ export default {
       {name: 'format-detection', content: 'telephone=no'},
       {
         property: 'og:title',
-        content: 'Web Application & API Protection | Cyber Security'
+        content: 'Polaris Web Protection & Cyber Security'
       },
       {
         property: 'og:type',
