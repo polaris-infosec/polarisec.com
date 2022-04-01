@@ -41,7 +41,7 @@ import HomeNewsletter from "~/layouts/home/HomeNewsletter.vue";
 export default class HomePage extends Vue {
   get head() {
     return {
-      title: 'Web Application & API Protection | Cyber Security',
+      title: 'Polaris Web Protection & Cyber Security',
       meta: [
         {
           name: 'keywords',

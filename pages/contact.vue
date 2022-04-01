@@ -120,7 +120,7 @@ export default class Contact extends Vue {
 
   get head() {
     return {
-      title: 'Polaris Web Protection | Contact Us'
+      title: 'Polaris Web Protection & Cyber Security | Contact Us'
     }
   }
 

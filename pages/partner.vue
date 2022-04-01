@@ -28,7 +28,7 @@ import OurPartners from "~/layouts/partner/OurPartners.vue";
 export default class Partner extends Vue {
   get head() {
     return {
-      title: 'Polaris Web Protection | Partners'
+      title: 'Polaris Web Protection & Cyber Security | Partners'
     }
   }
 }
