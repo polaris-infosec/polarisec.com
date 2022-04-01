@@ -57,11 +57,26 @@
             <p-button :class="$style.sendMessageBtn" :gradient="1" type="submit" text="Send Message"
                       variant="primary"></p-button>
           </b-row>
-            <b-row>
-              <div :class="$style.comingsoon" class="col-sm-12 px-0 mt-3">* Required</div>
-              <div :class="$style.comingsoon" class="col-sm-12 px-0 mt-1">** All personal data is safeguarded under privacy and support policies.</div>
-            </b-row>
+          <b-row>
+            <div :class="$style.comingsoon" class="col-sm-12 px-0 mt-3">* Required</div>
+            <div :class="$style.comingsoon" class="col-sm-12 px-0 mt-1">** All personal data is safeguarded under
+              privacy and support policies.
+            </div>
+          </b-row>
         </b-form>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <b-alert
+          :show="dismissCountDown"
+          dismissible
+          variant="warning"
+          @dismissed="dismissCountDown=0"
+          @dismiss-count-down="countDownChanged"
+          :class="[$style.message, status]"
+        >
+          {{ alert }}
+        </b-alert>
       </div>
     </div>
   </div>
@@ -69,6 +84,21 @@
 
 <style module lang='stylus'>
 @import "../styles/main.styl"
+.success
+  background-color #8BDFAF
+  border-color #8BDFAF
+
+
+.error
+  background-color red
+  border-color red
+
+.message
+  position fixed
+  bottom 0
+  z-index 2
+  color white
+
 .comingsoon
   font-size 12px
   line-height 16px
@@ -118,6 +148,20 @@ export default class Contact extends Vue {
   topic: string = '';
   message: string = '';
 
+  dismissSecs: number = 5;
+  dismissCountDown: number = 0;
+  alert: string = '';
+  statusType: string = '';
+
+
+  countDownChanged(dismissCountDown: any) {
+    this.dismissCountDown = dismissCountDown
+  }
+
+  showAlert() {
+    this.dismissCountDown = this.dismissSecs
+  }
+
   get head() {
     return {
       title: 'Polaris Web Protection & Cyber Security | Contact Us'
@@ -131,7 +175,8 @@ export default class Contact extends Vue {
   async onSubmit(event: any) {
     event.preventDefault();
     if (!this.showButton) return;
-    await this.$axios.$post('https://polarisec.io/api/contact-us', {
+
+    const response = await this.$axios.$post('https://polarisec.io/api/contact-us', {
       'name': this.name,
       'email': this.email,
       'phone': this.phone,
@@ -141,7 +186,33 @@ export default class Contact extends Vue {
       'website': this.website,
       'message': this.message,
     });
-    await this.$router.push({path: '/'});
+
+    if (response.success) {
+      this.name = '';
+      this.email = '';
+      this.phone = '';
+      this.company = '';
+      this.role = '';
+      this.topic = '';
+      this.website = '';
+      this.message = '';
+      this.alert = 'Thanks, message received. We will get back to you soon';
+      this.statusType = 'success';
+    } else {
+      this.alert = response.message;
+      this.statusType = 'error';
+    }
+
+    this.showAlert();
+  }
+
+  get status() {
+    switch (this.statusType) {
+      case 'success':
+        return this.$style.success;
+      case 'error':
+        return this.$style.error;
+    }
   }
 }
 </script>
