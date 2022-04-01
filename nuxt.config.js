@@ -15,7 +15,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Web Application & API Protection | Cyber Security',
+    title: 'Polaris Web Protection & Cyber Security',
     htmlAttrs: {
       lang: 'en',
       prefix: 'og: http://ogp.me/ns#'
