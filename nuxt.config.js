@@ -43,7 +43,7 @@ export default {
       },
       {
         property: 'og:url',
-        content: 'https://polarisec.com/home'
+        content: 'https://polarisec.com/'
       },
       {
         property: 'og:image:type',
