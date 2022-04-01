@@ -27,6 +27,10 @@ import CompanyCertifications from "~/layouts/company/CompanyCertifications.vue";
   }
 })
 export default class Company extends Vue {
-
+  get head() {
+    return {
+      title: 'Polaris Web Protection | Company'
+    }
+  }
 }
 </script>

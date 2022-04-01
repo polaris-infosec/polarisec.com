@@ -2,10 +2,11 @@
   <div class="container-fluid px-0" :class="$style.container">
     <div class="app-width" :class="$style.bodyContainer">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 px-0">
           <h2>Company Certifications</h2>
         </div>
-        <div class="col-sm-8" :class="$style.certContainer">
+        <div class="col-sm-1 px-0"/>
+        <div class="col-sm-8 px-0" :class="$style.certContainer">
           <div class="row justify-content-center">
             <template v-for="certification in certifications">
               <div :key="certification.img"

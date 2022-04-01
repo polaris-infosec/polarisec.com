@@ -1,6 +1,7 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
+  html: 'og: http://ogp.me/ns#',
 
   googleAnalytics: {
     id: 'UA-223051454-1'
@@ -14,15 +15,48 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Polaris Landing Page',
+    title: 'Web Application & API Protection | Cyber Security',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
+      prefix: 'og: http://ogp.me/ns#'
     },
     meta: [
       {charset: 'utf-8'},
       // { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {hid: 'description', name: 'description', content: ''},
-      {name: 'format-detection', content: 'telephone=no'}
+      {name: 'format-detection', content: 'telephone=no'},
+      {
+        property: 'og:title',
+        content: 'Web Application & API Protection | Cyber Security'
+      },
+      {
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        property: 'og:image',
+        content: 'https://polarisec.com/logo.png'
+      },
+      {
+        property: 'og:description',
+        content: 'Polaris is your trusted cyber security partner providing web protection through proprietary artificial intelligence and machine learning. Deter attacks before damage is done.'
+      },
+      {
+        property: 'og:url',
+        content: 'https://polarisec.com/home'
+      },
+      {
+        property: 'og:image:type',
+        content: 'image/png'
+      },
+      {
+        property: 'og:image:width',
+        content: '300'
+      },
+      {
+        property: 'og:image:height',
+        content: '300'
+      },
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}

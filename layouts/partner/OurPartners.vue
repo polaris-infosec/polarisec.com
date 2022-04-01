@@ -52,7 +52,7 @@
 
 .prevButton
   position absolute
-  right 660px
+  left -33px
   top 150px
 
 .ourPartners

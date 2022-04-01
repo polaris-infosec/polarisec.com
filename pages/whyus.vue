@@ -39,7 +39,8 @@
 
     <div :class="$style.analyticPanel">
       <div :class="$style.analyticSection" class="d-flex row app-width">
-        <div v-for="item in analyticContent" :key="item.title" class="p-0 col-sm-12 col-12 col-lg-4 col-md-4 pr-5 pl-1 black-text mt-mb-36px">
+        <div v-for="item in analyticContent" :key="item.title"
+             class="p-0 col-sm-12 col-12 col-lg-4 col-md-4 pr-5 pl-1 black-text mt-mb-36px">
           <h1 class="p-0 mb-2">
             {{ item.title }}
           </h1>
@@ -70,6 +71,12 @@ import Testimonials from "~/layouts/whyus/Testimonials.vue";
   }
 })
 export default class WhyUs extends Vue {
+
+  get head() {
+    return {
+      title: 'Polaris Web Protection | Why Us'
+    }
+  }
 
   analyticContent: any[] = [
     {

@@ -1,11 +1,12 @@
 <template>
   <div class="container-fluid" :class="$style.container">
     <div class="row app-width" :class="$style.bodyContainer">
-      <div class="col-sm-3">
+      <div class="col-sm-3 px-0">
         <img src="@/assets/images/polaris-logo.png" alt="Kitten" height="42" width="250">
         <hr>
       </div>
-      <div class="col-sm-9">
+      <div class="col-sm-1 px-0"/>
+      <div class="col-sm-8 px-0">
         <h4 class="font-weight-normal mb-0">
           We believe in making cybersecurity a priority as the world becomes increasingly dangerous due to the threat of
           malicious actors. We believe in educating our community, spreading awareness on why we need to shield our

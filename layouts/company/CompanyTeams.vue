@@ -2,10 +2,11 @@
   <div class="container-fluid px-0" :class="$style.container">
     <div class="app-width" :class="$style.bodyContainer">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 px-0">
           <h2>Leadership</h2>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-1 px-0"/>
+        <div class="col-sm-8 px-0">
           <div class="row justify-content-center">
             <template v-for="leader in leaderships">
               <div :key="leader.name" class="col-sm-6 col-lg-5  d-inline-flex align-items-center mr-4"
@@ -21,10 +22,11 @@
         </div>
       </div>
       <div class="row" :class="$style.advisorContainer">
-        <div class="col-sm-3">
+        <div class="col-sm-3 px-0">
           <h2>Strategic Advisors</h2>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-1 px-0"/>
+        <div class="col-sm-8 px-0">
           <div class="row justify-content-center">
             <template v-for="advisor in advisors">
               <div :key="advisor.name" class="col-sm-5  d-inline-flex align-items-center mr-4"
