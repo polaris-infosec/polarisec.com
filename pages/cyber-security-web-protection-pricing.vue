@@ -20,7 +20,7 @@ import PricingDetails from "~/layouts/pricing/PricingDetails.vue";
 export default class PolarisCyberSecurityWebProtectionWaapPricing extends Vue {
   get head() {
     return {
-      title: 'Web Application & API Protection Products Pricing',
+      title: 'Polaris Web Protection & Cyber Security | Pricing',
       meta: [
         {
           name: 'keywords',

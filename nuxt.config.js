@@ -15,7 +15,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Web Application & API Protection | Cyber Security',
+    title: 'Polaris Web Protection & Cyber Security',
     htmlAttrs: {
       lang: 'en',
       prefix: 'og: http://ogp.me/ns#'
@@ -27,7 +27,7 @@ export default {
       {name: 'format-detection', content: 'telephone=no'},
       {
         property: 'og:title',
-        content: 'Web Application & API Protection | Cyber Security'
+        content: 'Polaris Web Protection & Cyber Security'
       },
       {
         property: 'og:type',
@@ -43,7 +43,7 @@ export default {
       },
       {
         property: 'og:url',
-        content: 'https://polarisec.com/home'
+        content: 'https://polarisec.com/'
       },
       {
         property: 'og:image:type',

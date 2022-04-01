@@ -74,7 +74,7 @@ export default class WhyUs extends Vue {
 
   get head() {
     return {
-      title: 'Polaris Web Protection | Why Us'
+      title: 'Polaris Web Protection & Cyber Security | Why Us'
     }
   }
 
