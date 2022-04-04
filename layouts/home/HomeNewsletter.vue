@@ -3,14 +3,16 @@
     <div class="app-width" :class="$style.bodyContainer">
       <h2>Sign up for our newsletter</h2>
       <h5>Be the first to receive new feature and product updates.</h5>
-      <div class="row justify-content-center mx-0">
-        <p-input class="text-left"
-                 v-model.trim="email"
-                 type="email"
-                 required
-                 :hint="hintText"
-                 placeholder="Your Email"/>
-        <p-button :text="buttonText" @click="onClick"/>
+      <div class="row justify-content-center mx-0 col-12">
+        <b-form
+          @submit="onSubmit"
+          method="POST"
+          class="d-flex justify-content-center col-12">
+          <b-form-input v-model="email" placeholder="Your Email *" type="email" required
+                        class="input-normal" name="entry.1645255945"></b-form-input>
+          <p-button :class="$style.sendMessageBtn" :gradient="1" type="submit" text="Subscribe"
+                    variant="primary"></p-button>
+        </b-form>
       </div>
     </div>
   </div>
@@ -66,36 +68,20 @@ export default class HomeNewsletter extends Vue {
   showHint: boolean = false;
   isLoading: boolean = false;
 
-  get buttonText() {
-    return this.isLoading ? 'Sending...' : 'Subscribe';
-  }
 
-  validateEmail = (email: string) => {
-    return String(email)
-      .toLowerCase()
-      .match(
-        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-      );
-  };
-
-  async onClick() {
+  async onSubmit(event: any) {
+    event.preventDefault();
     if (this.isLoading) return;
-    if (!this.email) {
-      this.hintText = 'This field is required.';
-      this.showHint = true;
-      return;
-    }
-    if (!this.validateEmail(this.email)) {
-      this.hintText = 'Please enter a valid email address.';
-      this.showHint = true;
-      return;
-    }
+
     try {
       this.isLoading = true;
-      let result = await this.$axios.$post(`https://polarisec.us4.list-manage.com/subscribe/post-json?u=696c092114cae4f72b6167d14&id=2b21421c4e&c=jQuery19002007047022959092_1644404259280&EMAIL=${this.email}&b_696c092114cae4f72b6167d14_2b21421c4e=&_=1644404259282`);
+      let result = await this.$axios.$post(`https://docs.google.com/forms/u/0/d/e/1FAIpQLScWdVNRsrAQeOVt5Xj3eDd1i1rot7BHXSjpvlpAwx1Aei7vcw/formResponse`, {
+        name: 'entry.1645255945'
+      });
       this.hintText = result.data.msg;
       this.showHint = true;
       this.isLoading = false;
+      console.log(result)
     } catch (e) {
       await this.$router.replace('/error-page')
     }
