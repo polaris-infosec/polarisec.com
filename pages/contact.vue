@@ -88,7 +88,6 @@
   background-color #8BDFAF
   border-color #8BDFAF
 
-
 .error
   background-color red
   border-color red
