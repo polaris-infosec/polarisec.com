@@ -112,15 +112,14 @@ export default class HomeNewsletter extends Vue {
       });
 
       if (response.success) {
-        this.alert = 'Thanks, message received. We will get back to you soon';
+        this.alert = 'Subscription successful!';
         this.statusType = 'success';
-
+        this.email = '';
       } else {
         this.alert = response.message;
         this.statusType = 'error';
       }
-
-
+      this.showAlert();
     } catch (e) {
       await this.$router.replace('/error-page')
     }
