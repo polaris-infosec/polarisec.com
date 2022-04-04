@@ -6,13 +6,25 @@
       <div class="row justify-content-center mx-0 col-12">
         <b-form
           @submit="onSubmit"
-          method="POST"
           class="d-flex justify-content-center col-12">
           <b-form-input v-model="email" placeholder="Your Email *" type="email" required
-                        class="input-normal" name="entry.1645255945"></b-form-input>
+                        class="input-normal"></b-form-input>
           <p-button :class="$style.sendMessageBtn" :gradient="1" type="submit" text="Subscribe"
                     variant="primary"></p-button>
         </b-form>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <b-alert
+          :show="dismissCountDown"
+          dismissible
+          variant="warning"
+          @dismissed="dismissCountDown=0"
+          @dismiss-count-down="countDownChanged"
+          :class="[$style.message, status]"
+        >
+          {{ alert }}
+        </b-alert>
       </div>
     </div>
   </div>
@@ -20,6 +32,19 @@
 
 <style module lang='stylus'>
 @import "@/styles/config.styl"
+.success
+  background-color #8BDFAF
+  border-color #8BDFAF
+
+.error
+  background-color red
+  border-color red
+
+.message
+  position fixed
+  bottom 0
+  z-index 2
+  color white
 
 .container
   background-color: #0F0F0F;
@@ -64,28 +89,50 @@ import PInput from "~/components/PInput.vue";
 })
 export default class HomeNewsletter extends Vue {
   email: string = '';
-  hintText: string = '';
-  showHint: boolean = false;
-  isLoading: boolean = false;
+  dismissSecs: number = 5;
+  dismissCountDown: number = 0;
+  alert: string = '';
+  statusType: string = '';
 
+  countDownChanged(dismissCountDown: any) {
+    this.dismissCountDown = dismissCountDown
+  }
+
+  showAlert() {
+    this.dismissCountDown = this.dismissSecs
+  }
 
   async onSubmit(event: any) {
     event.preventDefault();
-    if (this.isLoading) return;
 
     try {
-      this.isLoading = true;
-      let result = await this.$axios.$post(`https://docs.google.com/forms/u/0/d/e/1FAIpQLScWdVNRsrAQeOVt5Xj3eDd1i1rot7BHXSjpvlpAwx1Aei7vcw/formResponse`, {
-        name: 'entry.1645255945'
+      const ACTION_URL = 'https://polarisec.io/api/subscribe';
+      let response = await this.$axios.$post(ACTION_URL, {
+        email: this.email
       });
-      this.hintText = result.data.msg;
-      this.showHint = true;
-      this.isLoading = false;
-      console.log(result)
+
+      if (response.success) {
+        this.alert = 'Thanks, message received. We will get back to you soon';
+        this.statusType = 'success';
+
+      } else {
+        this.alert = response.message;
+        this.statusType = 'error';
+      }
+
+
     } catch (e) {
       await this.$router.replace('/error-page')
     }
-    this.showHint = false;
+  }
+
+  get status() {
+    switch (this.statusType) {
+      case 'success':
+        return this.$style.success;
+      case 'error':
+        return this.$style.error;
+    }
   }
 
 }
