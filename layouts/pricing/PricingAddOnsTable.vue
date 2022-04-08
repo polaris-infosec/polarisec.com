@@ -248,14 +248,14 @@ export default class PricingAddOnsTable extends Vue {
           {
             isSupport: true,
             isInclude: false,
-            price: this.isMonthlyType ? 4 : 52,
+            price: this.isMonthlyType ? 4 : 42,
             button_text: 'Get Started',
             action: () => this.goPolaris(),
           },
           {
             isSupport: true,
             isInclude: false,
-            price: this.isMonthlyType ? 4 : 52,
+            price: this.isMonthlyType ? 4 : 42,
             button_text: 'Get Started',
             action: () => this.goPolaris(),
           },
