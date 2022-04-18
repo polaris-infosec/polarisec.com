@@ -16,7 +16,7 @@
               <b-form-input v-model="name" placeholder="Your Name *" required class="input-normal"></b-form-input>
             </b-col>
             <b-col cols="4" class="p-0">
-              <b-form-input v-model="website" placeholder="Your Website" class="input-normal"></b-form-input>
+              <b-form-input v-model="website" required placeholder="Your Website *" class="input-normal"></b-form-input>
             </b-col>
           </b-row>
           <b-row>
