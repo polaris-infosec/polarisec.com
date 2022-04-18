@@ -41,7 +41,7 @@
               <b-form-select v-model="topic" :options="options" class="input-normal"
                              :class="placeHolderSelect">
                 <template #first>
-                  <b-form-select-option value="" disabled hidden>-- Select Your Topic --
+                  <b-form-select-option value="" disabled hidden>Your Topic
                   </b-form-select-option>
                 </template>
               </b-form-select>
