@@ -16,7 +16,7 @@
               <b-form-input v-model="name" placeholder="Your Name *" required class="input-normal"></b-form-input>
             </b-col>
             <b-col cols="4" class="p-0">
-              <b-form-input v-model="website" placeholder="Your Website" class="input-normal"></b-form-input>
+              <b-form-input v-model="website" required placeholder="Your Website *" class="input-normal"></b-form-input>
             </b-col>
           </b-row>
           <b-row>
@@ -38,7 +38,13 @@
           </b-row>
           <b-row>
             <b-col cols="8" class="p-0">
-              <b-form-input v-model="topic" placeholder="Your Topic" class="input-normal"></b-form-input>
+              <b-form-select v-model="topic" :options="options" required class="input-normal"
+                             :class="placeHolderSelect">
+                <template #first>
+                  <b-form-select-option value="" disabled hidden>Your Topic *
+                  </b-form-select-option>
+                </template>
+              </b-form-select>
             </b-col>
             <b-col cols="8" class="p-0">
               <b-form-textarea
@@ -84,6 +90,11 @@
 
 <style module lang='stylus'>
 @import "../styles/main.styl"
+.placeHolderSelect
+  color #6c757a !important
+  option
+    color white !important
+
 .success
   background-color #8BDFAF
   border-color #8BDFAF
@@ -152,6 +163,24 @@ export default class Contact extends Vue {
   alert: string = '';
   statusType: string = '';
 
+  get options() {
+    return [
+      {
+        value: 'Request a demo',
+        text: 'Request a demo'
+      }, {
+        value: 'Technical support',
+        text: 'Technical support'
+      }, {
+        value: 'Contact sales',
+        text: 'Contact sales'
+      }, {
+        value: 'Others',
+        text: 'Others'
+      },
+    ]
+  }
+
 
   countDownChanged(dismissCountDown: any) {
     this.dismissCountDown = dismissCountDown
@@ -203,6 +232,12 @@ export default class Contact extends Vue {
     }
 
     this.showAlert();
+  }
+
+  get placeHolderSelect() {
+    if (!this.topic) {
+      return this.$style.placeHolderSelect;
+    }
   }
 
   get status() {
