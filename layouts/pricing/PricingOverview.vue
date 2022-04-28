@@ -368,7 +368,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'IP Custom Rules',
+          title: 'Custom Rules',
           info: 'Customize your security rules for specific threats or actions',
           isExpand: false,
           supports: [
