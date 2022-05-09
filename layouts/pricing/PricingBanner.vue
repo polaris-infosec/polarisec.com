@@ -3,7 +3,7 @@
     <div :class="$style.bannerContainer">
       <div :class="$style.bannerSection" class="row app-width">
         <div class="col-sm-6">
-          <h1>Pricing</h1>
+          <h1>Web Protection Plan</h1>
           <div :class="$style.pricingSubTitle" class="body-1">Try Polaris free - forever</div>
           <p-button text="Request a Demo" @click="onClick"/>
         </div>
