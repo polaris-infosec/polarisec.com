@@ -100,7 +100,8 @@
 </style>
 <script lang="ts">
 import {Component, Vue, Prop} from "nuxt-property-decorator";
-import vClickOutside from 'v-click-outside'
+
+const vClickOutside = require('v-click-outside');
 
 export interface IOption {
   content: string,
