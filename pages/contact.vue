@@ -1,52 +1,59 @@
 <template>
   <div :class="$style.contactMain">
-    <div :class="$style.contactSection" class="app-width">
+    <div :class="$style.contactSection" class="app-width text-lg-left text-center">
       <div class="pb-4">
-        <h1>Contact us</h1>
+        <h1>Get help</h1>
       </div>
       <div class="pt-1">
         <p class="text-6">
-          Get in touch with us about our products and services.
+          Reach out to us for more, whether you're suffering from a cyber attack or require more information from our
+          team.
         </p>
       </div>
-      <div class="pl-3" :class="$style.form">
+      <b-row class="mx-0 align-items-center justify-content-lg-start justify-content-center mb-2">
+        <img src="@/assets/icons/phone.png" width="24" height="24">
+        <span :class="$style.phoneNumber" class="ml-1">
+          (+84) 28 7101 7755
+        </span>
+      </b-row>
+      <div class="pl-3 mt-4" :class="$style.form">
         <b-form @submit="onSubmit">
           <b-row>
-            <b-col cols="4" class="p-0 pr-20px">
+            <b-col lg="4" cols="12" class="p-0 mr-3">
               <b-form-input v-model="name" placeholder="Your Name *" required class="input-normal"></b-form-input>
             </b-col>
-            <b-col cols="4" class="p-0">
+            <b-col lg="4" cols="12" class="p-0 mr-3">
               <b-form-input v-model="website" required placeholder="Your Website *" class="input-normal"></b-form-input>
             </b-col>
           </b-row>
           <b-row>
-            <b-col cols="4" class="p-0 pr-20px">
+            <b-col lg="4" cols="12" class="p-0 mr-3">
               <b-form-input v-model="email" placeholder="Your Email *" type="email" required
                             class="input-normal"></b-form-input>
             </b-col>
-            <b-col cols="4" class="p-0">
-              <b-form-input v-model="phone" placeholder="Your Phone" class="input-normal"></b-form-input>
+            <b-col lg="4" cols="12" class="p-0 mr-3">
+              <b-form-input v-model="phone" placeholder="Your Phone *" required class="input-normal"></b-form-input>
             </b-col>
           </b-row>
           <b-row>
-            <b-col cols="4" class="p-0 pr-20px">
-              <b-form-input v-model="company" placeholder="Your Company" class="input-normal"></b-form-input>
+            <b-col lg="4" cols="12" class="p-0 mr-3">
+              <b-form-input v-model="company" placeholder="Your Company *" required class="input-normal"></b-form-input>
             </b-col>
-            <b-col cols="4" class="p-0">
-              <b-form-input v-model="role" placeholder="Your Role" class="input-normal"></b-form-input>
+            <b-col lg="4" cols="12" class="p-0 mr-3">
+              <b-form-input v-model="role" placeholder="Your Role *" required class="input-normal"></b-form-input>
             </b-col>
           </b-row>
           <b-row>
-            <b-col cols="8" class="p-0">
-              <b-form-select v-model="topic" :options="options" required class="input-normal"
-                             :class="placeHolderSelect">
-                <template #first>
-                  <b-form-select-option value="" disabled hidden>Your Topic *
-                  </b-form-select-option>
-                </template>
-              </b-form-select>
+            <b-col lg="4" cols="12" class="p-0 mr-3">
+              <p-select class="mb-3 input-normal" :item-select="itemSelect" :options="topicOptions"
+                        place-holder="Topic *"/>
             </b-col>
-            <b-col cols="8" class="p-0">
+            <b-col lg="4" cols="12" class="p-0 mr-3">
+              <b-form-input v-model="country" placeholder="Your Country" class="input-normal"></b-form-input>
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col lg="9" cols="12" class="p-0 pr-lg-2">
               <b-form-textarea
                 id="textarea"
                 v-model="message"
@@ -54,20 +61,14 @@
                 placeholder="Your Message *"
                 rows="3"
                 max-rows="6"
-                class="input-normal"
+                class="input-normal col-lg-11 col-12"
                 :class="$style.messageInput"
               ></b-form-textarea>
             </b-col>
           </b-row>
-          <b-row>
-            <p-button :class="$style.sendMessageBtn" :gradient="1" type="submit" text="Send Message"
-                      variant="primary"></p-button>
-          </b-row>
-          <b-row>
-            <div :class="$style.comingsoon" class="col-sm-12 px-0 mt-3">* Required</div>
-            <div :class="$style.comingsoon" class="col-sm-12 px-0 mt-1">** All personal data is safeguarded under
-              privacy and support policies.
-            </div>
+          <b-row class="mt-5">
+            <p-button class="col-lg-8 col-12" :class="$style.sendMessageBtn" :show-icon="false" type="submit"
+                      text="Get help"></p-button>
           </b-row>
         </b-form>
       </div>
@@ -90,8 +91,19 @@
 
 <style module lang='stylus'>
 @import "../styles/main.styl"
+.phoneNumber
+  font-weight 800
+  font-size 22px
+  line-height 32px
+  background linear-gradient(100.84deg, #3C68DC 0%, #9D659E 70.83%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  background-clip text
+  text-fill-color transparent
+
 .placeHolderSelect
   color #6c757a !important
+
   option
     color white !important
 
@@ -128,8 +140,7 @@
   height 245px !important
 
 .contactSection
-  padding 120px 98px 0 122px
-  height 1081px
+  padding 48px 28px 88px
 
 .contactMain
   background-repeat: no-repeat
@@ -137,14 +148,21 @@
   background-position: center
   background-size cover
   background-image url("assets/background/contact-bg.png")
+
+@media only screen and (min-width: 992px)
+  .contactSection
+    padding 120px 98px 121px 122px
+
 </style>
 
 <script lang="ts">
 import {Component, Vue} from 'nuxt-property-decorator';
 import PButton from "~/components/PButton.vue";
+import PSelect, {IOption} from "~/components/PSelect.vue";
 
 @Component({
   components: {
+    PSelect,
     PButton
   }
 })
@@ -157,11 +175,20 @@ export default class Contact extends Vue {
   role: string = '';
   topic: string = '';
   message: string = '';
+  country: string = '';
+  itemSelect: IOption | null = null
 
   dismissSecs: number = 5;
   dismissCountDown: number = 0;
   alert: string = '';
   statusType: string = '';
+
+  mounted() {
+    this.$nuxt.$on('setSelectOption', (topic: IOption) => {
+      this.topic = topic.content
+      this.itemSelect = topic
+    });
+  }
 
   get options() {
     return [
@@ -181,6 +208,49 @@ export default class Contact extends Vue {
     ]
   }
 
+  get topicOptions() {
+    return [
+      {
+        content: 'Cyber Attack Emergency',
+        isSelect: false,
+        subOptions: [
+          {
+            content: 'DDos attack',
+            isSelect: false,
+          },
+          {
+            content: 'Ransomeware attack',
+            isSelect: false,
+          }, {
+            content: 'Network or Firewall attack',
+            isSelect: false,
+          }, {
+            content: 'Web or Application acttack',
+            isSelect: false,
+          }, {
+            content: 'DNS hijacking or On path attack',
+            isSelect: false,
+          }, {
+            content: 'Cloud resource attack',
+            isSelect: false,
+          }, {
+            content: 'Note sure? We’ll help you assess',
+            isSelect: false,
+          },
+        ]
+      }, {
+        content: 'Technical Support',
+        isSelect: false,
+      }, {
+        content: 'Sales Support',
+        isSelect: false,
+      }, {
+        content: 'Other',
+        isSelect: false,
+      },
+    ]
+  }
+
 
   countDownChanged(dismissCountDown: any) {
     this.dismissCountDown = dismissCountDown
@@ -192,7 +262,7 @@ export default class Contact extends Vue {
 
   get head() {
     return {
-      title: 'Polaris Web Protection & Cyber Security | Contact Us'
+      title: 'Contact Us'
     }
   }
 
@@ -203,7 +273,6 @@ export default class Contact extends Vue {
   async onSubmit(event: any) {
     event.preventDefault();
     if (!this.showButton) return;
-
     const response = await this.$axios.$post('https://polarisec.io/api/contact-us', {
       'name': this.name,
       'email': this.email,
@@ -212,6 +281,7 @@ export default class Contact extends Vue {
       'position': this.role,
       'topic': this.topic,
       'website': this.website,
+      'country': this.country,
       'message': this.message,
     });
 
@@ -224,6 +294,8 @@ export default class Contact extends Vue {
       this.topic = '';
       this.website = '';
       this.message = '';
+      this.country = '';
+      this.itemSelect = null;
       this.alert = 'Thanks, message received. We will get back to you soon';
       this.statusType = 'success';
     } else {

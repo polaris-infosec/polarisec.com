@@ -1,16 +1,16 @@
 <template>
   <div class="container-fluid p-0" :class="$style.container">
-    <div class="app-width" :class="$style.bodyContainer">
-      <h2>An experience you'd expect from a professional tool.</h2>
-      <div class="row">
+    <div class="app-width text-center" :class="$style.bodyContainer">
+      <h2 class="h3-sm my-0 mb-4">An experience you'd expect from a professional tool.</h2>
+      <b-row class="mx-0 flex-lg-row flex-column">
         <template v-for="introduce in introduces">
-          <div :class="$style.introduceContainer" :key="introduce.img" class="col">
+          <b-col :class="$style.introduceContainer" :key="introduce.img" class="mt-lg-0 mt-5">
             <img :class="$style.img" :src="introduce.img" alt="">
             <h5 :class="$style.introduceTitle">{{ introduce.title }}</h5>
             <div :class="$style.introduceText" class="body-2">{{ introduce.text }}</div>
-          </div>
+          </b-col>
         </template>
-      </div>
+      </b-row>
     </div>
   </div>
 </template>
@@ -22,12 +22,7 @@
   background-color $background-1
 
 .bodyContainer
-  padding 100px 140px
-
-  h2
-    max-width 877px
-    text-align center
-    margin 0 auto 99px
+  padding 48px 16px 42px
 
 .img
   width 150px
@@ -53,7 +48,19 @@
 
 .introduceText
   color $text-7
+  text-align center
 
+@media only screen and (min-width:992px)
+  .introduceText
+    text-align justify
+
+  .bodyContainer
+    padding 100px 140px
+
+  h2
+    max-width 877px
+    text-align center
+    margin 0 auto 99px
 </style>
 
 <script lang="ts">

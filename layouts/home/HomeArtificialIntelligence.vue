@@ -1,22 +1,25 @@
 <template>
   <div class="container-fluid p-0" :class="$style.container">
     <div class="app-width" :class="$style.bodyContainer">
-      <div class="row align-items-center">
-        <div :class="$style.textContainer" class="col-sm-6">
-          <h2>Artificial Intelligence.</h2>
-          <div class="body-1 color-text-7 fw-400 py-4">
-            We use application specific machine and behavioral learning techniques such as “fingerprinting” to <b>differentiate
-            between legitimate and malicious web requests</b>.
-          </div>
-          <div class="body-1 color-text-7 fw-400">
-            Constantly evolving, our AI can identify and act upon cyber attacks targeting web applications that are
-            woven into innocent looking traffic - traffic that slips right through traditional cyber security defenses.
-          </div>
-        </div>
-        <div class="col-sm-6">
+      <b-row class="mx-0 justify-content-between">
+        <b-col class="p-0 d-flex justify-content-center" cols="12" lg="6" order-lg="1">
           <img :class="$style.img" src="@/assets/images/home/artificial-intelligence.png" alt="">
-        </div>
-      </div>
+        </b-col>
+        <b-col :class="$style.textContainer"
+               class="p-0 d-flex flex-column justify-content-center text-lg-left text-center mt-lg-0 mt-5" order-lg="0" lg="5" cols="12">
+          <h2 class="my-0 mb-4">Artificial Intelligence<span class="brand-2">.</span></h2>
+          <p class="my-0 mb-4">
+            We use application specific machine and behavioral learning techniques such as “fingerprinting” to
+            <b>differentiate between legitimate and malicious
+              web requests.</b>
+          </p>
+          <p class="body-1 my-0">
+            Comes pre-configured with default expert-crafted protection rules, which means once enrolled, <b>you’re
+            defended immediately</b>. If needed, you can also customize rules to easily fit your security policy
+            requirements.
+          </p>
+        </b-col>
+      </b-row>
     </div>
   </div>
 </template>
@@ -25,10 +28,14 @@
 @import "@/styles/config.styl"
 
 .container
-  background-color: #0F0F0F;
+  background-color: $background-2
+  background-image url("@/assets/images/home/artificial-intelligence-bg.png")
+  background-position bottom
+  background-repeat no-repeat
+  background-size cover
 
 .bodyContainer
-  padding 162px 60px 98px 108px
+  padding 71px 16px 47px
 
   h2
     color #F9FAFC
@@ -38,6 +45,15 @@
 
 .textContainer
   padding-right 60px
+
+@media only screen and (max-width: 768px)
+  .img
+    max-width 345px
+    max-height 275px
+
+@media only screen and (min-width: 992px)
+  .bodyContainer
+    padding 162px 60px 98px 108px
 
 </style>
 

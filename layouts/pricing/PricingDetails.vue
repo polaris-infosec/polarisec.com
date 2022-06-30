@@ -21,7 +21,6 @@
       </div>
     </div>
     <pricing-add-ons id="add-on" :is-monthly-type="isMonthlyType" :is-expand-all="isExpandAll"/>
-    <pricing-f-a-q id="faq"/>
   </div>
 </template>
 

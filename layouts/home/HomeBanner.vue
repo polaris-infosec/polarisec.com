@@ -1,45 +1,45 @@
 <template>
   <div class="container-fluid" :class="$style.bannerContainer">
-    <div class="row align-items-center app-width h-100">
-      <div :class="$style.banner">
-        <h1>Web Protection that Never Sleeps</h1>
-        <h3>Always On Guard</h3>
-        <div :class="$style.bannerText" class="body-1">
+    <div class="app-width" :class="$style.bannerSection">
+      <b-row
+        class="mx-0 justify-content-lg-start justify-content-center align-items-center flex-lg-row flex-column text-lg-left text-center">
+        <h1 class="my-0 mb-3 h3-sm">Web Protection that Never Sleeps</h1>
+        <div :class="$style.divide"></div>
+        <h3 class="mb-4 mt-lg-0 mt-3 h5-sm">Always On Guard</h3>
+        <p class="col-lg-10 col-12 p-0 body-1 my-0 mb-5 pb-2">
           Polaris’ Web Application & API Protection (WAAP) applies <b>next-generation Artificial Intelligence (AI)</b>
           to actively detect and deter cyber attacks against your business. <b>Robust</b>, <b>adaptable</b>, and <b>accurate</b>,
           it greatly reduces the level of risk to your most critical asset - your data.
-        </div>
-        <p-button text="Request a Demo" @click="onClick"/>
-      </div>
+        </p>
+        <p-button text="Request a Consultation" :class="$style.button" @click="onClick"/>
+      </b-row>
     </div>
   </div>
 </template>
 
 <style module lang='stylus'>
 @import "@/styles/config.styl"
+.divide
+  border 2px solid $brand-1
+  width 28%
+  height 3px
+  margin 0 auto
+
+.bannerSection
+  padding 45px 16px 65px
 
 .bannerContainer
-  height 820px
   background-image url("@/assets/images/home/banner-home.png")
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-.banner
-  margin-left 152px
+@media only screen and (min-width: 992px)
 
-  h1
-    margin-bottom 16px
-    max-width 997px
-
-  h3
-    margin-bottom 45px
-
-.bannerText
-  max-width 878px
-  color $text-7
-  margin-bottom 45px
-
+  .divide
+    display none
+  .bannerSection
+    padding 161px 152px 238px 152px
 </style>
 
 <script lang="ts">

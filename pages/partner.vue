@@ -2,8 +2,6 @@
   <div>
     <our-partners/>
     <our-join-mission/>
-    <why-choose-polaris/>
-    <partner-types/>
     <contact-sale/>
   </div>
 </template>
@@ -28,7 +26,7 @@ import OurPartners from "~/layouts/partner/OurPartners.vue";
 export default class Partner extends Vue {
   get head() {
     return {
-      title: 'Polaris Web Protection & Cyber Security | Partners'
+      title: 'Our Partners'
     }
   }
 }
