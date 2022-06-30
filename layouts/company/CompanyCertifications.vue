@@ -1,23 +1,24 @@
 <template>
   <div class="container-fluid px-0" :class="$style.container">
     <div class="app-width" :class="$style.bodyContainer">
-      <div class="row">
-        <div class="col-sm-3 px-0">
+      <b-row class="mx-0">
+        <b-col class="p-0 text-center text-lg-left mb-3 mb-lg-0" lg="3" cols="12">
           <h2>Company Certifications</h2>
-        </div>
-        <div class="col-sm-1 px-0"/>
-        <div class="col-sm-8 px-0" :class="$style.certContainer">
-          <div class="row justify-content-center">
-            <template v-for="certification in certifications">
-              <div :key="certification.img"
-                   class="col-sm-3 col-lg-2  d-inline-flex align-items-center justify-content-center mr-4"
-                   :class="$style.leaderContainer">
-                <img :src="certification.img" alt="" :width="certification.width" :height="certification.height">
-              </div>
-            </template>
-          </div>
-        </div>
-      </div>
+        </b-col>
+        <b-col class="p-0 mt-3 mt-lg-0" lg="7" cols="12" :class="$style.certContainer">
+          <b-row class="mx-0 justify-content-center">
+            <b-col v-for="(certs, position) in certifications" :key="position"
+                   class="p-0 d-flex flex-wrap justify-content-center align-items-center"
+                   :lg="position === 0 ? 5 : 7" :cols="position === 0 ? 10 : 9">
+              <template v-for="certification in certs">
+                <div :key="certification.img" class="mb-4 d-flex justify-content-center align-items-center p-lg-2 mr-lg-2 px-3">
+                  <img :src="certification.img" alt="" :width="certification.width" :height="certification.height">
+                </div>
+              </template>
+            </b-col>
+          </b-row>
+        </b-col>
+      </b-row>
     </div>
   </div>
 </template>
@@ -26,10 +27,12 @@
 @import "@/styles/config.styl"
 
 .container
-  background $background-2
+  background-image url("@/assets/images/company/cert-bg.png")
+  background-repeat: no-repeat;
+  background-size: cover;
 
 .bodyContainer
-  padding 73px 169px 105px 145px
+  padding 70px 16px 127px 16px
 
   h2
     color $text-8
@@ -41,6 +44,9 @@
 .certContainer
   margin 0 auto
 
+@media only screen and (min-width: 992px)
+  .bodyContainer
+    padding 73px 149px 105px 145px
 </style>
 
 <script lang="ts">
@@ -50,8 +56,8 @@ import PButton from "~/components/PButton.vue";
 @Component({})
 export default class CompanyCertifications extends Vue {
 
-  get certifications() {
-    return [
+  certifications: any = [
+    [
       {
         img: require('@/assets/images/company/gsec.png'),
         width: 65,
@@ -76,6 +82,13 @@ export default class CompanyCertifications extends Vue {
         img: require('@/assets/images/company/giac.png'),
         width: 65,
         height: 65,
+      }
+    ],
+    [
+      {
+        img: require('@/assets/images/company/iso.png'),
+        width: 170,
+        height: 170,
       },
       {
         img: require('@/assets/images/company/csslp.png'),
@@ -83,17 +96,14 @@ export default class CompanyCertifications extends Vue {
         height: 65,
       },
       {
-        img: require('@/assets/images/company/iso.png'),
-        width: 170,
-        height: 170,
-      },
-      {
         img: require('@/assets/images/company/cissp.png'),
         width: 65,
         height: 65,
       },
-    ];
-  }
+    ]
+
+  ]
+
 
 }
 </script>

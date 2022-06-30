@@ -7,7 +7,7 @@
     <home-artificial-intelligence/>
     <home-threat-intelligence/>
     <home-slider/>
-    <home-newsletter/>
+    <home-newsletter v-if="!mobileScreen"/>
   </div>
 </template>
 
@@ -39,6 +39,10 @@ import HomeNewsletter from "~/layouts/home/HomeNewsletter.vue";
   }
 })
 export default class HomePage extends Vue {
+  get mobileScreen() {
+    return window.screen.width < 992.0
+  }
+
   get head() {
     return {
       title: 'Polaris Web Protection & Cyber Security',

@@ -17,9 +17,9 @@
             </div>
           </div>
           <div v-else :class="$style.customPricing">Custom Pricing</div>
-          <p-button :gradient="3"
+          <p-button :gradient="2"
                     :class="$style.btn"
-                    text="Get Started"
+                    text="Select Plan"
                     :show-icon="false"
                     @click="onClick"/>
         </div>
@@ -111,6 +111,9 @@
   padding-bottom 10px
   margin-top 15px
   margin-bottom 20px
+  font-weight 500 !important
+  font-size 14px !important
+  line-height 18px !important
 
 .price
   color $text-8

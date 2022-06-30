@@ -1,38 +1,48 @@
 <template>
-  <div class="container-fluid p-0" :class="$style.container">
-    <div class="app-width" :class="$style.bodyContainer">
-      <h2 :class="$style.sliderTitle" class="text-sm-center">Featured by:</h2>
-      <carousel :class="$style.sliderContainer"
-                autoplay
-                autoWidth
-                :nav="false"
-                :dots="false"
-                :autoplayTimeout="3000"
-                :margin="60">
-        <template v-for="feature in listFeature">
-          <div :key="feature.img" :class="$style.sliderItem">
-            <img height="48" :src="feature.img" alt="">
+  <div>
+    <div :class="$style.sliderSection">
+      <div class="app-width">
+        <b-row class="mx-0 justify-content-center text-center align-items-center black-text"
+               :class="$style.sliderContainer">
+          <h2 class="my-0 mb-4 pb-3">Featured by:</h2>
+          <carousel
+            autoplay
+            class="col-12"
+            :nav="false"
+            :dots="false"
+            :autoplayTimeout="3000"
+            :margin="36"
+            :items="mobileScreen ? 1 : 4"
+          >
+            <template v-for="feature in listFeature">
+              <div :key="feature.img">
+                <img height="64" :src="feature.img" alt="">
+              </div>
+            </template>
+
+            <template #prev>
+              <span class="carousel-control-prev-icon" :class="$style.prevButton" aria-hidden="true"></span>
+            </template>
+            <template #next>
+              <span class="carousel-control-next-icon" aria-hidden="true" :class="$style.nextButton"></span>
+            </template>
+          </carousel>
+        </b-row>
+      </div>
+    </div>
+    <div class="container-fluid p-0" :class="$style.container">
+      <div class="app-width" :class="$style.seeItSection">
+        <b-row class="mx-0 justify-content-center justify-content-lg-start" :class="$style.seeItContainer">
+          <b-col class="p-0 text-lg-left text-center align-items-center" lg="6" cols="12">
+            <h2 class="my-0 h4-sm text-lg-left">See it in action</h2>
+            <h5 :class="$style.actionText">Request a free demo today and stay ahead of <br> the cyberthreat evolution.
+            </h5>
+            <p-button text="Request a Consultation" @click="onClick"/>
+          </b-col>
+          <div class="px-0 pl-5" :class="$style.dashboardImg">
+            <img src="@/assets/images/home/site-dashboard.png" class="mx-0 mt-lg-0 mt-5" alt="">
           </div>
-        </template>
-
-        <template #prev>
-          <span class="carousel-control-prev-icon" :class="$style.prevButton" aria-hidden="true"></span>
-        </template>
-        <template #next>
-          <span class="carousel-control-next-icon" aria-hidden="true" :class="$style.nextButton"></span>
-        </template>
-
-      </carousel>
-      <div :class="$style.seeItContainer" class="row">
-        <div class="col-sm-6">
-          <h2>See it in action</h2>
-          <h5 :class="$style.actionText">Request a free demo today and stay ahead of <br> the cyberthreat evolution.
-          </h5>
-          <p-button text="Request a Demo" @click="onClick"/>
-        </div>
-        <div class="col-sm-6 px-0" :class="$style.dashboardImg">
-          <img src="@/assets/images/home/dashboard-lg.png" height="333" alt="">
-        </div>
+        </b-row>
       </div>
     </div>
   </div>
@@ -40,6 +50,15 @@
 
 <style module lang='stylus'>
 @import "@/styles/config.styl"
+.seeItSection
+  padding 136px 16px 0
+
+.sliderContainer
+  padding 41px 60px 71px 60px
+
+.sliderSection
+  background-color $brand-2
+
 .nextButton
   position absolute
   top 50%
@@ -58,23 +77,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-.bodyContainer
-  padding 90px 60px 0
-
-  .sliderTitle
-    margin-bottom 65px
-
-.sliderItem
-  padding 10px 22px
-  background-color: white
-  border-radius 8px
-
-.sliderContainer
-  margin-bottom 115px
-  position relative
-
 .seeItContainer
-  padding 84px 0 0 60px
+  padding 37px 20px 0
   border-top-left-radius 10px
   border-top-right-radius 10px
   background-image url("@/assets/images/home/see-it-in-action.png")
@@ -82,16 +86,18 @@
   background-repeat no-repeat
   background-size cover
   overflow hidden !important
+  position relative
+  min-height 520px
 
 .actionText
   margin-top 19px
-  margin-bottom: 39px;
+  margin-bottom 39px
   font-weight 500
 
 .dashboardImg
-  border-top-left-radius 12px
-  border-top 15px solid #ffffff33
-  border-left 15px solid #ffffff33
+  position absolute
+  bottom 0
+  right 0
 
   img
     border-top-left-radius 12px
@@ -101,6 +107,25 @@
     image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
     image-rendering: crisp-edges;
     -ms-interpolation-mode: nearest-neighbor;
+
+@media only screen and (max-width: 767px)
+  .dashboardImg
+    max-width 402px
+    max-height 261px
+    position initial
+
+  .seeItContainer
+    min-height 520px
+
+@media only screen and (min-width: 992px)
+  .seeItSection
+    padding 122px 60px 0
+
+  .seeItContainer
+    padding 67px 0 59px 60px
+
+  .bodyContainer
+    padding 90px 60px 0
 
 </style>
 
@@ -117,6 +142,9 @@ const carousel = require('vue-owl-carousel');
   }
 })
 export default class HomeSlider extends Vue {
+  get mobileScreen() {
+    return window.screen.width < 992.0
+  }
 
   get listFeature() {
     return [

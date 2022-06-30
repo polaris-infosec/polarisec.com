@@ -28,7 +28,7 @@
             </div>
             <div v-else :class="$style.customPricing">Custom Pricing</div>
             <p-button :class="$style.btn"
-                      :gradient="3"
+                      :gradient="2"
                       :show-icon="false"
                       :text="support.button_text"
                       @click="support.action"/>
@@ -90,6 +90,10 @@
   padding-bottom 10px
   margin-top 15px
   margin-bottom 20px
+  font-weight 500 !important
+  font-size 14px !important
+  line-height 18px !important
+
 
 .price
   color $text-8
@@ -156,7 +160,7 @@ export default class PricingAddOnsTable extends Vue {
             isSupport: true,
             isInclude: false,
             price: this.isMonthlyType ? 17 : 167,
-            button_text: 'Get Started',
+            button_text: 'Select Plan',
             action: () => this.goPolaris(),
           },
           {
@@ -175,7 +179,7 @@ export default class PricingAddOnsTable extends Vue {
             isSupport: false,
             isInclude: false,
             price: '',
-            button_text: '',
+            button_text: 'Select Plan',
             action: () => {},
           },
           {
@@ -215,14 +219,14 @@ export default class PricingAddOnsTable extends Vue {
             isSupport: true,
             isInclude: false,
             price: this.isMonthlyType ? 87 : 835,
-            button_text: 'Get Started',
+            button_text: 'Select Plan',
             action: () => this.goPolaris(),
           },
           {
             isSupport: true,
             isInclude: false,
             price: this.isMonthlyType ? 87 : 835,
-            button_text: 'Get Started',
+            button_text: 'Select Plan',
             action: () => this.goPolaris(),
           },
           {
@@ -249,14 +253,14 @@ export default class PricingAddOnsTable extends Vue {
             isSupport: true,
             isInclude: false,
             price: this.isMonthlyType ? 4 : 42,
-            button_text: 'Get Started',
+            button_text: 'Select Plan',
             action: () => this.goPolaris(),
           },
           {
             isSupport: true,
             isInclude: false,
             price: this.isMonthlyType ? 4 : 42,
-            button_text: 'Get Started',
+            button_text: 'Select Plan',
             action: () => this.goPolaris(),
           },
           {

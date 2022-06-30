@@ -2,12 +2,18 @@
   <div class="container-fluid px-0">
     <div :class="$style.bannerContainer">
       <div :class="$style.bannerSection" class="row app-width">
-        <div class="col-sm-6">
-          <h1>Web Protection Plan</h1>
-          <div :class="$style.pricingSubTitle" class="body-1">Try Polaris free - forever</div>
-          <p-button text="Request a Demo" @click="onClick"/>
-        </div>
-        <div :class="$style.pricingContainer" class="col-sm-6"/>
+        <b-row class="mx-0 flex-grow-1">
+          <b-col cols="3" class="p-0">
+            <h1>Pricing</h1>
+            <div :class="$style.pricingSubTitle" class="body-1">Try Polaris free - forever</div>
+            <p-button text="Request a Consultation" @click="onClick"/>
+          </b-col>
+          <b-col class="p-0 d-flex justify-content-end" cols="9">
+            <img src="@/assets/images/pricing/basic.png" width="275" height="237">
+            <img src="@/assets/images/pricing/standard.png" class="ml-4" width="275" height="237">
+            <img src="@/assets/images/pricing/professional.png" class="ml-4" width="275" height="237">
+          </b-col>
+        </b-row>
       </div>
     </div>
 
@@ -32,7 +38,7 @@
 <style module lang='stylus'>
 @import "@/styles/config.styl"
 .bannerSection
-  padding 112px 160px 118px 153px
+  padding 112px 60px 118px 152px
   align-items center
 
 .bannerContainer
