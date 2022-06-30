@@ -67,7 +67,7 @@
             </b-col>
           </b-row>
           <b-row class="mt-5">
-            <p-button class="col-lg-8 col-12" :class="$style.sendMessageBtn" :show-icon="false" type="submit"
+            <p-button class="col-12" style="max-width: 840px" :class="$style.sendMessageBtn" :show-icon="false" type="submit"
                       text="Get help"></p-button>
           </b-row>
         </b-form>
