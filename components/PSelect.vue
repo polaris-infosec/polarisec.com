@@ -133,7 +133,6 @@ export default class PSelect extends Vue {
   }
 
   setSubOptionSelect(subOption: IOption) {
-    this.itemSelect = subOption
     this.subOptions.forEach((item) => {
       item.content === subOption.content ? item.isSelect = true : item.isSelect = false
     })
