@@ -20,7 +20,8 @@
            <span class="brand-2">
             Vietnam:
            </span>
-              H3 Building - CirCo, 384 Hoang Dieu St, District 4, HCMC
+              M Floor, Pax Sky Building, 159C De Tham,
+              Co Giang Ward, District 1, HCMC
             </p>
             <p>
            <span class="brand-2">
@@ -135,12 +136,12 @@
       <b-row :class="$style.divide" class="mb-3 mt-4"></b-row>
 
       <b-row class="d-flex justify-content-between align-content-center p-0">
-        <b-col class="col-12 col-lg-3 p-0 text-mobile-center">
+        <b-col class="col-12 col-lg-3 p-0 text-lg-left text-center">
         <span class="body-4">
           @ Polaris Infosec Pte. Ltd.
         </span>
         </b-col>
-        <b-col class="col-12 col-lg-3 d-flex justify-content-end justify-content-mobile-center p-0">
+        <b-col class="col-12 col-lg-3 d-flex justify-content-center justify-content-lg-end p-0">
           <nuxt-link to="/terms">
             <div class="pr-2 text-center" style="border-right: 0.03em solid #A9B7C6; color: white">
               <span class="body-4">
