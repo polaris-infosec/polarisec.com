@@ -14,11 +14,11 @@
           Platform
         </b-nav-item>
         <b-nav-item-dropdown :class="$style.navBarItem" id="dropdown-1" text="Services" class="mr-4 pr-3 active">
-          <b-dropdown-item to="/isma" target="_blank">ISMA</b-dropdown-item>
-          <b-dropdown-item to="/iso-27001-audit" target="_blank">ISO 27001 Audit
+          <b-dropdown-item to="/ISMA" target="_blank">ISMA</b-dropdown-item>
+          <b-dropdown-item to="/ISO-27001" target="_blank">ISO 27001 Audit
           </b-dropdown-item>
-          <b-dropdown-item to="/gdpr-audit" target="_blank">GDPR Audit</b-dropdown-item>
-          <b-dropdown-item to="/pci-dss-audit" target="_blank">PCIDSS Audit</b-dropdown-item>
+          <b-dropdown-item to="/GDPR" target="_blank">GDPR Audit</b-dropdown-item>
+          <b-dropdown-item to="/PCI-DSS" target="_blank">PCIDSS Audit</b-dropdown-item>
           <b-dropdown-item to="/incident-response" target="_blank">Incident Response</b-dropdown-item>
         </b-nav-item-dropdown>
         <b-nav-item :class="$style.navBarItem" to="/whyus" class="active mr-4 pr-3">Why us</b-nav-item>
