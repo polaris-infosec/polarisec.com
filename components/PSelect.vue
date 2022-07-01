@@ -6,7 +6,7 @@
           </span>
     </div>
 
-    <div :class="[$style.dropdownList, isActive && dropdownListActive]">
+    <div :class="[$style.dropdownList, isActive && dropdownListActive, isVisible && $style.displayNone]">
       <div :class="$style.dropdownItem" v-for="option in options" :key="option.content"
            @click="setSelect(option)">
         <b-row class="mx-0 flex-grow-1 align-items-center">
@@ -22,7 +22,7 @@
     <div :class="[$style.dropdownListExpand, isVisible && dropdownListActive]">
       <template v-if="itemSelect">
         <div :class="$style.dropdownItem" v-for="option in itemSelect.subOptions" :key="option.content"
-             @click="setSubOptionSelect(option)" v-click-outside="externalClickOther">
+             @click="setSubOptionSelect(option)">
           <b-row class="mx-0 flex-grow-1 align-items-center">
             <b-col class="p-0 d-flex justify-content-center" cols="1">
               <img v-if="option.isSelect" src="@/assets/icons/white-done.png" width="24" height="24">
@@ -37,13 +37,15 @@
   </div>
 </template>
 <style module lang="stylus">
+.displayNone
+  display none !important
+
 .dropdown
   width 100%
 
 .dropdownListActive
   opacity 1 !important
   visibility visible !important
-  display initial !important
 
 .dropdownSelect
   padding 0.375rem 1.75rem 0.375rem 1.025rem
@@ -60,6 +62,7 @@
   cursor pointer
   height 56px
   position relative
+  z-index 0
 
 .dropdownList
   border-radius inherit
@@ -70,7 +73,7 @@
   left 0
   right 0
   z-index 1
-  display none
+  opacity 0
 
 .dropdownItem
   font-size 1rem
@@ -79,6 +82,7 @@
   color white
   padding 1rem 0
   border-radius inherit
+  z-index 2
 
 .dropdownItem:hover
   background-color dimgray
@@ -93,7 +97,7 @@
   left 0
   right 0
   z-index 2
-  display none
+  opacity 0
 
 .whiteText
   color white !important
@@ -149,11 +153,9 @@ export default class PSelect extends Vue {
   }
 
   externalClick() {
-    this.isActive = false
-  }
-
-  externalClickOther() {
-
+    if (this.isActive) {
+      this.isActive = false
+    }
   }
 }
 </script>

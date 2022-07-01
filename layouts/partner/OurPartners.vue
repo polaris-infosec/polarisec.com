@@ -56,8 +56,8 @@
     width 60px !important
 
 .box
-  width 190px
-  height 190px
+  width 120px
+  height 120px
   border-radius 16px
   background-color white
   padding 45px 15px
@@ -81,6 +81,9 @@
   background-image url("assets/background/partner-bg.png")
 
 @media only screen and (min-width: 992px)
+  .box
+    width 190px
+    height 190px
   .ourPartnersSection
     padding 55px 0px 57px 152px
 </style>
