@@ -38,10 +38,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           comp: 'Imperva',
           isSupport: true
         },
-        {
-          comp: 'Aws',
-          isSupport: ''
-        }
       ]
     },
     {
@@ -63,10 +59,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           comp: 'Imperva',
           isSupport: true
         },
-        {
-          comp: 'Add-on',
-          isSupport: ''
-        }
       ]
     },
     {
@@ -88,10 +80,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           comp: 'Imperva',
           isSupport: true
         },
-        {
-          comp: 'Add-on',
-          isSupport: true
-        }
       ]
     },
     {
@@ -113,10 +101,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           comp: 'Imperva',
           isSupport: true
         },
-        {
-          comp: 'Add-on',
-          isSupport: ''
-        }
       ]
     },
     {
@@ -138,10 +122,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           comp: 'Imperva',
           isSupport: true
         },
-        {
-          comp: 'Add-on',
-          isSupport: ''
-        }
       ]
     },
     {
@@ -163,10 +143,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           comp: 'Imperva',
           isSupport: ''
         },
-        {
-          comp: 'Add-on',
-          isSupport: ''
-        }
       ]
     },
     {
@@ -188,10 +164,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           comp: 'Imperva',
           isSupport: ''
         },
-        {
-          comp: 'Add-on',
-          isSupport: ''
-        }
       ]
     },
     {
@@ -213,10 +185,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           comp: 'Imperva',
           isSupport: true
         },
-        {
-          comp: 'Add-on',
-          isSupport: ''
-        }
       ]
     },
     {
@@ -238,10 +206,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           comp: 'Imperva',
           isSupport: ''
         },
-        {
-          comp: 'Add-on',
-          isSupport: ''
-        }
       ]
     },
     {
@@ -263,10 +227,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           comp: 'Imperva',
           isSupport: true
         },
-        {
-          comp: 'Add-on',
-          isSupport: ''
-        }
       ]
     },
     {
@@ -288,10 +248,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           comp: 'Imperva',
           isSupport: ''
         },
-        {
-          comp: 'Add-on',
-          isSupport: ''
-        }
       ]
     },
     {
@@ -313,10 +269,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           comp: 'Imperva',
           isSupport: ''
         },
-        {
-          comp: 'Add-on',
-          isSupport: ''
-        }
       ]
     },
   ];
@@ -342,10 +294,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
             comp: 'Imperva',
             isSupport: ''
           },
-          {
-            comp: 'Add-on',
-            isSupport: ''
-          },
         ]
       },
       {
@@ -367,10 +315,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
             comp: 'Imperva',
             isSupport: true
           },
-          {
-            comp: 'Add-on',
-            isSupport: 'Add-on'
-          },
         ]
       },
       {
@@ -391,10 +335,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           {
             comp: 'Imperva',
             isSupport: true
-          },
-          {
-            comp: 'Add-on',
-            isSupport: ''
           },
         ]
       },
@@ -421,10 +361,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
             comp: 'Imperva',
             isSupport: 'Add-on'
           },
-          {
-            comp: 'Add-on',
-            isSupport: 'Add-on'
-          },
         ]
       },
       {
@@ -446,10 +382,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
             comp: 'Imperva',
             isSupport: ''
           },
-          {
-            comp: 'Add-on',
-            isSupport: true
-          },
         ]
       },
       {
@@ -469,10 +401,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           },
           {
             comp: 'Imperva',
-            isSupport: ''
-          },
-          {
-            comp: 'Add-on',
             isSupport: ''
           },
         ]
@@ -496,10 +424,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
             comp: 'Imperva',
             isSupport: true
           },
-          {
-            comp: 'Add-on',
-            isSupport: true
-          },
         ]
       },
       {
@@ -521,10 +445,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
             comp: 'Imperva',
             isSupport: true
           },
-          {
-            comp: 'Add-on',
-            isSupport: ''
-          },
         ]
       },
       {
@@ -545,10 +465,6 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           {
             comp: 'Imperva',
             isSupport: ''
-          },
-          {
-            comp: 'Add-on',
-            isSupport: 'Add-on'
           },
         ]
       },

@@ -51,8 +51,6 @@ export default class FeaturesComparison extends Vue {
       image: require('@/assets/images/whyus/f5.png')
     }, {
       image: require('@/assets/images/whyus/imperva.png')
-    }, {
-      image: require('@/assets/images/whyus/aws.png')
     },
   ]
 }
