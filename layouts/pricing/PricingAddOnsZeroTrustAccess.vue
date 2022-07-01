@@ -10,8 +10,8 @@
       </div>
       <p-button :class="$style.btn"
                 :show-icon="false"
-                :gradient="3"
-                text="Get Started"
+                :gradient="2"
+                text="Select Plan"
                 @click="onClick"/>
     </div>
     <div class="col" :class="$style.detailContainer">
@@ -68,6 +68,9 @@
 .btn
   width 100%
   margin-top 15px
+  font-weight 500 !important
+  font-size 14px !important
+  line-height 18px !important
 
 .title
   font-size 20px

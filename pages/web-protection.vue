@@ -1,7 +1,10 @@
 <template>
   <div>
-    <pricing-banner/>
-    <pricing-details/>
+    <pricing-screen v-if="mobileScreen"/>
+    <div v-else>
+      <pricing-banner/>
+      <pricing-details/>
+    </div>
   </div>
 </template>
 
@@ -13,14 +16,15 @@
 import {Component, Vue} from 'nuxt-property-decorator'
 import PricingBanner from "~/layouts/pricing/PricingBanner.vue";
 import PricingDetails from "~/layouts/pricing/PricingDetails.vue";
+import PricingScreen from "~/layouts/pricing/screen_mobile_device/PricingScreen.vue";
 
 @Component({
-  components: {PricingDetails, PricingBanner}
+  components: {PricingScreen, PricingDetails, PricingBanner}
 })
 export default class PolarisCyberSecurityWebProtectionWaapPricing extends Vue {
   get head() {
     return {
-      title: 'Polaris Web Protection & Cyber Security | Pricing',
+      title: 'Web Protection Plans',
       meta: [
         {
           name: 'keywords',
@@ -33,5 +37,10 @@ export default class PolarisCyberSecurityWebProtectionWaapPricing extends Vue {
       ]
     }
   }
+
+  get mobileScreen() {
+    return window.screen.width < 992.0
+  }
+
 }
 </script>

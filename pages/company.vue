@@ -1,7 +1,6 @@
 <template>
   <div>
     <company-banner/>
-    <company-info/>
     <company-teams/>
     <company-certifications/>
   </div>
@@ -29,7 +28,7 @@ import CompanyCertifications from "~/layouts/company/CompanyCertifications.vue";
 export default class Company extends Vue {
   get head() {
     return {
-      title: 'Polaris Web Protection & Cyber Security | Company'
+      title: 'Our Company'
     }
   }
 }

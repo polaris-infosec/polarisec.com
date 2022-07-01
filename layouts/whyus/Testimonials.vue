@@ -1,10 +1,10 @@
 <template>
   <div class="container-fluid p-0">
-    <h1 class="mb-4">Testimonials</h1>
+    <h2 class="mb-4">Testimonials</h2>
     <carousel class="col-12"
               :nav="false"
               autoplay
-              :items="3"
+              :items="itemsQuantity"
               :class="$style.testimonials"
     >
       <template v-for="item in testimonialsContents">
@@ -22,12 +22,11 @@
             </p>
           </div>
         </div>
-
       </template>
-      <template #prev>
+      <template #prev v-if="!mobileScreenResolution">
         <span class="carousel-control-prev-icon" :class="$style.prevButton" aria-hidden="true"></span>
       </template>
-      <template #next>
+      <template #next v-if="!mobileScreenResolution">
         <span class="carousel-control-next-icon" aria-hidden="true" :class="$style.nextButton"></span>
       </template>
     </carousel>
@@ -35,15 +34,16 @@
 </template>
 
 <style module lang="stylus">
+@import "@/styles/config.styl"
 .nextButton
   position absolute
   right -20px
-  top 190px
+  top 40%
 
 .prevButton
   position absolute
   left -20px
-  top 190px
+  top 40%
 
 .testimonials
   position relative
@@ -55,7 +55,6 @@
   padding 10px 22px
   background-color: $brand-2
   border-radius 8px
-
 
 .logo
   margin-bottom 25px
@@ -79,6 +78,11 @@
 
 .sliderContainer
   padding-bottom 120px
+
+@media only screen and (max-width: 992px)
+  .testimonialsBox
+    background-color $secondary-1
+    margin 0 10px
 </style>
 
 
@@ -119,6 +123,14 @@ export default class Testimonials extends Vue {
       icon: require('@/assets/icons/azdigi.png'),
     },
   ]
+
+  get mobileScreenResolution() {
+    return window.screen.width < 992.0;
+  }
+
+  get itemsQuantity() {
+    return this.mobileScreenResolution ? 1 : 3;
+  }
 }
 </script>
 

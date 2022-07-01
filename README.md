@@ -70,3 +70,4 @@ More information about the usage of this directory in [the documentation](https:
 
 ### `test`
 If want to test on dev-environment, add 'Actions secrets' -> BASE_URL
+

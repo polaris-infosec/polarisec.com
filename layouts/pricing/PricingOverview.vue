@@ -36,7 +36,7 @@
                     <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
                   </div>
                 </div>
-                <p-button :gradient="3"
+                <p-button :gradient="2"
                           :class="$style.btn"
                           :text="type.button_text"
                           :show-icon="false"
@@ -126,6 +126,9 @@
   padding-bottom 10px
   margin-top 15px
   margin-bottom 10px
+  font-weight 500 !important
+  font-size 14px !important
+  line-height 18px !important
 
 .price
   color $text-8
@@ -250,19 +253,19 @@ export default class PricingOverview extends Vue {
       {
         type: 'Basic',
         price: 0,
-        button_text: 'Get Started',
+        button_text: 'Select Plan',
         action: () => this.goPolaris(),
       },
       {
         type: 'Standard',
         price: this.isMonthlyType ? 17 : 163,
-        button_text: 'Get Started',
+        button_text: 'Select Plan',
         action: () => this.goPolaris(),
       },
       {
         type: 'Professional',
         price: this.isMonthlyType ? 185 : 1776,
-        button_text: 'Get Started',
+        button_text: 'Select Plan',
         action: () => this.goPolaris(),
       },
       {

@@ -1,8 +1,8 @@
 <template>
   <div :class="$style.ourPartnersPanel">
     <div :class="$style.ourPartnersSection" class="app-width">
-      <b-row class="d-flex justify-content-between">
-        <div class="col-5 d-flex flex-wrap align-content-center">
+      <b-row class="mx-0 justify-content-between text-lg-left text-center">
+        <b-col class="p-0 d-flex flex-wrap justify-content-center align-content-center" lg="4" cols="12" order-lg="0" order="1">
           <h1>
             Our Partners
           </h1>
@@ -10,33 +10,24 @@
             We need your help in providing security solutions
             to our communities
           </p>
-        </div>
-        <carousel class="col-6"
-                  :autoplay="partners.length > 3"
-                  autoWidth
-                  :dots="false"
-                  :margin="22"
-                  :items="3"
-                  :nav="false"
-                  :class="$style.ourPartners"
+        </b-col>
+        <carousel
+          class="col-lg-7 col-12 p-0 order-lg-1 order-0"
+          :autoplay="partners.length > 1"
+          :dots="false"
+          autoWidth
+          :margin="15"
+          :items="1"
+          :nav="false"
+          :class="$style.ourPartners"
         >
-          <template v-for="item in partners">
-            <div :class="$style.box" :key="item.text">
-              <div :class="$style.subBox"
-                   class="d-flex flex-wrap justify-content-center align-content-center p-0 col-12">
-                <b-avatar :class="$style.logo" variant="info" :size="115" :src="item.icon"></b-avatar>
+          <template v-for="(items, idx) in partners">
+            <div :key="idx" class="pl-2">
+              <div :class="$style.box" v-for="partner in items"
+                   class="d-flex justify-content-center align-items-center my-3">
+                <img :class="$style.logo" alt="" height="60" :src="partner.icon"/>
               </div>
-              <span
-                class="body-1 col-12 font-weight-bold d-flex flex-wrap justify-content-center mt-3">
-                   {{ item.text }}
-          </span>
             </div>
-          </template>
-          <template #prev>
-            <span class="carousel-control-prev-icon" :class="$style.prevButton" aria-hidden="true"></span>
-          </template>
-          <template #next>
-            <span class="carousel-control-next-icon" aria-hidden="true" :class="$style.nextButton"></span>
           </template>
         </carousel>
       </b-row>
@@ -45,6 +36,9 @@
 </template>
 
 <style module lang='stylus'>
+.logo
+  border-radius 50%
+
 .nextButton
   position absolute
   right -33px
@@ -58,33 +52,25 @@
 .ourPartners
   position relative
 
-.logo
-  margin 0
-  position absolute
-  top 50%
-  left 50%
-  transform translate(-50%, -50%)
-
-
-.subBox
-  width 221px
-  height 251px
-  background-color #000001
-  position relative
-
   img
-    width auto !important
+    width 60px !important
 
 .box
-  width 228px
-  height 329px
+  width 190px
+  height 190px
   border-radius 16px
-  background-color #141414
-  padding 13px
+  background-color white
+  padding 45px 15px
+  transition box-shadow #fff
+  z-index 1
+
+.box:hover
+  cursor pointer
+  background linear-gradient(142.19deg, #0D0159 1.08%, #8BDFAF 99.93%)
+  box-shadow 0 0 1px 3px lightslategray
 
 .ourPartnersSection
-  height 513px
-  padding 92px 22px 0 152px
+  padding 16px
 
 .ourPartnersPanel
   background-repeat: no-repeat
@@ -93,6 +79,10 @@
   background-size cover
   background-color #060606
   background-image url("assets/background/partner-bg.png")
+
+@media only screen and (min-width: 992px)
+  .ourPartnersSection
+    padding 55px 0px 57px 152px
 </style>
 
 <script lang="ts">
@@ -108,29 +98,36 @@ const carousel = require('vue-owl-carousel');
 export default class ContactSale extends Vue {
 
   partners: any [] = [
-    {
-      icon: require("@/assets/partners/vng.png"),
-      text: 'VNG'
-    }, {
-      icon: require("~/assets/partners/group8.png"),
-      text: 'Group 8'
-    }, {
-      icon: require("@/assets/icons/sbd.png"),
-      text: 'Sao Bac Dau'
-    },
-    {
-      icon: require("@/assets/partners/vnsec.png"),
-      text: 'VNSEC'
-    },
-    {
-      icon: require("@/assets/partners/cylon.png"),
-      text: 'CYLON'
-    },
-    {
-      icon: require("@/assets/partners/ice71.png"),
-      text: 'ICE71'
-    },
-
+    [
+      {
+        icon: require("@/assets/partners/vng.png"),
+        text: 'VNG'
+      },
+      {
+        icon: require("~/assets/partners/group8.png"),
+        text: 'Group 8'
+      },
+    ],
+    [
+      {
+        icon: require("@/assets/icons/sbd.png"),
+        text: 'Sao Bac Dau'
+      },
+      {
+        icon: require("@/assets/partners/vnsec.png"),
+        text: 'VNSEC'
+      },
+    ],
+    [
+      {
+        icon: require("@/assets/partners/cylon.png"),
+        text: 'CYLON'
+      },
+      {
+        icon: require("@/assets/partners/ice71.png"),
+        text: 'ICE71'
+      },
+    ],
   ]
 }
 </script>
