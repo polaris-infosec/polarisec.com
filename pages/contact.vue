@@ -265,7 +265,6 @@ export default class Contact extends Vue {
       title: 'Contact Us'
     }
   }
-
   showButton() {
     return !!this.name && !!this.website && !!this.email && !!this.phone && !!this.company && !!this.role && !!this.topic && !!this.message;
   }
