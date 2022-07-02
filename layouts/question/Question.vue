@@ -45,7 +45,6 @@
 
 .isSelect
   background linear-gradient(142.19deg, #0D0159 1.08%, #8BDFAF 99.93%) !important
-  color black !important
   border none !important
 
 .panel
