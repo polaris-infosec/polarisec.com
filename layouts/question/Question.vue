@@ -9,10 +9,10 @@
         <span>{{ item }}</span>
       </div>
     </div>
-    <p-button :gradient="1"
-              :text="(step === 3) ? 'Submit': 'Next'"
-              :class="$style.button"
-              @click="nextStep(step)"/>
+    <p-button
+      :text="(step === 3) ? 'Submit': 'Next'"
+      :class="$style.button"
+      @click="nextStep(step)"/>
 
     <div @click="previousStep" v-if="step > 1" :class="$style.previous">
       <p class="mt-4 text-center text-7"><- Previous</p>
@@ -23,6 +23,7 @@
 @media (max-width: 767px)
   .previous
     width 159px !important
+
   .button
     width 159px !important
 
@@ -43,11 +44,15 @@
   cursor pointer
 
 .isSelect
-  background-color #8BDFAF !important
+  background linear-gradient(142.19deg, #0D0159 1.08%, #8BDFAF 99.93%) !important
   color black !important
+  border none !important
 
 .panel
   padding 77px 0 200px 48px
+
+.borderNone
+  border none !important
 
 .answerBox
   display: flex;
