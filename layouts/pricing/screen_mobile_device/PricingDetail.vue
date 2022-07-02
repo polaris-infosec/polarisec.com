@@ -29,7 +29,7 @@
         <b-col cols="12" class="p-0 " v-for="pricing in listPricing" :key="pricing.title">
           <pricing-table class="mb-3" :is-monthly="isMonthly" :pricing="pricing"
                          style="border-radius: 10px"/>
-          <p-button class="col-12 mt-2" text="Select Plan" :show-icon="false"/>
+          <p-button class="col-12 mt-2" text="Select Plan" :show-icon="false" @click="onClick()"/>
         </b-col>
       </carousel>
             <carousel
@@ -84,6 +84,10 @@ export default class PricingDetail extends Vue {
       this.isMonthly = isMonthly;
       this.isYearly = isYearly;
     });
+  }
+
+  onClick(){
+    window.open('https://polarisec.io/', '_blank');
   }
 
   get listAddOns() {
