@@ -12,7 +12,7 @@
               manage, and minimize the impact if one should occur.
             </p>
           </div>
-          <p-button class="mt-4" text="Request a Consultation"/>
+          <p-button class="mt-4" text="Request a Consultation" @click="onClick"/>
         </b-col>
         <b-col class="p-0 m-0 col-lg-3 col-12 justify-content-center align-items-center d-flex order-lg-1 order-0 mb-4">
           <img src="~/assets/images/services/ISMA/service-pattern.png" alt="" width="315" height="315"
@@ -56,7 +56,9 @@ import PButton from "~/components/PButton.vue";
   components: {PButton}
 })
 export default class Assessment extends Vue {
-
+  onClick() {
+    this.$router.push({path: '/contact'});
+  }
 }
 </script>
 
