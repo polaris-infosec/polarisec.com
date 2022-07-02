@@ -1,3 +1,0 @@
-Sitemap: https://polarisec.com/sitemap.xml
-User-agent: *
-Disallow:
