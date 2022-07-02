@@ -1,10 +1,12 @@
 <template>
   <div class="container-fluid px-0">
     <div :class="$style.bannerContainer">
-      <div>
+      <div class="d-flex flex-column justify-content-center align-items-center">
         <div :class="$style.title">Oops, something went wrong</div>
-        <img src="@/assets/images/404/404.png" width="544" height="194" alt="">
-        <div :class="$style.link"><nuxt-link to="/home">Go Home</nuxt-link></div>
+        <img src="@/assets/images/404/404.png" :class="$style.img" alt="">
+        <div :class="$style.link">
+          <nuxt-link to="/home">Go Home</nuxt-link>
+        </div>
       </div>
     </div>
   </div>
@@ -12,13 +14,16 @@
 
 <style module lang='stylus'>
 @import "../styles/main.styl"
+.img
+  width 272px
+  height 97px
 
 .bannerContainer
   background-image url("@/assets/images/404/background.png")
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height calc(100vh - 436px)
+  padding 100px 16px
   display flex
   align-items center
   justify-content center
@@ -43,6 +48,12 @@
   a
     color $brand-2
 
+@media only screen and (min-width: 992px)
+  .img
+    width 547px
+    height 194px
+
+  padding 200px
 </style>
 
 <script lang="ts">
