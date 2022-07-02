@@ -23,11 +23,7 @@ export default {
     meta: [
       {charset: 'utf-8'},
       // { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Polaris is your trusted cyber security partner providing web protection through proprietary artificial intelligence and machine learning. Deter attacks before damage is done.'
-      },
+      {hid: 'description', name: 'description', content: ''},
       {name: 'format-detection', content: 'telephone=no'},
       {
         property: 'og:title',
@@ -63,9 +59,7 @@ export default {
       },
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
-      {rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico'},
-
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -74,9 +68,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '~/plugins/preview.client.js'
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -93,18 +85,8 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
-    '@nuxtjs/sitemap',
   ],
-  sitemap: {
-    hostname: 'https://polarisec.com/',
-    cacheTime: 1000 * 60 * 15,
-    sitemaps: [
-      {
-        path: '/sitemap.xml',
-        gzip: true
-      },
-    ]
-  },
+
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
