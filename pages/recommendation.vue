@@ -1,13 +1,13 @@
 <template>
   <div>
     <div :class="$style.introPanel">
-      <div class="app-width" :class="$style.introSection">
-        <h2>Here’s your personalized recommendation</h2>
-        <p class="text-6">
+      <div class="app-width " :class="$style.introSection">
+        <h2 class="text-lg-left m-lg-0">Here’s your personalized recommendation</h2>
+        <p class="text-6 pb-4 mt-4">
           Based on the type of website you have and your needs, we recommend the following plan and add-ons.
         </p>
         <nuxt-link to="/questions">
-          <p :class="$style.action" class="brand-2">
+          <p :class="$style.action" class="brand-2 mt-3">
             Start over ->
           </p>
         </nuxt-link>
@@ -31,7 +31,7 @@
           <h5 class="fw-800">
             Contact sales
           </h5>
-          <p-button class="col-12 mt-5" :gradient="1" text="Next" @click="onClick"/>
+          <p-button class="col-12 mt-5" text="Next" @click="onClick"/>
         </div>
         <div v-if="planRightAttribute === 'Add-On'" class="col-5 ml-5">
           <p class="text-6 pb-3">
