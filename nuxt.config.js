@@ -71,11 +71,14 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/styles/main.styl',
+
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/preview.client.js'
+    '~/plugins/preview.client.js',
+    {src: "~/plugins/vClickOutside", ssr: false},
+    {src: "~/plugins/vueImagePreloaderInstaller", ssr: false}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
