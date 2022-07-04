@@ -41,7 +41,7 @@
             <p class="body-1 font-weight-bold">
               {{ addOn }}
             </p>
-            <nuxt-link to="/cyber-security-web-protection-pricing">
+            <nuxt-link to="/web-protection">
               <p class="brand-2" :class="$style.action">
                 Learn more ->
               </p>
