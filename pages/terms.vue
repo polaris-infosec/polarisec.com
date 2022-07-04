@@ -211,11 +211,11 @@
 @import "../styles/main.styl"
 
 .bannerContainer
-  padding 58px 152px 51px
+  padding 32px 16px
   background $background-1
 
 .termContainer
-  padding 43px 152px 155px
+  padding 32px 16px
   background #E5E5E5
   color black
 
@@ -229,6 +229,12 @@
   line-height 26px
   margin-bottom 15px
 
+@media only screen and (min-width: 992px)
+  .termContainer
+    padding 43px 152px 155px
+
+  .bannerContainer
+    padding 58px 152px 51px
 </style>
 
 <script lang="ts">

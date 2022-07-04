@@ -83,7 +83,7 @@
                     Pricing
                 </span>
                 </nuxt-link>
-                <nuxt-link :to="{path: '/cyber-security-web-protection-pricing', hash: '#faq'}">
+                <nuxt-link :to="{path: '/web-protection', hash: '#faq'}">
                 <span class="color-text-7">
                     FAQ
                 </span>
