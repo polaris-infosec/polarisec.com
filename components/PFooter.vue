@@ -78,7 +78,7 @@
             <div class="body-6 col-lg-3 col-5 mt-mb-36px">
               RESOURCES
               <div class="d-flex flex-column mt-4 body-5">
-                <nuxt-link to="/cyber-security-web-protection-pricing">
+                <nuxt-link to="/web-protection">
                 <span class="color-text-7">
                     Pricing
                 </span>
