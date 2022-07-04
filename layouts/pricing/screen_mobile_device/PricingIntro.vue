@@ -2,7 +2,7 @@
   <div :class="$style.container">
     <div :class="$style.section" class="app-width">
       <b-row class="mx-0 text-center flex-column align-items-center">
-        <h3 class="my-0 mb-3">Pricing</h3>
+        <h3 class="my-0 mb-3">Web Protection Plans</h3>
         <p class="body-1 my-0 mb-4">
           Try Polaris free - forever
         </p>
