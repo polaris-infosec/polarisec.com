@@ -67,7 +67,8 @@
             </b-col>
           </b-row>
           <b-row class="mt-5">
-            <p-button class="col-12" style="max-width: 840px" :class="$style.sendMessageBtn" :show-icon="false" type="submit"
+            <p-button class="col-12" style="max-width: 840px" :class="$style.sendMessageBtn" :show-icon="false"
+                      type="submit"
                       text="Get help"></p-button>
           </b-row>
         </b-form>
@@ -265,6 +266,7 @@ export default class Contact extends Vue {
       title: 'Contact Us'
     }
   }
+
   showButton() {
     return !!this.name && !!this.website && !!this.email && !!this.phone && !!this.company && !!this.role && !!this.topic && !!this.message;
   }
@@ -272,6 +274,14 @@ export default class Contact extends Vue {
   async onSubmit(event: any) {
     event.preventDefault();
     if (!this.showButton) return;
+
+    if(!this.topic) {
+      this.alert = "Please Select Your Topic";
+      this.statusType = 'error';
+      this.showAlert();
+      return
+    }
+
     const response = await this.$axios.$post('https://polarisec.io/api/contact-us', {
       'name': this.name,
       'email': this.email,
@@ -303,12 +313,6 @@ export default class Contact extends Vue {
     }
 
     this.showAlert();
-  }
-
-  get placeHolderSelect() {
-    if (!this.topic) {
-      return this.$style.placeHolderSelect;
-    }
   }
 
   get status() {
