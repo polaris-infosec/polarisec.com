@@ -29,7 +29,7 @@
   background-repeat no-repeat
   background-size cover
   background-position bottom
-  padding 32px 16px
+  padding 32px 16px 129px
 
 .box
   padding 60px 12px

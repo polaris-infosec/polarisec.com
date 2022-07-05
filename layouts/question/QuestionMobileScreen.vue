@@ -21,12 +21,13 @@
   color #93A1B4
 
 .section
-  padding 32px 16px
+  padding 32px 16px 126px
 
 .container
   background-image url("assets/images/question/question-bg.png")
   background-size cover
   background-repeat no-repeat
+  background-position center
 
 </style>
 <script lang="ts">
