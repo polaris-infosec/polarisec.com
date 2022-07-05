@@ -4,7 +4,7 @@
       <b-row class="mx-0 flex-column align-items-center text-center">
         <p class="body-1 col-7 p-0 my-0">Need help with choosing a package?
           Get a personalized recommendation</p>
-        <p-button class="col-7 mt-4" :gradient="2" text="Answer 3 Easy Questions" :show-icon="false"/>
+        <p-button class="col-7 mt-4" :gradient="2" text="Answer 3 Easy Questions" @click="goToQuestions()" :show-icon="false"/>
       </b-row>
 
       <div :class="$style.divide" class="flex-grow-1 mt-5 mb-5"></div>
@@ -88,6 +88,10 @@ export default class PricingDetail extends Vue {
 
   onClick(){
     window.open('https://polarisec.io/', '_blank');
+  }
+
+  goToQuestions(){
+    return this.$router.push({path:'/questions'})
   }
 
   get listAddOns() {

@@ -63,7 +63,7 @@
   margin-bottom 30px;
   width: 363px;
   min-height: 56px;
-  background: #1B1C1D;
+  background: #374B61;
   border: 0.25px solid #8BDFAF;
   border-radius: 8px;
 </style>
