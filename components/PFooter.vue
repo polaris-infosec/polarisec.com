@@ -67,7 +67,7 @@
                     Partners
                 </span>
                 </nuxt-link>
-                <a href="https://polarisec.medium.com/" target="_blank">
+                <a href="https://polarisec.substack.com/" target="_blank">
                   <span class="color-text-7">
                     Blog
                   </span>
