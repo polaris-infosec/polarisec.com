@@ -2,11 +2,11 @@
   <div :class="$style.container">
     <div :class="$style.section" class="app-width">
       <b-row class="mx-0 text-center flex-column align-items-center">
-        <h3 class="my-0 mb-3">Pricing</h3>
+        <h3 class="my-0 mb-3">Web Protection Plans</h3>
         <p class="body-1 my-0 mb-4">
           Try Polaris free - forever
         </p>
-        <p-button class="col-6 my-0 mt-2" text="Request a Consultation" :show-icon="false"/>
+        <p-button class="col-6 my-0 mt-2" text="Request a Consultation" :show-icon="false" @click="goToContact()"/>
       </b-row>
     </div>
   </div>
@@ -20,7 +20,9 @@ import PButton from "~/components/PButton.vue";
   components: {PButton}
 })
 export default class PricingIntro extends Vue {
-
+  goToContact() {
+    return this.$router.push({path: '/contact'})
+  }
 }
 </script>
 

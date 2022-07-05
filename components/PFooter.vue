@@ -67,7 +67,7 @@
                     Partners
                 </span>
                 </nuxt-link>
-                <a href="https://polarisec.medium.com/" target="_blank">
+                <a href="https://polarisec.substack.com/" target="_blank">
                   <span class="color-text-7">
                     Blog
                   </span>
@@ -78,12 +78,12 @@
             <div class="body-6 col-lg-3 col-5 mt-mb-36px">
               RESOURCES
               <div class="d-flex flex-column mt-4 body-5">
-                <nuxt-link to="/cyber-security-web-protection-pricing">
+                <nuxt-link to="/web-protection">
                 <span class="color-text-7">
                     Pricing
                 </span>
                 </nuxt-link>
-                <nuxt-link :to="{path: '/cyber-security-web-protection-pricing', hash: '#faq'}">
+                <nuxt-link :to="{path: '/web-protection', hash: '#faq'}">
                 <span class="color-text-7">
                     FAQ
                 </span>

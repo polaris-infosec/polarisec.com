@@ -19,7 +19,8 @@
         </b-row>
         <p-button class="col-12 mb-4" :show-icon="false"
                   :text="addOnsFeature.title === 'Custom Pricing' ? 'Request a Consultation' : 'Add-on'"
-                  :gradient="2"></p-button>
+                  :gradient="2"
+                  @click="addOnsFeature.title === 'Custom Pricing' ? goToContact() : gotoPolaris()"></p-button>
       </b-row>
     </div>
   </div>
@@ -53,6 +54,15 @@ interface IAddOnsFeature {
 export default class PricingAddons extends Vue {
   @Prop() addOns: IAddOns;
   @Prop() isMonthly: boolean;
+
+  goToContact() {
+    return this.$router.push({path: '/contact'})
+  }
+
+  gotoPolaris() {
+    window.open('https://polarisec.io/', '_blank');
+
+  }
 }
 </script>
 

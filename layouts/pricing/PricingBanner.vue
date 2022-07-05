@@ -4,7 +4,7 @@
       <div :class="$style.bannerSection" class="row app-width">
         <b-row class="mx-0 flex-grow-1">
           <b-col cols="3" class="p-0">
-            <h1>Pricing</h1>
+            <h1>Web Protection Plans</h1>
             <div :class="$style.pricingSubTitle" class="body-1">Try Polaris free - forever</div>
             <p-button text="Request a Consultation" @click="onClick"/>
           </b-col>

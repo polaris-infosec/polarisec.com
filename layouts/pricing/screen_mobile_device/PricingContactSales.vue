@@ -7,7 +7,7 @@
           Need enterprise-grade scalability, security, and support - contact
           our sales team
         </p>
-        <p-button class="col-4 my-0 mt-2" :gradient="2" text="Contact sales" :show-icon="false"/>
+        <p-button class="col-4 my-0 mt-2" :gradient="2" text="Contact sales" :show-icon="false" @click="goToContact()"/>
       </b-row>
     </div>
   </div>
@@ -21,7 +21,9 @@ import PButton from "~/components/PButton.vue";
   components: {PButton}
 })
 export default class PricingContactSales extends Vue {
-
+  goToContact() {
+    return this.$router.push({path: '/contact'})
+  }
 }
 </script>
 

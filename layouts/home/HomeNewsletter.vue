@@ -5,7 +5,7 @@
         <h2 class="my-0 mb-4">Sign up for our newsletter</h2>
         <h5 class="my-0 mb-5">Be the first to receive new feature and product updates.</h5>
 
-        <p-button class="col-lg-2" white-icon :class="$style.button" :gradient="2" text="Sign up"></p-button>
+        <p-button class="col-lg-2" white-icon :class="$style.button" :gradient="2" text="Sign up" @click="gotoPolaris()"></p-button>
       </b-row>
     </div>
   </div>
@@ -57,6 +57,8 @@ import PInput from "~/components/PInput.vue";
 })
 export default class HomeNewsletter extends Vue {
 
-
+  gotoPolaris() {
+    window.open('https://polarisec.io/', '_blank');
+  }
 }
 </script>

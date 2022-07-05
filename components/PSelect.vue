@@ -46,6 +46,7 @@
 .dropdownListActive
   opacity 1 !important
   visibility visible !important
+  display inherit !important
 
 .dropdownSelect
   padding 0.375rem 1.75rem 0.375rem 1.025rem
@@ -73,7 +74,7 @@
   left 0
   right 0
   z-index 1
-  opacity 0
+  display none
 
 .dropdownItem
   font-size 1rem
@@ -97,7 +98,7 @@
   left 0
   right 0
   z-index 2
-  opacity 0
+  display none
 
 .whiteText
   color white !important

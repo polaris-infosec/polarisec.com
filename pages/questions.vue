@@ -1,13 +1,19 @@
 <template>
   <div :class="$style.questionsPanel" id="questions">
     <div :class="$style.questionsSection" class="d-flex app-width">
-      <introduction :class="$style.introduction"/>
-      <question v-if="step === 1" class="col-8" :step="step" :answers="question1.answers" :question="question1.question"
-                @nextStep="nextStep" @previousStep="previousStep"/>
-      <question v-if="step === 2" class="col-8" :step="step" :answers="question2.answers" :question="question2.question"
-                @nextStep="nextStep" @previousStep="previousStep"/>
-      <question v-if="step === 3" class="col-8" :step="step" :answers="question3.answers" :question="question3.question"
-                @nextStep="nextStep" @previousStep="previousStep"/>
+      <question-mobile-screen v-if="mobileScreen"/>
+      <template v-else>
+        <introduction :class="$style.introduction"/>
+        <question v-if="step === 1" class="col-8" :step="step" :answers="question1.answers"
+                  :question="question1.question"
+                  @nextStep="nextStep" @previousStep="previousStep"/>
+        <question v-if="step === 2" class="col-8" :step="step" :answers="question2.answers"
+                  :question="question2.question"
+                  @nextStep="nextStep" @previousStep="previousStep"/>
+        <question v-if="step === 3" class="col-8" :step="step" :answers="question3.answers"
+                  :question="question3.question"
+                  @nextStep="nextStep" @previousStep="previousStep"/>
+      </template>
     </div>
   </div>
 </template>
@@ -16,22 +22,26 @@
   max-width 354px
 
 .questionsSection
-  padding-left 152px
+  padding-left 32px 16px
   box-sizing border-box
   min-height 761px
 
 .questionsPanel
   background-color #0F0F0F
 
+@media only screen and (min-width: 992px)
+  .questionsSection
+    padding-left 152px
 </style>
 
 <script lang="ts">
 import {Vue, Component} from "nuxt-property-decorator";
 import Introduction from "~/layouts/question/Introduction.vue";
 import Question from "~/layouts/question/Question.vue";
+import QuestionMobileScreen from "~/layouts/question/QuestionMobileScreen.vue";
 
 @Component({
-  components: {Question, Introduction}
+  components: {QuestionMobileScreen, Question, Introduction}
 })
 export default class Questions extends Vue {
   step: number = 1;
@@ -62,6 +72,10 @@ export default class Questions extends Vue {
 
   previousStep(step: number) {
     this.step = step;
+  }
+
+  get mobileScreen() {
+    return window.screen.width < 992.0
   }
 }
 </script>
