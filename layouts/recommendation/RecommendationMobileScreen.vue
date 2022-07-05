@@ -11,7 +11,7 @@
       <p class="body-2 col-8">Advanced features and
         dedicated support.</p>
     </b-col>
-    <b-col v-if="addOns" :class="$style.box" class="d-flex flex-column align-items-center justify-content-center mt-2">
+    <b-col v-if="addOns && addOns !== 'None'" :class="$style.box" class="d-flex flex-column align-items-center justify-content-center mt-2">
       <div :class="$style.tag">
         <span class="caption text-uppercase">Add-on</span>
       </div>
