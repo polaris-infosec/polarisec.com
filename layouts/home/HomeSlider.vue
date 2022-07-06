@@ -17,7 +17,7 @@
           >
             <template v-for="(feature, idx) in listFeature">
               <div :key="feature.img" class="d-flex justify-content-center">
-                <img height="68" :src="feature.img" :class="(idx === 2 && $style.asiaOneLogo)" alt="">
+                <img height="68" :src="feature.img" :class="[(idx === 2 && $style.asiaOneLogo) || (idx === 4 && $style.kaperskyLogo)]" alt="">
               </div>
             </template>
 
@@ -51,6 +51,9 @@
 
 <style module lang='stylus'>
 @import "@/styles/config.styl"
+.kaperskyLogo
+  height 128px !important
+
 .slider
   :global(.owl-stage)
     display flex !important
