@@ -17,7 +17,7 @@
           >
             <template v-for="(feature, idx) in listFeature">
               <div :key="feature.img" class="d-flex justify-content-center">
-                <img height="68" :src="feature.img" :class="(idx === 6 && $style.asiaOneLogo)" alt="">
+                <img height="68" :src="feature.img" :class="(idx === 2 && $style.asiaOneLogo)" alt="">
               </div>
             </template>
 
@@ -164,11 +164,11 @@ export default class HomeSlider extends Vue {
     return [
       {img: require('@/assets/images/home/gartner-peerinsights.png'),},
       {img: require('@/assets/images/home/the-business-time.png'),},
+      {img: require('@/assets/images/home/asiaone.png'),},
       {img: require('@/assets/images/home/yahoo.png'),},
       {img: require('@/assets/images/home/kaspersky.png'),},
       {img: require('@/assets/images/home/NCSC.png'),},
       {img: require('@/assets/images/home/channelnewsasia.png'),},
-      {img: require('@/assets/images/home/asiaone.png'),},
     ];
   }
 
