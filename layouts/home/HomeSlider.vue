@@ -52,9 +52,6 @@
 <style module lang='stylus'>
 @import "@/styles/config.styl"
 .slider
-  :global(.owl-item + .active)
-    width initial !important
-
   :global(.owl-stage)
     display flex !important
     align-items center !important
@@ -132,6 +129,10 @@
     min-height 520px
 
 @media only screen and (min-width: 992px)
+  .slider
+    :global(.owl-item + .active)
+      width initial !important
+
   .seeItSection
     padding 122px 60px 0
 
