@@ -64,19 +64,12 @@
     padding 8px 4px !important
     border-bottom 0.015em solid $brand-2 !important
 
-    a:hover
-      color $brand-2 !important
-      border-color transparent !important
-
   a
     border-bottom 1px solid transparent
 
   ul > li:last-child
     border-color transparent !important
 
-  a:hover
-    color $brand-2 !important
-    border-bottom 1px solid $brand-2 !important
   ul
     li
       a
@@ -106,6 +99,20 @@
   font-weight 500 !important
   font-size 14px !important
   line-height 18px !important
+
+@media only screen and (min-width: 992px)
+  .navBarItem
+    a:hover
+      color $brand-2 !important
+      border-bottom 1px solid $brand-2 !important
+
+    li
+      padding 8px 4px !important
+      border-bottom 0.015em solid $brand-2 !important
+
+      a:hover
+        color $brand-2 !important
+        border-color transparent !important
 </style>
 
 <script lang="ts">
