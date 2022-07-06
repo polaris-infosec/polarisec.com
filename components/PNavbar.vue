@@ -14,12 +14,12 @@
           Platform
         </b-nav-item>
         <b-nav-item-dropdown :class="$style.navBarItem" id="dropdown-1" text="Services" class="mr-4 pr-3 active">
-          <b-dropdown-item to="/ISMA" target="_blank">ISMA</b-dropdown-item>
-          <b-dropdown-item to="/ISO-27001" target="_blank">ISO 27001 Audit
+          <b-dropdown-item to="/ISMA">ISMA</b-dropdown-item>
+          <b-dropdown-item to="/ISO-27001">ISO 27001 Audit
           </b-dropdown-item>
-          <b-dropdown-item to="/GDPR" target="_blank">GDPR Audit</b-dropdown-item>
-          <b-dropdown-item to="/PCI-DSS" target="_blank">PCIDSS Audit</b-dropdown-item>
-          <b-dropdown-item to="/incident-response" target="_blank">Incident Response</b-dropdown-item>
+          <b-dropdown-item to="/GDPR">GDPR Audit</b-dropdown-item>
+          <b-dropdown-item to="/PCI-DSS">PCIDSS Audit</b-dropdown-item>
+          <b-dropdown-item to="/incident-response">Incident Response</b-dropdown-item>
         </b-nav-item-dropdown>
         <b-nav-item :class="$style.navBarItem" to="/whyus" class="active mr-4 pr-3">Why us</b-nav-item>
         <b-nav-item :class="$style.navBarItem" to="/partner" class="active mr-4 pr-3">Partners</b-nav-item>
@@ -61,12 +61,22 @@
 
 .navBarItem
   li
+    padding 8px 4px !important
+    border-bottom 0.015em solid $brand-2 !important
+
     a:hover
       color $brand-2 !important
+      border-color transparent !important
+
+  a
+    border-bottom 1px solid transparent
+
+  ul > li:last-child
+    border-color transparent !important
 
   a:hover
-      color $brand-2 !important
-
+    color $brand-2 !important
+    border-bottom 1px solid $brand-2 !important
   ul
     li
       a

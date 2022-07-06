@@ -25,7 +25,7 @@
             <div :key="idx" class="pl-2">
               <div :class="$style.box" v-for="partner in items"
                    class="d-flex justify-content-center align-items-center my-3">
-                <img :class="$style.logo" alt="" height="60" :src="partner.icon"/>
+                <img :class="$style.logo" alt="" :src="partner.icon"/>
               </div>
             </div>
           </template>
@@ -38,6 +38,8 @@
 <style module lang='stylus'>
 .logo
   border-radius 50%
+  width 60px !important
+  height 60px !important
 
 .nextButton
   position absolute
@@ -51,9 +53,6 @@
 
 .ourPartners
   position relative
-
-  img
-    width 60px !important
 
 .box
   width 120px
@@ -81,6 +80,10 @@
   background-image url("assets/background/partner-bg.png")
 
 @media only screen and (min-width: 992px)
+  .logo
+    width 86px !important
+    height 86px !important
+
   .box
     width 190px
     height 190px

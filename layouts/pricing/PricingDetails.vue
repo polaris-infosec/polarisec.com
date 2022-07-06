@@ -10,9 +10,6 @@
             <li>
               <nuxt-link :to="{path: '/web-protection', hash: '#add-on'}">Add-ons</nuxt-link>
             </li>
-            <li>
-              <nuxt-link :to="{path: '/web-protection', hash: '#faq'}">FAQs</nuxt-link>
-            </li>
           </ol>
         </div>
         <div class="col-sm-10">
