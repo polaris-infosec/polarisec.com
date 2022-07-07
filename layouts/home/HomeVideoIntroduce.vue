@@ -5,7 +5,7 @@
         <b-col class="d-flex p-0 row" lg="7" cols="12">
           <div class="col-sm-12 px-0" :class="$style.videoContainer">
             <div :class="$style.videoSubContainer">
-              <iframe src="https://www.youtube.com/embed/J_jbDrFq4AM"
+              <iframe src="https://www.youtube.com/watch?v=CM8pazGwXPs"
                       title="YouTube video player"
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
