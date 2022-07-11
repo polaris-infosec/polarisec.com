@@ -18,7 +18,7 @@
           <b-dropdown-item to="/ISO-27001">ISO 27001 Audit
           </b-dropdown-item>
           <b-dropdown-item to="/GDPR">GDPR Audit</b-dropdown-item>
-          <b-dropdown-item to="/PCI-DSS">PCIDSS Audit</b-dropdown-item>
+          <b-dropdown-item to="/PCI-DSS">PCI-DSS Audit</b-dropdown-item>
           <b-dropdown-item to="/incident-response">Incident Response</b-dropdown-item>
         </b-nav-item-dropdown>
         <b-nav-item :class="$style.navBarItem" to="/whyus" class="active mr-4 pr-3">Why us</b-nav-item>
