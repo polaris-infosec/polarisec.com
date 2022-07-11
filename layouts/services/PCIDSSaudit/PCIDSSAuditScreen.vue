@@ -1,6 +1,6 @@
 <template>
-  <div :class="$style.pcidssContainer">
-    <div :class="$style.pcidssSection" class="app-width">
+  <div :class="$style.pciDssContainer">
+    <div :class="$style.pciDssSection" class="app-width">
       <introduction :introduction="introduction"/>
       <what-we-do/>
       <benefit :benefits="benefits"/>
@@ -8,18 +8,21 @@
   </div>
 </template>
 <style module lang="stylus">
-.pcidssSection
+.pciDssSection
   padding 16px
 
-.pcidssContainer
+.pciDssContainer
   background-repeat no-repeat
   background-attachment fixed
   background-position center
   background-size cover
-  background-image url("@/assets/images/services/ISO27001/iso27001-bg.png")
+  background-image url("@/assets/images/services/service-bg-mobile.png")
 
 @media only screen and (min-width: 992px)
-  .pcidssSection
+  .pciDssContainer
+    background-image url("@/assets/images/services/ISO27001/iso27001-bg.png")
+
+  .pciDssSection
     padding 112px 130px 86px 152px
 </style>
 <script lang="ts">

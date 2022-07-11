@@ -16,9 +16,12 @@
   background-attachment fixed
   background-position center
   background-size cover
-  background-image url("@/assets/images/services/ISO27001/iso27001-bg.png")
+  background-image url("@/assets/images/services/service-bg-mobile.png")
 
 @media only screen and (min-width: 992px)
+  .certContainer
+    background-image url("@/assets/images/services/ISO27001/iso27001-bg.png")
+
   .certSection
     padding 82px 133px 120px 152px
 </style>
