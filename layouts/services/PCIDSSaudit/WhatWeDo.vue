@@ -2,7 +2,7 @@
   <b-row class="p-0 m-0 d-flex mt-lg-0 mb-5">
     <b-col
       class="p-0 m-lg-0 mt-5 align-items-lg-start justify-content-center align-items-center col-lg-8 col-12 text-lg-left text-center">
-      <div class="mb-4">
+      <div>
         <img v-if="mobileScreen" src="@/assets/images/services/what-we-do.png" width="280" height="280"/>
       </div>
       <h3 class="brand-2 p-lg-0 pt-5 mb-4">
