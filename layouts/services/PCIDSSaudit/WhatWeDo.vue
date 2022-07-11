@@ -2,13 +2,13 @@
   <b-row class="p-0 m-0 d-flex mt-lg-0 mb-5">
     <b-col
       class="p-0 m-lg-0 mt-5 align-items-lg-start justify-content-center align-items-center col-lg-8 col-12 text-lg-left text-center">
-      <div>
+      <div class="mb-4">
         <img v-if="mobileScreen" src="@/assets/images/services/what-we-do.png" width="280" height="280"/>
       </div>
-      <h3 class="brand-2 p-lg-0 pt-5 mb-4">
+      <h3 class="brand-2 mb-4">
         What we do
       </h3>
-      <p class="p-0 body-1 col-lg-7 col-12">
+      <p class="p-0 my-0 body-1 col-lg-7 col-12">
         Audits follow along with the 12 PCI-DSS compliance standards.
         Ensure your organization is ready to securely manage
         your customers' card data and provide them with additional

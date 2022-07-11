@@ -3,7 +3,7 @@
     <div :class="$style.pciDssSection" class="app-width">
       <introduction :introduction="introduction"/>
       <what-we-do/>
-      <benefit :benefits="benefits"/>
+      <benefit class="mt-3" :benefits="benefits"/>
     </div>
   </div>
 </template>
