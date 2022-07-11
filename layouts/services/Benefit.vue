@@ -12,7 +12,7 @@
       </ul>
     </b-col>
     <b-col
-      class="col-lg-4 col-12 mx-0 p-0 mb-4 mt-lg-0 d-flex justify-content-center justify-content-lg-end align-items-center order-lg-1 order-0">
+      class="col-lg-4 col-12 p-0 mb-4 mt-lg-0 mt-4 d-flex justify-content-center justify-content-lg-end align-items-center order-lg-1 order-0">
       <img src="~/assets/images/services/benefit.png" alt="" :class="$style.image"/>
     </b-col>
   </b-row>
