@@ -1,5 +1,5 @@
 <template>
-  <b-row class="p-0 m-0 d-flex justify-content-between mt-5 mb-5">
+  <b-row class="p-0 m-0 d-flex justify-content-between mt-5 pt-lg-4 mb-5">
     <b-col
       class="d-flex p-0 m-0 flex-column col-lg-8 col-12 order-1 order-lg-0 text-lg-left text-center">
       <h3 class="p-0 m-0 brand-2 mb-4">
