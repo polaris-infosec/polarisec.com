@@ -3,7 +3,7 @@
     <h3 class="mb-4">Here’s your personalized recommendation</h3>
     <p class="body-2 pb-3">Based on the type of website you have
       and your needs, we recommend the following plan and add-ons.</p>
-    <b-col :class="$style.box" class="d-flex flex-column align-items-center mb-4">
+    <b-col :class="$style.box" class="d-flex flex-column align-items-center">
       <div :class="$style.tag">
         <span class="caption text-uppercase">recommendation plan</span>
       </div>
@@ -12,7 +12,7 @@
         dedicated support.</p>
     </b-col>
     <b-col v-if="addOns && addOns !== 'None'" :class="$style.box"
-           class="d-flex flex-column align-items-center justify-content-center mt-2">
+           class="d-flex flex-column align-items-center justify-content-center mb-2 mt-4">
       <div :class="$style.tag">
         <span class="caption text-uppercase">Add-on</span>
       </div>
@@ -20,7 +20,7 @@
         {{ addOns }}
       </p>
     </b-col>
-    <p-button :gradient="2" :show-icon="false" text="Contact sales" @click="goToContact()"/>
+    <p-button class="mt-4" :gradient="2" :show-icon="false" text="Contact sales" @click="goToContact()"/>
   </div>
 </template>
 
@@ -38,6 +38,7 @@
   border-radius 16px
   background-color #374B61
   position relative
+  margin-bottom 32px !important
 
 .tag
   padding 8px 12px
