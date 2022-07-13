@@ -1,12 +1,13 @@
 <template>
-  <div :class="$style.dropdown" class="text-left">
-    <div :class="$style.dropdownSelect" v-click-outside="externalClick" @click="activeDropdownList()">
+  <div :class="$style.dropdown" class="text-left" v-click-outside="externalClick">
+    <div :class="$style.dropdownSelect" @click="activeDropdownList()">
           <span :class="[$style.select, itemSelect && $style.whiteText]">
             {{ itemSelect ? itemSelect.content : placeHolder }}
           </span>
     </div>
 
-    <div :class="[$style.dropdownList, isActive && dropdownListActive, isVisible && $style.displayNone]">
+    <div
+      :class="[$style.dropdownList, isActive && dropdownListActive, isVisible && $style.displayNone , !isActive && $style.displayNone]">
       <div :class="$style.dropdownItem" v-for="option in options" :key="option.content"
            @click="setSelect(option)">
         <b-row class="mx-0 flex-grow-1 align-items-center">
@@ -19,7 +20,7 @@
         </b-row>
       </div>
     </div>
-    <div :class="[$style.dropdownListExpand, isVisible && dropdownListActive]">
+    <div :class="[$style.dropdownListExpand, isVisible && dropdownListActive, !isVisible && $style.displayNone]">
       <template v-if="itemSelect">
         <div :class="$style.dropdownItem" v-for="option in itemSelect.subOptions" :key="option.content"
              @click="setSubOptionSelect(option)">
@@ -134,6 +135,7 @@ export default class PSelect extends Vue {
     this.options.forEach((item) => {
       item.content === option.content ? item.isSelect = true : item.isSelect = false
     })
+    this.isActive = false
     this.$nuxt.$emit('setSelectOption', option)
   }
 
@@ -156,6 +158,10 @@ export default class PSelect extends Vue {
   externalClick() {
     if (this.isActive) {
       this.isActive = false
+    }
+
+    if (this.isVisible) {
+      this.isVisible = false
     }
   }
 }

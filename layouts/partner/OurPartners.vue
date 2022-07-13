@@ -11,26 +11,25 @@
             We're looking for your help in providing security solutions to our communities
           </p>
         </b-col>
-        <b-col class="p-0 order-lg-1 order-0 d-flex justify-content-end" lg="5" cols="12">
-          <carousel
-            :autoplay="partners.length > 1"
-            :dots="false"
-            autoWidth
-            :margin="16"
-            :items="3"
-            :nav="false"
-            style="max-width: 640px"
-          >
-            <template v-for="(items, idx) in partners">
-              <div :key="idx" class="pl-2">
-                <div :class="$style.box" v-for="partner in items"
-                     class="d-flex justify-content-center align-items-center my-3" @click="goToPath(partner.path)">
-                  <img :class="$style.logo" alt="" :src="partner.icon"/>
-                </div>
+        <carousel
+          class="col-lg-6 col-12 p-0 order-lg-1 order-0"
+          :autoplay="partners.length > 1"
+          :dots="false"
+          autoWidth
+          :margin="16"
+          :items="3"
+          :nav="false"
+          :class="$style.ourPartners"
+        >
+          <template v-for="(items, idx) in partners">
+            <div :key="idx" class="pl-2">
+              <div :class="$style.box" v-for="partner in items"
+                   class="d-flex justify-content-center align-items-center my-3" @click="goToPath(partner.path)">
+                <img :class="$style.logo" alt="" :src="partner.icon"/>
               </div>
-            </template>
-          </carousel>
-        </b-col>
+            </div>
+          </template>
+        </carousel>
       </b-row>
     </div>
   </div>
@@ -69,6 +68,9 @@
   background-image url("assets/background/partner-bg.png")
 
 @media only screen and (min-width: 992px)
+  .ourPartners
+    max-width 640px
+
   .logo
     max-height 80px !important
 

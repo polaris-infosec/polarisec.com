@@ -10,6 +10,12 @@
             <li>
               <nuxt-link :to="{path: '/web-protection', hash: '#add-on'}">Add-ons</nuxt-link>
             </li>
+            <li>
+              <a
+                href="https://support.polarisec.com/portal/en/kb/polaris-kb/frequently-asked-questions-faq">
+                FAQs
+              </a>
+            </li>
           </ol>
         </div>
         <div class="col-sm-10">
