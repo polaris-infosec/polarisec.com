@@ -3,7 +3,7 @@
     <div class="app-width" :class="$style.bodyContainer">
       <b-row class="mx-0 justify-content-between">
         <b-col class="p-0 d-flex justify-content-center" cols="12" lg="6">
-          <img :class="$style.img" src="@/assets/images/home/artificial-intelligence.png" alt="">
+          <img :class="$style.img" src="@/assets/images/home/threat-intelligence.png" alt="">
         </b-col>
         <b-col :class="$style.textContainer"
                class="p-0 d-flex flex-column justify-content-center text-lg-left text-center mt-lg-0 mt-5" lg="5"
