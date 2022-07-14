@@ -144,7 +144,7 @@ export default class ContactSale extends Vue {
   ]
 
   goToPath(url: string) {
-    window.location.assign(url)
+    window.open(url, '_blank');
   }
 }
 </script>
