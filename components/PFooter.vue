@@ -83,8 +83,10 @@
                     Pricing
                 </span>
                 </nuxt-link>
-                <a class="color-text-7" href="https://support.polarisec.com/portal/en/kb/polaris-kb/frequently-asked-questions-faq">
-                  FAQ
+                <a href="https://support.polarisec.com/portal/en/kb/polaris-kb/frequently-asked-questions-faq">
+                <span class="color-text-7">
+                    FAQ
+                </span>
                 </a>
                 <nuxt-link to="/contact">
                 <span class="color-text-7">
