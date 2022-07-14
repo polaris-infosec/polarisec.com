@@ -3,7 +3,7 @@
     <div :class="$style.contactSaleSection" class="app-width">
       <b-row class="d-flex mx-0 justify-content-lg-between justify-content-center align-items-center black-text text-lg-left text-center">
         <h5 class="fw-500 col-lg-7 col-12 p-0 body-1-sm secondary-1-sm">
-          Contact us at <span><a href="mailto:hello@polarisec.com" class="black-text">hello@polarisec.com</a></span>
+          Contact us at <b><a href="mailto:hello@polarisec.com" class="black-text">hello@polarisec.com</a></b>
           for more information on how
           we can combine efforts in bringing cybersecurity solutions to APAC
         </h5>

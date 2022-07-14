@@ -5,44 +5,47 @@
         <h2 class="pl-4">Pricing</h2>
         <div class="body-2 pl-4">Save 20% with our Yearly payment plan</div>
         <div :class="$style.pricingContainer" class="p-4">
-          <div class="row" :class="$style.tableHeader">
-            <div @click="onChangeExpand(!isExpandAll)" :class="$style.headerItem" class="col-sm-3 body-2 d-inline-flex align-items-center justify-content-between">
-              <div>Billing cycle</div>
-              <img :src="isExpandAll ? iconExpand.collapse : iconExpand.expand" alt="" width="24" height="24">
-            </div>
-            <div :class="$style.headerItem" class="col">Basic</div>
-            <div :class="$style.headerItem" class="col">Standard</div>
-            <div :class="$style.headerItem" class="col">Professional</div>
-            <div :class="$style.headerItem" class="col">Enterprise</div>
-          </div>
-          <div class="row">
-            <div class="col-sm-3">
-              <div class="d-inline-flex align-items-center">
-                <div @click="onChangeType(true)" :class="[$style.selectType, isMonthlyType && $style.active]"
-                     class="mr-1">
-                  Monthly
-                </div>
-                <div @click="onChangeType(false)" :class="[$style.selectType, !isMonthlyType && $style.active]">
-                  Yearly
-                </div>
+          <div :class="$style.headerContainer">
+            <div class="row" :class="$style.tableHeader">
+              <div @click="onChangeExpand(!isExpandAll)" :class="$style.headerItem"
+                   class="col-sm-3 body-2 d-inline-flex align-items-center justify-content-between">
+                <div>Billing cycle</div>
+                <img :src="isExpandAll ? iconExpand.collapse : iconExpand.expand" alt="" width="24" height="24">
               </div>
+              <div :class="$style.headerItem" class="col">Basic</div>
+              <div :class="$style.headerItem" class="col">Standard</div>
+              <div :class="$style.headerItem" class="col">Professional</div>
+              <div :class="$style.headerItem" class="col">Enterprise</div>
             </div>
-            <template v-for="type in billingCycle">
-              <div :key="type.type" class="col">
+            <div class="row">
+              <div class="col-sm-3">
                 <div class="d-inline-flex align-items-center">
-                  <h4 :class="$style.price">{{ !isNaN(type.price) ? '$' : '' }}{{ type.price }}</h4>
-                  <div :class="$style.priceDetail" v-if="!isNaN(type.price)">
-                    <div>per domain</div>
-                    <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
+                  <div @click="onChangeType(true)" :class="[$style.selectType, isMonthlyType && $style.active]"
+                       class="mr-1">
+                    Monthly
+                  </div>
+                  <div @click="onChangeType(false)" :class="[$style.selectType, !isMonthlyType && $style.active]">
+                    Yearly
                   </div>
                 </div>
-                <p-button :gradient="2"
-                          :class="$style.btn"
-                          :text="type.button_text"
-                          :show-icon="false"
-                          @click="type.action"/>
               </div>
-            </template>
+              <template v-for="type in billingCycle">
+                <div :key="type.type" class="col">
+                  <div class="d-inline-flex align-items-center">
+                    <h4 :class="$style.price">{{ !isNaN(type.price) ? '$' : '' }}{{ type.price }}</h4>
+                    <div :class="$style.priceDetail" v-if="!isNaN(type.price)">
+                      <div>per domain</div>
+                      <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
+                    </div>
+                  </div>
+                  <p-button :gradient="2"
+                            :class="$style.btn"
+                            :text="type.button_text"
+                            :show-icon="false"
+                            @click="type.action"/>
+                </div>
+              </template>
+            </div>
           </div>
           <template v-for="type in functionTypes">
             <div :class="$style.typeContainer" :key="type.title">
@@ -102,6 +105,12 @@
 
 <style module lang='stylus'>
 @import "@/styles/config.styl"
+.headerContainer
+  position sticky
+  top 72px
+  background-color #0F0F0F
+  z-index 1
+  padding-top 8px
 
 .container
   background-color: $background-1
@@ -113,6 +122,7 @@
   background $background-2
   border-radius 12px
   margin-top 35px
+  padding-top 16px !important
 
   .typeContainer:last-child
     margin-bottom 4px

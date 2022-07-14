@@ -58,7 +58,7 @@ import PInput from "~/components/PInput.vue";
 export default class HomeNewsletter extends Vue {
 
   gotoPolaris() {
-    window.open('https://polarisec.io/', '_blank');
+    window.open('http://eepurl.com/hVGfR9', '_blank');
   }
 }
 </script>

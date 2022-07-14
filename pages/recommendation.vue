@@ -35,7 +35,7 @@
             <h5 class="fw-800">
               Contact sales
             </h5>
-            <p-button class="col-12 mt-5" text="Next" @click="onClick"/>
+            <p-button class="col-12 mt-5" :gradient="2" text="Contact sales" @click="onClick"/>
           </div>
           <div v-if="planRightAttribute === 'Add-On'" class="col-5 ml-5">
             <p class="text-6 pb-3">

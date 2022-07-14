@@ -5,17 +5,17 @@
         <b-col class="d-flex p-0 row" lg="7" cols="12">
           <div class="col-sm-12 px-0" :class="$style.videoContainer">
             <div :class="$style.videoSubContainer">
-              <iframe src="https://www.youtube.com/embed/J_jbDrFq4AM"
-                      title="YouTube video player"
-                      frameborder="0"
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/CM8pazGwXPs"
+                      title="YouTube video player" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen/>
+                      allowfullscreen></iframe>
             </div>
           </div>
         </b-col>
         <b-col class="p-0 mt-lg-0 mt-5" lg="4" cols="12" :class="$style.textContainer">
           <h3 :class="$style.h3">How Polaris Helps <br/> Your Business.</h3>
-          <div :class="$style.text" class="mt-lg-0 mt-4">Polaris is the roadblock in the cyber attack killchain’s first stage - conducting
+          <div :class="$style.text" class="mt-lg-0 mt-4">Polaris is the roadblock in the cyber attack killchain’s first
+            stage - conducting
             reconnaissance on potential targets of opportunity. We monitor trends across web apps to predict and
             prevent attacks before they happen.
           </div>

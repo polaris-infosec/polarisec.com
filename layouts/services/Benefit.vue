@@ -1,5 +1,5 @@
 <template>
-  <b-row class="p-0 m-0 d-flex justify-content-between mt-5 mb-5">
+  <b-row class="mx-0 d-flex justify-content-between mt-5 pt-lg-4 mb-5">
     <b-col
       class="d-flex p-0 m-0 flex-column col-lg-8 col-12 order-1 order-lg-0 text-lg-left text-center">
       <h3 class="p-0 m-0 brand-2 mb-4">
@@ -12,7 +12,7 @@
       </ul>
     </b-col>
     <b-col
-      class="col-lg-4 col-12 mx-0 p-0 mb-4 mt-lg-0 d-flex justify-content-center justify-content-lg-end align-items-center order-lg-1 order-0">
+      class="col-lg-4 col-12 p-0 mb-4 mt-lg-0 mt-4 d-flex justify-content-center justify-content-lg-end align-items-center order-lg-1 order-0">
       <img src="~/assets/images/services/benefit.png" alt="" :class="$style.image"/>
     </b-col>
   </b-row>

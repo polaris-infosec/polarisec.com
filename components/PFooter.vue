@@ -2,7 +2,7 @@
   <b-container fluid :class="$style.footer">
     <div :class="$style.footerSection" class="app-width">
       <b-row class="d-flex justify-content-between flex-row">
-        <b-col lg="3" md="3" sm="12" class="p-0">
+        <b-col lg="3" cols="12" class="p-0">
           <nuxt-link to="/home">
             <img src="~/assets/images/polaris-logo.png" class="d-inline-block align-baseline mt-2" alt="Kitten"
                  height="30"
@@ -16,18 +16,18 @@
           </span>
               12 Marina View #11-01
             </p>
-            <p class="m-0 mb-1">
+            <p class="m-0 mb-1 p-0">
            <span class="brand-2">
             Vietnam:
            </span>
-              M Floor, Pax Sky Building, 159C De Tham,
+              M Floor, Pax Sky Building,
+              <br>
+              159C De Tham,
               Co Giang Ward, District 1, HCMC
             </p>
-            <p>
-           <span class="brand-2">
-            Contact number:
-           </span>
-              +84.287.101.7755
+            <p class="d-flex align-items-center">
+              <img src="@/assets/icons/phone.png" width="18" height="18" class="mr-1">
+              (+84) 28.7101.7755
             </p>
           </div>
         </b-col>

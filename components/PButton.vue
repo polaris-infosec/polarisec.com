@@ -6,8 +6,7 @@
             :class="[$style.button, classes]">
     {{ text }}
     <span v-if="showIcon" class="ml-2 d-inline-flex">
-      <img v-if="whiteIcon" src="@/assets/icons/white-union.png" alt="" width="14" height="12">
-      <img v-else src="@/assets/icons/union.png" alt="" width="14" height="12">
+        ->
     </span>
   </b-button>
 </template>
@@ -58,7 +57,6 @@ export default class PButton extends Vue {
   @Prop({type: Number, default: 0}) gradient: number;
   @Prop({type: Boolean, default: true}) showIcon: boolean;
   @Prop({type: String}) type: string;
-  @Prop({type: Boolean, default: false}) whiteIcon?: boolean;
 
   get classes() {
     switch (this.gradient) {

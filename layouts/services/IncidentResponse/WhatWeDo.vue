@@ -1,10 +1,10 @@
 <template>
-  <b-row class="p-0 m-0 mb-5 mt-5 text-center text-lg-left">
-    <h3 class="p-0 m-0 brand-2 mb-4 col-12">
+  <b-row class="mx-0 mb-5 mt-5 pt-lg-3 text-center text-lg-left">
+    <h3 class="p-0 m-0 brand-2 mb-5 pb-lg-3 col-12">
       What we do
     </h3>
     <b-row class="p-0 m-0 d-flex justify-content-between">
-      <b-col class="p-0 m-0 col-lg-8 col-12">
+      <b-col class="p-0 m-0 col-lg-8 col-12 order-lg-0 order-1">
         <p :class="$style.subTitle" class="p-0">
           Retained Incident Response
         </p>
@@ -14,13 +14,13 @@
           </li>
         </ul>
       </b-col>
-      <b-col class="p-0 m-0 col-lg-3 col-12">
+      <b-col class="p-0 col-lg-3 col-12 order-lg-1 order-0">
         <img src="@/assets/images/services/incidents/what-we-do1.png" width="350" height="350"/>
       </b-col>
     </b-row>
 
-    <b-row class="p-0 m-0 flex-grow-1 justify-content-between">
-      <b-col class="p-0 m-0 col-lg-6 col-12" :order="1">
+    <b-row class="mx-0 flex-grow-1 justify-content-between align-items-center">
+      <b-col class="p-0 col-lg-6 col-12" :order="1">
         <p :class="$style.subTitle" class="p-0">
           Retained Incident Response
         </p>
@@ -32,7 +32,7 @@
         </ul>
       </b-col>
       <b-col
-        class="d-flex justify-content-lg-start justify-content-center align-items-center p-0 m-0 col-lg-6 col-12 order-0">
+        class="d-flex justify-content-lg-start justify-content-center align-items-center p-0 mt-5 mb-5 my-lg-0 col-lg-6 col-12 order-0">
         <img src="@/assets/images/services/incidents/what-we-do2.png" width="330" height="250"/>
       </b-col>
     </b-row>

@@ -6,6 +6,7 @@
                :class="$style.sliderContainer">
           <h2 class="my-0 mb-4 pb-3">Featured by:</h2>
           <carousel
+            :class="$style.slider"
             autoplay
             class="col-12"
             :nav="false"
@@ -14,9 +15,9 @@
             :margin="36"
             :items="mobileScreen ? 1 : 4"
           >
-            <template v-for="feature in listFeature">
-              <div :key="feature.img">
-                <img height="64" :src="feature.img" alt="">
+            <template v-for="(feature, idx) in listFeature">
+              <div :key="feature.img" class="d-flex justify-content-center">
+                <img height="68" :src="feature.img" :class="[(idx === 2 && $style.asiaOneLogo) || (idx === 4 && $style.kaperskyLogo)]" alt="">
               </div>
             </template>
 
@@ -50,6 +51,19 @@
 
 <style module lang='stylus'>
 @import "@/styles/config.styl"
+.kaperskyLogo
+  height 128px !important
+
+.slider
+  :global(.owl-stage)
+    display flex !important
+    align-items center !important
+
+.asiaOneLogo
+  width 120px !important
+  height 120px !important
+
+
 .seeItSection
   padding 136px 16px 0
 
@@ -118,6 +132,10 @@
     min-height 520px
 
 @media only screen and (min-width: 992px)
+  .slider
+    :global(.owl-item + .active)
+      width initial !important
+
   .seeItSection
     padding 122px 60px 0
 
@@ -150,8 +168,8 @@ export default class HomeSlider extends Vue {
     return [
       {img: require('@/assets/images/home/gartner-peerinsights.png'),},
       {img: require('@/assets/images/home/the-business-time.png'),},
-      {img: require('@/assets/images/home/yahoo.png'),},
       {img: require('@/assets/images/home/asiaone.png'),},
+      {img: require('@/assets/images/home/yahoo.png'),},
       {img: require('@/assets/images/home/kaspersky.png'),},
       {img: require('@/assets/images/home/NCSC.png'),},
       {img: require('@/assets/images/home/channelnewsasia.png'),},

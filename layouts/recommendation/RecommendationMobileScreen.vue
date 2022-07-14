@@ -3,22 +3,24 @@
     <h3 class="mb-4">Here’s your personalized recommendation</h3>
     <p class="body-2 pb-3">Based on the type of website you have
       and your needs, we recommend the following plan and add-ons.</p>
-    <b-col :class="$style.box" class="d-flex flex-column align-items-center mb-4">
+    <b-col :class="$style.box" class="d-flex flex-column align-items-center">
       <div :class="$style.tag">
         <span class="caption text-uppercase">recommendation plan</span>
       </div>
-      <h5 class="font-weight-bold brand-2 mb-4">{{plan}}</h5>
+      <h5 class="font-weight-bold brand-2 mb-4">{{ plan }}</h5>
       <p class="body-2 col-8">Advanced features and
         dedicated support.</p>
     </b-col>
-    <b-col v-if="addOns && addOns !== 'None'" :class="$style.box" class="d-flex flex-column align-items-center justify-content-center mt-2">
+    <b-col v-if="addOns && addOns !== 'None'" :class="$style.box"
+           class="d-flex flex-column align-items-center justify-content-center mb-2 mt-4">
       <div :class="$style.tag">
         <span class="caption text-uppercase">Add-on</span>
       </div>
       <p class="body-1 font-weight-bold col-11">
-        {{addOns}}
+        {{ addOns }}
       </p>
     </b-col>
+    <p-button class="mt-4" :gradient="2" :show-icon="false" text="Contact sales" @click="goToContact()"/>
   </div>
 </template>
 
@@ -36,6 +38,7 @@
   border-radius 16px
   background-color #374B61
   position relative
+  margin-bottom 32px !important
 
 .tag
   padding 8px 12px
@@ -48,12 +51,18 @@
 </style>
 <script lang="ts">
 import {Component, Prop, Vue} from "nuxt-property-decorator";
+import PButton from "~/components/PButton.vue";
 
-@Component({})
+@Component({
+  components: {PButton}
+})
 export default class RecommendationMobileScreen extends Vue {
-  @Prop() plan:string
-  @Prop() addOns:string
+  @Prop() plan: string
+  @Prop() addOns: string
 
+  goToContact() {
+    return this.$router.push({path: '/contact'})
+  }
 }
 </script>
 
