@@ -83,11 +83,9 @@
                     Pricing
                 </span>
                 </nuxt-link>
-                <nuxt-link :to="{path: '/web-protection', hash: '#faq'}">
-                <span class="color-text-7">
-                    FAQ
-                </span>
-                </nuxt-link>
+                <a class="color-text-7" href="https://support.polarisec.com/portal/en/kb/polaris-kb/frequently-asked-questions-faq">
+                  FAQ
+                </a>
                 <nuxt-link to="/contact">
                 <span class="color-text-7">
                     Contact
