@@ -14,7 +14,6 @@
                 <img :src="leader.img" alt="" width="87" height="87">
                 <div class="ml-3">
                   <div :class="$style.name" class="body-1 mb-1">{{ leader.name }}</div>
-                  <div :class="$style.position">{{ leader.position }}</div>
                 </div>
               </b-col>
             </template>
