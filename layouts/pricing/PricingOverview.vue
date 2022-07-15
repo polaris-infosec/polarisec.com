@@ -427,7 +427,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'New Attack Vectors - Zero One Day',
+          title: 'New Attack Vectors - Zero Day',
           info: 'Protection against the latest vulnerabilities that were previously unknown',
           isExpand: false,
           supports: [
