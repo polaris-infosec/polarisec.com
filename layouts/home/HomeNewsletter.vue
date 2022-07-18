@@ -26,10 +26,6 @@
     margin-top 19px
     margin-bottom 49px
 
-  button
-    height fit-content
-    margin-left 24px
-
   input
     background: #374b61 !important
     font-size: 1.125rem

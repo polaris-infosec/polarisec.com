@@ -3,15 +3,13 @@
     <div class="app-width" :class="$style.bannerSection">
       <b-row
         class="mx-0 justify-content-lg-start justify-content-center align-items-center flex-lg-row flex-column text-lg-left text-center">
-        <h1 class="my-0 mb-3 h3-sm">Web Protection that Never Sleeps</h1>
+        <h1 class="my-0 mb-3 h3-sm">{{ $t("home.header-title") }}</h1>
         <div :class="$style.divide"></div>
-        <h3 class="mb-4 mt-lg-0 mt-3 h5-sm">Always On Guard</h3>
-        <p class="col-lg-10 col-12 p-0 body-1 my-0 mb-5 pb-2">
-          Polaris’ Web Application & API Protection (WAAP) applies <b>next-generation Artificial Intelligence (AI)</b>
-          to actively detect and deter cyber attacks against your business. <b>Robust</b>, <b>adaptable</b>, and <b>accurate</b>,
-          it greatly reduces the level of risk to your most critical asset - your data.
-        </p>
-        <p-button text="Request a Consultation" :class="$style.button" @click="onClick"/>
+        <h3 class="mb-4 mt-lg-0 mt-3 h5-sm">{{ $t("home.header-slogan") }}</h3>
+        <p class="col-lg-10 col-12 p-0 body-1 my-0 mb-5 pb-2" v-html="$t('home.header-content')"></p>
+        <div class="col-12 p-0">
+          <p-button :text="$t('button-group.button1')" :class="$style.button" @click="onClick"/>
+        </div>
       </b-row>
     </div>
   </div>
@@ -38,6 +36,7 @@
 
   .divide
     display none
+
   .bannerSection
     padding 161px 152px 238px 152px
 </style>

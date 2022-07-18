@@ -53,7 +53,7 @@ import {Vue, Component, Prop} from "nuxt-property-decorator";
 @Component({})
 export default class PButton extends Vue {
   @Prop({type: String}) variant: string | undefined;
-  @Prop({type: String}) text: string | undefined;
+  @Prop() text: any | undefined;
   @Prop({type: Number, default: 0}) gradient: number;
   @Prop({type: Boolean, default: true}) showIcon: boolean;
   @Prop({type: String}) type: string;
