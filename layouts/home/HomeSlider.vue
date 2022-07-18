@@ -17,7 +17,8 @@
           >
             <template v-for="(feature, idx) in listFeature">
               <div :key="feature.img" class="d-flex justify-content-center">
-                <img height="68" :src="feature.img" :class="[(idx === 2 && $style.asiaOneLogo) || (idx === 4 && $style.kaperskyLogo)]" alt="">
+                <img height="68" :src="feature.img"
+                     :class="[(idx === 2 && $style.asiaOneLogo) || (idx === 4 && $style.kaperskyLogo)]" alt="">
               </div>
             </template>
 
@@ -55,6 +56,10 @@
   height 128px !important
 
 .slider
+  :global(.owl-carousel .owl-item img)
+    max-width 100% !important
+    width auto !important
+
   :global(.owl-stage)
     display flex !important
     align-items center !important
