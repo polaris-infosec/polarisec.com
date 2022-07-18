@@ -63,6 +63,7 @@
   :global(.owl-stage)
     display flex !important
     align-items center !important
+    justify-content center !important
 
 .asiaOneLogo
   width 120px !important
