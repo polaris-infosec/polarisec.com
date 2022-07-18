@@ -56,11 +56,6 @@
 
   .bodyContainer
     padding 100px 140px
-
-  h2
-    max-width 877px
-    text-align center
-    margin 0 auto 99px
 </style>
 
 <script lang="ts">
