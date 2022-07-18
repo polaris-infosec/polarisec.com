@@ -14,8 +14,9 @@
           </p>
           <p-button text="Request a Consultation" :class="$style.button" @click="onClick"/>
         </b-col>
-        <b-col class="p-0 d-flex flex-column align-items-lg-start align-items-center text-lg-left text-center mt-5" lg="2" cols="12">
-          <p class="h5 mb-3" style="font-weight: 400 !important;">As seen on</p>
+        <b-col class="p-0 d-flex flex-column align-items-lg-start align-items-center text-lg-left text-center mt-5"
+               lg="2" cols="12">
+          <p class="h5 pl-lg-2 ml-1 mb-3" style="font-weight: 400 !important;">As seen on</p>
           <img src="@/assets/images/home/gartner-peerinsights-color.png" :class="$style.asSeenOn"/>
         </b-col>
       </b-row>
