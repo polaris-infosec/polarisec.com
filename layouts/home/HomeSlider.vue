@@ -57,7 +57,7 @@
 
 .slider
   :global(.owl-carousel .owl-item img)
-    max-width 100% !important
+    max-width 97% !important
     width auto !important
 
   :global(.owl-stage)
