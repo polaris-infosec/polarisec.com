@@ -22,7 +22,7 @@
     <b-row class="mx-0 flex-grow-1 justify-content-between align-items-center">
       <b-col class="p-0 col-lg-6 col-12" :order="1">
         <p :class="$style.subTitle" class="p-0">
-          Retained Incident Response
+          Investigations
         </p>
         <ul class="d-flex flex-column flex-lg-wrap body-1 p-0 pl-lg-4 mt-2 mb-lg-0 mb-5" :class="$style.content"
             style="max-height: 170px">

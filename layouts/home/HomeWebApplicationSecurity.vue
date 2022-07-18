@@ -7,7 +7,7 @@
         </b-col>
         <b-col :class="$style.textContainer" class="p-0 d-flex flex-column justify-content-center text-lg-left text-center mt-lg-0 mt-5" lg="5" cols="12">
           <h2 class="my-0 mb-4 text-lg-left">Web application security<span class="brand-2">.</span></h2>
-          <p class="my-0 mb-4">
+          <p class="my-0 body-1 mb-4">
             <b>Protects your website from cyber attacks</b> such as Distributed Denial of Service (DDoS), SQL
             Injection, Zero-Day attacks, and other OWASP Top 10 vulnerabilities before your application server is
             exploited.

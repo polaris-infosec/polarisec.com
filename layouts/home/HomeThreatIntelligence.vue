@@ -9,7 +9,7 @@
                class="p-0 d-flex flex-column justify-content-center text-lg-left text-center mt-lg-0 mt-5" lg="5"
                cols="12">
           <h2 class="my-0 mb-4">Threat Intelligence<span class="brand-2">.</span></h2>
-          <p class="my-0 mb-4">
+          <p class="my-0 body-1 mb-4">
             Polaris utilizes a variety of trusted cyber intelligence sources to aggregate, compare, and analyze threat
             data to form a more comprehensive detection and defense strategy in real time as events happen.
           </p>

@@ -6,9 +6,10 @@
           <img :class="$style.img" src="@/assets/images/home/artificial-intelligence.png" alt="">
         </b-col>
         <b-col :class="$style.textContainer"
-               class="p-0 d-flex flex-column justify-content-center text-lg-left text-center mt-lg-0 mt-5" order-lg="0" lg="5" cols="12">
-          <h2 class="my-0 mb-4">Artificial Intelligence<span class="brand-2">.</span></h2>
-          <p class="my-0 mb-4">
+               class="p-0 d-flex flex-column justify-content-center text-lg-left text-center mt-lg-0 mt-5" order-lg="0"
+               lg="5" cols="12">
+          <h2 class="my-0 mb-4 text-lg-left">Artificial Intelligence<span class="brand-2">.</span></h2>
+          <p class="my-0 body-1 mb-4">
             We use application specific machine and behavioral learning techniques such as “fingerprinting” to
             <b>differentiate between legitimate and malicious
               web requests.</b>
