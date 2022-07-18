@@ -2,7 +2,7 @@
   <b-row class="p-0 m-0 d-flex justify-content-lg-between justify-content-center pr-lg-5">
     <b-col class="col-lg-8 col-12 p-0 m-0 order-lg-0 order-1 text-lg-left text-center">
       <div class="d-flex justify-content-lg-start justify-content-center align-items-center p-0 mb-4 col-12">
-        <span class="mr-3 text-9 h3-sm">{{ introduction.title }}</span>
+        <span class="mr-lg-3 text-left text-9 h3-sm">{{ introduction.title }}</span>
         <template v-if="introduction.cert">
           <img :src="introduction.cert.image" :height="introduction.cert.height"/>
         </template>
