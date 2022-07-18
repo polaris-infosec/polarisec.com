@@ -101,7 +101,7 @@
               <div>
                 <p class="my-0">CONNECT WITH US</p>
                 <div class="d-flex mt-4 body-5">
-                  <b-col class="mb-2 p-0 d-flex flex-wrap">
+                  <b-col lg="12" cols="11" class="mb-2 p-0 d-flex flex-wrap">
                     <a href="https://linkedin.com/company/polarisec" target="_blank" class="mr-3">
                       <img src="~/assets/icons/linked-in.png" class="d-inline-block align-baseline" alt="Kitten"
                            height="24"
