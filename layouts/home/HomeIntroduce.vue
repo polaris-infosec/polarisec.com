@@ -53,9 +53,6 @@
   text-align center
 
 @media only screen and (min-width:992px)
-  .introduceText
-    text-align justify
-
   .bodyContainer
     padding 100px 140px
 </style>
