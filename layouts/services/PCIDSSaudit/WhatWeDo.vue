@@ -17,7 +17,8 @@
       </p>
     </b-col>
 
-    <div class="d-flex flex-wrap justify-content-lg-between justify-content-center mt-lg-5">
+    <b-col cols="12" :class="$style.processingListContainer"
+           class="d-flex p-0 flex-column flex-wrap align-content-center align-content-lg-between mt-lg-5">
       <b-col :class="$style.box" cols="0" v-for="item in processingLists" :key="item.title">
         <img src="@/assets/images/services/PCIDSS/label.png"/>
         <span :class="$style.boxTitle" class="h2">
@@ -27,7 +28,7 @@
           {{ item.content }}
         </div>
       </b-col>
-    </div>
+    </b-col>
   </b-row>
 </template>
 <style module lang="stylus">
@@ -49,6 +50,9 @@
   width 240px
   bottom 0
 
+@media only screen and (min-width: 992px)
+  .processingListContainer
+    max-height 493px
 </style>
 <script lang="ts">
 import {Component, Vue} from "nuxt-property-decorator";
