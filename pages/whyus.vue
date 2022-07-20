@@ -7,17 +7,17 @@
         </div>
         <div class="d-flex justify-content-between mt-lg-5 col-12 p-0 row mx-0">
           <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1 mb-3 pb-1">
-            Polaris is your <span class="highlight-text">premier local solution</span> with local support, dedicated to
+            Polaris is your <span class="brand-2">premier local solution</span> with local support, dedicated to
             providing users with a first rate security service.
           </div>
 
           <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1 mb-3 pb-1">
             We understand that cyber security can sometimes be overly complex and seek to simplify the process, <span
-            class="highlight-text">making it accessible to anyone, anywhere.</span>
+            class="brand-2">making it accessible to anyone, anywhere.</span>
           </div>
 
           <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1">
-            We’re <span class="highlight-text">scalable at every level</span> from the first time cyber user to the
+            We’re <span class="brand-2">scalable at every level</span> from the first time cyber user to the
             seasoned veteran, addressing the concerns of small businesses and enterprises alike.
           </div>
         </div>

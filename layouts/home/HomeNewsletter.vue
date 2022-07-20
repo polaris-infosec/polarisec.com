@@ -2,10 +2,9 @@
   <div class="container-fluid p-0" :class="$style.container">
     <div class="app-width text-center" :class="$style.bodyContainer">
       <b-row class="mx-0 flex-column align-items-center">
-        <h2 class="my-0 mb-4">Sign up for our newsletter</h2>
-        <h5 class="my-0 mb-5">Be the first to receive new feature and product updates.</h5>
-
-        <p-button class="col-lg-2" white-icon :class="$style.button" :gradient="2" text="Sign up" @click="gotoPolaris()"></p-button>
+        <h2 class="my-0 mb-4">{{$t('home.sign-up.title')}}</h2>
+        <h5 class="my-0 mb-5">{{$t('home.sign-up.content')}}</h5>
+        <p-button class="col-lg-2" white-icon :class="$style.button" :gradient="2" :text="$t('button-group.button-7')" @click="gotoPolaris()"></p-button>
       </b-row>
     </div>
   </div>

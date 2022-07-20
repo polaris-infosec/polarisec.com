@@ -10,7 +10,7 @@
           <p class="col-lg-11 col-12 p-0 body-1 my-0 mb-5 pb-2" v-html="$t('home.header-content')">
 
           </p>
-          <p-button :text="$t('button-group.button1')" :class="$style.button" @click="onClick"/>
+          <p-button :text="$t('button-group.button-1')" :class="$style.button" @click="onClick"/>
         </b-col>
         <b-col
           class="p-0 d-flex flex-column align-items-lg-start align-items-center text-lg-left text-center align-items-lg-end mt-5"
