@@ -1,7 +1,9 @@
 <template>
   <div class="container-fluid p-0" :class="$style.container">
     <div class="app-width text-center" :class="$style.bodyContainer">
-      <h2 class="h3-sm my-0 mb-4">An experience you'd expect from a professional tool.</h2>
+      <div class="d-flex justify-content-center mb-5">
+        <h2 class="h3-sm col-9 mb-4" >An experience you'd expect from a professional tool.</h2>
+      </div>
       <b-row class="mx-0 flex-lg-row flex-column">
         <template v-for="introduce in introduces">
           <b-col :class="$style.introduceContainer" :key="introduce.img" class="mt-lg-0 mt-5">
@@ -51,9 +53,6 @@
   text-align center
 
 @media only screen and (min-width:992px)
-  .introduceText
-    text-align justify
-
   .bodyContainer
     padding 100px 140px
 </style>

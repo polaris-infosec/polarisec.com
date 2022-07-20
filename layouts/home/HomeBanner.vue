@@ -17,7 +17,11 @@
           lg="4" cols="12">
           <div>
             <p class="h5 pl-lg-2 ml-1 mb-3" style="font-weight: 400 !important;">As seen on</p>
-            <img src="@/assets/images/home/gartner-peerinsights-color.png" :class="$style.asSeenOn"/>
+            <a
+              href="https://www.gartner.com/reviews/market/web-application-and-api-protection/vendor/polaris-infosec/product/polaris-waap"
+              target="_blank">
+              <img src="@/assets/images/home/gartner-peerinsights-color.png" :class="$style.asSeenOn"/>
+            </a>
           </div>
         </b-col>
       </b-row>
