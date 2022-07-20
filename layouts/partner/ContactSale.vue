@@ -2,15 +2,13 @@
   <div :class="$style.contactSalePanel">
     <div :class="$style.contactSaleSection" class="app-width">
       <b-row class="d-flex mx-0 justify-content-lg-between justify-content-center align-items-center black-text text-lg-left text-center">
-        <h5 class="fw-500 col-lg-7 col-12 p-0 body-1-sm secondary-1-sm">
-          Contact us at <b><a href="mailto:hello@polarisec.com" class="black-text">hello@polarisec.com</a></b>
-          for more information on how
-          we can combine efforts in bringing cybersecurity solutions to APAC
+        <h5 class="fw-500 col-lg-7 col-12 p-0 body-1-sm secondary-1-sm" v-html="$t('partner.contact-sales.content')">
+
         </h5>
         <p-button class="mt-4 pt-2" v-if="mobileScreen" :show-icon="false" :gradient="2" text="Contact sales" @click="gotoContact"/>
         <nuxt-link to="/contact" class="mr-5 p-0" v-else>
           <div :class="$style.contact" class="fw-500">
-            Contact sales <span class="ml-2"><img src="@/assets/icons/call_made.png" alt="" width="24"
+            {{ $t('button-group.button-3') }} <span class="ml-2"><img src="@/assets/icons/call_made.png" alt="" width="24"
                                                   height="24"></span>
           </div>
         </nuxt-link>

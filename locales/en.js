@@ -78,5 +78,71 @@ export default {
     "content-5": "Monitor your entire organization via one simple dashboard",
     "content-6": "Flexible payment options and terms - monthly or annual, pay via card or bank transfer",
     "content-7": "Try our free version for as long as you like before deciding on any upgrade",
+    "analytic-1": "In 2021, Web Application attacks are up <b>800%</b>.",
+    "analytic-2": "On average, <b>30,000</b> new websites are hacked a day.",
+    "analytic-3": "<b>73%</b> of black hat hackers say traditional firewall and antivirus security solutions are now obsolete.",
+  },
+  partner: {
+    title: "Our Partners",
+    content: "We're looking for your help in providing security solutions to our communities",
+    "our-joint-mission": {
+      title: "Our Joint Mission",
+      content: "“Collaborating to protect our community through <span class=\"brand-2\">raising cybersecurity awareness and capabilities.</span>”",
+    },
+    "program-goal": {
+      title: "Program Goals",
+      "content-1": "Provide <b class=\"brand-2\">reliable</b> and <b class=\"brand-2\">knowledgeable</b> support to\n" +
+        "          partners\n" +
+        "          and customers",
+      "content-2": "Expand <b class=\"brand-2\">networks</b> and <b class=\"brand-2\">capabilities</b> to grow service and\n" +
+        "          value"
+    },
+    "contact-sales": {
+      content: "Contact us at <b><a href=\"mailto:hello@polarisec.com\" class=\"black-text\">hello@polarisec.com</a></b>\n" +
+        "          for more information on how\n" +
+        "          we can combine efforts in bringing cybersecurity solutions to APAC",
+    }
+  },
+  company: {
+    title: "Simplifying the <span class=\"brand-2\">protection of your critical assets</span> from the world’s greatest cyber threats.",
+    "company-certs": "Company Certifications"
+  },
+  services: {
+    "ISMA": {
+      title: "Infosec Maturity Assessments",
+      content: "Conduct a gap assessment to check the state of your cyber security preparedness. Polaris’ Infosec Maturity Assessment (ISMA) Methodology is designed to assess an organization's ability to protect and manage its sensitive, most valuable information assets, protect itself against cyber attack as well as to identify, manage, and minimize the impact if one should occur.",
+      "dimension-title": "The 6 DIMENSIONS of the ISMA",
+      dimensions: {
+        "title-1": "Leadership & Governance",
+        "content-1": "Assessing leadership and policy for due diligence, ownership, and effective management of risk",
+        "title-2": "Information Risk Management",
+        "content-2": "The approach to achieving comprehensive and effective risk management of information throughout the organisation and its delivery and supply partners",
+        "title-3": "Operations & Technology",
+        "content-3": "The level of control measures implemented to address identified risks and minimise the impact of compromise",
+        "title-4": "Human Factors",
+        "content-4": "The level of security focused culture that empowers and ensures the right people, skills, culture and knowledge",
+        "title-5": "Business Continuity & Crisis Management",
+        "content-5": "Preparations for a security event and ability to prevent or minimise the impact through successful crisis and stakeholder management",
+        "title-6": "Legal & Compliance",
+        "content-6": "Regulatory and international certification standards",
+      }
+    },
+    "ISO-27001": {
+      title: "ISO 27001 Audit",
+      content: "The most well known and utilized international standard on how to manage information security. The purpose is to ensure companies have the right governance, processes, and technical capabilities to maintain control of their data and information assets. Our service prepares you for attaining the ISO 27001 certification which identifies you as being in compliance with international Information Security standards.",
+
+      "what-we-do": {
+        text: "What we do",
+        "content-1": "Assess current Information Security governance, processes, and technical capabilities in compliance with recognized international standards",
+        "content-2": "Build up an Information Security Management System (ISMS), assist in rolling out its controls and assist you in the certification process for ISO 27001, as well as assisting with annual audits and renewals",
+      },
+      benefits: {
+        "content-1": 'Provides companies with <b>insight into the current status</b> of how they manage confidential information and data',
+        "content-2": '<b>Identifies key risks</b> across people, processes, and technology for remediation',
+        "content-3": 'Provides a <b>roadmap for improvement</b> across cyber governance, defense, and preparation',
+        "content-4": 'Allows companies to <b>better protect</b> their team members, customers, vendors, and partners',
+        "content-5": 'Displays to customers, partners, and vendors that you meet <b>international compliance standards</b> for managing their data',
+      }
+    }
   }
 }

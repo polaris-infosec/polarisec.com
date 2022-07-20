@@ -3,7 +3,7 @@
     <div class="app-width" :class="$style.bodyContainer">
       <b-row class="mx-0 justify-content-between">
         <b-col class="p-0 text-center text-lg-left mb-3 mb-lg-0" lg="3" cols="12">
-          <h2>Company Certifications</h2>
+          <h2>{{ $t('company.company-certs') }}</h2>
         </b-col>
         <b-col class="p-0 mt-3 mt-lg-0 d-flex flex-wrap flex-lg-row justify-content-lg-start justify-content-center"
                lg="8" cols="12">

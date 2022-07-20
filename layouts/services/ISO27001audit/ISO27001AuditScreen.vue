@@ -43,20 +43,16 @@ import {IItroduction} from "~/layouts/services/Introduction.vue";
 })
 export default class ISO27001AuditScreen extends Vue {
   benefits: any [] = [
-    'Provides companies with <b>insight into the current status</b> of how they manage confidential information and data',
-    '<b>Identifies key risks</b> across people, processes, and technology for remediation',
-    'Provides a <b>roadmap for improvement</b> across cyber governance, defense, and preparation',
-    'Allows companies to <b>better protect</b> their team members, customers, vendors, and partners',
-    'Displays to customers, partners, and vendors that you meet <b>international compliance standards</b> for managing their data'
+    this.$t('services.ISO-27001.benefits.content-1'),
+    this.$t('services.ISO-27001.benefits.content-2'),
+    this.$t('services.ISO-27001.benefits.content-3'),
+    this.$t('services.ISO-27001.benefits.content-4'),
+    this.$t('services.ISO-27001.benefits.content-5'),
   ]
 
   introduction: IItroduction = {
-    title: 'ISO 27001 Audit',
-    content: ' The most well known and utilized international standard on how to manage information security. The purpose\n' +
-      '        is to ensure companies have the right governance, processes, and technical capabilities to maintain\n' +
-      '        control\n' +
-      '        of their data and information assets. Our service prepares you for attaining the ISO 27001 certification\n' +
-      '        which identifies you as being in compliance with international Information Security standards.',
+    title: this.$t('services.ISO-27001.title').toString(),
+    content: this.$t('services.ISO-27001.content').toString(),
     cert: {image: require('@/assets/images/services/ISO27001/iso27001.png'), height: 80},
     route: '',
   }
