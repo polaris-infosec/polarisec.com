@@ -93,7 +93,7 @@ import PButton from "~/components/PButton.vue";
 export default class HomeVideoIntroduce extends Vue {
 
   onClick() {
-    window.open('https://www.youtube.com/watch?v=J_jbDrFq4AM', '_blank');
+    window.open('https://www.youtube.com/watch?v=CM8pazGwXPs&t=60s', '_blank');
   }
 
 }

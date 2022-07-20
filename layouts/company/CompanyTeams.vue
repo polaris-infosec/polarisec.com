@@ -29,7 +29,7 @@
 
 .container
   background-image url("@/assets/images/company/team-background.png")
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 

@@ -30,7 +30,7 @@
             <b-col class="p-0 mt-2 mt-lg-0" lg="12" cols="2">
               <img :src="item.icon" alt="Kitten" height="48" width="48">
             </b-col>
-            <b-col class="mt-lg-2 p-0 pl-2 pl-lg-0" lg="12" cols=10>
+            <b-col class="mt-lg-2 mt-lg-3 pt-lg-1 p-0 pl-2 pl-lg-0" lg="12" cols=10>
               {{ item.text }}
             </b-col>
           </b-col>

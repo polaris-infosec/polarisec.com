@@ -46,6 +46,9 @@ export default class PCIDSSAuditScreen extends Vue {
 
   introduction: IItroduction = {
     title: 'PCI-DSS Audit',
+    cert: {
+      image: require('@/assets/images/services/PCIDSS/pcidss.png'),
+    },
     content: 'The Payment Card Industry Data Security Standard (PCI-DSS) is an information security standard applicable to all\n' +
       '        organizations that handle credit cards from the major card companies and is mandated by the card brands.',
     route: ''
