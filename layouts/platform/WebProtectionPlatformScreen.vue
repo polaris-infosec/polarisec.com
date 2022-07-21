@@ -52,7 +52,7 @@
           </div>
           <b-col class="justify-content-start p-0" cols="12">
             <p class="mt-5 text-left">
-              Polaris’ <span>Web Application & API Protection</span> (<span>WAAP</span> or <span>WAF</span>) platform
+              Polaris’ <span class="brand-2">Web Application & API Protection</span> (<span class="brand-2">WAAP</span> or <span class="brand-2">WAF</span>) platform
               defends any business that has any kind of
               online presence, from simple to complex transactions, to the storage of confidential customer financial
               and
