@@ -34,8 +34,9 @@
               <pricing-add-ons-zero-trust-access :is-monthly-type="isMonthlyType"/>
             </div>
           </div>
-          <nuxt-link to="/web-protection-platform"><p class="brand-2 mt-5">FInd out more about the benefits of using web protection -></p>
-          </nuxt-link>
+          <p class="mt-5">FInd out more about the benefits of using
+            <nuxt-link class="brand-2" to="/web-protection-platform">web protection -></nuxt-link>
+          </p>
         </div>
       </div>
     </div>
