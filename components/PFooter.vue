@@ -96,37 +96,39 @@
               </div>
             </div>
 
-            <div class="body-6 col-lg-2 p-0 col-5 mt-mb-36px" :class="$style.socialContact">
-              CONNECT WITH US
-              <div class="d-flex flex-column justify-content-between mt-4 body-5 pl-3">
-                <b-row class="mb-2 d-flex">
-                  <a href="https://www.facebook.com/polarisinfosec" target="_blank" class="mr-3">
-                    <img src="~/assets/icons/facebook.png" class="d-inline-block align-baseline" alt="Kitten"
-                         height="24"
-                         width="24">
-                  </a>
-                  <a href="https://twitter.com/polarisinfosec" target="_blank" class="mr-3">
-                    <img src="~/assets/icons/twitter.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
-                         width="24">
-                  </a>
-                  <a href="https://www.youtube.com/channel/UChjg05_AKIRTg8ZXgwhroYw" target="_blank">
-                    <img src="~/assets/icons/youtube.png" class="d-inline-block align-baseline" alt="Kitten" height="24"
-                         width="24">
-                  </a>
-                </b-row>
-
-                <b-row class="d-flex">
-                  <a href="https://polarisec.substack.com/" target="_blank" class="mr-3">
-                    <img src="~/assets/icons/substack.png" class="d-inline-block align-baseline" alt="Kitten"
-                         height="24"
-                         width="24">
-                  </a>
-                  <a href="https://linkedin.com/company/polarisec" target="_blank">
-                    <img src="~/assets/icons/linked-in.png" class="d-inline-block align-baseline" alt="Kitten"
-                         height="24"
-                         width="24">
-                  </a>
-                </b-row>
+            <div class="body-6 col-lg-3 p-0 col-5 mt-mb-36px d-flex flex-column align-items-lg-end"
+                 :class="$style.socialContact">
+              <div>
+                <p class="my-0">CONNECT WITH US</p>
+                <div class="d-flex mt-4 body-5">
+                  <b-col lg="12" cols="11" class="mb-2 p-0 d-flex flex-wrap">
+                    <a href="https://linkedin.com/company/polarisec" target="_blank" class="mr-3">
+                      <img src="~/assets/icons/linked-in.png" class="d-inline-block align-baseline" alt="Kitten"
+                           height="24"
+                           width="24">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UChjg05_AKIRTg8ZXgwhroYw" target="_blank" class="mr-3">
+                      <img src="~/assets/icons/youtube.png" class="d-inline-block align-baseline" alt="Kitten"
+                           height="24"
+                           width="24">
+                    </a>
+                    <a href="https://www.facebook.com/polarisinfosec" target="_blank" class="mr-3">
+                      <img src="~/assets/icons/facebook.png" class="d-inline-block align-baseline" alt="Kitten"
+                           height="24"
+                           width="24">
+                    </a>
+                    <a href="https://twitter.com/polarisinfosec" target="_blank" class="mr-3">
+                      <img src="~/assets/icons/twitter.png" class="d-inline-block align-baseline" alt="Kitten"
+                           height="24"
+                           width="24">
+                    </a>
+                    <a href="https://polarisec.substack.com/" target="_blank">
+                      <img src="~/assets/icons/substack.png" class="d-inline-block align-baseline" alt="Kitten"
+                           height="24"
+                           width="24">
+                    </a>
+                  </b-col>
+                </div>
               </div>
             </div>
           </b-row>

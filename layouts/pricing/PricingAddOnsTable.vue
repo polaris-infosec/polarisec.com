@@ -109,6 +109,7 @@
   font-size 14px
   line-height 22px
   color $text-8
+  height 38px
 
 </style>
 
@@ -140,13 +141,13 @@ export default class PricingAddOnsTable extends Vue {
   get addOns() {
     return [
       {
-        title: 'Professional - Managed Security Services',
+        title: 'Managed Security Services',
         supports: [
           {
             isSupport: false,
             isInclude: false,
             price: '',
-            button_text: '',
+            button_text: 'Select Plan',
             action: () => {},
           },
           {
@@ -162,39 +163,6 @@ export default class PricingAddOnsTable extends Vue {
             price: this.isMonthlyType ? 17 : 167,
             button_text: 'Select Plan',
             action: () => this.goPolaris(),
-          },
-          {
-            isSupport: false,
-            isInclude: false,
-            price: '',
-            button_text: '',
-            action: () => {},
-          },
-        ],
-      },
-      {
-        title: 'Enterprise - Managed Security Services',
-        supports: [
-          {
-            isSupport: false,
-            isInclude: false,
-            price: '',
-            button_text: 'Select Plan',
-            action: () => {},
-          },
-          {
-            isSupport: false,
-            isInclude: false,
-            price: '',
-            button_text: '',
-            action: () => {},
-          },
-          {
-            isSupport: false,
-            isInclude: false,
-            price: '',
-            button_text: '',
-            action: () => {},
           },
           {
             isSupport: true,
