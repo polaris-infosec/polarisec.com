@@ -29,7 +29,7 @@
           </div>
           <p class="mt-5">
             <nuxt-link to="/web-protection"><span class="brand-2">Web protection</span></nuxt-link>
-            Web protection is something that every website must-have. Most businesses believe that their websites have
+            is something that every website must-have. Most businesses believe that their websites have
             zero value to hackers, however, they have different reasons to attack your website. Sometimes they want to
             steal your valuable customer information in order to seek a ransom payment, other times they may want to
             disrupt supply chains and operations.
@@ -40,7 +40,9 @@
             tech platforms in delivering services. These connections with other parties on your web domain are
             attractive attack points for hackers who intend to infiltrate the server system by exploiting the
             vulnerabilities at the API endpoints. Hacker attack methodologies and exploitations grow along with the
-            evolution of technology. Website security and protection are primary ways to mitigate the growing risk of
+            evolution of technology.
+            <nuxt-link to="/web-protection"><span class="brand-2">Website security</span></nuxt-link>
+            and protection are primary ways to mitigate the growing risk of
             hackers accessing your internal systems and networks.
           </p>
           <h2 class="mt-4 text-center">
@@ -52,7 +54,13 @@
           </div>
           <b-col class="justify-content-start p-0" cols="12">
             <p class="mt-5 text-left">
-              Polaris’ <span class="brand-2">Web Application & API Protection</span> (<span class="brand-2">WAAP</span> or <span class="brand-2">WAF</span>) platform
+              Polaris’
+              <nuxt-link to="/web-protection"><span class="brand-2">Web Application & API Protection</span></nuxt-link>
+              (
+              <nuxt-link to="/web-protection"><span class="brand-2">WAAP</span></nuxt-link>
+              or
+              <nuxt-link to="/web-protection"><span class="brand-2">WAF</span></nuxt-link>
+              ) platform
               defends any business that has any kind of
               online presence, from simple to complex transactions, to the storage of confidential customer financial
               and
@@ -88,7 +96,8 @@
             </b-col>
           </b-col>
           <p>
-            Registration takes less than 10 minutes and once the installation is complete your site is protected immediately with optimal default security configurations.
+            Registration takes less than 10 minutes and once the installation is complete your site is protected
+            immediately with optimal default security configurations.
           </p>
         </b-col>
 
