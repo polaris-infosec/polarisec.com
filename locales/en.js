@@ -81,6 +81,11 @@ export default {
     "analytic-1": "In 2021, Web Application attacks are up <b>800%</b>.",
     "analytic-2": "On average, <b>30,000</b> new websites are hacked a day.",
     "analytic-3": "<b>73%</b> of black hat hackers say traditional firewall and antivirus security solutions are now obsolete.",
+    "feature-comparison": {
+      title: "Web Application & API Protection (WAAP) Standard Features Comparison",
+      "sub-title": "Detection & Protection",
+
+    }
   },
   partner: {
     title: "Our Partners",
