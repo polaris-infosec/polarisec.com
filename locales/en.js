@@ -137,11 +137,118 @@ export default {
         "content-2": "Build up an Information Security Management System (ISMS), assist in rolling out its controls and assist you in the certification process for ISO 27001, as well as assisting with annual audits and renewals",
       },
       benefits: {
+        text: "Benefits",
         "content-1": 'Provides companies with <b>insight into the current status</b> of how they manage confidential information and data',
         "content-2": '<b>Identifies key risks</b> across people, processes, and technology for remediation',
         "content-3": 'Provides a <b>roadmap for improvement</b> across cyber governance, defense, and preparation',
         "content-4": 'Allows companies to <b>better protect</b> their team members, customers, vendors, and partners',
         "content-5": 'Displays to customers, partners, and vendors that you meet <b>international compliance standards</b> for managing their data',
+      }
+    },
+    "GDPR": {
+      title: "GDPR Audit",
+      "sub-title": "For businesses that conduct business in the European Union, GDPR Compliance is mandatory.",
+      "content": "The General Data Protection Regulation (GDPR)is a legal framework that serves as a set of guidelines for how personal information should be collected and processed for those who live in the European Union. They outline rights belonging to citizens in the EU and the steps that companies must take when storing and managing confidential data.",
+      "what-we-do": {
+        text: "What we do",
+        "sub-title": "The GDPR audit utilizes the PDCA cycle to assess your organization's compliance to standards.",
+        "plan": {
+          text: "Plan",
+          "content-1": "Assess commitment of the organization",
+          "content-2": "Assess organizational structure",
+          "content-3": "Mapping of data processing activities",
+          "content-4": "Elicitation of privacy requirements",
+          "content-5": "Gap analysis",
+          "content-6": "Data protection impact assessment",
+        },
+        do: {
+          text: "Do",
+          "content-1": "Choose controls and procedures pick",
+          "content-2": "Implementation of controls",
+          "content-3": "Documents build-up",
+          "content-4": "Communication of Plan",
+          "content-5": "Team awareness and training",
+        },
+        check: {
+          text: "Check",
+          "content-1": "Constant monitoring, measurement, analysis and evaluation of current systems",
+          "content-2": "Internal audits",
+        },
+        act: {
+          text: "Act",
+          "content-1": "Corrective actions",
+          "content-2": "Continual improvement",
+        }
+      },
+      benefits: {
+        "content-1": 'Provides companies with <b>insight into the current status</b> of how they manage confidential information and data',
+        "content-2": '<b>Identifies key risks</b> across people, processes, and technology for remediation',
+        "content-3": 'Provides a <b>roadmap for improvement</b> across cyber governance, defense, and preparation',
+        "content-4": 'Allows companies to <b>better protect</b> their team members, customers, vendors, and partners',
+        "content-5": 'Displays to customers, partners, and vendors that you meet <b>international compliance standards</b> for managing their data',
+        "content-6": '<b>Compliance for GDPR standards</b> for business in the EU'
+      }
+    },
+    "PCI-DSS": {
+      title: "PCI-DSS",
+      content: "The Payment Card Industry Data Security Standard (PCI-DSS) is an information security standard applicable to all organizations that handle credit cards from the major card companies and is mandated by the card brands.",
+      "what-we-do": {
+        text: "What we do",
+        content: "Audits follow along with the 12 PCI-DSS compliance standards. Ensure your organization is ready to securely manage your customers' card data and provide them with additional assurance that you're continuing to look out for their data safety and privacy.",
+        "list-processing": {
+          "content-1": "Install and maintain a firewall configu-ration to protect cardholder data",
+          "content-2": "Do not use vendor-supplied defaults for system passwords and other security parameters",
+          "content-3": "Protect stored cardholder data",
+          "content-4": "Encrypt transmission of cardholder data across open, public networks",
+          "content-5": "Use and regularly update anti-virus software or programs",
+          "content-6": "Develop and maintain secure systems and applications",
+          "content-7": "Restrict access to cardholder data by business need to know",
+          "content-8": "Assign a unique ID to each person with computer access",
+          "content-9": "Restrict physical access to cardholder data",
+          "content-10": "Track and monitor all access to network resources and cardholder data",
+          "content-11": "Regularly test security systems and processes",
+          "content-12": "Maintain a policy that addresses information security for all personnel",
+        },
+      },
+      benefits: {
+        text: "Benefits",
+        "content-1": '<b>Build trust</b> with customers, partners, and vendors',
+        "content-2": 'Ensure your <b>technical infrastructure</b> is more resilient against data breaches',
+        "content-3": '<b>Ensure compliance</b> on a global level',
+        "content-4": 'Ensure you have <b>multiple layers of security</b> to prevent cyber incidents',
+        "content-5": 'Serves as a <b>baseline for other infosec certifications</b> such as ISO and GDPR',
+      }
+    },
+    "incident-response": {
+      title: "Incident Response",
+      content: "In case an organization suffers a cyber attack, an incident response is warranted to resolve the issue. It is the <b>immediate triage of the incident</b> in determining who is involved, how it happened, what the immediate impact is, and what the customer can do about it. <br><br> Incident response can be <b>retained or on-demand.</b><br><br><b>Retained</b> - a Managed Security Service in which we'll assess your organization's current breach status and actively monitor your network daily for attacks. When an attack occurs, we immediately remediate the threat. Retained response customers will always have priority.<br><br><b>On-demand</b> - Call us when you need us. We'll do an assessment of the incident and immediately remediate it for you.",
+      "what-we-do": {
+        text: "What we do",
+        "retained-incident-response": {
+          text: "RETAINED INCIDENT RESPONSE",
+          "content-1": "24/7 x 365 Alert Driven Passive Monitoring",
+          "content-2": "Active Threat Hunting",
+          "content-3": "Weekly Vulnerability & Security Assessment Reports",
+          "content-4": "Automated Scanning of External Vulnerabilities as well as Internal, i.e., Dark Web",
+        },
+        "investigations": {
+          text: "INVESTIGATIONS",
+          "content-1": "Business Email Compromise",
+          "content-2": "Stolen Credentials",
+          "content-3": "Data Leaks/Breaches",
+          "content-4": "Phishing",
+          "content-5": "Ransomware",
+          "content-6": "Digital Forensics",
+          "content-7": "OWASP Top 10 and more",
+        }
+      },
+      benefits: {
+        text: "Benefits",
+        "content-1": "Immediate resolution of threats in real time, as they happen",
+        "content-2": "Greater awareness of your network environment's activities",
+        "content-3": "Trusted advisory on best cyber security practices",
+        "content-4": "Protection of your team members', customers', and partners' digital assets",
+        "content-5": "Maintain brand image and reputation",
       }
     }
   }

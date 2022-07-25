@@ -67,51 +67,51 @@ export default class WhatWeDo extends Vue {
   processingLists: any [] = [
     {
       title: '01',
-      content: 'Install and maintain a firewall configu-ration to protect cardholder data'
+      content: this.$t('services.PCI-DSS.what-we-do.list-processing.content-1')
     },
     {
       title: '02',
-      content: 'Do not use vendor-supplied defaults for system passwords and other security parameters'
+      content: this.$t('services.PCI-DSS.what-we-do.list-processing.content-2')
     },
     {
       title: '03',
-      content: 'Protect stored cardholder data'
+      content: this.$t('services.PCI-DSS.what-we-do.list-processing.content-3')
     },
     {
       title: '04',
-      content: 'Encrypt transmission of cardholder data across open, public networks'
+      content: this.$t('services.PCI-DSS.what-we-do.list-processing.content-4')
     },
     {
       title: '05',
-      content: 'Use and regularly update anti-virus software or programs'
+      content: this.$t('services.PCI-DSS.what-we-do.list-processing.content-5')
     },
     {
       title: '06',
-      content: 'Develop and maintain secure systems and applications'
+      content: this.$t('services.PCI-DSS.what-we-do.list-processing.content-6')
     },
     {
       title: '07',
-      content: 'Restrict access to cardholder data by business need to know'
+      content: this.$t('services.PCI-DSS.what-we-do.list-processing.content-7')
     },
     {
       title: '08',
-      content: 'Assign a unique ID to each person with computer access'
+      content: this.$t('services.PCI-DSS.what-we-do.list-processing.content-8')
     },
     {
       title: '09',
-      content: 'Restrict physical access to cardholder data'
+      content: this.$t('services.PCI-DSS.what-we-do.list-processing.content-9')
     },
     {
       title: '10',
-      content: 'Track and monitor all access to network resources and cardholder data'
+      content: this.$t('services.PCI-DSS.what-we-do.list-processing.content-10')
     },
     {
       title: '11',
-      content: 'Regularly test security systems and processes'
+      content: this.$t('services.PCI-DSS.what-we-do.list-processing.content-11')
     },
     {
       title: '12',
-      content: 'Maintain a policy that addresses information security for all personnel'
+      content: this.$t('services.PCI-DSS.what-we-do.list-processing.content-12')
     },
   ]
 }

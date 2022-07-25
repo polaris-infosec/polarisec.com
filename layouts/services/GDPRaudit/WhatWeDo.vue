@@ -5,10 +5,11 @@
         <img v-if="mobileScreen" src="@/assets/images/services/what-we-do.png" width="280" height="280"/>
       </div>
       <h3 class="p-0 m-0 brand-2 mb-4">
-        What we do
+        {{ $t('services.GDPR.what-we-do.text') }}
       </h3>
-      <p class="p-0 m-0 body-1">The GDPR audit utilizes the PDCA cycle to assess your organization's compliance to
-        standards.</p>
+      <p class="p-0 m-0 body-1">
+        {{ $t('services.GDPR.what-we-do.sub-title') }}
+      </p>
       <b-row
         class="d-flex flex-lg-row flex-column align-items-lg-baseline align-items-center flex-lg-nowrap p-0 m-0 mt-5">
         <b-col :class="$style.contentBox" class="p-0 m-0 mb-sm-4" v-for="itemBox in processingLists"
@@ -87,7 +88,7 @@ import PButton from "~/components/PButton.vue";
 })
 export default class WhatWeDo extends Vue {
 
-  get mobileScreen(){
+  get mobileScreen() {
     return window.screen.width < 992.0
   }
 
@@ -96,44 +97,44 @@ export default class WhatWeDo extends Vue {
       {
         box: this.mobileScreenResolution ? require('@/assets/images/services/GDPR/what-we-do-box-mobile.png') : require('@/assets/images/services/GDPR/what-we-do-box1.png'),
         icon: require('@/assets/images/services/GDPR/plan-icon.png'),
-        title: 'Plan',
+        title: this.$t('services.GDPR.what-we-do.plan.text'),
         contents: [
-          'Assess commitment of the organization',
-          'Assess organizational structure',
-          'Mapping of data processing activities',
-          'Elicitation of privacy requirements',
-          'Gap analysis',
-          'Data protection impact assessment',
+          this.$t('services.GDPR.what-we-do.plan.content-1'),
+          this.$t('services.GDPR.what-we-do.plan.content-2'),
+          this.$t('services.GDPR.what-we-do.plan.content-3'),
+          this.$t('services.GDPR.what-we-do.plan.content-4'),
+          this.$t('services.GDPR.what-we-do.plan.content-5'),
+          this.$t('services.GDPR.what-we-do.plan.content-6'),
         ]
       },
       {
         box: this.mobileScreenResolution ? require('@/assets/images/services/GDPR/what-we-do-box-mobile.png') : require('@/assets/images/services/GDPR/what-we-do-box2.png'),
         icon: require('@/assets/images/services/GDPR/do-icon.png'),
-        title: 'Do',
+        title: this.$t('services.GDPR.what-we-do.do.text'),
         contents: [
-          'Choose controls and procedures pick',
-          'Implementation of controls',
-          'Documents build-up',
-          'Communication of Plan',
-          'Team awareness and training',
+          this.$t('services.GDPR.what-we-do.do.content-1'),
+          this.$t('services.GDPR.what-we-do.do.content-2'),
+          this.$t('services.GDPR.what-we-do.do.content-3'),
+          this.$t('services.GDPR.what-we-do.do.content-4'),
+          this.$t('services.GDPR.what-we-do.do.content-5'),
         ]
       },
       {
         box: this.mobileScreenResolution ? require('@/assets/images/services/GDPR/what-we-do-box-mobile.png') : require('@/assets/images/services/GDPR/what-we-do-box1.png'),
         icon: require('@/assets/images/services/GDPR/check-icon.png'),
-        title: 'Check',
+        title: this.$t('services.GDPR.what-we-do.check.text'),
         contents: [
-          'Constant monitoring, measurement, analysis and evaluation of current systems',
-          'Internal audits',
+          this.$t('services.GDPR.what-we-do.check.content-1'),
+          this.$t('services.GDPR.what-we-do.check.content-2'),
         ]
       },
       {
         box: this.mobileScreenResolution ? require('@/assets/images/services/GDPR/what-we-do-box-mobile.png') : require('@/assets/images/services/GDPR/what-we-do-box2.png'),
         icon: require('@/assets/images/services/GDPR/act-icon.png'),
-        title: 'Act',
+        title: this.$t('services.GDPR.what-we-do.act.text'),
         contents: [
-          'Corrective actions',
-          'Continual improvement',
+          this.$t('services.GDPR.what-we-do.act.content-1'),
+          this.$t('services.GDPR.what-we-do.act.content-2'),
         ]
       },
     ]

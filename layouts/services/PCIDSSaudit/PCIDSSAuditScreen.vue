@@ -37,21 +37,20 @@ import {IItroduction} from "~/layouts/services/Introduction.vue";
 })
 export default class PCIDSSAuditScreen extends Vue {
   benefits: any [] = [
-    '<b>Build trust</b> with customers, partners, and vendors',
-    'Ensure your <b>technical infrastructure</b> is more resilient against data breaches',
-    '<b>Ensure compliance</b> on a global level',
-    'Ensure you have <b>multiple layers of security</b> to prevent cyber incidents',
-    'Serves as a <b>baseline for other infosec certifications</b> such as ISO and GDPR',
+    this.$t('services.PCI-DSS.benefits.content-1'),
+    this.$t('services.PCI-DSS.benefits.content-2'),
+    this.$t('services.PCI-DSS.benefits.content-3'),
+    this.$t('services.PCI-DSS.benefits.content-4'),
+    this.$t('services.PCI-DSS.benefits.content-5'),
   ]
 
   introduction: IItroduction = {
-    title: 'PCI-DSS Audit',
+    title: this.$t('services.PCI-DSS.title').toString(),
     cert: {
       image: require('@/assets/images/services/PCIDSS/pcidss.png'),
     },
-    content: 'The Payment Card Industry Data Security Standard (PCI-DSS) is an information security standard applicable to all\n' +
-      '        organizations that handle credit cards from the major card companies and is mandated by the card brands.',
-    route: ''
+    content: this.$t('services.PCI-DSS.content').toString(),
+    route: '',
   }
 }
 </script>

@@ -4,11 +4,10 @@
       <b-row class="mx-0">
         <b-col cols="12" lg="8"
                class="p-0 justify-content-lg-start justify-content-center align-items-center flex-lg-row flex-column text-lg-left text-center">
-          <h2 class="my-0 text-left mb-3 h3-sm">{{$t('home.header-title')}}</h2>
+          <h2 class="my-0 text-lg-left mb-3 h3-sm">{{$t('home.header-title')}}</h2>
           <div :class="$style.divide"></div>
           <h3 class="mb-4 mt-lg-0 mt-3 h5-sm">{{$t('home.header-slogan')}}</h3>
           <p class="col-lg-11 col-12 p-0 body-1 my-0 mb-5 pb-2" v-html="$t('home.header-content')">
-
           </p>
           <p-button :text="$t('button-group.button-1')" :class="$style.button" @click="onClick"/>
         </b-col>

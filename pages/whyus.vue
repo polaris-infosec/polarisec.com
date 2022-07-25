@@ -7,12 +7,9 @@
         </div>
         <div class="d-flex justify-content-between mt-lg-5 col-12 p-0 row mx-0">
           <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1 mb-3 pb-1" v-html="$t('whyUs.intro-1')">
-
           </div>
-
           <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1 mb-3 pb-1" v-html="$t('whyUs.intro-2')">
           </div>
-
           <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1" v-html="$t('whyUs.intro-3')">
           </div>
         </div>
