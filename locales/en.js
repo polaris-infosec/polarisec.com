@@ -223,6 +223,7 @@ export default {
         }
       },
       benefits: {
+        text: "Benefits",
         "content-1": 'Provides companies with <b>insight into the current status</b> of how they manage confidential information and data',
         "content-2": '<b>Identifies key risks</b> across people, processes, and technology for remediation',
         "content-3": 'Provides a <b>roadmap for improvement</b> across cyber governance, defense, and preparation',
@@ -232,7 +233,7 @@ export default {
       }
     },
     "PCI-DSS": {
-      title: "PCI-DSS",
+      title: "PCI-DSS Audit",
       content: "The Payment Card Industry Data Security Standard (PCI-DSS) is an information security standard applicable to all organizations that handle credit cards from the major card companies and is mandated by the card brands.",
       "what-we-do": {
         text: "What we do",

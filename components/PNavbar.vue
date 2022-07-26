@@ -2,7 +2,7 @@
   <b-row class="mx-0 p-0" style="background-color: black">
     <b-navbar :class="$style.navigationBar" class="flex-grow-1" toggleable="xl" type="dark" variant="dark">
       <b-navbar-brand class="mr-4 pr-4">
-        <nuxt-link to="/home">
+        <nuxt-link :to="localePath('/home')">
           <img src="@/assets/images/polaris-logo.png" class="d-inline-block align-baseline mt-2" alt="Kitten"
                height="24"
                width="140">
@@ -17,17 +17,21 @@
             Platform
           </b-nav-item>
           <b-nav-item-dropdown :class="$style.navBarItem" id="dropdown-1" text="Services" class="mr-4 pr-3 active">
-            <b-dropdown-item to="/ISMA">ISMA</b-dropdown-item>
-            <b-dropdown-item to="/ISO-27001">ISO 27001 Audit
+            <b-dropdown-item :to="localePath('/ISMA')">ISMA</b-dropdown-item>
+            <b-dropdown-item :to="localePath('/ISO-27001')">ISO 27001 Audit
             </b-dropdown-item>
-            <b-dropdown-item to="/GDPR">GDPR Audit</b-dropdown-item>
-            <b-dropdown-item to="/PCI-DSS">PCI-DSS Audit</b-dropdown-item>
-            <b-dropdown-item to="/incident-response">Incident Response</b-dropdown-item>
+            <b-dropdown-item :to="localePath('/GDPR')">GDPR Audit</b-dropdown-item>
+            <b-dropdown-item :to="localePath('/PCI-DSS')">PCI-DSS Audit</b-dropdown-item>
+            <b-dropdown-item :to="localePath('/incident-response')">Incident Response</b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item :class="$style.navBarItem" to="/whyus" class="active mr-4 pr-3">Why us</b-nav-item>
-          <b-nav-item :class="$style.navBarItem" to="/partner" class="active mr-4 pr-3">Partners</b-nav-item>
-          <b-nav-item :class="$style.navBarItem" to="/company" class="active mr-4 pr-3">Company</b-nav-item>
-          <b-nav-item :class="$style.navBarItem" to="/web-protection" class="active mr-4 pr-3">Pricing</b-nav-item>
+          <b-nav-item :class="$style.navBarItem" :to="localePath('/whyus')" class="active mr-4 pr-3">Why us
+          </b-nav-item>
+          <b-nav-item :class="$style.navBarItem" :to="localePath('/partner')" class="active mr-4 pr-3">Partners
+          </b-nav-item>
+          <b-nav-item :class="$style.navBarItem" :to="localePath('/company')" class="active mr-4 pr-3">Company
+          </b-nav-item>
+          <b-nav-item :class="$style.navBarItem" :to="localePath('/web-protection')" class="active mr-4 pr-3">Pricing
+          </b-nav-item>
           <b-nav-item :class="$style.navBarItem" href="https://support.polarisec.com/portal/en/home" target="_blank"
                       class="active mr-4 pr-3">Support
             Center
@@ -188,7 +192,7 @@ export default class PNavbar extends Vue {
   }
 
   onClick() {
-    return this.$router.push({path: '/contact'})
+    return this.$router.push({path: this.localePath('/contact')})
   }
 
 }

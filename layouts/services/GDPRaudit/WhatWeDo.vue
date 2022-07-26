@@ -17,7 +17,8 @@
           <img :src="itemBox.box" :class="$style.box"/>
           <div :class="$style.content" class="d-flex flex-lg-column align-items-center justify-content-center">
             <img :src="itemBox.icon" :class="$style.boxIcon">
-            <p class="p-lg-0 m-lg-0 m-0 ml-1">{{ itemBox.title }}</p>
+            <p class="p-lg-0 m-lg-0 m-0 ml-1 text-center" style="width: 80%; word-wrap: break-word; line-height: 1.1">
+              {{ itemBox.title }}</p>
           </div>
           <ul class="mt-2 pt-1 caption text-left">
             <li v-for="item in itemBox.contents" :key="item" class="pb-2 pr-3">

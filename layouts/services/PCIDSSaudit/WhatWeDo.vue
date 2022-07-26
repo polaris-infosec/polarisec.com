@@ -6,14 +6,10 @@
         <img v-if="mobileScreen" src="@/assets/images/services/what-we-do.png" width="280" height="280"/>
       </div>
       <h3 class="brand-2 mb-4">
-        What we do
+        {{$t('services.PCI-DSS.what-we-do.text')}}
       </h3>
       <p class="p-0 my-0 body-1 col-lg-7 col-12">
-        Audits follow along with the 12 PCI-DSS compliance standards.
-        Ensure your organization is ready to securely manage
-        your customers' card data and provide them with additional
-        assurance that you're continuing to look out for their data
-        safety and privacy.
+        {{$t('services.PCI-DSS.what-we-do.content')}}
       </p>
     </b-col>
 

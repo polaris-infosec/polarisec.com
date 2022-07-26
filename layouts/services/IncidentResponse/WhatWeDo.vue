@@ -1,7 +1,7 @@
 <template>
   <b-row class="mx-0 mb-5 mt-5 pt-lg-3 text-center text-lg-left">
     <h3 class="p-0 m-0 brand-2 mb-5 pb-lg-3 col-12">
-      What we do
+      {{ $t('services.incident-response.what-we-do.text') }}
     </h3>
     <b-row class="p-0 m-0 d-flex justify-content-between">
       <b-col class="p-0 m-0 col-lg-8 col-12 order-lg-0 order-1">
