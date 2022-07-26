@@ -175,7 +175,7 @@ export default class PNavbar extends Vue {
   }
 
   created() {
-    this.language = this.$i18n.locale;
+    this.language = this.$i18n.defaultLocale;
   }
 
   selectLang(lang: string) {
