@@ -8,6 +8,17 @@ export default {
     "button-6": "Watch on Youtube",
     "button-7": "Sign up",
   },
+  nav: {
+    "platform": "Platform",
+    "services": {
+      text: "Services",
+    },
+    "why-us": "Why us",
+    "partners": "Partners",
+    "company": "Company",
+    "pricing": "Pricing",
+    "support-center": "Support Center",
+  },
   home: {
     "header-title": "Web Protection that Never Sleeps",
     "header-slogan": "Always On Guard",
@@ -41,9 +52,7 @@ export default {
       "content-1": " We use application specific machine and behavioral learning techniques such as “fingerprinting” to\n" +
         "            <b>differentiate between legitimate and malicious\n" +
         "              web requests.</b>",
-      "content-2": "Comes pre-configured with default expert-crafted protection rules, which means once enrolled, <b>you’re\n" +
-        "            defended immediately</b>. If needed, you can also customize rules to easily fit your security policy\n" +
-        "            requirements.",
+      "content-2": "Constantly evolving, our AI can identify and act upon cyber attacks targeting web applications that are woven into innocent looking traffic - traffic that slips right through traditional cyber security defenses.",
     },
     "feature-3": {
       "title": "Threat Intelligence<span class=\"brand-2\">.</span>",
@@ -83,8 +92,36 @@ export default {
     "analytic-3": "<b>73%</b> of black hat hackers say traditional firewall and antivirus security solutions are now obsolete.",
     "feature-comparison": {
       title: "Web Application & API Protection (WAAP) Standard Features Comparison",
-      "sub-title": "Detection & Protection",
-
+      "detect-and-protection": {
+        text: "Detection & Protection",
+        "option-1": "Artificial Intelligence & Machine Learning",
+        "option-2": "DDoS Layers 3/4",
+        "option-3": "DDoS Layers 7",
+        "option-4": "OWASP Top 10",
+        "option-5": "Bot Mitigation",
+        "option-6": "Custom Security Rules",
+        "option-7": "Server Vulnerability Scans",
+        "option-8": "API Security",
+        "option-9": "Zero Trust Access",
+        "option-10": "Phishing Scans",
+        "option-11": "Compromised Credential Checks",
+        "option-12": "Custom SSL",
+      },
+      "monitoring-and-reporting": {
+        text: "Monitoring & Reporting",
+        "option-1": "Real Time Attack Reporting",
+        "option-2": "Attack Analytics",
+        "option-3": "Attack Correlation & Integration",
+      },
+      "service": {
+        text: "Service",
+        "option-1": "Managed Security",
+        "option-2": "Service Level Agreements (SLAs)",
+        "option-3": "Local APAC Support 24x7x365",
+        "option-4": "Cloud Deployment",
+        "option-5": "On-Premise Deployment",
+        "option-6": "Mainland China Access",
+      }
     }
   },
   partner: {
@@ -255,6 +292,194 @@ export default {
         "content-4": "Protection of your team members', customers', and partners' digital assets",
         "content-5": "Maintain brand image and reputation",
       }
+    }
+  },
+  pricing: {
+    title: "Web Protection Plans",
+    content: "Try Polaris free - forever",
+    "polaris-for-enterprises": {
+      title: "Polaris for Enterprises",
+      content: "Need enterprise-grade scalability, security, and support - contact our sales team"
+    },
+    monthly: "Monthly",
+    yearly: "Yearly",
+    "per-domains": "per domain",
+    "per-month": "per month",
+    "per-year": "per year",
+    "contact-us": "Contact us",
+    "question": "Need help with choosing a package?\n" +
+      "Get a personalized recommendation",
+    tags: {
+      "overview": "Overview",
+      "add-ons": "Add-ons",
+      "faqs": "FAQs"
+    },
+    "pricing-detail": {
+      "pricing": "Pricing",
+      content: "Save 20% with our Yearly payment plan",
+      "app-security": {
+        text: "App Security",
+        "sub-option-1": "IP Geolocation",
+        "sub-option-2": "IP Blacklist/Whitelist",
+        "sub-option-3": "Custom Rules",
+        "sub-option-4": "OWASP Top 10 Attack Protection",
+        "sub-option-5": "New Attack Vectors - Zero Day",
+        "sub-option-6": "NDay Rules - Application Rules",
+        "sub-option-7": "Static Content Caching",
+        "sub-option-8": "Security Header / CORS Policy",
+        "sub-option-9": "CSP Header",
+        "sub-option-10": "HTTP/2",
+      },
+      "bot-management": {
+        text: "BOT Management",
+        "sub-option-1": "Anti-bot protection",
+        "sub-option-2": "Advanced Bot Management*",
+        "sub-option-3": "Whitelist Good Bots",
+      },
+      "ddos": {
+        text: "DDoS",
+        "sub-option-1": "DDoS Mitigation (L7 & L3/4)",
+        "sub-option-2": "Enterprise DDoS Mitigation (Hybrid)",
+      },
+      "small-business-expertise": {
+        text: "Small Business Expertise",
+        "sub-option-1": "CNAME support",
+        "sub-option-2": "DNS Management",
+        "sub-option-3": "DNSSEC",
+        "sub-option-4": "SSL Auto-generation",
+        "sub-option-5": "Custom SSL",
+      },
+      "management-monitoring-reporting": {
+        text: "Management - Monitoring Reporting",
+        "sub-option-1": "Reporting",
+        "sub-option-2": "Polaris API Access",
+        "sub-option-3": "Realtime Dashboard",
+        "sub-option-4": "Multi-User Management",
+        "sub-option-5": "Incident Management Ticket System",
+        "sub-option-6": "Email/browser Alert Notifications",
+        "sub-option-7": "Request Logs",
+        "sub-option-8": "Audit Logs",
+      },
+      "scalability-and-geographic-presence": {
+        text: "Scalability & Geographic Presence",
+        "sub-option-1": "BGP Anycast Network",
+        "sub-option-2": "China Mainland Access",
+        "sub-option-3": "Regional PoPs",
+        "sub-option-4": "Dedicated Edge",
+      },
+      "service-level-agreement": {
+        text: "Service Level Agreement",
+        "sub-option-1": "Emergency Hotline",
+        "sub-option-2": "Chat",
+        "sub-option-3": "Email",
+        "sub-option-4": "8 x 5 x Next Business Day",
+        "sub-option-5": "24 x 7 x 4",
+        "sub-option-6": "24 x 7 x 365 x 4",
+        "sub-option-7": "99.99% Uptime",
+      },
+      "technical-architecture": {
+        text: "Technical Architecture",
+        "sub-option-1": "Cloud Deployment",
+        "sub-option-2": "On-premise Deployment",
+        "sub-option-3": "Hybrid Cloud and On-premise Deployment",
+        "sub-option-4": "Threat Intelligence",
+        "sub-option-5": "Zero Trust Access",
+      },
+    },
+    "add-ons": {
+      title: "Add-ons",
+      content: "Value added services allow you to further customize and enhance your web application protection capabilities.",
+      "option-1": "Managed Security Services",
+      "option-2": "Threat Intelligence",
+      "option-3": "Zero Trust Access",
+    },
+    "managed-security-services-add-on": {
+      title: "Managed Security Services Add-on",
+      content: "Take your proactive posture one step further by having Polaris stand watch over your web security. Our Security Operations Center (SOC) analysts will monitor your web activity for you, automatically mitigating threats in real-time. Allow us to monitor your web presence and serve as your guard so you can focus on what really matters - your people and your business.",
+      "Active Monitoring": {
+        text: "Active Monitoring",
+        "sub-option-1": "24/7 real-time monitoring by SOC analysts",
+        "sub-option-2": "Vulnerability management",
+        "sub-option-3": "Customized threat detection",
+        "sub-option-4": "Log management",
+      },
+      "false-positives-management": {
+        text: "False Positives Management",
+        "sub-option-1": "Incident validation to filter real threats",
+        "sub-option-2": "Selective customer notification",
+      },
+      "Incident Handling": {
+        text: "Incident Handling",
+        "sub-option-1": "Automatic response to threats",
+        "sub-option-2": "Remote containment and eradication of confirmed breaches",
+        "sub-option-3": "Malware sandbox analysis",
+        "sub-option-4": "IOC validation",
+        "sub-option-5": "Custom rule updates based on analysis",
+      },
+      "summary-reports": {
+        text: "Summary Reports",
+        "sub-option-1": "Customized reporting with recommendations for remediation",
+        "sub-option-2": "Targeted Threat Intelligence reporting",
+      },
+      "trusted-advisory": {
+        text: "Trusted Advisory",
+        "sub-option-1": "Dedicated Polaris technical advisor for day-to-day issues",
+        "sub-option-2": "Support for Executive Management meetings",
+        "sub-option-3": "Consultation on implementation of new security devices",
+        "sub-option-4": "Scheduled Consultations",
+      }
+    },
+    "threat-intelligence-add-on": {
+      title: "Threat Intelligence Add-On",
+      content: "Increase your oversight into what is going on with your domain and the risks it faces. Real time intelligence let’s you know who is doing what, when they’re doing it, and where they’re doing it so that you can take action immediately.",
+      "sub-option-1": "Real Time Threat Mapping",
+      "sub-option-2": "Suspicious IPs Accessing Servers",
+      "sub-option-3": "Compromised Data Checks",
+      "sub-option-4": "Phishing Domain Checks",
+      "sub-option-5": "Vulnerability Scanning on Servers",
+      "sub-option-6": "Brand Protection*",
+      "sub-option-7": "Domain Monitoring*",
+      "sub-option-8": "Domain Risk Scoring*",
+    },
+    "Zero Trust Access Add-On": {
+      title: "Zero Trust Access Add-On",
+      content: "Maintain greater control over your security posture by detailing who has access to your platform and what they can do with it.",
+      "device-management": {
+        text: "Device Management",
+        "sub-option-1": "Endpoint Control",
+      },
+      "vendor-management": {
+        text: "Vendor Management",
+        "sub-option-1": "Service Provider Control",
+        "sub-option-2": "Single-Sign On (SSO)",
+      },
+      "identity-access-management": {
+        text: "Identity Access Management",
+        "sub-option-1": "User Roles",
+        "sub-option-2": "Group Creation",
+      },
+      "customization": {
+        text: "Customization",
+        "sub-option-1": "Login Page Configuration",
+        "sub-option-2": "Custom Access Domain",
+      },
+      "bots-management": {
+        text: "Bots Management",
+        "sub-option-1": "Customizable Captcha*",
+      }
+    },
+    note: {
+      "note-1": "*Coming Soon",
+      "note-2": "*First 15 active users are free",
+    },
+    plans: {
+      basic: "Basic",
+      standard: "Standard",
+      professional: "Professional",
+      enterprise: "Enterprise",
+    },
+    article: {
+      content: "Find out more about the benefits of using web protection",
     }
   }
 }

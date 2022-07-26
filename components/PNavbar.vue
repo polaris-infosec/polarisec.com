@@ -40,7 +40,7 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <b-row class="mx-0 mr-lg-5 mr-1 align-items-lg-center mt-lg-0 pt-lg-0" style="margin-top: 21px">
+    <b-row class="mx-0 mr-lg-5 mr-1 align-items-lg-center mt-lg-0 pt-lg-0 mt-3 pt-1">
       <b-dropdown id="dropdown-right" :class="$style.languageSelect" right text="" variant="none">
         <template #button-content>
           <img height="24" src="@/assets/icons/eng.png"/>
@@ -55,11 +55,6 @@
 
 <style module lang="stylus">
 @import "../styles/main.styl"
-@media (min-width: 992px)
-  .navigationBar
-    height 72px !important
-    padding 24px 60px !important
-
 .languageSelect
   button:focus
     box-shadow none !important
@@ -125,6 +120,10 @@
     width 85% !important
 
 @media only screen and (min-width: 992px)
+  .navigationBar
+    height 72px !important
+    padding 24px 60px !important
+
   .languageSelect
     button
       height 38px
