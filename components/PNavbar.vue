@@ -1,7 +1,7 @@
 <template>
   <b-row class="mx-0 p-0" style="background-color: black">
     <b-navbar :class="$style.navigationBar" class="flex-grow-1" toggleable="xl" type="dark" variant="dark">
-      <b-navbar-brand class="mr-4 pr-4">
+      <b-navbar-brand class="mr-5">
         <nuxt-link :to="localePath('/home')">
           <img src="@/assets/images/polaris-logo.png" class="d-inline-block align-baseline mt-2" alt="Kitten"
                height="24"
@@ -13,10 +13,10 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item :class="$style.navBarItem" href="https://polarisec.io/" target="_blank"
-                      class="active mr-4 pr-3">
+                      class="active mr-4 pr-1">
             Platform
           </b-nav-item>
-          <b-nav-item-dropdown :class="$style.navBarItem" id="dropdown-1" text="Services" class="mr-4 pr-3 active">
+          <b-nav-item-dropdown :class="$style.navBarItem" id="dropdown-1" text="Services" class="mr-4 pr-1 active">
             <b-dropdown-item :to="localePath('/ISMA')">ISMA</b-dropdown-item>
             <b-dropdown-item :to="localePath('/ISO-27001')">ISO 27001 Audit
             </b-dropdown-item>
@@ -24,16 +24,16 @@
             <b-dropdown-item :to="localePath('/PCI-DSS')">PCI-DSS Audit</b-dropdown-item>
             <b-dropdown-item :to="localePath('/incident-response')">Incident Response</b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item :class="$style.navBarItem" :to="localePath('/whyus')" class="active mr-4 pr-3">Why us
+          <b-nav-item :class="$style.navBarItem" :to="localePath('/whyus')" class="active mr-4 pr-1">Why us
           </b-nav-item>
-          <b-nav-item :class="$style.navBarItem" :to="localePath('/partner')" class="active mr-4 pr-3">Partners
+          <b-nav-item :class="$style.navBarItem" :to="localePath('/partner')" class="active mr-4 pr-1">Partners
           </b-nav-item>
-          <b-nav-item :class="$style.navBarItem" :to="localePath('/company')" class="active mr-4 pr-3">Company
+          <b-nav-item :class="$style.navBarItem" :to="localePath('/company')" class="active mr-4 pr-1">Company
           </b-nav-item>
-          <b-nav-item :class="$style.navBarItem" :to="localePath('/web-protection')" class="active mr-4 pr-3">Pricing
+          <b-nav-item :class="$style.navBarItem" :to="localePath('/web-protection')" class="active mr-4 pr-1">Pricing
           </b-nav-item>
           <b-nav-item :class="$style.navBarItem" href="https://support.polarisec.com/portal/en/home" target="_blank"
-                      class="active mr-4 pr-3">Support
+                      class="active mr-4 pr-1">Support
             Center
           </b-nav-item>
         </b-navbar-nav>
@@ -45,11 +45,12 @@
       </b-collapse>
     </b-navbar>
     <b-row class="mx-0 mr-lg-5 mr-1 align-items-lg-center mt-lg-0 pt-lg-0 mt-3 pt-1">
-      <b-dropdown id="dropdown-right" :class="$style.languageSelect" right text="" variant="none">
+      <b-dropdown id="dropdown-1" :class="$style.languageSelect" right text="" variant="none">
         <template #button-content>
-          <img height="24" src="@/assets/icons/eng.png"/>
+          <img height="24" :src="language.icon"/>
         </template>
-        <b-dropdown-item v-for="language in languages" :key="language.code" @click="selectLang(language.code)">
+        <b-dropdown-item v-for="language in languages" :key="language.code" @click="selectLang(language)">
+          <img height="24" :src="language.icon" class="mr-1"/>
           {{ language.text }}
         </b-dropdown-item>
       </b-dropdown>
@@ -60,6 +61,34 @@
 <style module lang="stylus">
 @import "../styles/main.styl"
 .languageSelect
+  ul:before
+    content ""
+    position absolute
+    top 0
+    right 1.8rem
+    border-left 10px solid transparent
+    border-right 10px solid transparent
+    border-bottom 10px solid #222222
+    transform translateY(-100%)
+    color linear-gradient(0deg, #222222, #222222)
+
+.languageSelect
+  position relative
+
+  ul
+    left 20px !important
+    top 8px !important
+    background linear-gradient(0deg, #222222, #222222) !important
+    border-radius 8px !important
+
+    li
+      a
+        color white !important
+
+      a:hover
+        background inherit !important
+        color $brand-2 !important
+
   button:focus
     box-shadow none !important
 
@@ -153,42 +182,47 @@ import PButton from "~/components/PButton.vue";
 export interface ILanguage {
   code: string,
   text: string
+  icon?: any
 }
 
 @Component({
   components: {PButton}
 })
 export default class PNavbar extends Vue {
-  language: string = ''
+  language: ILanguage | undefined = {
+    code: '',
+    text: '',
+    icon: null
+  }
 
-  get languages() {
-    return [
+  languages: ILanguage [] =
+    [
       {
         code: 'en',
-        text: "English"
+        text: "English",
+        icon: require("@/assets/icons/eng.png")
       },
       {
         code: 'vi',
-        text: "Vietnamese"
+        text: "Vietnamese",
+        icon: require("@/assets/icons/vietnam.png")
       },
     ]
+
+  mounted() {
+    this.language = this.languages.find((item) => item.code === this.$i18n.locale)
+    this.languages = this.languages.filter((item) => item !== this.language)
   }
 
-  created() {
-    this.language = this.$i18n.defaultLocale;
-  }
-
-  selectLang(lang: string) {
-    if (this.language === lang) {
+  selectLang(lang: ILanguage) {
+    if (!this.language) {
       return
     }
 
+    this.languages = [...this.languages, this.language]
+    this.languages = this.languages.filter((item) => item !== lang)
     this.language = lang
-    this.$router.replace(this.switchLocalePath(lang))
-  }
-
-  mounted() {
-    this.language = this.$i18n.locale
+    this.$router.replace(this.switchLocalePath(lang.code))
   }
 
   onClick() {
