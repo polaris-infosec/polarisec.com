@@ -55,7 +55,7 @@ export default class Introduction extends Vue {
   @Prop() introduction: IItroduction;
 
   onClick() {
-    this.$router.push({path: '/contact'});
+    this.$router.push({path: this.localePath('/contact')});
   }
 }
 </script>

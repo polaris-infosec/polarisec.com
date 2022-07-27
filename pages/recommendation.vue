@@ -167,7 +167,7 @@ export default class Recommendation extends Vue {
   }
 
   onClick() {
-    this.$router.push({path: '/contact'});
+    this.$router.push({path: this.localePath('/contact')});
   }
 }
 </script>

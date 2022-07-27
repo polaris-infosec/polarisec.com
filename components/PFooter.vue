@@ -3,7 +3,7 @@
     <div :class="$style.footerSection" class="app-width">
       <b-row class="d-flex justify-content-between flex-row">
         <b-col lg="3" cols="12" class="p-0">
-          <nuxt-link to="/home">
+          <nuxt-link :to="localePath('/home')">
             <img src="~/assets/images/polaris-logo.png" class="d-inline-block align-baseline mt-2" alt="Kitten"
                  height="30"
                  width="175">
@@ -52,17 +52,17 @@
             <div class="body-6 col-lg-3 col-5 mt-mb-36px">
               COMPANY
               <div class="d-flex flex-column mt-4 body-5">
-                <nuxt-link to="/company">
+                <nuxt-link :to="localePath('/company')">
                 <span class="color-text-7">
                     Company
                 </span>
                 </nuxt-link>
-                <nuxt-link to="/whyus">
+                <nuxt-link :to="localePath('/whyus')">
                 <span class="color-text-7">
                     Why us
                 </span>
                 </nuxt-link>
-                <nuxt-link to="/partner">
+                <nuxt-link :to="localePath('/partner')">
                 <span class="color-text-7">
                     Partners
                 </span>
@@ -78,7 +78,7 @@
             <div class="body-6 col-lg-3 col-5 mt-mb-36px">
               RESOURCES
               <div class="d-flex flex-column mt-4 body-5">
-                <nuxt-link to="/web-protection">
+                <nuxt-link :to="localePath('/web-protection')">
                 <span class="color-text-7">
                     Pricing
                 </span>
@@ -88,7 +88,7 @@
                     FAQ
                 </span>
                 </a>
-                <nuxt-link to="/contact">
+                <nuxt-link :to="localePath('/contact')">
                 <span class="color-text-7">
                     Contact
                 </span>

@@ -1,15 +1,18 @@
 <template>
   <div :class="$style.contactSalePanel">
     <div :class="$style.contactSaleSection" class="app-width">
-      <b-row class="d-flex mx-0 justify-content-lg-between justify-content-center align-items-center black-text text-lg-left text-center">
+      <b-row
+        class="d-flex mx-0 justify-content-lg-between justify-content-center align-items-center black-text text-lg-left text-center">
         <h5 class="fw-500 col-lg-7 col-12 p-0 body-1-sm secondary-1-sm" v-html="$t('partner.contact-sales.content')">
 
         </h5>
-        <p-button class="mt-4 pt-2" v-if="mobileScreen" :show-icon="false" :gradient="2" text="Contact sales" @click="gotoContact"/>
-        <nuxt-link to="/contact" class="mr-5 p-0" v-else>
+        <p-button class="mt-4 pt-2" v-if="mobileScreen" :show-icon="false" :gradient="2" text="Contact sales"
+                  @click="gotoContact"/>
+        <nuxt-link :to="localePath('/contact')" class="mr-5 p-0" v-else>
           <div :class="$style.contact" class="fw-500">
-            {{ $t('button-group.button-3') }} <span class="ml-2"><img src="@/assets/icons/call_made.png" alt="" width="24"
-                                                  height="24"></span>
+            {{ $t('button-group.button-3') }} <span class="ml-2"><img src="@/assets/icons/call_made.png" alt=""
+                                                                      width="24"
+                                                                      height="24"></span>
           </div>
         </nuxt-link>
 
@@ -55,7 +58,7 @@ export default class ContactSale extends Vue {
   }
 
   gotoContact() {
-    return this.$router.push({path: '/contact'})
+    return this.$router.push({path: this.localePath('/contact')})
   }
 
 }
