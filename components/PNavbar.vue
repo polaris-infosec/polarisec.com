@@ -1,6 +1,6 @@
 <template>
   <b-row class="mx-0 p-0" style="background-color: black">
-    <b-navbar :class="$style.navigationBar" class="flex-grow-1" toggleable="xl" type="dark" variant="dark">
+    <b-navbar :class="$style.navigationBar" class="body-2" toggleable="xl" type="dark" variant="dark">
       <b-navbar-brand class="mr-5">
         <nuxt-link :to="localePath('/home')">
           <img src="@/assets/images/polaris-logo.png" class="d-inline-block align-baseline mt-2" alt="Kitten"
@@ -11,7 +11,7 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
+        <b-navbar-nav :class="$style.rightNavItem">
           <b-nav-item :class="$style.navBarItem" href="https://polarisec.io/" target="_blank"
                       class="active mr-4 pr-1">
             Platform
@@ -40,12 +40,12 @@
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <p-button text="Get help" :class="$style.btn" :show-icon="false" @click="onClick"/>
+          <p-button size="sm" text="Get help" :class="$style.btn" :show-icon="false" @click="onClick"/>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
     <b-row class="mx-0 mr-lg-5 mr-1 align-items-lg-center mt-lg-0 pt-lg-0 mt-3 pt-1">
-      <b-dropdown id="dropdown-1" :class="$style.languageSelect" right text="" variant="none">
+      <b-dropdown id="dropdownMenuButton" :class="$style.languageSelect" right text="" variant="none">
         <template #button-content>
           <img height="24" :src="language.icon"/>
         </template>
@@ -63,12 +63,15 @@
 
 <style module lang="stylus">
 @import "../styles/main.styl"
+.rightNavItem
+  margin-right 180px
+
 .languageSelect
   ul:before
     content ""
     position absolute
     top 0
-    right 0.4rem
+    right 1rem
     border-left 6px solid transparent
     border-right 6px solid transparent
     border-bottom 6px solid #222222
@@ -79,7 +82,8 @@
   position relative
 
   ul
-    top 4px !important
+    top 5px !important
+    left 10px !important
     background linear-gradient(0deg, #222222, #222222) !important
     border-radius 8px !important
     min-width 1rem !important
@@ -148,6 +152,7 @@
   font-weight 500 !important
   font-size 14px !important
   line-height 18px !important
+  padding 7px 20px !important
 
 @media only screen and (max-width: 991px)
   .languageSelect
@@ -155,22 +160,22 @@
       display none !important
 
   .navigationBar
-    width 85% !important
+    width 87% !important
 
 @media only screen and (min-width: 992px)
   .navigationBar
     height 72px !important
-    padding 24px 60px !important
+    padding 24px 21px 24px 44px !important
 
   .languageSelect
     ul:before
-      right 1.95rem
+      right 3.65rem
       border-left 8px solid transparent
       border-right 8px solid transparent
       border-bottom 8px solid #222222
 
     ul
-      left 20px !important
+      left 48px !important
 
     button
       height 38px
