@@ -44,7 +44,7 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <b-row class="mx-0 mr-lg-5 mr-1 align-items-lg-center mt-lg-0 pt-lg-0 mt-3 pt-1">
+    <b-row class="mx-0 mr-lg-5 mr-1 ml-lg-3 align-items-lg-center mt-lg-0 pt-lg-0 mt-3 pt-1">
       <b-dropdown id="dropdownMenuButton" :class="$style.languageSelect" right text="" variant="none">
         <template #button-content>
           <img height="24" :src="language.icon"/>
@@ -157,11 +157,11 @@
       display none !important
 
   .navigationBar
-    width 87% !important
+    width 90% !important
 
 @media only screen and (min-width: 992px)
   .rightNavItem
-    margin-right 195px
+    margin-right 170px
 
   .navigationBar
     height 72px !important
@@ -169,13 +169,13 @@
 
   .languageSelect
     ul:before
-      right 3.65rem
+      right 4rem
       border-left 8px solid transparent
       border-right 8px solid transparent
       border-bottom 8px solid #222222
 
     ul
-      left 48px !important
+      left 53px !important
 
     button
       height 38px
