@@ -49,7 +49,7 @@
         <template #button-content>
           <img height="24" :src="language.icon"/>
         </template>
-        <b-dropdown-item v-for="language in languages" :key="language.code" @click="selectLang(language)">
+        <b-dropdown-item v-for="language in languages" :key="language.code" @click="selectLang(language)" class="caption-2">
           <div class="d-flex align-items-center">
             <img height="24" :src="language.icon" class="mr-1"/>
             {{ language.text }}
@@ -82,10 +82,13 @@
     top 8px !important
     background linear-gradient(0deg, #222222, #222222) !important
     border-radius 8px !important
+    min-width 1rem !important
+    padding 8px !important
 
     li
       a
         color white !important
+        padding 0 !important
 
       a:hover
         background inherit !important
