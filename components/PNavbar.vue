@@ -63,9 +63,6 @@
 
 <style module lang="stylus">
 @import "../styles/main.styl"
-.rightNavItem
-  margin-right 180px
-
 .languageSelect
   ul:before
     content ""
@@ -163,6 +160,9 @@
     width 87% !important
 
 @media only screen and (min-width: 992px)
+  .rightNavItem
+    margin-right 195px
+
   .navigationBar
     height 72px !important
     padding 24px 21px 24px 44px !important
