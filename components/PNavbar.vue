@@ -50,8 +50,10 @@
           <img height="24" :src="language.icon"/>
         </template>
         <b-dropdown-item v-for="language in languages" :key="language.code" @click="selectLang(language)">
-          <img height="24" :src="language.icon" class="mr-1"/>
-          {{ language.text }}
+          <div class="d-flex align-items-center">
+            <img height="24" :src="language.icon" class="mr-1"/>
+            {{ language.text }}
+          </div>
         </b-dropdown-item>
       </b-dropdown>
     </b-row>
