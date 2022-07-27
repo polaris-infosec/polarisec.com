@@ -79,7 +79,7 @@
   position relative
 
   ul
-    top 8px !important
+    top 4px !important
     background linear-gradient(0deg, #222222, #222222) !important
     border-radius 8px !important
     min-width 1rem !important
