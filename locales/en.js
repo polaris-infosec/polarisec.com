@@ -482,5 +482,35 @@ export default {
     article: {
       content: "Find out more about the benefits of using web protection",
     }
-  }
+  },
+  contact: {
+    title: "Get help",
+    content: "Reach out to us for more, whether you're suffering from a cyber attack or require more information from our team.",
+    "phone-number": "(+84) 28 7101 7755",
+    name: "Your Name *",
+    website: "Your Website *",
+    email: "Your Email *",
+    phone: "Your Phone *",
+    role: "Your Role *",
+    company: "Your Company *",
+    country: "Your Country",
+    message: "Your Message *",
+    topic: {
+      text: "Topic",
+      "option-1": {
+        text: "Cyber Attack Emergency",
+        "sub-option-1": "DDos attack",
+        "sub-option-2": "Ransomeware attack",
+        "sub-option-3": "Network or Firewall attack",
+        "sub-option-4": "Web or Application acttack",
+        "sub-option-5": "DNS hijacking or On path attack",
+        "sub-option-6": "Cloud resource attack",
+        "sub-option-7": "Note sure? We’ll help you assess",
+      },
+      "option-2": "Technical Support",
+      "option-3": "Sales Support",
+      "option-4": "Other",
+    }
+  },
+
 }

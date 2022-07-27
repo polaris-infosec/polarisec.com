@@ -5,8 +5,8 @@ export default {
     "button-3": "Liên hệ bộ phận kinh doanh",
     "button-4": "Select Plan",
     "button-5": "Request a Demo",
-    "button-6": "Watch on Youtube",
-    "button-7": "Sign up",
+    "button-6": "Xem trên Youtube",
+    "button-7": "Đăng ký ngay",
   },
   nav: {
     "platform": "Platform",
@@ -85,7 +85,7 @@ export default {
         "option-2": "DDOS lớp 3/ 4",
         "option-3": "DDOS lớp 7",
         "option-4": "OWASP Top 10",
-        "option-5": "Giảm thiểu Botn",
+        "option-5": "Giảm thiểu Bot",
         "option-6": "Tùy chỉnh các quy tắc bảo mật",
         "option-7": "Quét lỗ hổng bảo mật của máy chủ",
         "option-8": "Bảo mật API",
@@ -464,6 +464,36 @@ export default {
     article: {
       content: "Find out more about the benefits of using web protection",
     }
-  }
+  },
+  contact: {
+    title: "Trợ giúp",
+    content: "Nếu đang gặp phải tấn công hoặc cần được hỗ trợ về an ninh mạng, liên hệ chúng tôi để xử lý ngay.",
+    "phone-number": "(+84) 28 7101 7755",
+    name: "Họ Tên *",
+    website: "Website *",
+    email: "Email *",
+    phone: "Số điện thoại *",
+    role: "Chức vụ *",
+    company: "Tên Công Ty *",
+    country: "Quốc gia",
+    message: "Lời nhắn *",
+    topic: {
+      text: "Yêu Cầu",
+      "option-1": {
+        text: "Đang bị tấn công - khẩn cấp",
+        "sub-option-1": "DDos attack",
+        "sub-option-2": "Ransomeware attack",
+        "sub-option-3": "Network or Firewall attack",
+        "sub-option-4": "Web or Application acttack",
+        "sub-option-5": "DNS hijacking or On path attack",
+        "sub-option-6": "Cloud resource attack",
+        "sub-option-7": "Note sure? We’ll help you assess",
+      },
+      "option-2": "Hỗ trợ kỹ thuật",
+      "option-3": "Hỗ trợ bán hàng",
+      "option-4": "Khác",
+    }
+  },
+
 }
 
