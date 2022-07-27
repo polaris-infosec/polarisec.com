@@ -49,7 +49,8 @@
         <template #button-content>
           <img height="24" :src="language.icon"/>
         </template>
-        <b-dropdown-item v-for="language in languages" :key="language.code" @click="selectLang(language)" class="caption-2">
+        <b-dropdown-item v-for="language in languages" :key="language.code" @click="selectLang(language)"
+                         class="caption-2">
           <div class="d-flex align-items-center">
             <img height="24" :src="language.icon" class="mr-1"/>
             {{ language.text }}
@@ -67,10 +68,10 @@
     content ""
     position absolute
     top 0
-    right 1.8rem
-    border-left 10px solid transparent
-    border-right 10px solid transparent
-    border-bottom 10px solid #222222
+    right 0.4rem
+    border-left 6px solid transparent
+    border-right 6px solid transparent
+    border-bottom 6px solid #222222
     transform translateY(-100%)
     color linear-gradient(0deg, #222222, #222222)
 
@@ -78,7 +79,6 @@
   position relative
 
   ul
-    left 20px !important
     top 8px !important
     background linear-gradient(0deg, #222222, #222222) !important
     border-radius 8px !important
@@ -163,6 +163,15 @@
     padding 24px 60px !important
 
   .languageSelect
+    ul:before
+      right 1.95rem
+      border-left 8px solid transparent
+      border-right 8px solid transparent
+      border-bottom 8px solid #222222
+
+    ul
+      left 20px !important
+
     button
       height 38px
 
