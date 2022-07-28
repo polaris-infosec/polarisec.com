@@ -72,6 +72,7 @@
       border-bottom 8px solid #222222
 
     ul
+      top 10px !important
       left 53px !important
 
   button
