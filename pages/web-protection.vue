@@ -9,6 +9,7 @@
 </template>
 
 <style module lang='stylus'>
+@import "../styles/main.styl"
 
 </style>
 

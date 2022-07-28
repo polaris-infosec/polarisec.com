@@ -40,7 +40,7 @@
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <p-button size="sm" text="Get help" :class="$style.btn" :show-icon="false" @click="onClick"/>
+          <p-button size="sm" :text="$t('button-group.button-2')" :class="$style.btn" :show-icon="false" @click="onClick"/>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
