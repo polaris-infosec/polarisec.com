@@ -90,6 +90,24 @@ export default {
     "analytic-1": "In 2021, Web Application attacks are up <b>800%</b>.",
     "analytic-2": "On average, <b>30,000</b> new websites are hacked a day.",
     "analytic-3": "<b>73%</b> of black hat hackers say traditional firewall and antivirus security solutions are now obsolete.",
+    "testimonials": {
+      text: "Testimonials",
+      "testimonial-1": {
+        text: "“Polaris is being used to protect work-from-home services for more than 3,500 employees and collaborators of VNG. The system is developed by leading experts in Vietnam and provides features that are rarely found in other products.”",
+        name: "Mr. V.D.C.",
+        role: "HEAD OF SYSTEM OPERATIONS, VNG"
+      },
+      "testimonial-2": {
+        text: `“Currently, Polaris is being used on Sao Bac Dau’s cloud system to meet load capacity needs and provide security, and in features for important public system applications. ”`,
+        name: 'Mr. N.S.T.',
+        role: 'CHIEF EXCECUTIVE OFFICER, SAO BAC DAU (SOUTHERN BRANCH)',
+      },
+      "testimonial-3": {
+        text: `“Polaris is a next-generation application security solution that uses machine learning to automate access analysis to accurately detect sophisticated attack patterns. Polaris is partnered with BGP.net to deploy to more than 9 locations globally.”`,
+        name: '',
+        role: 'Business Department, National University of Singapore, ICE71 Competition review',
+      }
+    },
     "feature-comparison": {
       title: "Web Application & API Protection (WAAP) Standard Features Comparison",
       "detect-and-protection": {
@@ -315,7 +333,7 @@ export default {
     "per-user": "per user",
     "contact-us": "Contact us",
     "question": "Need help with choosing a package?",
-    "question-break":  "Get a personalized recommendation",
+    "question-break": "Get a personalized recommendation",
     "question-1": "Answer 3 easy Questions",
     "ups-to": "Ups to 1.5Gbps",
 
@@ -327,10 +345,10 @@ export default {
     "pricing-detail": {
       "pricing": "Pricing",
       content: "Save 20% with our Yearly payment plan",
-      "API-security":{
+      "API-security": {
         text: "API Security",
         "sub-option-1": "API Specification Protection",
-        "info-1" : "Protect connections that other applications and platforms use to connect to your domain",
+        "info-1": "Protect connections that other applications and platforms use to connect to your domain",
       },
       "app-security": {
         text: "App Security",
@@ -344,31 +362,31 @@ export default {
         "sub-option-8": "Security Header / CORS Policy",
         "sub-option-9": "CSP Header",
         "sub-option-10": "HTTP/2",
-        "info-1" : "Block or allow IP addresses from certain countries",
-        "info-2" : "List specific IP addresses that are blocked or allowed",
-        "info-3" : "Customize your security rules for specific threats or actions",
-        "info-4" : "Attack protection against the globally recognized top 10 attack risks",
-        "info-5" : "Protection against the latest vulnerabilities that were previously unknown",
-        "info-6" : "Protection against known vulnerabilities that have already been exposed, vulnerabilities that may or may not have been patched already",
-        "info-7" : "Depending on where users are accessing your page from, a copy of your site is stored on servers for faster loading",
-        "info-8" : "Control what data and resources can be shared with other 3rd parties",
-        "info-9" : "Restrict how resources such as Javascript load on your page",
-        "info-10" : "Utilize the latest version of the HTTP protocol which allows web users to connect to web servers",
+        "info-1": "Block or allow IP addresses from certain countries",
+        "info-2": "List specific IP addresses that are blocked or allowed",
+        "info-3": "Customize your security rules for specific threats or actions",
+        "info-4": "Attack protection against the globally recognized top 10 attack risks",
+        "info-5": "Protection against the latest vulnerabilities that were previously unknown",
+        "info-6": "Protection against known vulnerabilities that have already been exposed, vulnerabilities that may or may not have been patched already",
+        "info-7": "Depending on where users are accessing your page from, a copy of your site is stored on servers for faster loading",
+        "info-8": "Control what data and resources can be shared with other 3rd parties",
+        "info-9": "Restrict how resources such as Javascript load on your page",
+        "info-10": "Utilize the latest version of the HTTP protocol which allows web users to connect to web servers",
       },
       "bot-management": {
         text: "BOT Management",
         "sub-option-1": "Anti-bot protection",
         "sub-option-2": "Advanced Bot Management*",
         "sub-option-3": "Whitelist Good Bots",
-        "info-1" : "Use hCaptcha to determine whether users are bots or humans",
-        "info-3" : "Allow the use of bots that may have legitimate reasons for roaming your site",
+        "info-1": "Use hCaptcha to determine whether users are bots or humans",
+        "info-3": "Allow the use of bots that may have legitimate reasons for roaming your site",
       },
       "ddos": {
         text: "DDoS",
         "sub-option-1": "DDoS Mitigation (L7 & L3/4)",
         "sub-option-2": "Enterprise DDoS Mitigation (Hybrid)",
-        "info-1" : "Protection against attacks on multiple network layers that reduce site operability",
-        "info-2" : "Protection against DDoS attacks in both the cloud and on-premise server environments",
+        "info-1": "Protection against attacks on multiple network layers that reduce site operability",
+        "info-2": "Protection against DDoS attacks in both the cloud and on-premise server environments",
       },
       "small-business-expertise": {
         text: "Small Business Expertise",
@@ -377,11 +395,11 @@ export default {
         "sub-option-3": "DNSSEC",
         "sub-option-4": "SSL Auto-generation",
         "sub-option-5": "Custom SSL",
-        "info-1" : "Support for all domain aliases that point to your original domain name",
-        "info-2" : "Manage your own DNS records, choosing what servers are used to support your website for a better user experience and operational efficiency",
-        "info-3" : "Attach digital signature records to your DNS information for added security",
-        "info-4" : "Automatically create authenticated and encrypted links between network systems",
-        "info-5" : "Customize the digital document that binds the identity of a website to a cryptographic key pair and that provides your website\'s identifying information",
+        "info-1": "Support for all domain aliases that point to your original domain name",
+        "info-2": "Manage your own DNS records, choosing what servers are used to support your website for a better user experience and operational efficiency",
+        "info-3": "Attach digital signature records to your DNS information for added security",
+        "info-4": "Automatically create authenticated and encrypted links between network systems",
+        "info-5": "Customize the digital document that binds the identity of a website to a cryptographic key pair and that provides your website\'s identifying information",
       },
       "management-monitoring-reporting": {
         text: "Management - Monitoring Reporting",
@@ -400,8 +418,8 @@ export default {
         "sub-option-2": "China Mainland Access",
         "sub-option-3": "Regional PoPs",
         "sub-option-4": "Dedicated Edge",
-        "info-1" : "Always have your web traffic routed through the nearest server",
-        "info-3" : "Utilize edge servers located all over the globe",
+        "info-1": "Always have your web traffic routed through the nearest server",
+        "info-3": "Utilize edge servers located all over the globe",
       },
       "service-level-agreement": {
         text: "Service Level Agreement",
@@ -412,10 +430,10 @@ export default {
         "sub-option-5": "24 x 7 x 4",
         "sub-option-6": "24 x 7 x 365 x 4",
         "sub-option-7": "99.99% Uptime",
-        "info-4" : "Response 8 hours a day, 5 days a week by the Next Business Day",
-        "info-5" : "Response 24 hours a day, 7 days a week within 4 hours",
-        "info-7" : "Full 24/7, 365 days coverage within 4 hours",
-        "info-7" : "Only applicable to Cloud deployments",
+        "info-4": "Response 8 hours a day, 5 days a week by the Next Business Day",
+        "info-5": "Response 24 hours a day, 7 days a week within 4 hours",
+        "info-6": "Full 24/7, 365 days coverage within 4 hours",
+        "info-7": "Only applicable to Cloud deployments",
 
       },
       "technical-architecture": {

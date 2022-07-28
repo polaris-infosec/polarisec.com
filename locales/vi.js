@@ -62,7 +62,7 @@ export default {
     }
   },
   "whyUs": {
-    "title": "Why us",
+    "title": "Ưu điểm",
     "intro-1": " Polaris là <span class=\"brand-2\">giải pháp hàng đầu APAC</span> chuyên cung cấp các dịch vụ bảo mật chất lượng tới khách hàng.",
     "intro-2": "Chúng tôi hiểu rằng đôi khi an ninh mạng trở nên quá phức tạp, vì thế chúng tôi luôn tìm cách đơn giản hóa quy trình, <span\n" +
       "            class=\"brand-2\">để bất kỳ ai, ở bất kỳ đâu đều có thể tiếp cận được.</span>",
@@ -77,6 +77,24 @@ export default {
     "analytic-1": "Vào năm 2021, các cuộc tấn công vào ứng dụng web tăng <b>800%</b> so với năm 2019.",
     "analytic-2": "Trung bình <b>30.000</b> trang web mới bị tấn công mỗi ngày.",
     "analytic-3": "<b>73%</b> tin tặc nói rằng các giải pháp bảo mật tường lửa và phần mềm chống vi rút truyền thống hiện đã lỗi thời.",
+    "testimonials": {
+      text: "Đánh giá",
+      "testimonial-1": {
+        text: "“Polaris đang được sử dụng để bảo vệ các dịch vụ làm việc tại nhà cho hơn 3,500 nhân viên, cộng tác viên của công ty VNG. Hệ thống được phát triển bởi các chuyên gia hàng đầu của Việt Nam và cung cấp những tính năng ít tìm thấy ở các sản phẩm khác.”",
+        name: "Ông V.D.C",
+        role: "Trưởng bộ phận vận hành hệ thống Công ty VNG"
+      },
+      "testimonial-2": {
+        text: "“Hiện nay Polaris đang được thử nghiệm trên hệ thống cloud của Saobacdau, đáp ứng khả năng chịu tải và tính năng bảo mật để ứng dụng cho một số hệ thống công quan trọng.”",
+        name: "Ông N.S.T",
+        role: "CEO Sao Bắc Đẩu Chi nhánh phía Nam"
+      },
+      "testimonial-3": {
+        text: "“Polaris là giải pháp bảo mật ứng dụng thế hệ mới, sử dụng công nghệ máy học để tự động hoá phân tích truy cập từ đó phát hiện chính xác các dạng tấn công tinh vi. Polaris đang hợp tác với BGP.net để triển khai hơn 9 điểm trên toàn cầu.”",
+        name: "",
+        role: "Bộ phận phát triển doanh nghiệp của Đại học quốc gia Singapore NUS"
+      }
+    },
     "feature-comparison": {
       title: "So sánh các tính năng tiêu chuẩn của ứng dụng web & bảo vệ API (WAAP)",
       "detect-and-protection": {
@@ -284,7 +302,7 @@ export default {
     "polaris-for-enterprises": {
       title: "Polaris dành cho Enterprises",
       content: "Khách hàng doanh nghiệp cần khả năng mở rộng, bảo mật và hỗ trợ - hãy liên hệ với nhóm chuyên gia tư vấn của chúng tôi",
-      
+
     },
     monthly: "Hàng tháng",
     yearly: "Hàng năm",
@@ -298,7 +316,7 @@ export default {
     "per-user": "Theo người dùng",
     "contact-us": "Liên hệ ngay",
     "question": "Phân vân giữa các gói?",
-    "question-break":  "Nhận tư vấn phù hợp bằng cách trả lời 3 câu hỏi từ chúng tôi",
+    "question-break": "Nhận tư vấn phù hợp bằng cách trả lời 3 câu hỏi từ chúng tôi",
     "question-1": "Trả lời 3 câu hỏi",
     "ups-to": "Lên tới 1.5Gbps",
 
@@ -310,13 +328,13 @@ export default {
     "pricing-detail": {
       "pricing": "Pricing",
       content: "Tiết kiệm 20% với gói thanh toán hàng năm",
-      "API-security":{
+      "API-security": {
         text: "Bảo mật API",
         "sub-option-1": "Bảo vệ đặc điểm kỹ thuật API",
         "info-1": "Bảo vệ kết nối các ứng dụng và nền tảng khác đang sử dụng để liên kết với domain của doanh nghiệp",
       },
       "app-security": {
-      text: "Bảo mật ứng dụng",
+        text: "Bảo mật ứng dụng",
         "sub-option-1": "IP Geolocation",
         "sub-option-2": "IP Blacklist/Whitelist",
         "sub-option-3": "Các quy tắc tuỳ chỉnh",
@@ -327,31 +345,31 @@ export default {
         "sub-option-8": "Security Header / Chính sách CORS",
         "sub-option-9": "CSP Header",
         "sub-option-10": "HTTP/2",
-        "info-1" : "Ngăn chặn hoặc cho phép địa chỉ IP từ các quốc gia nhất định",
-        "info-2" : "Liệt kê các địa chỉ IP cụ thể bị chặn hoặc cho phép truy cập",
-        "info-3" : "Tùy chỉnh quy tắc bảo mật cho các mối đe dọa",
-        "info-4" : "Bảo vệ chống lại rủi ro của 10 loại cuộc tấn công hàng đầu được công nhận trên thế giới",
-        "info-5" : "Bảo vệ chống các lỗ hổng mới nhất chưa được biết đến",
-        "info-6" : "Bảo vệ chống các lỗ hổng bảo mật đã biết và đã bị lộ hoặc lỗ hổng có thể sửa hoặc chưa được sửa",
-        "info-7" : "Phụ thuộc vào vị trí người dùng truy cập web doanh nghiệp đến từ đâu, bản sao trang web đó sẽ được lưu trữ lại trên máy chủ để tải nhanh hơn.",
-        "info-8" : "Kiểm soát dữ liệu và tài nguyên nào có thể được chia sẻ với bên thứ ba khác.",
-        "info-9" : "Hạn chế các tài nguyên như Javascript tải trên trang web.",
-        "info-10" : "Sử dụng phiên bản mới nhất  giao thức HTTP cho phép người dùng web kết nối tới máy chủ web.",
+        "info-1": "Ngăn chặn hoặc cho phép địa chỉ IP từ các quốc gia nhất định",
+        "info-2": "Liệt kê các địa chỉ IP cụ thể bị chặn hoặc cho phép truy cập",
+        "info-3": "Tùy chỉnh quy tắc bảo mật cho các mối đe dọa",
+        "info-4": "Bảo vệ chống lại rủi ro của 10 loại cuộc tấn công hàng đầu được công nhận trên thế giới",
+        "info-5": "Bảo vệ chống các lỗ hổng mới nhất chưa được biết đến",
+        "info-6": "Bảo vệ chống các lỗ hổng bảo mật đã biết và đã bị lộ hoặc lỗ hổng có thể sửa hoặc chưa được sửa",
+        "info-7": "Phụ thuộc vào vị trí người dùng truy cập web doanh nghiệp đến từ đâu, bản sao trang web đó sẽ được lưu trữ lại trên máy chủ để tải nhanh hơn.",
+        "info-8": "Kiểm soát dữ liệu và tài nguyên nào có thể được chia sẻ với bên thứ ba khác.",
+        "info-9": "Hạn chế các tài nguyên như Javascript tải trên trang web.",
+        "info-10": "Sử dụng phiên bản mới nhất  giao thức HTTP cho phép người dùng web kết nối tới máy chủ web.",
       },
       "bot-management": {
         text: "Quản lí BOT",
         "sub-option-1": "Bảo vệ chống BOT",
         "sub-option-2": "Quản lí BOT nâng cao*",
         "sub-option-3": "Whitelist các Bot tốt",
-        "info-1" : "Sử dụng hCapcha để xác định người dùng là con người hay Bo",
-        "info-3" : "Cho phép sử dụng các bot có lý do để chuyển vùng web",
+        "info-1": "Sử dụng hCapcha để xác định người dùng là con người hay Bo",
+        "info-3": "Cho phép sử dụng các bot có lý do để chuyển vùng web",
       },
       "ddos": {
         text: "DDoS",
         "sub-option-1": "Giảm thiểu DDOS (L7 & L3/4)",
         "sub-option-2": "Phòng chống DDOS cho Enterprise (Hybrid)",
-        "info-1" : "Bảo vệ chống các cuộc tấn công trên nhiều lớp mạng, làm giảm khả năng hoạt động các cuộc tấn công trên trang web",
-        "info-2" : "Bảo vệ các cuộc tấn công DDoS trên đám mây (on cloud) và tại môi trường máy chủ (on premise)",
+        "info-1": "Bảo vệ chống các cuộc tấn công trên nhiều lớp mạng, làm giảm khả năng hoạt động các cuộc tấn công trên trang web",
+        "info-2": "Bảo vệ các cuộc tấn công DDoS trên đám mây (on cloud) và tại môi trường máy chủ (on premise)",
       },
       "small-business-expertise": {
         text: "Chuyên môn dịch vụ cho doanh nghiệp nhỏ",
@@ -360,11 +378,11 @@ export default {
         "sub-option-3": "DNSSEC",
         "sub-option-4": "Tự động tạo SSL",
         "sub-option-5": "SSL tuỳ chỉnh",
-        "info-1" : "Hỗ trợ tất cả aliases domain (còn được gọi là tên miền bí danh)  đến tên miền web gốc của người dùng.",
-        "info-2" : "Quản lý bản ghi DNS của riêng người dùng, lựa chọn máy chủ nào được sử dụng để hỗ trợ trang web của người dùng hoạt động hiệu quả",
-        "info-3" : "Đính kèm bản ghi chữ ký số vào thông tin DNS của người dùng để tăng cường bảo mật.",
-        "info-4" : "Tạo tự động các liên kết để xác thực và mã hóa giữa hệ thống mạng",
-        "info-5" : "Tùy chỉnh tài liệu số liên kết danh tính cặp khoá mật mã của một trang web và cung cấp thông tin xác thực trang web.",
+        "info-1": "Hỗ trợ tất cả aliases domain (còn được gọi là tên miền bí danh)  đến tên miền web gốc của người dùng.",
+        "info-2": "Quản lý bản ghi DNS của riêng người dùng, lựa chọn máy chủ nào được sử dụng để hỗ trợ trang web của người dùng hoạt động hiệu quả",
+        "info-3": "Đính kèm bản ghi chữ ký số vào thông tin DNS của người dùng để tăng cường bảo mật.",
+        "info-4": "Tạo tự động các liên kết để xác thực và mã hóa giữa hệ thống mạng",
+        "info-5": "Tùy chỉnh tài liệu số liên kết danh tính cặp khoá mật mã của một trang web và cung cấp thông tin xác thực trang web.",
       },
       "management-monitoring-reporting": {
         text: "Quản lý- Giám sát- Báo cáo ",
@@ -383,8 +401,8 @@ export default {
         "sub-option-2": "Truy cập từ Trung Quốc đại lục",
         "sub-option-3": "PoPs theo vùng",
         "sub-option-4": "Edge chuyên dụng",
-        "info-1" : "Định tuyến lưu lượng truy cập web của người dùng qua máy chủ gần nhất.r",
-        "info-3" : "Sử dụng các máy chủ biên được đặt trên toàn cầu.",
+        "info-1": "Định tuyến lưu lượng truy cập web của người dùng qua máy chủ gần nhất.r",
+        "info-3": "Sử dụng các máy chủ biên được đặt trên toàn cầu.",
       },
       "service-level-agreement": {
         text: "Thoả thuận mức dịch vụ(SLA)",
@@ -395,10 +413,10 @@ export default {
         "sub-option-5": "24 x 7 x 4",
         "sub-option-6": "24 x 7 x 365 x 4",
         "sub-option-7": "99.99% Thời gian hoạt động",
-        "info-4" : "Trả lời 8 giờ một ngày , 5 ngày một tuần trước ngày làm việc tiếp theo",
-        "info-5" : "Phản hồi 24 giờ một ngày, 7 ngày một tuần trong vòng 4 tiếng.",
-        "info-7" : "Bảo hiểm đầy đủ 24/7,365 ngày trong vòng 4 tiếng",
-        "info-7" : "Chỉ áp dụng cho triển khai đám mây (on cloud)",
+        "info-4": "Trả lời 8 giờ một ngày , 5 ngày một tuần trước ngày làm việc tiếp theo",
+        "info-5": "Phản hồi 24 giờ một ngày, 7 ngày một tuần trong vòng 4 tiếng.",
+        "info-6": "Bảo hiểm đầy đủ 24/7,365 ngày trong vòng 4 tiếng",
+        "info-7": "Chỉ áp dụng cho triển khai đám mây (on cloud)",
       },
       "technical-architecture": {
         text: "Cấu trúc kĩ thuật",
