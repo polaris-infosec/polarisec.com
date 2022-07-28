@@ -1,17 +1,17 @@
 <template>
   <div :class="$style.addonContainer" class="row">
     <div class="col-sm-4 pl-0">
-      <div :class="$style.title">Standard / Professional</div>
+      <div :class="$style.title" v-html="$t('pricing.plans.standard-professional')"></div>
       <div class="d-inline-flex justify-content-center align-items-center">
         <h4 :class="$style.price">{{ isMonthlyType ? '$4' : "$52" }}</h4>
         <div :class="$style.priceDetail">
-          <div>per user</div>
+          <div v-html="$t('pricing.per-user')"></div>
         </div>
       </div>
       <p-button :class="$style.btn"
                 :show-icon="false"
                 :gradient="2"
-                text="Select Plan"
+                v-html="$t('pricing.custom.selectPlan')"
                 @click="onClick"/>
     </div>
     <div class="col" :class="$style.detailContainer">
@@ -30,8 +30,8 @@
         </div>
       </template>
     </div>
-    <div :class="$style.comingsoon" class="col-sm-12 px-0">*Coming Soon</div>
-    <div :class="$style.comingsoon" class="col-sm-12 px-0">*First 15 active users are free</div>
+    <div :class="$style.comingsoon" class="col-sm-12 px-0" v-html="$t('pricing.note.note-1')"></div>
+    <div :class="$style.comingsoon" class="col-sm-12 px-0" v-html="$t('pricing.note.note-2')"></div>
   </div>
 </template>
 
@@ -126,65 +126,65 @@ export default class PricingAddOnsZeroTrustAccess extends Vue {
 
   zeroTrustAccessAddOns: any = [
     {
-      title: 'Device Management',
+      title: this.$t('pricing.zero-trust-access-add-on.device-management.text').toString(),
       child: [
         {
-          title: 'Endpoint Control',
-          info: 'To secure their endpoints, users can set up applications that apply providers over specific user groups. Providers and groups can be used in all applications within their organizations. Tt also supports subdomains and paths which makes it easy for users to classify user groups.',
+          title: this.$t('pricing.zero-trust-access-add-on.device-management.sub-option-1').toString(),
+          info: this.$t('pricing.zero-trust-access-add-on.device-management.info-1').toString(),
           isExpand: false,
         }
       ],
     },
     {
-      title: 'Vendor Management',
+      title: this.$t('pricing.zero-trust-access-add-on.vendor-management.text').toString(),
       child: [
         {
-          title: 'Service Provider Control',
-          info: 'Allows users to use 3rd-party providers to manage user authentication and authorization. These providers are pre-configured OAuth 2.0 applications. Users only need OAuth credentials to set up a new provider. Currently, we only support Azure Active Directory and Google Cloud Platform.',
+          title: this.$t('pricing.zero-trust-access-add-on.vendor-management.sub-option-1').toString(),
+          info: this.$t('pricing.zero-trust-access-add-on.vendor-management.info-1').toString(),
           isExpand: false,
         },
         {
-          title: 'Single-Sign On (SSO)',
+          title: this.$t('pricing.zero-trust-access-add-on.vendor-management.sub-option-2').toString(),
           info: '',
           isExpand: false,
         }
       ],
     },
     {
-      title: 'Identity Access Management',
+      title: this.$t('pricing.zero-trust-access-add-on.identity-access-management.text').toString(),
       child: [
         {
-          title: 'User Roles',
+          title: this.$t('pricing.zero-trust-access-add-on.identity-access-management.sub-option-1').toString(),
           info: '',
           isExpand: false,
         },
         {
-          title: 'Group Creation',
+          title: this.$t('pricing.zero-trust-access-add-on.identity-access-management.sub-option-2').toString(),
           info: '',
           isExpand: false,
         }
       ],
     },
     {
-      title: 'Customization',
+      title: this.$t('pricing.zero-trust-access-add-on.customization.text').toString(),
       child: [
         {
-          title: 'Login Page Configuration',
-          info: 'We made a simple and elegant login page for users. In case of customization, we offer you an on-demand theme editor. You also can preview your login page before making any changes.',
+          title: this.$t('pricing.zero-trust-access-add-on.customization.sub-option-1').toString(),
+          info: this.$t('pricing.zero-trust-access-add-on.customization.info-1').toString(),
           isExpand: false,
         },
         {
-          title: 'Custom Access Domain',
-          info: 'You have to visit our domain polarisaccess.com to be verified by default. But you absolutely can replace it with your own domain. Remember that you need to change a few settings to use your custom access domain.',
+          title: this.$t('pricing.zero-trust-access-add-on.customization.sub-option-2').toString(),
+          info: this.$t('pricing.zero-trust-access-add-on.customization.info-2').toString(),
           isExpand: false,
         }
       ],
     },
     {
-      title: 'Bots Management',
+      title: this.$t('pricing.zero-trust-access-add-on.bots-management.text').toString(),
       child: [
         {
-          title: 'Customizable Captcha*',
+          title: this.$t('pricing.zero-trust-access-add-on.bots-management.sub-option-1').toString(),
           info: '',
           isExpand: false,
         }
