@@ -241,6 +241,9 @@ export default class Contact extends Vue {
           }, {
             content: this.$t('contact.topic.option-1.sub-option-7'),
             isSelect: false,
+          }, {
+            content: this.$t('contact.topic.option-1.sub-option-8'),
+            isSelect: false,
           },
         ]
       }, {
