@@ -11,7 +11,7 @@
       <b-row class="mx-0 justify-content-between align-items-center mb-4">
         <p class="col-6 my-0 p-0 body-2 font-weight-bold" v-html="$t('pricing.pricing-detail.content')">
         </p>
-        <p-toggle-button :is-monthly="isMonthly" :is-yearly="isYearly"/>
+        <p-toggle-button :is-monthly="$t('pricing.monthly')" :is-yearly="$t('pricing.yearly')"/>
       </b-row>
       <carousel
         :nav="false"

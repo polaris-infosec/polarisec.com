@@ -62,8 +62,8 @@ export default {
     }
   },
   "whyUs": {
-    "title": "Ưu điểm",
-    "intro-1": " Polaris là <span class=\"brand-2\">giải pháp hàng đầu APAC</span> chuyên cung cấp các dịch vụ bảo mật chất lượng tới khách hàng.",
+    "title": "Why us",
+    "intro-1": " Polaris là<span class=\"brand-2\">giải pháp hàng đầu APAC</span> chuyên cung cấp các dịch vụ bảo mật chất lượng tới khách hàng.",
     "intro-2": "Chúng tôi hiểu rằng đôi khi an ninh mạng trở nên quá phức tạp, vì thế chúng tôi luôn tìm cách đơn giản hóa quy trình, <span\n" +
       "            class=\"brand-2\">để bất kỳ ai, ở bất kỳ đâu đều có thể tiếp cận được.</span>",
     "intro-3": "Chúng tôi có thể <span class=\"brand-2\">mở rộng quy mô ở mọi cấp độ</span> từ người chưa biết gì về an ninh mạng đến những người dày dạn kinh nghiệm lâu năm, giải quyết các mối quan tâm của các doanh nghiệp nhỏ cũng như các doanh nghiệp lớn.",
@@ -77,24 +77,6 @@ export default {
     "analytic-1": "Vào năm 2021, các cuộc tấn công vào ứng dụng web tăng <b>800%</b> so với năm 2019.",
     "analytic-2": "Trung bình <b>30.000</b> trang web mới bị tấn công mỗi ngày.",
     "analytic-3": "<b>73%</b> tin tặc nói rằng các giải pháp bảo mật tường lửa và phần mềm chống vi rút truyền thống hiện đã lỗi thời.",
-    "testimonials": {
-      text: "Đánh giá",
-      "testimonial-1": {
-        text: "“Polaris đang được sử dụng để bảo vệ các dịch vụ làm việc tại nhà cho hơn 3,500 nhân viên, cộng tác viên của công ty VNG. Hệ thống được phát triển bởi các chuyên gia hàng đầu của Việt Nam và cung cấp những tính năng ít tìm thấy ở các sản phẩm khác.”",
-        name: "Ông V.D.C",
-        role: "Trưởng bộ phận vận hành hệ thống Công ty VNG"
-      },
-      "testimonial-2": {
-        text: "“Hiện nay Polaris đang được thử nghiệm trên hệ thống cloud của Saobacdau, đáp ứng khả năng chịu tải và tính năng bảo mật để ứng dụng cho một số hệ thống công quan trọng.”",
-        name: "Ông N.S.T",
-        role: "CEO Sao Bắc Đẩu Chi nhánh phía Nam"
-      },
-      "testimonial-3": {
-        text: "“Polaris là giải pháp bảo mật ứng dụng thế hệ mới, sử dụng công nghệ máy học để tự động hoá phân tích truy cập từ đó phát hiện chính xác các dạng tấn công tinh vi. Polaris đang hợp tác với BGP.net để triển khai hơn 9 điểm trên toàn cầu.”",
-        name: "",
-        role: "Bộ phận phát triển doanh nghiệp của Đại học quốc gia Singapore NUS"
-      }
-    },
     "feature-comparison": {
       title: "So sánh các tính năng tiêu chuẩn của ứng dụng web & bảo vệ API (WAAP)",
       "detect-and-protection": {
@@ -103,7 +85,7 @@ export default {
         "option-2": "DDOS lớp 3/ 4",
         "option-3": "DDOS lớp 7",
         "option-4": "OWASP Top 10",
-        "option-5": "Giảm thiểu Bot",
+        "option-5": "Giảm thiểu Botn",
         "option-6": "Tùy chỉnh các quy tắc bảo mật",
         "option-7": "Quét lỗ hổng bảo mật của máy chủ",
         "option-8": "Bảo mật API",
@@ -311,8 +293,8 @@ export default {
     "upon-request": "Theo yêu cầu",
     "year-2": "2/Năm",
     "per-domains": "Theo miền",
-    "per-month": "Theo tháng",
-    "per-year": "Theo năm",
+    "per-month": "Mỗi tháng",
+    "per-year": "Mỗi năm",
     "per-user": "Theo người dùng",
     "contact-us": "Liên hệ ngay",
     "question": "Phân vân giữa các gói?",
@@ -345,16 +327,16 @@ export default {
         "sub-option-8": "Security Header / Chính sách CORS",
         "sub-option-9": "CSP Header",
         "sub-option-10": "HTTP/2",
-        "info-1": "Ngăn chặn hoặc cho phép địa chỉ IP từ các quốc gia nhất định",
-        "info-2": "Liệt kê các địa chỉ IP cụ thể bị chặn hoặc cho phép truy cập",
-        "info-3": "Tùy chỉnh quy tắc bảo mật cho các mối đe dọa",
-        "info-4": "Bảo vệ chống lại rủi ro của 10 loại cuộc tấn công hàng đầu được công nhận trên thế giới",
-        "info-5": "Bảo vệ chống các lỗ hổng mới nhất chưa được biết đến",
-        "info-6": "Bảo vệ chống các lỗ hổng bảo mật đã biết và đã bị lộ hoặc lỗ hổng có thể sửa hoặc chưa được sửa",
-        "info-7": "Phụ thuộc vào vị trí người dùng truy cập web doanh nghiệp đến từ đâu, bản sao trang web đó sẽ được lưu trữ lại trên máy chủ để tải nhanh hơn.",
-        "info-8": "Kiểm soát dữ liệu và tài nguyên nào có thể được chia sẻ với bên thứ ba khác.",
-        "info-9": "Hạn chế các tài nguyên như Javascript tải trên trang web.",
-        "info-10": "Sử dụng phiên bản mới nhất  giao thức HTTP cho phép người dùng web kết nối tới máy chủ web.",
+        "info-1" : "Ngăn chặn hoặc cho phép địa chỉ IP từ các quốc gia nhất định",
+        "info-2" : "Liệt kê các địa chỉ IP cụ thể bị chặn hoặc cho phép truy cập",
+        "info-3" : "Tùy chỉnh quy tắc bảo mật cho các mối đe dọa",
+        "info-4" : "Bảo vệ chống lại rủi ro của 10 loại cuộc tấn công hàng đầu được công nhận trên thế giới",
+        "info-5" : "Bảo vệ chống các lỗ hổng mới nhất chưa được biết đến",
+        "info-6" : "Bảo vệ chống các lỗ hổng bảo mật đã biết và đã bị lộ hoặc lỗ hổng có thể sửa hoặc chưa được sửa",
+        "info-7" : "Phụ thuộc vào vị trí người dùng truy cập web doanh nghiệp đến từ đâu, bản sao trang web đó sẽ được lưu trữ lại trên máy chủ để tải nhanh hơn.",
+        "info-8" : "Kiểm soát dữ liệu và tài nguyên nào có thể được chia sẻ với bên thứ ba khác.",
+        "info-9" : "Hạn chế các tài nguyên như Javascript tải trên trang web.",
+        "info-10" : "Sử dụng phiên bản mới nhất  giao thức HTTP cho phép người dùng web kết nối tới máy chủ web.",
       },
       "bot-management": {
         text: "Quản lí BOT",

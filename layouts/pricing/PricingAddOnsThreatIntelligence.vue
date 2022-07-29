@@ -6,7 +6,7 @@
           <h4 :class="$style.price">{{isMonthlyType ? '$87' : "$1043"}}</h4>
           <div :class="$style.priceDetail">
             <div v-html="$t('pricing.per-domains')"></div>
-            <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
+            <div>{{ isMonthlyType ? $t('pricing.per-month') : $t('pricing.per-year') }}</div>
           </div>
         </div>
         <p-button :class="$style.btn" :show-icon="false" :gradient="2" v-html="$t('pricing.custom.selectPlan')" @click="onClick"/>
