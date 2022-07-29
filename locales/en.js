@@ -339,7 +339,8 @@ export default {
     "question-break": "Get a personalized recommendation",
     "question-1": "Answer 3 easy Questions",
     "ups-to": "Ups to 1.5Gbps",
-
+    "ups-to-2": "Ups to 7.5Gbps",
+    "ups-to-3": "Custom Pricing (Up to 2 Tbps)",
     tags: {
       "overview": "Overview",
       "add-ons": "Add-ons",

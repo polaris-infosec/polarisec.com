@@ -657,15 +657,15 @@ export default class PricingOverview extends Vue {
             },
             {
               isSupport: true,
-              info: 'Up to 1.5 Gbps',
+              info: this.$t('pricing.ups-to').toString(),
             },
             {
               isSupport: true,
-              info: 'Up to 7.5 Gbps',
+              info: this.$t('pricing.ups-to-2').toString(),
             },
             {
               isSupport: true,
-              info: 'Custom Pricing (Up to 2 Tbps)',
+              info: this.$t('pricing.ups-to-3').toString(),
             },
           ],
         },
