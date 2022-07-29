@@ -547,7 +547,8 @@ export default {
       "standard-professional": "Standard / Professional",
     },
     article: {
-      content: "Find out more about the benefits of using web protection",
+      content: "Find out more about the benefits of using",
+      link: "web protection"
     },
     custom: {
       pricing: "Custom Pricing",

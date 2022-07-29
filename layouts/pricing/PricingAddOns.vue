@@ -7,12 +7,14 @@
           <h2 class="color-text-8 ml-4" v-html="$t('pricing.add-ons.title')"></h2>
           <div class="body-2 color-text-8 ml-4" v-html="$t('pricing.add-ons.content')"></div>
           <pricing-add-ons-table :is-monthly-type="isMonthlyType"/>
-          <h5 class="color-text-6 ml-4 font-weight-bold" v-html="$t('pricing.managed-security-services-add-on.title')"></h5>
+          <h5 class="color-text-6 ml-4 font-weight-bold"
+              v-html="$t('pricing.managed-security-services-add-on.title')"></h5>
           <div class="body-2 ml-4 color-text-6" v-html="$t('pricing.managed-security-services-add-on.content')"></div>
           <pricing-add-ons-service :is-monthly-type="isMonthlyType" :is-expand-all="isExpandAll"/>
           <div class="row">
             <div class="col mr-4">
-              <h5 class="color-text-6 mx-4 font-weight-bold"  v-html="$t('pricing.threat-intelligence-add-on.title')"></h5>
+              <h5 class="color-text-6 mx-4 font-weight-bold"
+                  v-html="$t('pricing.threat-intelligence-add-on.title')"></h5>
               <div class="body-2 color-text-6 mx-4" v-html="$t('pricing.threat-intelligence-add-on.content')">
               </div>
               <pricing-add-ons-threat-intelligence :is-monthly-type="isMonthlyType"/>
@@ -27,7 +29,9 @@
         </div>
         <div class="d-flex col-12 justify-content-center">
           <p class="mt-5">
-            <nuxt-link class="brand-2" :to="localePath('/web-protection-platform')">Find out more about the benefits of using web protection-></nuxt-link>
+            {{ $t('pricing.article.content') }}
+            <nuxt-link class="brand-2" :to="localePath('/web-protection-platform')"> {{ $t('pricing.article.link') }} ->
+            </nuxt-link>
           </p>
         </div>
       </div>
