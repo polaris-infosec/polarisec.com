@@ -325,7 +325,8 @@ export default {
     "question-break": "Nhận tư vấn phù hợp bằng cách trả lời 3 câu hỏi từ chúng tôi",
     "question-1": "Trả lời 3 câu hỏi",
     "ups-to": "Lên tới 1.5Gbps",
-
+    "ups-to-2": "Lên tới 7.5Gbps",
+    "ups-to-3": "Cước tuỳ thuộc (Lên đến 2 Tbps)",
     tags: {
       "overview": "Tổng quan",
       "add-ons": "Các tiện ích bổ sung",

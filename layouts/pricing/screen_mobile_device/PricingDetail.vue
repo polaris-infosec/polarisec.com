@@ -301,7 +301,7 @@ export default class PricingDetail extends Vue {
           {
             title: 'DDoS',
             subFeatures: [
-              this.$t('pricing.pricing-detail.ddos.sub-option-1')+ '<p class="my-0 brand-2">Ups to 1.5Gbps</p>',
+              this.$t('pricing.pricing-detail.ddos.sub-option-1')+ '<p class="my-0 brand-2">Ups to 7.5Gbps</p>',
             ]
           },
           {
