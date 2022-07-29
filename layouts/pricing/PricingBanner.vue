@@ -25,7 +25,7 @@
           <div class="body-2" v-html="$t('pricing.polaris-for-enterprises.content')"></div>
         </div>
         <nuxt-link :to="localePath('/contact')" >
-          <div :class="$style.contact" v-html ="$t('pricing.contact-us')">
+          <div :class="$style.contact"  > {{$t('pricing.contact-sales')}}
             <span class="ml-2"><img src="@/assets/icons/call_made.png" alt="" width="24"
                                                   height="24"></span>
           </div>
