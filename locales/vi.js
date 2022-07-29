@@ -77,6 +77,24 @@ export default {
     "analytic-1": "Vào năm 2021, các cuộc tấn công vào ứng dụng web tăng <b>800%</b> so với năm 2019.",
     "analytic-2": "Trung bình <b>30.000</b> trang web mới bị tấn công mỗi ngày.",
     "analytic-3": "<b>73%</b> tin tặc nói rằng các giải pháp bảo mật tường lửa và phần mềm chống vi rút truyền thống hiện đã lỗi thời.",
+    "testimonials": {
+      text: "Đánh giá",
+      "testimonial-1": {
+        text: "“Polaris đang được sử dụng để bảo vệ các dịch vụ làm việc tại nhà cho hơn 3,500 nhân viên, cộng tác viên của công ty VNG. Hệ thống được phát triển bởi các chuyên gia hàng đầu của Việt Nam và cung cấp những tính năng ít tìm thấy ở các sản phẩm khác.”",
+        name: "Ông V.D.C",
+        role: "Trưởng bộ phận vận hành hệ thống Công ty VNG"
+      },
+      "testimonial-2": {
+        text: "“Hiện nay Polaris đang được thử nghiệm trên hệ thống cloud của Saobacdau, đáp ứng khả năng chịu tải và tính năng bảo mật để ứng dụng cho một số hệ thống công quan trọng.”",
+        name: "Ông N.S.T",
+        role: "CEO Sao Bắc Đẩu Chi nhánh phía Nam"
+      },
+      "testimonial-3": {
+        text: "“Polaris là giải pháp bảo mật ứng dụng thế hệ mới, sử dụng công nghệ máy học để tự động hoá phân tích truy cập từ đó phát hiện chính xác các dạng tấn công tinh vi. Polaris đang hợp tác với BGP.net để triển khai hơn 9 điểm trên toàn cầu.”",
+        name: "",
+        role: "Bộ phận phát triển doanh nghiệp của Đại học quốc gia Singapore NUS"
+      }
+    },
     "feature-comparison": {
       title: "So sánh các tính năng tiêu chuẩn của ứng dụng web & bảo vệ API (WAAP)",
       "detect-and-protection": {
