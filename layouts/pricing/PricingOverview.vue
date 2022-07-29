@@ -2,14 +2,14 @@
   <div class="container-fluid px-0">
     <div :class="$style.container" class="row">
       <div class="px-0 col-sm-12">
-        <h2 class="pl-4">Pricing</h2>
+        <h2 class="pl-4" v-html="$t('pricing.pricing')"></h2>
         <div class="body-2 pl-4" v-html="$t('pricing.pricing-detail.content')"></div>
         <div :class="$style.pricingContainer" class="p-4">
           <div :class="$style.headerContainer">
             <div class="row" :class="$style.tableHeader">
               <div @click="onChangeExpand(!isExpandAll)" :class="$style.headerItem"
                    class="col-sm-3 body-2 d-inline-flex align-items-center justify-content-between">
-                <div>Billing cycle</div>
+                <div v-html="$t('pricing.billing-cycle')"></div>
                 <img :src="isExpandAll ? iconExpand.collapse : iconExpand.expand" alt="" width="24" height="24">
               </div>
               <div :class="$style.headerItem" class="col" v-html="$t('pricing.plans.basic')"></div>
@@ -21,10 +21,10 @@
               <div class="col-sm-3">
                 <div class="d-inline-flex align-items-center">
                   <div @click="onChangeType(true)" :class="[$style.selectType, isMonthlyType && $style.active]"
-                       class="mr-1">
-                    Monthly
+                       class="mr-1" v-html="$t('pricing.monthly')">
                   </div>
-                  <div @click="onChangeType(false)" :class="[$style.selectType, !isMonthlyType && $style.active]">
+                  <div @click="onChangeType(false)" :class="[$style.selectType, !isMonthlyType && $style.active]"
+                  class="mr-1" v-html="$t('pricing.yearly')">
                     Yearly
                   </div>
                 </div>
@@ -35,7 +35,7 @@
                     <h4 :class="$style.price">{{ !isNaN(type.price) ? '$' : '' }}{{ type.price }}</h4>
                     <div :class="$style.priceDetail" v-if="!isNaN(type.price)">
                       <div v-html="$t('pricing.per-domains')"></div>
-                      <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
+                      <div> {{ isMonthlyType ? $t('pricing.per-month') : $t('pricing.per-year') }}</div>
                     </div>
                   </div>
                   <p-button :gradient="2"
@@ -280,7 +280,7 @@ export default class PricingOverview extends Vue {
       },
       {
         type: this.$t('pricing.plans.enterprise').toString(),
-        price: 'Contact us',
+        price: this.$t('pricing.contact-us').toString(),
         button_text: this.$t('pricing.custom.selectDemo').toString(),
         action: () => this.goContact(),
       },
@@ -288,7 +288,7 @@ export default class PricingOverview extends Vue {
   }
 
   goContact() {
-    this.$router.push({path: '/contact'});
+    return this.$router.push({path: this.localePath('/contact')})
   }
 
   goPolaris() {
@@ -1402,8 +1402,7 @@ export default class PricingOverview extends Vue {
   }
 
   onClick() {
-    this.$router.push({path: '/questions'});
+    return this.$router.push({path: this.localePath('/questions')})
   }
-
 }
 </script>

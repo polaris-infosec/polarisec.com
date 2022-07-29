@@ -12,9 +12,9 @@
             ${{ addOnsFeature.price }}
           </h4>
           <b-col class="p-0 caption-2">
-            <p>per domain</p>
-            <p v-if="isMonthly">per month</p>
-            <p v-else>per year</p>
+            <p></p>
+            <p v-if="isMonthly" v-html="$t('pricing.per-month')"></p>
+            <p v-else v-html="$t('pricing.per-year')"></p>
           </b-col>
         </b-row>
         <p-button class="col-12 mb-4" :show-icon="false"
@@ -56,7 +56,7 @@ export default class PricingAddons extends Vue {
   @Prop() isMonthly: boolean;
 
   goToContact() {
-    return this.$router.push({path: '/contact'})
+    return this.$router.push({path: this.localePath('/contact')})
   }
 
   gotoPolaris() {

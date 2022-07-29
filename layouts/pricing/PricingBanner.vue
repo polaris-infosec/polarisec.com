@@ -24,8 +24,8 @@
           <h4 class="mb-1" v-html="$t('pricing.polaris-for-enterprises.title')"></h4>
           <div class="body-2" v-html="$t('pricing.polaris-for-enterprises.content')"></div>
         </div>
-        <nuxt-link to="/contact">
-          <div :class="$style.contact" v-html ="$t('pricing.contact-us')">
+        <nuxt-link :to="localePath('/contact')" >
+          <div :class="$style.contact"  > {{$t('pricing.contact-sales')}}
             <span class="ml-2"><img src="@/assets/icons/call_made.png" alt="" width="24"
                                                   height="24"></span>
           </div>
@@ -88,7 +88,7 @@ import PButton from "~/components/PButton.vue";
 export default class CompanyBanner extends Vue {
 
   onClick() {
-    this.$router.push({path: '/contact'});
+    return this.$router.push({path: this.localePath('/contact')})
   }
 
 }

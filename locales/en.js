@@ -88,8 +88,11 @@ export default {
     "content-6": "Flexible payment options and terms - monthly or annual, pay via card or bank transfer",
     "content-7": "Try our free version for as long as you like before deciding on any upgrade",
     "analytic-1": "In 2021, Web Application attacks are up <b>800%</b>.",
+    "source-1":"(source: CDNetworks)",
     "analytic-2": "On average, <b>30,000</b> new websites are hacked a day.",
+    "source-2":"(source: Forbes)",
     "analytic-3": "<b>73%</b> of black hat hackers say traditional firewall and antivirus security solutions are now obsolete.",
+    "source-3":"(source: Thycotic.com)",
     "testimonials": {
       text: "Testimonials",
       "testimonial-1": {
@@ -317,6 +320,8 @@ export default {
     title: "Web Protection Plans",
     content: "Try Polaris free - forever",
     consultation: "Request a Consultation",
+    pricing: "Pricing",
+    "billing-cycle": "Billing cycle",
     "polaris-for-enterprises": {
       title: "Polaris for Enterprises",
       content: "Need enterprise-grade scalability, security, and support - contact our sales team"
@@ -332,6 +337,7 @@ export default {
     "per-year": "per year",
     "per-user": "per user",
     "contact-us": "Contact us",
+    "contact-sales": "Contact Sales",
     "question": "Need help with choosing a package?",
     "question-break": "Get a personalized recommendation",
     "question-1": "Answer 3 easy Questions",
@@ -547,7 +553,8 @@ export default {
       "standard-professional": "Standard / Professional",
     },
     article: {
-      content: "Find out more about the benefits of using web protection",
+      content: "Find out more about the benefits of using",
+      link: "web protection"
     },
     custom: {
       pricing: "Custom Pricing",

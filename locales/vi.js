@@ -62,8 +62,8 @@ export default {
     }
   },
   "whyUs": {
-    "title": "Ưu điểm",
-    "intro-1": " Polaris là <span class=\"brand-2\">giải pháp hàng đầu APAC</span> chuyên cung cấp các dịch vụ bảo mật chất lượng tới khách hàng.",
+    "title": "Why us",
+    "intro-1": " Polaris là<span class=\"brand-2\">giải pháp hàng đầu APAC</span> chuyên cung cấp các dịch vụ bảo mật chất lượng tới khách hàng.",
     "intro-2": "Chúng tôi hiểu rằng đôi khi an ninh mạng trở nên quá phức tạp, vì thế chúng tôi luôn tìm cách đơn giản hóa quy trình, <span\n" +
       "            class=\"brand-2\">để bất kỳ ai, ở bất kỳ đâu đều có thể tiếp cận được.</span>",
     "intro-3": "Chúng tôi có thể <span class=\"brand-2\">mở rộng quy mô ở mọi cấp độ</span> từ người chưa biết gì về an ninh mạng đến những người dày dạn kinh nghiệm lâu năm, giải quyết các mối quan tâm của các doanh nghiệp nhỏ cũng như các doanh nghiệp lớn.",
@@ -75,8 +75,11 @@ export default {
     "content-6": "Các tùy chọn và điều khoản thanh toán linh hoạt - hàng tháng hoặc hàng năm, thanh toán qua thẻ hoặc chuyển khoản ngân hàng",
     "content-7": "Dùng thử gói cơ bản miễn phí của Polaris trước khi triển khai.",
     "analytic-1": "Vào năm 2021, các cuộc tấn công vào ứng dụng web tăng <b>800%</b> so với năm 2019.",
+    "source-1":"(Nguồn: CDNetworks)",
     "analytic-2": "Trung bình <b>30.000</b> trang web mới bị tấn công mỗi ngày.",
+    "source-2":"(Nguồn: Forbes)",
     "analytic-3": "<b>73%</b> tin tặc nói rằng các giải pháp bảo mật tường lửa và phần mềm chống vi rút truyền thống hiện đã lỗi thời.",
+    "source-3":"(Nguồn: Thycotic.com)",
     "testimonials": {
       text: "Đánh giá",
       "testimonial-1": {
@@ -103,7 +106,7 @@ export default {
         "option-2": "DDOS lớp 3/ 4",
         "option-3": "DDOS lớp 7",
         "option-4": "OWASP Top 10",
-        "option-5": "Giảm thiểu Bot",
+        "option-5": "Giảm thiểu Botn",
         "option-6": "Tùy chỉnh các quy tắc bảo mật",
         "option-7": "Quét lỗ hổng bảo mật của máy chủ",
         "option-8": "Bảo mật API",
@@ -299,6 +302,8 @@ export default {
     title: "CÁC GÓI BẢO MẬT WEBSITE",
     content: "Đăng kí ngay để trải nghiệm giải pháp của Polaris miễn phí và vô thời hạn",
     consultation: "Yêu cầu được tư vấn",
+    pricing: "Chi phí",
+    "billing-cycle": "Chu kì thanh toán",
     "polaris-for-enterprises": {
       title: "Polaris dành cho Enterprises",
       content: "Khách hàng doanh nghiệp cần khả năng mở rộng, bảo mật và hỗ trợ - hãy liên hệ với nhóm chuyên gia tư vấn của chúng tôi",
@@ -311,10 +316,11 @@ export default {
     "upon-request": "Theo yêu cầu",
     "year-2": "2/Năm",
     "per-domains": "Theo miền",
-    "per-month": "Theo tháng",
-    "per-year": "Theo năm",
+    "per-month": "Mỗi tháng",
+    "per-year": "Mỗi năm",
     "per-user": "Theo người dùng",
-    "contact-us": "Liên hệ ngay",
+    "contact-us": "Liên hệ",
+    "contact-sales": "Liên hệ chuyên gia tư vấn",
     "question": "Phân vân giữa các gói?",
     "question-break": "Nhận tư vấn phù hợp bằng cách trả lời 3 câu hỏi từ chúng tôi",
     "question-1": "Trả lời 3 câu hỏi",
@@ -413,10 +419,10 @@ export default {
         "sub-option-5": "24 x 7 x 4",
         "sub-option-6": "24 x 7 x 365 x 4",
         "sub-option-7": "99.99% Thời gian hoạt động",
-        "info-4": "Trả lời 8 giờ một ngày , 5 ngày một tuần trước ngày làm việc tiếp theo",
-        "info-5": "Phản hồi 24 giờ một ngày, 7 ngày một tuần trong vòng 4 tiếng.",
-        "info-6": "Bảo hiểm đầy đủ 24/7,365 ngày trong vòng 4 tiếng",
-        "info-7": "Chỉ áp dụng cho triển khai đám mây (on cloud)",
+        "info-4" : "Trả lời 8 giờ một ngày , 5 ngày một tuần trước ngày làm việc tiếp theo",
+        "info-5" : "Phản hồi 24 giờ một ngày, 7 ngày một tuần trong vòng 4 tiếng.",
+        "info-6" : "Bảo hiểm đầy đủ 24/7, 365 ngày trong vòng 4 tiếng",
+        "info-7" : "Chỉ áp dụng cho triển khai đám mây (on cloud)",
       },
       "technical-architecture": {
         text: "Cấu trúc kĩ thuật",
@@ -522,13 +528,14 @@ export default {
       basic: "Cơ bản",
       standard: "Tiêu chuẩn",
       professional: "Chuyên nghiệp",
-      enterprise: "Enterprise",
+      enterprise: "Mở rộng",
       advanced: "Nâng cao",
       custom: "Tuỳ chỉnh",
       "standard-professional": "Tiêu chuẩn / Chuyên nghiệp",
     },
     article: {
-      content: "Tìm hiểu thêm về các lợi ích khi sử dụng các biện pháp bảo vệ Website",
+      content: "Tìm hiểu thêm về các lợi ích khi sử dụng các biện pháp ",
+      link: "bảo vệ Website"
     },
     custom: {
       pricing: "Giá tuỳ thuộc",
