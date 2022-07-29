@@ -62,7 +62,7 @@ export default {
     }
   },
   "whyUs": {
-    "title": "Why us",
+    "title": "Ưu điểm",
     "intro-1": " Polaris là<span class=\"brand-2\">giải pháp hàng đầu APAC</span> chuyên cung cấp các dịch vụ bảo mật chất lượng tới khách hàng.",
     "intro-2": "Chúng tôi hiểu rằng đôi khi an ninh mạng trở nên quá phức tạp, vì thế chúng tôi luôn tìm cách đơn giản hóa quy trình, <span\n" +
       "            class=\"brand-2\">để bất kỳ ai, ở bất kỳ đâu đều có thể tiếp cận được.</span>",
