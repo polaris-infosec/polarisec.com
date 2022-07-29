@@ -3,7 +3,7 @@
     <div class="row" :class="$style.tableHeader">
       <div :class="$style.headerItem" class="col-sm-3"></div>
       <div :class="$style.headerItem" class="col" v-html="$t('pricing.plans.professional')"></div>
-      <div :class="$style.headerItem" class="col"v-html="$t('pricing.plans.enterprise')"></div>
+      <div :class="$style.headerItem" class="col" v-html="$t('pricing.plans.enterprise')"></div>
     </div>
     <div class="row">
       <div class="col-sm-3"/>
@@ -13,7 +13,7 @@
             <h4 :class="$style.price">${{ type.price }}</h4>
             <div :class="$style.priceDetail">
               <div v-html="$t('pricing.per-domains')"></div>
-              <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
+              <div> {{ isMonthlyType ? $t('pricing.per-month') : $t('pricing.per-year') }}</div>
             </div>
           </div>
           <div v-else :class="$style.customPricing" v-html="$t('pricing.custom.pricing')"></div>

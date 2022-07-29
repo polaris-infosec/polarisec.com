@@ -3,8 +3,8 @@
     <input type="checkbox">
     <div :class="[$style.slider ,$style.round]">
       <span :class="$style.sliderText">
-        <span :class="$style.off" @click="onClick('monthly')">MONTHLY</span>
-        <span :class="$style.on" @click="onClick('yearly')">YEARLY</span>
+        <span :class="$style.off" @click="onClick('monthly')" v-html="$t('pricing.monthly')"></span>
+        <span :class="$style.on" @click="onClick('yearly')" v-html="$t('pricing.yearly')"></span>
       </span>
     </div>
   </label>

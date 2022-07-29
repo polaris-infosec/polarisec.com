@@ -21,10 +21,10 @@
               <div class="col-sm-3">
                 <div class="d-inline-flex align-items-center">
                   <div @click="onChangeType(true)" :class="[$style.selectType, isMonthlyType && $style.active]"
-                       class="mr-1">
-                    Monthly
+                       class="mr-1" v-html="$t('pricing.monthly')">
                   </div>
-                  <div @click="onChangeType(false)" :class="[$style.selectType, !isMonthlyType && $style.active]">
+                  <div @click="onChangeType(false)" :class="[$style.selectType, !isMonthlyType && $style.active]"
+                  class="mr-1" v-html="$t('pricing.yearly')">
                     Yearly
                   </div>
                 </div>
@@ -35,7 +35,7 @@
                     <h4 :class="$style.price">{{ !isNaN(type.price) ? '$' : '' }}{{ type.price }}</h4>
                     <div :class="$style.priceDetail" v-if="!isNaN(type.price)">
                       <div v-html="$t('pricing.per-domains')"></div>
-                      <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
+                      <div> {{ isMonthlyType ? $t('pricing.per-month') : $t('pricing.per-year') }}</div>
                     </div>
                   </div>
                   <p-button :gradient="2"
@@ -288,7 +288,7 @@ export default class PricingOverview extends Vue {
   }
 
   goContact() {
-    this.$router.push({path: '/contact'});
+    return this.$router.push({path: this.localePath('/contact')})
   }
 
   goPolaris() {
@@ -1402,8 +1402,7 @@ export default class PricingOverview extends Vue {
   }
 
   onClick() {
-    this.$router.push({path: '/questions'});
+    return this.$router.push({path: this.localePath('/questions')})
   }
-
 }
 </script>

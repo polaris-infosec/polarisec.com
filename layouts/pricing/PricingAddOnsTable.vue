@@ -22,8 +22,8 @@
             <div v-if="support.price" class="d-inline-flex align-items-start">
               <h4 :class="$style.price">${{ support.price }}</h4>
               <div :class="$style.priceDetail">
-                <div>per {{addon.isPerUser ? 'user' : 'domain' }}</div>
-                <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
+                <div> {{addon.isPerUser ? $t('pricing.per-user') : $t('pricing.per-domains') }}</div>
+                <div> {{ isMonthlyType ? $t('pricing.per-month') : $t('pricing.per-year') }}</div>
               </div>
             </div>
             <div v-else :class="$style.customPricing" v-html="$t('pricing.custom.pricing')"></div>
@@ -131,7 +131,7 @@ export default class PricingAddOnsTable extends Vue {
   }
 
   goContact() {
-    this.$router.push({path: '/contact'});
+    return this.$router.push({path: this.localePath('/contact')})
   }
 
   goPolaris() {
