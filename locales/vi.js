@@ -75,8 +75,11 @@ export default {
     "content-6": "Các tùy chọn và điều khoản thanh toán linh hoạt - hàng tháng hoặc hàng năm, thanh toán qua thẻ hoặc chuyển khoản ngân hàng",
     "content-7": "Dùng thử gói cơ bản miễn phí của Polaris trước khi triển khai.",
     "analytic-1": "Vào năm 2021, các cuộc tấn công vào ứng dụng web tăng <b>800%</b> so với năm 2019.",
+    "source-1":"(Nguồn: CDNetworks)",
     "analytic-2": "Trung bình <b>30.000</b> trang web mới bị tấn công mỗi ngày.",
+    "source-2":"(Nguồn: Forbes)",
     "analytic-3": "<b>73%</b> tin tặc nói rằng các giải pháp bảo mật tường lửa và phần mềm chống vi rút truyền thống hiện đã lỗi thời.",
+    "source-3":"(Nguồn: Thycotic.com)",
     "testimonials": {
       text: "Đánh giá",
       "testimonial-1": {

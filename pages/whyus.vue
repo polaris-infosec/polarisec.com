@@ -80,17 +80,17 @@ export default class WhyUs extends Vue {
     {
       title: '800%',
       text: this.$t('whyUs.analytic-1'),
-      source: '(source: CDNetworks)',
+      source: this.$t('whyUs.source-1'),
     },
     {
       title: '30,000',
       text: this.$t('whyUs.analytic-2'),
-      source: '(source: Forbes)',
+      source: this.$t('whyUs.source-2'),
     },
     {
       title: '73%',
       text: this.$t('whyUs.analytic-3'),
-      source: '(source: Thycotic.com)',
+      source: this.$t('whyUs.source-3'),
     },
   ]
 

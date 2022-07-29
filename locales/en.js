@@ -88,8 +88,11 @@ export default {
     "content-6": "Flexible payment options and terms - monthly or annual, pay via card or bank transfer",
     "content-7": "Try our free version for as long as you like before deciding on any upgrade",
     "analytic-1": "In 2021, Web Application attacks are up <b>800%</b>.",
+    "source-1":"(source: CDNetworks)",
     "analytic-2": "On average, <b>30,000</b> new websites are hacked a day.",
+    "source-2":"(source: Forbes)",
     "analytic-3": "<b>73%</b> of black hat hackers say traditional firewall and antivirus security solutions are now obsolete.",
+    "source-3":"(source: Thycotic.com)",
     "testimonials": {
       text: "Testimonials",
       "testimonial-1": {
