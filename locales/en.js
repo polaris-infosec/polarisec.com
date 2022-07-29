@@ -317,6 +317,8 @@ export default {
     title: "Web Protection Plans",
     content: "Try Polaris free - forever",
     consultation: "Request a Consultation",
+    pricing: "Pricing",
+    "billing-cycle": "Billing cycle",
     "polaris-for-enterprises": {
       title: "Polaris for Enterprises",
       content: "Need enterprise-grade scalability, security, and support - contact our sales team"
@@ -332,6 +334,7 @@ export default {
     "per-year": "per year",
     "per-user": "per user",
     "contact-us": "Contact us",
+    "contact-sales": "Contact Sales",
     "question": "Need help with choosing a package?",
     "question-break": "Get a personalized recommendation",
     "question-1": "Answer 3 easy Questions",
