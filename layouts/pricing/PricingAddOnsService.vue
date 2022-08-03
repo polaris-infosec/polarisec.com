@@ -177,7 +177,7 @@ export default class PricingAddOnsService extends Vue {
     return [
       {
         type: this.$t('pricing.plans.professional').toString(),
-        price: this.isMonthlyType ? 17 : 167,
+        price: this.isMonthlyType ? 17 : 183,
       },
       {
         type: this.$t('pricing.plans.enterprise').toString(),

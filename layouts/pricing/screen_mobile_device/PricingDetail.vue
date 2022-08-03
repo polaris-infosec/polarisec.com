@@ -98,11 +98,11 @@ export default class PricingDetail extends Vue {
         addOnsFeatures: [
           {
             title: this.$t('pricing.add-ons.option-2').toString(),
-            price: this.isMonthly ? 87 : 835
+            price: this.isMonthly ? 87 : 940
           },
           {
             title: this.$t('pricing.add-ons.option-3').toString(),
-            price: this.isMonthly ? 4 : 42
+            price: this.isMonthly ? 4 : 43
           },
 
         ]
@@ -112,13 +112,13 @@ export default class PricingDetail extends Vue {
         addOnsFeatures: [
           {
             title: this.$t('pricing.add-ons.option-1').toString(),
-            price: this.isMonthly ? 17 : 167
+            price: this.isMonthly ? 17 : 183
           }, {
             title: this.$t('pricing.add-ons.option-2').toString(),
-            price: this.isMonthly ? 87 : 835
+            price: this.isMonthly ? 87 : 940
           }, {
             title: this.$t('pricing.add-ons.option-3').toString(),
-            price: this.isMonthly ? 4 : 42
+            price: this.isMonthly ? 4 : 43
           },
         ]
       },
@@ -130,10 +130,10 @@ export default class PricingDetail extends Vue {
             price: 0
           }, {
             title: this.$t('pricing.add-ons.option-2').toString(),
-            price: this.isMonthly ? 87 : 835
+            price: this.isMonthly ? 87 : 940
           }, {
             title: this.$t('pricing.add-ons.option-3').toString(),
-            price: this.isMonthly ? 4 : 42
+            price: this.isMonthly ? 4 : 43
           },
         ]
       }
@@ -149,27 +149,27 @@ export default class PricingDetail extends Vue {
           {
             title: this.$t('pricing.pricing-detail.app-security.text').toString(),
             subFeatures: [
-              this.$t('pricing.pricing-detail.app-security.sub-option-1').toString(),              
-              this.$t('pricing.pricing-detail.app-security.sub-option-2').toString(),              
-              this.$t('pricing.pricing-detail.app-security.sub-option-3').toString(),             
-              this.$t('pricing.pricing-detail.app-security.sub-option-4').toString(),              
-              this.$t('pricing.pricing-detail.app-security.sub-option-7').toString(),             
-              this.$t('pricing.pricing-detail.app-security.sub-option-10').toString(), 
+              this.$t('pricing.pricing-detail.app-security.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-2').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-3').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-4').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-7').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-10').toString(),
           ]},
           {
             title: this.$t('pricing.pricing-detail.bot-management.text').toString(),
             subFeatures: [
-              this.$t('pricing.pricing-detail.bot-management.sub-option-1').toString(),              
-              this.$t('pricing.pricing-detail.bot-management.sub-option-3').toString(),              
+              this.$t('pricing.pricing-detail.bot-management.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.bot-management.sub-option-3').toString(),
             ]
           },
           {
             title: this.$t('pricing.pricing-detail.small-business-expertise.text').toString(),
             subFeatures: [
-              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-1').toString(), 
-              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-2').toString(),            
-              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-3').toString(),              
-              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-4').toString(),              
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-2').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-3').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-4').toString(),
             ]
           },
           {
@@ -198,24 +198,24 @@ export default class PricingDetail extends Vue {
       },
       {
         title: this.$t('pricing.plans.standard').toString(),
-        price: this.isMonthly ? 17 : 163,
+        price: this.isMonthly ? 17 : 187,
         features: [
           {
             title: this.$t('pricing.pricing-detail.app-security.text').toString(),
             subFeatures: [
-              this.$t('pricing.pricing-detail.app-security.sub-option-1').toString(),              
-              this.$t('pricing.pricing-detail.app-security.sub-option-2').toString(),              
+              this.$t('pricing.pricing-detail.app-security.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-2').toString(),
               this.$t('pricing.pricing-detail.app-security.sub-option-3').toString() + '<span class="brand-2"> 5</span>',
-              this.$t('pricing.pricing-detail.app-security.sub-option-4').toString(),              
-              this.$t('pricing.pricing-detail.app-security.sub-option-7').toString(),             
+              this.$t('pricing.pricing-detail.app-security.sub-option-4').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-7').toString(),
               this.$t('pricing.pricing-detail.app-security.sub-option-10').toString(),
             ]
           },
           {
             title: this.$t('pricing.pricing-detail.bot-management.text').toString(),
             subFeatures: [
-              this.$t('pricing.pricing-detail.bot-management.sub-option-1').toString(),              
-              this.$t('pricing.pricing-detail.bot-management.sub-option-3').toString(),              
+              this.$t('pricing.pricing-detail.bot-management.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.bot-management.sub-option-3').toString(),
             ]
           },
           {
@@ -227,10 +227,10 @@ export default class PricingDetail extends Vue {
           {
             title: this.$t('pricing.pricing-detail.small-business-expertise.text').toString(),
             subFeatures: [
-              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-1').toString(), 
-              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-2').toString(),            
-              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-3').toString(),              
-              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-4').toString(),      
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-2').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-3').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-4').toString(),
             ]
           },
           {
@@ -251,16 +251,16 @@ export default class PricingDetail extends Vue {
           {
             title: this.$t('pricing.pricing-detail.service-level-agreement.text').toString(),
             subFeatures: [
-              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-3').toString(),   
+              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-3').toString(),
               this.$t('pricing.pricing-detail.service-level-agreement.sub-option-4').toString(),
-              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-7').toString(),            
+              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-7').toString(),
               ]
           },
           {
             title: this.$t('pricing.pricing-detail.technical-architecture.text').toString(),
             subFeatures: [
               this.$t('pricing.pricing-detail.technical-architecture.sub-option-1').toString(),
-              this.$t('pricing.pricing-detail.technical-architecture.sub-option-4').toString()+'<p class="my-0">(Paid Add-on)</p>',                   
+              this.$t('pricing.pricing-detail.technical-architecture.sub-option-4').toString()+'<p class="my-0">(Paid Add-on)</p>',
               this.$t('pricing.pricing-detail.technical-architecture.sub-option-5').toString()+'<p class="my-0">(Paid Add-on)</p>',
             ]
           },
@@ -279,23 +279,23 @@ export default class PricingDetail extends Vue {
           {
             title: this.$t('pricing.pricing-detail.app-security.text').toString(),
             subFeatures: [
-              this.$t('pricing.pricing-detail.app-security.sub-option-1').toString(),              
-              this.$t('pricing.pricing-detail.app-security.sub-option-2').toString(),              
+              this.$t('pricing.pricing-detail.app-security.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-2').toString(),
               this.$t('pricing.pricing-detail.app-security.sub-option-3').toString()+ '<span class="brand-2"> 5</span>',
-              this.$t('pricing.pricing-detail.app-security.sub-option-4').toString(),  
-              this.$t('pricing.pricing-detail.app-security.sub-option-5').toString(),              
-              this.$t('pricing.pricing-detail.app-security.sub-option-6').toString(),              
-              this.$t('pricing.pricing-detail.app-security.sub-option-7').toString(),               
-              this.$t('pricing.pricing-detail.app-security.sub-option-8').toString(),              
-              this.$t('pricing.pricing-detail.app-security.sub-option-9').toString(),              
+              this.$t('pricing.pricing-detail.app-security.sub-option-4').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-5').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-6').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-7').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-8').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-9').toString(),
               this.$t('pricing.pricing-detail.app-security.sub-option-10').toString(),
             ]
           },
           {
             title: this.$t('pricing.pricing-detail.bot-management.text').toString(),
             subFeatures: [
-              this.$t('pricing.pricing-detail.bot-management.sub-option-1').toString(),              
-              this.$t('pricing.pricing-detail.bot-management.sub-option-3').toString(),          
+              this.$t('pricing.pricing-detail.bot-management.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.bot-management.sub-option-3').toString(),
             ]
           },
           {
@@ -307,11 +307,11 @@ export default class PricingDetail extends Vue {
           {
             title: this.$t('pricing.pricing-detail.small-business-expertise.text').toString(),
             subFeatures: [
-              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-1').toString(), 
-              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-2').toString(),            
-              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-3').toString(),              
-              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-4').toString(), 
-              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-5').toString(), 
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-2').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-3').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-4').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-5').toString(),
 
             ]
           },
@@ -320,7 +320,7 @@ export default class PricingDetail extends Vue {
             subFeatures: [
               this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-1').toString(),
               this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-2').toString(),
-              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-3').toString(),              
+              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-3').toString(),
               this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-4').toString(),
               this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-5').toString(),
               this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-6').toString(),
@@ -337,18 +337,18 @@ export default class PricingDetail extends Vue {
             title: this.$t('pricing.pricing-detail.service-level-agreement.text').toString(),
             subFeatures: [
               this.$t('pricing.pricing-detail.service-level-agreement.sub-option-2').toString(),
-              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-3').toString(),   
+              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-3').toString(),
               this.$t('pricing.pricing-detail.service-level-agreement.sub-option-4').toString(),
               this.$t('pricing.pricing-detail.service-level-agreement.sub-option-5').toString(),
-              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-7').toString(),            
-            
+              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-7').toString(),
+
             ]
           },
           {
             title: this.$t('pricing.pricing-detail.technical-architecture.text').toString(),
             subFeatures: [
               this.$t('pricing.pricing-detail.technical-architecture.sub-option-1').toString(),
-              this.$t('pricing.pricing-detail.technical-architecture.sub-option-4').toString()+'<p class="my-0">(Paid Add-on)</p>',                   
+              this.$t('pricing.pricing-detail.technical-architecture.sub-option-4').toString()+'<p class="my-0">(Paid Add-on)</p>',
               this.$t('pricing.pricing-detail.technical-architecture.sub-option-5').toString()+'<p class="my-0">(Paid Add-on)</p>',
             ]
           },
