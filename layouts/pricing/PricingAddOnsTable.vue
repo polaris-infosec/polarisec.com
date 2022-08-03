@@ -160,7 +160,7 @@ export default class PricingAddOnsTable extends Vue {
           {
             isSupport: true,
             isInclude: false,
-            price: this.isMonthlyType ? 17 : 167,
+            price: this.isMonthlyType ? 17 : 183,
             button_text: this.$t('pricing.custom.selectPlan').toString(),
             action: () => this.goPolaris(),
           },
@@ -186,14 +186,14 @@ export default class PricingAddOnsTable extends Vue {
           {
             isSupport: true,
             isInclude: false,
-            price: this.isMonthlyType ? 87 : 835,
+            price: this.isMonthlyType ? 87 : 940,
             button_text: this.$t('pricing.custom.selectPlan').toString(),
             action: () => this.goPolaris(),
           },
           {
             isSupport: true,
             isInclude: false,
-            price: this.isMonthlyType ? 87 : 835,
+            price: this.isMonthlyType ? 87 : 940,
             button_text: this.$t('pricing.custom.selectPlan').toString(),
             action: () => this.goPolaris(),
           },
@@ -220,14 +220,14 @@ export default class PricingAddOnsTable extends Vue {
           {
             isSupport: true,
             isInclude: false,
-            price: this.isMonthlyType ? 4 : 42,
+            price: this.isMonthlyType ? 4 : 43,
             button_text: this.$t('pricing.custom.selectPlan').toString(),
             action: () => this.goPolaris(),
           },
           {
             isSupport: true,
             isInclude: false,
-            price: this.isMonthlyType ? 4 : 42,
+            price: this.isMonthlyType ? 4 : 43,
             button_text: this.$t('pricing.custom.selectPlan').toString(),
             action: () => this.goPolaris(),
           },

@@ -268,13 +268,13 @@ export default class PricingOverview extends Vue {
       },
       {
         type: this.$t('pricing.plans.standard').toString(),
-        price: this.isMonthlyType ? 17 : 163,
+        price: this.isMonthlyType ? 17 : 187,
         button_text: this.$t('pricing.custom.selectPlan').toString(),
         action: () => this.goPolaris(),
       },
       {
         type: this.$t('pricing.plans.professional').toString(),
-        price: this.isMonthlyType ? 185 : 1776,
+        price: this.isMonthlyType ? 185 : 1998,
         button_text: this.$t('pricing.custom.selectPlan').toString(),
         action: () => this.goPolaris(),
       },
