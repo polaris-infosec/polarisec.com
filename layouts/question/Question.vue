@@ -1,8 +1,8 @@
 <template>
   <div :class="$style.panel">
-    <p class="body-2">Question {{ step }} of 3</p>
+    <p class="body-2">{{this.$t('question.text')}} {{ step }} {{this.$t('question.text-1')}} 3 </p>
     <h5 class="fw-800 pt-4">{{ step }}. {{ question }}</h5>
-    <p class="body-2">Please select one</p>
+    <p class="body-2" v-html="$t('question.sub-text')"></p>
     <div class="d-flex flex-wrap mb-5" style="max-width: 802px">
       <div :class="[$style.answerBox, answer === item && $style.isSelect]" v-for="item in answers" :key="item"
            @click="selectAnswer(item)">
@@ -10,12 +10,12 @@
       </div>
     </div>
     <p-button
-      :text="(step === 3) ? 'Submit': 'Next'"
+      :text="(step === 3) ? this.$t('question.submit'): this.$t('question.next')"
       :class="$style.button"
       @click="nextStep(step)"/>
 
     <div @click="previousStep" v-if="step > 1" :class="$style.previous">
-      <p class="mt-4 text-center text-7"><- Previous</p>
+      <p class="mt-4 text-center text-7"><- {{this.$t('question.previous')}} </p>
     </div>
   </div>
 </template>
@@ -104,7 +104,7 @@ export default class Questions extends Vue {
     }
 
     if (Number(this.step) === 3) {
-      this.$router.replace('/recommendation');
+      this.$router.replace(this.localePath('/recommendation'));
       return;
     }
 

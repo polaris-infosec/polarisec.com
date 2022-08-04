@@ -453,7 +453,7 @@ export default {
       },
     },
     "add-ons": {
-      title: "Add-ons",
+      title: "Add-Ons",
       content: "Value added services allow you to further customize and enhance your web application protection capabilities.",
       "option-1": "Managed Security Services",
       "option-2": "Threat Intelligence",
@@ -594,6 +594,48 @@ export default {
       "option-3": "Sales Support",
       "option-4": "Other",
     }
+  },
+
+  question: {
+    introduction: "Some quick  questions for personalized recommendations",
+    "skip-question": "Skip question and see all plans",
+    text: "Question ",
+    "text-1": "of ",
+    "sub-text": "Please select one",
+    next: "Next",
+    previous: "Previous",
+    submit: "Submit",
+    "question-1": {
+        content: "How many domains (webpages) does your organization manage?",
+        "option-1": "Just 1",
+        "option-2": "2-5",
+        "option-3": "I have a lot!",
+    },
+    "question-2": {
+      content: "Do you have your own IT team?",
+      "option-1": "Yep.",
+      "option-2": "No, but maybe one day...",
+      "option-3": "What's an IT team?",
+    },
+    "question-3": {
+      content: "How critical is your website to your operations?",
+      "option-1": "It's mostly personal",
+      "option-2": "It's important for business operations",
+      "option-3": "It's mostly for infomation and promotion",
+      "option-4": "It's absolutely vital to my business operations",
+    }
+  },
+  recommendation: {
+    title: "Here’s your personalized recommendation",
+    "sub-title": "Based on the type of website you have and your needs, we recommend the following plan and add-ons.",
+    "start-over": "Start-over",
+    plan: "Recommended Plan",
+    "sub-text": "Advanced features and dedicated support.",
+    "add-ons": "ADD-ONS AND PRODUCT RECOMMENDATIONS",
+    "learn-more": "Learn more",
+    "add-on": "Enterprise - Managed Security Services - Zero Trust",
+    "professional-add-on": "Managed Security Services - Zero Trust",
+
   },
 
 }

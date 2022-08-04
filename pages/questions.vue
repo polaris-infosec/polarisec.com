@@ -46,23 +46,23 @@ import QuestionMobileScreen from "~/layouts/question/QuestionMobileScreen.vue";
 export default class Questions extends Vue {
   step: number = 1;
   question1: any = {
-    question: 'How many domains (webpages) does your organization manage?',
+    question: this.$t('question.question-1.content').toString(),
     answers: [
-      'Just 1', '2-5', 'I have a lot!'
+      this.$t('question.question-1.option-1'), this.$t('question.question-1.option-2'), this.$t('question.question-1.option-3')
     ]
   }
 
   question2: any = {
-    question: 'Do you have your own IT team?',
+    question: this.$t('question.question-2.content').toString(),
     answers: [
-      'Yep.', 'No, but maybe one day...', 'What’s an IT team?'
+      this.$t('question.question-2.option-1'), this.$t('question.question-2.option-2'), this.$t('question.question-2.option-3')
     ]
   }
 
   question3: any = {
-    question: 'How critical is your website to your operations?',
+    question: this.$t('question.question-3.content').toString(),
     answers: [
-      'It’s mostly personal', 'It’s mostly for information and promotions', 'It’s important for business operations', 'It’s absolutely vital to my business operations'
+      this.$t('question.question-3.option-1'), this.$t('question.question-3.option-2'), this.$t('question.question-3.option-3'), this.$t('question.question-3.option-4')
     ]
   }
 
