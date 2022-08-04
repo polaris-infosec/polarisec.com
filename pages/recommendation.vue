@@ -6,13 +6,12 @@
     <div v-else>
       <div :class="$style.introPanel">
         <div class="app-width " :class="$style.introSection">
-          <h2 class="text-lg-left m-lg-0">Here’s your personalized recommendation</h2>
-          <p class="text-6 pb-4 mt-4">
-            Based on the type of website you have and your needs, we recommend the following plan and add-ons.
+          <h2 class="text-lg-left m-lg-0" v-html="$t('recommendation.title')"></h2>
+          <p class="text-6 pb-4 mt-4" v-html="$t('recommendation.sub-title')">
           </p>
-          <nuxt-link to="/questions">
+          <nuxt-link :to="localePath('/questions')">
             <p :class="$style.action" class="brand-2 mt-3">
-              Start over ->
+              {{this.$t('recommendation.start-over')}} ->
             </p>
           </nuxt-link>
         </div>
@@ -21,25 +20,21 @@
       <div :class="$style.recommendedPlanPanel">
         <div class="app-width d-flex" :class="$style.recommendedPlanSection">
           <div class="col-3 mr-5">
-            <p class="text-6">
-              Recommended Plan
+            <p class="text-6" v-html="$t('recommendation.plan')">
             </p>
             <div class="mb-4 mt-4 divide"></div>
             <p class="text-8 pt-2">
-              {{ planLeftAttribute }} <span v-if="planRightAttribute">+</span> {{ planRightAttribute }}
+              {{ planLeftAttribute }} <span v-if="planRightAttribute"> + </span> {{ planRightAttribute }}
             </p>
-            <p class="text-6 pb-3">
-              Advanced features and dedicated support.
+            <p class="text-6 pb-3" v-html="$t('recommendation.sub-text')" >
             </p>
             <div class="mb-4 mt-4 divide"></div>
-            <h5 class="fw-800">
-              Contact sales
+            <h5 class="fw-800" v-html="$t('pricing.contact-sales')">
             </h5>
-            <p-button class="col-12 mt-5" :gradient="2" text="Contact sales" @click="onClick"/>
+            <p-button class="col-12 mt-5" :gradient="2" :text=" this.$t('pricing.contact-sales')" @click="onClick"/>
           </div>
-          <div v-if="planRightAttribute === 'Add-On'" class="col-5 ml-5">
-            <p class="text-6 pb-3">
-              ADD-ONS AND PRODUCT RECOMMENDATIONS
+          <div v-if="planRightAttribute === (this.$t('pricing.add-ons.title'))" class="col-5 ml-5">
+            <p class="text-6 pb-3" v-html="$t('recommendation.add-ons')">
             </p>
             <div :class="$style.box">
               <p class="body-1 font-weight-bold">
@@ -47,7 +42,7 @@
               </p>
               <nuxt-link to="/web-protection">
                 <p class="brand-2" :class="$style.action">
-                  Learn more ->
+                  {{this.$t('recommendation.learn-more')}} ->
                 </p>
               </nuxt-link>
             </div>
@@ -115,44 +110,44 @@ export default class Recommendation extends Vue {
     const question3 = localStorage.getItem('question3');
 
     if (!question1 || !question2 || !question3) {
-      return this.$router.push({path: '/questions'})
+      return this.$router.push({path: this.localePath('/questions')})
     }
 
     this.recommendation(question1, question2, question3);
   }
 
   recommendation(question1: string, question2: string, question3: string) {
-    if (question1 === 'I have a lot!') {
-      this.planLeftAttribute = 'Enterprise';
-      this.planRightAttribute = 'Add-On';
-      this.addOn = 'Enterprise - Managed Security Services - Zero Trust'
+    if (question1 === this.$t('question.question-1.option-3').toString() ){
+      this.planLeftAttribute = this.$t('pricing.plans.enterprise').toString();
+      this.planRightAttribute = this.$t('pricing.add-ons.title').toString();
+      this.addOn = this.$t('recommendation.add-on').toString();
     } else {
       switch (question3) {
-        case 'It’s mostly personal':
-          this.planLeftAttribute = 'Basic';
+        case this.$t('question.question-3.option-1').toString():
+          this.planLeftAttribute = this.$t('pricing.plans.basic').toString();
           break;
-        case 'It’s mostly for information and promotions':
-          this.planLeftAttribute = 'Standard';
+        case this.$t('question.question-3.option-3').toString():
+          this.planLeftAttribute = this.$t('pricing.plans.standard').toString();
           break;
-        case 'It’s important for business operations':
-          this.planLeftAttribute = 'Professional';
+        case this.$t('question.question-3.option-2').toString():
+          this.planLeftAttribute = this.$t('pricing.plans.professional').toString();
           break;
-        case 'It’s absolutely vital to my business operations':
-          this.planLeftAttribute = 'Enterprise';
+        case this.$t('question.question-3.option-4').toString():
+          this.planLeftAttribute = this.$t('pricing.plans.enterprise').toString();
           break;
       }
 
-      if (question2 === 'No, but maybe one day...' || question2 === 'What’s an IT team?') {
-        this.planRightAttribute = 'Add-On';
+      if (question2 === this.$t('question.question-2.option-2').toString()  || question2 === this.$t('question.question-2.option-3').toString() ) {
+        this.planRightAttribute = this.$t('pricing.add-ons.title').toString();
         switch (this.planLeftAttribute) {
-          case 'Enterprise':
-            this.addOn = 'Managed Security Services';
+          case this.$t('pricing.plans.enterprise'):
+            this.addOn = this.$t('pricing.managed-security-services-add-on.title').toString();
             break;
-          case 'Standard':
-            this.addOn = 'Zero Trust';
+          case this.$t('pricing.plans.standard'):
+            this.addOn = this.$t('pricing.zero-trust-access-add-on.title').toString();
             break;
-          case 'Professional':
-            this.addOn = 'Managed Security Services - Zero Trust';
+          case this.$t('pricing.plans.professional'):
+            this.addOn = this.$t('pricing.managed-security-services-add-on.title').toString() ;
             break;
           default:
             this.planRightAttribute = '';

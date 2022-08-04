@@ -88,7 +88,7 @@ export default class PricingDetail extends Vue {
   }
 
   goToQuestions(){
-    return this.$router.push({path:'/questions'})
+    return this.$router.push({path: this.localePath('/questions')})
   }
 
   get listAddOns() {

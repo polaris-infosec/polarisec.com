@@ -1,8 +1,8 @@
 <template>
   <b-row class="mx-0 justify-content-center">
-    <p class="mt-3 body-2">Question {{ question.number }} of 3</p>
+    <p class="mt-3 body-2">{{this.$t('question.text')}} {{ question.number }} {{this.$t('question.text-1')}} 3</p>
     <p class="mt-3 mb-2 body-1 font-weight-bold">{{ question.number + '. ' + question.text }}</p>
-    <p class="caption-2">Please select one</p>
+    <p class="caption-2" v-html="$t('question.sub-text')"></p>
     <b-col cols="12" class="body-2 mt-3 text-left" :class="[$style.answerBox, answer === answerSelect && isSelect]"
            v-for="answer in question.answers"
            :key="answer"
