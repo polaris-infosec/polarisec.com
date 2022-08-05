@@ -2,7 +2,7 @@
   <div :class="$style.panel">
     <p :class="$style.introduction" v-html="$t('question.introduction')">
     </p>
-    <nuxt-link to="/web-protection">
+    <nuxt-link :to="localePath('/web-protection')">
     <p class="brand-2 mt-5 pt-3" :class="$style.action">
       {{this.$t('question.skip-question')}} ->
     </p>
