@@ -606,7 +606,7 @@ export default {
     },
   },
   recommendation: {
-    title: "Đây là đề xuất của chúng tôi dành cho bạn:",
+    title: "Đây là đề xuất của chúng tôi dành cho bạn",
     "sub-title": "Dựa trên thông tin về website và nhu cầu sử dụng của bạn, chúng tôi đề xuất gói dịch vụ kèm tiện ích bổ sung sau:",
     "start-over": "Bắt đầu lại",
     plan: "Các gói được đề xuất",
