@@ -45,24 +45,24 @@ import QuestionMobileScreen from "~/layouts/question/QuestionMobileScreen.vue";
 })
 export default class Questions extends Vue {
   step: number = 1;
-  question1: any = {
-    question: this.$t('question.question-1.content').toString(),
+  question1 = {
+    question: 'question.question-1.content',
     answers: [
-      this.$t('question.question-1.option-1'), this.$t('question.question-1.option-2'), this.$t('question.question-1.option-3')
+      'question.question-1.option-1', 'question.question-1.option-2', 'question.question-1.option-3'
     ]
   }
 
-  question2: any = {
-    question: this.$t('question.question-2.content').toString(),
+  question2 = {
+    question: 'question.question-2.content',
     answers: [
-      this.$t('question.question-2.option-1'), this.$t('question.question-2.option-2'), this.$t('question.question-2.option-3')
+      'question.question-2.option-1', 'question.question-2.option-2', 'question.question-2.option-3'
     ]
   }
 
-  question3: any = {
-    question: this.$t('question.question-3.content').toString(),
+  question3 = {
+    question: 'question.question-3.content',
     answers: [
-      this.$t('question.question-3.option-1'), this.$t('question.question-3.option-2'), this.$t('question.question-3.option-3'), this.$t('question.question-3.option-4')
+      'question.question-3.option-1', 'question.question-3.option-2', 'question.question-3.option-3', 'question.question-3.option-4'
     ]
   }
 

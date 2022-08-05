@@ -1,12 +1,12 @@
 <template>
   <div :class="$style.panel">
     <p class="body-2">{{this.$t('question.text')}} {{ step }} {{this.$t('question.text-1')}} 3 </p>
-    <h5 class="fw-800 pt-4">{{ step }}. {{ question }}</h5>
+    <h5 class="fw-800 pt-4">{{ step }}. {{ $t(question) }}</h5>
     <p class="body-2" v-html="$t('question.sub-text')"></p>
     <div class="d-flex flex-wrap mb-5" style="max-width: 802px">
       <div :class="[$style.answerBox, answer === item && $style.isSelect]" v-for="item in answers" :key="item"
            @click="selectAnswer(item)">
-        <span>{{ item }}</span>
+        <span>{{ $t(item) }}</span>
       </div>
     </div>
     <p-button
@@ -90,18 +90,10 @@ export default class Questions extends Vue {
     if (!this.answer) {
       return;
     }
+    console.log()
 
-    switch (Number(this.step)) {
-      case 1:
-        localStorage.setItem('question1', this.answer);
-        break;
-      case 2:
-        localStorage.setItem('question2', this.answer);
-        break;
-      case 3:
-        localStorage.setItem('question3', this.answer);
-        break;
-    }
+    let key = 'question' + this.step?.toString()
+    localStorage.setItem(key, this.answer);
 
     if (Number(this.step) === 3) {
       this.$router.replace(this.localePath('/recommendation'));

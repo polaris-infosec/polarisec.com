@@ -11,7 +11,7 @@
           </p>
           <nuxt-link :to="localePath('/questions')">
             <p :class="$style.action" class="brand-2 mt-3">
-              {{this.$t('recommendation.start-over')}} ->
+              {{ this.$t('recommendation.start-over') }} ->
             </p>
           </nuxt-link>
         </div>
@@ -26,7 +26,7 @@
             <p class="text-8 pt-2">
               {{ planLeftAttribute }} <span v-if="planRightAttribute"> + </span> {{ planRightAttribute }}
             </p>
-            <p class="text-6 pb-3" v-html="$t('recommendation.sub-text')" >
+            <p class="text-6 pb-3" v-html="$t('recommendation.sub-text')">
             </p>
             <div class="mb-4 mt-4 divide"></div>
             <h5 class="fw-800" v-html="$t('pricing.contact-sales')">
@@ -42,7 +42,7 @@
               </p>
               <nuxt-link to="/web-protection">
                 <p class="brand-2" :class="$style.action">
-                  {{this.$t('recommendation.learn-more')}} ->
+                  {{ this.$t('recommendation.learn-more') }} ->
                 </p>
               </nuxt-link>
             </div>
@@ -117,27 +117,27 @@ export default class Recommendation extends Vue {
   }
 
   recommendation(question1: string, question2: string, question3: string) {
-    if (question1 === this.$t('question.question-1.option-3').toString() ){
+    if (question1 === 'question.question-1.option-3') {
       this.planLeftAttribute = this.$t('pricing.plans.enterprise').toString();
       this.planRightAttribute = this.$t('pricing.add-ons.title').toString();
       this.addOn = this.$t('recommendation.add-on').toString();
     } else {
       switch (question3) {
-        case this.$t('question.question-3.option-1').toString():
+        case 'question.question-3.option-1':
           this.planLeftAttribute = this.$t('pricing.plans.basic').toString();
           break;
-        case this.$t('question.question-3.option-3').toString():
+        case 'question.question-3.option-3':
           this.planLeftAttribute = this.$t('pricing.plans.standard').toString();
           break;
-        case this.$t('question.question-3.option-2').toString():
+        case 'question.question-3.option-2':
           this.planLeftAttribute = this.$t('pricing.plans.professional').toString();
           break;
-        case this.$t('question.question-3.option-4').toString():
+        case 'question.question-3.option-4':
           this.planLeftAttribute = this.$t('pricing.plans.enterprise').toString();
           break;
       }
 
-      if (question2 === this.$t('question.question-2.option-2').toString()  || question2 === this.$t('question.question-2.option-3').toString() ) {
+      if (question2 === 'question.question-2.option-2' || question2 === 'question.question-2.option-3') {
         this.planRightAttribute = this.$t('pricing.add-ons.title').toString();
         switch (this.planLeftAttribute) {
           case this.$t('pricing.plans.enterprise'):
@@ -147,7 +147,7 @@ export default class Recommendation extends Vue {
             this.addOn = this.$t('pricing.zero-trust-access-add-on.title').toString();
             break;
           case this.$t('pricing.plans.professional'):
-            this.addOn = this.$t('pricing.managed-security-services-add-on.title').toString() ;
+            this.addOn = this.$t('pricing.managed-security-services-add-on.title').toString();
             break;
           default:
             this.planRightAttribute = '';
