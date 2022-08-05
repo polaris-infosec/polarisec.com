@@ -574,8 +574,48 @@ export default {
       "option-2": "Hỗ trợ kỹ thuật",
       "option-3": "Hỗ trợ bán hàng",
       "option-4": "Khác",
-    }
+    },
   },
+  question: {
+    introduction: "Vài câu hỏi nhanh để chúng tôi có thể đưa ra đề xuất cho bạn",
+    "skip-question": "Bỏ qua và xem tất cả các gói",
+    text: "Câu ",
+    "text-1": "trong ",
+    "sub-text": "Hãy chọn 1 câu trả lời",
+    next: "Câu tiếp theo",
+    previous: "Trở về câu trước",
+    submit: "Hoàn tất",
+    "question-1": {
+        content: "Tổ chức của bạn có bao nhiêu miền(trang web)?",
+        "option-1": "Chỉ 1",
+        "option-2": "2-5",
+        "option-3": "Chúng tôi có rất nhiều",
+    },
+    "question-2": {
+      content: "Bạn có một đội IT riêng không?",
+      "option-1": "Có.",
+      "option-2": "Giờ thì chưa, nhưng có lẽ trong tương lai...",
+      "option-3": "Đội IT là cái gì vậy nhỉ?",
+    },
+    "question-3": {
+      content: "Trang web của bạn có độ quan trọng thế nào đối với hoạt động của công ty?",
+      "option-1": "Chủ yếu là dành mục đích cá nhân",
+      "option-2": "Nó quan trọng với những hoạt động của tổ chức chúng tôi ",
+      "option-3": "Chủ yếu là để quảng bá và thông tin tới khách hàng",
+      "option-4": "Nó là phần không thể thiếu với hoạt động của tổ chức chúng tôi",
+    },
+  },
+  recommendation: {
+    title: "Đây là đề xuất của chúng tôi dành cho bạn",
+    "sub-title": "Dựa trên thông tin về website và nhu cầu sử dụng của bạn, chúng tôi đề xuất gói dịch vụ kèm tiện ích bổ sung sau:",
+    "start-over": "Bắt đầu lại",
+    plan: "Các gói được đề xuất",
+    "sub-text": "Các tính năng nâng cao và đội ngũ hỗ trợ tận tâm.",
+    "add-ons": "NHỮNG TÍNH NĂNG VÀ SẢN PHẨM NÂNG CAO ĐƯỢC ĐỀ XUẤT ",
+    "learn-more": "Tìm hiểu thêm",
+    "add-on": "Mở rộng - Dịch vụ quản lí và tiện ích an toàn thông tin - Zero Trust",
+    "professional-add-on": "Dịch vụ quản lí và tiện ích an toàn thông tin - Zero Trust",
 
+  },
 }
 
