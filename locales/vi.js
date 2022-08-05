@@ -559,7 +559,7 @@ export default {
     country: "Quốc gia",
     message: "Lời nhắn *",
     topic: {
-      text: "Yêu Cầu",
+      text: "Yêu Cầu *",
       "option-1": {
         text: "Đang bị tấn công - khẩn cấp",
         "sub-option-1": "Tấn công từ chối dịch vụ phân tán (DDoS)",

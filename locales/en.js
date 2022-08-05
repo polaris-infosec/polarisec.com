@@ -578,7 +578,7 @@ export default {
     country: "Your Country",
     message: "Your Message *",
     topic: {
-      text: "Topic",
+      text: "Topic *",
       "option-1": {
         text: "Cyber Attack Emergency",
         "sub-option-1": "DDos attack",
