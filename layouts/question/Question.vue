@@ -90,7 +90,6 @@ export default class Questions extends Vue {
     if (!this.answer) {
       return;
     }
-    console.log()
 
     let key = 'question' + this.step?.toString()
     localStorage.setItem(key, this.answer);
