@@ -1,8 +1,8 @@
 <template>
-  <b-row class="mx-0 p-0" style="background-color: black">
-    <b-navbar :class="$style.navigationBar" class="body-2" toggleable="xl" type="dark" variant="dark">
-      <b-navbar-brand class="mr-5">
-        <nuxt-link :to="localePath('/home')">
+  <b-row class="mx-0 justify-content-between p-0" style="background-color: black">
+    <b-navbar :class="$style.navigationBar" class="flex-grow-1" toggleable="xl" type="dark" variant="dark">
+      <b-navbar-brand class="mr-4 pr-4">
+        <nuxt-link to="/home">
           <img src="@/assets/images/polaris-logo.png" class="d-inline-block align-baseline mt-2" alt="Kitten"
                height="24"
                width="140">
