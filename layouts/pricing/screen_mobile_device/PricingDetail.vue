@@ -2,19 +2,16 @@
   <div :class="$style.container">
     <div :class="$style.section" class="app-width">
       <b-row class="mx-0 flex-column align-items-center text-center">
-        <p class="body-1 col-7 p-0 my-0">Need help with choosing a package?
-          Get a personalized recommendation</p>
-        <p-button class="col-7 mt-4" :gradient="2" text="Answer 3 Easy Questions" @click="goToQuestions()" :show-icon="false"/>
+        <p class="body-1 col-7 p-0 my-0" v-html="$t('pricing.question')"></p>
+        <p-button class="col-7 mt-4" :gradient="2" v-html="$t('pricing.question-1')" @click="goToQuestions()" :show-icon="false"/>
       </b-row>
 
       <div :class="$style.divide" class="flex-grow-1 mt-5 mb-5"></div>
 
       <b-row class="mx-0 justify-content-between align-items-center mb-4">
-        <p class="col-6 my-0 p-0 body-2 font-weight-bold">
-          Save 20% with our
-          Yearly payment plan
+        <p class="col-6 my-0 p-0 body-2 font-weight-bold" v-html="$t('pricing.pricing-detail.content')">
         </p>
-        <p-toggle-button :is-monthly="isMonthly" :is-yearly="isYearly"/>
+        <p-toggle-button :is-monthly="$t('pricing.monthly')" :is-yearly="$t('pricing.yearly')"/>
       </b-row>
       <carousel
         :nav="false"
@@ -29,7 +26,7 @@
         <b-col cols="12" class="p-0 " v-for="pricing in listPricing" :key="pricing.title">
           <pricing-table class="mb-3" :is-monthly="isMonthly" :pricing="pricing"
                          style="border-radius: 10px"/>
-          <p-button class="col-12 mt-2" text="Select Plan" :show-icon="false" @click="onClick()"/>
+          <p-button class="col-12 mt-2" v-html="$t('pricing.custom.selectPlan')" :show-icon="false" @click="onClick()"/>
         </b-col>
       </carousel>
             <carousel
@@ -91,52 +88,52 @@ export default class PricingDetail extends Vue {
   }
 
   goToQuestions(){
-    return this.$router.push({path:'/questions'})
+    return this.$router.push({path: this.localePath('/questions')})
   }
 
   get listAddOns() {
     return [
       {
-        title: 'Standard',
+        title: this.$t('pricing.plans.standard').toString(),
         addOnsFeatures: [
           {
-            title: 'Threat Intelligence',
-            price: this.isMonthly ? 87 : 835
+            title: this.$t('pricing.add-ons.option-2').toString(),
+            price: this.isMonthly ? 87 : 940
           },
           {
-            title: 'Zero Trust Access',
-            price: this.isMonthly ? 4 : 42
+            title: this.$t('pricing.add-ons.option-3').toString(),
+            price: this.isMonthly ? 4 : 43
           },
 
         ]
       },
       {
-        title: 'Professional',
+        title: this.$t('pricing.plans.professional').toString(),
         addOnsFeatures: [
           {
-            title: 'Professional - Managed Security Services',
-            price: this.isMonthly ? 17 : 167
+            title: this.$t('pricing.add-ons.option-1').toString(),
+            price: this.isMonthly ? 17 : 183
           }, {
-            title: 'Threat Intelligence',
-            price: this.isMonthly ? 87 : 835
+            title: this.$t('pricing.add-ons.option-2').toString(),
+            price: this.isMonthly ? 87 : 940
           }, {
-            title: 'Zero Trust Access',
-            price: this.isMonthly ? 4 : 42
+            title: this.$t('pricing.add-ons.option-3').toString(),
+            price: this.isMonthly ? 4 : 43
           },
         ]
       },
       {
-        title: 'Enterprise',
+        title: this.$t('pricing.plans.enterprise').toString(),
         addOnsFeatures: [
           {
-            title: 'Custom Pricing',
+            title: this.$t('pricing.custom.pricing').toString(),
             price: 0
           }, {
-            title: 'Threat Intelligence',
-            price: this.isMonthly ? 87 : 835
+            title: this.$t('pricing.add-ons.option-2').toString(),
+            price: this.isMonthly ? 87 : 940
           }, {
-            title: 'Zero Trust Access',
-            price: this.isMonthly ? 4 : 42
+            title: this.$t('pricing.add-ons.option-3').toString(),
+            price: this.isMonthly ? 4 : 43
           },
         ]
       }
@@ -146,213 +143,213 @@ export default class PricingDetail extends Vue {
   get listPricing() {
     return [
       {
-        title: 'Basic',
+        title: this.$t('pricing.plans.basic').toString(),
         price: 0,
         features: [
           {
-            title: 'App Security',
+            title: this.$t('pricing.pricing-detail.app-security.text').toString(),
             subFeatures: [
-              'IP Geolocation',
-              'IP Blacklist/Whitelist',
-              'Custom Rules',
-              'OWASP Top 10 Attack Protection',
-              'Static Content Caching',
-              'HTTP/2',
+              this.$t('pricing.pricing-detail.app-security.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-2').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-3').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-4').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-7').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-10').toString(),
+          ]},
+          {
+            title: this.$t('pricing.pricing-detail.bot-management.text').toString(),
+            subFeatures: [
+              this.$t('pricing.pricing-detail.bot-management.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.bot-management.sub-option-3').toString(),
             ]
           },
           {
-            title: 'BOT Management',
+            title: this.$t('pricing.pricing-detail.small-business-expertise.text').toString(),
             subFeatures: [
-              'Anti-bot protection',
-              'Whitelist Good Bots',
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-2').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-3').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-4').toString(),
             ]
           },
           {
-            title: 'Small Business Expertise',
+            title: this.$t('pricing.pricing-detail.management-monitoring-reporting.text').toString(),
             subFeatures: [
-              'CNAME support',
-              'DNS Management',
-              'DNSSEC',
-              'SSL Auto-generation',
+              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-6').toString(),
+              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-8').toString(),
+
             ]
           },
           {
-            title: 'Management - Monitoring Reporting',
+            title: this.$t('pricing.pricing-detail.scalability-and-geographic-presence.text').toString(),
             subFeatures: [
-              'Reporting',
-              'Email/ Browser Alert Notifications',
-              'Audit Logs'
+              this.$t('pricing.pricing-detail.scalability-and-geographic-presence.sub-option-3').toString(),
+
             ]
           },
           {
-            title: 'Scalability & Geographic Presence',
+            title: this.$t('pricing.pricing-detail.technical-architecture.text').toString(),
             subFeatures: [
-              'Regional PoPs',
-            ]
-          },
-          {
-            title: 'Technical Architecture',
-            subFeatures: [
-              'Cloud Deployment',
+              this.$t('pricing.pricing-detail.technical-architecture.sub-option-1').toString(),
             ]
           },
         ]
       },
       {
-        title: 'Standard',
-        price: this.isMonthly ? 17 : 163,
+        title: this.$t('pricing.plans.standard').toString(),
+        price: this.isMonthly ? 17 : 187,
         features: [
           {
-            title: 'App Security',
+            title: this.$t('pricing.pricing-detail.app-security.text').toString(),
             subFeatures: [
-              'IP Geolocation',
-              'IP Blacklist/Whitelist',
-              `Custom Rules <span class="brand-2">5</span>`,
-              'OWASP Top 10 Attack Protection',
-              'Static Content Caching',
-              'HTTP/2',
+              this.$t('pricing.pricing-detail.app-security.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-2').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-3').toString() + '<span class="brand-2"> 5</span>',
+              this.$t('pricing.pricing-detail.app-security.sub-option-4').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-7').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-10').toString(),
             ]
           },
           {
-            title: 'BOT Management',
+            title: this.$t('pricing.pricing-detail.bot-management.text').toString(),
             subFeatures: [
-              'Anti-bot protection',
-              'Whitelist Good Bots',
+              this.$t('pricing.pricing-detail.bot-management.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.bot-management.sub-option-3').toString(),
             ]
           },
           {
-            title: 'DDoS',
+            title: this.$t('pricing.pricing-detail.ddos.text').toString(),
             subFeatures: [
-              `DDoS Mitigation (L7 & L3/4)<p class="my-0 brand-2">Up to 1.5Gbps</p>`,
+              this.$t('pricing.pricing-detail.ddos.sub-option-1')+ '<p class="my-0 brand-2">Ups to 1.5Gbps</p>',
             ]
           },
           {
-            title: 'Small Business Expertise',
+            title: this.$t('pricing.pricing-detail.small-business-expertise.text').toString(),
             subFeatures: [
-              'CNAME support',
-              'DNS Management',
-              'DNSSEC',
-              'SSL Auto-generation',
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-2').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-3').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-4').toString(),
             ]
           },
           {
-            title: 'Management - Monitoring Reporting',
+            title: this.$t('pricing.pricing-detail.management-monitoring-reporting.text').toString(),
             subFeatures: [
-              'Reporting',
-              'Multi - User Management',
-              'Email/ Browser Alert Notifications',
-              'Audit Logs'
+              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-4').toString(),
+              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-6').toString(),
+              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-8').toString(),
             ]
           },
           {
-            title: 'Scalability & Geographic Presence',
+            title: this.$t('pricing.pricing-detail.scalability-and-geographic-presence.text').toString(),
             subFeatures: [
-              'Regional PoPs',
+              this.$t('pricing.pricing-detail.scalability-and-geographic-presence.sub-option-3').toString(),
             ]
           },
           {
-            title: 'Service Level Agreement',
+            title: this.$t('pricing.pricing-detail.service-level-agreement.text').toString(),
             subFeatures: [
-              'Email',
-              '8 x 5 x Next Business Day',
-              '99.99% Uptime'
-            ]
+              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-3').toString(),
+              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-4').toString(),
+              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-7').toString(),
+              ]
           },
           {
-            title: 'Technical Architecture',
+            title: this.$t('pricing.pricing-detail.technical-architecture.text').toString(),
             subFeatures: [
-              'Cloud Deployment',
-              `Threat Intelligence<p class="my-0">(Paid Add-on)</p>`,
-              `Zero Trust Access<p class="my-0">(Paid Add-on)</p>`,
+              this.$t('pricing.pricing-detail.technical-architecture.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.technical-architecture.sub-option-4').toString()+'<p class="my-0">(Paid Add-on)</p>',
+              this.$t('pricing.pricing-detail.technical-architecture.sub-option-5').toString()+'<p class="my-0">(Paid Add-on)</p>',
             ]
           },
         ]
       },
       {
-        title: 'Professional',
+        title: this.$t('pricing.plans.professional').toString(),
         price: this.isMonthly ? 185 : 1176,
         features: [
           {
-            title: 'API Security',
+            title: this.$t('pricing.pricing-detail.API-security.text').toString(),
             subFeatures: [
-              `API Specification <p class="my-0">Protection <span class="brand-2">5</span></p>`,
+              this.$t('pricing.pricing-detail.API-security.sub-option-1').toString() + '<span class="brand-2"> 5</span>',
             ]
           },
           {
-            title: 'App Security',
+            title: this.$t('pricing.pricing-detail.app-security.text').toString(),
             subFeatures: [
-              'IP Geolocation',
-              'IP Blacklist/Whitelist',
-              `Custom Rules <span class="brand-2">5</span>`,
-              'OWASP Top 10 Attack Protection',
-              'New Attack Vectors - Zero Day',
-              'NDay Rules - \n' +
-              'Application Rules',
-              'Static Content Caching',
-              'Security Header / \n' +
-              'CORS Policy',
-              'CSP Header',
-              'HTTP/2',
+              this.$t('pricing.pricing-detail.app-security.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-2').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-3').toString()+ '<span class="brand-2"> 5</span>',
+              this.$t('pricing.pricing-detail.app-security.sub-option-4').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-5').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-6').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-7').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-8').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-9').toString(),
+              this.$t('pricing.pricing-detail.app-security.sub-option-10').toString(),
             ]
           },
           {
-            title: 'BOT Management',
+            title: this.$t('pricing.pricing-detail.bot-management.text').toString(),
             subFeatures: [
-              'Anti-bot protection',
-              'Whitelist Good Bots',
+              this.$t('pricing.pricing-detail.bot-management.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.bot-management.sub-option-3').toString(),
             ]
           },
           {
             title: 'DDoS',
             subFeatures: [
-              `DDoS Mitigation (L7 & L3/4)<p class="my-0 brand-2">Up to 1.5Gbps</p>`,
+              this.$t('pricing.pricing-detail.ddos.sub-option-1')+ '<p class="my-0 brand-2">Ups to 7.5Gbps</p>',
             ]
           },
           {
-            title: 'Small Business Expertise',
+            title: this.$t('pricing.pricing-detail.small-business-expertise.text').toString(),
             subFeatures: [
-              'CNAME support',
-              'DNS Management',
-              'DNSSEC',
-              'SSL Auto-generation',
-              'Custom SSL',
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-2').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-3').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-4').toString(),
+              this.$t('pricing.pricing-detail.small-business-expertise.sub-option-5').toString(),
+
             ]
           },
           {
-            title: 'Management - Monitoring Reporting',
+            title: this.$t('pricing.pricing-detail.management-monitoring-reporting.text').toString(),
             subFeatures: [
-              'Reporting',
-              'Polaris API Access',
-              'Realtime Dashboard',
-              'Multi - User Management',
-              'Incident Management\n' +
-              'Ticket System',
-              'Email/ Browser Alert Notifications',
-              'Audit Logs',
+              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-2').toString(),
+              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-3').toString(),
+              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-4').toString(),
+              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-5').toString(),
+              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-6').toString(),
+              this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-8').toString(),
             ]
           },
           {
-            title: 'Scalability & Geographic Presence',
+           title: this.$t('pricing.pricing-detail.scalability-and-geographic-presence.text').toString(),
             subFeatures: [
-              'Regional PoPs',
+              this.$t('pricing.pricing-detail.scalability-and-geographic-presence.sub-option-3').toString(),
             ]
           },
           {
-            title: 'Service Level Agreement',
+            title: this.$t('pricing.pricing-detail.service-level-agreement.text').toString(),
             subFeatures: [
-              'Chat',
-              'Email',
-              '8 x 5 x Next Business Day',
-              '24 x 7 x 4',
-              '99.99% Uptime',
+              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-2').toString(),
+              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-3').toString(),
+              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-4').toString(),
+              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-5').toString(),
+              this.$t('pricing.pricing-detail.service-level-agreement.sub-option-7').toString(),
+
             ]
           },
           {
-            title: 'Technical Architecture',
+            title: this.$t('pricing.pricing-detail.technical-architecture.text').toString(),
             subFeatures: [
-              'Cloud Deployment',
-              `Threat Intelligence<p class="my-0">(Paid Add-on)</p>`,
-              `Zero Trust Access<p class="my-0">(Paid Add-on)</p>`,
+              this.$t('pricing.pricing-detail.technical-architecture.sub-option-1').toString(),
+              this.$t('pricing.pricing-detail.technical-architecture.sub-option-4').toString()+'<p class="my-0">(Paid Add-on)</p>',
+              this.$t('pricing.pricing-detail.technical-architecture.sub-option-5').toString()+'<p class="my-0">(Paid Add-on)</p>',
             ]
           },
         ]

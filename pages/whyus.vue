@@ -7,12 +7,9 @@
         </div>
         <div class="d-flex justify-content-between mt-lg-5 col-12 p-0 row mx-0">
           <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1 mb-3 pb-1" v-html="$t('whyUs.intro-1')">
-
           </div>
-
           <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1 mb-3 pb-1" v-html="$t('whyUs.intro-2')">
           </div>
-
           <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1" v-html="$t('whyUs.intro-3')">
           </div>
         </div>
@@ -21,9 +18,9 @@
 
         <b-row class="justify-content-lg-center mx-0 body-1 flex-wrap text-left mb-lg-0 mb-5">
           <b-col v-for="item in serviceContent" :key="item.icon"
-                 class="d-flex flex-wrap justify-content-between mx-0 pr-lg-5 mt-5" cols="12" lg="4">
+                 class="pr-lg-5 mt-5" cols="12" lg="4">
             <b-col class="p-0 mt-2 mt-lg-0" lg="12" cols="2">
-              <img :src="item.icon" alt="Kitten" height="48" width="48">
+              <img :src="item.icon" height="48" width="48">
             </b-col>
             <b-col class="mt-lg-2 mt-lg-3 pt-lg-1 p-0 pl-2 pl-lg-0" lg="12" cols=10>
               {{ item.text }}
@@ -83,17 +80,17 @@ export default class WhyUs extends Vue {
     {
       title: '800%',
       text: this.$t('whyUs.analytic-1'),
-      source: '(source: CDNetworks)',
+      source: this.$t('whyUs.source-1'),
     },
     {
       title: '30,000',
       text: this.$t('whyUs.analytic-2'),
-      source: '(source: Forbes)',
+      source: this.$t('whyUs.source-2'),
     },
     {
       title: '73%',
       text: this.$t('whyUs.analytic-3'),
-      source: '(source: Thycotic.com)',
+      source: this.$t('whyUs.source-3'),
     },
   ]
 

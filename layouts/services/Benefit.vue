@@ -3,7 +3,7 @@
     <b-col
       class="d-flex p-0 m-0 flex-column col-lg-8 col-12 order-1 order-lg-0 text-lg-left text-center">
       <h3 class="p-0 m-0 brand-2 mb-4">
-        Benefits
+        {{$t('services.PCI-DSS.benefits.text')}}
       </h3>
       <ul :class="$style.content" class="body-1 m-0 p-0 pl-lg-4" style="max-width: 680px">
         <li v-for="item in benefits" :key="item" class="mb-2 pb-1">

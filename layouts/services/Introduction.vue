@@ -13,7 +13,7 @@
 
       <p class="p-0 m-0 mt-2 body-1" v-html="introduction.content" style="max-width: 670px">
       </p>
-      <p-button class="mt-5" text="Request a Consultation" @click="onClick()"/>
+      <p-button class="mt-5" :text="$t('button-group.button-1')" @click="onClick()"/>
     </b-col>
     <b-col
       class="col-lg-4 col-12 mx-0 p-0 pt-4 mb-4 mt-lg-0 justify-content-center justify-content-lg-end d-flex order-0 order-lg-1">
@@ -55,7 +55,7 @@ export default class Introduction extends Vue {
   @Prop() introduction: IItroduction;
 
   onClick() {
-    this.$router.push({path: '/contact'});
+    this.$router.push({path: this.localePath('/contact')});
   }
 }
 </script>

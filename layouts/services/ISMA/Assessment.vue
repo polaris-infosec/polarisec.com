@@ -54,7 +54,7 @@ import PButton from "~/components/PButton.vue";
 })
 export default class Assessment extends Vue {
   onClick() {
-    this.$router.push({path: '/contact'});
+    this.$router.push({path: this.localePath('/contact')});
   }
 }
 </script>

@@ -1,8 +1,12 @@
 <template>
   <div>
-    <features-comparison-table title="Detection & Protection" :features="featuresDetectionAndProtection"/>
-    <features-comparison-table class="mt-5" title="Monitoring & Reporting" :features="featuresMonitoringAndReporting"/>
-    <features-comparison-table class="mt-5" title="Service" :features="featuresService"/>
+    <features-comparison-table :title="$t('whyUs.feature-comparison.detect-and-protection.text').toString()"
+                               :features="featuresDetectionAndProtection"/>
+    <features-comparison-table class="mt-5"
+                               :title="$t('whyUs.feature-comparison.monitoring-and-reporting.text').toString()"
+                               :features="featuresMonitoringAndReporting"/>
+    <features-comparison-table class="mt-5" :title="$t('whyUs.feature-comparison.service.text').toString()"
+                               :features="featuresService"/>
   </div>
 </template>
 <style module lang="stylus">
@@ -20,7 +24,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
 
   featuresDetectionAndProtection: IFeature [] = [
     {
-      title: 'Artificial Intelligence & Machine Learning',
+      title: this.$t('whyUs.feature-comparison.detect-and-protection.option-1').toString(),
       support: [
         {
           comp: 'Polaris',
@@ -41,7 +45,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
       ]
     },
     {
-      title: 'DDoS Layers 3/4',
+      title: this.$t('whyUs.feature-comparison.detect-and-protection.option-2').toString(),
       support: [
         {
           comp: 'Polaris',
@@ -62,7 +66,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
       ]
     },
     {
-      title: 'DDoS Layers 7',
+      title: this.$t('whyUs.feature-comparison.detect-and-protection.option-3').toString(),
       support: [
         {
           comp: 'Polaris',
@@ -83,7 +87,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
       ]
     },
     {
-      title: 'OWASP Top 10',
+      title: this.$t('whyUs.feature-comparison.detect-and-protection.option-4').toString(),
       support: [
         {
           comp: 'Polaris',
@@ -104,7 +108,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
       ]
     },
     {
-      title: 'Bot Mitigation',
+      title: this.$t('whyUs.feature-comparison.detect-and-protection.option-5').toString(),
       support: [
         {
           comp: 'Polaris',
@@ -125,7 +129,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
       ]
     },
     {
-      title: 'Custom Security Rules',
+      title: this.$t('whyUs.feature-comparison.detect-and-protection.option-6').toString(),
       support: [
         {
           comp: 'Polaris',
@@ -146,7 +150,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
       ]
     },
     {
-      title: 'Server Vulnerability Scans',
+      title: this.$t('whyUs.feature-comparison.detect-and-protection.option-7').toString(),
       support: [
         {
           comp: 'Polaris',
@@ -167,7 +171,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
       ]
     },
     {
-      title: 'API Security',
+      title: this.$t('whyUs.feature-comparison.detect-and-protection.option-8').toString(),
       support: [
         {
           comp: 'Polaris',
@@ -188,49 +192,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
       ]
     },
     {
-      title: 'Zero Trust Access',
-      support: [
-        {
-          comp: 'Polaris',
-          isSupport: true
-        },
-        {
-          comp: 'CloudFlare',
-          isSupport: 'Add-on'
-        },
-        {
-          comp: 'F5',
-          isSupport: ''
-        },
-        {
-          comp: 'Imperva',
-          isSupport: ''
-        },
-      ]
-    },
-    {
-      title: 'Phishing Scans',
-      support: [
-        {
-          comp: 'Polaris',
-          isSupport: true
-        },
-        {
-          comp: 'CloudFlare',
-          isSupport: ''
-        },
-        {
-          comp: 'F5',
-          isSupport: ''
-        },
-        {
-          comp: 'Imperva',
-          isSupport: true
-        },
-      ]
-    },
-    {
-      title: 'Compromised Credential Checks',
+      title: this.$t('whyUs.feature-comparison.detect-and-protection.option-9').toString(),
       support: [
         {
           comp: 'Polaris',
@@ -242,6 +204,48 @@ export default class FeaturesComparisonDetailsTable extends Vue {
         },
         {
           comp: 'F5',
+          isSupport: ''
+        },
+        {
+          comp: 'Imperva',
+          isSupport: ''
+        },
+      ]
+    },
+    {
+      title: this.$t('whyUs.feature-comparison.detect-and-protection.option-10').toString(),
+      support: [
+        {
+          comp: 'Polaris',
+          isSupport: true
+        },
+        {
+          comp: 'CloudFlare',
+          isSupport: ''
+        },
+        {
+          comp: 'F5',
+          isSupport: ''
+        },
+        {
+          comp: 'Imperva',
+          isSupport: true
+        },
+      ]
+    },
+    {
+      title: this.$t('whyUs.feature-comparison.detect-and-protection.option-11').toString(),
+      support: [
+        {
+          comp: 'Polaris',
+          isSupport: true
+        },
+        {
+          comp: 'CloudFlare',
+          isSupport: 'Add-on'
+        },
+        {
+          comp: 'F5',
           isSupport: 'Add-on'
         },
         {
@@ -251,7 +255,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
       ]
     },
     {
-      title: 'Custom SSL',
+      title: this.$t('whyUs.feature-comparison.detect-and-protection.option-12').toString(),
       support: [
         {
           comp: 'Polaris',
@@ -276,7 +280,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
   featuresMonitoringAndReporting: IFeature [] =
     [
       {
-        title: 'Real Time Attack Reporting',
+        title: this.$t('whyUs.feature-comparison.monitoring-and-reporting.option-1').toString(),
         support: [
           {
             comp: 'Polaris',
@@ -297,7 +301,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
         ]
       },
       {
-        title: 'Attack Analytics',
+        title: this.$t('whyUs.feature-comparison.monitoring-and-reporting.option-2').toString(),
         support: [
           {
             comp: 'Polaris',
@@ -318,7 +322,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
         ]
       },
       {
-        title: 'Attack Correlation & Integration',
+        title: this.$t('whyUs.feature-comparison.monitoring-and-reporting.option-3').toString(),
         support: [
           {
             comp: 'Polaris',
@@ -343,7 +347,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
   featuresService: IFeature [] =
     [
       {
-        title: 'Managed Security',
+        title: this.$t('whyUs.feature-comparison.service.option-1').toString(),
         support: [
           {
             comp: 'Polaris',
@@ -364,7 +368,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
         ]
       },
       {
-        title: 'Service Level Agreements (SLAs)',
+        title: this.$t('whyUs.feature-comparison.service.option-2').toString(),
         support: [
           {
             comp: 'Polaris',
@@ -385,7 +389,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
         ]
       },
       {
-        title: 'Local APAC Support 24x7x365',
+        title: this.$t('whyUs.feature-comparison.service.option-3').toString(),
         support: [
           {
             comp: 'Polaris',
@@ -406,7 +410,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
         ]
       },
       {
-        title: 'Cloud Deployment',
+        title: this.$t('whyUs.feature-comparison.service.option-4').toString(),
         support: [
           {
             comp: 'Polaris',
@@ -427,7 +431,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
         ]
       },
       {
-        title: 'On-Premise Deployment',
+        title: this.$t('whyUs.feature-comparison.service.option-5').toString(),
         support: [
           {
             comp: 'Polaris',
@@ -448,7 +452,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
         ]
       },
       {
-        title: 'Mainland China Access',
+        title: this.$t('whyUs.feature-comparison.service.option-6').toString(),
         support: [
           {
             comp: 'Polaris',

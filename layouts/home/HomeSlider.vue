@@ -4,7 +4,7 @@
       <div class="app-width">
         <b-row class="mx-0 justify-content-center text-center align-items-center black-text"
                :class="$style.sliderContainer">
-          <h2 class="my-0 mb-4 pb-3">{{$t('home.featureBy')}}</h2>
+          <h2 class="my-0 mb-4 pb-3">{{ $t('home.featureBy') }}</h2>
           <carousel
             :class="$style.slider"
             autoplay
@@ -36,8 +36,8 @@
       <div class="app-width" :class="$style.seeItSection">
         <b-row class="mx-0 justify-content-center justify-content-lg-start" :class="$style.seeItContainer">
           <b-col class="p-0 text-lg-left text-center align-items-center" lg="6" cols="12">
-            <h2 class="my-0 h4-sm text-lg-left">{{$t('home.see-it-in-action.title')}}</h2>
-            <h5 :class="$style.actionText">{{$t('home.see-it-in-action.content')}}
+            <h2 class="my-0 h4-sm text-lg-left">{{ $t('home.see-it-in-action.title') }}</h2>
+            <h5 :class="$style.actionText">{{ $t('home.see-it-in-action.content') }}
             </h5>
             <p-button :text="$t('button-group.button-1')" @click="onClick"/>
           </b-col>
@@ -187,7 +187,7 @@ export default class HomeSlider extends Vue {
   }
 
   onClick() {
-    this.$router.push({path: '/contact'});
+    this.$router.push({path: this.localePath('/contact')});
   }
 
 }

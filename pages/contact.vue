@@ -2,54 +2,58 @@
   <div :class="$style.contactMain">
     <div :class="$style.contactSection" class="app-width text-lg-left text-center">
       <div class="pb-4">
-        <h1>Get help</h1>
+        <h1>{{ $t('contact.title') }}</h1>
       </div>
       <div class="pt-1">
         <p class="text-6">
-          Reach out to us for more, whether you're suffering from a cyber attack or require more information from our
-          team.
+          {{ $t('contact.content') }}
         </p>
       </div>
       <b-row class="mx-0 align-items-center justify-content-lg-start justify-content-center mb-2">
         <img src="@/assets/icons/phone.png" width="24" height="24">
         <span :class="$style.phoneNumber" class="ml-1">
-          (+84) 28 7101 7755
+          {{ $t('contact.phone-number') }}
         </span>
       </b-row>
       <div class="pl-3 mt-4" :class="$style.form">
         <b-form @submit="onSubmit">
           <b-row>
             <b-col lg="4" cols="12" class="p-0 mr-3">
-              <b-form-input v-model="name" placeholder="Your Name *" required class="input-normal"></b-form-input>
-            </b-col>
-            <b-col lg="4" cols="12" class="p-0 mr-3">
-              <b-form-input v-model="website" required placeholder="Your Website *" class="input-normal"></b-form-input>
-            </b-col>
-          </b-row>
-          <b-row>
-            <b-col lg="4" cols="12" class="p-0 mr-3">
-              <b-form-input v-model="email" placeholder="Your Email *" type="email" required
+              <b-form-input v-model="name" :placeholder="$t('contact.name')" required
                             class="input-normal"></b-form-input>
             </b-col>
             <b-col lg="4" cols="12" class="p-0 mr-3">
-              <b-form-input v-model="phone" placeholder="Your Phone *" required class="input-normal"></b-form-input>
+              <b-form-input v-model="website" required :placeholder="$t('contact.website')"
+                            class="input-normal"></b-form-input>
             </b-col>
           </b-row>
           <b-row>
             <b-col lg="4" cols="12" class="p-0 mr-3">
-              <b-form-input v-model="company" placeholder="Your Company *" required class="input-normal"></b-form-input>
+              <b-form-input v-model="email" :placeholder="$t('contact.email')" type="email" required
+                            class="input-normal"></b-form-input>
             </b-col>
             <b-col lg="4" cols="12" class="p-0 mr-3">
-              <b-form-input v-model="role" placeholder="Your Role *" required class="input-normal"></b-form-input>
+              <b-form-input v-model="phone" :placeholder="$t('contact.phone')" required
+                            class="input-normal"></b-form-input>
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col lg="4" cols="12" class="p-0 mr-3">
+              <b-form-input v-model="company" :placeholder="$t('contact.company')" required
+                            class="input-normal"></b-form-input>
+            </b-col>
+            <b-col lg="4" cols="12" class="p-0 mr-3">
+              <b-form-input v-model="role" :placeholder="$t('contact.role')" required
+                            class="input-normal"></b-form-input>
             </b-col>
           </b-row>
           <b-row>
             <b-col lg="4" cols="12" class="p-0 mr-3">
               <p-select class="mb-3 input-normal" :item-select="itemSelect" :options="topicOptions"
-                        place-holder="Topic *"/>
+                        :placeHolder="$t('contact.topic.text').toString()"/>
             </b-col>
             <b-col lg="4" cols="12" class="p-0 mr-3">
-              <b-form-input v-model="country" placeholder="Your Country" class="input-normal"></b-form-input>
+              <b-form-input v-model="country" :placeholder="$t('contact.country')" class="input-normal"></b-form-input>
             </b-col>
           </b-row>
           <b-row>
@@ -58,7 +62,7 @@
                 id="textarea"
                 v-model="message"
                 required
-                placeholder="Your Message *"
+                :placeholder="$t('contact.message')"
                 rows="3"
                 max-rows="6"
                 class="input-normal col-lg-11 col-12"
@@ -69,7 +73,7 @@
           <b-row class="mt-5">
             <p-button class="col-12" style="max-width: 840px" :class="$style.sendMessageBtn" :show-icon="false"
                       type="submit"
-                      text="Get help"></p-button>
+                      :text="$t('button-group.button-2')"></p-button>
           </b-row>
         </b-form>
       </div>
@@ -212,41 +216,44 @@ export default class Contact extends Vue {
   get topicOptions() {
     return [
       {
-        content: 'Cyber Attack Emergency',
+        content: this.$t('contact.topic.option-1.text'),
         isSelect: false,
         subOptions: [
           {
-            content: 'DDos attack',
+            content: this.$t('contact.topic.option-1.sub-option-1'),
             isSelect: false,
           },
           {
-            content: 'Ransomeware attack',
+            content: this.$t('contact.topic.option-1.sub-option-2'),
             isSelect: false,
           }, {
-            content: 'Network or Firewall attack',
+            content: this.$t('contact.topic.option-1.sub-option-3'),
             isSelect: false,
           }, {
-            content: 'Web or Application acttack',
+            content: this.$t('contact.topic.option-1.sub-option-4'),
             isSelect: false,
           }, {
-            content: 'DNS hijacking or On path attack',
+            content: this.$t('contact.topic.option-1.sub-option-5'),
             isSelect: false,
           }, {
-            content: 'Cloud resource attack',
+            content: this.$t('contact.topic.option-1.sub-option-6'),
             isSelect: false,
           }, {
-            content: 'Note sure? We’ll help you assess',
+            content: this.$t('contact.topic.option-1.sub-option-7'),
+            isSelect: false,
+          }, {
+            content: this.$t('contact.topic.option-1.sub-option-8'),
             isSelect: false,
           },
         ]
       }, {
-        content: 'Technical Support',
+        content: this.$t('contact.topic.option-2'),
         isSelect: false,
       }, {
-        content: 'Sales Support',
+        content: this.$t('contact.topic.option-3'),
         isSelect: false,
       }, {
-        content: 'Other',
+        content: this.$t('contact.topic.option-4'),
         isSelect: false,
       },
     ]
@@ -275,7 +282,7 @@ export default class Contact extends Vue {
     event.preventDefault();
     if (!this.showButton) return;
 
-    if(!this.topic) {
+    if (!this.topic) {
       this.alert = "Please Select Your Topic";
       this.statusType = 'error';
       this.showAlert();

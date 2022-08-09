@@ -2,8 +2,8 @@
   <div :class="$style.container">
     <div :class="$style.section" class="app-width">
       <b-row class="p-0 m-0 flex-grow-1">
-        <p class="text-8 p-0 m-0 col-7 mb-5">Web Application & API Protection (WAAP)
-           Standard Features Comparison
+        <p class="text-8 p-0 m-0 col-7 mb-5">
+          {{ $t('whyUs.feature-comparison.title') }}
         </p>
         <div class="flex-grow-1 d-flex justify-content-end">
           <b-col :class="$style.partners" class="m-0 d-flex justify-content-between" cols="8">
@@ -36,7 +36,7 @@
 </style>
 <script lang="ts">
 import {Component, Vue} from "nuxt-property-decorator";
-import FeaturesComparisonDetails  from "~/layouts/whyus/FeaturesComparisonDetail.vue";
+import FeaturesComparisonDetails from "~/layouts/whyus/FeaturesComparisonDetail.vue";
 
 @Component({
   components: {FeaturesComparisonDetails}

@@ -2,10 +2,10 @@
   <div :class="$style.addonContainer">
     <div class="row" :class="$style.tableHeader">
       <div :class="$style.headerItem" class="col-sm-3"></div>
-      <div :class="$style.headerItem" class="col">Basic</div>
-      <div :class="$style.headerItem" class="col">Standard</div>
-      <div :class="$style.headerItem" class="col">Professional</div>
-      <div :class="$style.headerItem" class="col">Enterprise</div>
+      <div :class="$style.headerItem" class="col" v-html="$t('pricing.plans.basic')"></div>
+      <div :class="$style.headerItem" class="col" v-html="$t('pricing.plans.standard')"></div>
+      <div :class="$style.headerItem" class="col" v-html="$t('pricing.plans.professional')"></div>
+      <div :class="$style.headerItem" class="col" v-html="$t('pricing.plans.enterprise')"></div>
     </div>
     <template v-for="addon in addOns">
       <div class="row mt-4">
@@ -22,11 +22,11 @@
             <div v-if="support.price" class="d-inline-flex align-items-start">
               <h4 :class="$style.price">${{ support.price }}</h4>
               <div :class="$style.priceDetail">
-                <div>per {{addon.isPerUser ? 'user' : 'domain' }}</div>
-                <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
+                <div> {{addon.isPerUser ? $t('pricing.per-user') : $t('pricing.per-domains') }}</div>
+                <div> {{ isMonthlyType ? $t('pricing.per-month') : $t('pricing.per-year') }}</div>
               </div>
             </div>
-            <div v-else :class="$style.customPricing">Custom Pricing</div>
+            <div v-else :class="$style.customPricing" v-html="$t('pricing.custom.pricing')"></div>
             <p-button :class="$style.btn"
                       :gradient="2"
                       :show-icon="false"
@@ -131,7 +131,7 @@ export default class PricingAddOnsTable extends Vue {
   }
 
   goContact() {
-    this.$router.push({path: '/contact'});
+    return this.$router.push({path: this.localePath('/contact')})
   }
 
   goPolaris() {
@@ -141,13 +141,13 @@ export default class PricingAddOnsTable extends Vue {
   get addOns() {
     return [
       {
-        title: 'Managed Security Services',
+        title: this.$t('pricing.add-ons.option-1').toString(),
         supports: [
           {
             isSupport: false,
             isInclude: false,
             price: '',
-            button_text: 'Select Plan',
+            button_text: this.$t('pricing.custom.selectPlan').toString(),
             action: () => {},
           },
           {
@@ -160,21 +160,21 @@ export default class PricingAddOnsTable extends Vue {
           {
             isSupport: true,
             isInclude: false,
-            price: this.isMonthlyType ? 17 : 167,
-            button_text: 'Select Plan',
+            price: this.isMonthlyType ? 17 : 183,
+            button_text: this.$t('pricing.custom.selectPlan').toString(),
             action: () => this.goPolaris(),
           },
           {
             isSupport: true,
             isInclude: false,
             price: '',
-            button_text: 'Request a Demo',
+            button_text: this.$t('pricing.custom.selectDemo').toString(),
             action: () => this.goContact(),
           },
         ],
       },
       {
-        title: 'Threat Intelligence',
+        title: this.$t('pricing.add-ons.option-2').toString(),
         supports: [
           {
             isSupport: false,
@@ -186,15 +186,15 @@ export default class PricingAddOnsTable extends Vue {
           {
             isSupport: true,
             isInclude: false,
-            price: this.isMonthlyType ? 87 : 835,
-            button_text: 'Select Plan',
+            price: this.isMonthlyType ? 87 : 940,
+            button_text: this.$t('pricing.custom.selectPlan').toString(),
             action: () => this.goPolaris(),
           },
           {
             isSupport: true,
             isInclude: false,
-            price: this.isMonthlyType ? 87 : 835,
-            button_text: 'Select Plan',
+            price: this.isMonthlyType ? 87 : 940,
+            button_text: this.$t('pricing.custom.selectPlan').toString(),
             action: () => this.goPolaris(),
           },
           {
@@ -207,7 +207,7 @@ export default class PricingAddOnsTable extends Vue {
         ],
       },
       {
-        title: 'Zero Trust Access',
+        title: this.$t('pricing.add-ons.option-3').toString(),
         isPerUser: true,
         supports: [
           {
@@ -220,15 +220,15 @@ export default class PricingAddOnsTable extends Vue {
           {
             isSupport: true,
             isInclude: false,
-            price: this.isMonthlyType ? 4 : 42,
-            button_text: 'Select Plan',
+            price: this.isMonthlyType ? 4 : 43,
+            button_text: this.$t('pricing.custom.selectPlan').toString(),
             action: () => this.goPolaris(),
           },
           {
             isSupport: true,
             isInclude: false,
-            price: this.isMonthlyType ? 4 : 42,
-            button_text: 'Select Plan',
+            price: this.isMonthlyType ? 4 : 43,
+            button_text: this.$t('pricing.custom.selectPlan').toString(),
             action: () => this.goPolaris(),
           },
           {

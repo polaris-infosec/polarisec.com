@@ -37,19 +37,18 @@ import {IItroduction} from "~/layouts/services/Introduction.vue";
 })
 export default class GDPRAuditScreen extends Vue {
   benefits: any [] = [
-    'Provides companies with <b>insight into the current status</b> of how they manage confidential information and data',
-    '<b>Identifies key risks</b> across people, processes, and technology for remediation',
-    'Provides a <b>roadmap for improvement</b> across cyber governance, defense, and preparation',
-    'Allows companies to <b>better protect</b> their team members, customers, vendors, and partners',
-    'Displays to customers, partners, and vendors that you meet <b>international compliance standards</b> for managing their data',
-    '<b>Compliance for GDPR standards</b> for business in the EU'
+    this.$t('services.GDPR.benefits.content-1').toString(),
+    this.$t('services.GDPR.benefits.content-2').toString(),
+    this.$t('services.GDPR.benefits.content-3').toString(),
+    this.$t('services.GDPR.benefits.content-4').toString(),
+    this.$t('services.GDPR.benefits.content-5').toString(),
+    this.$t('services.GDPR.benefits.content-6').toString(),
   ]
 
   introduction: IItroduction = {
-    title: 'GDPR Audit',
-    subTitle: 'For businesses that conduct business in the European Union, GDPR Compliance is\n' +
-      '        mandatory.',
-    content: 'The General Data Protection Regulation (GDPR)is a legal framework that serves as a set of guidelines for how personal information should be collected and processed for those who live in the European Union. They outline rights belonging to citizens in the EU and the steps that companies must take when storing and managing confidential data.',
+    title: this.$t('services.GDPR.title').toString(),
+    subTitle: this.$t('services.GDPR.sub-title').toString(),
+    content: this.$t('services.GDPR.content').toString(),
     cert: {image: require('@/assets/images/services/GDPR/gdpr.png'), height: 100},
   }
 }

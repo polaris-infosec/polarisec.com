@@ -2,8 +2,8 @@
   <div :class="$style.addonContainer">
     <div class="row" :class="$style.tableHeader">
       <div :class="$style.headerItem" class="col-sm-3"></div>
-      <div :class="$style.headerItem" class="col">Professional</div>
-      <div :class="$style.headerItem" class="col">Enterprise</div>
+      <div :class="$style.headerItem" class="col" v-html="$t('pricing.plans.professional')"></div>
+      <div :class="$style.headerItem" class="col" v-html="$t('pricing.plans.enterprise')"></div>
     </div>
     <div class="row">
       <div class="col-sm-3"/>
@@ -12,14 +12,14 @@
           <div v-if="!isNaN(type.price)" class="d-inline-flex align-items-center">
             <h4 :class="$style.price">${{ type.price }}</h4>
             <div :class="$style.priceDetail">
-              <div>per domain</div>
-              <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
+              <div v-html="$t('pricing.per-domains')"></div>
+              <div> {{ isMonthlyType ? $t('pricing.per-month') : $t('pricing.per-year') }}</div>
             </div>
           </div>
-          <div v-else :class="$style.customPricing">Custom Pricing</div>
+          <div v-else :class="$style.customPricing" v-html="$t('pricing.custom.pricing')"></div>
           <p-button :gradient="2"
                     :class="$style.btn"
-                    text="Select Plan"
+                    v-html="$t('pricing.custom.selectPlan')"
                     :show-icon="false"
                     @click="onClick"/>
         </div>
@@ -176,12 +176,12 @@ export default class PricingAddOnsService extends Vue {
   get billingCycle() {
     return [
       {
-        type: 'Professional',
-        price: this.isMonthlyType ? 17 : 167,
+        type: this.$t('pricing.plans.professional').toString(),
+        price: this.isMonthlyType ? 17 : 183,
       },
       {
-        type: 'Enterprise',
-        price: 'Custom Pricing',
+        type: this.$t('pricing.plans.enterprise').toString(),
+        price: this.$t('pricing.custom.pricing').toString(),
       },
     ];
   }
@@ -193,11 +193,11 @@ export default class PricingAddOnsService extends Vue {
 
   serviceTypes: any = [
     {
-      title: 'Active Monitoring',
+      title: this.$t('pricing.managed-security-services-add-on.active-monitoring.text').toString(),
       isExpand: true,
       child: [
         {
-          title: '24/7 real-time monitoring by SOC analysts',
+          title: this.$t('pricing.managed-security-services-add-on.active-monitoring.sub-option-1').toString(),
           supports: [
             {
               isSupport: true,
@@ -210,7 +210,7 @@ export default class PricingAddOnsService extends Vue {
           ],
         },
         {
-          title: 'Vulnerability management',
+          title: this.$t('pricing.managed-security-services-add-on.active-monitoring.sub-option-2').toString(),
           supports: [
             {
               isSupport: true,
@@ -223,7 +223,7 @@ export default class PricingAddOnsService extends Vue {
           ],
         },
         {
-          title: 'Customized threat detection',
+          title: this.$t('pricing.managed-security-services-add-on.active-monitoring.sub-option-3').toString(),
           supports: [
             {
               isSupport: false,
@@ -236,7 +236,7 @@ export default class PricingAddOnsService extends Vue {
           ],
         },
         {
-          title: 'Log management',
+          title: this.$t('pricing.managed-security-services-add-on.active-monitoring.sub-option-4').toString(),
           supports: [
             {
               isSupport: true,
@@ -251,11 +251,11 @@ export default class PricingAddOnsService extends Vue {
       ],
     },
     {
-      title: 'False Positives Management',
+      title: this.$t('pricing.managed-security-services-add-on.false-positives-management.text').toString(),
       isExpand: true,
       child: [
         {
-          title: 'Incident validation to filter real threats',
+          title: this.$t('pricing.managed-security-services-add-on.false-positives-management.sub-option-1').toString(),
           supports: [
             {
               isSupport: true,
@@ -268,7 +268,7 @@ export default class PricingAddOnsService extends Vue {
           ],
         },
         {
-          title: 'Selective customer notification',
+          title: this.$t('pricing.managed-security-services-add-on.false-positives-management.sub-option-2').toString(),
           supports: [
             {
               isSupport: true,
@@ -283,11 +283,11 @@ export default class PricingAddOnsService extends Vue {
       ],
     },
     {
-      title: 'Incident Handling',
+      title: this.$t('pricing.managed-security-services-add-on.incident-handling.text').toString(),
       isExpand: true,
       child: [
         {
-          title: 'Automatic response to threats',
+          title: this.$t('pricing.managed-security-services-add-on.incident-handling.sub-option-1').toString(),
           supports: [
             {
               isSupport: true,
@@ -300,20 +300,20 @@ export default class PricingAddOnsService extends Vue {
           ],
         },
         {
-          title: 'Remote containment and eradication of confirmed breaches',
+          title: this.$t('pricing.managed-security-services-add-on.incident-handling.sub-option-2').toString(),
           supports: [
             {
               isSupport: true,
-              info: '1/year',
+              info: this.$t('pricing.year'),
             },
             {
               isSupport: true,
-              info: '2/year',
+              info: this.$t('pricing.year-2'),
             },
           ],
         },
         {
-          title: 'Malware sandbox analysis',
+          title: this.$t('pricing.managed-security-services-add-on.incident-handling.sub-option-3').toString(),
           supports: [
             {
               isSupport: false,
@@ -326,7 +326,7 @@ export default class PricingAddOnsService extends Vue {
           ],
         },
         {
-          title: 'IOC validation',
+          title: this.$t('pricing.managed-security-services-add-on.incident-handling.sub-option-4').toString(),
           supports: [
             {
               isSupport: true,
@@ -339,7 +339,7 @@ export default class PricingAddOnsService extends Vue {
           ],
         },
         {
-          title: 'Custom rule updates based on analysis',
+          title: this.$t('pricing.managed-security-services-add-on.incident-handling.sub-option-5').toString(),
           supports: [
             {
               isSupport: false,
@@ -353,11 +353,11 @@ export default class PricingAddOnsService extends Vue {
         },
       ],
     },{
-      title: 'Summary Reports',
+      title: this.$t('pricing.managed-security-services-add-on.summary-reports.text').toString(),
       isExpand: true,
       child: [
         {
-          title: 'Customized reporting with recommendations for remediation',
+        title: this.$t('pricing.managed-security-services-add-on.summary-reports.sub-option-1').toString(),
           supports: [
             {
               isSupport: true,
@@ -370,7 +370,7 @@ export default class PricingAddOnsService extends Vue {
           ],
         },
         {
-          title: 'Targeted Threat Intelligence reporting',
+        title: this.$t('pricing.managed-security-services-add-on.summary-reports.sub-option-2').toString(),
           supports: [
             {
               isSupport: false,
@@ -385,11 +385,11 @@ export default class PricingAddOnsService extends Vue {
       ],
     },
     {
-      title: 'Trusted Advisory',
+      title: this.$t('pricing.managed-security-services-add-on.trusted-advisory.text').toString(),
       isExpand: true,
       child: [
         {
-          title: 'Dedicated Polaris technical advisor for day-to-day issues',
+        title: this.$t('pricing.managed-security-services-add-on.trusted-advisory.sub-option-1').toString(),
           supports: [
             {
               isSupport: true,
@@ -402,7 +402,7 @@ export default class PricingAddOnsService extends Vue {
           ],
         },
         {
-          title: 'Support for Executive Management meetings',
+        title: this.$t('pricing.managed-security-services-add-on.trusted-advisory.sub-option-2').toString(),
           supports: [
             {
               isSupport: false,
@@ -415,7 +415,7 @@ export default class PricingAddOnsService extends Vue {
           ],
         },
         {
-          title: 'Consultation on implementation of new security devices',
+        title: this.$t('pricing.managed-security-services-add-on.trusted-advisory.sub-option-3').toString(),
           supports: [
             {
               isSupport: false,
@@ -428,15 +428,15 @@ export default class PricingAddOnsService extends Vue {
           ],
         },
         {
-          title: 'Scheduled Consultations',
+        title: this.$t('pricing.managed-security-services-add-on.trusted-advisory.sub-option-4').toString(),
           supports: [
             {
               isSupport: true,
-              info: 'Quarterly',
+              info: this.$t('pricing.quarterly'),
             },
             {
               isSupport: true,
-              info: 'Upon Request',
+              info: this.$t('pricing.upon-request'),
             },
           ],
         },
