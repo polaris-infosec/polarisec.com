@@ -1,6 +1,6 @@
 <template>
   <b-row class="mx-0 p-0" style="background-color: black">
-    <b-navbar :class="$style.navigationBar" class="body-2" toggleable="xl" type="dark" variant="dark">
+    <b-navbar :class="$style.navigationBar" class="body-2 d-flex" toggleable="xl" type="dark" variant="dark">
       <b-navbar-brand class="mr-5">
         <nuxt-link :to="localePath('/home')">
           <img src="@/assets/images/polaris-logo.png" class="d-inline-block align-baseline mt-2" alt="Kitten"
@@ -93,6 +93,10 @@
   font-size 14px !important
   line-height 18px !important
   padding 7px 20px !important
+
+@media only screen and (min-width: 1441px)
+  .navigationBar
+    width 90%
 
 @media only screen and (max-width: 991px)
   .navigationBar
