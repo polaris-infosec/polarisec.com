@@ -385,7 +385,7 @@ export default {
         "sub-option-1": "Anti-bot protection",
         "sub-option-2": "Advanced Bot Management*",
         "sub-option-3": "Whitelist Good Bots",
-        "info-1": "Use hCaptcha to determine whether users are bots or humans",
+        "info-1": "Use Captcha to determine whether users are bots or humans",
         "info-3": "Allow the use of bots that may have legitimate reasons for roaming your site",
       },
       "ddos": {

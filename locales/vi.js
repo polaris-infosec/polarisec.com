@@ -63,7 +63,7 @@ export default {
   },
   "whyUs": {
     "title": "Ưu điểm",
-    "intro-1": " Polaris là<span class=\"brand-2\">giải pháp hàng đầu APAC</span> chuyên cung cấp các dịch vụ bảo mật chất lượng tới khách hàng.",
+    "intro-1": " Polaris là <span class=\"brand-2\">giải pháp hàng đầu APAC</span> chuyên cung cấp các dịch vụ bảo mật chất lượng tới khách hàng.",
     "intro-2": "Chúng tôi hiểu rằng đôi khi an ninh mạng trở nên quá phức tạp, vì thế chúng tôi luôn tìm cách đơn giản hóa quy trình, <span\n" +
       "            class=\"brand-2\">để bất kỳ ai, ở bất kỳ đâu đều có thể tiếp cận được.</span>",
     "intro-3": "Chúng tôi có thể <span class=\"brand-2\">mở rộng quy mô ở mọi cấp độ</span> từ người chưa biết gì về an ninh mạng đến những người dày dạn kinh nghiệm lâu năm, giải quyết các mối quan tâm của các doanh nghiệp nhỏ cũng như các doanh nghiệp lớn.",
@@ -137,7 +137,7 @@ export default {
     content: "Polaris luôn mong muốn sự đồng hành của quý đối tác trong việc cung cấp giải pháp an ninh mạng đến với cộng đồng.",
     "our-joint-mission": {
       title: "Sứ mệnh chung",
-      content: "“Cùng nhau hợp tác để bảo vệ cộng đồng thông qua <span className=\"brand - 2\">việc đào tạo nâng cao nhận thức an ninh mạng.</span>”",
+      content: "“Cùng nhau hợp tác để bảo vệ cộng đồng thông qua <span class=\"brand-2\">việc đào tạo nâng cao nhận thức an ninh mạng.</span>”",
     },
     "program-goal": {
       title: "Mục tiêu",
@@ -185,14 +185,14 @@ export default {
         text: "Quyền lợi khách hàng",
         "content-1": 'Cung cấp cho các doanh nghiệp <b>thông tin chi tiết về hiện trạng</b> quản lý thông tin và bảo mật dữ liệu',
         "content-2": '<b>Xác định các rủi ro thiết yếu</b> về mặt con người, quy trình và công nghệ để khắc phục',
-        "content-3": 'Cung cấp <b>ộ trình cải tiến về</b> quản trị an ninh mạng, hệ thống bảo mật và các sự chuẩn bị cần thiết khác',
+        "content-3": 'Cung cấp <b>độ trình cải tiến về</b> quản trị an ninh mạng, hệ thống bảo mật và các sự chuẩn bị cần thiết khác',
         "content-4": 'Cho phép các công ty <b>bảo vệ tốt hơn</b> các thành viên trong đội ngũ, khách hàng của họ, nhà cung cấp và cả đối tác',
         "content-5": 'Thông báo đến khách hàng, đối tác và nhà cung cấp rằng đơn vị <b>đáp ứng các tiêu chuẩn tuân thủ quốc tế</b> trong việc quản lý dữ liệu',
       }
     },
     "GDPR": {
       title: "Chứng nhận GDPR",
-      "sub-title": "Các doanh nghiệp có hoạt động trong Liên Minh Châu  u (EU) bắt buộc phải tuân thủ tiêu chuẩn GDPR.",
+      "sub-title": "Các doanh nghiệp có hoạt động trong Liên Minh Châu (EU) bắt buộc phải tuân thủ tiêu chuẩn GDPR.",
       content: "Quy định chung về bảo vệ dữ liệu (GDPR) có vai trò hướng dẫn về việc bảo vệ dữ liệu và quyền riêng tư cho các cá nhân sống ở liên minh Châu  u (EU). Quy định này đề ra các quyền lợi thuộc về công dân ở EU và các quy trình mà doanh nghiệp phải thực hiện khi lưu trữ và quản lý dữ liệu cá nhân.",
       "what-we-do": {
         text: "Chúng tôi cung cấp",
@@ -368,7 +368,7 @@ export default {
         "sub-option-1": "Bảo vệ chống BOT",
         "sub-option-2": "Quản lí BOT nâng cao*",
         "sub-option-3": "Whitelist các Bot tốt",
-        "info-1": "Sử dụng hCapcha để xác định người dùng là con người hay Bo",
+        "info-1": "Sử dụng hCapcha để xác định người dùng là con người hay Bot",
         "info-3": "Cho phép sử dụng các bot có lý do để chuyển vùng web",
       },
       "ddos": {
@@ -408,7 +408,7 @@ export default {
         "sub-option-2": "Truy cập từ Trung Quốc đại lục",
         "sub-option-3": "PoPs theo vùng",
         "sub-option-4": "Edge chuyên dụng",
-        "info-1": "Định tuyến lưu lượng truy cập web của người dùng qua máy chủ gần nhất.r",
+        "info-1": "Định tuyến lưu lượng truy cập web của người dùng qua máy chủ gần nhất",
         "info-3": "Sử dụng các máy chủ biên được đặt trên toàn cầu.",
       },
       "service-level-agreement": {
@@ -615,7 +615,6 @@ export default {
     "learn-more": "Tìm hiểu thêm",
     "add-on": "Mở rộng - Dịch vụ quản lí và tiện ích an toàn thông tin - Zero Trust",
     "professional-add-on": "Dịch vụ quản lí và tiện ích an toàn thông tin - Zero Trust",
-
   },
 }
 

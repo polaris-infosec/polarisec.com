@@ -76,7 +76,6 @@ export default class WhatWeDo extends Vue {
     this.$t('services.incident-response.what-we-do.retained-incident-response.content-2').toString(),
     this.$t('services.incident-response.what-we-do.retained-incident-response.content-3').toString(),
     this.$t('services.incident-response.what-we-do.retained-incident-response.content-4').toString(),
-    this.$t('services.incident-response.what-we-do.retained-incident-response.content-5').toString(),
   ]
 
   listInvestigations: string [] = [
