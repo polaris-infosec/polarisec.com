@@ -41,9 +41,9 @@
 
 .boxContent
   position absolute
-  right 10px
+  left 100px
   height 68px
-  width 240px
+  max-width 240px
   bottom 0
 
 @media only screen and (min-width: 992px)
