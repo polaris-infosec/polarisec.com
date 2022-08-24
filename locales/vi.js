@@ -247,7 +247,7 @@ export default {
           "content-3": "Bảo vệ dữ liệu thẻ thanh toán khi lưu trên hệ thống",
           "content-4": "Mã hóa thông tin thẻ trên đường truyền trong quá trình giao dịch",
           "content-5": "Sử dụng và cập nhật thường xuyên phần mềm chống virus",
-          "content-6": "xây dựng – duy trì hệ thống và các ứng dụng đảm bảo an ninh mạng",
+          "content-6": "Xây dựng – duy trì hệ thống và các ứng dụng đảm bảo an ninh mạng",
           "content-7": "Hạn chế việc tiếp cận với dữ liệu thẻ thanh toán",
           "content-8": "Cấp và theo dõi các tài khoản truy nhập vào hệ thống",
           "content-9": "Giới hạn các phương pháp tiếp cận vật lý với dữ liệu thẻ",
