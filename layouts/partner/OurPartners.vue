@@ -139,6 +139,9 @@ export default class ContactSale extends Vue {
       {
         icon: require("@/assets/partners/vnisa.png"),
         path: "https://vnisa.org.vn/",
+      },     {
+        icon: require("@/assets/partners/mstar.png"),
+        path: "https://mstarcorp.vn/",
       },
     ],
   ]
