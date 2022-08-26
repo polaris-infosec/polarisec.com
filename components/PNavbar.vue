@@ -9,32 +9,30 @@
         </nuxt-link>
       </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav :class="$style.rightNavItem">
+      <b-collapse id="nav-collapse" :class="$style.navCollapse" is-nav>
+        <b-navbar-nav :class="$style.navContainer">
           <b-nav-item :class="$style.navBarItem" href="https://polarisec.io/" target="_blank"
                       class="active mr-4 pr-1">
-            Platform
+            {{$t('nav.platform')}}
           </b-nav-item>
-          <b-nav-item-dropdown :class="$style.navBarItem" id="dropdown-1" text="Services" class="mr-4 pr-1 active">
-            <b-dropdown-item :to="localePath('/ISMA')">ISMA</b-dropdown-item>
-            <b-dropdown-item :to="localePath('/ISO-27001')">ISO 27001 Audit
+          <b-nav-item-dropdown :class="$style.navBarItem" id="dropdown-1" :text="$t('nav.services.text')" class="mr-4 pr-1 active">
+            <b-dropdown-item :to="localePath('/ISMA')">{{$t('nav.services.option-1')}}</b-dropdown-item>
+            <b-dropdown-item :to="localePath('/ISO-27001')">{{$t('nav.services.option-2')}}
             </b-dropdown-item>
-            <b-dropdown-item :to="localePath('/GDPR')">GDPR Audit</b-dropdown-item>
-            <b-dropdown-item :to="localePath('/PCI-DSS')">PCI-DSS Audit</b-dropdown-item>
-            <b-dropdown-item :to="localePath('/incident-response')">Incident Response</b-dropdown-item>
+            <b-dropdown-item :to="localePath('/GDPR')">{{$t('nav.services.option-3')}}</b-dropdown-item>
+            <b-dropdown-item :to="localePath('/PCI-DSS')">{{$t('nav.services.option-4')}}</b-dropdown-item>
+            <b-dropdown-item :to="localePath('/incident-response')">{{$t('nav.services.option-5')}}</b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item :class="$style.navBarItem" :to="localePath('/whyus')" class="active mr-4 pr-1">Why us
+          <b-nav-item :class="$style.navBarItem" :to="localePath('/whyus')" class="active mr-4 pr-1">{{$t('nav.why-us')}}
           </b-nav-item>
-          <b-nav-item :class="$style.navBarItem" :to="localePath('/partner')" class="active mr-4 pr-1">Partners
+          <b-nav-item :class="$style.navBarItem" :to="localePath('/partner')" class="active mr-4 pr-1">{{$t('nav.partners')}}
           </b-nav-item>
-          <b-nav-item :class="$style.navBarItem" :to="localePath('/company')" class="active mr-4 pr-1">Company
+          <b-nav-item :class="$style.navBarItem" :to="localePath('/company')" class="active mr-4 pr-1">{{$t('nav.company')}}
           </b-nav-item>
-          <b-nav-item :class="$style.navBarItem" :to="localePath('/web-protection')" class="active mr-4 pr-1">Pricing
+          <b-nav-item :class="$style.navBarItem" :to="localePath('/web-protection')" class="active mr-4 pr-1">{{$t('nav.pricing')}}
           </b-nav-item>
           <b-nav-item :class="$style.navBarItem" href="https://support.polarisec.com/portal/en/home" target="_blank"
-                      class="active mr-4 pr-1">Support
-            Center
+                      class="active mr-4 pr-1">{{$t('nav.support-center')}}
           </b-nav-item>
         </b-navbar-nav>
 
@@ -103,8 +101,11 @@
     width 90% !important
 
 @media only screen and (min-width: 992px)
-  .rightNavItem
-    margin-right 170px
+  .navCollapse
+    min-width 1076px !important
+
+  .navContainer
+    margin-right 140px
 
   .navigationBar
     height 72px !important

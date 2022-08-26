@@ -9,15 +9,39 @@ export default {
     "button-7": "Đăng ký ngay",
   },
   nav: {
-    "platform": "Platform",
+    "platform": "Nền Tảng",
     "services": {
-      text: "Services",
+      text: "Dịch Vụ",
+      "option-1": "ISMA",
+      "option-2": "Kiểm định ISO 27001",
+      "option-3": "Kiểm định GDPR",
+      "option-4": "Kiểm định PCI-DSS",
+      "option-5": "Ứng Phó Sự Cố",
     },
-    "why-us": "Why us",
-    "partners": "Partners",
-    "company": "Company",
-    "pricing": "Pricing",
-    "support-center": "Support Center",
+    "why-us": "Ưu Thế",
+    "partners": "Đối Tác",
+    "company": "Công Ty",
+    "pricing": "Bảng Giá",
+    "support-center": "Trung Tâm Hỗ Trợ",
+    "blog": "Blog",
+    "platform-access": "Tổng quan",
+    "contact": "Liên Hệ",
+  },
+  "footer": {
+    "nation": {
+      "singapore": "Singapore",
+      "singapore-address": "12 Marina View #11-01",
+      "vietnam": "Vietnam",
+      "vietnam-address": "Tầng M, Tòa Nhà Pax Sky, 159C Đề Thám, Phường Cô Giang, Quận 1, TP.HCM",
+    },
+    "email": "hello@polarisec.com",
+    "solution": "GIẢI PHÁP",
+    "company": "CÔNG TY",
+    "resources": "NGUỒN",
+    "connect-with-us": "KẾT NỐI",
+    "term": "Điều khoản dịch vụ",
+    "privacy": "Chính sách bảo mật và hỗ trợ",
+    "polaris-tag": "@ Polaris Infosec Pte. Ltd."
   },
   home: {
     "header-title": "Nền tảng bảo mật website toàn diện",
@@ -59,10 +83,10 @@ export default {
     "sign-up": {
       "title": "Đăng ký nhận bản tin",
       "content": "Nhận các thông tin cập nhật mới nhất và nhanh nhất về tính năng và sản phẩm."
-    }
+    },
   },
   "whyUs": {
-    "title": "Ưu điểm",
+    "title": "Ưu thế",
     "intro-1": " Polaris là <span class=\"brand-2\">giải pháp hàng đầu APAC</span> chuyên cung cấp các dịch vụ bảo mật chất lượng tới khách hàng.",
     "intro-2": "Chúng tôi hiểu rằng đôi khi an ninh mạng trở nên quá phức tạp, vì thế chúng tôi luôn tìm cách đơn giản hóa quy trình, <span\n" +
       "            class=\"brand-2\">để bất kỳ ai, ở bất kỳ đâu đều có thể tiếp cận được.</span>",
@@ -75,11 +99,11 @@ export default {
     "content-6": "Các tùy chọn và điều khoản thanh toán linh hoạt - hàng tháng hoặc hàng năm, thanh toán qua thẻ hoặc chuyển khoản ngân hàng",
     "content-7": "Dùng thử gói cơ bản miễn phí của Polaris trước khi triển khai.",
     "analytic-1": "Vào năm 2021, các cuộc tấn công vào ứng dụng web tăng <b>800%</b> so với năm 2019.",
-    "source-1":"(Nguồn: CDNetworks)",
+    "source-1": "(Nguồn: CDNetworks)",
     "analytic-2": "Trung bình <b>30.000</b> trang web mới bị tấn công mỗi ngày.",
-    "source-2":"(Nguồn: Forbes)",
+    "source-2": "(Nguồn: Forbes)",
     "analytic-3": "<b>73%</b> tin tặc nói rằng các giải pháp bảo mật tường lửa và phần mềm chống vi rút truyền thống hiện đã lỗi thời.",
-    "source-3":"(Nguồn: Thycotic.com)",
+    "source-3": "(Nguồn: Thycotic.com)",
     "testimonials": {
       text: "Đánh giá",
       "testimonial-1": {
@@ -174,7 +198,7 @@ export default {
       }
     },
     "ISO-27001": {
-      title: "Chứng nhận ISO 27001",
+      title: "Kiểm định ISO 27001",
       content: "ISO 27001 là chứng nhận tiêu chuẩn quốc tế cung cấp các yêu cầu cho hệ thống quản lý an toàn thông tin. Mục đích chứng nhận là đảm bảo các công ty có khả năng quản trị, vận hành và giải pháp phù hợp để duy trì quyền kiểm soát các dữ liệu và tài nguyên số của tổ chức. Dịch vụ của chúng tôi giúp khách hàng chứng minh đơn vị đã tuân thủ theo các yêu cầu tốt nhất về bảo mật thông tin bằng cách đạt được chứng nhận ISO 27001.",
       "what-we-do": {
         text: "Chúng tôi cung cấp",
@@ -191,12 +215,12 @@ export default {
       }
     },
     "GDPR": {
-      title: "Chứng nhận GDPR",
+      title: "Kiểm định GDPR",
       "sub-title": "Các doanh nghiệp có hoạt động trong Liên Minh Châu (EU) bắt buộc phải tuân thủ tiêu chuẩn GDPR.",
       content: "Quy định chung về bảo vệ dữ liệu (GDPR) có vai trò hướng dẫn về việc bảo vệ dữ liệu và quyền riêng tư cho các cá nhân sống ở liên minh Châu  u (EU). Quy định này đề ra các quyền lợi thuộc về công dân ở EU và các quy trình mà doanh nghiệp phải thực hiện khi lưu trữ và quản lý dữ liệu cá nhân.",
       "what-we-do": {
         text: "Chúng tôi cung cấp",
-        "sub-title": "The GDPR audit utilizes the PDCA cycle to assess your organization's compliance to standards.",
+        "sub-title": "Kiểm định GDPR với chu trình PDCA để đánh giá sự tuân thủ tiêu chuẩn của tdoanh nghiệp.",
         "plan": {
           text: "Lập kế hoạch",
           "content-1": "Kiểm định cam kết của doanh nghiệp",
@@ -236,24 +260,24 @@ export default {
       }
     },
     "PCI-DSS": {
-      title: "Chứng nhận PCI-DSS",
+      title: "Kiểm định PCI-DSS",
       content: "Payment Card Industry Data Security Standard (PCI-DSS) là tiêu chuẩn bảo mật thông tin áp dụng cho tất cả các doanh nghiệp có sử dụng thẻ thuộc các công ty thẻ lớn và được ủy quyền bởi các thương hiệu thẻ.",
       "what-we-do": {
         text: "Dịch vụ của chúng tôi",
         content: "Thực hiện đánh giá tuân theo 12 tiêu chuẩn PCI-DSS nhằm khẳng định rằng doanh nghiệp đã sẵn sàng quản lý các dữ liệu thẻ của khách hàng và giúp họ yên tâm rằng doanh nghiệp luôn đảm bảo sự cho an toàn và riêng tư về dữ liệu của họ.",
         "list-processing": {
-          "content-1": "Xây dựng và duy trì hệ thống tường lửa nhằm bảo vệ dữ liệu thẻ thanh toán",
-          "content-2": "Không dùng các tham số hoặc mật khẩu được thiết lập sẵn từ các nhà cung cấp hệ thống và các thông số bảo mật khác",
-          "content-3": "Bảo vệ dữ liệu thẻ thanh toán khi lưu trên hệ thống",
-          "content-4": "Mã hóa thông tin thẻ trên đường truyền trong quá trình giao dịch",
-          "content-5": "Sử dụng và cập nhật thường xuyên phần mềm chống virus",
-          "content-6": "Xây dựng – duy trì hệ thống và các ứng dụng đảm bảo an ninh mạng",
-          "content-7": "Hạn chế việc tiếp cận với dữ liệu thẻ thanh toán",
-          "content-8": "Cấp và theo dõi các tài khoản truy nhập vào hệ thống",
-          "content-9": "Giới hạn các phương pháp tiếp cận vật lý với dữ liệu thẻ",
-          "content-10": "Kiểm tra và lưu trữ tất cả thông tin truy nhập vào hệ thống và dữ liệu thẻ",
-          "content-11": "Thường xuyên đánh giá và thử nghiệm lại quy trình an ninh hệ thống",
-          "content-12": "Xây dựng chính sách bảo vệ thông tin tại doanh nghiệp.",
+          "content-1": "Cài đặt và duy trì cấu hình tường lửa",
+          "content-2": "Không sử dụng cấu hình bảo mật mặc định từ nhà cung cấp",
+          "content-3": "Bảo vệ dữ liệu lưu trữ của chủ thẻ",
+          "content-4": "Mã hóa dữ liệu chủ thẻ",
+          "content-5": "Cập nhật phần mềm chống virus",
+          "content-6": "Duy trì bảo mật hệ thống, ứng dụng",
+          "content-7": "Hạn chế quyền truy cập vào dữ liệu chủ thẻ",
+          "content-8": "Thiết lập một ID duy nhất",
+          "content-9": "Hạn chế truy cập vật lý",
+          "content-10": "Theo dõi và giám sát tất cả các truy cập",
+          "content-11": "Thường xuyên kiểm tra bảo mật",
+          "content-12": "Duy trì chính sách bảo mật",
         },
       },
       benefits: {
@@ -420,10 +444,10 @@ export default {
         "sub-option-5": "24 x 7 x 4",
         "sub-option-6": "24 x 7 x 365 x 4",
         "sub-option-7": "99.99% Thời gian hoạt động",
-        "info-4" : "Trả lời 8 giờ một ngày , 5 ngày một tuần trước ngày làm việc tiếp theo",
-        "info-5" : "Phản hồi 24 giờ một ngày, 7 ngày một tuần trong vòng 4 tiếng.",
-        "info-6" : "Bảo hiểm đầy đủ 24/7, 365 ngày trong vòng 4 tiếng",
-        "info-7" : "Chỉ áp dụng cho triển khai đám mây (on cloud)",
+        "info-4": "Trả lời 8 giờ một ngày , 5 ngày một tuần trước ngày làm việc tiếp theo",
+        "info-5": "Phản hồi 24 giờ một ngày, 7 ngày một tuần trong vòng 4 tiếng.",
+        "info-6": "Bảo hiểm đầy đủ 24/7, 365 ngày trong vòng 4 tiếng",
+        "info-7": "Chỉ áp dụng cho triển khai đám mây (on cloud)",
       },
       "technical-architecture": {
         text: "Cấu trúc kĩ thuật",
@@ -586,10 +610,10 @@ export default {
     previous: "Trở về câu trước",
     submit: "Hoàn tất",
     "question-1": {
-        content: "Tổ chức của bạn có bao nhiêu miền(trang web)?",
-        "option-1": "Chỉ 1",
-        "option-2": "2-5",
-        "option-3": "Chúng tôi có rất nhiều",
+      content: "Tổ chức của bạn có bao nhiêu miền(trang web)?",
+      "option-1": "Chỉ 1",
+      "option-2": "2-5",
+      "option-3": "Chúng tôi có rất nhiều",
     },
     "question-2": {
       content: "Bạn có một đội IT riêng không?",

@@ -12,12 +12,36 @@ export default {
     "platform": "Platform",
     "services": {
       text: "Services",
+      "option-1": "ISMA",
+      "option-2": "ISO 27001 Audit",
+      "option-3": "GDPR Audit",
+      "option-4": "PCI-DSS Audit",
+      "option-5": "Incident Response",
     },
     "why-us": "Why us",
     "partners": "Partners",
     "company": "Company",
     "pricing": "Pricing",
     "support-center": "Support Center",
+    "blog": "Blog",
+    "platform-access": "Platform Access",
+    "contact": "Contact",
+  },
+  "footer": {
+    "nation": {
+      "singapore": "Singapore",
+      "singapore-address": "12 Marina View #11-01",
+      "vietnam": "Vietnam",
+      "vietnam-address": "M Floor, Pax Sky Building, 159C De Tham, Co Giang Ward, District 1, HCMC",
+    },
+    "email": "hello@polarisec.com",
+    "solution": "SOLUTION",
+    "company": "COMPANY",
+    "resources": "RESOURCES",
+    "connect-with-us": "CONNECT WITH US",
+    "term": "Terms of Service",
+    "privacy": "Privacy and Support",
+    "polaris-tag": "@ Polaris Infosec Pte. Ltd.",
   },
   home: {
     "header-title": "Web Protection that Never Sleeps",
@@ -70,7 +94,7 @@ export default {
     "sign-up": {
       "title": "Sign up for our newsletter",
       "content": "Be the first to receive new feature and product updates."
-    }
+    },
   },
   "whyUs": {
     "title": "Why us",
@@ -88,11 +112,11 @@ export default {
     "content-6": "Flexible payment options and terms - monthly or annual, pay via card or bank transfer",
     "content-7": "Try our free version for as long as you like before deciding on any upgrade",
     "analytic-1": "In 2021, Web Application attacks are up <b>800%</b>.",
-    "source-1":"(source: CDNetworks)",
+    "source-1": "(source: CDNetworks)",
     "analytic-2": "On average, <b>30,000</b> new websites are hacked a day.",
-    "source-2":"(source: Forbes)",
+    "source-2": "(source: Forbes)",
     "analytic-3": "<b>73%</b> of black hat hackers say traditional firewall and antivirus security solutions are now obsolete.",
-    "source-3":"(source: Thycotic.com)",
+    "source-3": "(source: Thycotic.com)",
     "testimonials": {
       text: "Testimonials",
       "testimonial-1": {
@@ -606,10 +630,10 @@ export default {
     previous: "Previous",
     submit: "Submit",
     "question-1": {
-        content: "How many domains (webpages) does your organization manage?",
-        "option-1": "Just 1",
-        "option-2": "2-5",
-        "option-3": "I have a lot!",
+      content: "How many domains (webpages) does your organization manage?",
+      "option-1": "Just 1",
+      "option-2": "2-5",
+      "option-3": "I have a lot!",
     },
     "question-2": {
       content: "Do you have your own IT team?",
@@ -637,5 +661,4 @@ export default {
     "professional-add-on": "Managed Security Services - Zero Trust",
 
   },
-
 }
