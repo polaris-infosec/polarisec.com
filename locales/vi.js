@@ -24,7 +24,7 @@ export default {
     "pricing": "Bảng Giá",
     "support-center": "Trung Tâm Hỗ Trợ",
     "blog": "Blog",
-    "platform-access": "Tổng quan",
+    "platform-access": "Tổng Quan",
     "contact": "Liên Hệ",
   },
   "footer": {
