@@ -52,9 +52,9 @@ export default {
       "title-1": "Công nghệ vượt trội",
       "content-1": "Áp dụng công nghệ độc quyền trí tuệ nhân tạo (Artificial Intelligence) và máy học (Machine Learning) vào hệ thống, chúng tôi đảm bảo rằng các cuộc tấn công sẽ dừng lại trước khi chúng kịp gây ra bất kì tổn thất nào. Bạn không còn lo lắng bị tấn công và có thể an tâm tập trung vào các hoạt động kinh doanh.",
       "title-2": "Triển khai đơn giản",
-      "content-2": "Chỉ mất vài phút cài đặt, với một thay đổi nhỏ đối với tên miền máy chủ (CNAME) trang web của bạn đã được bảo vệ. Chúng tôi cung cấp cho bạn cái nhìn tổng quan về trạng thái trang web trên bảng điều khiển cũng như trên ứng dụng di động.",
+      "content-2": "Chỉ mất vài phút cài đặt, trang web của bạn đã được bảo vệ. Chúng tôi cung cấp cho bạn cái nhìn tổng quan về trạng thái trang web trên bảng điều khiển cũng như trên ứng dụng di động.",
       "title-3": "Sử dụng dễ dàng",
-      "content-3": "Nền tảng của chúng tôi được cấu hình sẵn với các quy tắc bảo vệ mặc định tối ưu, có nghĩa là trang web của bạn sẽ được bảo vệ ngay lập tức khỏi các mối đe dọa lớn nhất sau khi đăng ký. Nếu các quy tắc bổ sung được yêu cầu, hoàn toàn có thể được thực hiện thông qua bảng điều khiển.",
+      "content-3": "Nền tảng của chúng tôi được cấu hình mặc định với các quy tắc bảo vệ tối ưu. Trang web của bạn sẽ được bảo vệ ngay lập tức khỏi các mối đe dọa lớn nhất sau khi thiết lập thành công với Polaris. Ngoài ra, người dùng có thể tuỳ chỉnh các bộ luật một cách dễ dàng thông qua bảng điều khiển.",
     },
     "video": {
       "title": "Polaris Đồng Hành với Doanh Nghiệp Của Bạn Ra Sao.",
@@ -62,7 +62,7 @@ export default {
     },
     "feature-1": {
       "title": "Bảo mật ứng dụng Web<span class=\"brand-2\">.</span>",
-      "content-1": "<b>Bảo vệ trang web khỏi các cuộc tấn công</b> như DDoS, SQL injection, Zero-Day attacks, và các lỗ hổng top 10 OWASP trước khi máy chủ ứng dụng bị khai phá.Bảo vệ trang web khỏi các cuộc tấn công như DDoS, SQL injection, Zero-Day attacks, và các lỗ hổng top 10 OWASP trước khi máy chủ ứng dụng bị khai phá.",
+      "content-1": "<b>Bảo vệ trang web khỏi các cuộc tấn công</b> như DDoS, SQL injection, Zero-Day attacks, và các lỗ hổng top 10 OWASP trước khi máy chủ ứng dụng bị khai phá.",
       "content-2": "Các cấu hình bảo vệ đã được tối ưu hóa sẵn, một khi tích hợp xong, <b>bạn sẽ được bảo vệ ngay lập tức</b>. Nếu cần thiết, bạn cũng có thể tùy chỉnh cấu hình sao cho phù hợp nhất với các điều kiện bảo mật của bạn.",
     },
     "feature-2": {
@@ -108,19 +108,24 @@ export default {
       text: "Đánh giá",
       "testimonial-1": {
         text: "“Polaris đang được sử dụng để bảo vệ các dịch vụ làm việc tại nhà cho hơn 3,500 nhân viên, cộng tác viên của công ty VNG. Hệ thống được phát triển bởi các chuyên gia hàng đầu của Việt Nam và cung cấp những tính năng ít tìm thấy ở các sản phẩm khác.”",
-        name: "Ông V.D.C",
+        name: "Ông V.D.C.",
         role: "Trưởng bộ phận vận hành hệ thống Công ty VNG"
       },
       "testimonial-2": {
         text: "“Hiện nay Polaris đang được thử nghiệm trên hệ thống cloud của Saobacdau, đáp ứng khả năng chịu tải và tính năng bảo mật để ứng dụng cho một số hệ thống công quan trọng.”",
-        name: "Ông N.S.T",
+        name: "Ông N.S.T.",
         role: "CEO Sao Bắc Đẩu Chi nhánh phía Nam"
       },
       "testimonial-3": {
         text: "“Polaris là giải pháp bảo mật ứng dụng thế hệ mới, sử dụng công nghệ máy học để tự động hoá phân tích truy cập từ đó phát hiện chính xác các dạng tấn công tinh vi. Polaris đang hợp tác với BGP.net để triển khai hơn 9 điểm trên toàn cầu.”",
         name: "",
         role: "Bộ phận phát triển doanh nghiệp của Đại học quốc gia Singapore NUS"
-      }
+      },
+      "testimonial-4": {
+        text: "“Chúng tôi đã thử nghiệm WAAP Polaris một thời gian đủ để nhận thấy giải pháp này rất tốt để thay thế cho Cloudflare tại Việt Nam và có thể tiến xa hơn nữa trong việc cạnh tranh với cái nền tảng khác trên thị trường quốc tế.”",
+        name: "Ông P.N.T.",
+        role: "AZDigi CORPORATION"
+      },
     },
     "feature-comparison": {
       title: "So sánh các tính năng tiêu chuẩn của ứng dụng web & bảo vệ API (WAAP)",
@@ -130,7 +135,7 @@ export default {
         "option-2": "DDOS lớp 3/ 4",
         "option-3": "DDOS lớp 7",
         "option-4": "OWASP Top 10",
-        "option-5": "Giảm thiểu Botn",
+        "option-5": "Giảm thiểu Bot",
         "option-6": "Tùy chỉnh các quy tắc bảo mật",
         "option-7": "Quét lỗ hổng bảo mật của máy chủ",
         "option-8": "Bảo mật API",
@@ -175,7 +180,7 @@ export default {
   },
   company: {
     title: "Đơn giản hóa việc <span class=\"brand-2\">bảo vệ các tài sản quan trọng của doanh nghiệp</span>  trước các mối đe dọa an ninh mạng nguy hiểm nhất hiện nay.",
-    "company-certs": "Chứng chỉ đạt được"
+    "company-certs": "Chứng chỉ đạt được",
   },
   services: {
     "ISMA": {
@@ -216,8 +221,8 @@ export default {
     },
     "GDPR": {
       title: "Kiểm định GDPR",
-      "sub-title": "Các doanh nghiệp có hoạt động trong Liên Minh Châu (EU) bắt buộc phải tuân thủ tiêu chuẩn GDPR.",
-      content: "Quy định chung về bảo vệ dữ liệu (GDPR) có vai trò hướng dẫn về việc bảo vệ dữ liệu và quyền riêng tư cho các cá nhân sống ở liên minh Châu  u (EU). Quy định này đề ra các quyền lợi thuộc về công dân ở EU và các quy trình mà doanh nghiệp phải thực hiện khi lưu trữ và quản lý dữ liệu cá nhân.",
+      "sub-title": "Các doanh nghiệp có hoạt động trong Liên Minh Châu Âu (EU) bắt buộc phải tuân thủ tiêu chuẩn GDPR.",
+      content: "Quy định chung về bảo vệ dữ liệu (GDPR) có vai trò hướng dẫn về việc bảo vệ dữ liệu và quyền riêng tư cho các cá nhân sống ở liên minh Châu Âu (EU). Quy định này đề ra các quyền lợi thuộc về công dân ở EU và các quy trình mà doanh nghiệp phải thực hiện khi lưu trữ và quản lý dữ liệu cá nhân.",
       "what-we-do": {
         text: "Chúng tôi cung cấp",
         "sub-title": "Kiểm định GDPR với chu trình PDCA để đánh giá sự tuân thủ tiêu chuẩn của tdoanh nghiệp.",
@@ -547,7 +552,7 @@ export default {
     },
     note: {
       "note-1": "*Sắp ra mắt",
-      "note-2": "*Miễn phí cho 15 khách hàng đầu tiên",
+      "note-2": "*Miễn phí cho 15 người dùng đầu tiên",
     },
     plans: {
       basic: "Cơ bản",

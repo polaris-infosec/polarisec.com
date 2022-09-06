@@ -133,7 +133,12 @@ export default {
         text: `“Polaris is a next-generation application security solution that uses machine learning to automate access analysis to accurately detect sophisticated attack patterns. Polaris is partnered with BGP.net to deploy to more than 9 locations globally.”`,
         name: '',
         role: 'Business Department, National University of Singapore, ICE71 Competition review',
-      }
+      },
+      "testimonial-4": {
+        text: "“Over time, I have conducted testing of Polaris and found this service to be very good as an alternative to CloudFlare in Vietnam, and can go even further in competing directly with CloudFlare in the international market.”",
+        name: "Mr. P.N.T.",
+        role: "AZDigi CORPORATION"
+      },
     },
     "feature-comparison": {
       title: "Web Application & API Protection (WAAP) Standard Features Comparison",
@@ -192,7 +197,8 @@ export default {
   },
   company: {
     title: "Simplifying the <span class=\"brand-2\">protection of your critical assets</span> from the world’s greatest cyber threats.",
-    "company-certs": "Company Certifications"
+    "company-certs": "Company Certifications",
+    "co-founders": "Co-Founders"
   },
   services: {
     "ISMA": {
@@ -235,7 +241,7 @@ export default {
     "GDPR": {
       title: "GDPR Audit",
       "sub-title": "For businesses that conduct business in the European Union, GDPR Compliance is mandatory.",
-      "content": "The General Data Protection Regulation (GDPR)is a legal framework that serves as a set of guidelines for how personal information should be collected and processed for those who live in the European Union. They outline rights belonging to citizens in the EU and the steps that companies must take when storing and managing confidential data.",
+      "content": "The General Data Protection Regulation (GDPR) is a legal framework that serves as a set of guidelines for how personal information should be collected and processed for those who live in the European Union. They outline rights belonging to citizens in the EU and the steps that companies must take when storing and managing confidential data.",
       "what-we-do": {
         text: "What we do",
         "sub-title": "The GDPR audit utilizes the PDCA cycle to assess your organization's compliance to standards.",

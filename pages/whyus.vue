@@ -14,17 +14,19 @@
           </div>
         </div>
 
-        <div :class="$style.divide" class="mb-3 mt-5"></div>
+        <div :class="$style.divide" class="mb-1 mt-5"></div>
 
-        <b-row class="justify-content-lg-center mx-0 body-1 flex-wrap text-left mb-lg-0 mb-5">
+        <b-row class="justify-content-lg-center mx-0 body-1 flex-wrap text-left mt-5 mb-lg-0 mb-5">
           <b-col v-for="item in serviceContent" :key="item.icon"
-                 class="pr-lg-5 mt-5" cols="12" lg="4">
-            <b-col class="p-0 mt-2 mt-lg-0" lg="12" cols="2">
-              <img :src="item.icon" height="48" width="48">
-            </b-col>
-            <b-col class="mt-lg-2 mt-lg-3 pt-lg-1 p-0 pl-2 pl-lg-0" lg="12" cols=10>
-              {{ item.text }}
-            </b-col>
+                 class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1 mb-3 pb-1" cols="12" lg="4">
+            <b-row class="mx-0">
+              <b-col class="p-0 mt-2 mt-lg-0" lg="12" cols="2">
+                <img :src="item.icon" height="48" width="48">
+              </b-col>
+              <b-col class="mt-lg-2 mt-lg-3 pt-lg-1 p-0 pl-2 pl-lg-0" lg="12" cols="10">
+                {{ item.text }}
+              </b-col>
+            </b-row>
           </b-col>
         </b-row>
       </div>
