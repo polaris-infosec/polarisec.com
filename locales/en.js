@@ -381,7 +381,7 @@ export default {
     },
     "pricing-detail": {
       "pricing": "Pricing",
-      content: "Save 20% with our Yearly payment plan",
+      content: "Save 10% with our Yearly payment plan",
       "API-security": {
         text: "API Security",
         "sub-option-1": "API Specification Protection",

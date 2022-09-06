@@ -16,7 +16,7 @@ export default {
       "option-2": "Kiểm định ISO 27001",
       "option-3": "Kiểm định GDPR",
       "option-4": "Kiểm định PCI-DSS",
-      "option-5": "Ứng Phó Sự Cố",
+      "option-5": "Ứng Cứu Sự Cố",
     },
     "why-us": "Ưu Thế",
     "partners": "Đối Tác",
@@ -57,17 +57,17 @@ export default {
       "content-3": "Nền tảng của chúng tôi được cấu hình mặc định với các quy tắc bảo vệ tối ưu. Trang web của bạn sẽ được bảo vệ ngay lập tức khỏi các mối đe dọa lớn nhất sau khi thiết lập thành công với Polaris. Ngoài ra, người dùng có thể tuỳ chỉnh các bộ luật một cách dễ dàng thông qua bảng điều khiển.",
     },
     "video": {
-      "title": "Polaris Đồng Hành với Doanh Nghiệp Của Bạn Ra Sao.",
+      "title": "Polaris đồng hành với doanh nghiệp của bạn ra sao?",
       "content": "Polaris là lớp khiên chắn trước các cuộc tấn công mạng ở ngay giai đoạn đầu - tiến hành theo dõi các mục tiêu tiềm ẩn. Chúng tôi theo dõi các xu hướng, diễn biến khắp các ứng dụng web để dự đoán và ngăn chặn các cuộc tấn công trước khi chúng xảy ra.",
     },
     "feature-1": {
       "title": "Bảo mật ứng dụng Web<span class=\"brand-2\">.</span>",
-      "content-1": "<b>Bảo vệ trang web khỏi các cuộc tấn công</b> như DDoS, SQL injection, Zero-Day attacks, và các lỗ hổng top 10 OWASP trước khi máy chủ ứng dụng bị khai phá.",
+      "content-1": "<b>Bảo vệ trang web khỏi các cuộc tấn công</b> như DDoS, SQL injection, Zero-Day attacks, và các lỗ hổng thuộc Top-10 OWASP... trước khi máy chủ ứng dụng bị khai thác.",
       "content-2": "Các cấu hình bảo vệ đã được tối ưu hóa sẵn, một khi tích hợp xong, <b>bạn sẽ được bảo vệ ngay lập tức</b>. Nếu cần thiết, bạn cũng có thể tùy chỉnh cấu hình sao cho phù hợp nhất với các điều kiện bảo mật của bạn.",
     },
     "feature-2": {
       "title": "Trí Tuệ Nhân Tạo<span class=\"brand-2\">.</span>",
-      "content-1": "Chúng tôi sử dụng các kỹ thuật máy học cụ thể cho ứng dụng, chẳng hạn như “lấy dấu vân tay” để <b>phân biệt giữa các yêu cầu hợp pháp hay độc hại đến web.</b>",
+      "content-1": "Chúng tôi sử dụng các kỹ thuật máy học chuyên biệt cho ứng dụng, chẳng hạn như “lấy dấu vân tay” để <b>phân biệt giữa các yêu cầu hợp pháp hay độc hại đến web.</b>",
       "content-2": "AI của chúng tôi không ngừng học hỏi để có thể xác định và hành động tùy theo các cuộc tấn công nhắm vào các ứng dụng web được kết hợp với lưu lượng truy cập có vẻ bình thường - các truy cập lách qua các biện pháp bảo vệ truyền thống.",
     },
     "feature-3": {
@@ -114,7 +114,7 @@ export default {
       "testimonial-2": {
         text: "“Hiện nay Polaris đang được thử nghiệm trên hệ thống cloud của Saobacdau, đáp ứng khả năng chịu tải và tính năng bảo mật để ứng dụng cho một số hệ thống công quan trọng.”",
         name: "Ông N.S.T.",
-        role: "CEO Sao Bắc Đẩu Chi nhánh phía Nam"
+        role: "CEO Chi nhánh phía Nam, công ty Sao Bắc Đẩu"
       },
       "testimonial-3": {
         text: "“Polaris là giải pháp bảo mật ứng dụng thế hệ mới, sử dụng công nghệ máy học để tự động hoá phân tích truy cập từ đó phát hiện chính xác các dạng tấn công tinh vi. Polaris đang hợp tác với BGP.net để triển khai hơn 9 điểm trên toàn cầu.”",
@@ -334,7 +334,7 @@ export default {
     pricing: "Chi phí",
     "billing-cycle": "Chu kì thanh toán",
     "polaris-for-enterprises": {
-      title: "Polaris dành cho Enterprises",
+      title: "Polaris dành cho doanh nghiệp",
       content: "Khách hàng doanh nghiệp cần khả năng mở rộng, bảo mật và hỗ trợ - hãy liên hệ với nhóm chuyên gia tư vấn của chúng tôi",
 
     },
@@ -363,7 +363,7 @@ export default {
     },
     "pricing-detail": {
       "pricing": "Pricing",
-      content: "Tiết kiệm 20% với gói thanh toán hàng năm",
+      content: "Tiết kiệm 10% với gói thanh toán hàng năm",
       "API-security": {
         text: "Bảo mật API",
         "sub-option-1": "Bảo vệ đặc điểm kỹ thuật API",
@@ -374,7 +374,7 @@ export default {
         "sub-option-1": "IP Geolocation",
         "sub-option-2": "IP Blacklist/Whitelist",
         "sub-option-3": "Các quy tắc tuỳ chỉnh",
-        "sub-option-4": "Bảo vệ 10 loại tấn công hàng đầu từ OWASP",
+        "sub-option-4": "Bảo vệ 10 loại tấn công hàng đầu theo OWASP",
         "sub-option-5": "Các Vectors tấn công mới - Zero Day",
         "sub-option-6": "Quy tắc NDay - Quy tắc ứng dụng",
         "sub-option-7": "Caching nội dung tĩnh",
@@ -397,13 +397,13 @@ export default {
         "sub-option-1": "Bảo vệ chống BOT",
         "sub-option-2": "Quản lí BOT nâng cao*",
         "sub-option-3": "Whitelist các Bot tốt",
-        "info-1": "Sử dụng hCapcha để xác định người dùng là con người hay Bot",
+        "info-1": "Sử dụng hCaptcha để xác định người dùng là con người hay Bot",
         "info-3": "Cho phép sử dụng các bot có lý do để chuyển vùng web",
       },
       "ddos": {
         text: "DDoS",
         "sub-option-1": "Giảm thiểu DDOS (L7 & L3/4)",
-        "sub-option-2": "Phòng chống DDOS cho Enterprise (Hybrid)",
+        "sub-option-2": "Phòng chống DDOS cho doanh nghiệp (Hybrid)",
         "info-1": "Bảo vệ chống các cuộc tấn công trên nhiều lớp mạng, làm giảm khả năng hoạt động các cuộc tấn công trên trang web",
         "info-2": "Bảo vệ các cuộc tấn công DDoS trên đám mây (on cloud) và tại môi trường máy chủ (on premise)",
       },
@@ -414,7 +414,7 @@ export default {
         "sub-option-3": "DNSSEC",
         "sub-option-4": "Tự động tạo SSL",
         "sub-option-5": "SSL tuỳ chỉnh",
-        "info-1": "Hỗ trợ tất cả aliases domain (còn được gọi là tên miền bí danh)  đến tên miền web gốc của người dùng.",
+        "info-1": "Hỗ trợ tất cả alias domains (còn được gọi là tên miền bí danh) đến tên miền web gốc của người dùng.",
         "info-2": "Quản lý bản ghi DNS của riêng người dùng, lựa chọn máy chủ nào được sử dụng để hỗ trợ trang web của người dùng hoạt động hiệu quả",
         "info-3": "Đính kèm bản ghi chữ ký số vào thông tin DNS của người dùng để tăng cường bảo mật.",
         "info-4": "Tạo tự động các liên kết để xác thực và mã hóa giữa hệ thống mạng",
@@ -441,7 +441,7 @@ export default {
         "info-3": "Sử dụng các máy chủ biên được đặt trên toàn cầu.",
       },
       "service-level-agreement": {
-        text: "Thoả thuận mức dịch vụ(SLA)",
+        text: "Thoả thuận mức độ dịch vụ (SLA)",
         "sub-option-1": "Đường dây nóng khẩn cấp(Hotline)",
         "sub-option-2": "Chat",
         "sub-option-3": "Email",
@@ -652,7 +652,7 @@ export default {
     "content-1": "là một phương pháp để bảo vệ trang web của bạn khỏi các mối đe dọa mạng từ tin tặc. Mỗi trang web có một máy chủ riêng chịu trách nhiệm lưu trữ trang web và kết nối mạng với các địa chỉ trực tuyến khác như kết nối đến người dùng. Khi được kết nối với máy chủ, trang web có một địa chỉ IP riêng - một địa chỉ cho phép các địa chỉ khác tìm thấy trang web đó, địa chỉ này phải được mã hóa và bảo mật.",
     "content-2": "Khi một cuộc tấn công xảy ra, trang web của bạn bị truy cập bởi một địa chỉ IP đang cố gắng đưa mã độc vào hoặc với mục đích đánh cắp dữ liệu và trích xuất thông tin cá nhân. Bảo vệ website giúp giữ gìn trang web cũng như cơ sở hạ tầng và dữ liệu an toàn thông qua các giải pháp kỹ thuật để điều chỉnh hành vi.",
     "title-1": "Những rủi ro của việc không có bảo mật website",
-    "content-3": "là giải pháp mà mọi trang web nên phải có. Hầu hết các doanh nghiệp tin rằng trang web của họ không có giá trị đối với tin tặc, tuy nhiên, chúng có những lý do khác nhau để tấn công trang web của bạn. Đôi khi chúng muốn đánh cắp thông tin khách hàng có giá trị của bạn để đòi tiền chuộc, hoặc chúng có thể muốn phá chuỗi cung ứng và hoạt động kinh doanh.",
+    "content-3": "là giải pháp mà mọi trang web nên phải có. Hầu hết các doanh nghiệp tin rằng trang web của họ không có giá trị đối với tin tặc. Tuy nhiên, chúng có những lý do khác nhau để tấn công trang web của bạn. Đôi khi người tấn công muốn đánh cắp thông tin khách hàng có giá trị của bạn để đòi tiền chuộc, hoặc chúng có thể muốn phá chuỗi cung ứng và hoạt động kinh doanh.",
     "content-4": "Công nghệ luôn phát triển và phát triển, và kéo theo đó là những lỗ hổng và rủi ro mới ngày càng tăng. Hầu hết các trang web hiện nay đều được tích hợp chức năng thanh toán trực tuyến hoặc các ứng dụng thứ 3 và nền tảng công nghệ khác trong việc cung cấp dịch vụ. Những kết nối này với các bên khác trên miền web của bạn là những điểm tấn công hấp dẫn đối với những tin tặc có ý định xâm nhập vào hệ thống máy chủ bằng cách khai thác các lỗ hổng tại các điểm cuối API. Các phương pháp tấn công và khai thác của tin tặc phát triển theo cùng với sự phát triển của công nghệ. Bảo mật và bảo vệ trang web là những cách chính để giảm thiểu nguy cơ ngày càng tăng của tin tặc truy cập vào hệ thống và mạng nội bộ.",
     "title-2": "Nền tảng bảo mật website của chúng tôi an toàn, hiệu quả và dễ sử dụng",
     "content-5": "Nền tảng <span class=\"brand-2\">Bảo mật API & Ứng dụng Website của Polaris</span> (<span class=\"brand-2\">WAAP</span>, <span class=\"brand-2\">WAF</span>) bảo vệ bất kỳ doanh nghiệp nào có sử dụng hệ thống trực tuyến, từ các giao dịch đơn giản đến phức tạp, cho đến việc lưu trữ dữ liệu bí mật chứa thông tin cá nhân và tài chính của khách hàng. Sử dụng công nghệ trí tuệ nhân tạo (AI) độc quyền làm cốt lõi trong phương pháp bảo mật, nền tảng của chúng tôi có thể:",
@@ -666,7 +666,7 @@ export default {
     },
     "content-6": "Bên cạnh đó, nền tảng của chúng tôi cũng bao gồm các tính năng đáng chú ý như:",
     "list-2": {
-      "content-1": "Tường lửa ứng dụng web thế hệ next-gen",
+      "content-1": "Tường lửa ứng dụng web thế hệ tiếp theo",
       "content-2": "Bảo mật API",
       "content-3": "Phòng chống DDoS",
       "content-4": "Quản lý Bots",
