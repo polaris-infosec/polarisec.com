@@ -16,7 +16,7 @@ export default {
       "option-2": "Kiểm định ISO 27001",
       "option-3": "Kiểm định GDPR",
       "option-4": "Kiểm định PCI-DSS",
-      "option-5": "Ứng Phó Sự Cố",
+      "option-5": "Ứng Cứu Sự Cố",
     },
     "why-us": "Ưu Thế",
     "partners": "Đối Tác",
