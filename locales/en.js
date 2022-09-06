@@ -247,7 +247,7 @@ export default {
         "sub-title": "The GDPR audit utilizes the PDCA cycle to assess your organization's compliance to standards.",
         "plan": {
           text: "Plan",
-          "content-1": "Assess commitment of the organizatiqon",
+          "content-1": "Assess commitment of the organization",
           "content-2": "Assess organizational structure",
           "content-3": "Mapping of data processing activities",
           "content-4": "Elicitation of privacy requirements",
