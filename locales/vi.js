@@ -57,17 +57,17 @@ export default {
       "content-3": "Nền tảng của chúng tôi được cấu hình mặc định với các quy tắc bảo vệ tối ưu. Trang web của bạn sẽ được bảo vệ ngay lập tức khỏi các mối đe dọa lớn nhất sau khi thiết lập thành công với Polaris. Ngoài ra, người dùng có thể tuỳ chỉnh các bộ luật một cách dễ dàng thông qua bảng điều khiển.",
     },
     "video": {
-      "title": "Polaris Đồng Hành với Doanh Nghiệp Của Bạn Ra Sao.",
+      "title": "Polaris đồng hành với doanh nghiệp của bạn ra sao?",
       "content": "Polaris là lớp khiên chắn trước các cuộc tấn công mạng ở ngay giai đoạn đầu - tiến hành theo dõi các mục tiêu tiềm ẩn. Chúng tôi theo dõi các xu hướng, diễn biến khắp các ứng dụng web để dự đoán và ngăn chặn các cuộc tấn công trước khi chúng xảy ra.",
     },
     "feature-1": {
       "title": "Bảo mật ứng dụng Web<span class=\"brand-2\">.</span>",
-      "content-1": "<b>Bảo vệ trang web khỏi các cuộc tấn công</b> như DDoS, SQL injection, Zero-Day attacks, và các lỗ hổng top 10 OWASP trước khi máy chủ ứng dụng bị khai phá.",
+      "content-1": "<b>Bảo vệ trang web khỏi các cuộc tấn công</b> như DDoS, SQL injection, Zero-Day attacks, và các lỗ hổng thuộc Top-10 OWASP... trước khi máy chủ ứng dụng bị khai thác.",
       "content-2": "Các cấu hình bảo vệ đã được tối ưu hóa sẵn, một khi tích hợp xong, <b>bạn sẽ được bảo vệ ngay lập tức</b>. Nếu cần thiết, bạn cũng có thể tùy chỉnh cấu hình sao cho phù hợp nhất với các điều kiện bảo mật của bạn.",
     },
     "feature-2": {
       "title": "Trí Tuệ Nhân Tạo<span class=\"brand-2\">.</span>",
-      "content-1": "Chúng tôi sử dụng các kỹ thuật máy học cụ thể cho ứng dụng, chẳng hạn như “lấy dấu vân tay” để <b>phân biệt giữa các yêu cầu hợp pháp hay độc hại đến web.</b>",
+      "content-1": "Chúng tôi sử dụng các kỹ thuật máy học chuyên biệt cho ứng dụng, chẳng hạn như “lấy dấu vân tay” để <b>phân biệt giữa các yêu cầu hợp pháp hay độc hại đến web.</b>",
       "content-2": "AI của chúng tôi không ngừng học hỏi để có thể xác định và hành động tùy theo các cuộc tấn công nhắm vào các ứng dụng web được kết hợp với lưu lượng truy cập có vẻ bình thường - các truy cập lách qua các biện pháp bảo vệ truyền thống.",
     },
     "feature-3": {
@@ -114,7 +114,7 @@ export default {
       "testimonial-2": {
         text: "“Hiện nay Polaris đang được thử nghiệm trên hệ thống cloud của Saobacdau, đáp ứng khả năng chịu tải và tính năng bảo mật để ứng dụng cho một số hệ thống công quan trọng.”",
         name: "Ông N.S.T.",
-        role: "CEO Sao Bắc Đẩu Chi nhánh phía Nam"
+        role: "CEO Chi nhánh phía Nam, công ty Sao Bắc Đẩu"
       },
       "testimonial-3": {
         text: "“Polaris là giải pháp bảo mật ứng dụng thế hệ mới, sử dụng công nghệ máy học để tự động hoá phân tích truy cập từ đó phát hiện chính xác các dạng tấn công tinh vi. Polaris đang hợp tác với BGP.net để triển khai hơn 9 điểm trên toàn cầu.”",
@@ -363,7 +363,7 @@ export default {
     },
     "pricing-detail": {
       "pricing": "Pricing",
-      content: "Tiết kiệm 20% với gói thanh toán hàng năm",
+      content: "Tiết kiệm 10% với gói thanh toán hàng năm",
       "API-security": {
         text: "Bảo mật API",
         "sub-option-1": "Bảo vệ đặc điểm kỹ thuật API",
@@ -374,7 +374,7 @@ export default {
         "sub-option-1": "IP Geolocation",
         "sub-option-2": "IP Blacklist/Whitelist",
         "sub-option-3": "Các quy tắc tuỳ chỉnh",
-        "sub-option-4": "Bảo vệ 10 loại tấn công hàng đầu từ OWASP",
+        "sub-option-4": "Bảo vệ 10 loại tấn công hàng đầu theo OWASP",
         "sub-option-5": "Các Vectors tấn công mới - Zero Day",
         "sub-option-6": "Quy tắc NDay - Quy tắc ứng dụng",
         "sub-option-7": "Caching nội dung tĩnh",
