@@ -2,9 +2,9 @@
   <div :class="$style.ourPartnersPanel">
     <div :class="$style.ourPartnersSection" class="app-width">
       <b-row class="mx-0 justify-content-between text-lg-left text-center">
-        <b-col class="d-flex flex-wrap align-content-center p-0" lg="4" cols="12" order-lg="0"
+        <b-col class="d-flex flex-wrap justify-content-center justify-content-lg-start align-content-center p-0" lg="4" cols="12" order-lg="0"
                order="1">
-          <h1>
+          <h1 class="h3-sm mt-5">
             {{$t('partner.title')}}
           </h1>
           <p class="text-6">
