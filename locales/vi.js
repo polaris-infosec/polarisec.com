@@ -108,19 +108,24 @@ export default {
       text: "Đánh giá",
       "testimonial-1": {
         text: "“Polaris đang được sử dụng để bảo vệ các dịch vụ làm việc tại nhà cho hơn 3,500 nhân viên, cộng tác viên của công ty VNG. Hệ thống được phát triển bởi các chuyên gia hàng đầu của Việt Nam và cung cấp những tính năng ít tìm thấy ở các sản phẩm khác.”",
-        name: "Ông V.D.C",
+        name: "Ông V.D.C.",
         role: "Trưởng bộ phận vận hành hệ thống Công ty VNG"
       },
       "testimonial-2": {
         text: "“Hiện nay Polaris đang được thử nghiệm trên hệ thống cloud của Saobacdau, đáp ứng khả năng chịu tải và tính năng bảo mật để ứng dụng cho một số hệ thống công quan trọng.”",
-        name: "Ông N.S.T",
+        name: "Ông N.S.T.",
         role: "CEO Sao Bắc Đẩu Chi nhánh phía Nam"
       },
       "testimonial-3": {
         text: "“Polaris là giải pháp bảo mật ứng dụng thế hệ mới, sử dụng công nghệ máy học để tự động hoá phân tích truy cập từ đó phát hiện chính xác các dạng tấn công tinh vi. Polaris đang hợp tác với BGP.net để triển khai hơn 9 điểm trên toàn cầu.”",
         name: "",
         role: "Bộ phận phát triển doanh nghiệp của Đại học quốc gia Singapore NUS"
-      }
+      },
+      "testimonial-4": {
+        text: "“Chúng tôi đã thử nghiệm WAAP Polaris một thời gian đủ để nhận thấy giải pháp này rất tốt để thay thế cho Cloudflare tại Việt Nam và có thể tiến xa hơn nữa trong việc cạnh tranh với cái nền tảng khác trên thị trường quốc tế.”",
+        name: "Ông P.N.T.",
+        role: "AZDigi CORPORATION"
+      },
     },
     "feature-comparison": {
       title: "So sánh các tính năng tiêu chuẩn của ứng dụng web & bảo vệ API (WAAP)",
@@ -216,8 +221,8 @@ export default {
     },
     "GDPR": {
       title: "Kiểm định GDPR",
-      "sub-title": "Các doanh nghiệp có hoạt động trong Liên Minh Châu (EU) bắt buộc phải tuân thủ tiêu chuẩn GDPR.",
-      content: "Quy định chung về bảo vệ dữ liệu (GDPR) có vai trò hướng dẫn về việc bảo vệ dữ liệu và quyền riêng tư cho các cá nhân sống ở liên minh Châu  u (EU). Quy định này đề ra các quyền lợi thuộc về công dân ở EU và các quy trình mà doanh nghiệp phải thực hiện khi lưu trữ và quản lý dữ liệu cá nhân.",
+      "sub-title": "Các doanh nghiệp có hoạt động trong Liên Minh Châu Âu (EU) bắt buộc phải tuân thủ tiêu chuẩn GDPR.",
+      content: "Quy định chung về bảo vệ dữ liệu (GDPR) có vai trò hướng dẫn về việc bảo vệ dữ liệu và quyền riêng tư cho các cá nhân sống ở liên minh Châu Âu (EU). Quy định này đề ra các quyền lợi thuộc về công dân ở EU và các quy trình mà doanh nghiệp phải thực hiện khi lưu trữ và quản lý dữ liệu cá nhân.",
       "what-we-do": {
         text: "Chúng tôi cung cấp",
         "sub-title": "Kiểm định GDPR với chu trình PDCA để đánh giá sự tuân thủ tiêu chuẩn của tdoanh nghiệp.",
@@ -547,7 +552,7 @@ export default {
     },
     note: {
       "note-1": "*Sắp ra mắt",
-      "note-2": "*Miễn phí cho 15 khách hàng đầu tiên",
+      "note-2": "*Miễn phí cho 15 người dùng đầu tiên",
     },
     plans: {
       basic: "Cơ bản",

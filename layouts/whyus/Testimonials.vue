@@ -115,9 +115,9 @@ export default class Testimonials extends Vue {
       icon: require('@/assets/icons/nus.png'),
     },
     {
-      text: `"Over time, I have conducted testing of Polaris and found this service to be very good as an alternative to CloudFlare in Vietnam, and can go even further in competing directly with CloudFlare in the international market."`,
-      name: 'Mr. P.N.T.',
-      role: 'AZDigi CORPORATION',
+      text: this.$t('whyUs.testimonials.testimonial-4.text'),
+      name: this.$t('whyUs.testimonials.testimonial-4.name'),
+      role: this.$t('whyUs.testimonials.testimonial-4.role'),
       icon: require('@/assets/icons/azdigi.png'),
     },
   ]
