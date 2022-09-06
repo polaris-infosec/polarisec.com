@@ -7,9 +7,9 @@
           ${{ pricing.price }}
         </h4>
         <b-col class="p-0 caption-2">
-          <p>per domain</p>
-          <p v-if="isMonthly">per month</p>
-          <p v-else>per year</p>
+          <p v-html="$t('pricing.per-domains')"></p>
+          <p v-if="isMonthly" v-html="$t('pricing.per-month')"></p>
+          <p v-else v-html="$t('pricing.per-year')"></p>
         </b-col>
       </b-row>
       <div class="divide flex-grow-1 mt-4 mb-4"></div>

@@ -3,6 +3,7 @@
             :type="type"
             v-bind="$attrs"
             v-on="$listeners"
+            :size="size"
             :class="[$style.button, classes]">
     {{ text }}
     <span v-if="showIcon" class="ml-2 d-inline-flex">
@@ -53,7 +54,8 @@ import {Vue, Component, Prop} from "nuxt-property-decorator";
 @Component({})
 export default class PButton extends Vue {
   @Prop({type: String}) variant: string | undefined;
-  @Prop({type: String}) text: string | undefined;
+  @Prop({type: String}) size: string;
+  @Prop() text: any | undefined;
   @Prop({type: Number, default: 0}) gradient: number;
   @Prop({type: Boolean, default: true}) showIcon: boolean;
   @Prop({type: String}) type: string;

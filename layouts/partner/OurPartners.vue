@@ -5,10 +5,10 @@
         <b-col class="d-flex flex-wrap align-content-center p-0" lg="4" cols="12" order-lg="0"
                order="1">
           <h1>
-            Our Partners
+            {{$t('partner.title')}}
           </h1>
           <p class="text-6">
-            We're looking for your help in providing security solutions to our communities
+            {{$t('partner.content')}}
           </p>
         </b-col>
         <carousel

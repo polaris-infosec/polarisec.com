@@ -8,16 +8,10 @@
         <b-col :class="$style.textContainer"
                class="p-0 d-flex flex-column justify-content-center text-lg-left text-center mt-lg-0 mt-5" order-lg="0"
                lg="5" cols="12">
-          <h2 class="my-0 mb-4 text-lg-left">Artificial Intelligence<span class="brand-2">.</span></h2>
-          <p class="my-0 body-1 mb-4">
-            We use application specific machine and behavioral learning techniques such as “fingerprinting” to
-            <b>differentiate between legitimate and malicious
-              web requests.</b>
+          <h2 class="my-0 mb-4 text-lg-left" v-html="$t('home.feature-2.title')"></h2>
+          <p class="my-0 body-1 mb-4" v-html="$t('home.feature-2.content-1')">
           </p>
-          <p class="body-1 my-0">
-            Comes pre-configured with default expert-crafted protection rules, which means once enrolled, <b>you’re
-            defended immediately</b>. If needed, you can also customize rules to easily fit your security policy
-            requirements.
+          <p class="body-1 my-0" v-html="$t('home.feature-2.content-2')">
           </p>
         </b-col>
       </b-row>

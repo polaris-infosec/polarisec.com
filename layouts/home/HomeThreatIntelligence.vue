@@ -8,14 +8,10 @@
         <b-col :class="$style.textContainer"
                class="p-0 d-flex flex-column justify-content-center text-lg-left text-center mt-lg-0 mt-5" lg="5"
                cols="12">
-          <h2 class="my-0 mb-4">Threat Intelligence<span class="brand-2">.</span></h2>
-          <p class="my-0 body-1 mb-4">
-            Polaris utilizes a variety of trusted cyber intelligence sources to aggregate, compare, and analyze threat
-            data to form a more comprehensive detection and defense strategy in real time as events happen.
+          <h2 class="my-0 mb-4" v-html="$t('home.feature-3.title')"></h2>
+          <p class="my-0 body-1 mb-4" v-html="$t('home.feature-3.content-1')">
           </p>
-          <p class="body-1 my-0">
-            Our threat intelligence capabilities grow alongside evolving enemy threats to stay up to date, forming <b>a
-            more comprehensive advance warning system.</b>
+          <p class="body-1 my-0" v-html="$t('home.feature-3.content-2')">
           </p>
         </b-col>
       </b-row>

@@ -2,11 +2,10 @@
   <div :class="$style.container">
     <div :class="$style.section" class="app-width">
       <b-row class="mx-0 text-center flex-column align-items-center">
-        <h3 class="my-0 mb-3">Web Protection Plans</h3>
-        <p class="body-1 my-0 mb-4">
-          Try Polaris free - forever
+        <h3 class="my-0 mb-3" v-html="$t('pricing.title')"></h3>
+        <p class="body-1 my-0 mb-4" v-html="$t('pricing.content')">
         </p>
-        <p-button class="col-6 my-0 mt-2" text="Request a Consultation" :show-icon="false" @click="goToContact()"/>
+        <p-button class="col-6 my-0 mt-2" :text="$t('button-group.button-1')" :show-icon="false" @click="goToContact()"/>
       </b-row>
     </div>
   </div>

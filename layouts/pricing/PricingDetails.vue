@@ -5,10 +5,12 @@
         <div class="col-sm-2 px-0">
           <ol style="list-style-type: none" class="pl-0">
             <li class="active">
-              <nuxt-link :to="{path: '/web-protection', hash: '#overview'}">Overview</nuxt-link>
+              <nuxt-link :to="{path: localePath('/web-protection'), hash: '#overview'}"
+                         v-html="$t('pricing.tags.overview')"></nuxt-link>
             </li>
             <li>
-              <nuxt-link :to="{path: '/web-protection', hash: '#add-on'}">Add-ons</nuxt-link>
+              <nuxt-link :to="{path: localePath('/web-protection'), hash: '#add-on'}"
+                         v-html="$t('pricing.tags.add-ons')"></nuxt-link>
             </li>
             <li>
               <a

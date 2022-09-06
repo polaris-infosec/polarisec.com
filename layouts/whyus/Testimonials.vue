@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid p-0">
-    <h2 class="mb-4">Testimonials</h2>
+    <h2 class="mb-4">{{ $t('whyUs.testimonials.text') }}</h2>
     <carousel class="col-12"
               :nav="false"
               autoplay
@@ -97,23 +97,21 @@ const carousel = require('vue-owl-carousel');
 export default class Testimonials extends Vue {
   testimonialsContents: any[] = [
     {
-      text: `“Polaris is being used to protect work-from-home services for more than 3,500 employees and collaborators of
-              VNG. The system is developed by leading experts in Vietnam and provides features that are rarely found in
-              other products.”`,
-      name: 'Mr. V.D.C.',
-      role: 'HEAD OF SYSTEM OPERATIONS, VNG',
+      text: this.$t('whyUs.testimonials.testimonial-1.text').toString(),
+      name: this.$t('whyUs.testimonials.testimonial-1.name'),
+      role: this.$t('whyUs.testimonials.testimonial-1.role'),
       icon: require('@/assets/icons/vng.png'),
     },
     {
-      text: `“Currently, Polaris is being used on Sao Bac Dau’s cloud system to meet load capacity needs and provide security, and in features for important public system applications. ”`,
-      name: 'Mr. N.S.T.',
-      role: 'CHIEF EXCECUTIVE OFFICER, SAO BAC DAU (SOUTHERN BRANCH)',
+      text: this.$t('whyUs.testimonials.testimonial-2.text'),
+      name: this.$t('whyUs.testimonials.testimonial-2.name'),
+      role: this.$t('whyUs.testimonials.testimonial-2.role'),
       icon: require('@/assets/icons/sbd.png'),
     },
     {
-      text: `“Polaris is a next-generation application security solution that uses machine learning to automate access analysis to accurately detect sophisticated attack patterns. Polaris is partnered with BGP.net to deploy to more than 9 locations globally.”`,
-      name: '',
-      role: 'Business Department, National University of Singapore, ICE71 Competition review',
+      text: this.$t('whyUs.testimonials.testimonial-3.text'),
+      name: this.$t('whyUs.testimonials.testimonial-3.name'),
+      role: this.$t('whyUs.testimonials.testimonial-3.role'),
       icon: require('@/assets/icons/nus.png'),
     },
     {

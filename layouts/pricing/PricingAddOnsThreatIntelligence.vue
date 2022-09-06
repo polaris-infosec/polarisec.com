@@ -1,15 +1,15 @@
 <template>
     <div :class="$style.addonContainer" class="row">
       <div class="col-sm-4 pl-0">
-        <div :class="$style.title">Standard / Professional</div>
+        <div :class="$style.title" v-html="$t('pricing.plans.standard-professional')"></div>
         <div class="d-inline-flex justify-content-center align-items-center">
           <h4 :class="$style.price">{{isMonthlyType ? '$87' : "$1043"}}</h4>
           <div :class="$style.priceDetail">
-            <div>per domain</div>
-            <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
+            <div v-html="$t('pricing.per-domains')"></div>
+            <div>{{ isMonthlyType ? $t('pricing.per-month') : $t('pricing.per-year') }}</div>
           </div>
         </div>
-        <p-button :class="$style.btn" :show-icon="false" :gradient="2" text="Select Plan" @click="onClick"/>
+        <p-button :class="$style.btn" :show-icon="false" :gradient="2" v-html="$t('pricing.custom.selectPlan')" @click="onClick"/>
       </div>
       <div class="col" :class="$style.detailContainer">
         <template v-for="(item, idx) in threatIntelligenceAddOns">
@@ -19,7 +19,7 @@
           </div>
         </template>
       </div>
-      <div :class="$style.comingsoon" class="col-sm-12 px-0">*Coming Soon</div>
+      <div :class="$style.comingsoon" class="col-sm-12 px-0" v-html="$t('pricing.note.note-1')"></div>
     </div>
 </template>
 
@@ -93,14 +93,14 @@ export default class PricingAddOnsThreatIntelligence extends Vue {
 
   get threatIntelligenceAddOns() {
     return [
-      'Real Time Threat Mapping',
-      'Suspicious IPs Accessing Servers',
-      'Compromised Data Checks',
-      'Phishing Domain Checks',
-      'Vulnerability Scanning on Servers',
-      'Brand Protection*',
-      'Domain Monitoring*',
-      'Domain Risk Scoring*',
+      this.$t('pricing.threat-intelligence-add-on.sub-option-1').toString(),
+      this.$t('pricing.threat-intelligence-add-on.sub-option-2').toString(),
+      this.$t('pricing.threat-intelligence-add-on.sub-option-3').toString(),
+      this.$t('pricing.threat-intelligence-add-on.sub-option-4').toString(),
+      this.$t('pricing.threat-intelligence-add-on.sub-option-5').toString(),
+      this.$t('pricing.threat-intelligence-add-on.sub-option-6').toString(),
+      this.$t('pricing.threat-intelligence-add-on.sub-option-7').toString(),
+      this.$t('pricing.threat-intelligence-add-on.sub-option-8').toString(),
     ];
   }
 

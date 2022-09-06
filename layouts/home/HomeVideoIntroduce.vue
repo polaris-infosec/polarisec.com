@@ -13,13 +13,10 @@
           </div>
         </b-col>
         <b-col class="p-0 mt-lg-0 mt-5" lg="4" cols="12" :class="$style.textContainer">
-          <h3 :class="$style.h3">How Polaris Helps <br/> Your Business.</h3>
-          <div :class="$style.text" class="mt-lg-0 mt-4">Polaris is the roadblock in the cyber attack killchain’s first
-            stage - conducting
-            reconnaissance on potential targets of opportunity. We monitor trends across web apps to predict and
-            prevent attacks before they happen.
+          <h3 :class="$style.h3" class="col-lg-11 p-0">{{$t('home.video.title')}}</h3>
+          <div :class="$style.text" class="mt-lg-0 mt-4">{{$t('home.video.content')}}
           </div>
-          <p-button text="Watch on Youtube" @click="onClick"/>
+          <p-button :text="$t('button-group.button-6')" @click="onClick"/>
         </b-col>
       </b-row>
     </div>

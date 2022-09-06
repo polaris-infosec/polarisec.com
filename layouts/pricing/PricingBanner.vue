@@ -4,9 +4,9 @@
       <div :class="$style.bannerSection" class="row app-width">
         <b-row class="mx-0 flex-grow-1">
           <b-col cols="3" class="p-0">
-            <h1>Web Protection Plans</h1>
-            <div :class="$style.pricingSubTitle" class="body-1">Try Polaris free - forever</div>
-            <p-button text="Request a Consultation" @click="onClick"/>
+            <h1 v-html="$t('pricing.title')"></h1>
+            <div :class="$style.pricingSubTitle" class="body-1" v-html="$t('pricing.content')"></div>
+            <p-button v-html="$t('pricing.consultation')" @click="onClick"/>
           </b-col>
           <b-col class="p-0 d-flex justify-content-end" cols="9">
             <img src="@/assets/images/pricing/basic.png" width="275" height="237">
@@ -21,12 +21,12 @@
       <div :class="$style.contactSaleSection"
            class="d-flex justify-content-between align-items-center app-width">
         <div>
-          <h4 class="mb-1">Polaris for Enterprises</h4>
-          <div class="body-2">Need enterprise-grade scalability, security, and support - contact our sales team</div>
+          <h4 class="mb-1" v-html="$t('pricing.polaris-for-enterprises.title')"></h4>
+          <div class="body-2" v-html="$t('pricing.polaris-for-enterprises.content')"></div>
         </div>
-        <nuxt-link to="/contact">
-          <div :class="$style.contact">
-            Contact sales <span class="ml-2"><img src="@/assets/icons/call_made.png" alt="" width="24"
+        <nuxt-link :to="localePath('/contact')" >
+          <div :class="$style.contact"  > {{$t('pricing.contact-sales')}}
+            <span class="ml-2"><img src="@/assets/icons/call_made.png" alt="" width="24"
                                                   height="24"></span>
           </div>
         </nuxt-link>
@@ -88,7 +88,7 @@ import PButton from "~/components/PButton.vue";
 export default class CompanyBanner extends Vue {
 
   onClick() {
-    this.$router.push({path: '/contact'});
+    return this.$router.push({path: this.localePath('/contact')})
   }
 
 }

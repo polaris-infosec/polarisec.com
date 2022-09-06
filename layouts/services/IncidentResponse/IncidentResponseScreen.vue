@@ -43,28 +43,16 @@ import WhatWeDo from "~/layouts/services/IncidentResponse/WhatWeDo.vue";
 })
 export default class IncidentResponseScreen extends Vue {
   benefits: string [] = [
-    'Immediate resolution of threats in real time, as they happen',
-    'Greater awareness of your network environment\'s activities',
-    'Trusted advisory on best cyber security practices',
-    'Protection of your team members\', customers\', and partners\' digital assets',
-    'Maintain brand image and reputation'
+    this.$t('services.incident-response.benefits.content-1').toString(),
+    this.$t('services.incident-response.benefits.content-2').toString(),
+    this.$t('services.incident-response.benefits.content-3').toString(),
+    this.$t('services.incident-response.benefits.content-4').toString(),
+    this.$t('services.incident-response.benefits.content-5').toString(),
   ]
 
   introduction: IItroduction = {
-    title: 'Incident Response',
-    content: `In case an organization suffers a cyber attack, an incident response is warranted to resolve the issue. It is
-        the <b>immediate triage of the incident</b> in determining who is involved, how it happened, what the immediate
-        impact
-        is, and what the customer can do about it.
-        <br><br>
-        Incident response can be <b>retained or on-demand.</b>
-        <br><br>
-        <b>Retained</b> - a Managed Security Service in which we'll assess your organization's current breach status and
-        actively monitor your network daily for attacks. When an attack occurs, we immediately remediate the threat.
-        Retained response customers will always have priority.
-        <br><br>
-        <b>On-demand</b> - Call us when you need us. We'll do an assessment of the incident and immediately remediate it
-        for you.`,
+    title: this.$t('services.incident-response.title').toString(),
+    content: this.$t('services.incident-response.content').toString(),
     route: '',
   }
 }

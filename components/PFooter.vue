@@ -3,7 +3,7 @@
     <div :class="$style.footerSection" class="app-width">
       <b-row class="d-flex justify-content-between flex-row">
         <b-col lg="3" cols="12" class="p-0">
-          <nuxt-link to="/home">
+          <nuxt-link :to="localePath('/home')">
             <img src="~/assets/images/polaris-logo.png" class="d-inline-block align-baseline mt-2" alt="Kitten"
                  height="30"
                  width="175">
@@ -12,18 +12,15 @@
             <a href="mailto:hello@polarisec.com"><p class="brand-2 mb-3">hello@polarisec.com</p></a>
             <p class="mb-1">
           <span class="brand-2">
-            Singapore:
+            {{$t('footer.nation.singapore')}}:
           </span>
-              12 Marina View #11-01
+              {{$t('footer.nation.singapore-address')}}
             </p>
             <p class="m-0 mb-1 p-0">
            <span class="brand-2">
-            Vietnam:
+            {{$t('footer.nation.vietnam')}}:
            </span>
-              M Floor, Pax Sky Building,
-              <br>
-              159C De Tham,
-              Co Giang Ward, District 1, HCMC
+              {{$t('footer.nation.vietnam-address')}}
             </p>
             <p class="d-flex align-items-center">
               <img src="@/assets/icons/phone.png" width="18" height="18" class="mr-1">
@@ -34,63 +31,63 @@
         <b-col col lg="7" class="mr-3 p-0">
           <b-row class="d-flex justify-content-between">
             <div class="body-6 col-lg-3 col-5 mt-mb-36px">
-              <div>SOLUTION</div>
+              <div>{{ $t('footer.solution') }}</div>
               <div class="d-flex flex-column mt-4 body-5">
                 <a href="https://polarisec.io" target="_blank">
                 <span class="color-text-7">
-                  Platform Access
+                  {{ $t('nav.platform-access') }}
                 </span>
                 </a>
                 <a href="https://support.polarisec.com" target="_blank">
                   <span class="color-text-7">
-                    Support Center
+                    {{ $t('nav.support-center') }}
                   </span>
                 </a>
               </div>
             </div>
 
             <div class="body-6 col-lg-3 col-5 mt-mb-36px">
-              COMPANY
+              {{ $t('footer.company') }}
               <div class="d-flex flex-column mt-4 body-5">
-                <nuxt-link to="/company">
+                <nuxt-link :to="localePath('/company')">
                 <span class="color-text-7">
-                    Company
+                    {{ $t('nav.company') }}
                 </span>
                 </nuxt-link>
-                <nuxt-link to="/whyus">
+                <nuxt-link :to="localePath('/whyus')">
                 <span class="color-text-7">
-                    Why us
+                    {{ $t('nav.why-us') }}
                 </span>
                 </nuxt-link>
-                <nuxt-link to="/partner">
+                <nuxt-link :to="localePath('/partner')">
                 <span class="color-text-7">
-                    Partners
+                    {{ $t('nav.partners') }}
                 </span>
                 </nuxt-link>
                 <a href="https://polarisec.substack.com/" target="_blank">
                   <span class="color-text-7">
-                    Blog
+                    {{ $t('nav.blog') }}
                   </span>
                 </a>
               </div>
             </div>
 
             <div class="body-6 col-lg-3 col-5 mt-mb-36px">
-              RESOURCES
+              {{ $t('footer.resources') }}
               <div class="d-flex flex-column mt-4 body-5">
-                <nuxt-link to="/web-protection">
+                <nuxt-link :to="localePath('/web-protection')">
                 <span class="color-text-7">
-                    Pricing
+                    {{ $t('nav.pricing') }}
                 </span>
                 </nuxt-link>
                 <a href="https://support.polarisec.com/portal/en/kb/polaris-kb/frequently-asked-questions-faq">
                 <span class="color-text-7">
-                    FAQ
+                    {{ $t('pricing.tags.faqs') }}
                 </span>
                 </a>
-                <nuxt-link to="/contact">
+                <nuxt-link :to="localePath('/contact')">
                 <span class="color-text-7">
-                    Contact
+                    {{ $t('nav.contact') }}
                 </span>
                 </nuxt-link>
               </div>
@@ -99,7 +96,7 @@
             <div class="body-6 col-lg-3 p-0 col-5 mt-mb-36px d-flex flex-column align-items-lg-end"
                  :class="$style.socialContact">
               <div>
-                <p class="my-0">CONNECT WITH US</p>
+                <p class="my-0">{{ $t('footer.connect-with-us') }}</p>
                 <div class="d-flex mt-4 body-5">
                   <b-col lg="12" cols="11" class="mb-2 p-0 d-flex flex-wrap">
                     <a href="https://linkedin.com/company/polarisec" target="_blank" class="mr-3">
@@ -147,14 +144,14 @@
           <nuxt-link to="/terms">
             <div class="pr-2 text-center" style="border-right: 0.03em solid #A9B7C6; color: white">
               <span class="body-4">
-                Terms of Service
+                {{ $t('footer.term') }}
               </span>
             </div>
           </nuxt-link>
           <a href="docs/polaris_privacy_notice.pdf" download>
             <div class="pl-2 white-text text-center">
               <span class="body-4">
-                 Privacy and Support
+                 {{ $t('footer.privacy') }}
                </span>
             </div>
           </a>

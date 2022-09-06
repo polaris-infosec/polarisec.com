@@ -3,22 +3,14 @@
     <div :class="$style.container">
       <div :class="$style.section" class="app-width text-lg-left text-center">
         <div>
-          <h1 class="h3-sm mb-3">Why us</h1>
+          <h1 class="h3-sm mb-3">{{ $t('whyUs.title') }}</h1>
         </div>
         <div class="d-flex justify-content-between mt-lg-5 col-12 p-0 row mx-0">
-          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1 mb-3 pb-1">
-            Polaris is your <span class="highlight-text">premier local solution</span> with local support, dedicated to
-            providing users with a first rate security service.
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1 mb-3 pb-1" v-html="$t('whyUs.intro-1')">
           </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1 mb-3 pb-1">
-            We understand that cyber security can sometimes be overly complex and seek to simplify the process, <span
-            class="highlight-text">making it accessible to anyone, anywhere.</span>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1 mb-3 pb-1" v-html="$t('whyUs.intro-2')">
           </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1">
-            We’re <span class="highlight-text">scalable at every level</span> from the first time cyber user to the
-            seasoned veteran, addressing the concerns of small businesses and enterprises alike.
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-0 pr-lg-5 pl-lg-1" v-html="$t('whyUs.intro-3')">
           </div>
         </div>
 
@@ -26,9 +18,9 @@
 
         <b-row class="justify-content-lg-center mx-0 body-1 flex-wrap text-left mb-lg-0 mb-5">
           <b-col v-for="item in serviceContent" :key="item.icon"
-                 class="d-flex flex-wrap justify-content-between mx-0 pr-lg-5 mt-5" cols="12" lg="4">
+                 class="pr-lg-5 mt-5" cols="12" lg="4">
             <b-col class="p-0 mt-2 mt-lg-0" lg="12" cols="2">
-              <img :src="item.icon" alt="Kitten" height="48" width="48">
+              <img :src="item.icon" height="48" width="48">
             </b-col>
             <b-col class="mt-lg-2 mt-lg-3 pt-lg-1 p-0 pl-2 pl-lg-0" lg="12" cols=10>
               {{ item.text }}
@@ -87,48 +79,48 @@ export default class WhyUs extends Vue {
   analyticContent: any[] = [
     {
       title: '800%',
-      text: 'In 2021, Web Application attacks are up <b>800%</b>.',
-      source: '(source: CDNetworks)',
+      text: this.$t('whyUs.analytic-1'),
+      source: this.$t('whyUs.source-1'),
     },
     {
       title: '30,000',
-      text: 'On average, <b>30,000</b> new websites are hacked a day.',
-      source: '(source: Forbes)',
+      text: this.$t('whyUs.analytic-2'),
+      source: this.$t('whyUs.source-2'),
     },
     {
       title: '73%',
-      text: '<b>73%</b> of black hat hackers say traditional firewall and antivirus security solutions are now obsolete.',
-      source: '(source: Thycotic.com)',
+      text: this.$t('whyUs.analytic-3'),
+      source: this.$t('whyUs.source-3'),
     },
   ]
 
   serviceContent: any [] = [
     {
-      text: '24/7 premium support to ensure your business operations are always up and running',
+      text: this.$t('whyUs.content-1'),
       icon: require("@/assets/icons/availability.png")
     },
     {
-      text: 'The ability to manage services on your behalf so you don’t ever have to think about it',
+      text: this.$t('whyUs.content-2'),
       icon: require("@/assets/icons/folder.png")
     },
     {
-      text: 'Real-time threat management capabilities to ensure timely and decisive response to unwanted actions',
+      text: this.$t('whyUs.content-3'),
       icon: require("@/assets/icons/clock.png")
     },
     {
-      text: 'Growing intelligence capabilities to provide even greater insight into your business’ web presence',
+      text: this.$t('whyUs.content-4'),
       icon: require("@/assets/icons/chart.png")
     },
     {
-      text: 'Monitor your entire organization via one simple dashboard',
+      text: this.$t('whyUs.content-5'),
       icon: require("@/assets/icons/file.png")
     },
     {
-      text: 'Flexible payment options and terms - monthly or annual, pay via card or bank transfer',
+      text: this.$t('whyUs.content-6'),
       icon: require("@/assets/icons/card.png")
     },
     {
-      text: 'Try our free version for as long as you like before deciding on any upgrade',
+      text: this.$t('whyUs.content-7'),
       icon: require("@/assets/icons/device.png")
     }
   ]

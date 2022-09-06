@@ -1,12 +1,12 @@
 <template>
   <b-row class="mx-0 mb-5 mt-5 pt-lg-3 text-center text-lg-left">
     <h3 class="p-0 m-0 brand-2 mb-5 pb-lg-3 col-12">
-      What we do
+      {{ $t('services.incident-response.what-we-do.text') }}
     </h3>
     <b-row class="p-0 m-0 d-flex justify-content-between">
       <b-col class="p-0 m-0 col-lg-8 col-12 order-lg-0 order-1">
         <p :class="$style.subTitle" class="p-0">
-          Retained Incident Response
+          {{ $t('services.incident-response.what-we-do.retained-incident-response.text') }}
         </p>
         <ul class="body-1 p-0 pl-lg-4 mt-3" :class="$style.content">
           <li v-for="item in listRetainedIncidents" :key="item" class="mt-2">
@@ -22,7 +22,7 @@
     <b-row class="mx-0 flex-grow-1 justify-content-between align-items-center">
       <b-col class="p-0 col-lg-6 col-12" :order="1">
         <p :class="$style.subTitle" class="p-0">
-          Investigations
+          {{ $t('services.incident-response.what-we-do.investigations.text') }}
         </p>
         <ul class="d-flex flex-column flex-lg-wrap body-1 p-0 pl-lg-4 mt-2 mb-lg-0 mb-5" :class="$style.content"
             style="max-height: 170px">
@@ -72,20 +72,20 @@ import PButton from "~/components/PButton.vue";
 })
 export default class WhatWeDo extends Vue {
   listRetainedIncidents: string [] = [
-    '24/7 x 365 Alert Driven Passive Monitoring',
-    'Active Threat Hunting',
-    'Weekly Vulnerability & Security Assessment Reports',
-    'Automated Scanning of External Vulnerabilities as well as Internal, i.e., Dark Web'
+    this.$t('services.incident-response.what-we-do.retained-incident-response.content-1').toString(),
+    this.$t('services.incident-response.what-we-do.retained-incident-response.content-2').toString(),
+    this.$t('services.incident-response.what-we-do.retained-incident-response.content-3').toString(),
+    this.$t('services.incident-response.what-we-do.retained-incident-response.content-4').toString(),
   ]
 
   listInvestigations: string [] = [
-    'Business Email Compromise',
-    'Stolen Credentials',
-    'Data Leaks/Breaches',
-    'Phishing',
-    'Ransomware',
-    'Digital Forensics',
-    'OWASP Top 10 and more'
+    this.$t('services.incident-response.what-we-do.investigations.content-1').toString(),
+    this.$t('services.incident-response.what-we-do.investigations.content-2').toString(),
+    this.$t('services.incident-response.what-we-do.investigations.content-3').toString(),
+    this.$t('services.incident-response.what-we-do.investigations.content-4').toString(),
+    this.$t('services.incident-response.what-we-do.investigations.content-5').toString(),
+    this.$t('services.incident-response.what-we-do.investigations.content-6').toString(),
+    this.$t('services.incident-response.what-we-do.investigations.content-7').toString(),
   ]
 }
 </script>

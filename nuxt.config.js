@@ -1,3 +1,6 @@
+import en from './locales/en'
+import vi from './locales/vi'
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -97,7 +100,28 @@ export default {
     'bootstrap-vue/nuxt',
     '@nuxtjs/axios',
     '@nuxtjs/sitemap',
+    '@nuxtjs/i18n',
   ],
+  i18n: {
+    locales: [
+      {
+        code: "en",
+        name: "English"
+      },
+      {
+        code: "vi",
+        name: "Vietnamese"
+      },
+    ],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en,
+        vi,
+      }
+    }
+  },
   sitemap: {
     hostname: 'https://polarisec.com/',
     cacheTime: 1000 * 60 * 15,

@@ -1,26 +1,24 @@
 <template>
   <div :class="$style.section" class="text-center">
-    <h3 class="mb-4">Here’s your personalized recommendation</h3>
-    <p class="body-2 pb-3">Based on the type of website you have
-      and your needs, we recommend the following plan and add-ons.</p>
+    <h3 class="mb-4" v-html="$t('recommendation.title')"></h3>
+    <p class="body-2 pb-3" v-html="$t('recommendation.sub-title')"></p>
     <b-col :class="$style.box" class="d-flex flex-column align-items-center">
       <div :class="$style.tag">
-        <span class="caption text-uppercase">recommendation plan</span>
+        <span class="caption text-uppercase" v-html="$t('recommendation.plan')"></span>
       </div>
       <h5 class="font-weight-bold brand-2 mb-4">{{ plan }}</h5>
-      <p class="body-2 col-8">Advanced features and
-        dedicated support.</p>
+      <p class="body-2 col-8" v-html="$t('recommendation.sub-text')"></p>
     </b-col>
     <b-col v-if="addOns && addOns !== 'None'" :class="$style.box"
            class="d-flex flex-column align-items-center justify-content-center mb-2 mt-4">
       <div :class="$style.tag">
-        <span class="caption text-uppercase">Add-on</span>
+        <span class="caption text-uppercase" v-html="$t('pricing.add-ons.title')"></span>
       </div>
       <p class="body-1 font-weight-bold col-11">
         {{ addOns }}
       </p>
     </b-col>
-    <p-button class="mt-4" :gradient="2" :show-icon="false" text="Contact sales" @click="goToContact()"/>
+    <p-button class="mt-4" :gradient="2" :show-icon="false" :text= "this.$t('pricing.contact-sales')" @click="goToContact()"/>
   </div>
 </template>
 
@@ -61,7 +59,7 @@ export default class RecommendationMobileScreen extends Vue {
   @Prop() addOns: string
 
   goToContact() {
-    return this.$router.push({path: '/contact'})
+    return this.$router.push({path: this.localePath('/contact')})
   }
 }
 </script>

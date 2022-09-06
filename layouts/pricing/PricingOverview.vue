@@ -2,29 +2,29 @@
   <div class="container-fluid px-0">
     <div :class="$style.container" class="row">
       <div class="px-0 col-sm-12">
-        <h2 class="pl-4">Pricing</h2>
-        <div class="body-2 pl-4">Save 20% with our Yearly payment plan</div>
+        <h2 class="pl-4" v-html="$t('pricing.pricing')"></h2>
+        <div class="body-2 pl-4" v-html="$t('pricing.pricing-detail.content')"></div>
         <div :class="$style.pricingContainer" class="p-4">
           <div :class="$style.headerContainer">
             <div class="row" :class="$style.tableHeader">
               <div @click="onChangeExpand(!isExpandAll)" :class="$style.headerItem"
                    class="col-sm-3 body-2 d-inline-flex align-items-center justify-content-between">
-                <div>Billing cycle</div>
+                <div v-html="$t('pricing.billing-cycle')"></div>
                 <img :src="isExpandAll ? iconExpand.collapse : iconExpand.expand" alt="" width="24" height="24">
               </div>
-              <div :class="$style.headerItem" class="col">Basic</div>
-              <div :class="$style.headerItem" class="col">Standard</div>
-              <div :class="$style.headerItem" class="col">Professional</div>
-              <div :class="$style.headerItem" class="col">Enterprise</div>
+              <div :class="$style.headerItem" class="col" v-html="$t('pricing.plans.basic')"></div>
+              <div :class="$style.headerItem" class="col" v-html="$t('pricing.plans.standard')"></div>
+              <div :class="$style.headerItem" class="col" v-html="$t('pricing.plans.professional')"></div>
+              <div :class="$style.headerItem" class="col" v-html="$t('pricing.plans.enterprise')"></div>
             </div>
             <div class="row">
               <div class="col-sm-3">
                 <div class="d-inline-flex align-items-center">
                   <div @click="onChangeType(true)" :class="[$style.selectType, isMonthlyType && $style.active]"
-                       class="mr-1">
-                    Monthly
+                       class="mr-1" v-html="$t('pricing.monthly')">
                   </div>
-                  <div @click="onChangeType(false)" :class="[$style.selectType, !isMonthlyType && $style.active]">
+                  <div @click="onChangeType(false)" :class="[$style.selectType, !isMonthlyType && $style.active]"
+                  class="mr-1" v-html="$t('pricing.yearly')">
                     Yearly
                   </div>
                 </div>
@@ -34,8 +34,8 @@
                   <div class="d-inline-flex align-items-center">
                     <h4 :class="$style.price">{{ !isNaN(type.price) ? '$' : '' }}{{ type.price }}</h4>
                     <div :class="$style.priceDetail" v-if="!isNaN(type.price)">
-                      <div>per domain</div>
-                      <div>per {{ isMonthlyType ? 'month' : 'year' }}</div>
+                      <div v-html="$t('pricing.per-domains')"></div>
+                      <div> {{ isMonthlyType ? $t('pricing.per-month') : $t('pricing.per-year') }}</div>
                     </div>
                   </div>
                   <p-button :gradient="2"
@@ -87,16 +87,16 @@
                   <div class="col"/>
                 </div>
               </template>
-              <div v-if="type.isComingSoon && type.isExpand" :class="$style.comingsoon">*Coming Soon</div>
+              <div v-if="type.isComingSoon && type.isExpand" :class="$style.comingsoon" v-html="$t('pricing.note.note-1')"></div>
             </div>
           </template>
         </div>
         <div class="d-inline-flex align-items-center justify-content-between" :class="$style.needHelpContainer">
           <div>
-            <h5>Need help with choosing a package?</h5>
-            <h5>Get a personalized recommendation</h5>
+            <h5 v-html="$t('pricing.question')"></h5>
+            <h5 v-html="$t('pricing.question-break')"></h5>
           </div>
-          <p-button text="Answer 3 Easy Questions" @click="onClick"/>
+          <p-button v-html="$t('pricing.question-1')" @click="onClick"/>
         </div>
       </div>
     </div>
@@ -261,34 +261,34 @@ export default class PricingOverview extends Vue {
   get billingCycle() {
     return [
       {
-        type: 'Basic',
+        type: this.$t('pricing.plans.basic').toString(),
         price: 0,
-        button_text: 'Select Plan',
+        button_text: this.$t('pricing.custom.selectPlan').toString(),
         action: () => this.goPolaris(),
       },
       {
-        type: 'Standard',
-        price: this.isMonthlyType ? 17 : 163,
-        button_text: 'Select Plan',
+        type: this.$t('pricing.plans.standard').toString(),
+        price: this.isMonthlyType ? 17 : 187,
+        button_text: this.$t('pricing.custom.selectPlan').toString(),
         action: () => this.goPolaris(),
       },
       {
-        type: 'Professional',
-        price: this.isMonthlyType ? 185 : 1776,
-        button_text: 'Select Plan',
+        type: this.$t('pricing.plans.professional').toString(),
+        price: this.isMonthlyType ? 185 : 1998,
+        button_text: this.$t('pricing.custom.selectPlan').toString(),
         action: () => this.goPolaris(),
       },
       {
-        type: 'Enterprise',
-        price: 'Contact us',
-        button_text: 'Request a Demo',
+        type: this.$t('pricing.plans.enterprise').toString(),
+        price: this.$t('pricing.contact-us').toString(),
+        button_text: this.$t('pricing.custom.selectDemo').toString(),
         action: () => this.goContact(),
       },
     ];
   }
 
   goContact() {
-    this.$router.push({path: '/contact'});
+    return this.$router.push({path: this.localePath('/contact')})
   }
 
   goPolaris() {
@@ -306,8 +306,8 @@ export default class PricingOverview extends Vue {
       isExpand: true,
       child: [
         {
-          title: 'API Specification Protection',
-          info: 'Protect connections that other applications and platforms use to connect to your domain',
+          title: this.$t('pricing.pricing-detail.API-security.sub-option-1').toString(),
+          info: this.$t('pricing.pricing-detail.API-security.info-1').toString(),
           isExpand: false,
           supports: [
             {
@@ -324,19 +324,19 @@ export default class PricingOverview extends Vue {
             },
             {
               isSupport: true,
-              info: 'Custom',
+              info: this.$t('pricing.plans.custom'),
             },
           ],
         },
       ]
     },
     {
-      title: 'App Security',
+      title: this.$t('pricing.pricing-detail.app-security.text').toString(),
       isExpand: true,
       child: [
         {
-          title: 'IP Geolocation',
-          info: 'Block or allow IP addresses from certain countries',
+          title: this.$t('pricing.pricing-detail.app-security.sub-option-1').toString(),
+          info: this.$t('pricing.pricing-detail.app-security.info-1').toString(),
           isExpand: false,
           supports: [
             {
@@ -358,8 +358,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'IP Blacklist/Whitelist',
-          info: 'List specific IP addresses that are blocked or allowed',
+          title: this.$t('pricing.pricing-detail.app-security.sub-option-2').toString(),
+          info: this.$t('pricing.pricing-detail.app-security.info-2').toString(),
           isExpand: false,
           supports: [
             {
@@ -381,8 +381,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Custom Rules',
-          info: 'Customize your security rules for specific threats or actions',
+          title: this.$t('pricing.pricing-detail.app-security.sub-option-3').toString(),
+          info: this.$t('pricing.pricing-detail.app-security.info-3').toString(),
           isExpand: false,
           supports: [
             {
@@ -399,13 +399,13 @@ export default class PricingOverview extends Vue {
             },
             {
               isSupport: true,
-              info: 'Custom',
+              info: this.$t('pricing.plans.custom'),
             },
           ],
         },
         {
-          title: 'OWASP Top 10 Attack Protection',
-          info: 'Attack protection against the globally recognized top 10 attack risks',
+          title: this.$t('pricing.pricing-detail.app-security.sub-option-4').toString(),
+          info: this.$t('pricing.pricing-detail.app-security.info-4').toString(),
           isExpand: false,
           supports: [
             {
@@ -427,8 +427,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'New Attack Vectors - Zero Day',
-          info: 'Protection against the latest vulnerabilities that were previously unknown',
+          title: this.$t('pricing.pricing-detail.app-security.sub-option-5').toString(),
+          info: this.$t('pricing.pricing-detail.app-security.info-4').toString(),
           isExpand: false,
           supports: [
             {
@@ -450,8 +450,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'NDay Rules - Application Rules',
-          info: 'Protection against known vulnerabilities that have already been exposed, vulnerabilities that may or may not have been patched already',
+          title: this.$t('pricing.pricing-detail.app-security.sub-option-6').toString(),
+          info: this.$t('pricing.pricing-detail.app-security.info-6').toString(),
           isExpand: false,
           supports: [
             {
@@ -473,8 +473,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Static Content Caching',
-          info: 'Depending on where users are accessing your page from, a copy of your site is stored on servers for faster loading',
+          title: this.$t('pricing.pricing-detail.app-security.sub-option-7').toString(),
+          info: this.$t('pricing.pricing-detail.app-security.info-7').toString(),
           isExpand: false,
           supports: [
             {
@@ -496,8 +496,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Security Header / CORS Policy',
-          info: 'Control what data and resources can be shared with other 3rd parties',
+          title: this.$t('pricing.pricing-detail.app-security.sub-option-8').toString(),
+          info: this.$t('pricing.pricing-detail.app-security.info-8').toString(),
           isExpand: false,
           supports: [
             {
@@ -519,8 +519,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'CSP Header',
-          info: 'Restrict how resources such as Javascript load on your page',
+          title: this.$t('pricing.pricing-detail.app-security.sub-option-9').toString(),
+          info: this.$t('pricing.pricing-detail.app-security.info-9').toString(),
           isExpand: false,
           supports: [
             {
@@ -542,8 +542,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'HTTP/2',
-          info: 'Utilize the latest version of the HTTP protocol which allows web users to connect to web servers',
+          title: this.$t('pricing.pricing-detail.app-security.sub-option-10').toString(),
+          info: this.$t('pricing.pricing-detail.app-security.info-10').toString(),
           isExpand: false,
           supports: [
             {
@@ -567,13 +567,13 @@ export default class PricingOverview extends Vue {
       ]
     },
     {
-      title: 'BOT Management',
+      title: this.$t('pricing.pricing-detail.bot-management.text').toString(),
       isExpand: true,
       isComingSoon: true,
       child: [
         {
-          title: 'Anti-bot protection',
-          info: 'Use hCaptcha to determine whether users are bots or humans',
+          title: this.$t('pricing.pricing-detail.bot-management.sub-option-1').toString(),
+          info: this.$t('pricing.pricing-detail.bot-management.info-1').toString(),
           isExpand: false,
           supports: [
             {
@@ -590,12 +590,12 @@ export default class PricingOverview extends Vue {
             },
             {
               isSupport: true,
-              info: 'Advanced',
+              info: this.$t('pricing.plans.advanced'),
             },
           ],
         },
         {
-          title: 'Advanced Bot Management*',
+          title: this.$t('pricing.pricing-detail.bot-management.sub-option-2').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -613,13 +613,13 @@ export default class PricingOverview extends Vue {
             },
             {
               isSupport: true,
-              info: 'Custom',
+              info: this.$t('pricing.plans.custom'),
             },
           ],
         },
         {
-          title: 'Whitelist Good Bots',
-          info: 'Allow the use of bots that may have legitimate reasons for roaming your site',
+          title:this.$t('pricing.pricing-detail.bot-management.sub-option-3').toString(),
+          info: this.$t('pricing.pricing-detail.bot-management.info-3').toString(),
           isExpand: false,
           supports: [
             {
@@ -643,12 +643,12 @@ export default class PricingOverview extends Vue {
       ]
     },
     {
-      title: 'DDoS',
+      title: this.$t('pricing.pricing-detail.ddos.text').toString(),
       isExpand: true,
       child: [
         {
-          title: 'DDoS Mitigation (L7 & L3/4)',
-          info: 'Protection against attacks on multiple network layers that reduce site operability',
+          title: this.$t('pricing.pricing-detail.ddos.sub-option-1').toString(),
+          info: this.$t('pricing.pricing-detail.ddos.info-1').toString(),
           isExpand: false,
           supports: [
             {
@@ -657,21 +657,21 @@ export default class PricingOverview extends Vue {
             },
             {
               isSupport: true,
-              info: 'Up to 1.5 Gbps',
+              info: this.$t('pricing.ups-to').toString(),
             },
             {
               isSupport: true,
-              info: 'Up to 7.5 Gbps',
+              info: this.$t('pricing.ups-to-2').toString(),
             },
             {
               isSupport: true,
-              info: 'Custom Pricing (Up to 2 Tbps)',
+              info: this.$t('pricing.ups-to-3').toString(),
             },
           ],
         },
         {
-          title: 'Enterprise DDoS Mitigation (Hybrid)',
-          info: 'Protection against DDoS attacks in both the cloud and on-premise server environments',
+          title: this.$t('pricing.pricing-detail.ddos.sub-option-2').toString(),
+          info: this.$t('pricing.pricing-detail.ddos.info-2').toString(),
           isExpand: false,
           supports: [
             {
@@ -695,12 +695,12 @@ export default class PricingOverview extends Vue {
       ]
     },
     {
-      title: 'Small Business Expertise',
+      title: this.$t('pricing.pricing-detail.small-business-expertise.text').toString(),
       isExpand: true,
       child: [
         {
-          title: 'CNAME support',
-          info: 'Support for all domain aliases that point to your original domain name',
+          title: this.$t('pricing.pricing-detail.small-business-expertise.sub-option-1').toString(),
+          info: this.$t('pricing.pricing-detail.small-business-expertise.info-1').toString(),
           isExpand: false,
           supports: [
             {
@@ -722,8 +722,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'DNS Management',
-          info: 'Manage your own DNS records, choosing what servers are used to support your website for a better user experience and operational efficiency',
+          title: this.$t('pricing.pricing-detail.small-business-expertise.sub-option-2').toString(),
+          info: this.$t('pricing.pricing-detail.small-business-expertise.info-2').toString(),
           isExpand: false,
           supports: [
             {
@@ -745,8 +745,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'DNSSEC',
-          info: 'Attach digital signature records to your DNS information for added security',
+          title: this.$t('pricing.pricing-detail.small-business-expertise.sub-option-3').toString(),
+          info: this.$t('pricing.pricing-detail.small-business-expertise.info-3').toString(),
           isExpand: false,
           supports: [
             {
@@ -768,8 +768,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'SSL Auto-generation',
-          info: 'Automatically create authenticated and encrypted links between network systems',
+          title: this.$t('pricing.pricing-detail.small-business-expertise.sub-option-4').toString(),
+          info: this.$t('pricing.pricing-detail.small-business-expertise.info-4').toString(),
           isExpand: false,
           supports: [
             {
@@ -791,8 +791,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Custom SSL',
-          info: 'Customize the digital document that binds the identity of a website to a cryptographic key pair and that provides your website\'s identifying information',
+          title: this.$t('pricing.pricing-detail.small-business-expertise.sub-option-5').toString(),
+          info: this.$t('pricing.pricing-detail.small-business-expertise.info-5').toString(),
           isExpand: false,
           supports: [
             {
@@ -816,57 +816,34 @@ export default class PricingOverview extends Vue {
       ]
     },
     {
-      title: 'Management - Monitoring Reporting',
+      title: this.$t('pricing.pricing-detail.management-monitoring-reporting.text').toString(),
       isExpand: true,
       child: [
         {
-          title: 'Reporting',
+          title: this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-1').toString(),
           info: '',
           isExpand: false,
           supports: [
             {
               isSupport: true,
-              info: 'Basic',
+              info: this.$t('pricing.plans.basic'),
             },
             {
               isSupport: true,
-              info: 'Basic',
+              info: this.$t('pricing.plans.basic'),
             },
             {
               isSupport: true,
-              info: 'Advanced',
+              info: this.$t('pricing.plans.advanced'),
             },
             {
               isSupport: true,
-              info: 'Custom',
+              info: this.$t('pricing.plans.custom'),
             },
           ],
         },
         {
-          title: 'Polaris API Access',
-          info: '',
-          isExpand: false,
-          supports: [
-            {
-              isSupport: false,
-              info: '',
-            },
-            {
-              isSupport: false,
-              info: '',
-            },
-            {
-              isSupport: true,
-              info: '',
-            },
-            {
-              isSupport: true,
-              info: '',
-            },
-          ],
-        },
-        {
-          title: 'Realtime Dashboard',
+          title: this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-2').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -889,30 +866,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Multi-User Management',
-          info: '',
-          isExpand: false,
-          supports: [
-            {
-              isSupport: false,
-              info: '',
-            },
-            {
-              isSupport: true,
-              info: '',
-            },
-            {
-              isSupport: true,
-              info: '',
-            },
-            {
-              isSupport: true,
-              info: '',
-            },
-          ],
-        },
-        {
-          title: 'Incident Management Ticket System',
+          title: this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-3').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -935,7 +889,53 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Email/browser Alert Notifications',
+          title: this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-4').toString(),
+          info: '',
+          isExpand: false,
+          supports: [
+            {
+              isSupport: false,
+              info: '',
+            },
+            {
+              isSupport: true,
+              info: '',
+            },
+            {
+              isSupport: true,
+              info: '',
+            },
+            {
+              isSupport: true,
+              info: '',
+            },
+          ],
+        },
+        {
+          title: this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-5').toString(),
+          info: '',
+          isExpand: false,
+          supports: [
+            {
+              isSupport: false,
+              info: '',
+            },
+            {
+              isSupport: false,
+              info: '',
+            },
+            {
+              isSupport: true,
+              info: '',
+            },
+            {
+              isSupport: true,
+              info: '',
+            },
+          ],
+        },
+        {
+          title: this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-6').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -958,7 +958,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Request Logs',
+          title: this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-7').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -981,7 +981,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Audit Logs',
+          title: this.$t('pricing.pricing-detail.management-monitoring-reporting.sub-option-8').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -1006,12 +1006,12 @@ export default class PricingOverview extends Vue {
       ]
     },
     {
-      title: 'Scalability & Geographic Presence',
+      title: this.$t('pricing.pricing-detail.scalability-and-geographic-presence.text').toString(),
       isExpand: true,
       child: [
         {
-          title: 'BGP Anycast Network',
-          info: 'Always have your web traffic routed through the nearest server',
+          title: this.$t('pricing.pricing-detail.scalability-and-geographic-presence.sub-option-1').toString(),
+          info: this.$t('pricing.pricing-detail.scalability-and-geographic-presence.info-1').toString(),
           isExpand: false,
           supports: [
             {
@@ -1033,7 +1033,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'China Mainland Access',
+          title: this.$t('pricing.pricing-detail.scalability-and-geographic-presence.sub-option-2').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -1056,8 +1056,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Regional PoPs',
-          info: 'Utilize edge servers located all over the globe',
+          title: this.$t('pricing.pricing-detail.scalability-and-geographic-presence.sub-option-3').toString(),
+          info: this.$t('pricing.pricing-detail.scalability-and-geographic-presence.info-3').toString(),
           isExpand: false,
           supports: [
             {
@@ -1079,7 +1079,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Dedicated Edge',
+          title: this.$t('pricing.pricing-detail.scalability-and-geographic-presence.sub-option-4').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -1097,18 +1097,18 @@ export default class PricingOverview extends Vue {
             },
             {
               isSupport: true,
-              info: 'Custom Pricing',
+              info: this.$t('pricing.custom.pricing').toString(),
             },
           ],
         },
       ]
     },
     {
-      title: 'Service Level Agreement',
+      title: this.$t('pricing.pricing-detail.service-level-agreement.text').toString(),
       isExpand: true,
       child: [
         {
-          title: 'Emergency Hotline',
+          title: this.$t('pricing.pricing-detail.service-level-agreement.sub-option-1').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -1131,7 +1131,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Chat',
+          title: this.$t('pricing.pricing-detail.service-level-agreement.sub-option-2').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -1154,7 +1154,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Email',
+          title: this.$t('pricing.pricing-detail.service-level-agreement.sub-option-3').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -1177,8 +1177,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: '8 x 5 x Next Business Day',
-          info: 'Response 8 hours a day, 5 days a week by the Next Business Day',
+          title: this.$t('pricing.pricing-detail.service-level-agreement.sub-option-4').toString(),
+          info: this.$t('pricing.pricing-detail.service-level-agreement.info-4').toString(),
           isExpand: false,
           supports: [
             {
@@ -1200,8 +1200,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: '24 x 7 x 4',
-          info: 'Response 24 hours a day, 7 days a week within 4 hours',
+          title: this.$t('pricing.pricing-detail.service-level-agreement.sub-option-5').toString(),
+          info: this.$t('pricing.pricing-detail.service-level-agreement.info-5').toString(),
           isExpand: false,
           supports: [
             {
@@ -1223,8 +1223,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: '24 x 7 x 365 x 4',
-          info: 'Full 24/7, 365 days coverage within 4 hours',
+          title: this.$t('pricing.pricing-detail.service-level-agreement.sub-option-6').toString(),
+          info: this.$t('pricing.pricing-detail.service-level-agreement.info-6').toString(),
           isExpand: false,
           supports: [
             {
@@ -1246,8 +1246,8 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: '99.99% Uptime',
-          info: 'Only applicable to Cloud deployments',
+          title: this.$t('pricing.pricing-detail.service-level-agreement.sub-option-7').toString(),
+          info: this.$t('pricing.pricing-detail.service-level-agreement.info-7').toString(),
           isExpand: false,
           supports: [
             {
@@ -1271,11 +1271,11 @@ export default class PricingOverview extends Vue {
       ]
     },
     {
-      title: 'Technical Architecture',
+      title: this.$t('pricing.pricing-detail.technical-architecture.text').toString(),
       isExpand: true,
       child: [
         {
-          title: 'Cloud Deployment',
+          title: this.$t('pricing.pricing-detail.technical-architecture.sub-option-1').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -1298,7 +1298,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'On-premise Deployment',
+          title: this.$t('pricing.pricing-detail.technical-architecture.sub-option-2').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -1321,7 +1321,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Hybrid Cloud and On-premise Deployment',
+          title: this.$t('pricing.pricing-detail.technical-architecture.sub-option-3').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -1344,7 +1344,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Threat Intelligence',
+          title: this.$t('pricing.pricing-detail.technical-architecture.sub-option-4').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -1354,11 +1354,11 @@ export default class PricingOverview extends Vue {
             },
             {
               isSupport: true,
-              info: 'Paid Add-on',
+              info: this.$t('pricing.custom.paidAddOn').toString(),
             },
             {
               isSupport: true,
-              info: 'Paid Add-on',
+              info: this.$t('pricing.custom.paidAddOn').toString(),
             },
             {
               isSupport: true,
@@ -1367,7 +1367,7 @@ export default class PricingOverview extends Vue {
           ],
         },
         {
-          title: 'Zero Trust Access',
+          title: this.$t('pricing.pricing-detail.technical-architecture.sub-option-5').toString(),
           info: '',
           isExpand: false,
           supports: [
@@ -1377,11 +1377,11 @@ export default class PricingOverview extends Vue {
             },
             {
               isSupport: true,
-              info: 'Paid Add-on',
+              info: this.$t('pricing.custom.paidAddOn').toString(),
             },
             {
               isSupport: true,
-              info: 'Paid Add-on',
+              info: this.$t('pricing.custom.paidAddOn').toString(),
             },
             {
               isSupport: true,
@@ -1402,8 +1402,7 @@ export default class PricingOverview extends Vue {
   }
 
   onClick() {
-    this.$router.push({path: '/questions'});
+    return this.$router.push({path: this.localePath('/questions')})
   }
-
 }
 </script>

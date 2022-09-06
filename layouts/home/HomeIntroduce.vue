@@ -2,7 +2,7 @@
   <div class="container-fluid p-0" :class="$style.container">
     <div class="app-width text-center" :class="$style.bodyContainer">
       <div class="d-flex justify-content-center mb-5">
-        <h2 class="h3-sm col-9 mb-4" >An experience you'd expect from a professional tool.</h2>
+        <h2 class="h3-sm col-9 mb-4">{{ $t('home.intro') }}</h2>
       </div>
       <b-row class="mx-0 flex-lg-row flex-column">
         <template v-for="introduce in introduces">
@@ -52,7 +52,7 @@
   color $text-7
   text-align center
 
-@media only screen and (min-width:992px)
+@media only screen and (min-width: 992px)
   .bodyContainer
     padding 100px 140px
 </style>
@@ -67,18 +67,18 @@ export default class HomeIntroduce extends Vue {
     return [
       {
         img: require('@/assets/images/home/cutting-edge-technology.png'),
-        title: 'Cutting Edge Technology',
-        text: 'We’re powered by a proprietary Artificial Intelligence (AI) and Machine Learning (ML) engine that ensures attacks are stopped before they can affect your business.',
+        title: this.$t('home.benefit.title-1'),
+        text: this.$t('home.benefit.content-1'),
       },
       {
         img: require('@/assets/images/home/easy-to-deploy.png'),
-        title: 'Easy to Deploy',
-        text: 'Deploying Polaris only requires a simple change to the the domain’s name servers or CNAME before it begins protecting your website immediately.',
+        title: this.$t('home.benefit.title-2'),
+        text: this.$t('home.benefit.content-2'),
       },
       {
         img: require('@/assets/images/home/easy-to-use.png'),
-        title: 'Easy to Use',
-        text: 'The intuitive dashboard makes information easy to access, interpret, and act upon, even for those who are new to cybersecurity. Security rules are easy to customize with just a few clicks.',
+        title: this.$t('home.benefit.title-3'),
+        text: this.$t('home.benefit.content-3'),
       },
     ];
   }
