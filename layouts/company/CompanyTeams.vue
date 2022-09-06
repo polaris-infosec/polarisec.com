@@ -3,7 +3,7 @@
     <div class="app-width" :class="$style.bodyContainer">
       <b-row class="mx-0 flex-grow-1 justify-content-lg-between">
         <b-col class="p-0 mb-lg-0 mb-4 text-center text-lg-left" lg="4" cols="12">
-          <h2>Co-Founders</h2>
+          <h2>{{$t('company.co-founders')}}</h2>
         </b-col>
         <b-col lg="8" cols="12" class="p-0">
           <b-row  class="mx-0 justify-content-between">

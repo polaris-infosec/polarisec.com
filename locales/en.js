@@ -197,7 +197,8 @@ export default {
   },
   company: {
     title: "Simplifying the <span class=\"brand-2\">protection of your critical assets</span> from the world’s greatest cyber threats.",
-    "company-certs": "Company Certifications"
+    "company-certs": "Company Certifications",
+    "co-founders": "Co-Founders"
   },
   services: {
     "ISMA": {
