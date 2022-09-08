@@ -3,7 +3,7 @@
       <div class="col-sm-4 pl-0">
         <div :class="$style.title" v-html="$t('pricing.plans.standard-professional')"></div>
         <div class="d-inline-flex justify-content-center align-items-center">
-          <h4 :class="$style.price">{{isMonthlyType ? '$87' : "$1043"}}</h4>
+          <h4 :class="$style.price">{{isMonthlyType ? '$87' : "$940"}}</h4>
           <div :class="$style.priceDetail">
             <div v-html="$t('pricing.per-domains')"></div>
             <div>{{ isMonthlyType ? $t('pricing.per-month') : $t('pricing.per-year') }}</div>

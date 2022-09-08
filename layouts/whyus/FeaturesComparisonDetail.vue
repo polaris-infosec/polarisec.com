@@ -57,7 +57,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
         },
         {
           comp: 'F5',
-          isSupport: 'Add-on'
+          isSupport: this.$t("pricing.plans.add-on")
         },
         {
           comp: 'Imperva',
@@ -200,7 +200,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
         },
         {
           comp: 'CloudFlare',
-          isSupport: 'Add-on'
+          isSupport: this.$t("pricing.plans.add-on")
         },
         {
           comp: 'F5',
@@ -242,11 +242,11 @@ export default class FeaturesComparisonDetailsTable extends Vue {
         },
         {
           comp: 'CloudFlare',
-          isSupport: 'Add-on'
+          isSupport: this.$t("pricing.plans.add-on")
         },
         {
           comp: 'F5',
-          isSupport: 'Add-on'
+          isSupport: this.$t("pricing.plans.add-on")
         },
         {
           comp: 'Imperva',
@@ -330,7 +330,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           },
           {
             comp: 'CloudFlare',
-            isSupport: 'Manual'
+            isSupport: this.$t("pricing.plans.manual")
           },
           {
             comp: 'F5',
@@ -351,7 +351,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
         support: [
           {
             comp: 'Polaris',
-            isSupport: 'Add-on'
+            isSupport: this.$t("pricing.plans.add-on")
           },
           {
             comp: 'CloudFlare',
@@ -359,11 +359,11 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           },
           {
             comp: 'F5',
-            isSupport: 'Add-on'
+            isSupport: this.$t("pricing.plans.add-on")
           },
           {
             comp: 'Imperva',
-            isSupport: 'Add-on'
+            isSupport: this.$t("pricing.plans.add-on")
           },
         ]
       },
@@ -376,7 +376,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           },
           {
             comp: 'CloudFlare',
-            isSupport: 'Enterprise Only'
+            isSupport: this.$t('pricing.plans.enterprise-only')
           },
           {
             comp: 'F5',
@@ -460,7 +460,7 @@ export default class FeaturesComparisonDetailsTable extends Vue {
           },
           {
             comp: 'CloudFlare',
-            isSupport: 'Add-on'
+            isSupport: this.$t("pricing.plans.add-on")
           },
           {
             comp: 'F5',

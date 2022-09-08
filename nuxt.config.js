@@ -103,6 +103,8 @@ export default {
     '@nuxtjs/i18n',
   ],
   i18n: {
+    seo: true,
+    baseUrl: "localhost:3000",
     locales: [
       {
         code: "en",

@@ -43,9 +43,9 @@ export default class HomePage extends Vue {
     return window.screen.width < 992.0
   }
 
-  get head() {
+  head() {
     return {
-      title: 'Polaris Web Protection & Cyber Security',
+      title: this.$t("home.title"),
       meta: [
         {
           name: 'keywords',

@@ -60,7 +60,7 @@
 </template>
 
 <script lang="ts">
-import {Vue, Component} from "nuxt-property-decorator";
+import {Vue, Component, Watch} from "nuxt-property-decorator";
 import Testimonials from "~/layouts/whyus/Testimonials.vue";
 import FeaturesComparison from "~/layouts/whyus/FeaturesComparison.vue";
 
@@ -72,9 +72,9 @@ import FeaturesComparison from "~/layouts/whyus/FeaturesComparison.vue";
 })
 export default class WhyUs extends Vue {
 
-  get head() {
+  head() {
     return {
-      title: 'Why Us'
+      title: this.$t("whyUs.header-title")
     }
   }
 

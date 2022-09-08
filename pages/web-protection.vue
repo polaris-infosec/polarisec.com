@@ -23,9 +23,9 @@ import PricingScreen from "~/layouts/pricing/screen_mobile_device/PricingScreen.
   components: {PricingScreen, PricingDetails, PricingBanner}
 })
 export default class PolarisCyberSecurityWebProtectionWaapPricing extends Vue {
-  get head() {
+  head() {
     return {
-      title: 'Web Protection Plans',
+      title: this.$t("pricing.header-title"),
       meta: [
         {
           name: 'keywords',
