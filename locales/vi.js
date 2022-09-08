@@ -75,7 +75,7 @@ export default {
     "feature-3": {
       "title": "Tình Báo Thông Minh<span class=\"brand-2\">.</span>",
       "content-1": "Polaris sử dụng nhiều nguồn thông tin tình báo mạng đáng tin cậy để tổng hợp, so sánh và phân tích dữ liệu về mối đe dọa nhằm hình thành một chiến lược phát hiện và phòng thủ toàn diện hơn trong thời gian thực khi các sự kiện xảy ra.",
-      "content-2": "Khả năng tình báo về các mối đe dọa của chúng tôi luôn cải tiến khi các mối đe dọa của tin tặc cũng đang thay đổi mỗi ngày, <b>tạo thành một hệ thống cảnh báo toàn diện hơn.</b>",
+      "content-2": "Khả năng tình báo thông minh của chúng tôi luôn cải tiến để bắt kịp sự phát triển của các mối đe dọa từ tin tặc, <b>tạo thành một hệ thống cảnh báo toàn diện hơn.</b>",
     },
     "featureBy": "Được nhắc đến bởi:",
     "see-it-in-action": {
