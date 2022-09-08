@@ -198,7 +198,7 @@ export default class PricingDetail extends Vue {
       },
       {
         title: this.$t('pricing.plans.standard').toString(),
-        price: this.isMonthly ? 17 : 187,
+        price: this.isMonthly ? 17 : 183,
         features: [
           {
             title: this.$t('pricing.pricing-detail.app-security.text').toString(),
@@ -268,7 +268,7 @@ export default class PricingDetail extends Vue {
       },
       {
         title: this.$t('pricing.plans.professional').toString(),
-        price: this.isMonthly ? 185 : 1176,
+        price: this.isMonthly ? 185 : 1998,
         features: [
           {
             title: this.$t('pricing.pricing-detail.API-security.text').toString(),

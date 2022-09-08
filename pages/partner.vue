@@ -24,9 +24,9 @@ import OurPartners from "~/layouts/partner/OurPartners.vue";
   components: {OurPartners, ContactSale, PartnerTypes, WhyChoosePolaris, OurJoinMission}
 })
 export default class Partner extends Vue {
-  get head() {
+  head() {
     return {
-      title: 'Our Partners'
+      title: this.$t("partner.header-title")
     }
   }
 }

@@ -18,14 +18,15 @@ export default {
       "option-4": "Kiểm định PCI-DSS",
       "option-5": "Ứng Cứu Sự Cố",
     },
-    "why-us": "Ưu Thế",
-    "partners": "Đối Tác",
-    "company": "Công Ty",
-    "pricing": "Bảng Giá",
-    "support-center": "Trung Tâm Hỗ Trợ",
+    "why-us": "Ưu thế",
+    "partners": "Đối tác",
+    "company": "Công ty",
+    "pricing": "Bảng giá",
+    "support-center": "Trung tâm hỗ trợ",
     "blog": "Blog",
-    "platform-access": "Tổng Quan",
-    "contact": "Liên Hệ",
+    "platform-access": "Truy cập nền tảng",
+    "contact": "Liên hệ",
+    "about": "Tổng quan",
   },
   "footer": {
     "nation": {
@@ -44,49 +45,51 @@ export default {
     "polaris-tag": "@ Polaris Infosec Pte. Ltd."
   },
   home: {
+    "title": "Nền Tảng Bảo Mật Ứng Dụng Website & API (WAAP) Polaris - Trang chủ",
     "header-title": "Nền tảng bảo mật website toàn diện",
     "header-slogan": "Always On Guard",
-    "header-content": "Nền tảng Bảo Mật Ứng Dụng Web & API (WAAP) của Polaris ứng dụng <b>công nghệ trí tuệ nhân tạo thế hệ mới (Next-Gen AI)</b> với khả năng chủ động phát hiện và ngăn chặn các mối đe dọa đến website của bạn. <b>Mạnh mẽ</b>, <b>dễ thích ứng</b> và <b>cực kì chính xác</b>, nền tảng của chúng tôi giảm thiểu tối đa mức độ nguy hiểm đến tài sản quan trọng nhất - dữ liệu của bạn.",
+    "header-content": "Nền tảng Bảo Mật Ứng Dụng Web & API (WAAP) của Polaris ứng dụng <b>công nghệ trí tuệ nhân tạo thế hệ mới (AI)</b> với khả năng chủ động phát hiện và ngăn chặn các mối đe dọa đến website của bạn. <b>Đảm bảo an ninh và dễ dàng sử dụng,</b> nền tảng của Polaris sẽ bảo vệ dữ liệu của bạn và tài sản quan trọng nhất của mỗi cá nhân và doanh nghiệp.",
     "intro": "Đem đến cho bạn trải nghiệm không ngờ từ một nền tảng chuyên nghiệp",
     "benefit": {
       "title-1": "Công nghệ vượt trội",
-      "content-1": "Áp dụng công nghệ độc quyền trí tuệ nhân tạo (Artificial Intelligence) và máy học (Machine Learning) vào hệ thống, chúng tôi đảm bảo rằng các cuộc tấn công sẽ dừng lại trước khi chúng kịp gây ra bất kì tổn thất nào. Bạn không còn lo lắng bị tấn công và có thể an tâm tập trung vào các hoạt động kinh doanh.",
+      "content-1": "Áp dụng công nghệ độc quyền trí tuệ nhân tạo (Artificial Intelligence) và máy học (Machine Learning) vào hệ thống, chúng tôi đảm bảo rằng các cuộc tấn công sẽ dừng lại trước khi chúng kịp gây ra bất kì tổn thất nào vào các hoạt động kinh doanh.",
       "title-2": "Triển khai đơn giản",
-      "content-2": "Chỉ mất vài phút cài đặt, trang web của bạn đã được bảo vệ. Chúng tôi cung cấp cho bạn cái nhìn tổng quan về trạng thái trang web trên bảng điều khiển cũng như trên ứng dụng di động.",
+      "content-2": "Chỉ mất vài phút cài đặt bằng cách thay đổi nhỏ đối với tên miền máy chủ hoặc CNAME, trang web của bạn đã được bảo vệ. Chúng tôi cung cấp cho bạn cái nhìn tổng quan về trạng thái trang web trên bảng điều khiển cũng như trên ứng dụng di động.",
       "title-3": "Sử dụng dễ dàng",
       "content-3": "Nền tảng của chúng tôi được cấu hình mặc định với các quy tắc bảo vệ tối ưu. Trang web của bạn sẽ được bảo vệ ngay lập tức khỏi các mối đe dọa lớn nhất sau khi thiết lập thành công với Polaris. Ngoài ra, người dùng có thể tuỳ chỉnh các bộ luật một cách dễ dàng thông qua bảng điều khiển.",
     },
     "video": {
       "title": "Polaris đồng hành với doanh nghiệp của bạn ra sao?",
-      "content": "Polaris là lớp khiên chắn trước các cuộc tấn công mạng ở ngay giai đoạn đầu - tiến hành theo dõi các mục tiêu tiềm ẩn. Chúng tôi theo dõi các xu hướng, diễn biến khắp các ứng dụng web để dự đoán và ngăn chặn các cuộc tấn công trước khi chúng xảy ra.",
+      "content": "Polaris là lớp khiên chắn trước các cuộc tấn công mạng ở ngay giai đoạn đầu - tiến hành theo dõi các mục tiêu tiềm ẩn. Chúng tôi theo dõi các xu hướng đang diễn biến khắp các ứng dụng web để dự đoán và ngăn chặn các cuộc tấn công trước khi chúng xảy ra.",
     },
     "feature-1": {
       "title": "Bảo mật ứng dụng Web<span class=\"brand-2\">.</span>",
-      "content-1": "<b>Bảo vệ trang web khỏi các cuộc tấn công</b> như DDoS, SQL injection, Zero-Day attacks, và các lỗ hổng thuộc Top-10 OWASP... trước khi máy chủ ứng dụng bị khai thác.",
-      "content-2": "Các cấu hình bảo vệ đã được tối ưu hóa sẵn, một khi tích hợp xong, <b>bạn sẽ được bảo vệ ngay lập tức</b>. Nếu cần thiết, bạn cũng có thể tùy chỉnh cấu hình sao cho phù hợp nhất với các điều kiện bảo mật của bạn.",
+      "content-1": "<b>Bảo vệ trang web khỏi các cuộc tấn công</b> như DDoS, SQL injection, Zero-Day attacks, và các lỗ hổng top 10 OWASP trước khi máy chủ ứng dụng bị khai thác.",
+      "content-2": "Các cấu hình được cài đặt mặc định với các quy tắc bảo vệ bởi chuyên gia , một khi tích hợp xong, <b>bạn sẽ được bảo vệ ngay lập tức</b>. Nếu cần thiết thay đổi, bạn cũng có thể dễ dàng điều chỉnh cấu hình sao cho phù hợp nhất với các điều kiện bảo mật của bạn.",
     },
     "feature-2": {
       "title": "Trí Tuệ Nhân Tạo<span class=\"brand-2\">.</span>",
-      "content-1": "Chúng tôi sử dụng các kỹ thuật máy học chuyên biệt cho ứng dụng, chẳng hạn như “lấy dấu vân tay” để <b>phân biệt giữa các yêu cầu hợp pháp hay độc hại đến web.</b>",
-      "content-2": "AI của chúng tôi không ngừng học hỏi để có thể xác định và hành động tùy theo các cuộc tấn công nhắm vào các ứng dụng web được kết hợp với lưu lượng truy cập có vẻ bình thường - các truy cập lách qua các biện pháp bảo vệ truyền thống.",
+      "content-1": "Chúng tôi sử dụng các kỹ thuật máy học cụ thể cho ứng dụng, chẳng hạn như “lấy dấu vân tay” để <b>phân biệt các yêu cầu đó là hợp pháp hay độc hại đến web.</b>",
+      "content-2": "Công nghệ trí tuệ nhân tạo (AI) của chúng tôi không ngừng học hỏi để có thể xác định và hành động tùy theo các cuộc tấn công nhắm vào các ứng dụng web được kết hợp với lưu lượng truy cập có vẻ bình thường - các truy cập lách qua các biện pháp bảo vệ truyền thống.",
     },
     "feature-3": {
       "title": "Tình Báo Thông Minh<span class=\"brand-2\">.</span>",
       "content-1": "Polaris sử dụng nhiều nguồn thông tin tình báo mạng đáng tin cậy để tổng hợp, so sánh và phân tích dữ liệu về mối đe dọa nhằm hình thành một chiến lược phát hiện và phòng thủ toàn diện hơn trong thời gian thực khi các sự kiện xảy ra.",
-      "content-2": "Khả năng tình báo về các mối đe dọa của chúng tôi luôn cải tiến khi các mối đe dọa của tin tặc cũng đang thay đổi để luôn ở trạng thái cập nhật, <b>tạo thành một hệ thống cảnh báo trước toàn diện hơn.</b>",
+      "content-2": "Khả năng tình báo về các mối đe dọa của chúng tôi luôn cải tiến khi các mối đe dọa của tin tặc cũng đang thay đổi mỗi ngày, <b>tạo thành một hệ thống cảnh báo toàn diện hơn.</b>",
     },
     "featureBy": "Được nhắc đến bởi:",
     "see-it-in-action": {
       "title": "Trải nghiệm ngay",
-      "content": "Yêu cầu demo miễn phí ngay hôm nay để được bảo vệ trước các phương thức tấn công mạng - ngày càng phát triển."
+      "content": "Yêu cầu demo miễn phí ngay hôm nay để được bảo vệ trước các phương thức tấn công mạng đang phát triển."
     },
     "sign-up": {
       "title": "Đăng ký nhận bản tin",
-      "content": "Nhận các thông tin cập nhật mới nhất và nhanh nhất về tính năng và sản phẩm."
+      "content": "Nhận các thông tin cập nhật mới nhất về tính năng và sản phẩm."
     },
   },
   "whyUs": {
-    "title": "Ưu thế",
+    "title": "Ưu Thế",
+    "header-title": "Ưu Thế - Polaris",
     "intro-1": " Polaris là <span class=\"brand-2\">giải pháp hàng đầu APAC</span> chuyên cung cấp các dịch vụ bảo mật chất lượng tới khách hàng.",
     "intro-2": "Chúng tôi hiểu rằng đôi khi an ninh mạng trở nên quá phức tạp, vì thế chúng tôi luôn tìm cách đơn giản hóa quy trình, <span\n" +
       "            class=\"brand-2\">để bất kỳ ai, ở bất kỳ đâu đều có thể tiếp cận được.</span>",
@@ -162,7 +165,8 @@ export default {
     }
   },
   partner: {
-    title: "Đối tác",
+    title: "Đối Tác",
+    "header-title": "Đối Tác - Polaris",
     content: "Polaris luôn mong muốn sự đồng hành của quý đối tác trong việc cung cấp giải pháp an ninh mạng đến với cộng đồng.",
     "our-joint-mission": {
       title: "Sứ mệnh chung",
@@ -181,10 +185,13 @@ export default {
   company: {
     title: "Đơn giản hóa việc <span class=\"brand-2\">bảo vệ các tài sản quan trọng của doanh nghiệp</span>  trước các mối đe dọa an ninh mạng nguy hiểm nhất hiện nay.",
     "company-certs": "Chứng chỉ đạt được",
+    "co-founders": "Nhà đồng sáng lập",
+    "header-title": "Tổng Quan Công Ty - Polaris",
   },
   services: {
     "ISMA": {
       title: "Đánh Giá Độ Hiệu Quả Bảo Mật Thông Tin",
+      "header-title": "Đánh Giá Độ Hiệu Quả Bảo Mật Thông Tin - Polaris",
       content: "Tiến hành kiểm tra và đánh giá tình trạng các lỗ hổng là bước chuẩn bị đầu tiên cho an ninh mạng. Phương pháp Infosec Maturity Assessment (ISMA) của Polaris được thiết kế để đánh giá năng lực của doanh nghiệp trong việc bảo vệ tài sản thông tin có giá trị nhất và quản lý các thông tin nhạy cảm cũng như tự bảo vệ mình chống lại các cuộc tấn công và giảm thiểu tác động nếu cuộc tấn công xảy ra.",
       "dimension-title": "6 Khía cạnh của ISMA",
       dimensions: {
@@ -204,6 +211,7 @@ export default {
     },
     "ISO-27001": {
       title: "Kiểm định ISO 27001",
+      "header-title": "Kiểm định ISO 27001 - Polaris",
       content: "ISO 27001 là chứng nhận tiêu chuẩn quốc tế cung cấp các yêu cầu cho hệ thống quản lý an toàn thông tin. Mục đích chứng nhận là đảm bảo các công ty có khả năng quản trị, vận hành và giải pháp phù hợp để duy trì quyền kiểm soát các dữ liệu và tài nguyên số của tổ chức. Dịch vụ của chúng tôi giúp khách hàng chứng minh đơn vị đã tuân thủ theo các yêu cầu tốt nhất về bảo mật thông tin bằng cách đạt được chứng nhận ISO 27001.",
       "what-we-do": {
         text: "Chúng tôi cung cấp",
@@ -221,11 +229,12 @@ export default {
     },
     "GDPR": {
       title: "Kiểm định GDPR",
+      "header-title": "Kiểm Định GDPR - Polaris",
       "sub-title": "Các doanh nghiệp có hoạt động trong Liên Minh Châu Âu (EU) bắt buộc phải tuân thủ tiêu chuẩn GDPR.",
       content: "Quy định chung về bảo vệ dữ liệu (GDPR) có vai trò hướng dẫn về việc bảo vệ dữ liệu và quyền riêng tư cho các cá nhân sống ở liên minh Châu Âu (EU). Quy định này đề ra các quyền lợi thuộc về công dân ở EU và các quy trình mà doanh nghiệp phải thực hiện khi lưu trữ và quản lý dữ liệu cá nhân.",
       "what-we-do": {
         text: "Chúng tôi cung cấp",
-        "sub-title": "Kiểm định GDPR với chu trình PDCA để đánh giá sự tuân thủ tiêu chuẩn của tdoanh nghiệp.",
+        "sub-title": "Kiểm định GDPR với chu trình PDCA để đánh giá sự tuân thủ tiêu chuẩn của doanh nghiệp.",
         "plan": {
           text: "Lập kế hoạch",
           "content-1": "Kiểm định cam kết của doanh nghiệp",
@@ -266,6 +275,7 @@ export default {
     },
     "PCI-DSS": {
       title: "Kiểm định PCI-DSS",
+      "header-title": "Kiểm Định PCI-DSS - Polaris",
       content: "Payment Card Industry Data Security Standard (PCI-DSS) là tiêu chuẩn bảo mật thông tin áp dụng cho tất cả các doanh nghiệp có sử dụng thẻ thuộc các công ty thẻ lớn và được ủy quyền bởi các thương hiệu thẻ.",
       "what-we-do": {
         text: "Dịch vụ của chúng tôi",
@@ -296,6 +306,7 @@ export default {
     },
     "incident-response": {
       title: "Dịch Vụ Ứng Cứu Sự Cố",
+      "header-title": "Dịch Vụ Ứng Cứu Sự Cố - Polaris",
       content: "Ứng cứu sự cố của Polaris là dịch vụ giám sát và đảm bảo <b>xử lý sự cố ngay lập tức</b> trong trường hợp doanh nghiệp bị tấn công mạng. Cụ thể, khi nhận được thông báo quan trọng về sự cố xảy ra, các chuyên gia an ninh mạng Polaris sẽ bắt đầu phân tích và đưa ra phương pháp xử lý hiệu quả cho khách hàng. <br><br> Dịch Vụ Ứng Cứu Sự Cố gồm có - <b>Trọn gói và Yêu Cầu.</b><br><br><b>Trọn Gói</b> - Là một “Dịch vụ quản lý bảo mật” giúp đánh giá tình trạng hiện tại của tổ chức doanh nghiệp và chủ động giám sát mạng hàng ngày để truy tìm các cuộc tấn công. Khi một cuộc tấn công xảy ra, chúng tôi ngay lập tức khắc phục sự cố.<br><br><b>Yêu cầu</b> - Hãy liên hệ với chúng tôi ngay khi doanh nghiệp gặp sự cố để được hỗ trợ và xử lý kịp thời.",
       "what-we-do": {
         text: "Chúng tôi cung cấp",
@@ -329,6 +340,7 @@ export default {
   },
   pricing: {
     title: "CÁC GÓI BẢO MẬT WEBSITE",
+    "header-title": "Các Gói Bảo Mật Website - Polaris",
     content: "Đăng kí ngay để trải nghiệm giải pháp của Polaris miễn phí và vô thời hạn",
     consultation: "Yêu cầu được tư vấn",
     pricing: "Chi phí",
@@ -456,9 +468,9 @@ export default {
       },
       "technical-architecture": {
         text: "Cấu trúc kĩ thuật",
-        "sub-option-1": "Triển khai đám mây",
+        "sub-option-1": "Triển khai trên Cloud",
         "sub-option-2": "Triển khai tại chỗ",
-        "sub-option-3": "Triển khai kết hợp(hybrid) - Đám mây và tại chỗ",
+        "sub-option-3": "Triển khai kết hợp(hybrid) - Trên Cloud và tại chỗ",
         "sub-option-4": "Tình báo thông minh",
         "sub-option-5": "Zero Trust Access",
       },
@@ -562,6 +574,9 @@ export default {
       advanced: "Nâng cao",
       custom: "Tuỳ chỉnh",
       "standard-professional": "Tiêu chuẩn / Chuyên nghiệp",
+      manual: "Tùy chỉnh",
+      "enterprise-only": "Gói doanh nghiệp",
+      "add-on": "Tiện ích bổ sung",
     },
     article: {
       content: "Tìm hiểu thêm về các lợi ích khi sử dụng các biện pháp ",
@@ -576,7 +591,8 @@ export default {
     }
   },
   contact: {
-    title: "Trợ giúp",
+    title: "Liên Hệ",
+    "header-title": "Liên Hệ - Polaris",
     content: "Nếu đang gặp phải tấn công hoặc cần được hỗ trợ về an ninh mạng, liên hệ chúng tôi để xử lý ngay.",
     "phone-number": "(+84) 28 7101 7755",
     name: "Họ Tên *",
@@ -606,6 +622,7 @@ export default {
     },
   },
   question: {
+    "header-title": "Câu Hỏi - Polaris",
     introduction: "Vài câu hỏi nhanh để chúng tôi có thể đưa ra đề xuất cho bạn",
     "skip-question": "Bỏ qua và xem tất cả các gói",
     text: "Câu ",
@@ -635,6 +652,7 @@ export default {
     },
   },
   recommendation: {
+    "header-title": "Gói Khuyên Dùng - Polaris",
     title: "Đây là đề xuất của chúng tôi dành cho bạn",
     "sub-title": "Dựa trên thông tin về website và nhu cầu sử dụng của bạn, chúng tôi đề xuất gói dịch vụ kèm tiện ích bổ sung sau:",
     "start-over": "Bắt đầu lại",
@@ -646,6 +664,7 @@ export default {
     "professional-add-on": "Dịch vụ quản lí và tiện ích an toàn thông tin - Zero Trust",
   },
   "web-protection-platform": {
+    "header-title": "Tổng Quan Và Lợi Ích Của Nền Tảng Bảo Mật Web - Polaris",
     title: "Lợi ích thực tế của nền tảng bảo mật website",
     "sub-title": "Đặc tính cơ bản của bảo mật website",
     "web-protection": "Bảo mật website",

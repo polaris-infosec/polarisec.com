@@ -26,6 +26,7 @@ export default {
     "blog": "Blog",
     "platform-access": "Platform Access",
     "contact": "Contact",
+    "about": "About",
   },
   "footer": {
     "nation": {
@@ -44,6 +45,7 @@ export default {
     "polaris-tag": "@ Polaris Infosec Pte. Ltd.",
   },
   home: {
+    title: "Polaris Web Application & API Protection (WAAP) - Homepage",
     "header-title": "Web Protection that Never Sleeps",
     "header-slogan": "Always On Guard",
     "header-content": "          Polaris’ Web Application & API Protection (WAAP) applies <b>next-generation Artificial Intelligence (AI)</b>\n" +
@@ -97,7 +99,8 @@ export default {
     },
   },
   "whyUs": {
-    "title": "Why us",
+    "title": "Why Us",
+    "header-title": "Why us - Polaris",
     "intro-1": " Polaris is your <span class=\"brand-2\">premier local solution</span> with local support, dedicated to\n" +
       "            providing users with a first rate security service.",
     "intro-2": "We understand that cyber security can sometimes be overly complex and seek to simplify the process, <span\n" +
@@ -171,11 +174,12 @@ export default {
         "option-4": "Cloud Deployment",
         "option-5": "On-Premise Deployment",
         "option-6": "Mainland China Access",
-      }
+      },
     }
   },
   partner: {
     title: "Our Partners",
+    "header-title": "Our Partners - Polaris",
     content: "We're looking for your help in providing security solutions to our communities",
     "our-joint-mission": {
       title: "Our Joint Mission",
@@ -198,11 +202,13 @@ export default {
   company: {
     title: "Simplifying the <span class=\"brand-2\">protection of your critical assets</span> from the world’s greatest cyber threats.",
     "company-certs": "Company Certifications",
-    "co-founders": "Co-Founders"
+    "co-founders": "Co-Founders",
+    "header-title": "Our Company - Polaris",
   },
   services: {
     "ISMA": {
       title: "Infosec Maturity Assessments",
+      "header-title": "Infosec Maturity Assessments - Polaris",
       content: "Conduct a gap assessment to check the state of your cyber security preparedness. Polaris’ Infosec Maturity Assessment (ISMA) Methodology is designed to assess an organization's ability to protect and manage its sensitive, most valuable information assets, protect itself against cyber attack as well as to identify, manage, and minimize the impact if one should occur.",
       "dimension-title": "The 6 DIMENSIONS of the ISMA",
       dimensions: {
@@ -222,6 +228,7 @@ export default {
     },
     "ISO-27001": {
       title: "ISO 27001 Audit",
+      "header-title": "ISO 27001 Audit - Polaris",
       content: "The most well known and utilized international standard on how to manage information security. The purpose is to ensure companies have the right governance, processes, and technical capabilities to maintain control of their data and information assets. Our service prepares you for attaining the ISO 27001 certification which identifies you as being in compliance with international Information Security standards.",
 
       "what-we-do": {
@@ -240,6 +247,7 @@ export default {
     },
     "GDPR": {
       title: "GDPR Audit",
+      "header-title": "GDPR Audit - Polaris",
       "sub-title": "For businesses that conduct business in the European Union, GDPR Compliance is mandatory.",
       "content": "The General Data Protection Regulation (GDPR) is a legal framework that serves as a set of guidelines for how personal information should be collected and processed for those who live in the European Union. They outline rights belonging to citizens in the EU and the steps that companies must take when storing and managing confidential data.",
       "what-we-do": {
@@ -285,6 +293,7 @@ export default {
     },
     "PCI-DSS": {
       title: "PCI-DSS Audit",
+      "header-title": "PCI-DSS Audit - Polaris",
       content: "The Payment Card Industry Data Security Standard (PCI-DSS) is an information security standard applicable to all organizations that handle credit cards from the major card companies and is mandated by the card brands.",
       "what-we-do": {
         text: "What we do",
@@ -315,6 +324,7 @@ export default {
     },
     "incident-response": {
       title: "Incident Response",
+      "header-title": "Incident Response - Polaris",
       content: "In case an organization suffers a cyber attack, an incident response is warranted to resolve the issue. It is the <b>immediate triage of the incident</b> in determining who is involved, how it happened, what the immediate impact is, and what the customer can do about it. <br><br> Incident response can be <b>retained or on-demand.</b><br><br><b>Retained</b> - a Managed Security Service in which we'll assess your organization's current breach status and actively monitor your network daily for attacks. When an attack occurs, we immediately remediate the threat. Retained response customers will always have priority.<br><br><b>On-demand</b> - Call us when you need us. We'll do an assessment of the incident and immediately remediate it for you.",
       "what-we-do": {
         text: "What we do",
@@ -348,6 +358,7 @@ export default {
   },
   pricing: {
     title: "Web Protection Plans",
+    "header-title": "Web Protection Plans",
     content: "Try Polaris free - forever",
     consultation: "Request a Consultation",
     pricing: "Pricing",
@@ -582,6 +593,9 @@ export default {
       advanced: "Advanced",
       custom: "Custom",
       "standard-professional": "Standard / Professional",
+      manual: "Manual",
+      "enterprise-only": "Enterprise Only",
+      "add-on": "Add-on",
     },
     article: {
       content: "Find out more about the benefits of using",
@@ -596,7 +610,8 @@ export default {
     }
   },
   contact: {
-    title: "Get help",
+    title: "Get Help",
+    "header-title":"Contact Us - Polaris",
     content: "Reach out to us for more, whether you're suffering from a cyber attack or require more information from our team.",
     "phone-number": "(+84) 28 7101 7755",
     name: "Your Name *",
@@ -627,6 +642,7 @@ export default {
   },
 
   question: {
+    "header-title": "Questions - Polaris",
     introduction: "Some quick  questions for personalized recommendations",
     "skip-question": "Skip question and see all plans",
     text: "Question ",
@@ -656,6 +672,7 @@ export default {
     }
   },
   recommendation: {
+    "header-title": "Recommendation Plan - Polaris",
     title: "Here’s your personalized recommendation",
     "sub-title": "Based on the type of website you have and your needs, we recommend the following plan and add-ons.",
     "start-over": "Start-over",
@@ -668,6 +685,7 @@ export default {
 
   },
   "web-protection-platform": {
+    "header-title": "Web protection platform facts and benefits - Polaris",
     title: "Web protection platform facts and benefits",
     "sub-title": "Web protection fundamentals",
     "web-protection": "Web protection",

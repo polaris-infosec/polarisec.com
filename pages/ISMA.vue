@@ -12,7 +12,11 @@ import ISMAScreen from "~/layouts/services/ISMA/ISMAScreen.vue";
   components: {ISMAScreen}
 })
 export default class ISMA extends Vue {
-
+  head() {
+    return {
+      title: this.$t('services.ISMA.header-title')
+    }
+  }
 }
 </script>
 
