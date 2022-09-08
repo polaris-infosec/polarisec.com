@@ -610,7 +610,7 @@ export default {
     }
   },
   contact: {
-    title: "Get help",
+    title: "Get Help",
     "header-title":"Contact Us - Polaris",
     content: "Reach out to us for more, whether you're suffering from a cyber attack or require more information from our team.",
     "phone-number": "(+84) 28 7101 7755",
