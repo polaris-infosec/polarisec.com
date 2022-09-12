@@ -141,7 +141,7 @@
         </span>
         </b-col>
         <b-col class="col-12 col-lg-3 d-flex justify-content-center justify-content-lg-end p-0">
-          <nuxt-link to="/terms">
+          <nuxt-link :to="localePath('/terms')">
             <div class="pr-2 text-center" style="border-right: 0.03em solid #A9B7C6; color: white">
               <span class="body-4">
                 {{ $t('footer.term') }}
