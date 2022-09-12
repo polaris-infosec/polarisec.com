@@ -697,5 +697,110 @@ export default {
     },
     "content-7": "Đăng ký chỉ mất chưa đến 10 phút và sau khi cài đặt xong, trang web của bạn sẽ được bảo vệ ngay lập tức với các cấu hình bảo mật mặc định được tối ưu sẵn.",
   },
+  term: {
+    "time-line": 'Cập nhật lần cuối ngày 30 tháng 3 năm 2022',
+    "title": "Các điều khoản dịch vụ",
+    "sub-title": "<b>ĐIỀU KHOẢN DỊCH VỤ</b>  của <b>POLARIS</b> được áp dụng cho khách hàng có nhu cầu sử dụng các dịch vụ Bảo vệ API và Ứng dụng Web của Polaris. Khách hàng đồng ý như sau:",
+    "commencement-and-duration": {
+      text: "1. THỜI GIAN VÀ THỜI HẠN",
+      "content-1": "1.1 Bất kỳ khách hàng nào theo dịch vụ đăng ký có Thỏa thuận mức dịch vụ (“SLA”) sẽ bắt đầu vào ngày ký / đăng ký và sẽ tiếp tục cho đến khi chấm dứt theo điều khoản 10.",
+      "content-2": "1.2 Trong thời hạn của SLA, Khách hàng có thể cập nhật các dịch vụ của họ và hoạt động để mua bất kỳ dịch vụ bổ sung nào của Polaris vào bất kỳ lúc nào.",
+      "content-3": "1.3 Việc chấp nhận SLA cho thấy Khách hàng đã đọc và đồng ý với các Điều khoản Dịch vụ này.",
+    },
+    "supplier-obligations": {
+      text: "2. NGHĨA VỤ CỦA NHÀ CUNG CẤP",
+      "content-1": "2.1 Polaris sẽ nỗ lực để cung cấp các dịch vụ với thời gian hoạt động của nền tảng là 99,99%.",
+      "content-2": "2.2 Polaris sẽ đảm bảo tất cả các giấy phép cần thiết, giấy phép và sự chấp thuận của chính phủ và ủy quyền của công ty để thực hiện các dịch vụ.",
+    },
+    "customer-obligations": {
+      text: "3. NGHĨA VỤ CỦA KHÁCH HÀNG",
+      "content-1": {
+        "text": "3.1 Khách hàng sẽ:",
+        "sub-content-1": "(a) đảm bảo rằng tất cả thông tin được cung cấp cho Polaris là chính xác về mọi khía cạnh quan trọng;",
+        "sub-content-2": "(b) cung cấp cho Polaris quyền truy cập vào dữ liệu, mạng, và các cơ sở khác của Polaris theo yêu cầu hợp lý và cần thiết để thực hiện các dịch vụ được cung cấp; và",
+        "sub-content-3": "(c) tuân thủ tất cả các luật và quy định áp dụng cho việc cung cấp dịch vụ tại từng thời điểm.",
+      },
+      "content-2": "3.2 Nếu việc thực hiện các nghĩa vụ của Polaris theo SLA bị ngăn cản hoặc trì hoãn bởi bất kỳ hành động hoặc sự thiếu sót nào của Khách hàng, thì các đại lý, nhà thầu, chuyên gia tư vấn hoặc nhân viên của Polaris sẽ không ảnh hưởng đến bất kỳ quyền hoặc biện pháp khắc phục nào khác có thể có, Polaris sẽ được phép kéo dài thời gian thực hiện nghĩa vụ của mình tương đương với thời gian chậm trễ do Khách hàng gây ra.",
+    },
+    "software": {
+      text: "4. PHẦN MỀM",
+      "content-1": {
+        text: "4.1 Liên quan đến bất kỳ phần mềm nào do Polaris cung cấp để sử dụng với bất kỳ dịch vụ nào, khách hàng:",
+        "sub-content-1": "(a) thừa nhận rằng phần mềm được cung cấp “nguyên trạng” và Polaris không đưa ra bất kỳ bảo đảm rõ ràng hay ngụ ý nào về bất kỳ bản chất nào đối với phần mềm;",
+        "sub-content-2": "(b) sẽ tự chịu trách nhiệm đảm bảo rằng phần mềm đó phù hợp với nhu cầu và khả năng tương thích của phần mềm đó để sử dụng với bất kỳ thiết bị nào, cho dù có bất kỳ thay đổi nào được đưa vào dịch vụ hay không bởi Polaris;",
+        "sub-content-3": "(c) phải tuân thủ tất cả các hướng dẫn và thông báo (bằng văn bản hoặc bằng cách khác) do Polaris đưa ra cho dù có nguồn gốc từ Polaris hay bất kỳ người nào khác theo thời gian liên quan đến việc sử dụng phần mềm đó;",
+        "sub-content-4": "(d) sẽ chỉ sử dụng Phần mềm duy nhất cho mục đích mà nó được cung cấp;",
+        "sub-content-5": "(e) không được sửa đổi, đảo ngược thiết kế hoặc thay đổi Phần mềm; và",
+        "sub-content-6": "(f) sẽ (bất chấp các điều khoản bồi thường) bồi thường cho Polaris và / hoặc nhà cung cấp bên thứ ba của Polaris và giữ vô hiệu trước bất kỳ khiếu nại, hành động, kiện cáo pháp luật nào, mất mát hoặc thiệt hại do vi phạm 5 khoản này.",
+        "sub-content-7": "(g) nhận biết rằng các trang web và dịch vụ của khách hàng có thể chứa các liên kết đến các trang web, nền tảng và phần mềm khác của bên thứ ba. Các trang web và phần mềm được liên kết như vậy không thuộc quyền kiểm soát của Polaris và Polaris không chịu trách nhiệm về nội dung của chúng.",
+      },
+    },
+    "limitation-of-liability": {
+      text: "5. GIỚI HẠN TRÁCH NHIỆM PHÁP LÝ",
+      "content-1": "5.1 Các điều khoản sau đây quy định toàn bộ trách nhiệm tài chính của Polaris (bao gồm bất kỳ trách nhiệm pháp lý nào đối với các hành vi hoặc thiếu sót của nhân viên, đại lý và nhà thầu) đối với khách hàng liên quan đến (a) bất kỳ vi phạm SLA nào; (b) mọi hoạt động sử dụng dịch vụ hoặc bất kỳ công việc nào từ khách hàng; và (c) mọi tuyên bố, trình bày sai lệch (dù vô ý hay cố tình), tuyên bố hoặc hành động sai trái hoặc thiếu sót (bao gồm cả sơ suất) phát sinh hoặc liên quan đến SLA.",
+      "content-2": "5.2 Không có quy định nào trong SLA loại trừ trách nhiệm của Polaris (a) đối với cái chết hoặc thương tích cá nhân do sự bất cẩn của Polaris; hoặc (b) để gian lận hoặc trình bày sai sự thật.",
+      "content-3": "5.3 Theo điều khoản 7.2, Polaris sẽ không chịu trách nhiệm với khách hàng về bất kỳ tổn thất nào về lợi nhuận, mất doanh thu hoặc kinh doanh, mất các thỏa thuận hoặc hợp đồng, mất khoản tiết kiệm dự kiến, mất mát hoặc thiệt hại cho lợi thế thương mại, mất việc sử dụng, mất mát hoặc vi phạm dữ liệu hoặc thông tin, hoặc bất kỳ tổn thất kinh tế, chi phí, thiệt hại, phí hoặc chi phí đặc biệt gián tiếp hay trực tiếp.",
+      "content-4": "5.4 Theo điều khoản 7.2, toàn bộ trách nhiệm pháp lý của Polaris trong hợp đồng, hành vi vi phạm (bao gồm cả việc sơ suất hoặc vi phạm nghĩa vụ theo luật bất kỳ phát sinh nào), trình bày sai lệch (dù vô ý hay cố tình), bồi thường hoặc phát sinh khác liên quan đến việc thực hiện hoặc dự kiến ​​thực hiện SLA sẽ không vượt quá 100% tổng phí dịch vụ và bất kỳ khoản phí bổ sung nào (cho dù có lập hóa đơn hay không) trong năm phát sinh trách nhiệm pháp lý.",
+    },
+    "confidentiality": {
+      text: "6. BẢO MẬT THÔNG TIN",
+      "content-1": "6.1 Mỗi bên hiểu rằng mình sẽ không tiết lộ cho bất kỳ người nào bất kỳ thông tin bí mật nào liên quan đến công việc kinh doanh, công việc, khách hàng hoặc nhà cung cấp của bên kia hoặc của bất kỳ thành viên nào trong công ty mà bên kia trực thuộc, ngoại trừ được cho phép bởi khoản 8.2 và khoản 12.",
+      "content-2": {
+        text: "6.2 Các điều kiện mà mỗi bên có thể tiết lộ thông tin bí mật của bên kia:",
+        "sub-content-1": "(a) cho các nhân viên, sĩ quan, đại diện hoặc cố vấn của mình, những người cần biết thông tin đó cho mục đích thực hiện các nghĩa vụ theo SLA. Mỗi bên phải đảm bảo rằng nhân viên, viên chức, đại diện hoặc cố vấn của mình mà họ tiết lộ thông tin bí mật của bên kia tuân thủ điều khoản 8 này; và",
+        "sub-content-2": "(b) theo yêu cầu của pháp luật, tòa án có thẩm quyền hoặc bất kỳ cơ quan chính phủ hoặc cơ quan quản lý nào.",
+      },
+    },
+    "data-sharing": {
+      text: "7. CHIA SẺ DỮ LIỆU",
+      content: "Polaris có thể thiết lập hồ sơ kết quả từ dịch vụ mà Polaris cung cấp. Thông tin đó có thể được sử dụng để đo lường rủi ro và nghiên cứu nội bộ liên quan và sẽ được xử lý theo tất cả các luật hiện hành. Tất cả những thông tin đó sẽ được giữ kín."
+    },
+    "intellectual-property": {
+      text: "8. QUYỀN SỞ HỮU TRÍ TUỆ",
+      content: "Tất cả quyền sở hữu trí tuệ (nếu có) có thể tồn tại trong bất kỳ tài liệu, báo cáo hoặc thông điệp bằng văn bản nào sẽ thuộc quyền sở hữu của Polaris. Polaris cấp phép miễn phí tất cả các quyền đó cho khách hàng và trên cơ sở không độc quyền, không thể chuyển nhượng và trên toàn thế giới ở mức độ cần thiết để cho phép khách hàng sử dụng hợp lý các tài liệu, báo cáo hoặc thông điệp bằng văn bản như vốn có dự kiến ​​của các Bên. Polaris bảo lưu quyền thực hiện hành động có thể thích hợp để hạn chế hoặc ngăn chặn việc vi phạm quyền sở hữu trí tuệ đó.",
+    },
+    "suspension-of-service": {
+      text: "9. TẠM NGỪNG DỊCH VỤ",
+      "content-1": {
+        text: "9.1 Polaris có thể tạm ngừng việc sử dụng hoặc truy cập vào bất kỳ Dịch vụ nào vào bất kỳ lúc nào với lý do sau:",
+        "sub-content-1": "(a) Polaris có lý do để nghi ngờ rằng khách hàng đang cố ý sử dụng dịch vụ trái với bất kỳ luật hiện hành nào và không ngừng hành động đó trong vòng bảy (7) ngày kể từ khi được Polaris thông báo về hành vi vi phạm đó;",
+        "sub-content-2": "(b) Polaris xác định rằng việc cung cấp dịch vụ có tác động bất lợi đến mạng lưới của Polaris;",
+        "sub-content-3": "(c) Khách hàng thực hiện hoặc cho phép thực hiện bất kỳ điều gì có thể gây nguy hiểm cho hoạt động của dịch vụ hoặc mạng của Polaris; hoặc",
+        "sub-content-4": "(d) Khách hàng đã không thanh toán khoản phí hoặc bất kỳ phần nào của khoản phí đó trong hơn 30 ngày sau ngày thanh toán.",
+      },
+      "content-2": "9.2 Khi có bất kỳ sự tạm ngừng nào như vậy theo bất kỳ căn cứ nào được chỉ định, khách hàng sẽ phải chịu trách nhiệm đối với tất cả các khoản phí và lệ phí phát sinh cho đến và kể cả ngày tạm dừng đó.",
+      "content-3": "9.3 Nếu, trong vòng 14 ngày kể từ ngày tạm ngưng, khách hàng khắc phục tất cả các lý do mà việc tạm ngưng đó đã được thực hiện (nếu các lý do đó đã khắc phục), thì khách hàng có thể yêu cầu Polaris kết nối lại dịch vụ. Theo yêu cầu đó, Polaris có thể kết nối lại dịch vụ và sẽ có quyền áp đặt cho khách hàng một khoản phí kết nối lại và các khoản phí khác nếu thấy phù hợp.",
+      "content-4": "9.4 Không có nội dung nào ở đây ảnh hưởng đến quyền của Polaris trong việc chấm dứt dịch vụ theo điều khoản 12.",
+    },
+    "termination": {
+      text: "10. CHẤM DỨT DỊCH VỤ",
+      "content-1": "10.1 Các đăng ký sẽ tự động được gia hạn vào cuối thời hạn tùy thuộc vào lịch thanh toán của khách hàng (hàng tháng / hàng năm) trừ khi khách hàng cung cấp thông báo bằng văn bản cho Polaris trước chu kỳ thanh toán tiếp theo.",
+      "content-2": "10.2 Khách hàng thanh toán hàng năm nếu hủy trước khi kết thúc đăng ký sẽ được duy trì dịch vụ cho đến khi kết thúc đăng ký và sẽ không được gia hạn, nhưng phải tuân theo chính sách không hoàn lại tiền. Những khách hàng thanh toán hàng tháng hủy hoặc hạ gói trước chu kỳ thanh toán hàng tháng tiếp theo sẽ có gói dịch vụ hiện tại của họ cho phần còn lại của tháng đó trước khi thay đổi.",
+      "content-3": "10.3 Không ảnh hưởng đến bất kỳ quyền hoặc biện pháp khắc phục nào khác có sẵn, Polaris có thể chấm dứt dịch vụ ngay lập tức bằng cách thông báo bằng văn bản cho khách hàng nếu (a) khách hàng không thanh toán bất kỳ số tiền nào đến hạn và vẫn ở trong tình trạng mặc định không dưới mười bốn (14) ngày sau khi được thông báo để thực hiện thanh toán như vậy.",
+      "content-4": {
+        text: "10.4 Khi chấm dứt dịch vụ:",
+        "sub-content-1": "(a) Khách hàng sẽ ngay lập tức thanh toán cho Polaris nếu còn thiếu, tất cả các hóa đơn và lãi chưa thanh toán của Polaris, và đối với các sản phẩm đã cung cấp nhưng chưa có hóa đơn, Polaris có thể gửi hóa đơn, hóa đơn này sẽ được thanh toán ngay lập tức khi nhận; và",
+        "sub-content-2": "(b) tất cả nhiệm vụ, công việc hiện có sẽ tự động chấm dứt.",
+      },
+      "content-5": "10.5 Bất kỳ điều khoản nào của SLA được trình bày rõ ràng hoặc hàm ý nhằm có hiệu lực hoặc tiếp tục có hiệu lực vào hoặc sau khi SLA chấm dứt sẽ vẫn có hiệu lực đầy đủ.",
+    },
+    "exclusions": {
+      text: "11. KHI GẶP PHẢI SỰ CỐ",
+      "content-1": "11.1 Sự cố ngừng hoạt động và / hoặc mất hoặc hỏng dịch vụ do bảo trì theo lịch trình có thể ảnh hưởng đến tính khả dụng của tất cả hoặc bất kỳ phần nào của dịch vụ kiểm soát an toàn thông tin và / hoặc bất kỳ dịch vụ nào;",
+      "content-2": "11.2 Các lỗi trong đó nguyên nhân được xác định là do hành vi cố ý hoặc do hành động của một người dùng từ khách hàng bị phát hiện là vi phạm chính sách sử dụng được chấp nhận (AUP) đã nêu của khách hàng hoặc các điều khoản và điều kiện của sản phẩm;",
+      "content-3": "11.3 Các lỗi do khách hàng hoặc bất kỳ bên thứ ba nào sử dụng sai hoặc can thiệp vào dịch vụ liên quan hoặc dịch vụ kiểm soát an toàn thông tin;",
+      "content-4": "11.4 Các lỗi do quá trình truyền dữ liệu bắt nguồn từ thiết bị do khách hàng sở hữu hoặc quản lý;",
+      "content-5": "11.5 Bất kỳ sự cố ngừng hoạt động và / hoặc mất hoặc hỏng hóc dịch vụ gây ra bởi bất kỳ hành động hoặc thiếu sót nào của khách hàng vi phạm SLA hoặc hợp đồng khác với khách hàng;",
+      "content-6": "11.6 Bất kỳ sự cố ngừng hoạt động và / hoặc mất hoặc không cung cấp dịch vụ là kết quả của việc mất liên kết viễn thông của khách hàng nằm ngoài sự kiểm soát của khách hàng",
+      "content-7": "11.7 Bất kỳ sự cố ngừng hoạt động và / hoặc mất hoặc trong trường hợp bất khả kháng; và",
+      "content-8": "11.8 Sự cố ngừng hoạt động và / hoặc mất mát hoặc hỏng hóc của dịch vụ trong phạm vi gây ra hoặc do bất kỳ thiết bị nào không do khách hàng cung cấp và / hoặc liên quan đến việc khách hàng không đồng ý cung cấp bảo trì và / hoặc hỗ trợ.",
+    },
+    "miscellaneous": {
+      text: "12. CÁC ĐIỀU KHOẢN KHÁC",
+      "content-1": "12.1 <u>Luật điều chỉnh.</u> SLA và bất kỳ tranh chấp hoặc khiếu nại nào (bao gồm cả tranh chấp hoặc khiếu nại ngoài hợp đồng) phát sinh từ hoặc liên quan đến SLA hoặc đối tượng hoặc sự hình thành của SLA sẽ được điều chỉnh và hiểu theo luật pháp Việt Nam, không ảnh hưởng đến xung đột các nguyên tắc luật.",
+      "content-2": "12.2 <u>Quyền tài phán.</u> Mỗi Bên đồng ý không hủy ngang rằng các tòa án của Việt Nam sẽ có thẩm quyền độc quyền giải quyết bất kỳ tranh chấp hoặc khiếu nại nào (bao gồm cả tranh chấp hoặc khiếu nại ngoài hợp đồng) phát sinh từ hoặc liên quan đến SLA hoặc vấn đề hoặc sự hình thành của SLA.",
+    },
+    end: "///HẾT///",
+  }
 }
 
