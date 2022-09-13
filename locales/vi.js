@@ -674,7 +674,13 @@ export default {
     "content-3": "là giải pháp mà mọi trang web nên phải có. Hầu hết các doanh nghiệp tin rằng trang web của họ không có giá trị đối với tin tặc. Tuy nhiên, chúng có những lý do khác nhau để tấn công trang web của bạn. Đôi khi người tấn công muốn đánh cắp thông tin khách hàng có giá trị của bạn để đòi tiền chuộc, hoặc chúng có thể muốn phá chuỗi cung ứng và hoạt động kinh doanh.",
     "content-4": "Công nghệ luôn phát triển và phát triển, và kéo theo đó là những lỗ hổng và rủi ro mới ngày càng tăng. Hầu hết các trang web hiện nay đều được tích hợp chức năng thanh toán trực tuyến hoặc các ứng dụng thứ 3 và nền tảng công nghệ khác trong việc cung cấp dịch vụ. Những kết nối này với các bên khác trên miền web của bạn là những điểm tấn công hấp dẫn đối với những tin tặc có ý định xâm nhập vào hệ thống máy chủ bằng cách khai thác các lỗ hổng tại các điểm cuối API. Các phương pháp tấn công và khai thác của tin tặc phát triển theo cùng với sự phát triển của công nghệ. Bảo mật và bảo vệ trang web là những cách chính để giảm thiểu nguy cơ ngày càng tăng của tin tặc truy cập vào hệ thống và mạng nội bộ.",
     "title-2": "Nền tảng bảo mật website của chúng tôi an toàn, hiệu quả và dễ sử dụng",
-    "content-5": "Nền tảng <span class=\"brand-2\">Bảo mật API & Ứng dụng Website của Polaris</span> (<span class=\"brand-2\">WAAP</span>, <span class=\"brand-2\">WAF</span>) bảo vệ bất kỳ doanh nghiệp nào có sử dụng hệ thống trực tuyến, từ các giao dịch đơn giản đến phức tạp, cho đến việc lưu trữ dữ liệu bí mật chứa thông tin cá nhân và tài chính của khách hàng. Sử dụng công nghệ trí tuệ nhân tạo (AI) độc quyền làm cốt lõi trong phương pháp bảo mật, nền tảng của chúng tôi có thể:",
+    "content-5": {
+      polaris: "Nền tảng",
+      "web-application-and-api-protection": "Bảo mật API & Ứng dụng Website của Polaris",
+      "WAAP": "WAAP",
+      "WAF": "WAF",
+      "content": "bảo vệ bất kỳ doanh nghiệp nào có sử dụng hệ thống trực tuyến, từ các giao dịch đơn giản đến phức tạp, cho đến việc lưu trữ dữ liệu bí mật chứa thông tin cá nhân và tài chính của khách hàng. Sử dụng công nghệ trí tuệ nhân tạo (AI) độc quyền làm cốt lõi trong phương pháp bảo mật, nền tảng của chúng tôi có thể:"
+    },
     "list-1": {
       "content-1": "Tự động hóa và tối ưu hóa các quy trình và tác vụ bảo mật web.",
       "content-2": "Cải thiện độ chính xác phát hiện mối đe dọa.",

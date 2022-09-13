@@ -6,6 +6,7 @@
         <h4 :class="$style.price">{{ isMonthlyType ? '$4' : "$43" }}</h4>
         <div :class="$style.priceDetail">
           <div v-html="$t('pricing.per-user')"></div>
+          <div v-html="isMonthlyType ? $t('pricing.per-month') : $t('pricing.per-year')"></div>
         </div>
       </div>
       <p-button :class="$style.btn"
