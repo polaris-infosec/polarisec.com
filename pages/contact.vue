@@ -268,9 +268,9 @@ export default class Contact extends Vue {
     this.dismissCountDown = this.dismissSecs
   }
 
-  get head() {
+   head() {
     return {
-      title: 'Contact Us'
+      title: this.$t('contact.header-title')
     }
   }
 

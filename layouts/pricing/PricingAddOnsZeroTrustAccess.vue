@@ -3,9 +3,10 @@
     <div class="col-sm-4 pl-0">
       <div :class="$style.title" v-html="$t('pricing.plans.standard-professional')"></div>
       <div class="d-inline-flex justify-content-center align-items-center">
-        <h4 :class="$style.price">{{ isMonthlyType ? '$4' : "$52" }}</h4>
+        <h4 :class="$style.price">{{ isMonthlyType ? '$4' : "$43" }}</h4>
         <div :class="$style.priceDetail">
           <div v-html="$t('pricing.per-user')"></div>
+          <div v-html="isMonthlyType ? $t('pricing.per-month') : $t('pricing.per-year')"></div>
         </div>
       </div>
       <p-button :class="$style.btn"

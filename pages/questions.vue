@@ -77,6 +77,12 @@ export default class Questions extends Vue {
   get mobileScreen() {
     return window.screen.width < 992.0
   }
+
+  head(){
+    return {
+      title: this.$t("question.header-title")
+    }
+  }
 }
 </script>
 

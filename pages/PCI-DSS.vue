@@ -12,7 +12,11 @@ import PCIDSSAuditScreen from "~/layouts/services/PCIDSSaudit/PCIDSSAuditScreen.
   components: {PCIDSSAuditScreen}
 })
 export default class PciDssAudit extends Vue {
-
+  head() {
+    return {
+      title: this.$t('services.PCI-DSS.header-title')
+    }
+  }
 }
 </script>
 

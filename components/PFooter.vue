@@ -12,15 +12,15 @@
             <a href="mailto:hello@polarisec.com"><p class="brand-2 mb-3">hello@polarisec.com</p></a>
             <p class="mb-1">
           <span class="brand-2">
-            {{$t('footer.nation.singapore')}}:
+            {{ $t('footer.nation.singapore') }}:
           </span>
-              {{$t('footer.nation.singapore-address')}}
+              {{ $t('footer.nation.singapore-address') }}
             </p>
             <p class="m-0 mb-1 p-0">
            <span class="brand-2">
-            {{$t('footer.nation.vietnam')}}:
+            {{ $t('footer.nation.vietnam') }}:
            </span>
-              {{$t('footer.nation.vietnam-address')}}
+              {{ $t('footer.nation.vietnam-address') }}
             </p>
             <p class="d-flex align-items-center">
               <img src="@/assets/icons/phone.png" width="18" height="18" class="mr-1">
@@ -51,7 +51,7 @@
               <div class="d-flex flex-column mt-4 body-5">
                 <nuxt-link :to="localePath('/company')">
                 <span class="color-text-7">
-                    {{ $t('nav.company') }}
+                    {{ $t('nav.about') }}
                 </span>
                 </nuxt-link>
                 <nuxt-link :to="localePath('/whyus')">
@@ -141,7 +141,7 @@
         </span>
         </b-col>
         <b-col class="col-12 col-lg-3 d-flex justify-content-center justify-content-lg-end p-0">
-          <nuxt-link to="/terms">
+          <nuxt-link :to="localePath('/terms')">
             <div class="pr-2 text-center" style="border-right: 0.03em solid #A9B7C6; color: white">
               <span class="body-4">
                 {{ $t('footer.term') }}

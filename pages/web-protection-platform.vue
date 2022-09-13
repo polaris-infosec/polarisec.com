@@ -14,8 +14,9 @@ import WebProtectionPlatformScreen from "~/layouts/platform/WebProtectionPlatfor
 })
 export default class WebProtectionPlatform extends Vue {
 
-  get head() {
+  head() {
     return {
+      title: this.$t("web-protection-platform.header-title"),
       meta: [
         {
           name: 'keywords',

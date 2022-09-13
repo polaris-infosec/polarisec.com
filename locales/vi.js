@@ -18,14 +18,15 @@ export default {
       "option-4": "Kiểm định PCI-DSS",
       "option-5": "Ứng Cứu Sự Cố",
     },
-    "why-us": "Ưu Thế",
-    "partners": "Đối Tác",
-    "company": "Công Ty",
-    "pricing": "Bảng Giá",
-    "support-center": "Trung Tâm Hỗ Trợ",
+    "why-us": "Ưu thế",
+    "partners": "Đối tác",
+    "company": "Công ty",
+    "pricing": "Bảng giá",
+    "support-center": "Trung tâm hỗ trợ",
     "blog": "Blog",
-    "platform-access": "Tổng Quan",
-    "contact": "Liên Hệ",
+    "platform-access": "Truy cập nền tảng",
+    "contact": "Liên hệ",
+    "about": "Tổng quan",
   },
   "footer": {
     "nation": {
@@ -44,49 +45,51 @@ export default {
     "polaris-tag": "@ Polaris Infosec Pte. Ltd."
   },
   home: {
+    "title": "Nền Tảng Bảo Mật Ứng Dụng Website & API (WAAP) Polaris - Trang chủ",
     "header-title": "Nền tảng bảo mật website toàn diện",
     "header-slogan": "Always On Guard",
-    "header-content": "Nền tảng Bảo Mật Ứng Dụng Web & API (WAAP) của Polaris ứng dụng <b>công nghệ trí tuệ nhân tạo thế hệ mới (Next-Gen AI)</b> với khả năng chủ động phát hiện và ngăn chặn các mối đe dọa đến website của bạn. <b>Mạnh mẽ</b>, <b>dễ thích ứng</b> và <b>cực kì chính xác</b>, nền tảng của chúng tôi giảm thiểu tối đa mức độ nguy hiểm đến tài sản quan trọng nhất - dữ liệu của bạn.",
+    "header-content": "Nền tảng Bảo Mật Ứng Dụng Web & API (WAAP) của Polaris ứng dụng <b>công nghệ trí tuệ nhân tạo thế hệ mới (AI)</b> với khả năng chủ động phát hiện và ngăn chặn các mối đe dọa đến website của bạn. <b>Đảm bảo an ninh và dễ dàng sử dụng,</b> nền tảng của Polaris sẽ bảo vệ dữ liệu của bạn và tài sản quan trọng nhất của mỗi cá nhân và doanh nghiệp.",
     "intro": "Đem đến cho bạn trải nghiệm không ngờ từ một nền tảng chuyên nghiệp",
     "benefit": {
       "title-1": "Công nghệ vượt trội",
-      "content-1": "Áp dụng công nghệ độc quyền trí tuệ nhân tạo (Artificial Intelligence) và máy học (Machine Learning) vào hệ thống, chúng tôi đảm bảo rằng các cuộc tấn công sẽ dừng lại trước khi chúng kịp gây ra bất kì tổn thất nào. Bạn không còn lo lắng bị tấn công và có thể an tâm tập trung vào các hoạt động kinh doanh.",
+      "content-1": "Áp dụng công nghệ độc quyền trí tuệ nhân tạo (Artificial Intelligence) và máy học (Machine Learning) vào hệ thống, chúng tôi đảm bảo rằng các cuộc tấn công sẽ dừng lại trước khi chúng kịp gây ra bất kì tổn thất nào vào các hoạt động kinh doanh.",
       "title-2": "Triển khai đơn giản",
-      "content-2": "Chỉ mất vài phút cài đặt, trang web của bạn đã được bảo vệ. Chúng tôi cung cấp cho bạn cái nhìn tổng quan về trạng thái trang web trên bảng điều khiển cũng như trên ứng dụng di động.",
+      "content-2": "Chỉ mất vài phút cài đặt bằng cách thay đổi nhỏ đối với tên miền máy chủ hoặc CNAME, trang web của bạn đã được bảo vệ. Chúng tôi cung cấp cho bạn cái nhìn tổng quan về trạng thái trang web trên bảng điều khiển cũng như trên ứng dụng di động.",
       "title-3": "Sử dụng dễ dàng",
       "content-3": "Nền tảng của chúng tôi được cấu hình mặc định với các quy tắc bảo vệ tối ưu. Trang web của bạn sẽ được bảo vệ ngay lập tức khỏi các mối đe dọa lớn nhất sau khi thiết lập thành công với Polaris. Ngoài ra, người dùng có thể tuỳ chỉnh các bộ luật một cách dễ dàng thông qua bảng điều khiển.",
     },
     "video": {
       "title": "Polaris đồng hành với doanh nghiệp của bạn ra sao?",
-      "content": "Polaris là lớp khiên chắn trước các cuộc tấn công mạng ở ngay giai đoạn đầu - tiến hành theo dõi các mục tiêu tiềm ẩn. Chúng tôi theo dõi các xu hướng, diễn biến khắp các ứng dụng web để dự đoán và ngăn chặn các cuộc tấn công trước khi chúng xảy ra.",
+      "content": "Polaris là lớp khiên chắn trước các cuộc tấn công mạng ở ngay giai đoạn đầu - tiến hành theo dõi các mục tiêu tiềm ẩn. Chúng tôi theo dõi các xu hướng đang diễn biến khắp các ứng dụng web để dự đoán và ngăn chặn các cuộc tấn công trước khi chúng xảy ra.",
     },
     "feature-1": {
       "title": "Bảo mật ứng dụng Web<span class=\"brand-2\">.</span>",
-      "content-1": "<b>Bảo vệ trang web khỏi các cuộc tấn công</b> như DDoS, SQL injection, Zero-Day attacks, và các lỗ hổng thuộc Top-10 OWASP... trước khi máy chủ ứng dụng bị khai thác.",
-      "content-2": "Các cấu hình bảo vệ đã được tối ưu hóa sẵn, một khi tích hợp xong, <b>bạn sẽ được bảo vệ ngay lập tức</b>. Nếu cần thiết, bạn cũng có thể tùy chỉnh cấu hình sao cho phù hợp nhất với các điều kiện bảo mật của bạn.",
+      "content-1": "<b>Bảo vệ trang web khỏi các cuộc tấn công</b> như DDoS, SQL injection, Zero-Day attacks, và các lỗ hổng top 10 OWASP trước khi máy chủ ứng dụng bị khai thác.",
+      "content-2": "Các cấu hình được cài đặt mặc định với các quy tắc bảo vệ bởi chuyên gia , một khi tích hợp xong, <b>bạn sẽ được bảo vệ ngay lập tức</b>. Nếu cần thiết thay đổi, bạn cũng có thể dễ dàng điều chỉnh cấu hình sao cho phù hợp nhất với các điều kiện bảo mật của bạn.",
     },
     "feature-2": {
       "title": "Trí Tuệ Nhân Tạo<span class=\"brand-2\">.</span>",
-      "content-1": "Chúng tôi sử dụng các kỹ thuật máy học chuyên biệt cho ứng dụng, chẳng hạn như “lấy dấu vân tay” để <b>phân biệt giữa các yêu cầu hợp pháp hay độc hại đến web.</b>",
-      "content-2": "AI của chúng tôi không ngừng học hỏi để có thể xác định và hành động tùy theo các cuộc tấn công nhắm vào các ứng dụng web được kết hợp với lưu lượng truy cập có vẻ bình thường - các truy cập lách qua các biện pháp bảo vệ truyền thống.",
+      "content-1": "Chúng tôi sử dụng các kỹ thuật máy học cụ thể cho ứng dụng, chẳng hạn như “lấy dấu vân tay” để <b>phân biệt các yêu cầu đó là hợp pháp hay độc hại đến web.</b>",
+      "content-2": "Công nghệ trí tuệ nhân tạo (AI) của chúng tôi không ngừng học hỏi để có thể xác định và hành động tùy theo các cuộc tấn công nhắm vào các ứng dụng web được kết hợp với lưu lượng truy cập có vẻ bình thường - các truy cập lách qua các biện pháp bảo vệ truyền thống.",
     },
     "feature-3": {
       "title": "Tình Báo Thông Minh<span class=\"brand-2\">.</span>",
       "content-1": "Polaris sử dụng nhiều nguồn thông tin tình báo mạng đáng tin cậy để tổng hợp, so sánh và phân tích dữ liệu về mối đe dọa nhằm hình thành một chiến lược phát hiện và phòng thủ toàn diện hơn trong thời gian thực khi các sự kiện xảy ra.",
-      "content-2": "Khả năng tình báo về các mối đe dọa của chúng tôi luôn cải tiến khi các mối đe dọa của tin tặc cũng đang thay đổi để luôn ở trạng thái cập nhật, <b>tạo thành một hệ thống cảnh báo trước toàn diện hơn.</b>",
+      "content-2": "Khả năng tình báo thông minh của chúng tôi luôn cải tiến để bắt kịp sự phát triển của các mối đe dọa từ tin tặc, <b>tạo thành một hệ thống cảnh báo toàn diện hơn.</b>",
     },
     "featureBy": "Được nhắc đến bởi:",
     "see-it-in-action": {
       "title": "Trải nghiệm ngay",
-      "content": "Yêu cầu demo miễn phí ngay hôm nay để được bảo vệ trước các phương thức tấn công mạng - ngày càng phát triển."
+      "content": "Yêu cầu demo miễn phí ngay hôm nay để được bảo vệ trước các phương thức tấn công mạng đang phát triển."
     },
     "sign-up": {
       "title": "Đăng ký nhận bản tin",
-      "content": "Nhận các thông tin cập nhật mới nhất và nhanh nhất về tính năng và sản phẩm."
+      "content": "Nhận các thông tin cập nhật mới nhất về tính năng và sản phẩm."
     },
   },
   "whyUs": {
-    "title": "Ưu thế",
+    "title": "Ưu Thế",
+    "header-title": "Ưu Thế - Polaris",
     "intro-1": " Polaris là <span class=\"brand-2\">giải pháp hàng đầu APAC</span> chuyên cung cấp các dịch vụ bảo mật chất lượng tới khách hàng.",
     "intro-2": "Chúng tôi hiểu rằng đôi khi an ninh mạng trở nên quá phức tạp, vì thế chúng tôi luôn tìm cách đơn giản hóa quy trình, <span\n" +
       "            class=\"brand-2\">để bất kỳ ai, ở bất kỳ đâu đều có thể tiếp cận được.</span>",
@@ -162,7 +165,8 @@ export default {
     }
   },
   partner: {
-    title: "Đối tác",
+    title: "Đối Tác",
+    "header-title": "Đối Tác - Polaris",
     content: "Polaris luôn mong muốn sự đồng hành của quý đối tác trong việc cung cấp giải pháp an ninh mạng đến với cộng đồng.",
     "our-joint-mission": {
       title: "Sứ mệnh chung",
@@ -181,10 +185,13 @@ export default {
   company: {
     title: "Đơn giản hóa việc <span class=\"brand-2\">bảo vệ các tài sản quan trọng của doanh nghiệp</span>  trước các mối đe dọa an ninh mạng nguy hiểm nhất hiện nay.",
     "company-certs": "Chứng chỉ đạt được",
+    "co-founders": "Nhà đồng sáng lập",
+    "header-title": "Tổng Quan Công Ty - Polaris",
   },
   services: {
     "ISMA": {
       title: "Đánh Giá Độ Hiệu Quả Bảo Mật Thông Tin",
+      "header-title": "Đánh Giá Độ Hiệu Quả Bảo Mật Thông Tin - Polaris",
       content: "Tiến hành kiểm tra và đánh giá tình trạng các lỗ hổng là bước chuẩn bị đầu tiên cho an ninh mạng. Phương pháp Infosec Maturity Assessment (ISMA) của Polaris được thiết kế để đánh giá năng lực của doanh nghiệp trong việc bảo vệ tài sản thông tin có giá trị nhất và quản lý các thông tin nhạy cảm cũng như tự bảo vệ mình chống lại các cuộc tấn công và giảm thiểu tác động nếu cuộc tấn công xảy ra.",
       "dimension-title": "6 Khía cạnh của ISMA",
       dimensions: {
@@ -204,6 +211,7 @@ export default {
     },
     "ISO-27001": {
       title: "Kiểm định ISO 27001",
+      "header-title": "Kiểm định ISO 27001 - Polaris",
       content: "ISO 27001 là chứng nhận tiêu chuẩn quốc tế cung cấp các yêu cầu cho hệ thống quản lý an toàn thông tin. Mục đích chứng nhận là đảm bảo các công ty có khả năng quản trị, vận hành và giải pháp phù hợp để duy trì quyền kiểm soát các dữ liệu và tài nguyên số của tổ chức. Dịch vụ của chúng tôi giúp khách hàng chứng minh đơn vị đã tuân thủ theo các yêu cầu tốt nhất về bảo mật thông tin bằng cách đạt được chứng nhận ISO 27001.",
       "what-we-do": {
         text: "Chúng tôi cung cấp",
@@ -221,11 +229,12 @@ export default {
     },
     "GDPR": {
       title: "Kiểm định GDPR",
+      "header-title": "Kiểm Định GDPR - Polaris",
       "sub-title": "Các doanh nghiệp có hoạt động trong Liên Minh Châu Âu (EU) bắt buộc phải tuân thủ tiêu chuẩn GDPR.",
       content: "Quy định chung về bảo vệ dữ liệu (GDPR) có vai trò hướng dẫn về việc bảo vệ dữ liệu và quyền riêng tư cho các cá nhân sống ở liên minh Châu Âu (EU). Quy định này đề ra các quyền lợi thuộc về công dân ở EU và các quy trình mà doanh nghiệp phải thực hiện khi lưu trữ và quản lý dữ liệu cá nhân.",
       "what-we-do": {
         text: "Chúng tôi cung cấp",
-        "sub-title": "Kiểm định GDPR với chu trình PDCA để đánh giá sự tuân thủ tiêu chuẩn của tdoanh nghiệp.",
+        "sub-title": "Kiểm định GDPR với chu trình PDCA để đánh giá sự tuân thủ tiêu chuẩn của doanh nghiệp.",
         "plan": {
           text: "Lập kế hoạch",
           "content-1": "Kiểm định cam kết của doanh nghiệp",
@@ -266,6 +275,7 @@ export default {
     },
     "PCI-DSS": {
       title: "Kiểm định PCI-DSS",
+      "header-title": "Kiểm Định PCI-DSS - Polaris",
       content: "Payment Card Industry Data Security Standard (PCI-DSS) là tiêu chuẩn bảo mật thông tin áp dụng cho tất cả các doanh nghiệp có sử dụng thẻ thuộc các công ty thẻ lớn và được ủy quyền bởi các thương hiệu thẻ.",
       "what-we-do": {
         text: "Dịch vụ của chúng tôi",
@@ -296,6 +306,7 @@ export default {
     },
     "incident-response": {
       title: "Dịch Vụ Ứng Cứu Sự Cố",
+      "header-title": "Dịch Vụ Ứng Cứu Sự Cố - Polaris",
       content: "Ứng cứu sự cố của Polaris là dịch vụ giám sát và đảm bảo <b>xử lý sự cố ngay lập tức</b> trong trường hợp doanh nghiệp bị tấn công mạng. Cụ thể, khi nhận được thông báo quan trọng về sự cố xảy ra, các chuyên gia an ninh mạng Polaris sẽ bắt đầu phân tích và đưa ra phương pháp xử lý hiệu quả cho khách hàng. <br><br> Dịch Vụ Ứng Cứu Sự Cố gồm có - <b>Trọn gói và Yêu Cầu.</b><br><br><b>Trọn Gói</b> - Là một “Dịch vụ quản lý bảo mật” giúp đánh giá tình trạng hiện tại của tổ chức doanh nghiệp và chủ động giám sát mạng hàng ngày để truy tìm các cuộc tấn công. Khi một cuộc tấn công xảy ra, chúng tôi ngay lập tức khắc phục sự cố.<br><br><b>Yêu cầu</b> - Hãy liên hệ với chúng tôi ngay khi doanh nghiệp gặp sự cố để được hỗ trợ và xử lý kịp thời.",
       "what-we-do": {
         text: "Chúng tôi cung cấp",
@@ -329,6 +340,7 @@ export default {
   },
   pricing: {
     title: "CÁC GÓI BẢO MẬT WEBSITE",
+    "header-title": "Các Gói Bảo Mật Website - Polaris",
     content: "Đăng kí ngay để trải nghiệm giải pháp của Polaris miễn phí và vô thời hạn",
     consultation: "Yêu cầu được tư vấn",
     pricing: "Chi phí",
@@ -456,9 +468,9 @@ export default {
       },
       "technical-architecture": {
         text: "Cấu trúc kĩ thuật",
-        "sub-option-1": "Triển khai đám mây",
+        "sub-option-1": "Triển khai trên Cloud",
         "sub-option-2": "Triển khai tại chỗ",
-        "sub-option-3": "Triển khai kết hợp(hybrid) - Đám mây và tại chỗ",
+        "sub-option-3": "Triển khai kết hợp(hybrid) - Trên Cloud và tại chỗ",
         "sub-option-4": "Tình báo thông minh",
         "sub-option-5": "Zero Trust Access",
       },
@@ -562,6 +574,10 @@ export default {
       advanced: "Nâng cao",
       custom: "Tuỳ chỉnh",
       "standard-professional": "Tiêu chuẩn / Chuyên nghiệp",
+      manual: "Tùy chỉnh",
+      "enterprise-only": "Gói doanh nghiệp",
+      "add-on": "Tiện ích bổ sung",
+      "included": "Đã bao gồm",
     },
     article: {
       content: "Tìm hiểu thêm về các lợi ích khi sử dụng các biện pháp ",
@@ -576,7 +592,8 @@ export default {
     }
   },
   contact: {
-    title: "Trợ giúp",
+    title: "Liên Hệ",
+    "header-title": "Liên Hệ - Polaris",
     content: "Nếu đang gặp phải tấn công hoặc cần được hỗ trợ về an ninh mạng, liên hệ chúng tôi để xử lý ngay.",
     "phone-number": "(+84) 28 7101 7755",
     name: "Họ Tên *",
@@ -606,6 +623,7 @@ export default {
     },
   },
   question: {
+    "header-title": "Câu Hỏi - Polaris",
     introduction: "Vài câu hỏi nhanh để chúng tôi có thể đưa ra đề xuất cho bạn",
     "skip-question": "Bỏ qua và xem tất cả các gói",
     text: "Câu ",
@@ -635,6 +653,7 @@ export default {
     },
   },
   recommendation: {
+    "header-title": "Gói Khuyên Dùng - Polaris",
     title: "Đây là đề xuất của chúng tôi dành cho bạn",
     "sub-title": "Dựa trên thông tin về website và nhu cầu sử dụng của bạn, chúng tôi đề xuất gói dịch vụ kèm tiện ích bổ sung sau:",
     "start-over": "Bắt đầu lại",
@@ -646,6 +665,7 @@ export default {
     "professional-add-on": "Dịch vụ quản lí và tiện ích an toàn thông tin - Zero Trust",
   },
   "web-protection-platform": {
+    "header-title": "Tổng Quan Và Lợi Ích Của Nền Tảng Bảo Mật Web - Polaris",
     title: "Lợi ích thực tế của nền tảng bảo mật website",
     "sub-title": "Đặc tính cơ bản của bảo mật website",
     "web-protection": "Bảo mật website",
@@ -655,7 +675,13 @@ export default {
     "content-3": "là giải pháp mà mọi trang web nên phải có. Hầu hết các doanh nghiệp tin rằng trang web của họ không có giá trị đối với tin tặc. Tuy nhiên, chúng có những lý do khác nhau để tấn công trang web của bạn. Đôi khi người tấn công muốn đánh cắp thông tin khách hàng có giá trị của bạn để đòi tiền chuộc, hoặc chúng có thể muốn phá chuỗi cung ứng và hoạt động kinh doanh.",
     "content-4": "Công nghệ luôn phát triển và phát triển, và kéo theo đó là những lỗ hổng và rủi ro mới ngày càng tăng. Hầu hết các trang web hiện nay đều được tích hợp chức năng thanh toán trực tuyến hoặc các ứng dụng thứ 3 và nền tảng công nghệ khác trong việc cung cấp dịch vụ. Những kết nối này với các bên khác trên miền web của bạn là những điểm tấn công hấp dẫn đối với những tin tặc có ý định xâm nhập vào hệ thống máy chủ bằng cách khai thác các lỗ hổng tại các điểm cuối API. Các phương pháp tấn công và khai thác của tin tặc phát triển theo cùng với sự phát triển của công nghệ. Bảo mật và bảo vệ trang web là những cách chính để giảm thiểu nguy cơ ngày càng tăng của tin tặc truy cập vào hệ thống và mạng nội bộ.",
     "title-2": "Nền tảng bảo mật website của chúng tôi an toàn, hiệu quả và dễ sử dụng",
-    "content-5": "Nền tảng <span class=\"brand-2\">Bảo mật API & Ứng dụng Website của Polaris</span> (<span class=\"brand-2\">WAAP</span>, <span class=\"brand-2\">WAF</span>) bảo vệ bất kỳ doanh nghiệp nào có sử dụng hệ thống trực tuyến, từ các giao dịch đơn giản đến phức tạp, cho đến việc lưu trữ dữ liệu bí mật chứa thông tin cá nhân và tài chính của khách hàng. Sử dụng công nghệ trí tuệ nhân tạo (AI) độc quyền làm cốt lõi trong phương pháp bảo mật, nền tảng của chúng tôi có thể:",
+    "content-5": {
+      polaris: "Nền tảng",
+      "web-application-and-api-protection": "Bảo mật API & Ứng dụng Website của Polaris",
+      "WAAP": "WAAP",
+      "WAF": "WAF",
+      "content": "bảo vệ bất kỳ doanh nghiệp nào có sử dụng hệ thống trực tuyến, từ các giao dịch đơn giản đến phức tạp, cho đến việc lưu trữ dữ liệu bí mật chứa thông tin cá nhân và tài chính của khách hàng. Sử dụng công nghệ trí tuệ nhân tạo (AI) độc quyền làm cốt lõi trong phương pháp bảo mật, nền tảng của chúng tôi có thể:"
+    },
     "list-1": {
       "content-1": "Tự động hóa và tối ưu hóa các quy trình và tác vụ bảo mật web.",
       "content-2": "Cải thiện độ chính xác phát hiện mối đe dọa.",
@@ -678,5 +704,110 @@ export default {
     },
     "content-7": "Đăng ký chỉ mất chưa đến 10 phút và sau khi cài đặt xong, trang web của bạn sẽ được bảo vệ ngay lập tức với các cấu hình bảo mật mặc định được tối ưu sẵn.",
   },
+  term: {
+    "time-line": 'Cập nhật lần cuối ngày 30 tháng 3 năm 2022',
+    "title": "Các điều khoản dịch vụ",
+    "sub-title": "<b>ĐIỀU KHOẢN DỊCH VỤ</b>  của <b>POLARIS</b> được áp dụng cho khách hàng có nhu cầu sử dụng các dịch vụ Bảo vệ API và Ứng dụng Web của Polaris. Khách hàng đồng ý như sau:",
+    "commencement-and-duration": {
+      text: "1. THỜI GIAN VÀ THỜI HẠN",
+      "content-1": "1.1 Bất kỳ khách hàng nào theo dịch vụ đăng ký có Thỏa thuận mức dịch vụ (“SLA”) sẽ bắt đầu vào ngày ký / đăng ký và sẽ tiếp tục cho đến khi chấm dứt theo điều khoản 10.",
+      "content-2": "1.2 Trong thời hạn của SLA, Khách hàng có thể cập nhật các dịch vụ của họ và hoạt động để mua bất kỳ dịch vụ bổ sung nào của Polaris vào bất kỳ lúc nào.",
+      "content-3": "1.3 Việc chấp nhận SLA cho thấy Khách hàng đã đọc và đồng ý với các Điều khoản Dịch vụ này.",
+    },
+    "supplier-obligations": {
+      text: "2. NGHĨA VỤ CỦA NHÀ CUNG CẤP",
+      "content-1": "2.1 Polaris sẽ nỗ lực để cung cấp các dịch vụ với thời gian hoạt động của nền tảng là 99,99%.",
+      "content-2": "2.2 Polaris sẽ đảm bảo tất cả các giấy phép cần thiết, giấy phép và sự chấp thuận của chính phủ và ủy quyền của công ty để thực hiện các dịch vụ.",
+    },
+    "customer-obligations": {
+      text: "3. NGHĨA VỤ CỦA KHÁCH HÀNG",
+      "content-1": {
+        "text": "3.1 Khách hàng sẽ:",
+        "sub-content-1": "(a) đảm bảo rằng tất cả thông tin được cung cấp cho Polaris là chính xác về mọi khía cạnh quan trọng;",
+        "sub-content-2": "(b) cung cấp cho Polaris quyền truy cập vào dữ liệu, mạng, và các cơ sở khác của Polaris theo yêu cầu hợp lý và cần thiết để thực hiện các dịch vụ được cung cấp; và",
+        "sub-content-3": "(c) tuân thủ tất cả các luật và quy định áp dụng cho việc cung cấp dịch vụ tại từng thời điểm.",
+      },
+      "content-2": "3.2 Nếu việc thực hiện các nghĩa vụ của Polaris theo SLA bị ngăn cản hoặc trì hoãn bởi bất kỳ hành động hoặc sự thiếu sót nào của Khách hàng, thì các đại lý, nhà thầu, chuyên gia tư vấn hoặc nhân viên của Polaris sẽ không ảnh hưởng đến bất kỳ quyền hoặc biện pháp khắc phục nào khác có thể có, Polaris sẽ được phép kéo dài thời gian thực hiện nghĩa vụ của mình tương đương với thời gian chậm trễ do Khách hàng gây ra.",
+    },
+    "software": {
+      text: "4. PHẦN MỀM",
+      "content-1": {
+        text: "4.1 Liên quan đến bất kỳ phần mềm nào do Polaris cung cấp để sử dụng với bất kỳ dịch vụ nào, khách hàng:",
+        "sub-content-1": "(a) thừa nhận rằng phần mềm được cung cấp “nguyên trạng” và Polaris không đưa ra bất kỳ bảo đảm rõ ràng hay ngụ ý nào về bất kỳ bản chất nào đối với phần mềm;",
+        "sub-content-2": "(b) sẽ tự chịu trách nhiệm đảm bảo rằng phần mềm đó phù hợp với nhu cầu và khả năng tương thích của phần mềm đó để sử dụng với bất kỳ thiết bị nào, cho dù có bất kỳ thay đổi nào được đưa vào dịch vụ hay không bởi Polaris;",
+        "sub-content-3": "(c) phải tuân thủ tất cả các hướng dẫn và thông báo (bằng văn bản hoặc bằng cách khác) do Polaris đưa ra cho dù có nguồn gốc từ Polaris hay bất kỳ người nào khác theo thời gian liên quan đến việc sử dụng phần mềm đó;",
+        "sub-content-4": "(d) sẽ chỉ sử dụng Phần mềm duy nhất cho mục đích mà nó được cung cấp;",
+        "sub-content-5": "(e) không được sửa đổi, đảo ngược thiết kế hoặc thay đổi Phần mềm; và",
+        "sub-content-6": "(f) sẽ (bất chấp các điều khoản bồi thường) bồi thường cho Polaris và / hoặc nhà cung cấp bên thứ ba của Polaris và giữ vô hiệu trước bất kỳ khiếu nại, hành động, kiện cáo pháp luật nào, mất mát hoặc thiệt hại do vi phạm 5 khoản này.",
+        "sub-content-7": "(g) nhận biết rằng các trang web và dịch vụ của khách hàng có thể chứa các liên kết đến các trang web, nền tảng và phần mềm khác của bên thứ ba. Các trang web và phần mềm được liên kết như vậy không thuộc quyền kiểm soát của Polaris và Polaris không chịu trách nhiệm về nội dung của chúng.",
+      },
+    },
+    "limitation-of-liability": {
+      text: "5. GIỚI HẠN TRÁCH NHIỆM PHÁP LÝ",
+      "content-1": "5.1 Các điều khoản sau đây quy định toàn bộ trách nhiệm tài chính của Polaris (bao gồm bất kỳ trách nhiệm pháp lý nào đối với các hành vi hoặc thiếu sót của nhân viên, đại lý và nhà thầu) đối với khách hàng liên quan đến (a) bất kỳ vi phạm SLA nào; (b) mọi hoạt động sử dụng dịch vụ hoặc bất kỳ công việc nào từ khách hàng; và (c) mọi tuyên bố, trình bày sai lệch (dù vô ý hay cố tình), tuyên bố hoặc hành động sai trái hoặc thiếu sót (bao gồm cả sơ suất) phát sinh hoặc liên quan đến SLA.",
+      "content-2": "5.2 Không có quy định nào trong SLA loại trừ trách nhiệm của Polaris (a) đối với cái chết hoặc thương tích cá nhân do sự bất cẩn của Polaris; hoặc (b) để gian lận hoặc trình bày sai sự thật.",
+      "content-3": "5.3 Theo điều khoản 7.2, Polaris sẽ không chịu trách nhiệm với khách hàng về bất kỳ tổn thất nào về lợi nhuận, mất doanh thu hoặc kinh doanh, mất các thỏa thuận hoặc hợp đồng, mất khoản tiết kiệm dự kiến, mất mát hoặc thiệt hại cho lợi thế thương mại, mất việc sử dụng, mất mát hoặc vi phạm dữ liệu hoặc thông tin, hoặc bất kỳ tổn thất kinh tế, chi phí, thiệt hại, phí hoặc chi phí đặc biệt gián tiếp hay trực tiếp.",
+      "content-4": "5.4 Theo điều khoản 7.2, toàn bộ trách nhiệm pháp lý của Polaris trong hợp đồng, hành vi vi phạm (bao gồm cả việc sơ suất hoặc vi phạm nghĩa vụ theo luật bất kỳ phát sinh nào), trình bày sai lệch (dù vô ý hay cố tình), bồi thường hoặc phát sinh khác liên quan đến việc thực hiện hoặc dự kiến ​​thực hiện SLA sẽ không vượt quá 100% tổng phí dịch vụ và bất kỳ khoản phí bổ sung nào (cho dù có lập hóa đơn hay không) trong năm phát sinh trách nhiệm pháp lý.",
+    },
+    "confidentiality": {
+      text: "6. BẢO MẬT THÔNG TIN",
+      "content-1": "6.1 Mỗi bên hiểu rằng mình sẽ không tiết lộ cho bất kỳ người nào bất kỳ thông tin bí mật nào liên quan đến công việc kinh doanh, công việc, khách hàng hoặc nhà cung cấp của bên kia hoặc của bất kỳ thành viên nào trong công ty mà bên kia trực thuộc, ngoại trừ được cho phép bởi khoản 8.2 và khoản 12.",
+      "content-2": {
+        text: "6.2 Các điều kiện mà mỗi bên có thể tiết lộ thông tin bí mật của bên kia:",
+        "sub-content-1": "(a) cho các nhân viên, sĩ quan, đại diện hoặc cố vấn của mình, những người cần biết thông tin đó cho mục đích thực hiện các nghĩa vụ theo SLA. Mỗi bên phải đảm bảo rằng nhân viên, viên chức, đại diện hoặc cố vấn của mình mà họ tiết lộ thông tin bí mật của bên kia tuân thủ điều khoản 8 này; và",
+        "sub-content-2": "(b) theo yêu cầu của pháp luật, tòa án có thẩm quyền hoặc bất kỳ cơ quan chính phủ hoặc cơ quan quản lý nào.",
+      },
+    },
+    "data-sharing": {
+      text: "7. CHIA SẺ DỮ LIỆU",
+      content: "Polaris có thể thiết lập hồ sơ kết quả từ dịch vụ mà Polaris cung cấp. Thông tin đó có thể được sử dụng để đo lường rủi ro và nghiên cứu nội bộ liên quan và sẽ được xử lý theo tất cả các luật hiện hành. Tất cả những thông tin đó sẽ được giữ kín."
+    },
+    "intellectual-property": {
+      text: "8. QUYỀN SỞ HỮU TRÍ TUỆ",
+      content: "Tất cả quyền sở hữu trí tuệ (nếu có) có thể tồn tại trong bất kỳ tài liệu, báo cáo hoặc thông điệp bằng văn bản nào sẽ thuộc quyền sở hữu của Polaris. Polaris cấp phép miễn phí tất cả các quyền đó cho khách hàng và trên cơ sở không độc quyền, không thể chuyển nhượng và trên toàn thế giới ở mức độ cần thiết để cho phép khách hàng sử dụng hợp lý các tài liệu, báo cáo hoặc thông điệp bằng văn bản như vốn có dự kiến ​​của các Bên. Polaris bảo lưu quyền thực hiện hành động có thể thích hợp để hạn chế hoặc ngăn chặn việc vi phạm quyền sở hữu trí tuệ đó.",
+    },
+    "suspension-of-service": {
+      text: "9. TẠM NGỪNG DỊCH VỤ",
+      "content-1": {
+        text: "9.1 Polaris có thể tạm ngừng việc sử dụng hoặc truy cập vào bất kỳ Dịch vụ nào vào bất kỳ lúc nào với lý do sau:",
+        "sub-content-1": "(a) Polaris có lý do để nghi ngờ rằng khách hàng đang cố ý sử dụng dịch vụ trái với bất kỳ luật hiện hành nào và không ngừng hành động đó trong vòng bảy (7) ngày kể từ khi được Polaris thông báo về hành vi vi phạm đó;",
+        "sub-content-2": "(b) Polaris xác định rằng việc cung cấp dịch vụ có tác động bất lợi đến mạng lưới của Polaris;",
+        "sub-content-3": "(c) Khách hàng thực hiện hoặc cho phép thực hiện bất kỳ điều gì có thể gây nguy hiểm cho hoạt động của dịch vụ hoặc mạng của Polaris; hoặc",
+        "sub-content-4": "(d) Khách hàng đã không thanh toán khoản phí hoặc bất kỳ phần nào của khoản phí đó trong hơn 30 ngày sau ngày thanh toán.",
+      },
+      "content-2": "9.2 Khi có bất kỳ sự tạm ngừng nào như vậy theo bất kỳ căn cứ nào được chỉ định, khách hàng sẽ phải chịu trách nhiệm đối với tất cả các khoản phí và lệ phí phát sinh cho đến và kể cả ngày tạm dừng đó.",
+      "content-3": "9.3 Nếu, trong vòng 14 ngày kể từ ngày tạm ngưng, khách hàng khắc phục tất cả các lý do mà việc tạm ngưng đó đã được thực hiện (nếu các lý do đó đã khắc phục), thì khách hàng có thể yêu cầu Polaris kết nối lại dịch vụ. Theo yêu cầu đó, Polaris có thể kết nối lại dịch vụ và sẽ có quyền áp đặt cho khách hàng một khoản phí kết nối lại và các khoản phí khác nếu thấy phù hợp.",
+      "content-4": "9.4 Không có nội dung nào ở đây ảnh hưởng đến quyền của Polaris trong việc chấm dứt dịch vụ theo điều khoản 12.",
+    },
+    "termination": {
+      text: "10. CHẤM DỨT DỊCH VỤ",
+      "content-1": "10.1 Các đăng ký sẽ tự động được gia hạn vào cuối thời hạn tùy thuộc vào lịch thanh toán của khách hàng (hàng tháng / hàng năm) trừ khi khách hàng cung cấp thông báo bằng văn bản cho Polaris trước chu kỳ thanh toán tiếp theo.",
+      "content-2": "10.2 Khách hàng thanh toán hàng năm nếu hủy trước khi kết thúc đăng ký sẽ được duy trì dịch vụ cho đến khi kết thúc đăng ký và sẽ không được gia hạn, nhưng phải tuân theo chính sách không hoàn lại tiền. Những khách hàng thanh toán hàng tháng hủy hoặc hạ gói trước chu kỳ thanh toán hàng tháng tiếp theo sẽ có gói dịch vụ hiện tại của họ cho phần còn lại của tháng đó trước khi thay đổi.",
+      "content-3": "10.3 Không ảnh hưởng đến bất kỳ quyền hoặc biện pháp khắc phục nào khác có sẵn, Polaris có thể chấm dứt dịch vụ ngay lập tức bằng cách thông báo bằng văn bản cho khách hàng nếu (a) khách hàng không thanh toán bất kỳ số tiền nào đến hạn và vẫn ở trong tình trạng mặc định không dưới mười bốn (14) ngày sau khi được thông báo để thực hiện thanh toán như vậy.",
+      "content-4": {
+        text: "10.4 Khi chấm dứt dịch vụ:",
+        "sub-content-1": "(a) Khách hàng sẽ ngay lập tức thanh toán cho Polaris nếu còn thiếu, tất cả các hóa đơn và lãi chưa thanh toán của Polaris, và đối với các sản phẩm đã cung cấp nhưng chưa có hóa đơn, Polaris có thể gửi hóa đơn, hóa đơn này sẽ được thanh toán ngay lập tức khi nhận; và",
+        "sub-content-2": "(b) tất cả nhiệm vụ, công việc hiện có sẽ tự động chấm dứt.",
+      },
+      "content-5": "10.5 Bất kỳ điều khoản nào của SLA được trình bày rõ ràng hoặc hàm ý nhằm có hiệu lực hoặc tiếp tục có hiệu lực vào hoặc sau khi SLA chấm dứt sẽ vẫn có hiệu lực đầy đủ.",
+    },
+    "exclusions": {
+      text: "11. KHI GẶP PHẢI SỰ CỐ",
+      "content-1": "11.1 Sự cố ngừng hoạt động và / hoặc mất hoặc hỏng dịch vụ do bảo trì theo lịch trình có thể ảnh hưởng đến tính khả dụng của tất cả hoặc bất kỳ phần nào của dịch vụ kiểm soát an toàn thông tin và / hoặc bất kỳ dịch vụ nào;",
+      "content-2": "11.2 Các lỗi trong đó nguyên nhân được xác định là do hành vi cố ý hoặc do hành động của một người dùng từ khách hàng bị phát hiện là vi phạm chính sách sử dụng được chấp nhận (AUP) đã nêu của khách hàng hoặc các điều khoản và điều kiện của sản phẩm;",
+      "content-3": "11.3 Các lỗi do khách hàng hoặc bất kỳ bên thứ ba nào sử dụng sai hoặc can thiệp vào dịch vụ liên quan hoặc dịch vụ kiểm soát an toàn thông tin;",
+      "content-4": "11.4 Các lỗi do quá trình truyền dữ liệu bắt nguồn từ thiết bị do khách hàng sở hữu hoặc quản lý;",
+      "content-5": "11.5 Bất kỳ sự cố ngừng hoạt động và / hoặc mất hoặc hỏng hóc dịch vụ gây ra bởi bất kỳ hành động hoặc thiếu sót nào của khách hàng vi phạm SLA hoặc hợp đồng khác với khách hàng;",
+      "content-6": "11.6 Bất kỳ sự cố ngừng hoạt động và / hoặc mất hoặc không cung cấp dịch vụ là kết quả của việc mất liên kết viễn thông của khách hàng nằm ngoài sự kiểm soát của khách hàng",
+      "content-7": "11.7 Bất kỳ sự cố ngừng hoạt động và / hoặc mất hoặc trong trường hợp bất khả kháng; và",
+      "content-8": "11.8 Sự cố ngừng hoạt động và / hoặc mất mát hoặc hỏng hóc của dịch vụ trong phạm vi gây ra hoặc do bất kỳ thiết bị nào không do khách hàng cung cấp và / hoặc liên quan đến việc khách hàng không đồng ý cung cấp bảo trì và / hoặc hỗ trợ.",
+    },
+    "miscellaneous": {
+      text: "12. CÁC ĐIỀU KHOẢN KHÁC",
+      "content-1": "12.1 <u>Luật điều chỉnh.</u> SLA và bất kỳ tranh chấp hoặc khiếu nại nào (bao gồm cả tranh chấp hoặc khiếu nại ngoài hợp đồng) phát sinh từ hoặc liên quan đến SLA hoặc đối tượng hoặc sự hình thành của SLA sẽ được điều chỉnh và hiểu theo luật pháp Việt Nam, không ảnh hưởng đến xung đột các nguyên tắc luật.",
+      "content-2": "12.2 <u>Quyền tài phán.</u> Mỗi Bên đồng ý không hủy ngang rằng các tòa án của Việt Nam sẽ có thẩm quyền độc quyền giải quyết bất kỳ tranh chấp hoặc khiếu nại nào (bao gồm cả tranh chấp hoặc khiếu nại ngoài hợp đồng) phát sinh từ hoặc liên quan đến SLA hoặc vấn đề hoặc sự hình thành của SLA.",
+    },
+    end: "///HẾT///",
+  }
 }
 

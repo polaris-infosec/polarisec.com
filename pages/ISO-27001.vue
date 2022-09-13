@@ -13,7 +13,11 @@ import ISO27001AuditScreen from "~/layouts/services/ISO27001audit/ISO27001AuditS
   components: {ISO27001AuditScreen}
 })
 export default class Iso27001audit extends Vue {
-
+  head() {
+    return {
+      title: this.$t("services.ISO-27001.header-title")
+    }
+  }
 }
 </script>
 

@@ -13,7 +13,11 @@ import GDPRAuditScreen from "~/layouts/services/GDPRaudit/GDPRAuditScreen.vue";
   components: {GDPRAuditScreen}
 })
 export default class GdprAudit extends Vue {
-
+  head() {
+    return {
+      title: this.$t('services.GDPR.header-title')
+    }
+  }
 }
 </script>
 
