@@ -10,7 +10,7 @@
             />
           </div>
           <p class="mt-5">
-            <nuxt-link to="/web-protection"><span
+            <nuxt-link :to="localePath('/web-protection')"><span
               class="brand-2">{{ $t('web-protection-platform.web-protection') }}</span></nuxt-link>
             {{ $t('web-protection-platform.content-1') }}
           </p>
@@ -23,7 +23,7 @@
             />
           </div>
           <p class="mt-5">
-            <nuxt-link to="/web-protection"><span
+            <nuxt-link :to="localePath('/web-protection')"><span
               class="brand-2">{{ $t('web-protection-platform.web-protection') }}</span></nuxt-link>
             {{ $t('web-protection-platform.content-3') }}
           </p>
@@ -40,12 +40,12 @@
           <b-col class="justify-content-start p-0" cols="12">
             <p class="mt-5 text-left">
               {{ $t("web-protection-platform.content-5.polaris") }}
-              <nuxt-link to="/web-protection"><span
+              <nuxt-link :to="localePath('/web-protection')"><span
                 class="brand-2">{{ $t("web-protection-platform.content-5.web-application-and-api-protection") }}</span>
               </nuxt-link>
-              (<nuxt-link to="/web-protection"><span
+              (<nuxt-link :to="localePath('/web-protection')"><span
                 class="brand-2">{{ $t("web-protection-platform.content-5.WAAP") }}</span></nuxt-link>,
-              <nuxt-link to="/web-protection"><span
+              <nuxt-link :to="localePath('/web-protection')"><span
                 class="brand-2">{{ $t("web-protection-platform.content-5.WAF") }}</span></nuxt-link>)
               {{ $t("web-protection-platform.content-5.content") }}
             </p>
