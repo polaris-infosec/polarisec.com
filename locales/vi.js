@@ -577,6 +577,7 @@ export default {
       manual: "Tùy chỉnh",
       "enterprise-only": "Gói doanh nghiệp",
       "add-on": "Tiện ích bổ sung",
+      "included": "Đã bao gồm",
     },
     article: {
       content: "Tìm hiểu thêm về các lợi ích khi sử dụng các biện pháp ",

@@ -16,7 +16,7 @@
         <template v-for="support in addon.supports">
           <div v-if="support.isInclude" class="col d-inline-flex align-items-start">
             <img src="@/assets/icons/done.png" alt="" width="24" height="24">
-            <span :class="$style.supportInfo">Included</span>
+            <span :class="$style.supportInfo">{{$t('pricing.plans.included')}}</span>
           </div>
           <div v-else-if="support.isSupport" class="col">
             <div v-if="support.price" class="d-inline-flex align-items-start">

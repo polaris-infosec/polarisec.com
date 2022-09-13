@@ -596,6 +596,7 @@ export default {
       manual: "Manual",
       "enterprise-only": "Enterprise Only",
       "add-on": "Add-on",
+      "included": "Included",
     },
     article: {
       content: "Find out more about the benefits of using",
@@ -696,11 +697,11 @@ export default {
     "content-4": "Technology is always evolving and growing, and with that comes new vulnerabilities and risks as part of the growing pains. Most websites are now integrated with online payment functions or other 3rd applications and tech platforms in delivering services. These connections with other parties on your web domain are attractive attack points for hackers who intend to infiltrate the server system by exploiting the vulnerabilities at the API endpoints. Hacker attack methodologies and exploitations grow along with the evolution of technology. Website security and protection are primary ways to mitigate the growing risk of hackers accessing your internal systems and networks.",
     "title-2": "Our web protection platform is secure, effective, and easy to use.",
     "content-5": {
-      polaris:"Polaris’",
+      polaris: "Polaris’",
       "web-application-and-api-protection": "Web Application & API Protection",
-      "WAAP":"WAAP",
-      "WAF":"WAF",
-      "content":"platform defends any business that has any kind of online presence, from simple to complex transactions, to the storage of confidential customer financial and personal data. Using proprietary artificial intelligence (AI) technology as the core of our protection methodology, our platform is able to:"
+      "WAAP": "WAAP",
+      "WAF": "WAF",
+      "content": "platform defends any business that has any kind of online presence, from simple to complex transactions, to the storage of confidential customer financial and personal data. Using proprietary artificial intelligence (AI) technology as the core of our protection methodology, our platform is able to:"
     },
     "list-1": {
       "content-1": "Automate and optimize web security processes and tasks.",
@@ -833,6 +834,6 @@ export default {
         "        to settle any dispute or claim (including non-contractual disputes or claims) arising out of or in connection\n" +
         "        with the SLA or its subject matter or formation.",
     },
-    end:"///END///",
+    end: "///END///",
   }
 }
