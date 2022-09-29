@@ -302,7 +302,7 @@ export default class PricingOverview extends Vue {
 
   functionTypes: any = [
     {
-      title: 'API Security',
+      title: this.$t('pricing.pricing-detail.API-security.text').toString(),
       isExpand: true,
       child: [
         {
