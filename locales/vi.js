@@ -90,7 +90,7 @@ export default {
   "whyUs": {
     "title": "Ưu Thế",
     "header-title": "Ưu Thế - Polaris",
-    "intro-1": " Polaris là <span class=\"brand-2\">giải pháp hàng đầu APAC</span> chuyên cung cấp các dịch vụ bảo mật chất lượng tới khách hàng.",
+    "intro-1": " Polaris là <span class=\"brand-2\">giải pháp hàng đầu APAC</span> chuyên cung cấp các dịch vụ bảo mật chất lượng cho khách hàng.",
     "intro-2": "Chúng tôi hiểu rằng đôi khi an ninh mạng trở nên quá phức tạp, vì thế chúng tôi luôn tìm cách đơn giản hóa quy trình, <span\n" +
       "            class=\"brand-2\">để bất kỳ ai, ở bất kỳ đâu đều có thể tiếp cận được.</span>",
     "intro-3": "Chúng tôi có thể <span class=\"brand-2\">mở rộng quy mô ở mọi cấp độ</span> từ người chưa biết gì về an ninh mạng đến những người dày dạn kinh nghiệm lâu năm, giải quyết các mối quan tâm của các doanh nghiệp nhỏ cũng như các doanh nghiệp lớn.",
@@ -222,7 +222,7 @@ export default {
         text: "Quyền lợi khách hàng",
         "content-1": 'Cung cấp cho các doanh nghiệp <b>thông tin chi tiết về hiện trạng</b> quản lý thông tin và bảo mật dữ liệu',
         "content-2": '<b>Xác định các rủi ro thiết yếu</b> về mặt con người, quy trình và công nghệ để khắc phục',
-        "content-3": 'Cung cấp <b>độ trình cải tiến về</b> quản trị an ninh mạng, hệ thống bảo mật và các sự chuẩn bị cần thiết khác',
+        "content-3": 'Cung cấp <b>lộ trình cải tiến về</b> quản trị an ninh mạng, hệ thống bảo mật và các sự chuẩn bị cần thiết khác',
         "content-4": 'Cho phép các công ty <b>bảo vệ tốt hơn</b> các thành viên trong đội ngũ, khách hàng của họ, nhà cung cấp và cả đối tác',
         "content-5": 'Thông báo đến khách hàng, đối tác và nhà cung cấp rằng đơn vị <b>đáp ứng các tiêu chuẩn tuân thủ quốc tế</b> trong việc quản lý dữ liệu',
       }
@@ -405,9 +405,9 @@ export default {
         "info-10": "Sử dụng phiên bản mới nhất  giao thức HTTP cho phép người dùng web kết nối tới máy chủ web.",
       },
       "bot-management": {
-        text: "Quản lí BOT",
+        text: "Quản lý BOT",
         "sub-option-1": "Bảo vệ chống BOT",
-        "sub-option-2": "Quản lí BOT nâng cao*",
+        "sub-option-2": "Quản lý BOT nâng cao*",
         "sub-option-3": "Whitelist các Bot tốt",
         "info-1": "Sử dụng hCaptcha để xác định người dùng là con người hay Bot",
         "info-3": "Cho phép sử dụng các bot có lý do để chuyển vùng web",
@@ -429,7 +429,7 @@ export default {
         "info-1": "Hỗ trợ tất cả alias domains (còn được gọi là tên miền bí danh) đến tên miền web gốc của người dùng.",
         "info-2": "Quản lý bản ghi DNS của riêng người dùng, lựa chọn máy chủ nào được sử dụng để hỗ trợ trang web của người dùng hoạt động hiệu quả",
         "info-3": "Đính kèm bản ghi chữ ký số vào thông tin DNS của người dùng để tăng cường bảo mật.",
-        "info-4": "Tạo tự động các liên kết để xác thực và mã hóa giữa hệ thống mạng",
+        "info-4": "Tự động tạo các liên kết để xác thực và mã hóa giữa hệ thống mạng",
         "info-5": "Tùy chỉnh tài liệu số liên kết danh tính cặp khoá mật mã của một trang web và cung cấp thông tin xác thực trang web.",
       },
       "management-monitoring-reporting": {
@@ -438,7 +438,7 @@ export default {
         "sub-option-2": "Quyền truy cập API Polaris",
         "sub-option-3": "Bảng điều khiển thời gian thực",
         "sub-option-4": "Quản lý đa người dùng",
-        "sub-option-5": "Quản lí hệ thống phiếu sự cố",
+        "sub-option-5": "Quản lý hệ thống phiếu sự cố",
         "sub-option-6": "Thông báo/Cảnh báo qua email/trình duyệt",
         "sub-option-7": "Yêu cầu Logs",
         "sub-option-8": "Kiểm tra Logs",
@@ -454,14 +454,14 @@ export default {
       },
       "service-level-agreement": {
         text: "Thoả thuận mức độ dịch vụ (SLA)",
-        "sub-option-1": "Đường dây nóng khẩn cấp(Hotline)",
+        "sub-option-1": "Đường dây nóng khẩn cấp (Hotline)",
         "sub-option-2": "Chat",
         "sub-option-3": "Email",
         "sub-option-4": "8 x 5 x ngày làm việc tiếp theo",
         "sub-option-5": "24 x 7 x 4",
         "sub-option-6": "24 x 7 x 365 x 4",
         "sub-option-7": "99.99% Thời gian hoạt động",
-        "info-4": "Trả lời 8 giờ một ngày , 5 ngày một tuần trước ngày làm việc tiếp theo",
+        "info-4": "Trả lời 8 giờ một ngày, 5 ngày một tuần trước ngày làm việc tiếp theo",
         "info-5": "Phản hồi 24 giờ một ngày, 7 ngày một tuần trong vòng 4 tiếng.",
         "info-6": "Bảo hiểm đầy đủ 24/7, 365 ngày trong vòng 4 tiếng",
         "info-7": "Chỉ áp dụng cho triển khai đám mây (on cloud)",
@@ -470,7 +470,7 @@ export default {
         text: "Cấu trúc kĩ thuật",
         "sub-option-1": "Triển khai trên Cloud",
         "sub-option-2": "Triển khai tại chỗ",
-        "sub-option-3": "Triển khai kết hợp(hybrid) - Trên Cloud và tại chỗ",
+        "sub-option-3": "Triển khai kết hợp (hybrid) - Trên Cloud và tại chỗ",
         "sub-option-4": "Tình báo thông minh",
         "sub-option-5": "Zero Trust Access",
       },
@@ -483,14 +483,14 @@ export default {
       "option-3": "Zero Trust Access",
     },
     "managed-security-services-add-on": {
-      title: "Quản lí dịch vụ và tiện ích an toàn thông tin",
+      title: "Quản lý dịch vụ và tiện ích an toàn thông tin",
       content: "Hãy chủ động tiến thêm một bước nữa bằng cách để Polaris giám sát bảo mật web của bạn. Đội ngũ chuyên gia bảo mật từ Trung tâm Điều hành Bảo mật (SOC) của chúng tôi sẽ theo dõi hoạt động web của bạn, cho bạn, tự động giảm thiểu các mối đe dọa trong thời gian thực. Cho phép chúng tôi theo dõi website của bạn và đóng vai trò người bảo hộ để bạn có thể tập trung vào những gì thực sự quan trọng - con người và doanh nghiệp của bạn. ",
       "active-monitoring": {
         text: "Giám sát liên tục",
         "sub-option-1": "Giám sát 24/7 bởi đội ngũ chuyên gia bảo mật SOC",
-        "sub-option-2": "Quản lí lỗ hổng bảo mật",
+        "sub-option-2": "Quản lý lỗ hổng bảo mật",
         "sub-option-3": "Tuỳ chỉnh quy tắc trong việc phát hiện mối đe doạ ",
-        "sub-option-4": "Quản lí Log",
+        "sub-option-4": "Quản lý Log",
       },
       "false-positives-management": {
         text: "Kiểm soát báo động giả",
@@ -503,7 +503,7 @@ export default {
         "sub-option-2": "Ngăn chặn nhanh chóng và loại bỏ mối đe doạ",
         "sub-option-3": "Phân tích phần mềm độc hại",
         "sub-option-4": "Xác thực IOC",
-        "sub-option-5": "Cập nhập các quy tắc tuỳ chỉnh",
+        "sub-option-5": "Cập nhật các quy tắc tuỳ chỉnh",
       },
       "summary-reports": {
         text: "Báo cáo tổng quan",
@@ -513,7 +513,7 @@ export default {
       "trusted-advisory": {
         text: "Cố vấn đáng tin cậy",
         "sub-option-1": "Cố vấn sự cố hàng ngày bởi đội ngũ tận tâm từ Polaris",
-        "sub-option-2": "Hỗ trợ các buổi họp quản lí điều hành",
+        "sub-option-2": "Hỗ trợ các buổi họp quản lý điều hành",
         "sub-option-3": "Tư vấn triển khai các thiết bị bảo mật mới",
         "sub-option-4": "Tham vấn theo lịch trình",
       }
@@ -541,7 +541,7 @@ export default {
       },
       "vendor-management": {
         text: "Quản lý nhà cung cấp",
-        "sub-option-1": "Dịch vụ quản lí nhà cung cấp",
+        "sub-option-1": "Dịch vụ quản lý nhà cung cấp",
         "info-1": "Cho phép khách hàng sử dụng nhà cung cấp bên thứ 3 để quản lý xác thực và ủy quyền người dùng. Các nhà cung cấp được xác định cấu hình là ứng dụng OAuth 2.0 nên người dùng chỉ cần xác thực OAuth trong việc thiết lập nhà cung cấp mới. Hiện tại, chúng tôi chỉ hỗ trợ Azure Active Directory và Google Cloud Platform",
         "sub-option-2": "Đăng nhập một lần (SSO)",
       },
@@ -570,7 +570,7 @@ export default {
       basic: "Cơ bản",
       standard: "Tiêu chuẩn",
       professional: "Chuyên nghiệp",
-      enterprise: "Mở rộng",
+      enterprise: "Doanh nghiệp",
       advanced: "Nâng cao",
       custom: "Tuỳ chỉnh",
       "standard-professional": "Tiêu chuẩn / Chuyên nghiệp",
@@ -661,8 +661,8 @@ export default {
     "sub-text": "Các tính năng nâng cao và đội ngũ hỗ trợ tận tâm.",
     "add-ons": "NHỮNG TÍNH NĂNG VÀ SẢN PHẨM NÂNG CAO ĐƯỢC ĐỀ XUẤT ",
     "learn-more": "Tìm hiểu thêm",
-    "add-on": "Mở rộng - Dịch vụ quản lí và tiện ích an toàn thông tin - Zero Trust",
-    "professional-add-on": "Dịch vụ quản lí và tiện ích an toàn thông tin - Zero Trust",
+    "add-on": "Mở rộng - Dịch vụ quản lý và tiện ích an toàn thông tin - Zero Trust",
+    "professional-add-on": "Dịch vụ quản lý và tiện ích an toàn thông tin - Zero Trust",
   },
   "web-protection-platform": {
     "header-title": "Tổng Quan Và Lợi Ích Của Nền Tảng Bảo Mật Web - Polaris",
