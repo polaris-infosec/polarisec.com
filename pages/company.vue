@@ -28,7 +28,7 @@ import CompanyCertifications from "~/layouts/company/CompanyCertifications.vue";
 export default class Company extends Vue {
   head() {
     return {
-      title: this.$t("company.header-title  ")
+      title: this.$t("company.header-title")
     }
   }
 }
