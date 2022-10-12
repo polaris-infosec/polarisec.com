@@ -194,4 +194,3 @@ export default class PFooter extends Vue {
 }
 </script>
 
-
