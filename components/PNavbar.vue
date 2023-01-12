@@ -29,8 +29,8 @@
           </b-nav-item>
           <b-nav-item :class="$style.navBarItem" :to="localePath('/company')" class="active mr-4 pr-1">{{$t('nav.company')}}
           </b-nav-item>
-          <b-nav-item :class="$style.navBarItem" :to="localePath('/web-protection')" class="active mr-4 pr-1">{{$t('nav.pricing')}}
-          </b-nav-item>
+<!--          <b-nav-item :class="$style.navBarItem" :to="localePath('/web-protection')" class="active mr-4 pr-1">{{$t('nav.pricing')}}-->
+<!--          </b-nav-item>-->
           <b-nav-item :class="$style.navBarItem" href="https://support.polarisec.com/portal/en/home" target="_blank"
                       class="active mr-4 pr-1">{{$t('nav.support-center')}}
           </b-nav-item>
