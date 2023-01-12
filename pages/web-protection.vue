@@ -23,6 +23,10 @@ import PricingScreen from "~/layouts/pricing/screen_mobile_device/PricingScreen.
   components: {PricingScreen, PricingDetails, PricingBanner}
 })
 export default class PolarisCyberSecurityWebProtectionWaapPricing extends Vue {
+  created(){
+    this.$router.push({path:this.localePath('/404')});
+  }
+
   head() {
     return {
       title: this.$t("pricing.header-title"),

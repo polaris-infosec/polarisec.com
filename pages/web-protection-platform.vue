@@ -13,6 +13,9 @@ import WebProtectionPlatformScreen from "~/layouts/platform/WebProtectionPlatfor
   components: {WebProtectionPlatformScreen}
 })
 export default class WebProtectionPlatform extends Vue {
+  created(){
+    this.$router.push({path:this.localePath('/404')});
+  }
 
   head() {
     return {
