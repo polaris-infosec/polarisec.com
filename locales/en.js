@@ -33,7 +33,7 @@ export default {
       "singapore": "Singapore",
       "singapore-address": "12 Marina View #11-01",
       "vietnam": "Vietnam",
-      "vietnam-address": "45 Vo Thi Sau, Da Kao Ward, District 1, HCMC ",
+      "vietnam-address": "45 Vo Thi Sau, Da Kao Ward, District 1, HCMC",
     },
     "email": "hello@polarisec.com",
     "solution": "SOLUTION",
