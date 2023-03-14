@@ -33,7 +33,7 @@ export default {
       "singapore": "Singapore",
       "singapore-address": "12 Marina View #11-01",
       "vietnam": "Vietnam",
-      "vietnam-address": "Tầng M, Tòa Nhà Pax Sky, 159C Đề Thám, Phường Cô Giang, Quận 1, TP.HCM",
+      "vietnam-address": "Số 45 Võ Thị Sáu, Phường Đa Kao, Quận 1, Thành phố Hồ Chí Minh, Việt Nam",
     },
     "email": "hello@polarisec.com",
     "solution": "GIẢI PHÁP",
