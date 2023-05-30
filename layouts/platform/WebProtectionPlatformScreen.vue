@@ -26,8 +26,11 @@
             />
           </div>
           <p class="mt-5">
-<!--            <nuxt-link :to="localePath('/web-protection')"><span-->
-<!--              class="brand-2">{{ $t('web-protection-platform.web-protection') }}</span></nuxt-link>-->
+<!--            <nuxt-link :to="localePath('/web-protection')">-->
+              <span
+              class="brand-2">{{ $t('web-protection-platform.web-protection') }}
+            </span>
+<!--            </nuxt-link>-->
             {{ $t('web-protection-platform.content-3') }}
           </p>
           <p>
