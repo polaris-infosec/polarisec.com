@@ -75,11 +75,11 @@
             <div class="body-6 col-lg-3 col-5 mt-mb-36px">
               {{ $t('footer.resources') }}
               <div class="d-flex flex-column mt-4 body-5">
-                <nuxt-link :to="localePath('/web-protection')">
-                <span class="color-text-7">
-                    {{ $t('nav.pricing') }}
-                </span>
-                </nuxt-link>
+<!--                <nuxt-link :to="localePath('/web-protection')">-->
+<!--                <span class="color-text-7">-->
+<!--                    {{ $t('nav.pricing') }}-->
+<!--                </span>-->
+<!--                </nuxt-link>-->
                 <a href="https://support.polarisec.com/portal/en/kb/polaris-kb/frequently-asked-questions-faq">
                 <span class="color-text-7">
                     {{ $t('pricing.tags.faqs') }}
