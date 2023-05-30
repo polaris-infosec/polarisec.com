@@ -2,9 +2,9 @@
   <div :class="$style.container">
     <div :class="$style.section" class="text-center">
       <h3 class="mb-2" v-html="$t('question.introduction')"></h3>
-      <nuxt-link to="/web-protection">
+<!--      <nuxt-link to="/web-protection">-->
         <p class="mt-4" :class="$style.skipBtn"> {{this.$t('question.skip-question')}} -></p>
-      </nuxt-link>
+<!--      </nuxt-link>-->
       <template v-for="question in questions">
         <question-box-mobile :key="question.number" :question="question" class="mb-5"/>
       </template>
