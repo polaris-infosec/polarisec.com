@@ -50,7 +50,7 @@
             :class="$style.findMoreDropdown"
           >
             <b-dropdown-item href="https://polarisec.medium.com/" target="_blank"><span class="black-text">Blog</span></b-dropdown-item>
-            <b-dropdown-item href="https://support.polarisec.com/portal/en/home" target="_blank"><span class="black-text">Support Center</span></b-dropdown-item>
+            <b-dropdown-item href="https://support.polarisec.com" target="_blank"><span class="black-text">Support Center</span></b-dropdown-item>
           </b-dropdown>
         </div>
       </div>

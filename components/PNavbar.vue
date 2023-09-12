@@ -31,7 +31,7 @@
           </b-nav-item>
 <!--          <b-nav-item :class="$style.navBarItem" :to="localePath('/web-protection')" class="active mr-4 pr-1">{{$t('nav.pricing')}}-->
 <!--          </b-nav-item>-->
-          <b-nav-item :class="$style.navBarItem" href="https://support.polarisec.com/portal/en/home" target="_blank"
+          <b-nav-item :class="$style.navBarItem" href="https://support.polarisec.com" target="_blank"
                       class="active mr-4 pr-1">{{$t('nav.support-center')}}
           </b-nav-item>
         </b-navbar-nav>

@@ -80,11 +80,11 @@
 <!--                    {{ $t('nav.pricing') }}-->
 <!--                </span>-->
 <!--                </nuxt-link>-->
-                <a href="https://support.polarisec.com/portal/en/kb/polaris-kb/frequently-asked-questions-faq">
-                <span class="color-text-7">
-                    {{ $t('pricing.tags.faqs') }}
-                </span>
-                </a>
+<!--                <a href="https://support.polarisec.com/portal/en/kb/polaris-kb/frequently-asked-questions-faq">-->
+<!--                <span class="color-text-7">-->
+<!--                    {{ $t('pricing.tags.faqs') }}-->
+<!--                </span>-->
+<!--                </a>-->
                 <nuxt-link :to="localePath('/contact')">
                 <span class="color-text-7">
                     {{ $t('nav.contact') }}
