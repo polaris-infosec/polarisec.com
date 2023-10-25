@@ -39,11 +39,12 @@
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
           <p-button size="sm" :text="$t('button-group.button-2')" :class="$style.btn" :show-icon="false" @click="onClick"/>
+          <p-language-select :class="$style.languageIconPC" class="ml-3"/>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
     <b-row class="mx-0 mr-lg-5 mr-1 ml-lg-3 align-items-lg-center mt-lg-0 pt-lg-0 mt-3 pt-1">
-      <p-language-select/>
+      <p-language-select :class="$style.languageIconMobile"/>
     </b-row>
   </b-row>
 </template>
@@ -100,7 +101,17 @@
   .navigationBar
     width 90% !important
 
+  .languageIconMobile
+    display visibility !important
+
+  .languageIconPC
+    display none
+
 @media only screen and (min-width: 992px)
+
+  .languageIconMobile
+    display none
+
   .navCollapse
     min-width 1076px !important
 
