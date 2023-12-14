@@ -135,7 +135,7 @@ export default class PricingAddOnsTable extends Vue {
   }
 
   goPolaris() {
-    window.open('https://polarisec.io/', '_blank');
+    window.open('https://cloud.polarisec.io/', '_blank');
   }
 
   get addOns() {

@@ -445,7 +445,7 @@ export default class PricingAddOnsService extends Vue {
   ];
 
   onClick() {
-    window.open('https://polarisec.io/', '_blank');
+    window.open('https://cloud.polarisec.io/', '_blank');
   }
 }
 </script>

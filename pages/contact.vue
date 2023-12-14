@@ -289,7 +289,7 @@ export default class Contact extends Vue {
       return
     }
 
-    const response = await this.$axios.$post('https://polarisec.io/api/contact-us', {
+    const response = await this.$axios.$post('https://cloud.polarisec.io/api/contact-us', {
       'name': this.name,
       'email': this.email,
       'phone': this.phone,
