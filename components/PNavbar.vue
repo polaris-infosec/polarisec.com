@@ -11,7 +11,7 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" :class="$style.navCollapse" is-nav>
         <b-navbar-nav :class="$style.navContainer">
-          <b-nav-item :class="$style.navBarItem" href="https://polarisec.io/" target="_blank"
+          <b-nav-item :class="$style.navBarItem" href="https://cloud.polarisec.io/" target="_blank"
                       class="active mr-4 pr-1">
             {{$t('nav.platform')}}
           </b-nav-item>

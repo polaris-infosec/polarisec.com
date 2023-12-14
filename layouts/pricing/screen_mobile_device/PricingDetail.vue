@@ -84,7 +84,7 @@ export default class PricingDetail extends Vue {
   }
 
   onClick(){
-    window.open('https://polarisec.io/', '_blank');
+    window.open('https://cloud.polarisec.io/', '_blank');
   }
 
   goToQuestions(){

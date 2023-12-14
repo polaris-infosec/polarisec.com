@@ -292,7 +292,7 @@ export default class PricingOverview extends Vue {
   }
 
   goPolaris() {
-    window.open('https://polarisec.io/', '_blank');
+    window.open('https://cloud.polarisec.io/', '_blank');
   }
 
   @Watch('isExpandAll', {deep: true, immediate: true})

@@ -60,7 +60,7 @@ export default class PricingAddons extends Vue {
   }
 
   gotoPolaris() {
-    window.open('https://polarisec.io/', '_blank');
+    window.open('https://cloud.polarisec.io/', '_blank');
 
   }
 }

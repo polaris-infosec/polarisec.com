@@ -194,7 +194,7 @@ export default class PricingAddOnsZeroTrustAccess extends Vue {
   ];
 
   onClick() {
-    window.open('https://polarisec.io/', '_blank');
+    window.open('https://cloud.polarisec.io/', '_blank');
   }
 }
 </script>

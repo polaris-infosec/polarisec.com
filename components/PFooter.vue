@@ -33,7 +33,7 @@
             <div class="body-6 col-lg-3 col-5 mt-mb-36px">
               <div>{{ $t('footer.solution') }}</div>
               <div class="d-flex flex-column mt-4 body-5">
-                <a href="https://polarisec.io" target="_blank">
+                <a href="https://cloud.polarisec.io" target="_blank">
                 <span class="color-text-7">
                   {{ $t('nav.platform-access') }}
                 </span>
