@@ -116,7 +116,7 @@ export default class PLanguageSelect extends Vue {
     this.languages = [...this.languages, this.language]
     this.languages = this.languages.filter((item) => item !== lang)
     this.language = lang
-    this.$router.replace(this.switchLocalePath(lang.code))
+    this.$i18n.locale = lang.code
   }
 }
 </script>

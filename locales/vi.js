@@ -86,6 +86,9 @@ export default {
       "title": "Đăng ký nhận bản tin",
       "content": "Nhận các thông tin cập nhật mới nhất về tính năng và sản phẩm."
     },
+    "customers": {
+      "title": "Được tin dùng bởi các tổ chức hàng đầu"
+    },
   },
   "whyUs": {
     "title": "Ưu Thế",

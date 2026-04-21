@@ -97,6 +97,9 @@ export default {
       "title": "Sign up for our newsletter",
       "content": "Be the first to receive new feature and product updates."
     },
+    "customers": {
+      "title": "Trusted by leading organizations"
+    },
   },
   "whyUs": {
     "title": "Why Us",
