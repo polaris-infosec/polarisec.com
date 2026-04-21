@@ -52,18 +52,18 @@
   justify-content center
   align-items center
   padding 20px
-  background-color #1B1C1D
+  background-color #141414
   border-radius 12px
-  width 160px
-  height 96px
+  width 240px
+  height 140px
   transition opacity 0.2s ease
 
   &:hover
     opacity 0.85
 
 .logo
-  max-width 130px
-  max-height 64px
+  max-width 200px
+  max-height 105px
   width auto
   height auto
   object-fit contain
@@ -91,6 +91,10 @@ export default class HomeCustomers extends Vue {
       {name: 'TH True Milk', img: require('@/assets/images/customer/th-true-milk.png')},
       {name: 'VTC', img: require('@/assets/images/customer/vtc.png')},
       {name: 'CIC', img: require('@/assets/images/customer/cic.png')},
+      {name: 'Blockchain Vietnam', img: require('@/assets/images/customer/blockchain-vn.png')},
+      {name: 'NCSC', img: require('@/assets/images/customer/ncsc.png')},
+      {name: 'Techfest', img: require('@/assets/images/customer/techfest.png')},
+      {name: 'VNG', img: require('@/assets/images/customer/vng.png')},
     ];
   }
 }
