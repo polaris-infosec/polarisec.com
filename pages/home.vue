@@ -7,6 +7,7 @@
     <home-artificial-intelligence/>
     <home-threat-intelligence/>
     <home-slider/>
+    <home-customers/>
     <home-newsletter v-if="!mobileScreen"/>
   </div>
 </template>
@@ -25,9 +26,11 @@ import HomeArtificialIntelligence from "~/layouts/home/HomeArtificialIntelligenc
 import HomeThreatIntelligence from "~/layouts/home/HomeThreatIntelligence.vue";
 import HomeSlider from "~/layouts/home/HomeSlider.vue";
 import HomeNewsletter from "~/layouts/home/HomeNewsletter.vue";
+import HomeCustomers from "~/layouts/home/HomeCustomers.vue";
 
 @Component({
   components: {
+    HomeCustomers,
     HomeNewsletter,
     HomeSlider,
     HomeThreatIntelligence,
