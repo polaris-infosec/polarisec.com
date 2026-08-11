@@ -56,6 +56,10 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+# Package manager lockfile — this project uses yarn (yarn.lock is tracked).
+# Ignore npm's lockfile to prevent version drift between the two.
+package-lock.json
+
 # dotenv environment variables file
 .env
 
