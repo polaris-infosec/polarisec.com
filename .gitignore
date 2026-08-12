@@ -38,6 +38,10 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Lockfiles — this project uses yarn (see yarn.lock); ignore npm's lockfile
+# so it isn't re-committed when someone runs npm install locally.
+package-lock.json
+
 # TypeScript v1 declaration files
 typings/
 
